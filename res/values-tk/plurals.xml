@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d albomlar</item>
+        <item quantity="one">%d albom</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albomlar</item>
+        <item quantity="one">Albom</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Ýodalar</item>
+        <item quantity="one">Ýoda</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">Halanýanlara %d ýodajyklary goşuldy. Eýýäm Halanýanlardaky ýodajyklar goşulmady.</item>
+        <item quantity="one">%d aýdym Halanýanlara goşuldy. Eýýäm Halanýanlarda bar bolan element goşulmady.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d ýodalar</item>
+        <item quantity="one">%d ýoda</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d ýodajyk halanýanlardan aýryldy.</item>
+        <item quantity="one">%d aýdym Halanýanlardan aýryldy.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d aýdym halanýanlara goşuldy.</item>
+        <item quantity="one">%d aýdym halanýanlara goşuldy.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Maslahatlardan diňe %d aýdyma çenli aýryp bilersiňiz. Aýrylan aýdymlary gör, dikeltmek üçin käbirleri saýlap ýene synanyşyň.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Maslahatlardan diňe %d aýdyma çenli aýryp bilersiňiz. Aýrylan aýdymlary gör, dikeltmek üçin käbirleri saýlap ýene synanyşyň.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Her aý %d mugt aýdym sazlara diňlemek üçin, Radio goýber düwmesine basyň.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Her aý %d mugt aýdym sazlara diňlemek üçin, Radio goýber düwmesine basyň.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">%d aýdymçydan köp saýlap bolmaýar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aýdymçydan köp saýlap bolmaýar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">%d žanrdan köp saýlap bolmaýar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d žanrdan köp saýlap bolmaýar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">%d aýdymdan köp saýlap bolmaýar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aýdymdan köp saýlap bolmaýar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d sekunt</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekunt</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Siz %1$s %2$d gezek ulanyp bilýärsiňiz.</item>
+        <item quantity="one">Siz 1 gezek %s ulanyp bilýärsiňiz.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">Awtorlyk hukugy meselesi sebäpli %d aýdym premium petekler bilen satyn alyp bolmaýar. Siz olary aýratyn satyn alyp bilersiňiz.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Awtorlyk hukugy meselesi sebäpli %d aýdym premium petekler bilen satyn alyp bolmaýar. Siz olary aýratyn satyn alyp bilersiňiz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d aýdym elýeterli aýdymlaryňyzdan ulanylar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aýdym elýeterli aýdymlaryňyzdan ulanylar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">%d aýdym göçürip almaga garaşylýar…</item>
+        <item quantity="one">1 aýdymy göçürip almaga garaşylýar…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">%d albomy we olardaky ähli aýdymy telefonyňyzdan öçürmelimi?</item>
+        <item quantity="one">1 albomy we ondaky ähli aýdymy telefonyňyzdan öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Bu aýdymçylaryň ähli aýdymlaryny öçürmelimi?</item>
+        <item quantity="one">Bu aýdymçynyň ähli aýdymlaryny öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Bu kompozitorlaryň ähli aýdymlaryny öçürmelimi?</item>
+        <item quantity="one">Bu kompozitoryň ähli aýdymlaryny öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Saýlanan aýdymlary öçürmelimi?</item>
+        <item quantity="one">Saýlanan aýdymy öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d aýdym satyn alnar. Eger sizde ýeterlik elýeterli aýdymlar ýok bolsa, onda şu aýdymlary satyn alyp bolmaýar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aýdym satyn alnar. Eger sizde ýeterlik elýeterli aýdymlar ýok bolsa, onda şu aýdymlary satyn alyp bolmaýar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Saýlanan aýdymlary satyn almalymy?</item>
+        <item quantity="one">Saýlanan aýdymy satyn almalymy?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Siz bu aýdymlary eýýäm satyn aldyňyz. Siz islendik wagtda satyn alnan aýdymlary ýene göçürip alyp bilersiňiz.</item>
+        <item quantity="one">Bu aýdymy eýýäm satyn aldyňyz. Siz islendik wagtda satyn alnan aýdymlary ýene göçürip alyp bilersiňiz.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Aýdymlar eýýäm satyn alyndy</item>
+        <item quantity="one">Aýdym eýýäm satyn alyndy</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Diňe %d üpjün edilen pleýlisti halanýanlar hökmünde goşup bilersiňiz. Halanýanlar salmasyndan käbir üpjün edilen pleýlistleri aýryň.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Diňe %d üpjün edilen pleýlisti halanýan hökmünde goşup bilersiňiz. Halanýanlar salmasyndan käbir üpjün edilen pleýlistleri aýryň.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Siz Halanýan aýdymlar hökmünde diňe %d akdyryş aýdymy goşup bilersiňiz. Halanýan aýdymlardan käbir akdyryş aýdymlaryny aýryp ýene synanyşyň.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siz Halanýan aýdym hökmünde diňe %d akdyryş aýdymy goşup bilersiňiz. Halanýan aýdymlardan käbir akdyryş aýdymlaryny aýryp ýene synanyşyň.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Siz Halanýan aýdymlar hökmünde diňe %d aýdymy goşup bilersiňiz. Halanýan aýdymlardan käbir aýdymlary aýryp ýene synanyşyň.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Siz Halanýan aýdym hökmünde diňe %d aýdymy goşup bilersiňiz. Halanýan aýdymlardan käbir aýdymlary aýryp ýene synanyşyň.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d bukjalar</item>
+        <item quantity="one">1 bukja</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">%d bukjany we olardaky ähli aýdymy telefonyňyzdan öçürmelimi?</item>
+        <item quantity="one">1 bukjany we ondaky ähli aýdymy telefonyňyzdan öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Bu žanrlardaky ähli aýdymlaryny öçürmelimi?</item>
+        <item quantity="one">Bu žanrdaky ähli aýdymlaryny öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d gizlenen bukja hem öçüriler.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d gizlenen bukja hem öçüriler.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d aýdym dikeldildi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d aýdym dikeldildi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">%d zady öçürmelimi?</item>
+        <item quantity="one">1 elementi öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Eksportirlenen %d pleýlist.</item>
+        <item quantity="one">Eksportirlenen %d pleýlist.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Importirlenen %d pleýlist.</item>
+        <item quantity="one">Importirlenen %d pleýlist.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">%d pleýlistden köp saýlap bolmaýar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d pleýlistden köp saýlap bolmaýar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">%d pleýlisti öçürmelimi?</item>
+        <item quantity="one">1 pleýlisti öçürmelimi?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d ýodalar</item>
+        <item quantity="one">1 aýdym</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d aýdym nobata goşuldy.</item>
+        <item quantity="one">%d aýdym nobata goşuldy.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">%d aýdymy öçürmelimi?</item>
+        <item quantity="one">1 aýdymy öçürmelimi?</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.HandledHoverLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/mu_ripple_button" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bottom_bar_item_icon" android:layout_width="@dimen/bottom_bar_icon" android:layout_height="@dimen/bottom_bar_icon" android:tint="@color/mu_bottom_icon" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/bottom_bar_text" android:textColor="@color/mu_main_text" android:ellipsize="end" android:gravity="center" android:id="@id/bottom_bar_item_title" android:layout_marginTop="@dimen/bottom_bar_text_margin_top" android:maxLines="1" android:layout_marginStart="@dimen/bottom_bar_text_margin_horizontal" android:layout_marginEnd="@dimen/bottom_bar_text_margin_horizontal" app:maxFontLevel="large" style="@style/Font.Roboto.Regular" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</com.samsung.android.app.musiclibrary.ui.widget.HandledHoverLinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/album_cover_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.music.milk.store.widget.NetworkImageView android:id="@id/artist_cover" android:layout_width="@dimen/milk_store_common_track_list_album_size" android:layout_height="@dimen/milk_store_common_track_list_album_size" android:scaleType="centerCrop" app:showImageOnFail="@drawable/music_player_default_cover" app:showImageOnLoading="@drawable/music_player_default_cover" app:targetWidth="@dimen/milk_store_common_track_list_album_size" app:targetHeight="@dimen/milk_store_common_track_list_album_size" />
+</FrameLayout>

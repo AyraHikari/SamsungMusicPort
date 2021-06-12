@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Toolbar" />
+        <ScrollView android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/playback_mode_text_frame" android:paddingLeft="@dimen/milk_audio_quality_side_padding" android:paddingTop="@dimen/current_playlist_text_padding_bottom" android:paddingRight="@dimen/milk_audio_quality_side_padding" android:paddingBottom="@dimen/current_playlist_text_padding_top" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/milk_fontsize_17_dp" android:textColor="?android:textColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/current_playlist_text_line_gap" android:text="@string/playback_mode" android:includeFontPadding="false" android:fontFamily="sans-serif" />
+                    <TextView android:textSize="@dimen/milk_fontsize_13_dp" android:textColor="?android:textColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/playback_mode_description_1" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
+                    <TextView android:textSize="@dimen/milk_fontsize_13_dp" android:textColor="?android:textColorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/playback_mode_description_2" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
+                </LinearLayout>
+                <com.samsung.android.app.musiclibrary.ui.widget.round.RoundedRelativeLayout android:id="@id/playback_mode_list_container" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@id/playback_mode_option_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/milk_three_option_double_text_layout" />
+                </com.samsung.android.app.musiclibrary.ui.widget.round.RoundedRelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/add_order_text_frame" android:paddingLeft="@dimen/milk_audio_quality_side_padding" android:paddingTop="@dimen/current_playlist_text_padding_bottom" android:paddingRight="@dimen/milk_audio_quality_side_padding" android:paddingBottom="@dimen/current_playlist_text_padding_top" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/milk_fontsize_17_dp" android:textColor="?android:textColorPrimary" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/current_playlist_text_line_gap" android:text="@string/add_order" android:includeFontPadding="false" android:fontFamily="sans-serif" />
+                    <TextView android:textSize="@dimen/milk_fontsize_13_dp" android:textColor="?android:textColorPrimary" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_order_description" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
+                </LinearLayout>
+                <com.samsung.android.app.musiclibrary.ui.widget.round.RoundedRelativeLayout android:id="@id/add_order_list_container" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@id/add_order_option_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/milk_three_option_double_text_layout" />
+                </com.samsung.android.app.musiclibrary.ui.widget.round.RoundedRelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

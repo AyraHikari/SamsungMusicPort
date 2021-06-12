@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.devbrackets.android.exomedia.ui.widget.VideoView android:id="@id/video_play_activity_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:useTextureViewBacking="true" />
+    <ViewStub android:id="@id/radio_no_network_popup_stub" android:layout="@layout/no_network_popup_stub" android:inflatedId="@id/radio_no_network_popup_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

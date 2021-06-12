@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#1afafafa" />
+            <stroke android:width="2.0px" android:color="#40ffffff" />
+            <size android:height="@dimen/mini_player_albumart_size" android:width="@dimen/mini_player_albumart_size" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/music_mini_player_ic_m" />
+    </item>
+</layer-list>

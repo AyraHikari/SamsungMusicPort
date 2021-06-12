@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d albums</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albums</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Tracks</item>
+        <item quantity="one">Track</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d tracks added to Favourites. Tracks already in Favourites not added.</item>
+        <item quantity="one">%d track added to Favourites. Track already in Favourites not added.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d tracks</item>
+        <item quantity="one">%d track</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d tracks removed from Favourites.</item>
+        <item quantity="one">%d track removed from Favourites.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d tracks added to favourites.</item>
+        <item quantity="one">%d track added to Favourites.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">You can only remove up to %d tracks from recommendations. View removed tracks, select some to restore, then try again.</item>
+        <item quantity="zero">You can only remove up to %d tracks from recommendations. View removed tracks, select some to restore, then try again.</item>
+        <item quantity="one">You can only remove up to %d track from recommendations. View removed tracks, select some to restore, then try again.</item>
+        <item quantity="two">You can only remove up to %d tracks from recommendations. View removed tracks, select some to restore, then try again.</item>
+        <item quantity="few">You can only remove up to %d tracks from recommendations. View removed tracks, select some to restore, then try again.</item>
+        <item quantity="many">You can only remove up to %d tracks from recommendations. View removed tracks, select some to restore, then try again.</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Tap the Play radio button to enjoy %d free tracks every month.</item>
+        <item quantity="zero">Tap the Play radio button to enjoy %d free tracks every month.</item>
+        <item quantity="one">Tap the Play radio button to enjoy %d free track every month.</item>
+        <item quantity="two">Tap the Play radio button to enjoy %d free tracks every month.</item>
+        <item quantity="few">Tap the Play radio button to enjoy %d free tracks every month.</item>
+        <item quantity="many">Tap the Play radio button to enjoy %d free tracks every month.</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">"Can't select more than %d artists."</item>
+        <item quantity="zero">"Can't select more than %d artists."</item>
+        <item quantity="one">"Can't select more than %d artist."</item>
+        <item quantity="two">"Can't select more than %d artists."</item>
+        <item quantity="few">"Can't select more than %d artists."</item>
+        <item quantity="many">"Can't select more than %d artists."</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">"Can't select more than %d genres."</item>
+        <item quantity="zero">"Can't select more than %d genres."</item>
+        <item quantity="one">"Can't select more than %d genre."</item>
+        <item quantity="two">"Can't select more than %d genres."</item>
+        <item quantity="few">"Can't select more than %d genres."</item>
+        <item quantity="many">"Can't select more than %d genres."</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">"Can't select more than %d tracks."</item>
+        <item quantity="zero">"Can't select more than %d tracks."</item>
+        <item quantity="one">"Can't select more than %d track."</item>
+        <item quantity="two">"Can't select more than %d tracks."</item>
+        <item quantity="few">"Can't select more than %d tracks."</item>
+        <item quantity="many">"Can't select more than %d tracks."</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d seconds</item>
+        <item quantity="zero">%d seconds</item>
+        <item quantity="one">%d second</item>
+        <item quantity="two">%d seconds</item>
+        <item quantity="few">%d seconds</item>
+        <item quantity="many">%d seconds</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">You can use %1$s %2$d times.</item>
+        <item quantity="one">You can use %s 1 time.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">"%d tracks can't be purchased with premium tickets because of a copyright issue. You can purchase them individually."</item>
+        <item quantity="zero">"%d tracks can't be purchased with premium tickets because of a copyright issue. You can purchase them individually."</item>
+        <item quantity="one">"%d track can't be purchased with premium tickets because of a copyright issue. You can purchase them individually."</item>
+        <item quantity="two">"%d tracks can't be purchased with premium tickets because of a copyright issue. You can purchase them individually."</item>
+        <item quantity="few">"%d tracks can't be purchased with premium tickets because of a copyright issue. You can purchase them individually."</item>
+        <item quantity="many">"%d tracks can't be purchased with premium tickets because of a copyright issue. You can purchase them individually."</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d tracks will be used from your available tracks.</item>
+        <item quantity="zero">%d tracks will be used from your available tracks.</item>
+        <item quantity="one">%d track will be used from your available tracks.</item>
+        <item quantity="two">%d tracks will be used from your available tracks.</item>
+        <item quantity="few">%d tracks will be used from your available tracks.</item>
+        <item quantity="many">%d tracks will be used from your available tracks.</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Waiting to download %d songs…</item>
+        <item quantity="one">Waiting to download 1 song…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Delete %d albums and all the tracks in them from your phone?</item>
+        <item quantity="one">Delete 1 album and all the tracks in it from your phone?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Delete all tracks by these artists?</item>
+        <item quantity="one">Delete all tracks by this artist?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Delete all tracks by these composers?</item>
+        <item quantity="one">Delete all tracks by this composer?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Delete the selected tracks?</item>
+        <item quantity="one">Delete the selected track?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">"%d tracks will be purchased. If you don't have enough available tracks, then these tracks can't be purchased."</item>
+        <item quantity="zero">"%d tracks will be purchased. If you don't have enough available tracks, then these tracks can't be purchased."</item>
+        <item quantity="one">"%d track will be purchased. If you don't have enough available tracks, then these tracks can't be purchased."</item>
+        <item quantity="two">"%d tracks will be purchased. If you don't have enough available tracks, then these tracks can't be purchased."</item>
+        <item quantity="few">"%d tracks will be purchased. If you don't have enough available tracks, then these tracks can't be purchased."</item>
+        <item quantity="many">"%d tracks will be purchased. If you don't have enough available tracks, then these tracks can't be purchased."</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Purchase the selected tracks?</item>
+        <item quantity="one">Purchase the selected track?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">"You've already purchased these songs. You can download purchased songs again at any time."</item>
+        <item quantity="one">"You've already purchased this song. You can download purchased songs again at any time."</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Tracks already purchased</item>
+        <item quantity="one">Track already purchased</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">You can only add %d provided playlists as favourites. Remove some provided playlists from the Favourites tab.</item>
+        <item quantity="zero">You can only add %d provided playlists as favourites. Remove some provided playlists from the Favourites tab.</item>
+        <item quantity="one">You can only add %d provided playlist as a favourite. Remove some provided playlists from the Favourites tab.</item>
+        <item quantity="two">You can only add %d provided playlists as favourites. Remove some provided playlists from the Favourites tab.</item>
+        <item quantity="few">You can only add %d provided playlists as favourites. Remove some provided playlists from the Favourites tab.</item>
+        <item quantity="many">You can only add %d provided playlists as favourites. Remove some provided playlists from the Favourites tab.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">You can only add %d streaming tracks as Favourite tracks. Remove some streaming tracks from Favourite tracks, then try again.</item>
+        <item quantity="zero">You can only add %d streaming tracks as Favourite tracks. Remove some streaming tracks from Favourite tracks, then try again.</item>
+        <item quantity="one">You can only add %d streaming track as a Favourite track. Remove some streaming tracks from Favourite tracks, then try again.</item>
+        <item quantity="two">You can only add %d streaming tracks as Favourite tracks. Remove some streaming tracks from Favourite tracks, then try again.</item>
+        <item quantity="few">You can only add %d streaming tracks as Favourite tracks. Remove some streaming tracks from Favourite tracks, then try again.</item>
+        <item quantity="many">You can only add %d streaming tracks as Favourite tracks. Remove some streaming tracks from Favourite tracks, then try again.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">You can only add %d tracks as Favourite tracks. Remove some tracks from Favourite tracks, then try again.</item>
+        <item quantity="zero">You can only add %d tracks as Favourite tracks. Remove some tracks from Favourite tracks, then try again.</item>
+        <item quantity="one">You can only add %d track as a Favourite track. Remove some tracks from Favourite tracks, then try again.</item>
+        <item quantity="two">You can only add %d tracks as Favourite tracks. Remove some tracks from Favourite tracks, then try again.</item>
+        <item quantity="few">You can only add %d tracks as Favourite tracks. Remove some tracks from Favourite tracks, then try again.</item>
+        <item quantity="many">You can only add %d tracks as Favourite tracks. Remove some tracks from Favourite tracks, then try again.</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d folders</item>
+        <item quantity="one">1 folder</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Delete %d folders and all the tracks in them from your phone?</item>
+        <item quantity="one">Delete 1 folder and all the tracks in it from your phone?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Delete all tracks in these genres?</item>
+        <item quantity="one">Delete all tracks in this genre?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d hidden folders will also be deleted.</item>
+        <item quantity="zero">%d hidden folders will also be deleted.</item>
+        <item quantity="one">%d hidden folder will also be deleted.</item>
+        <item quantity="two">%d hidden folders will also be deleted.</item>
+        <item quantity="few">%d hidden folders will also be deleted.</item>
+        <item quantity="many">%d hidden folders will also be deleted.</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d tracks restored.</item>
+        <item quantity="zero">%d tracks restored.</item>
+        <item quantity="one">%d track restored.</item>
+        <item quantity="two">%d tracks restored.</item>
+        <item quantity="few">%d tracks restored.</item>
+        <item quantity="many">%d tracks restored.</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Delete %d items?</item>
+        <item quantity="one">Delete 1 item?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Exported %d playlists.</item>
+        <item quantity="one">Exported %d playlist.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Imported %d playlists.</item>
+        <item quantity="one">Imported %d playlist.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">"Can't select more than %d playlists."</item>
+        <item quantity="zero">"Can't select more than %d playlists."</item>
+        <item quantity="one">"Can't select more than %d playlists."</item>
+        <item quantity="two">"Can't select more than %d playlists."</item>
+        <item quantity="few">"Can't select more than %d playlists."</item>
+        <item quantity="many">"Can't select more than %d playlists."</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Delete %d playlists?</item>
+        <item quantity="one">Delete 1 playlist?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d tracks</item>
+        <item quantity="one">1 track</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d tracks added to queue.</item>
+        <item quantity="one">%d track added to queue.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Delete %d tracks?</item>
+        <item quantity="one">Delete 1 track?</item>
+    </plurals>
+</resources>

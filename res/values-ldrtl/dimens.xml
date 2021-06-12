@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="sesl_menu_popup_scale_anim_pivot_x">0.0%</item>
+    <dimen name="sesl_more_show_button_background_inset_left">20.0dip</dimen>
+    <dimen name="sesl_more_show_button_background_inset_right">3.0dip</dimen>
+</resources>

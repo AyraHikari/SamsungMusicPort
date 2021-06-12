@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:interpolator="@interpolator/sine_out_80" android:duration="300" android:fromYDelta="@integer/sesl_dialog_enter_anim_duration" android:toYDelta="0.0" />
+    <alpha android:interpolator="@interpolator/sine_out_80" android:duration="150" android:fromAlpha="0.0" android:toAlpha="1.0" />
+</set>

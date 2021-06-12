@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/milk_help_item_padding_top" android:paddingBottom="@dimen/milk_help_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/milk_help_item_padding_side" android:paddingEnd="@dimen/milk_help_item_padding_side"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="@dimen/milk_fontsize_17_dp" android:textColor="?android:textColorPrimary" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="@dimen/milk_fontsize_13_dp" android:textColor="?android:textColorSecondary" android:id="@id/description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+</LinearLayout>

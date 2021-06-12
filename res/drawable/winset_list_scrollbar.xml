@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/tw_scrollbar_mtrl" android:tint="@color/winset_list_scrollbar_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

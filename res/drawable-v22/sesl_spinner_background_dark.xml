@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingEnd="29.0dip" android:paddingMode="stack"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <ripple android:color="?colorControlHighlight">
+            <item android:id="@android:id/mask" android:drawable="@drawable/sesl_spinner_background_mask" />
+        </ripple>
+    </item>
+    <item android:gravity="end|center" android:width="22.0dip" android:drawable="@drawable/sesl_spinner_background_am_alpha_dark" android:end="7.0dip" />
+</layer-list>

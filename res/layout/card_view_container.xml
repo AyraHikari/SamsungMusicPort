@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/card_view_content" android:paddingTop="@dimen/card_view_container_space_top" android:paddingBottom="@dimen/card_view_container_space_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/card_view_container_space_horizontal" android:paddingEnd="@dimen/card_view_container_space_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

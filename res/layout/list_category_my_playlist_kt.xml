@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_category_my_playlist_layout" android:paddingTop="@dimen/deprecated_list_item_section_padding_top" android:paddingBottom="@dimen/deprecated_list_item_section_padding_bottom" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/list_item_playlist_padding_end_kt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/deprecated_list_item_section_divider_text1_winset" android:id="@id/list_category_text" android:layout_height="@dimen/list_category_my_playlist_text_height_kt" android:includeFontPadding="false" style="@style/ListSubTitle.LeftAlign" />
+</RelativeLayout>

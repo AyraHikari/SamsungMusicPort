@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_compound_button_rectangle_winset" android:paddingLeft="@dimen/milk_search_preset_string_padding_left" android:paddingRight="@dimen/milk_search_preset_string_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/milk_search_preset_string_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/milk_common_track_list_title_font_size" android:textColor="#b3fafafa" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/text_search_auto_complete" android:layout_width="fill_parent" android:layout_height="@dimen/milk_search_preset_string_height" android:maxLines="1" android:fontFamily="sans-serif" />
+    <View android:id="@id/list_divider" android:background="#33fafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicSpinner android:id="@id/spinner" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Header.Filter" />
+    <ImageView android:id="@id/icon_shuffle" android:visibility="gone" android:src="@drawable/music_detail_ic_shuffle" android:contentDescription="@string/list_header_shuffle_play" android:layout_marginEnd="14.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/icon_play_all" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Header.Icon" />
+    <ImageView android:id="@id/icon_play_all" android:visibility="gone" android:src="@drawable/music_detail_ic_play" android:contentDescription="@string/list_header_play_all" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Header.Icon" />
+</android.support.constraint.ConstraintLayout>

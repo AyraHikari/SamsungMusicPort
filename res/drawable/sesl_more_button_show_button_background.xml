@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <ripple android:color="@color/sesl_ripple_color_light" android:radius="24.0dip" />
+    </item>
+    <item android:drawable="@drawable/sesl_more_button_show_background_shape" />
+</layer-list>

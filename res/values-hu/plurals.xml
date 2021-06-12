@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d album</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albumok</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Számok</item>
+        <item quantity="one">Szám</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d szám felvéve a Kedvencek közé. A már a Kedvencek között található számok nem lettek hozzáadva.</item>
+        <item quantity="one">%d számot hozzáadott a Kedvencekhez. A már a Kedvencekben található számot nem adta hozzá.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d szám</item>
+        <item quantity="one">%d szám</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d szám eltávolítva a Kedvencek közül.</item>
+        <item quantity="one">Eltávolított %d számot a Kedvencekből.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d szám felvéve a kedvencek közé.</item>
+        <item quantity="one">%d számot hozzáadott a kedvencekhez.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Legfeljebb %d számot távolíthat el a javaslatok közül. Tekintse meg az eltávolított számokat, válasszon ki néhányat a visszaállításhoz, majd próbálkozzon újra.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d számot távolíthat el a javaslatok közül. Tekintse meg az eltávolított számokat, válasszon ki néhányat a visszaállításhoz, majd próbálkozzon újra.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Érintse meg a Rádióhallgatás gombot, és havonta %d számot meghallgathat ingyen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Érintse meg a Rádióhallgatás gombot, és havonta %d számot meghallgathat ingyen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Legfeljebb %d előadót választhat ki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d előadót választhat ki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Legfeljebb %d műfajt választhat ki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d műfajt választhat ki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Legfeljebb %d számot választhat ki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d számot választhat ki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d másodperc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d másodperc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Az elem (%1$s) %2$d alkalommal használható.</item>
+        <item quantity="one">Az elem (%s) 1 alkalommal használható.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d szám nem vásárolható meg prémium jeggyel egy szerzői jogi probléma miatt. A számokat külön vásárolhatja meg.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d szám nem vásárolható meg prémium jeggyel egy szerzői jogi probléma miatt. A számokat külön vásárolhatja meg.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">Fel fog használni %d számot a rendelkezésre álló számok közül.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Fel fog használni %d számot a rendelkezésre álló számok közül.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Várakozás %d dal letöltésére…</item>
+        <item quantity="one">Várakozás 1 dal letöltésére…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Töröl a telefonjáról %d albumot a rajtuk lévő összes számmal együtt?</item>
+        <item quantity="one">Töröl a telefonjáról 1 albumot az összes rajta levő számmal együtt?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Törli ezeknek az előadóknak az összes számát?</item>
+        <item quantity="one">Törli az előadó összes számát?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Törli ezeknek a zeneszerzőknek az összes számát?</item>
+        <item quantity="one">Törli a zeneszerző összes számát?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Törli a kijelölt számokat?</item>
+        <item quantity="one">Törli a kijelölt számot?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">Meg fog vásárolni %d számot. Ha nincs elég rendelkezésre álló száma, akkor a számok nem vásárolhatók meg.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Meg fog vásárolni %d számot. Ha nincs elég rendelkezésre álló száma, akkor a számok nem vásárolhatók meg.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Megvásárolja a kijelölt számokat?</item>
+        <item quantity="one">Megvásárolja a kijelölt számot?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Ezeket a számokat már megvásárolta. A megvásárolt számokat bármikor letöltheti újra.</item>
+        <item quantity="one">Ezt a számot már megvásárolta. A megvásárolt számokat bármikor letöltheti újra.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Már megvásárolta a számokat</item>
+        <item quantity="one">Már megvásárolta a számot</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">A biztosított lejátszási listák közül legfeljebb %d vehető fel kedvencként. Távolítson el néhányat a Kedvencek lapról.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">A biztosított lejátszási listák közül legfeljebb %d vehető fel kedvencként. Távolítson el néhányat a Kedvencek lapról.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Legfeljebb %d streamelt szám adható hozzá kedvenc számként. Távolítson el streamelt számokat a kedvenc számok közül, majd próbálja újra.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d streamelt szám adható hozzá kedvenc számként. Távolítson el streamelt számokat a kedvenc számok közül, majd próbálja újra.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Legfeljebb %d szám adható hozzá kedvenc számként. Távolítson el számokat a kedvenc számok közül, majd próbálja újra.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d szám adható hozzá kedvenc számként. Távolítson el számokat a kedvenc számok közül, majd próbálja újra.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d mappa</item>
+        <item quantity="one">1 mappa</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Töröl a telefonjáról %d mappát a bennük lévő összes számmal együtt?</item>
+        <item quantity="one">Töröl a telefonjáról 1 mappát az összes benne levő számmal együtt?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Törli az ezekbe a műfajokba tartozó összes számot?</item>
+        <item quantity="one">Törli az ebbe a műfajba tartozó összes számot?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">Törölni fog %d rejtett mappát is.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Törölni fog %d rejtett mappát is.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d szám visszaállítva.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d szám visszaállítva.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Töröl %d elemet?</item>
+        <item quantity="one">Töröl 1 elemet?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d lejátszási lista exportálva.</item>
+        <item quantity="one">%d lejátszási lista exportálva.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d lejátszási lista importálva.</item>
+        <item quantity="one">%d lejátszási lista importálva.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Legfeljebb %d lejátszási listát választhat ki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d lejátszási listát választhat ki.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Töröl %d lejátszási listát?</item>
+        <item quantity="one">Töröl 1 lejátszási listát?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d szám</item>
+        <item quantity="one">1 szám</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d számot hozzáadott a sorhoz.</item>
+        <item quantity="one">%d számot hozzáadott a sorhoz.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Töröl %d számot?</item>
+        <item quantity="one">Töröl 1 számot?</item>
+    </plurals>
+</resources>

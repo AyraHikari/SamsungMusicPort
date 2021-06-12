@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_fit_top" style="@style/Toolbar" />
+        <FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+            <ViewStub android:id="@id/radio_no_network_stub" android:layout="@layout/no_network_view_stub_about_policy" android:inflatedId="@id/radio_no_network_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/radio_no_network_popup_stub" android:layout="@layout/no_network_popup_stub" android:inflatedId="@id/radio_no_network_popup_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/content" android:background="@color/white_opacity_100" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/about_policy_margin_vertical">
+                        <ProgressBar android:id="@id/loading_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+                        <TextView android:textSize="@dimen/about_policy_detail_msg_text" android:textColor="@color/about_policy_detail_msg_text" android:autoLink="web" android:id="@id/about_policy_detail_text" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/about_policy_margin_vertical" android:lineSpacingExtra="@dimen/about_policy_detail_text_line_space" android:textIsSelectable="true" android:textDirection="locale" android:layout_marginStart="@dimen/about_policy_margin_horizontal" android:layout_marginEnd="@dimen/about_policy_margin_horizontal" />
+                    </RelativeLayout>
+                </ScrollView>
+                <WebView android:id="@id/about_policy_detail_webview" android:paddingTop="@dimen/about_policy_margin_vertical" android:paddingBottom="@dimen/about_policy_margin_vertical" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/about_policy_margin_horizontal" android:layout_marginEnd="@dimen/about_policy_margin_horizontal" />
+            </FrameLayout>
+            <include layout="@layout/mu_progress_container" />
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

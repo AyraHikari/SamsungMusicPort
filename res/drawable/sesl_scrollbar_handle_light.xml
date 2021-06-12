@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/sesl_scrollbar_handle_alpha" android:tint="@color/sesl_scrollbar_handle_tint_color_light"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

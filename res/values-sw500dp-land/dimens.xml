@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="browse_list_item_just_for_you_half_width">85.5dip</dimen>
+    <dimen name="browse_list_item_just_for_you_width">171.0dip</dimen>
+    <dimen name="company_info_group_space_bottom_kt">22.0dip</dimen>
+    <item type="dimen" name="full_player_album_area_percent">0.76</item>
+    <item type="dimen" name="full_player_album_bias">0.7</item>
+    <item type="dimen" name="full_player_album_container_percent">0.45</item>
+    <dimen name="full_player_album_height">200.0dip</dimen>
+    <item type="dimen" name="full_player_album_max_area_percent">1.0</item>
+    <item type="dimen" name="full_player_album_small_area_percent">0.5</item>
+    <dimen name="full_player_album_view_top_margin_nonplayback">0.0dip</dimen>
+    <dimen name="full_player_lyric_text_padding_horizontal">55.0dip</dimen>
+    <dimen name="full_player_option_layout_top">0.0dip</dimen>
+    <dimen name="lock_player_close_right">28.0dip</dimen>
+    <dimen name="lock_player_control_bottom">91.0dip</dimen>
+    <item type="dimen" name="lock_player_option_touch_ratio">0.094</item>
+    <dimen name="lock_player_title_margin_bottom">6.0dip</dimen>
+    <dimen name="milk_lyric_padding_vertical">0.0dip</dimen>
+    <dimen name="mu_grid_item_space_inner">24.0dip</dimen>
+    <dimen name="mu_grid_item_space_outer_horizontal">24.0dip</dimen>
+    <dimen name="widget_album_art_size">80.0dip</dimen>
+    <dimen name="about_app_name_margin_bottom">4.0dip</dimen>
+    <dimen name="about_detail_msg_text_margin_bottom">8.0dip</dimen>
+    <dimen name="about_icon_margin_bottom">24.0dip</dimen>
+    <dimen name="about_update_button_margin_horizontal">80.0dip</dimen>
+    <dimen name="about_version_text_margin_bottom">50.0dip</dimen>
+    <dimen name="device_height">601.0dip</dimen>
+    <dimen name="device_width">961.5dip</dimen>
+    <dimen name="list_content_root_padding_horizontal">0.0dip</dimen>
+    <dimen name="list_item_playlist_padding_end_kt">41.0dip</dimen>
+    <dimen name="browse_grid_item_video_width">216.0dip</dimen>
+    <dimen name="full_player_artist_margin_bottom">156.0dip</dimen>
+    <item type="dimen" name="full_player_button_touch_area_common_percent">0.11</item>
+    <dimen name="full_player_control_margin_bottom">0.0dip</dimen>
+    <dimen name="full_player_control_margin_horizontal">0.0dip</dimen>
+    <item type="dimen" name="full_player_prev_rew_touch_area_width_percent">0.11</item>
+    <dimen name="help_horizontal_space">240.0dip</dimen>
+    <dimen name="list_item_heart_text_outer_space_kt">100.0dip</dimen>
+    <item type="dimen" name="lock_player_control_play_touch_ratio">0.094</item>
+    <item type="dimen" name="lock_player_control_touch_ratio">0.094</item>
+    <item type="dimen" name="lock_player_control_width_ratio">0.584</item>
+    <dimen name="lock_player_shortcut_height">36.0dip</dimen>
+    <item type="dimen" name="lock_player_title_top_ratio">0.24</item>
+    <dimen name="mu_grid_item_min_width">162.0dip</dimen>
+    <dimen name="now_playing_container_padding_horizontal">37.0dip</dimen>
+</resources>

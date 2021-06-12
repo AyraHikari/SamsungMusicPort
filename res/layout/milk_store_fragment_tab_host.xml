@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.music.widget.MusicSubTabLayout android:id="@id/tabs" app:tabIndicatorHeight="2.0dip" app:tabMaxWidth="0.0dip" app:tabPaddingStart="0.0dip" app:tabPaddingEnd="0.0dip" style="@style/SubTab.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

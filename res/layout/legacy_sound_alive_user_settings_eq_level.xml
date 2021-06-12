@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/eq_dbscale_layout" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="@dimen/legacy_sound_alive_eq_ext_dbscale_layout" android:layout_height="@dimen/legacy_sound_alive_eq_seekbar_height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10db" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@style/LegacySoundAliveEqExtTextStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0db" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/LegacySoundAliveEqExtTextStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-10db" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" style="@style/LegacySoundAliveEqExtTextStyle" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/eq_control_bar_level_line" android:paddingTop="@dimen/legacy_sound_alive_eq_ext_seekbar_thumb_padding" android:paddingBottom="@dimen/legacy_sound_alive_eq_ext_seekbar_thumb_padding" android:layout_width="@dimen/legacy_sound_alive_eq_line_width" android:layout_height="@dimen/legacy_sound_alive_eq_seekbar_height">
+        <View android:layout_marginTop="0.0dip" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+        <View android:layout_weight="1.0" style="@style/LegacySoundAliveLineStyle.Eq" />
+    </LinearLayout>
+</LinearLayout>

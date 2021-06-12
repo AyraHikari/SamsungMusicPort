@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/browse_track_detail_desc_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/browse_track_detail_desc1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Font.Roboto.Regular.BrowseHeaderDescText1" />
+    <View android:id="@id/divider" android:background="@color/browse_header_desc_text_color" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="11.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+    <TextView android:id="@id/browse_track_detail_desc2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" style="@style/Font.Roboto.Regular.BrowseHeaderDescText1" />
+</LinearLayout>

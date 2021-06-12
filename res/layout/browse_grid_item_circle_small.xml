@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="@dimen/browse_grid_item_small_width" android:layout_height="wrap_content" layout="@layout/mu_grid_item_circle" />
+</android.support.constraint.ConstraintLayout>

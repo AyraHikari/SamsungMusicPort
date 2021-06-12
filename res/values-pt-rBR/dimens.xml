@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesl_date_picker_month_day_label_text_size">11.0dip</dimen>
+</resources>

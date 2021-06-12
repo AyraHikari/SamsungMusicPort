@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">альбомів: %d</item>
+        <item quantity="one">Альбомів: %d</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Альбоми</item>
+        <item quantity="one">Альбом</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Записи</item>
+        <item quantity="one">Запис</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d записів додано до обраного. Записи, що вже містяться в обраному, не додано.</item>
+        <item quantity="one">Записів додано до обраного: %d. Записи, що вже містяться в обраному, не було додано.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">записів: %d</item>
+        <item quantity="one">Записи: %d</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d записів видалено з обраного.</item>
+        <item quantity="one">Записів видалено з обраного: %d.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d записів додано до обраного</item>
+        <item quantity="one">%d записів додано до обраного.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">З рекомендацій можна видалити не більше %d композиції. Перегляньте список видалених композицій, відновіть частину з них і спробуйте ще раз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">З рекомендацій можна видалити не більше %d композиції. Перегляньте список видалених композицій, відновіть частину з них і спробуйте ще раз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">З рекомендацій можна видалити не більше %d композицій. Перегляньте список видалених композицій, відновіть деякі з них і спробуйте ще раз.</item>
+        <item quantity="many">З рекомендацій можна видалити не більше %d композицій. Перегляньте список видалених композицій, відновіть частину з них і спробуйте ще раз.</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Торкніться кнопки «Увімкнути радіо», щоб кожного місяця слухати по %d безкоштовної композиції.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Торкніться кнопки «Увімкнути радіо», щоб кожного місяця слухати по %d безкоштовній композиції.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Торкніться кнопки «Увімкнути радіо», щоб кожного місяця слухати по %d безкоштовні композиції.</item>
+        <item quantity="many">Торкніться кнопки «Увімкнути радіо», щоб кожного місяця слухати по %d безкоштовних композицій.</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Неможливо вибрати більше %d виконавця.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо вибрати більше %d виконавця.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо вибрати більше %d виконавців.</item>
+        <item quantity="many">Неможливо вибрати більше %d виконавців.</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Неможливо вибрати більше %d жанру.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо вибрати більше %d жанру.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо вибрати більше %d жанрів.</item>
+        <item quantity="many">Неможливо вибрати більше %d жанрів.</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Неможливо вибрати більше %d композиції.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо вибрати більше %d композиції.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо вибрати більше %d композицій.</item>
+        <item quantity="many">Неможливо вибрати більше %d композицій.</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d секунди</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d секунда</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d секунди</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">%1$s можна користуватися %2$d разів.</item>
+        <item quantity="one">%s можна використати 1 раз.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d композиції неможливо купити за допомогою преміум-квитків через обмеження власника авторських прав. Ці композиції можна придбати окремо.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d композицію неможливо купити за допомогою преміум-квитків через обмеження власника авторських прав. Цю композицію можна придбати окремо.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d композиції неможливо купити за допомогою преміум-квитків через обмеження власника авторських прав. Ці композиції можна придбати окремо.</item>
+        <item quantity="many">%d композицій неможливо купити за допомогою преміум-квитків через обмеження власника авторських прав. Ці композиції можна придбати окремо.</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">Буде використано %d доступної композиції.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Буде використана %d доступна композиція.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Буде використано %d доступні композиції.</item>
+        <item quantity="many">Буде використано %d доступних композицій.</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Очікування завантаження композицій (%d)…</item>
+        <item quantity="one">Очікування завантаження 1 композиції…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Видалити з телефону альбоми (%d) і всі композиції, що в них містяться?</item>
+        <item quantity="one">Видалити з телефону 1 альбом і всі композиції, що в ньому містяться?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Видалити всі композиції цих виконавців?</item>
+        <item quantity="one">Видалити всі композиції цього виконавця?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Видалити всі композиції цих композиторів?</item>
+        <item quantity="one">Видалити всі композиції цього композитора?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Видалити вибрані композиції?</item>
+        <item quantity="one">Видалити вибрану композицію?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">Буде куплено %d композиції. Якщо у вас недостатньо доступних композицій, покупку буде скасовано.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Буде куплена %d композиція. Якщо у вас недостатньо доступних композицій, покупку буде скасовано.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Буде куплено %d композиції. Якщо у вас недостатньо доступних композицій, покупку буде скасовано.</item>
+        <item quantity="many">Буде куплено %d композицій. Якщо у вас недостатньо доступних композицій, покупку буде скасовано.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Придбати вибрані композиції?</item>
+        <item quantity="one">Придбати вибрану композицію?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Ви вже купили ці пісні. Придбані пісні можна в будь-який момент завантажити повторно.</item>
+        <item quantity="one">Ви вже купили цю пісню. Придбані пісні можна в будь-який момент завантажити повторно.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Композиції вже придбано</item>
+        <item quantity="one">Композицію вже придбано</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">До розділу «Обране» можна додати лише %d рекомендованого списку відтворення. Видаліть декілька списків на вкладці «Обране».</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">До розділу «Обране» можна додати лише %d рекомендований список відтворення. Видаліть декілька списків на вкладці «Обране».</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">До розділу «Обране» можна додати лише %d рекомендованих списки відтворення. Видаліть декілька списків на вкладці «Обране».</item>
+        <item quantity="many">До розділу «Обране» можна додати лише %d рекомендованих списків відтворення. Видаліть декілька списків на вкладці «Обране».</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">До списку обраного можна додати не більше %d композиції для потокового відтворення. Видаліть частину композицій для потокового відтворення зі списку та спробуйте ще раз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">До списку обраного можна додати не більше %d композиції для потокового відтворення. Видаліть частину композицій для потокового відтворення зі списку та спробуйте ще раз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">До списку обраного можна додати не більше %d композицій для потокового відтворення. Видаліть частину композицій для потокового відтворення зі списку та спробуйте ще раз.</item>
+        <item quantity="many">До списку обраного можна додати не більше %d композицій для потокового відтворення. Видаліть частину композицій для потокового відтворення зі списку та спробуйте ще раз.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">До списку обраного можна додати не більше %d композиції. Видаліть частину композицій зі списку та спробуйте ще раз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">До списку обраного можна додати не більше %d композиції. Видаліть частину композицій зі списку та спробуйте ще раз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">До списку обраного можна додати не більше %d композицій. Видаліть частину композицій зі списку та спробуйте ще раз.</item>
+        <item quantity="many">До списку обраного можна додати не більше %d композицій. Видаліть частину композицій зі списку та спробуйте ще раз.</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">Папок: %d</item>
+        <item quantity="one">1 папка</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Видалити з телефону папки (%d) і всі композиції, що в них містяться?</item>
+        <item quantity="one">Видалити з телефону 1 папку та всі композиції, що в ній містяться?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Видалити всі композиції цих жанрів?</item>
+        <item quantity="one">Видалити всі композиції цього жанру?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">Також буде видалено %d прихованої папки.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Також буде видалено %d приховану папку.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Також буде видалено %d приховані папки.</item>
+        <item quantity="many">Також буде видалено %d прихованих папок.</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">Відновлено %d композиції.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Відновлено %d композицію.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Відновлено %d композиції.</item>
+        <item quantity="many">Відновлено %d композицій.</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Видалити %d об’єкти(-ів)?</item>
+        <item quantity="one">Видалити 1 об’єкт?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Експортовано %d списку відтворення.</item>
+        <item quantity="one">Експортовано %d список відтворення.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Імпортовано %d списку відтворення.</item>
+        <item quantity="one">Імпортовано %d список відтворення.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Неможливо вибрати більше %d списку відтворення.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо вибрати більше %d списку відтворення.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо вибрати більше %d списків відтворення.</item>
+        <item quantity="many">Неможливо вибрати більше %d списків відтворення.</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Видалити декілька списків відтворення (%d)?</item>
+        <item quantity="one">Видалити 1 список відтворення?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">записів: %d</item>
+        <item quantity="one">1 запис</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">До черги додано %d записи (-ів).</item>
+        <item quantity="one">До черги додано %d записи (-ів).</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Видалити декілька композицій (%d)?</item>
+        <item quantity="one">Видалити 1 композицію?</item>
+    </plurals>
+</resources>

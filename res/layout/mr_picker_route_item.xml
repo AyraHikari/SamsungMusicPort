@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mr_picker_route_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff25272b" android:id="@id/mr_picker_route_name" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@drawable/mu_ripple_button" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:id="@id/text1" android:background="@null" android:paddingEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/switch_button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:maxFontLevel="large" style="@style/Dialog.SingleLineItem" />
+    <android.support.v7.widget.SwitchCompat android:id="@id/switch_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/winset_dialog_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/text1" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

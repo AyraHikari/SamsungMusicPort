@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="17.0sp" android:textColor="@color/mu_main_text" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="@dimen/browse_category_height" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/browse_list_start_space" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:maxFontLevel="large" style="@style/Font.Roboto.Regular" />
+    <ImageView android:id="@id/header_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/store_list_more_btn" android:tint="@color/mu_main_text" android:layout_marginStart="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/header" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

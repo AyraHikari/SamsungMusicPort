@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/text_guideline_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/company_info_group_space_top_kt" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/search_guide_text_margin_top" android:text="@string/local_search_guide_text" app:layout_constraintBottom_toTopOf="@id/company_info_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_guideline_top" style="@style/Font.Roboto.Regular.NoItem.Sub" />
+        <include android:id="@id/company_info_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mu_list_spacing_bottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/company_information" />
+        <View android:id="@id/touch_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

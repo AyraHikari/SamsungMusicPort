@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ViewStub android:id="@id/no_network_view_stub" android:layout="@layout/no_network_view_stub" android:inflatedId="@id/no_network_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <ViewStub android:id="@id/no_network_popup_view_stub" android:layout="@layout/no_network_popup_stub" android:inflatedId="@id/no_network_popup_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/list_loading_container" />
+</RelativeLayout>

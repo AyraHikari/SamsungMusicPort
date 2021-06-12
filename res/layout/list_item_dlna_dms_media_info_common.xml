@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_list_item_height" android:paddingStart="@dimen/dialog_list_item_padding_horizontal" android:paddingEnd="@dimen/dialog_list_item_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/details_type" android:singleLine="true" style="@style/Font.Roboto.Regular.DialogListItemMainText" />
+    <TextView android:ellipsize="end" android:id="@id/details_info" android:singleLine="true" style="@style/Font.Roboto.Regular.DialogListItemSubText" />
+</LinearLayout>

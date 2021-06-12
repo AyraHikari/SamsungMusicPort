@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_cancel" android:title="@string/cancel" app:contentDescription="@string/cancel" />
+    <item android:id="@id/action_save" android:title="@string/milk_edit_station_actionbar_menu_save" app:contentDescription="@string/milk_edit_station_actionbar_menu_save" />
+</menu>

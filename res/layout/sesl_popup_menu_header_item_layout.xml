@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/sesl_context_menu_title_top_padding" android:paddingBottom="@dimen/sesl_context_menu_title_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/sesl_popup_menu_item_min_width" android:paddingStart="@dimen/sesl_context_menu_title_start_padding" android:paddingEnd="@dimen/sesl_context_menu_title_end_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearancePopupMenuHeader" android:layout_gravity="center_vertical" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" />
+</FrameLayout>

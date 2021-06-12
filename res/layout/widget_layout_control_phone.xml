@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/widget_control_common" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_control_shuffle_btn_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/widget_control_shuffle_btn" android:background="@drawable/ripple_full_player_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/widget_control_button_size" android:layout_height="@dimen/widget_control_button_size">
+            <ImageView android:layout_gravity="center" android:id="@id/widget_control_shuffle_icon" android:duplicateParentState="true" android:layout_width="@dimen/widget_control_button_image_size" android:layout_height="@dimen/widget_control_button_image_size" android:src="@drawable/widget_button_bitmap_shuffle" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/prev_btn" android:background="@drawable/ripple_full_player_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/widget_control_button_size" android:layout_height="@dimen/widget_control_button_size">
+            <ImageView android:layout_gravity="center" android:id="@id/prev_icon" android:duplicateParentState="true" android:layout_width="@dimen/widget_control_button_image_size" android:layout_height="@dimen/widget_control_button_image_size" android:src="@drawable/widget_button_bitmap_prev" android:contentDescription="@string/tts_previous" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/play_pause_btn" android:background="@drawable/ripple_full_player_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/widget_control_button_size" android:layout_height="@dimen/widget_control_button_size">
+            <ImageView android:layout_gravity="center" android:id="@id/play_pause_icon" android:duplicateParentState="true" android:layout_width="@dimen/widget_control_button_image_size" android:layout_height="@dimen/widget_control_button_image_size" android:src="@drawable/widget_button_bitmap_play" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/next_btn" android:background="@drawable/ripple_full_player_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/widget_control_button_size" android:layout_height="@dimen/widget_control_button_size">
+            <ImageView android:layout_gravity="center" android:id="@id/next_icon" android:duplicateParentState="true" android:layout_width="@dimen/widget_control_button_image_size" android:layout_height="@dimen/widget_control_button_image_size" android:src="@drawable/widget_button_bitmap_next" android:contentDescription="@string/tts_next" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/widget_control_repeat_btn_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:id="@id/widget_control_repeat_btn" android:background="@drawable/ripple_full_player_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/widget_control_button_size" android:layout_height="@dimen/widget_control_button_size">
+            <ImageView android:layout_gravity="center" android:id="@id/widget_control_repeat_icon" android:duplicateParentState="true" android:layout_width="@dimen/widget_control_button_image_size" android:layout_height="@dimen/widget_control_button_image_size" android:src="@drawable/widget_button_bitmap_repeat" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

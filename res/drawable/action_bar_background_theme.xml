@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/action_bar_background_mmapp" />
+        </shape>
+    </item>
+    <item android:left="-2.0dip" android:top="-2.0dip" android:right="-2.0dip">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="@dimen/divider_action_bar_width" android:color="@color/divider_action_bar" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/for_u_button" android:background="@drawable/full_player_recommend_button_background" android:visibility="gone" android:layout_width="@dimen/recommended_for_u_size" android:layout_height="@dimen/recommended_for_u_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/for_u_flash" android:padding="1.0px" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/gradient_cover" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/for_u_text" android:visibility="gone" android:layout_width="@dimen/recommended_for_u_text_width" android:layout_height="@dimen/recommended_for_u_text_height" android:src="@drawable/music_ic_foryou" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

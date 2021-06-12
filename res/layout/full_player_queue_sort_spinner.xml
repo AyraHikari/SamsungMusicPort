@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/spinner_height_winset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicSpinner android:gravity="start" android:layout_gravity="end|center" android:id="@id/spinner" android:background="@drawable/mu_ripple_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dropdown" />
+</FrameLayout>

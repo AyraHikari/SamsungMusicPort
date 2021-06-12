@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_fit_top" style="@style/Toolbar" />
+    <com.samsung.android.app.music.widget.MusicSubTabLayout android:id="@id/purchased_track_sub_tab" android:focusable="true" android:scrollbars="none" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" style="@style/SubTab.Container" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottom_bar_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/purchased_track_sub_tab" />
+    <LinearLayout android:id="@id/bottom_bar_container" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/BottomBar.Container" />
+    <android.support.constraint.Guideline android:id="@id/guideline_fit_top" style="@style/Guideline.Fit.Top" />
+</android.support.constraint.ConstraintLayout>

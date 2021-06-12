@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_body_text_padding_top_winset_kt" android:layout_marginBottom="9.0dip" style="@style/Font.Roboto.Regular.DialogListItemMainText" />
+    <include android:id="@id/item_local" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_multi_choice_item_2_kt" />
+    <include android:id="@id/item_server" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/dialog_multi_choice_item_2_kt" />
+</LinearLayout>

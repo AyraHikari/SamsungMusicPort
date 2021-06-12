@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_fit_top" style="@style/Toolbar" />
+    <include android:id="@id/progressContainer" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/mu_actionbar_space_bottom" app:layout_constraintBottom_toBottomOf="@id/listContainer" app:layout_constraintEnd_toEndOf="@id/listContainer" app:layout_constraintStart_toStartOf="@id/listContainer" app:layout_constraintTop_toTopOf="@id/listContainer" layout="@layout/mu_progress_container" />
+    <include android:id="@id/listContainer" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/mu_actionbar_space_bottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" layout="@layout/mu_list_container" />
+    <android.support.constraint.Guideline android:id="@id/guideline_fit_top" style="@style/Guideline.Fit.Top" />
+</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>

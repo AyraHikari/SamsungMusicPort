@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.musiclibrary.ui.widget.SlidingTabLayout android:id="@id/sliding_tab_layout" android:focusable="false" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="@dimen/winset_tab_height" android:fillViewport="true" android:elevation="@dimen/winset_tab_elevation" />
+    <android.support.v4.view.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

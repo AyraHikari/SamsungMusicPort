@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/milk_artist_detail_tab_text_size" android:textStyle="bold" android:textColor="@drawable/milk_store_tab_selector" android:ellipsize="end" android:gravity="center" android:id="@id/tab_title" android:background="@drawable/ripple_rect_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:includeFontPadding="false" android:textAllCaps="true" android:fontFamily="sec-roboto-light" />
+</RelativeLayout>

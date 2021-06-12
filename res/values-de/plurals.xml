@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d Alben</item>
+        <item quantity="one">%d Album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Alben</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Titel</item>
+        <item quantity="one">Titel</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d Titel zu Favoriten hinzugefügt. Titel, die bereits zu den Favoriten gehören, wurden nicht hinzugefügt.</item>
+        <item quantity="one">%d Titel zu Favoriten hinzugefügt. Titel, die bereits zu den Favoriten gehören, wurden nicht hinzugefügt.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d Titel</item>
+        <item quantity="one">%d Titel</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d Titel aus Favoriten entfernt.</item>
+        <item quantity="one">%d Titel aus Favoriten entfernt.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d Titel zu den Favoriten hinzugefügt.</item>
+        <item quantity="one">%d Titel zu den Favoriten hinzugefügt.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Sie können nur bis zu %d Titel aus den Empfehlungen entfernen. Zeigen Sie die entfernten Titel an, wählen Sie aus, welche Sie wiederherstellen möchten und versuchen Sie es erneut.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sie können nur bis zu %d Titel aus den Empfehlungen entfernen. Zeigen Sie die entfernten Titel an, wählen Sie aus, welchen Sie wiederherstellen möchten und versuchen Sie es erneut.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Tippen Sie auf das Optionsfeld „Wiedergabe“, um jeden Monat %d kostenlose Titel zu hören.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tippen Sie auf das Optionsfeld „Wiedergabe“, um jeden Monat %d kostenlosen Titel zu hören.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Mehr als %d Künstler können nicht ausgewählt werden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mehr als %d Künstler kann nicht ausgewählt werden.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Mehr als %d Genres können nicht ausgewählt werden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mehr als %d Genre kann nicht ausgewählt werden.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Mehr als %d Titel können nicht ausgewählt werden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mehr als %d Titel kann nicht ausgewählt werden.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d Sekunden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Sekunde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Sie können %1$s %2$d mal verwenden</item>
+        <item quantity="one">Sie können %s 1 mal verwenden</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d Titel können aufgrund eines Problems mit dem Urheberrecht nicht mit Premium-Tickets gekauft werden. Sie können sie einzeln kaufen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Titel kann aufgrund eines Problems mit dem Urheberrecht nicht mit Premium-Tickets gekauft werden. Sie können ihn einzeln kaufen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d Titel werden von Ihren verfügbaren Titeln verwendet.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Titel wird von Ihren verfügbaren Titeln verwendet.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Warten auf Download von %d Liedern…</item>
+        <item quantity="one">Es wird auf den Download von 1 Lied gewartet…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">%d Alben und alle Titel darin von Ihrem Telefon löschen?</item>
+        <item quantity="one">1 Album und alle Titel darin von Ihrem Telefon löschen?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Alle Titel von diesen Künstlern löschen?</item>
+        <item quantity="one">Alle Titel dieses Künstlers löschen?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Alle Titel von diesen Komponisten löschen?</item>
+        <item quantity="one">Alle Titel dieses Komponisten löschen?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Die ausgewählten Titel löschen?</item>
+        <item quantity="one">Den ausgewählten Titel löschen?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d Titel werden gekauft. Wenn Sie nicht genug verfügbare Titel haben, können diese Titel nicht gekauft werden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Titel wird gekauft. Wenn Sie nicht genug verfügbare Titel haben, können diese Titel nicht gekauft werden.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Die ausgewählten Titel kaufen?</item>
+        <item quantity="one">Den ausgewählten Titel kaufen?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Sie haben diese Lieder bereits gekauft. Sie können gekaufte Lieder jederzeit erneut herunterladen.</item>
+        <item quantity="one">Sie haben dieses Lied bereits gekauft. Sie können gekaufte Lieder jederzeit erneut herunterladen.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Titel bereits gekauft</item>
+        <item quantity="one">Titel bereits gekauft</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Sie können nur %d bereitgestellte Wiedergabelisten als Favoriten hinzufügen. Entfernen Sie einige bereitgestellte Wiedergabelisten aus der Registerkarte „Favoriten“.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sie können nur %d bereitgestellte Wiedergabeliste als Favorit hinzufügen. Entfernen Sie einige bereitgestellte Wiedergabelisten aus der Registerkarte „Favoriten“.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Sie können nur %d Streaming-Titel als Lieblingstitel hinzufügen. Entfernen Sie einige Streaming-Titel aus den Lieblingstiteln und versuchen Sie es erneut.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sie können nur %d Streaming-Titel als einen Lieblingstitel hinzufügen. Entfernen Sie einige Streaming-Titel aus den Lieblingstiteln und versuchen Sie es erneut.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Sie können nur %d Titel als Lieblingstitel hinzufügen. Entfernen Sie einige Titel aus den Lieblingstiteln und versuchen Sie es erneut.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sie können nur %d Titel als einen Lieblingstitel hinzufügen. Entfernen Sie einige Titel aus den Lieblingstiteln und versuchen Sie es erneut.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d Ordner</item>
+        <item quantity="one">1 Ordner</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">%d Ordner und alle Titel darin von Ihrem Telefon löschen?</item>
+        <item quantity="one">1 Ordner und alle Titel darin von Ihrem Telefon löschen?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Alle Titel aus diesen Genres löschen?</item>
+        <item quantity="one">Alle Titel dieses Genres löschen?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d verborgene Ordner werden ebenfalls gelöscht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d verborgener Ordner wird ebenfalls gelöscht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d Titel wiederhergestellt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d Titel wiederhergestellt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">%d Elemente löschen?</item>
+        <item quantity="one">1 Element löschen?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d Wiedergabelisten exportiert.</item>
+        <item quantity="one">%d Wiedergabeliste exportiert.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d Wiedergabelisten importiert.</item>
+        <item quantity="one">%d Wiedergabeliste importiert.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Mehr als %d Wiedergabelisten können nicht ausgewählt werden.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mehr als %d Wiedergabeliste kann nicht ausgewählt werden.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">%d Wiedergabelisten löschen?</item>
+        <item quantity="one">1 Wiedergabeliste löschen?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d Titel</item>
+        <item quantity="one">1 Titel</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d Titel zur Titelliste hinzugefügt.</item>
+        <item quantity="one">%d Titel zur Titelliste hinzugefügt.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">%d Titel löschen?</item>
+        <item quantity="one">1 Titel löschen?</item>
+    </plurals>
+</resources>

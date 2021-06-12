@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/mu_list_item_text1_winset" android:textColor="@color/mu_main_text" android:id="@id/my_info_clickable_item" android:background="@color/mu_content_area" android:paddingTop="@dimen/my_info_item_text_padding_vertical" android:paddingBottom="@dimen/my_info_item_text_padding_vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:paddingStart="@dimen/my_info_item_text_padding_horizontal" android:paddingEnd="@dimen/my_info_item_text_padding_horizontal" style="@style/Font.Roboto"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

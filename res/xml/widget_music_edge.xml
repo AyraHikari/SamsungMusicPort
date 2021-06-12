@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cocktail-provider category="normal" cocktailWidth="550" label="@string/edge_brand_name" launchOnClick="com.samsung.android.app.music.ActivityLauncher" permitVisibilityChanged="true" previewImage="@drawable/edge_img_panel_music" />

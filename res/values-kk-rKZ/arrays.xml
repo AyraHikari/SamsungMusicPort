@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="index_string_array">
+        <item>АӘБВГҒДЕЁЖЗИЙКҚЛМНҢОӨПРСТУҰҮФХҺЦЧШЩЪЫІЬЭЮЯ</item>
+        <item>ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+    </string-array>
+</resources>

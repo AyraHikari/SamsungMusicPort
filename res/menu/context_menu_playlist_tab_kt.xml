@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_play_bottom_bar" android:title="@string/menu_play" />
+    <item android:id="@id/add_to_bottom_bar" android:title="@string/add" />
+    <item android:id="@id/menu_bottom_bar_share" android:title="@string/menu_share" />
+    <item android:id="@id/menu_delete_bottom_bar" android:title="@string/menu_delete" />
+    <item android:id="@id/menu_bottom_bar_rename" android:title="@string/menu_rename" />
+    <item android:id="@id/menu_add_shortcut_on_home_screen" android:title="@string/add_shortcut_on_home_screen" />
+</menu>

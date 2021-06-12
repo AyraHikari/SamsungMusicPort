@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/thumbnail_stroke" android:background="@drawable/mu_grid_item_thumbnail_stroke" android:layout_width="167.0dip" android:layout_height="125.0dip" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/thumbnail" style="@style/GridItem.Thumbnail" />
+    <ImageView android:id="@id/play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:src="@drawable/music_library_video_ic_play" android:scaleType="centerCrop" android:layout_marginEnd="23.0dip" app:layout_constraintBottom_toBottomOf="@id/thumbnail_stroke" app:layout_constraintEnd_toEndOf="parent" />
+    <TextView android:id="@id/text1" android:visibility="visible" android:layout_marginTop="@dimen/mu_grid_item_text_margin_top" app:layout_constraintEnd_toEndOf="@id/thumbnail_stroke" app:layout_constraintStart_toStartOf="@id/thumbnail_stroke" app:layout_constraintTop_toBottomOf="@id/thumbnail_stroke" style="@style/GridItem.Text.Line1" />
+    <TextView android:id="@id/text2" android:visibility="gone" app:layout_constraintEnd_toStartOf="@id/divider" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="@id/thumbnail_stroke" app:layout_constraintTop_toBottomOf="@id/text1" app:layout_constraintWidth_default="wrap" app:layout_goneMarginTop="@dimen/mu_grid_item_text_margin_top" style="@style/GridItem.Text.Line2" />
+</android.support.constraint.ConstraintLayout>

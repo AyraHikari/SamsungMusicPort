@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.core.meta.lyric.view.LyricsView android:id="@id/lyrics_layout_root" android:visibility="gone" android:fadingEdgeLength="@dimen/milk_lyric_fading_edge_length" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/full_player_lyric_elevation" music:anchorList="@id/anchorList"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:music="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/lyrics_panel_header_common" />
+    <FrameLayout android:id="@id/lyrics_main" android:paddingTop="@dimen/milk_lyric_padding_vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lyric_header">
+        <android.support.v7.widget.RecyclerView android:id="@id/anchorList" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/loading_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="0.5" android:indeterminateTint="@color/white_opacity_100" style="?android:progressBarStyleLarge" />
+</com.samsung.android.app.musiclibrary.core.meta.lyric.view.LyricsView>

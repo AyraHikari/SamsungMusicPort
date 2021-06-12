@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_01" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_02" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_03" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_04" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_05" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_06" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_07" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_all_to_once_08" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_01" />
+</animation-list>

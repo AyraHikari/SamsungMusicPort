@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/messenger_button_send_round_shadow" />
+    <item android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="2.0dip">
+        <selector>
+            <item android:state_pressed="true">
+                <shape android:shape="oval">
+                    <solid android:color="#ff1f8eff" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#ff0084ff" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="2.0dip">
+        <bitmap android:gravity="center" android:src="@drawable/messenger_bubble_large_white" />
+    </item>
+</layer-list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="ring" android:useLevel="false" android:innerRadius="@dimen/sesl_color_picker_gradient_wheel_cursor_inner_radius" android:thickness="@dimen/sesl_color_picker_gradient_wheel_cursor_out_stroke_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/sesl_color_picker_cursor_stroke_color" />
+</shape>

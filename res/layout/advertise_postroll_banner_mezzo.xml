@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black_opacity_25" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/ad_postroll_scroll_view" android:background="@drawable/advertise_postroll_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/ad_full_banner_width" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:background="@color/advertise_common_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.samsung.android.app.music.advertise.AdBannerEnding android:id="@id/adView" android:layout_width="@dimen/ad_full_banner_width" android:layout_height="@dimen/ad_full_banner_height" />
+                </FrameLayout>
+            </RelativeLayout>
+            <include layout="@layout/advertise_postroll_basic_bottom" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.music.milk.store.search.base.CanDisableRelativeLayout android:id="@id/tab_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/milk_store_fragment_tab_host" />
+        <View android:background="@color/milk_tab_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/tabs" />
+    </com.samsung.android.app.music.milk.store.search.base.CanDisableRelativeLayout>
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_view_layout" />
+</RelativeLayout>

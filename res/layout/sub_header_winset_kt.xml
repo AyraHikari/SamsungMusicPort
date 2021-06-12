@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sub_header_text_size_kt" android:textColor="@color/sub_header_text_color_kt" android:id="@id/sub_title" android:paddingTop="@dimen/sub_header_text_padding_top_kt" android:paddingBottom="@dimen/sub_header_text_padding_bottom_kt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" android:paddingStart="@dimen/sub_header_text_padding_start_kt" style="@style/Font.Roboto.Condensed.Bold" />
+    <View android:id="@id/divider" android:background="@color/sub_header_divider_kt" android:layout_width="fill_parent" android:layout_height="@dimen/sub_header_divider_height_kt" android:layout_marginStart="@dimen/sub_header_divider_margin_start_kt" android:layout_marginEnd="@dimen/sub_header_divider_margin_end_kt" />
+</LinearLayout>

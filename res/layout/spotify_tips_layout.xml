@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/dark_gray_opacity_100" android:gravity="center_vertical" android:id="@id/text" android:background="@drawable/pop_bubble_bg_body" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="@dimen/spotify_tip_popup_width" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <ImageView android:id="@id/tip_top_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_bubble_top_arrow" />
+</FrameLayout>

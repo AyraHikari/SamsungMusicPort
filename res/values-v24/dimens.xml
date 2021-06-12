@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="music_core_ble_select_tv_icon_padding">8.0dip</dimen>
+    <dimen name="play_speed_preference_item_padding_vertical">13.0dip</dimen>
+    <dimen name="mu_list_item_tag_long_text_size">8.0dip</dimen>
+    <dimen name="music_core_ble_dialog_body_padding_bottom">24.0dip</dimen>
+    <dimen name="music_core_ble_dialog_body_padding_left">24.0dip</dimen>
+    <dimen name="music_core_ble_dialog_body_padding_right">24.0dip</dimen>
+    <dimen name="music_core_ble_dialog_body_padding_top">22.0dip</dimen>
+    <dimen name="quick_panel_album_art">96.0dip</dimen>
+    <dimen name="quick_panel_album_art_start_margin">6.0dip</dimen>
+    <dimen name="quick_panel_artist">13.0dip</dimen>
+    <dimen name="quick_panel_artist_margin_right">126.0dip</dimen>
+    <dimen name="quick_panel_artist_top">4.0dip</dimen>
+    <dimen name="quick_panel_brand_height_min">24.0dip</dimen>
+    <dimen name="quick_panel_brand_name">12.0dip</dimen>
+    <dimen name="quick_panel_close_button_image_size">26.0dip</dimen>
+    <dimen name="quick_panel_close_button_margin_top">6.0dip</dimen>
+    <dimen name="quick_panel_close_button_size">38.0dip</dimen>
+    <dimen name="quick_panel_content_margin_bottom">14.0dip</dimen>
+    <dimen name="quick_panel_content_margin_top">13.0dip</dimen>
+    <dimen name="quick_panel_content_min_height">74.0dip</dimen>
+    <dimen name="quick_panel_content_start">24.0dip</dimen>
+    <dimen name="quick_panel_control_button_between">2.0dip</dimen>
+    <dimen name="quick_panel_control_button_image_size">26.0dip</dimen>
+    <dimen name="quick_panel_control_button_margin_bottom">4.0dip</dimen>
+    <dimen name="quick_panel_control_button_size">38.0dip</dimen>
+    <dimen name="quick_panel_cp_icon_background_radius">10.0dip</dimen>
+    <dimen name="quick_panel_height">96.0dip</dimen>
+    <dimen name="quick_panel_title">15.0dip</dimen>
+    <dimen name="quick_panel_title_margin_end">52.0dip</dimen>
+    <dimen name="quick_panel_brand_margin_top">7.0dip</dimen>
+</resources>

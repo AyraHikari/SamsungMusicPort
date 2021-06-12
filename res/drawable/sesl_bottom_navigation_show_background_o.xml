@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <ripple android:color="@color/sesl_bottom_navigation_ripple_light">
+            <item android:id="@android:id/mask" android:drawable="@drawable/sesl_bottom_navigation_ripple_mask" />
+        </ripple>
+    </item>
+    <item android:drawable="@drawable/sesl_bottom_navigation_show_background_shape_o" />
+</layer-list>

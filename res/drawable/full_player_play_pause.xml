@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/full_player_pause_to_play" android:state_activated="true" />
+    <item android:drawable="@drawable/full_player_play_to_pause" />
+</selector>

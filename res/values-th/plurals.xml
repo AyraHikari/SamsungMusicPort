@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d ​อัลบั้ม</item>
+        <item quantity="one">%d อัลบั้ม</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">อัลบั้ม</item>
+        <item quantity="one">อัลบั้ม</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">แทร็ก</item>
+        <item quantity="one">แทร็ก</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">เพิ่ม %d แทร็กไปยังรายการโปรดแล้วไม่ได้เพิ่มแทร็กที่อยู่ในรายการโปรดอยู่แล้ว</item>
+        <item quantity="one">เพิ่ม %d แทร็คไปยัง รายการโปรด แล้ว ไม่ได้เพิ่มแทร็คที่อยู่ในรายการโปรดอยู่แล้ว</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d ​แทร็ก</item>
+        <item quantity="one">%d แทร็ก</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">ลบ %d แทร็กออกจากรายการโปรดแล้ว</item>
+        <item quantity="one">ลบ %d แทร็คออกจาก รายการโปรด แล้ว</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">เพิ่ม %d แทร็กไปยังรายการโปรดแล้ว</item>
+        <item quantity="one">เพิ่ม %d แทร็คไปยัง รายการโปรด แล้ว</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">คุณสามารถลบได้สูงสุด %d แทร็คจากรายการที่แนะนำเท่านั้น ดูแทร็คที่ถูกลบ เลือกบางแทร็คเพื่อกู้คืนแล้วลองอีกครั้ง</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">แตะปุ่ม เล่นวิทยุ เพื่อฟัง %d แทร็คฟรีทุกเดือน</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">ไม่สามารถเลือกได้มากกว่า %d ศิลปิน</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">ไม่สามารถเลือกมากกว่า %d ประเภท</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">ไม่สามารถเลือกได้มากกว่า %d แทร็ค</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d วินาที</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">คุณ​สามารถ​ใช้ %1$s %2$d ​ครั้ง</item>
+        <item quantity="one">คุณ​สามารถ​ใช้ %s 1 ​ครั้ง</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">ไม่สามารถซื้อ %d แทร็คด้วยตั๋วพรีเมี่ยมได้เนื่องจากปัญหาด้านลิขสิทธิ์ แต่คุณสามารถซื้อเพลงแยกได้</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d แทร็คจะถูกใช้จากแทร็คที่ว่างของคุณ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">กำลังรอดาวน์โหลด %d เพลง…</item>
+        <item quantity="one">กำลังรอดาวน์โหลด 1 เพลง…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">ลบ %d อัลบั้มและแทร็คทั้งหมดในนั้นจากโทรศัพท์ของคุณหรือไม่</item>
+        <item quantity="one">ลบ 1 อัลบั้มและแทร็คทั้งหมดในนั้นจากโทรศัพท์ของคุณหรือไม่</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">ลบแทร็กทั้งหมดโดยศิลปินเหล่านี้หรือไม่</item>
+        <item quantity="one">ลบแทร็กทั้งหมดโดยศิลปินนี้หรือไม่</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">ลบแทร็กทั้งหมดโดยผู้แต่งเหล่านี้หรือไม่</item>
+        <item quantity="one">ลบแทร็กทั้งหมดโดยผู้แต่งนี้หรือไม่</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">ลบแทร็คที่เลือกหรือไม่</item>
+        <item quantity="one">ลบแทร็คที่เลือกหรือไม่</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d แทร็คจะถูกซื้อ หากคุณมีแทร็คที่เหลือไม่เพียงพอ คุณจะซื้อแทร็คเหล่านั้นไม่ได้</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">ซื้อแทร็คที่เลือกหรือไม่</item>
+        <item quantity="one">ซื้อแทร็คที่เลือกหรือไม่</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">คุณซื้อเพลงเหล่านี้ไปแล้ว คุณสามารถดาวน์โหลดเพลงที่ซื้อแล้วได้อีกครั้งทุกเมื่อ</item>
+        <item quantity="one">คุณซื้อเพลงนี้ไปแล้ว คุณสามารถดาวน์โหลดเพลงที่ซื้อแล้วได้อีกครั้งทุกเมื่อ</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">ซื้อแทร็คไปแล้ว</item>
+        <item quantity="one">ซื้อแทร็คไปแล้ว</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">คุณสามารถเพิ่ม %d รายการเพลงที่ได้รับเป็นรายการเพลงโปรดได้ โปรดลบบางรายการเพลงที่ได้รับจากแท็บ รายการโปรด</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">คุณสามารถเพิ่มได้เพียง %d แทร็คที่สตรีมเป็นแทร็คโปรดได้เท่านั้น โปรดลบบางแทร็คที่สตรีมจากแทร็คโปรดของคุณแล้วลองอีกครั้ง</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">คุณสามารถเพิ่มได้เพียง %d แทร็คเป็นแทร็คโปรดได้เท่านั้น โปรดลบบางแทร็คจากแทร็คโปรดของคุณแล้วลองอีกครั้ง</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d ​โฟลเดอร์</item>
+        <item quantity="one">1 ​โฟลเดอร์</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">ลบ %d โฟลเดอร์และแทร็คทั้งหมดในนั้นจากโทรศัพท์ของคุณหรือไม่</item>
+        <item quantity="one">ลบ 1 โฟลเดอร์และแทร็คทั้งหมดในนั้นจากโทรศัพท์ของคุณหรือไม่</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">ลบแทร็กทั้งหมดในประเภทเหล่านี้หรือไม่</item>
+        <item quantity="one">ลบแทร็กทั้งหมดในประเภทนี้หรือไม่</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d โฟลเดอร์ที่ซ่อนจะถูกลบเช่นกัน</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">กู้คืน %d แทร็คแล้ว</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">ลบ %d รายการหรือไม่</item>
+        <item quantity="one">ต้องการลบ 1 รายการหรือไม่</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">ส่งออกแล้ว %d รายการเพลง</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">นำเข้าแล้ว %d รายการเพลง</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">ไม่สามารถเลือกได้มากกว่า %d รายการเพลง</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">ลบ %d รายการเพลงหรือไม่</item>
+        <item quantity="one">ลบ 1 รายการเพลงหรือไม่</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d ​แทร็ก</item>
+        <item quantity="one">1 ​แทร็ก</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">เพิ่ม %d แทร็คไปยังคิวแล้ว</item>
+        <item quantity="one">เพิ่ม %d แทร็คไปยังคิวแล้ว</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">ลบ %d แทร็กหรือไม่</item>
+        <item quantity="one">ลบ 1 แทร็คหรือไม่</item>
+    </plurals>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:clipIds="thumbnail" app:clickableId="thumbnail"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/thumbnail_stroke" android:importantForAccessibility="no" app:layout_constraintDimensionRatio="w, 0.75:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/GridItem.ThumbnailStoke" />' <ImageView android:id="@id/thumbnail" style="@style/GridItem.Thumbnail" />
+    <View android:id="@id/mask" android:visibility="gone" style="@style/GridItem.Thumbnail.Dim" />
+    <ImageView android:id="@id/play" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/music_library_video_ic_play" android:layout_marginEnd="20.0dip" app:layout_constraintBottom_toBottomOf="@id/thumbnail_stroke" app:layout_constraintEnd_toEndOf="@id/thumbnail_stroke" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="@dimen/browse_grid_item_text_layout_height" app:layout_constraintEnd_toEndOf="@id/thumbnail_stroke" app:layout_constraintStart_toStartOf="@id/thumbnail_stroke" app:layout_constraintTop_toBottomOf="@id/thumbnail_stroke">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/browse_mu_grid_item_text_margin_top">
+            <TextView android:layout_gravity="top" android:id="@id/text_explicit" android:layout_marginRight="@dimen/mu_list_item_explicit_space_end" style="@style/ListItem.Explicit" />
+            <TextView android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" style="@style/GridItem.Text.Line1" />
+        </LinearLayout>
+        <TextView android:id="@id/text2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GridItem.Text.Line2" />
+    </LinearLayout>
+</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>

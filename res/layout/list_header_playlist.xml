@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="27.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" app:showButtonIds="show_button_stub"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicSpinner android:id="@id/spinner" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Header.Filter" />
+    <TextView android:id="@id/create_playlist_button" android:visibility="gone" android:text="@string/menu_create_playlist" android:contentDescription="@string/menu_create_playlist" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Header.Button" />
+    <ViewStub android:id="@id/show_button_stub" android:layout="@layout/mu_show_button_stub" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/create_playlist_button" app:layout_constraintEnd_toEndOf="@id/create_playlist_button" app:layout_constraintStart_toStartOf="@id/create_playlist_button" app:layout_constraintTop_toTopOf="@id/create_playlist_button" />
+</android.support.constraint.ConstraintLayout>

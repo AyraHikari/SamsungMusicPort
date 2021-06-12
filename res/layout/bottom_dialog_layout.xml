@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/bottom_dialog_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/bottom_negative" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/bottom_dialog_close_btn_view_size" android:layout_height="@dimen/bottom_dialog_close_btn_view_size" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center" android:id="@id/bottom_negative_image" android:background="@drawable/unbounded_ripple_light" android:layout_width="@dimen/bottom_dialog_close_btn_size" android:layout_height="@dimen/bottom_dialog_close_btn_size" android:scaleType="fitXY" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bottom_dialog_text_space_vertical" android:layout_marginStart="@dimen/bottom_dialog_close_btn_view_size" android:layout_marginEnd="@dimen/bottom_dialog_close_btn_view_size">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bottom_dialog_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/bottom_dialog_main_text_space_interval_horizontal" />
+            <TextView android:textSize="@dimen/bottom_dialog_main_text" android:textColor="@color/blur_text" android:id="@id/bottom_dialog_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/bottom_dialog_go_to_text" android:textColor="@color/bottom_dialog_go_to_color" android:gravity="center_vertical" android:id="@id/bottom_positive" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_dialog_go_to_height" />
+    </LinearLayout>
+</RelativeLayout>

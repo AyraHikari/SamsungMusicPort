@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/music_ic_ab_cart" android:id="@id/my_info_basket" android:title="@string/milk_download_basket_menu" app:showAsAction="always" />
+</menu>

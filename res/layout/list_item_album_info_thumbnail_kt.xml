@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/music_player_default_cover" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/gradation_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/album_cover_view_gradient_top_kt" android:src="@drawable/music_library_details_gradation_01" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/album_cover_view_gradient_bottom_kt" android:src="@drawable/music_library_details_gradation_02" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

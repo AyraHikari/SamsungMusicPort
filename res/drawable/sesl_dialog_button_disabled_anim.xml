@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <set>
+            <objectAnimator android:duration="@integer/sesl_dialog_disabled_anim_duration" android:valueTo="?android:disabledAlpha" android:valueType="floatType" android:propertyName="alpha" />
+        </set>
+    </item>
+    <item>
+        <set>
+            <objectAnimator android:duration="@integer/sesl_dialog_disabled_anim_duration" android:valueTo="1" android:valueType="floatType" android:propertyName="alpha" />
+        </set>
+    </item>
+</selector>

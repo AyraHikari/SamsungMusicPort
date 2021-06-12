@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d albums</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albums</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Morceaux</item>
+        <item quantity="one">Morceau</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">"%d morceaux ajoutés aux Favoris. Les morceaux qui se trouvent déjà dans les Favoris n'ont pas été ajoutés."</item>
+        <item quantity="one">"%d morceau a été ajouté aux favoris. Le morceau qui se trouve déjà dans les favoris n'a pas été ajouté."</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d morceaux</item>
+        <item quantity="one">%d morceau</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d morceaux supprimés des Favoris.</item>
+        <item quantity="one">%d morceau a été supprimé des favoris.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d morceaux ont été ajoutés aux favoris.</item>
+        <item quantity="one">%d morceau a été ajouté aux favoris.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">"Vous pouvez uniquement supprimer jusqu'à %d morceaux des recommandations. Affichez les morceaux supprimés, sélectionnez-en à restaurer, puis réessayez."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vous pouvez uniquement supprimer %d morceau des recommandations. Affichez les morceaux supprimés, sélectionnez-en à restaurer, puis réessayez.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Touchez le bouton Mode Radio pour profiter de %d morceaux gratuits chaque mois.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Touchez le bouton Mode Radio pour profiter de %d morceau gratuit chaque mois.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Il est impossible de sélectionner plus de %d artistes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Il est impossible de sélectionner plus de %d artiste.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Il est impossible de sélectionner plus de %d genres.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Il est impossible de sélectionner plus de %d genre.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Il est impossible de sélectionner plus de %d morceaux.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Il est impossible de sélectionner plus de %d morceau.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d secondes</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Vous pouvez utiliser %1$s %2$d fois.</item>
+        <item quantity="one">Vous pouvez utiliser %s 1 fois.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">"%d morceaux ne peuvent pas être achetés avec des tickets premium en raison d'un problème de droits d'auteur. Vous pouvez les acheter individuellement."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d morceau ne peut pas être acheté avec des tickets premium en raison d'un problème de droits d'auteur. Vous pouvez l'acheter individuellement."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d morceaux vont être utilisés parmi vos morceaux disponibles.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d morceau va être utilisé parmi vos morceaux disponibles.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Téléchargement de %d morceaux en attente…</item>
+        <item quantity="one">En attente du téléchargement de 1 morceau…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Supprimer de votre téléphone %d albums et tous les morceaux y figurant ?</item>
+        <item quantity="one">Supprimer de votre téléphone 1 album et tous les morceaux y figurant ?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Supprimer tous les morceaux de ces artistes ?</item>
+        <item quantity="one">Supprimer tous les morceaux de cet artiste ?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Supprimer tous les morceaux de ces compositeurs ?</item>
+        <item quantity="one">Supprimer tous les morceaux de ce compositeur ?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Supprimer les morceaux sélectionnés ?</item>
+        <item quantity="one">Supprimer le morceau sélectionné ?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">"%d morceaux vont être achetés. Si vous n'avez pas assez de morceaux disponibles, ces morceaux ne peuvent pas être achetés."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d morceau va être acheté. Si vous n'avez pas assez de morceaux disponibles, ces morceaux ne peuvent pas être achetés."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Acheter les morceaux sélectionnés ?</item>
+        <item quantity="one">Acheter le morceau sélectionné ?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Vous avez déjà acheté ces morceaux. Vous pouvez télécharger à nouveau des morceaux achetés quand vous le voulez.</item>
+        <item quantity="one">Vous avez déjà acheté ce morceau. Vous pouvez télécharger à nouveau des morceaux achetés quand vous le voulez.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Morceaux déjà achetés</item>
+        <item quantity="one">Morceau déjà acheté</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">"Vous pouvez uniquement ajouter %d listes de lecture fournies en tant que favoris. Supprimez des listes de lecture fournies de l'onglet Favoris."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Vous pouvez uniquement ajouter %d liste de lecture fournie en tant que favori. Supprimez des listes de lecture fournies de l'onglet Favoris."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Vous pouvez uniquement ajouter %d morceaux en diffusion comme morceaux favoris. Supprimez des morceaux en diffusion des morceaux favoris, puis réessayez.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vous pouvez uniquement ajouter %d morceau en diffusion comme morceau favori. Supprimez des morceaux en diffusion des morceaux favoris, puis réessayez.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Vous pouvez uniquement ajouter %d morceaux comme morceaux favoris. Supprimez quelques morceaux des morceaux favoris, puis réessayez.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vous pouvez uniquement ajouter %d morceau comme morceau favori. Supprimez quelques morceaux des morceaux favoris, puis réessayez.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d dossiers</item>
+        <item quantity="one">1 dossier</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Supprimer de votre téléphone %d dossiers et tous les morceaux y figurant ?</item>
+        <item quantity="one">Supprimer de votre téléphone 1 dossier et tous les morceaux y figurant ?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Supprimer tous les morceaux appartenant à ces genres ?</item>
+        <item quantity="one">Supprimer tous les morceaux appartenant à ce genre musical ?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d dossiers masqués seront également supprimés.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dossier masqué sera également supprimé.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d morceaux ont été restaurés.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d morceau a été restauré.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Supprimer %d éléments ?</item>
+        <item quantity="one">Supprimer 1 élément ?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d listes de lecture ont été exportées.</item>
+        <item quantity="one">%d liste de lecture a été exportée.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d listes de lecture ont été importées.</item>
+        <item quantity="one">%d liste de lecture a été importée.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Il est impossible de sélectionner plus de %d listes de lecture.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Il est impossible de sélectionner plus de %d listes de lecture.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Supprimer %d listes de lecture ?</item>
+        <item quantity="one">Supprimer 1 liste de lecture ?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d morceaux</item>
+        <item quantity="one">1 morceau</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d morceaux ajoutés à la file.</item>
+        <item quantity="one">"%d morceau a été ajouté à la file d'attente."</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Supprimer %d morceaux ?</item>
+        <item quantity="one">Supprimer 1 morceau ?</item>
+    </plurals>
+</resources>

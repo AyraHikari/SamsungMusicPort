@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/header_image_layout" android:background="@drawable/browse_thumbnail_rounded_outline_large" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/default_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/thumb_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/horizontal_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/thumb_guide" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/horizontal_guide">
+        <ImageView android:id="@id/thumbnail3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/horizontal_guide" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/thumb_guide" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/thumbnail2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/horizontal_guide" app:layout_constraintEnd_toEndOf="@id/thumb_guide" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/thumbnail1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/thumb_guide" app:layout_constraintTop_toBottomOf="@id/horizontal_guide">
+        <ImageView android:id="@id/thumbnail4" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

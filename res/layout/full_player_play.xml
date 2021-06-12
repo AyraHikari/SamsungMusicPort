@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/play_pause_icon_lt" android:background="@drawable/ripple_full_player_play_pause_button" android:duplicateParentState="true" android:layout_width="@dimen/full_player_play_pause_icon_size" android:layout_height="@dimen/full_player_play_pause_icon_size" android:stateListAnimator="@animator/full_player_button_bounce_effect" app:lottie_fileName="music_player_ic_control_play_to_pause.json" />
+</FrameLayout>

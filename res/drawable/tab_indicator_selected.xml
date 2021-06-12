@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/tw_tab_indicator_mtrl_alpha" android:tint="@color/tab_selected_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

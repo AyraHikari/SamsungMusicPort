@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bitmap_size_middle">125.0dip</dimen>
+    <dimen name="bitmap_size_small">105.0dip</dimen>
+    <dimen name="winset_tab_bottom_divider_height">1.0px</dimen>
+</resources>

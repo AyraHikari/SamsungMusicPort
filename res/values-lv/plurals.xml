@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d albumi</item>
+        <item quantity="one">%d albums</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albumi</item>
+        <item quantity="one">Albums</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Ieraksti</item>
+        <item quantity="one">Atskaņojums</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">Izlasei pievienoti %d ieraksti. Izlasē jau esošie ieraksti netika pievienoti.</item>
+        <item quantity="one">%d ieraksts pievienots izlasei. Izlasē jau esošais ieraksts netika pievienots.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d ieraksti</item>
+        <item quantity="one">%d ieraksts</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d ieraksti ir noņemti no izlases.</item>
+        <item quantity="one">%d ieraksts ir noņemts no izlases.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">Izlasei pievienoti %d ieraksti</item>
+        <item quantity="one">%d ieraksts pievienots izlasei.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">No ieteikumiem var noņemt ne vairāk kā %d ierakstus. Skatiet noņemtos ierakstus, izvēlieties dažus, ko atjaunot, un pēc tam mēģiniet vēlreiz.</item>
+        <item quantity="zero">No ieteikumiem var noņemt ne vairāk kā %d ierakstus. Skatiet noņemtos ierakstus, izvēlieties dažus, ko atjaunot, un pēc tam mēģiniet vēlreiz.</item>
+        <item quantity="one">No ieteikumiem var noņemt ne vairāk kā %d ierakstu. Skatiet noņemtos ierakstus, izvēlieties dažus, ko atjaunot, un pēc tam mēģiniet vēlreiz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Pieskarieties pogai Atskaņot radio, lai katru mēnesi varētu klausīties %d bezmaksas ierakstus.</item>
+        <item quantity="zero">Pieskarieties pogai Atskaņot radio, lai katru mēnesi varētu klausīties %d bezmaksas ierakstus.</item>
+        <item quantity="one">Pieskarieties pogai Atskaņot radio, lai katru mēnesi varētu klausīties %d bezmaksas ierakstu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Var izvēlēties ne vairāk kā %d izpildītājus.</item>
+        <item quantity="zero">Var izvēlēties ne vairāk kā %d izpildītājus.</item>
+        <item quantity="one">Var izvēlēties ne vairāk kā %d izpildītāju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Var izvēlēties ne vairāk kā %d žanrus.</item>
+        <item quantity="zero">Var izvēlēties ne vairāk kā %d žanrus.</item>
+        <item quantity="one">Var izvēlēties ne vairāk kā %d žanru.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Var izvēlēties ne vairāk kā %d ierakstus.</item>
+        <item quantity="zero">Var izvēlēties ne vairāk kā %d ierakstus.</item>
+        <item quantity="one">Var izvēlēties ne vairāk kā %d ierakstu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d sekundes</item>
+        <item quantity="zero">%d sekundes</item>
+        <item quantity="one">%d sekunde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Jūs varat lietot %1$s %2$d reizes.</item>
+        <item quantity="one">Jūs varat lietot %s 1 reizi.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">Autortiesību problēmas dēļ %d ierakstus nevar iegādāties, izmantojot paaugstinātas maksas biļetes. Varat tos iegādāties atsevišķi.</item>
+        <item quantity="zero">Autortiesību problēmas dēļ %d ierakstus nevar iegādāties, izmantojot paaugstinātas maksas biļetes. Varat tos iegādāties atsevišķi.</item>
+        <item quantity="one">Autortiesību problēmas dēļ %d ierakstu nevar iegādāties, izmantojot paaugstinātas maksas biļetes. Varat to iegādāties atsevišķi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">Tiks izmantoti %d no jūsu pieejamajiem ierakstiem.</item>
+        <item quantity="zero">Tiks izmantoti %d no jūsu pieejamajiem ierakstiem.</item>
+        <item quantity="one">Tiks izmantots %d no jūsu pieejamajiem ierakstiem.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Gaida, lai lejupielādētu %d dziesmas…</item>
+        <item quantity="one">Gaida 1 dziesmas lejupielādi…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Vai izdzēst no tālruņa %d albumus un visus tajā esošos ierakstus?</item>
+        <item quantity="one">Vai izdzēst no tālruņa 1 albumu un visus tajā esošos ierakstus?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Vai izdzēst visus šo izpildītāju ierakstus?</item>
+        <item quantity="one">Vai izdzēst visus šī izpildītāja ierakstus?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Vai izdzēst visus šo komponistu ierakstus?</item>
+        <item quantity="one">Vai izdzēst visus šī komponista ierakstus?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Vai izdzēst izvēlētos ierakstus?</item>
+        <item quantity="one">Vai izdzēst izvēlēto ierakstu?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">Tiks iegādāti %d ieraksti. Ja jums nav pietiekami daudz pieejamo ierakstu, tad šos ierakstus nevar iegādāties.</item>
+        <item quantity="zero">Tiks iegādāti %d ieraksti. Ja jums nav pietiekami daudz pieejamo ierakstu, tad šos ierakstus nevar iegādāties.</item>
+        <item quantity="one">Tiks iegādāts %d ieraksts. Ja jums nav pietiekami daudz pieejamo ierakstu, tad šos ierakstus nevar iegādāties.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Vai iegādāties izvēlētos ierakstus?</item>
+        <item quantity="one">Vai iegādāties izvēlēto ierakstu?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Jūs jau esat iegādājies šīs dziesmas. Iegādātās dziesmas varat atkārtoti lejupielādēt jebkurā brīdī.</item>
+        <item quantity="one">Jūs jau esat iegādājies šo dziesmu. Iegādātās dziesmas varat atkārtoti lejupielādēt jebkurā brīdī.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Ieraksti jau ir iegādāti</item>
+        <item quantity="one">Ieraksts jau ir iegādāts</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Izlasei varat pievienot tikai %d piedāvātos atskaņošanas sarakstus. Noņemiet no cilnes Izlase dažus piedāvātos atskaņošanas sarakstus.</item>
+        <item quantity="zero">Izlasei varat pievienot tikai %d piedāvātos atskaņošanas sarakstus. Noņemiet no cilnes Izlase dažus piedāvātos atskaņošanas sarakstus.</item>
+        <item quantity="one">Izlasei varat pievienot tikai %d piedāvāto atskaņošanas sarakstu. Noņemiet no cilnes Izlase dažus piedāvātos atskaņošanas sarakstus.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Kā izlases ierakstus var pievienot tikai %d straumēšanas ierakstus. Noņemiet no izlases ierakstiem dažus straumēšanas ierakstus un mēģiniet vēlreiz.</item>
+        <item quantity="zero">Kā izlases ierakstus var pievienot tikai %d straumēšanas ierakstus. Noņemiet no izlases ierakstiem dažus straumēšanas ierakstus un mēģiniet vēlreiz.</item>
+        <item quantity="one">Kā izlases ierakstu var pievienot tikai %d straumēšanas ierakstu. Noņemiet no izlases ierakstiem dažus straumēšanas ierakstus un mēģiniet vēlreiz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Kā izlases ierakstus var pievienot tikai %d ierakstus. Noņemiet no izlases ierakstiem dažus ierakstus un mēģiniet vēlreiz.</item>
+        <item quantity="zero">Kā izlases ierakstus var pievienot tikai %d ierakstus. Noņemiet no izlases ierakstiem dažus ierakstus un mēģiniet vēlreiz.</item>
+        <item quantity="one">Kā izlases ierakstu var pievienot tikai %d ierakstu. Noņemiet no izlases ierakstiem dažus ierakstus un mēģiniet vēlreiz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d mapes</item>
+        <item quantity="one">1 mape</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Vai izdzēst no tālruņa %d mapes un visus tajā esošos ierakstus?</item>
+        <item quantity="one">Vai izdzēst no tālruņa 1 mapi un visus tajā esošos ierakstus?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Vai izdzēst visus šo žanru ierakstus?</item>
+        <item quantity="one">Vai izdzēst visus šī žanra ierakstus?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">Tiks izdzēstas arī %d paslēptās mapes.</item>
+        <item quantity="zero">Tiks izdzēstas arī %d paslēptās mapes.</item>
+        <item quantity="one">Tiks izdzēsta arī %d paslēptā mape.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">Atjaunoti %d ieraksti.</item>
+        <item quantity="zero">Atjaunoti %d ieraksti.</item>
+        <item quantity="one">Atjaunots %d ieraksts.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Vai dzēst %d objektus?</item>
+        <item quantity="one">Vai izdzēst 1 objektu?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Eksportēti %d atskaņošanas saraksti.</item>
+        <item quantity="one">Eksportēts %d atskaņošanas saraksts.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Importēti %d atskaņošanas saraksti.</item>
+        <item quantity="one">Importēts %d atskaņošanas saraksts.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Var izvēlēties ne vairāk kā %d atskaņošanas sarakstus.</item>
+        <item quantity="zero">Var izvēlēties ne vairāk kā %d atskaņošanas sarakstus.</item>
+        <item quantity="one">Var izvēlēties ne vairāk kā %d atskaņošanas sarakstus.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Vai izdzēst %d atskaņošanas sarakstus?</item>
+        <item quantity="one">Vai izdzēst 1 atskaņošanas sarakstu?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d ieraksti</item>
+        <item quantity="one">1 ieraksts</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">Rindai ir pievienoti %d ieraksti.</item>
+        <item quantity="one">%d ieraksts pievienots rindai.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Vai izdzēst %d ierakstus?</item>
+        <item quantity="one">Vai izdzēst 1 ierakstu?</item>
+    </plurals>
+</resources>

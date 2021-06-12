@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/company_info_group_space_top_kt" android:paddingBottom="@dimen/company_info_group_space_bottom_kt" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/company_information_text_kt" android:textColor="@color/company_information_text_kt" android:id="@id/samsung_electronic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/samsung_electronic_kt" android:paddingStart="@dimen/company_information_space_horizontal_kt" style="@style/Font.Roboto.Regular" />
+    <TextView android:textSize="@dimen/company_information_text_kt" android:textColor="@color/company_information_link_kt" android:id="@id/company_information_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/company_information_space_horizontal_kt" android:layout_marginStart="@dimen/company_information_space_start_kt" style="@style/Font.Roboto.Regular" />
+</LinearLayout>

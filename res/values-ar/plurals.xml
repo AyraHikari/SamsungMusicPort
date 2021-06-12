@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d من الألبومات</item>
+        <item quantity="one">%d من الألبومات</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">الألبومات</item>
+        <item quantity="one">الألبوم</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">المسارات</item>
+        <item quantity="one">مادة صوتية</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">أُضيفت %d من المقاطع إلى المفضلة. لم تضف المقاطع الموجودة بالفعل في المفضلة.</item>
+        <item quantity="one">تمت إضافة %d من المقاطع إلى المفضلة. لم تتم إضافة المقطع الموجود في الأساس في المفضلة.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d من المسارات</item>
+        <item quantity="one">%d مقطع</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">تمت إزالة %d من المقاطع من المفضلة.</item>
+        <item quantity="one">تمت إزالة %d من المقاطع من المفضلة.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">تمت إضافة %d من المقاطع إلى المفضلة.</item>
+        <item quantity="one">تمت إضافة %d من المقاطع إلى المفضلة.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">يمكنك إزالة ما يصل إلى %d مقطع فقط من التوصيات. اعرض المقاطع التي تمت إزالتها وحدد عدداً منها لاستعادتها، ثم حاول مجدداً.</item>
+        <item quantity="zero">يمكنك إزالة ما يصل إلى %d مقطع فقط من التوصيات. اعرض المقاطع التي تمت إزالتها وحدد عدداً منها لاستعادتها، ثم حاول مجدداً.</item>
+        <item quantity="one">يمكنك إزالة ما يصل إلى مقطع واحد فقط من التوصيات. اعرض المقاطع التي تمت إزالتها وحدد عدداً منها لاستعادتها، ثم حاول مجدداً.</item>
+        <item quantity="two">يمكنك إزالة ما يصل إلى مقطعَين فقط من التوصيات. اعرض المقاطع التي تمت إزالتها وحدد عدداً منها لاستعادتها، ثم حاول مجدداً.</item>
+        <item quantity="few">يمكنك إزالة ما يصل إلى %d مقاطع فقط من التوصيات. اعرض المقاطع التي تمت إزالتها وحدد عدداً منها لاستعادتها، ثم حاول مجدداً.</item>
+        <item quantity="many">يمكنك إزالة ما يصل إلى %d مقطعاً فقط من التوصيات. اعرض المقاطع التي تمت إزالتها وحدد عدداً منها لاستعادتها، ثم حاول مجدداً.</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">انقر فوق زر تشغيل الراديو للاستمتاع بـ %d مقطع مجاني كل شهر.</item>
+        <item quantity="zero">انقر فوق زر تشغيل الراديو للاستمتاع بـ %d مقطع مجاني كل شهر.</item>
+        <item quantity="one">انقر فوق زر تشغيل الراديو للاستمتاع بمقطع واحد مجاني كل شهر.</item>
+        <item quantity="two">انقر فوق زر تشغيل الراديو للاستمتاع بمقطعيَن مجانيَن كل شهر.</item>
+        <item quantity="few">انقر فوق زر تشغيل الراديو للاستمتاع بـ %d مقاطع مجانية كل شهر.</item>
+        <item quantity="many">انقر فوق زر تشغيل الراديو للاستمتاع بـ %d مقطعاً مجانياً كل شهر.</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">يتعذر تحديد أكثر من %d فنان.</item>
+        <item quantity="zero">يتعذر تحديد أكثر من %d فنان.</item>
+        <item quantity="one">يتعذر تحديد أكثر من فنان واحد.</item>
+        <item quantity="two">يتعذر تحديد أكثر من فنانَين.</item>
+        <item quantity="few">يتعذر تحديد أكثر من %d فنانين.</item>
+        <item quantity="many">يتعذر تحديد أكثر من %d فناناً.</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">يتعذر تحديد أكثر من %d نوع.</item>
+        <item quantity="zero">يتعذر تحديد أكثر من %d نوع.</item>
+        <item quantity="one">يتعذر تحديد أكثر من نوع واحد.</item>
+        <item quantity="two">يتعذر تحديد أكثر من نوعَين.</item>
+        <item quantity="few">يتعذر تحديد أكثر من %d أنواع.</item>
+        <item quantity="many">يتعذر تحديد أكثر من %d نوعاً.</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">يتعذر تحديد أكثر من %d مقطع.</item>
+        <item quantity="zero">يتعذر تحديد أكثر من %d مقطع.</item>
+        <item quantity="one">يتعذر تحديد أكثر من مقطع واحد.</item>
+        <item quantity="two">يتعذر تحديد أكثر من مقطعَين.</item>
+        <item quantity="few">يتعذر تحديد أكثر من %d مقاطع.</item>
+        <item quantity="many">يتعذر تحديد أكثر من %d مقطعاً.</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d ثانية</item>
+        <item quantity="zero">%d ثانية</item>
+        <item quantity="one">ثانية واحدة</item>
+        <item quantity="two">ثانيتان</item>
+        <item quantity="few">%d ثوانٍ</item>
+        <item quantity="many">%d ثانية</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">يمكنك استخدام %1$s عدد %2$d مرة.</item>
+        <item quantity="one">يمكنك استخدام %s مرة واحدة.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">يتعذر شراء %d مقطع بواسطة التذاكر المميزة بسبب حدوث مشكلة في حقوق النشر. يمكنك شراؤها بشكلٍ فردي.</item>
+        <item quantity="zero">يتعذر شراء %d مقطع بواسطة التذاكر المميزة بسبب حدوث مشكلة في حقوق النشر. يمكنك شراؤه بشكلٍ فردي.</item>
+        <item quantity="one">يتعذر شراء مقطع واحد بواسطة التذاكر المميزة بسبب حدوث مشكلة في حقوق النشر. يمكنك شراؤه بشكلٍ فردي.</item>
+        <item quantity="two">يتعذر شراء مقطعَين بواسطة التذاكر المميزة بسبب حدوث مشكلة في حقوق النشر. يمكنك شراؤهما بشكلٍ فردي.</item>
+        <item quantity="few">يتعذر شراء %d مقاطع بواسطة التذاكر المميزة بسبب حدوث مشكلة في حقوق النشر. يمكنك شراؤها بشكلٍ فردي.</item>
+        <item quantity="many">يتعذر شراء %d مقطعاً بواسطة التذاكر المميزة بسبب حدوث مشكلة في حقوق النشر. يمكنك شراؤها بشكلٍ فردي.</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">سيتم استخدام %d مقطع من مقاطعك المتوفرة.</item>
+        <item quantity="zero">سيتم استخدام %d مقطع من مقاطعك المتوفرة.</item>
+        <item quantity="one">سيتم استخدام مقطع واحد من مقاطعك المتوفرة.</item>
+        <item quantity="two">سيتم استخدام مقطعَين من مقاطعك المتوفرة.</item>
+        <item quantity="few">سيتم استخدام %d مقاطع من مقاطعك المتوفرة.</item>
+        <item quantity="many">سيتم استخدام %d مقطعاً من مقاطعك المتوفرة.</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">بانتظار تنزيل %d من الأغاني…</item>
+        <item quantity="one">جارٍ انتظار تنزيل أغنية واحدة…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">هل تريد حذف %d من المجلدات وكل المقاطع الموجودة فيها من هاتفك؟</item>
+        <item quantity="one">هل تريد حذف ألبوم واحد وكل المقاطع الموجودة فيه من هاتفك؟</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">هل تريد حذف كل المقاطع لهؤلاء الفنانين؟</item>
+        <item quantity="one">هل تريد حذف كل المقاطع لهذا الفنان؟</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">هل تريد حذف كل المقاطع لهؤلاء الملحنين؟</item>
+        <item quantity="one">هل تريد حذف كل المقاطع لهذا الملحن؟</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">هل تريد حذف المقاطع المحددة؟</item>
+        <item quantity="one">هل تريد حذف المقطع المحدد؟</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">سيتم شراء %d مقطع. إذا لم يكن لديك عدد كافٍ من المقاطع المتوفرة، فسيتعذر شراؤها في هذه الحالة.</item>
+        <item quantity="zero">سيتم شراء %d مقطع. إذا لم يكن لديك عدد كافٍ من المقاطع المتوفرة، فسيتعذر شراؤه في هذه الحالة.</item>
+        <item quantity="one">سيتم شراء مقطع واحد. إذا لم يكن لديك عدد كافٍ من المقاطع المتوفرة، فسيتعذر شراؤه في هذه الحالة.</item>
+        <item quantity="two">سيتم شراء مقطعَين. إذا لم يكن لديك عدد كافٍ من المقاطع المتوفرة، فسيتعذر شراؤهما في هذه الحالة.</item>
+        <item quantity="few">سيتم شراء %d مقاطع. إذا لم يكن لديك عدد كافٍ من المقاطع المتوفرة، فسيتعذر شراؤها في هذه الحالة.</item>
+        <item quantity="many">سيتم شراء %d مقطعاً. إذا لم يكن لديك عدد كافٍ من المقاطع المتوفرة، فسيتعذر شراؤها في هذه الحالة.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">هل تريد شراء المقاطع المحددة؟</item>
+        <item quantity="one">هل تريد شراء المقطع المحدد؟</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">لقد اشتريت هذه الأغاني مسبقاً. يمكنك تنزيل الأغاني التي قمت بشرائها مجدداً في أي وقت.</item>
+        <item quantity="one">لقد اشتريت هذه الأغنية مسبقاً. يمكنك تنزيل الأغاني التي قمت بشرائها مجدداً في أي وقت.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">المقاطع التي تم شراؤها مسبقاً</item>
+        <item quantity="one">المقطع الذي تم شراؤه مسبقاً</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">لا يمكنك إضافة سوى %d قائمة تشغيل متوفرة كالمفضلة. قم بإزالة بعض قوائم التشغيل المتوفرة من علامة التبويب المفضلة.</item>
+        <item quantity="zero">لا يمكنك إضافة سوى %d قائمة تشغيل متوفرة كالمفضلة. قم بإزالة بعض قوائم التشغيل المتوفرة من علامة التبويب المفضلة.</item>
+        <item quantity="one">لا يمكنك إضافة سوى قائمة تشغيل واحدة متوفرة كالمفضلة. قم بإزالة بعض قوائم التشغيل المتوفرة من علامة التبويب المفضلة.</item>
+        <item quantity="two">لا يمكنك إضافة سوى قائمتَي تشغيل متوفرتَين كالمفضلة. قم بإزالة بعض قوائم التشغيل المتوفرة من علامة التبويب المفضلة.</item>
+        <item quantity="few">لا يمكنك إضافة سوى %d قوائم تشغيل متوفرة كالمفضلة. قم بإزالة بعض قوائم التشغيل المتوفرة من علامة التبويب المفضلة.</item>
+        <item quantity="many">لا يمكنك إضافة سوى %d قائمة تشغيل متوفرة كالمفضلة. قم بإزالة بعض قوائم التشغيل المتوفرة من علامة التبويب المفضلة.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">يمكنك إضافة %d مقطع بث فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="zero">يمكنك إضافة %d مقطع بث فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="one">يمكنك إضافة مقطع بث واحد فقط كمقطع مفضل. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="two">يمكنك إضافة مقطعَي بث فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="few">يمكنك إضافة %d مقاطع بث فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="many">يمكنك إضافة %d مقطع بث فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">يمكنك إضافة %d مقطع فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="zero">يمكنك إضافة %d مقطع فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="one">يمكنك إضافة مقطع واحد فقط كمقطع مفضل. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="two">يمكنك إضافة مقطعَين فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="few">يمكنك إضافة %d مقاطع فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+        <item quantity="many">يمكنك إضافة %d مقطعاً فقط كمقاطع مفضلة. قم بإزالة بعض مقاطع البث من المقاطع المفضلة، ثم حاول مجدداً.</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d من المجلدات</item>
+        <item quantity="one">مجلد واحد</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">هل تريد حذف %d من المجلدات وكل المقاطع الموجودة فيها من هاتفك؟</item>
+        <item quantity="one">هل تريد حذف مجلد واحد وكل المقاطع الموجودة فيه من هاتفك؟</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">هل تريد حذف كل المقاطع من هذه الأنواع؟</item>
+        <item quantity="one">هل تريد حذف كل المقاطع من هذا النوع؟</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">سيتم حذف %d مجلد مخفي أيضاً.</item>
+        <item quantity="zero">سيتم حذف %d مجلد مخفي أيضاً.</item>
+        <item quantity="one">سيتم حذف مجلد واحد مخفي أيضاً.</item>
+        <item quantity="two">سيتم حذف مجلدَين مخفيَين أيضاً.</item>
+        <item quantity="few">سيتم حذف %d مجلدات مخفية أيضاً.</item>
+        <item quantity="many">سيتم حذف %d مجلداً مخفياً أيضاً.</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">تمت استعادة %d مقطع.</item>
+        <item quantity="zero">تمت استعادة %d مقطع.</item>
+        <item quantity="one">تمت استعادة مقطع واحد.</item>
+        <item quantity="two">تمت استعادة مقطعَين.</item>
+        <item quantity="few">تمت استعادة %d مقاطع.</item>
+        <item quantity="many">تمت استعادة %d مقطعاً.</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">هل تريد حذف %d من العناصر؟</item>
+        <item quantity="one">هل تريد حذف عنصر واحد؟</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">تم تصدير %d قائمة تشغيل.</item>
+        <item quantity="one">تم تصدير قائمة تشغيل واحدة.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">تم استيراد %d قائمة تشغيل.</item>
+        <item quantity="one">تم استيراد قائمة تشغيل واحدة.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">يتعذر تحديد أكثر من %d قائمة تشغيل.</item>
+        <item quantity="zero">يتعذر تحديد أكثر من %d قائمة تشغيل.</item>
+        <item quantity="one">يتعذر تحديد أكثر من قائمة تشغيل واحدة.</item>
+        <item quantity="two">يتعذر تحديد أكثر من قائمتَي تشغيل.</item>
+        <item quantity="few">يتعذر تحديد أكثر من %d قوائم تشغيل.</item>
+        <item quantity="many">يتعذر تحديد أكثر من %d قائمة تشغيل.</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">هل تريد حذف %d من قوائم التشغيل؟</item>
+        <item quantity="one">هل تريد حذف قائمة تشغيل واحدة؟</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d من المسارات</item>
+        <item quantity="one">مقطع واحد</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">تمت إضافة %d من المقاطع إلى قائمة الانتظار.</item>
+        <item quantity="one">تمت إضافة %d من المقاطع إلى قائمة الانتظار.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">هل تريد حذف %d من المقاطع؟</item>
+        <item quantity="one">هل تريد حذف مقطع واحد؟</item>
+    </plurals>
+</resources>

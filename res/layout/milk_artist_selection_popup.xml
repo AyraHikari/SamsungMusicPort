@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingBottom="@dimen/milk_pop_artist_selection_padding_bottom" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/milk_pop_artist_selection_padding_left_right">
+        <TextView android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/milk_pop_artist_selection_padding_top" android:text="@string/milk_common_artist_popup_title" style="@style/Font.Roboto.Medium.DialogTitle" />
+        <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/milk_pop_artist_selection_list_margin_top" android:layout_below="@id/title" android:paddingEnd="@dimen/milk_pop_artist_selection_padding_left_right" />
+    </RelativeLayout>
+</FrameLayout>

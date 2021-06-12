@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <set android:interpolator="@anim/interpolator_sine_in_out_60" android:duration="50" android:ordering="together">
+            <objectAnimator android:valueFrom="1.0" android:valueTo="0.75" android:valueType="floatType" android:propertyName="scaleX" />
+            <objectAnimator android:valueFrom="1.0" android:valueTo="0.75" android:valueType="floatType" android:propertyName="scaleY" />
+        </set>
+    </item>
+    <item>
+        <set android:interpolator="@anim/interpolator_sine_in_out_60" android:duration="400" android:ordering="together">
+            <objectAnimator android:valueFrom="0.75" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+            <objectAnimator android:valueFrom="0.75" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+        </set>
+    </item>
+</selector>

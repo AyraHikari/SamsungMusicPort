@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="full_player_explicit_icon_background_stroke_width">4.0px</dimen>
+</resources>

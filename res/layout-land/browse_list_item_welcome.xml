@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container" android:background="@drawable/browse_card_view_rounded_outline" android:layout_width="@dimen/browse_list_item_just_for_you_width" android:layout_height="@dimen/browse_list_item_just_for_you_width" android:paddingStart="10.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/white_opacity_100" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/browse_my_favorite_music_setting" android:textAllCaps="true" style="@style/Font.Roboto.Medium" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/white_opacity_65" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/browse_welcome_text" style="@style/Font.Roboto.Medium" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/white_opacity_90" android:gravity="center" android:id="@id/start" android:background="@drawable/browse_welcome_button_background" android:layout_width="77.0dip" android:layout_height="23.0dip" android:layout_marginTop="13.0dip" android:text="@string/start_kt" android:textAllCaps="true" style="@style/Font.Roboto.Medium" />
+</LinearLayout>

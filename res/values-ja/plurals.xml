@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d枚のアルバム</item>
+        <item quantity="one">%d枚のアルバム</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">アルバム</item>
+        <item quantity="one">アルバム</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">曲</item>
+        <item quantity="one">トラック</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">お気に入りに%d曲を追加しました。既にお気に入りに登録済みの曲は追加されませんでした。</item>
+        <item quantity="one">お気に入りに%d曲を追加しました。既にお気に入りに登録済みの曲は追加されませんでした。</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d曲</item>
+        <item quantity="one">%d曲</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">お気に入りから%d曲を削除しました。</item>
+        <item quantity="one">お気に入りから%d曲を削除しました。</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">お気に入りに%d曲を追加しました。</item>
+        <item quantity="one">お気に入りに%d曲追加しました。</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">おすすめから削除できるのは%d曲までです。削除した曲を表示し、復元する曲をいくつか選択してから、再度実行してください。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">[ラジオを再生]ボタンをタップすると、毎月無料で%d曲をお楽しみいただけます。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">選択できるアーティストは%d人までです。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">選択できるジャンルは%d件までです。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">選択できる曲は%d曲までです。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d秒</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">%1$sを%2$d回使用できます。</item>
+        <item quantity="one">%sは1回使用できます。</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">著作権の関係上、%d曲をプレミアムチケットで購入することはできません。個別に購入することはできます。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">利用可能な曲数から%d曲が差し引かれます。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">%d曲のダウンロードを待機中…</item>
+        <item quantity="one">1曲のダウンロードを待機中…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">%d件のアルバムと、その中の全ての曲を端末から削除しますか？</item>
+        <item quantity="one">1件のアルバムと、その中の全ての曲を端末から削除しますか？</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">選択したアーティストの曲を全て削除しますか？</item>
+        <item quantity="one">このアーティストの全ての曲を削除しますか？</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">選択した作曲者の曲を全て削除しますか？</item>
+        <item quantity="one">この作曲者の曲を全て削除しますか？</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">選択した曲を削除しますか？</item>
+        <item quantity="one">選択した曲を削除しますか？</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d曲を購入します。利用可能な曲数が不足している場合、曲は購入できません。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">選択した曲を購入しますか？</item>
+        <item quantity="one">選択した曲を購入しますか？</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">これらの曲は既に購入しています。購入した曲はいつでも再度ダウンロードすることができます。</item>
+        <item quantity="one">この曲は既に購入しています。購入した曲はいつでも再度ダウンロードすることができます。</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">既に購入済みの曲</item>
+        <item quantity="one">既に購入済みの曲</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">提供されたプレイリストをお気に入りとして追加できるのは%d件のみです。お気に入りタブから不要なプレイリストを削除してください。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">お気に入りの曲に追加できるストリーミングの曲は%d曲のみです。お気に入りの曲から不要な曲を削除し、再度実行してください。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">お気に入りの曲に追加できるのは%d曲のみです。お気に入りの曲から不要な曲を削除し、再度実行してください。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d件のフォルダ</item>
+        <item quantity="one">1件のフォルダ</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">%d件のフォルダと、その中の全ての曲を端末から削除しますか？</item>
+        <item quantity="one">1件のフォルダと、その中の全ての曲を端末から削除しますか？</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">選択したジャンルの曲を全て削除しますか？</item>
+        <item quantity="one">このジャンルの曲を全て削除しますか？</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d件の非表示フォルダも削除します。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d曲を復元しました。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">%d件のアイテムを削除しますか？</item>
+        <item quantity="one">1件のアイテムを削除しますか？</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d件のプレイリストをエクスポートしました。</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d件のプレイリストをインポートしました。</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">プレイリストは%d件まで選択できます。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">%d件のプレイリストを削除しますか？</item>
+        <item quantity="one">1件のプレイリストを削除しますか？</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d曲</item>
+        <item quantity="one">1曲</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">再生中リストに%d曲追加しました。</item>
+        <item quantity="one">再生中リストに%d曲追加しました。</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">%d曲削除しますか？</item>
+        <item quantity="one">1曲削除しますか？</item>
+    </plurals>
+</resources>

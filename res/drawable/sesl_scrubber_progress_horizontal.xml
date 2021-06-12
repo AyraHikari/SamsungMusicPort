@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@id/background" android:height="@dimen/sesl_seekbar_track_height">
+        <nine-patch android:src="@drawable/sesl_progress_bar" android:tint="@color/sesl_seekbar_control_color_normal" />
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@id/secondaryProgress" android:height="@dimen/sesl_seekbar_track_height">
+        <scale android:scaleWidth="100%">
+            <nine-patch android:src="@drawable/sesl_progress_bar" android:tint="@color/sesl_seekbar_control_color_secondary" />
+        </scale>
+    </item>
+    <item android:gravity="fill_horizontal|center" android:id="@id/progress" android:height="@dimen/sesl_seekbar_track_height">
+        <scale android:scaleWidth="100%">
+            <nine-patch android:src="@drawable/sesl_progress_bar" android:tint="@color/sesl_seekbar_control_color_activated" />
+        </scale>
+    </item>
+</layer-list>

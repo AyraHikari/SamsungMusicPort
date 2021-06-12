@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" style="@style/Toolbar" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/recycler_view" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:round="top" />
+</LinearLayout>

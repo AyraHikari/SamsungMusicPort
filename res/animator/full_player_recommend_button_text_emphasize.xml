@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="sequentially"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:interpolator="@anim/interpolator_sine_in_33" android:duration="250" android:ordering="together">
+        <objectAnimator android:valueFrom="1.0" android:valueTo="1.15" android:valueType="floatType" android:propertyName="scaleX" />
+        <objectAnimator android:valueFrom="1.0" android:valueTo="1.15" android:valueType="floatType" android:propertyName="scaleY" />
+    </set>
+    <set android:interpolator="@anim/interpolator_sine_in_out_60" android:duration="250" android:ordering="together">
+        <objectAnimator android:valueFrom="1.15" android:valueTo="1.0" android:valueType="floatType" android:propertyName="scaleX" />
+        <objectAnimator android:valueFrom="1.15" android:valueTo="1.0" android:valueType="floatType" android:propertyName="scaleY" />
+    </set>
+</set>

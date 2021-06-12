@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/sesl_button_inset_horizontal" android:insetRight="@dimen/sesl_button_inset_horizontal" android:insetTop="@dimen/sesl_button_inset_vertical" android:insetBottom="@dimen/sesl_button_inset_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple android:color="?colorControlHighlight">
+        <item>
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="rectangle">
+                        <corners android:radius="@dimen/sesl_control_corner" />
+                        <solid android:color="?colorButtonNormal" />
+                        <padding android:left="@dimen/sesl_button_padding_horizontal" android:top="@dimen/sesl_button_padding_vertical" android:right="@dimen/sesl_button_padding_horizontal" android:bottom="@dimen/sesl_button_padding_vertical" />
+                    </shape>
+                </item>
+                <item>
+                    <shape android:shape="rectangle">
+                        <corners android:radius="@dimen/sesl_control_corner" />
+                        <solid android:color="?colorAccent" />
+                        <padding android:left="@dimen/sesl_button_padding_horizontal" android:top="@dimen/sesl_button_padding_vertical" android:right="@dimen/sesl_button_padding_horizontal" android:bottom="@dimen/sesl_button_padding_vertical" />
+                    </shape>
+                </item>
+            </selector>
+        </item>
+    </ripple>
+</inset>

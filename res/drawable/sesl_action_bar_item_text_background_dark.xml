@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="4.0dip" android:insetBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple android:color="?colorControlHighlight">
+        <item android:id="@android:id/mask">
+            <shape android:shape="rectangle">
+                <corners android:radius="26.0dip" />
+                <solid android:color="@color/sesl_action_bar_background_color_dark" />
+            </shape>
+        </item>
+    </ripple>
+</inset>

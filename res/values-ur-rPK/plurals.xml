@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d البمز</item>
+        <item quantity="one">%d البم</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">البمز</item>
+        <item quantity="one">البم</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">ٹریکس</item>
+        <item quantity="one">ٹریک</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d ٹریکس پسندیدہ میں شامل کئے گئے۔ ٹریکس پسندیدہ میں پہلے سے شامل کئے ہوئے نہیں ہیں۔</item>
+        <item quantity="one">%d ٹریک کو پسندیدہ میں شامل کردیا گیا۔ جو ٹریک پہلے ہی پسندیدہ میں ہے اسے شامل نہیں کیا گیا۔</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d ٹریکس</item>
+        <item quantity="one">%d ٹریک</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d ٹریکس کو پسندیدہ سے خارج کردیا گیا۔</item>
+        <item quantity="one">%d ٹریک کو پسندیدہ سے ہٹا دیا گیا۔</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">پسندیدگان میں %d ٹریک کا اضافہ کر دیا گیا</item>
+        <item quantity="one">پسندیدہ میں %d ٹریک شامل کردیا گیا۔</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">آپ تجاویز سے صرف %d ٹریکس ہٹا سکتے ہیں۔ ہٹایا گیا ٹریکس دیکھیں، بحال کرنے کے لیے کچھ کو منتخب کریں، پھر دوبارہ کوشش کریں۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">آپ تجاویز سے صرف %d ٹریک کو ہٹا سکتے ہیں۔ ہٹایا گیا ٹریکس دیکھیں، بحال کرنے کے لیے کچھ کو منتخب کریں، پھر دوبارہ کوشش کریں۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">ہر ماہ %d مفت ٹریکس سے لطف اٹھانے کے لیے ریڈیو چلائیں بٹن پر تھپکی دیں۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ہر ماہ %d مفت ٹریک سے لطف اٹھانے کے لیے ریڈیو چلائیں بٹن پر تھپکی دیں۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">%d سے زیادہ فنکاران منتخب نہیں کرسکتے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d سے زیادہ فنکار منتخب نہیں کرسکتے۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">%d سے زائد قسمیں منتخب نہیں کر سکتے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d سے زیادہ قسم منتخب نہیں کر سکتے۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">%d سے زیادہ ٹریکس منتخب نہیں کرسکتے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d سے زیادہ ٹریک منتخب نہیں کرسکتے۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d سیکنڈز</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d سیکنڈ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">آپ %1$s کو %2$d دفعہ استعمال کرسکتے ہيں</item>
+        <item quantity="one">آپ %s کو 1 دفعہ استعمال کرسکتے ہيں</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">کاپی رائٹ مسئلہ کی وجہ سے پریمیئم ٹکٹوں سے %d گانوں کی خریداری نہیں کرسکتے۔ آپ انہیں انفرادی طورپر خرید سکتے ہیں۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">کاپی رائٹ مسئلہ کی وجہ سے پریمیئم ٹکٹوں سے %d گانے کی خریداری نہیں کرسکتے۔ آپ انہیں انفرادی طورپر خرید سکتے ہیں۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">آپ کے دستیاب گانے سے %d گانے استعمال کیے جائیں گے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">آپ کے دستیاب گانے سے %d گانا استعمال کیا جائے گا۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">%d گانے ڈاؤن لوڈ ہونے کا منتظر۔۔۔</item>
+        <item quantity="one">1 گانہ ڈاؤن لوڈ ہونے کا منتظر…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">اپنے فون سے %dالبمز اور اس کے تمام ٹریکس حذف کریں؟</item>
+        <item quantity="one">اپنے فون سے 1 البم اور اس کے تمام ٹریکس حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">ان فنکاروں کے سبھی ٹریکس کو حذف کریں؟</item>
+        <item quantity="one">اس فنکار کے سبھی ٹریکس کو حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">ان کمپوزرز کے سبھی ٹریکس کو حذف کریں؟</item>
+        <item quantity="one">اس کمپوزر کے سبھی ٹریکس کو حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">منتخب کردہ ٹریکرز کو حذف کریں؟</item>
+        <item quantity="one">منتخب کردہ ٹریک کو حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d گانوں کی خریداری کی جائے گی۔ اگر آپ کے پاس کافی گانے دستیاب نہ ہوں تو، پھر ان گانوں کی خریداری نہیں کرسکتے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d گانے کی خریداری کی جائے گی۔ اگر آپ کے پاس کافی گانے دستیاب نہ ہوں تو، پھر ان گانوں کی خریداری نہیں کرسکتے۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">منتخب کردہ ٹریکس خریدیں؟</item>
+        <item quantity="one">منتخب ٹریک خریدیں؟</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">آپ یہ گانے پہلے ہی خرید چکے ہیں۔ آپ خریدہ ہوا گانے کو کسی بھی وقت دوبارہ ڈاؤن لوڈ کرسکتے ہیں۔</item>
+        <item quantity="one">آپ یہ گانہ پہلے ہی خرید چکے ہیں۔ آپ خریدہ ہوا گانے کو کسی بھی وقت دوبارہ ڈاؤن لوڈ کرسکتے ہیں۔</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">ٹریکس پہلے ہی خریدلی گئی</item>
+        <item quantity="one">ٹریک پہلے ہی خرید لی گئی ہے</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">پسندیدگان کے طور پر آپ صرف فراہم کردہ %d پلے فہرست شامل کرسکتے ہیں۔ پسندیدگان ٹیب سے کچھ فراہم کردہ پلے فہرست ہٹائیں۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پسندیدہ کے طور پر آپ صرف فراہم کردہ %d پلے فہرست شامل کرسکتے ہیں۔ پسندیدگان ٹیب سے کچھ فراہم کردہ پلے فہرست ہٹائیں۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">پسندیدہ ٹریکس کے طور پر آپ صرف %d اسٹریمنگس ٹریک شامل کرسکتے ہیں۔ پسندیدہ ٹریکس سے کچھ اسٹریمنگ ٹریکس ہٹائيں، پھر دوبارہ کوشش کریں۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پسندیدہ ٹریک کے طور پر آپ صرف %d اسٹریمنگ ٹریک شامل کرسکتے ہیں۔ پسندیدہ ٹریکس سے کچھ اسٹریمنگ ٹریکس ہٹائيں، پھر دوبارہ کوشش کریں۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">پسندیدہ ٹریکس کے طور پر آپ صرف %d ٹریکس شامل کرسکتے ہیں۔ پسندیدہ ٹریکس سے کچھ ٹریکس ہٹائيں، پھر دوبارہ کوشش کریں۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پسندیدہ ٹریک کے طور پر آپ صرف %d ٹریک شامل کرسکتے ہیں۔ پسندیدہ ٹریکس سے کچھ ٹریکس ہٹائيں، پھر دوبارہ کوشش کریں۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d فولڈر</item>
+        <item quantity="one">1 فولڈر</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">اپنے فون سے %d فولڈرز اور ان کے تمام ٹریکس حذف کریں؟</item>
+        <item quantity="one">اپنے فون سے 1 فولڈر اور اس کے تمام ٹریکس حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">ان قسموں کے سبھی ٹریکس کو حذف کریں؟</item>
+        <item quantity="one">اس قسم کے سبھی ٹریکس کو حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d پوشیدہ فولڈرز بھی حذف کردیے جائیں گے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پوشیدہ فولڈر بھی حذف کردیا جائے گا۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d ٹریکس بحال ہوگئے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ٹریک شامل ہوگیا۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">%d اشیاء حذف کریں؟</item>
+        <item quantity="one">1 شئے حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d پلے فہرستیں برآمد کی گئی۔</item>
+        <item quantity="one">%d پلے فہرستیں برآمد کی گئی۔</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d پلے فہرستیں درآمد کی گئی۔</item>
+        <item quantity="one">%d پلے فہرستیں درآمد کی گئی۔</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">%d سے زیادہ پلے لسٹس منتخب نہیں کر سکتے۔</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d پلے لسٹس سے زیادہ منتخب نہیں کر سکتے۔</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">%d پلے فہرست کو حذف کریں؟</item>
+        <item quantity="one">1 پلے فہرست حذف کریں؟</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d ٹریکس</item>
+        <item quantity="one">1 ٹریک</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">قطار میں %d ٹریکس شامل کئے گئے۔</item>
+        <item quantity="one">قطار میں %d ٹریکس شامل کیے گئے۔</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">%d ٹریکس حذف کریں؟</item>
+        <item quantity="one">1 ٹریک حذف کریں؟</item>
+    </plurals>
+</resources>

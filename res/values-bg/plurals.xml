@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d албума</item>
+        <item quantity="one">%d албум</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Албуми</item>
+        <item quantity="one">Албум</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Песни</item>
+        <item quantity="one">Песен</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d парчета са добавени към Любими. Парчетата, които вече са в любими, не са добавени.</item>
+        <item quantity="one">%d песен е добавена към „Любими“. Песента, която вече е в „Любими“, не е добавена.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d песни</item>
+        <item quantity="one">%d парчета</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d парчета са премахнати от Любими.</item>
+        <item quantity="one">%d песен е премахната от „Любими“.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d парчета са добавени към предпочитани.</item>
+        <item quantity="one">%d песен е добавена към любими.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Може да премахнете само до %d песни от препоръките. Прегледайте премахнатите песни, изберете някои за възстановяване, след което опитайте отново.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Може да премахнете само до %d песен от препоръките. Прегледайте премахнатите песни, изберете някои за възстановяване, след което опитайте отново.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Докоснете радио бутона „Изпълнение“, за да се наслаждавате на %d безплатни песни всеки месец.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Докоснете радио бутона „Изпълнение“, за да се наслаждавате на %d безплатна песен всеки месец.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Не може да изберете повече от %d изпълнители.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да изберете повече от %d изпълнител.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Не може да изберете повече от %d жанра.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да изберете повече от %d жанр.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Не може да изберете повече от %d песни.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да изберете повече от %d песен.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d секунди</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d секунда</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Можете да използвате %1$s %2$d пъти.</item>
+        <item quantity="one">Можете да използвате %s веднъж.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d песни не може да се закупят с премиални билети поради проблем с авторските права. Може да ги закупите отделно.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d песен не може да се закупи с премиални билети поради проблем с авторските права. Може да я закупите отделно.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d песни ще се използват от наличните ви песни.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d песен ще се използва от наличните ви песни.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Изчакване на изтегляне на %d песни…</item>
+        <item quantity="one">Изчакване на изтегляне на 1 песен…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Изтриване на %d албума и всичките песни в тях от телефона?</item>
+        <item quantity="one">Изтриване на 1 албум и всичките песни в него от телефона?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Изтривате ли всички песни от тези изпълнители?</item>
+        <item quantity="one">Изтривате ли всички песни от този изпълнител?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Изтривате ли всички песни от тези композитори?</item>
+        <item quantity="one">Изтривате ли всички песни от този композитор?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Изтриване на избраните песни?</item>
+        <item quantity="one">Изтриване на избраната песен?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">Ще бъдат закупени %d песни. Ако нямате достатъчно налични песни, тези песни не може да се закупят.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ще бъде закупена %d песен. Ако нямате достатъчно налични песни, тези песни не може да се закупят.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Закупуване на избраните песни?</item>
+        <item quantity="one">Закупуване на избраната песен?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Вече сте закупили тези песни. Може да изтеглите закупените песни отново по всяко време.</item>
+        <item quantity="one">Вече сте закупили тази песен. Може да изтеглите закупените песни отново по всяко време.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Песните вече са закупени</item>
+        <item quantity="one">Песента вече е закупена</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Може да добавите само %d предоставени плейлисти като любими. Премахнете някои предоставени плейлисти от раздела „Любими“.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Може да добавите само %d предоставен плейлист като любим. Премахнете някои предоставени плейлисти от раздела „Любими“.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Може да добавите само %d поточно предавани песни като любими песни. Премахнете някои поточно предавани песни от любимите песни, след което опитайте отново.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Може да добавите само %d поточно предавана песен като любима песен. Премахнете някои поточно предавани песни от любимите песни, след което опитайте отново.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Може да добавите само %d песни като любими песни. Премахнете някои песни от любимите песни, след което опитайте отново.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Може да добавите само %d песен като любима песен. Премахнете някои песни от любимите песни, след което опитайте отново.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d папки</item>
+        <item quantity="one">1 папка</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Изтриване на %d папки и всичките песни в тях от телефона?</item>
+        <item quantity="one">Изтриване на 1 папка и всичките песни в нея от телефона?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Изтривате ли всички песни в тези жанрове?</item>
+        <item quantity="one">Изтривате ли всички песни от този жанр?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d скрити папки също ще бъдат изтрити.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d скрита папка също ще бъде изтрита.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d песни са възстановени.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d песен е възстановена.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Да се изтрият ли %d елемента?</item>
+        <item quantity="one">Изтриване на 1 елемент?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Експортирани са %d плейлиста.</item>
+        <item quantity="one">Експортиран е %d плейлист.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Импортирани са %d плейлиста.</item>
+        <item quantity="one">Импортиран е %d плейлист.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Не може да се изберат повече от %d плейлиста.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се изберат повече от %d плейлиста.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Изтривате ли %d плейлисти?</item>
+        <item quantity="one">Изтриване на 1 плейлист?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d песни</item>
+        <item quantity="one">1 песен</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d песни са добавени към опашката.</item>
+        <item quantity="one">%d песен е добавена към опашката.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Изтривате ли %d песни?</item>
+        <item quantity="one">Изтриване на 1 песен?</item>
+    </plurals>
+</resources>

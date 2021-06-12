@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/milk_offline_mode_popup" android:fontFamily="sec-roboto-light" android:textAlignment="center" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="36.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/milk_local_only_dialog_color" android:layout_gravity="center_vertical" android:id="@id/goto_samsungmusic_setting_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/milk_goto_samsung_music_setting" android:fontFamily="roboto-regular" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/local_only_arrow_button" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/store_album_detail_arrow_detail" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/local_only_cancel_button" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/pop_ic_cancel_small_b" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

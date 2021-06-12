@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/sesl_list_divider_inset" android:insetRight="@dimen/sesl_list_divider_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/sesl_list_divider_color_light" />
+        <size android:height="@dimen/sesl_list_divider_height" />
+    </shape>
+</inset>

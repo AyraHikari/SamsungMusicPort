@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/shortcut_favorites_icon" android:enabled="true">
+        <intent android:targetPackage="com.sec.android.app.music" android:action="com.sec.android.app.music.intent.action.LAUNCH_DETAIL_LIST_FROM_APP_SHORTCUT" android:targetClass="com.samsung.android.app.music.ActivityLauncher">
+            <extra android:name="launchListType" android:value="1048580" />
+            <extra android:name="launchListID" android:value="-11" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcut_recently_added_icon" android:enabled="true">
+        <intent android:targetPackage="com.sec.android.app.music" android:action="com.sec.android.app.music.intent.action.LAUNCH_DETAIL_LIST_FROM_APP_SHORTCUT" android:targetClass="com.samsung.android.app.music.ActivityLauncher">
+            <extra android:name="launchListType" android:value="1048580" />
+            <extra android:name="launchListID" android:value="-14" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/shortcut_play_icon" android:enabled="true">
+        <intent android:targetPackage="com.sec.android.app.music" android:action="com.sec.android.app.music.intent.action.LAUNCH_MUSIC_PLAYER_FROM_APP_SHORTCUT" android:targetClass="com.samsung.android.app.music.ActivityLauncher">
+            <extra android:name="extra_with" android:value="withQueue" />
+        </intent>
+    </shortcut>
+</shortcuts>

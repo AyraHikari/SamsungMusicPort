@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="end|center|top" android:background="@drawable/sesl_noti_badge" android:focusable="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/sesl_menu_item_badge_size" android:layout_height="@dimen/sesl_menu_item_badge_size" android:layout_marginTop="@dimen/sesl_menu_item_badge_top_margin" android:layout_marginEnd="@dimen/sesl_menu_item_badge_end_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sesl_menu_item_badge_text_size" android:textColor="@color/sesl_menu_badge_text_color" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+</LinearLayout>

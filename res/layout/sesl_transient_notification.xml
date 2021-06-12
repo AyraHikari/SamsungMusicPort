@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/toast_layout_root" android:background="@drawable/sesl_toast_frame_alpha" android:paddingTop="@dimen/sesl_toast_padding_top" android:paddingBottom="@dimen/sesl_toast_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/sesl_toast_padding_start" android:paddingEnd="@dimen/sesl_toast_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sesl_toast_text_size" android:textColor="@color/sesl_white" android:gravity="center_vertical" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="17.0dip" android:layout_weight="1.0" android:fontFamily="@string/sesl_font_family_regular" />
+</LinearLayout>

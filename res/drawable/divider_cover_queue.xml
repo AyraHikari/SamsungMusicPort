@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/cover_clear_queue_divider_height" />
+    <solid android:color="@color/cover_clear_queue_divider" />
+</shape>

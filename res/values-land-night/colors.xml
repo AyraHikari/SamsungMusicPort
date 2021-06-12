@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="full_player_title_main_theme">@color/mu_main_text</color>
+    <color name="full_player_title_sub_theme">@color/mu_sub_text</color>
+    <color name="media_router_player_color">@color/white_opacity_100</color>
+</resources>

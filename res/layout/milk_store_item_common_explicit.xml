@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/milk_store_common_track_list_explicit_font_size" android:textColor="@color/list_item_explicit_text_color" android:gravity="center" android:id="@id/text_explicit" android:background="@drawable/explcit_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/milk_store_common_track_list_explicit_marginRight" android:text="@string/milk_19" style="@style/Font.Roboto.Regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

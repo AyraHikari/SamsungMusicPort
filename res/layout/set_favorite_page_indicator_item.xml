@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/page_indicator_selected" android:background="@drawable/set_favorite_page_indicator_selected" android:layout_width="@dimen/set_favorite_page_indicator_selected" android:layout_height="@dimen/set_favorite_page_indicator_selected" />
+    <View android:layout_gravity="center" android:id="@id/page_indicator_unselected" android:background="@drawable/set_favorite_page_indicator_unselected" android:layout_width="@dimen/set_favorite_page_indicator_unselected" android:layout_height="@dimen/set_favorite_page_indicator_unselected" />
+</FrameLayout>

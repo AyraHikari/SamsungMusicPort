@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mr_dialog_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/milk_ok_dialog_content_margin_left" android:layout_marginTop="@dimen/milk_ok_dialog_content_margin_top_bottom" android:layout_marginRight="@dimen/milk_ok_dialog_content_margin_right" android:layout_marginBottom="@dimen/milk_ok_dialog_content_margin_top_bottom" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/milk_ok_dialog_title_text_size" android:textStyle="bold" android:textColor="@color/milk_dialog_title_text_color" android:id="@id/mr_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="roboto-condensed" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/milk_fontsize_16_dp" android:textColor="@color/milk_dialog_message_text_color" android:id="@id/mr_dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/milk_ok_dialog_content_margin_left" android:layout_marginRight="@dimen/milk_ok_dialog_content_margin_right" android:layout_below="@id/mr_dialog_title_container" android:layout_alignParentLeft="true" android:lineSpacingExtra="4.0dip" android:fontFamily="roboto-regular" />
+    <FrameLayout android:orientation="vertical" android:id="@id/mr_customized_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mr_dialog_message" />
+    <View android:id="@id/mr_message_divider_line" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/milk_ok_dialog_button_margin_top" android:layout_below="@id/mr_customized_view" android:alpha="0.0" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/list_button_container" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/install_spotify" android:background="@drawable/spotify_track_detail_button_ripple" android:layout_width="180.0dip" android:layout_height="@dimen/mu_list_header_icon_size">
+        <TextView android:layout_gravity="center" android:id="@id/list_button_text" android:background="@null" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="34.0dip" android:text="@string/spotify_get" android:drawablePadding="4.0dip" android:drawableStart="@drawable/music_oobb_ic_spotify" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Header.Button" />
+    </FrameLayout>
+</FrameLayout>

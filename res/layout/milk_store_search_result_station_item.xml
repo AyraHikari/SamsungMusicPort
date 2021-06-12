@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/text_container" android:background="@drawable/ripple_rect_light" android:paddingLeft="@dimen/milk_store_common_track_list_padding_left" android:paddingRight="@dimen/milk_store_common_track_list_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/milk_search_station_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:gravity="center_vertical" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="@dimen/milk_search_station_item_height" android:shadowColor="#4dfafafa" android:shadowDy="1.0" android:shadowRadius="1.0" android:fontFamily="sans-serif" style="@style/Font.Roboto.Regular.ListItem.Line1" />
+    <View android:background="#1afafafa" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

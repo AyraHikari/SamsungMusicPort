@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/music_core_ble_select_tv_icon" android:width="@dimen/music_core_ble_select_tv_icon" />
+    <solid android:color="@color/music_core_ble_select_tv_icon_background" />
+</shape>

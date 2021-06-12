@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/ripple_list"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:drawable="@android:color/white" />
+    <item>
+        <nine-patch android:src="@drawable/tw_spinner_mtrl_am_alpha" android:tint="@color/white_opacity_100" />
+    </item>
+</ripple>

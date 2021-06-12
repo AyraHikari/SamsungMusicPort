@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:tint="@color/sesl_seekbar_control_color_normal" android:shape="rectangle">
+            <size android:height="@dimen/sesl_seekbar_track_height" />
+        </shape>
+    </item>
+    <item>
+        <layer-list>
+            <item android:id="@id/background">
+                <shape android:tint="@color/sesl_seekbar_control_color_normal" android:shape="rectangle">
+                    <size android:height="@dimen/sesl_seekbar_track_height" />
+                </shape>
+            </item>
+            <item android:id="@id/secondaryProgress">
+                <scale android:scaleWidth="100%">
+                    <shape android:tint="@color/sesl_seekbar_control_color_normal" android:shape="rectangle">
+                        <size android:height="@dimen/sesl_seekbar_track_height" />
+                    </shape>
+                </scale>
+            </item>
+            <item android:id="@id/progress">
+                <scale android:scaleWidth="100%">
+                    <shape android:tint="@color/sesl_seekbar_control_color_normal" android:shape="rectangle">
+                        <size android:height="@dimen/sesl_seekbar_track_height" />
+                    </shape>
+                </scale>
+            </item>
+        </layer-list>
+    </item>
+</selector>

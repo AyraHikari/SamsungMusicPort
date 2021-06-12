@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_list_item_height" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/dmr_icon" android:layout_width="@dimen/dialog_list_item_icon_size" android:layout_height="@dimen/dialog_list_item_icon_size" android:scaleType="fitXY" android:layout_marginEnd="@dimen/dialog_list_item_icon_margin_right" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/dmr_name" style="@style/Font.Roboto.Regular.DialogListItemMainText" />
+        <TextView android:id="@id/dmr_description" style="@style/Font.Roboto.Regular.DialogListItemSubText" />
+    </LinearLayout>
+</LinearLayout>

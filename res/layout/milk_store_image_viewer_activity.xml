@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/base_blur_background_common" />
+    <RelativeLayout android:id="@id/image_container" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samsung.android.app.music.milk.store.widget.BaseViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="11.0dip" android:textColor="#fffafafa" android:id="@id/page_index" android:padding="19.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/cancel" android:layout_width="@dimen/milk_cover_art_view_cancel_touch_size" android:layout_height="@dimen/milk_cover_art_view_cancel_touch_size" android:layout_alignParentRight="true" android:contentDescription="@string/mr_accessibility_close">
+            <ImageView android:background="@drawable/search_ic_cancel" android:layout_width="@dimen/milk_cover_art_view_cancel_size" android:layout_height="@dimen/milk_cover_art_view_cancel_size" android:layout_margin="@dimen/milk_cover_art_view_cancel_margin" android:contentDescription="" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

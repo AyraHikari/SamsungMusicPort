@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/music_list_icon_circle" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/music_list_icon_create" android:tint="@color/winset_list_plus_icon_color" />
+    </item>
+</layer-list>

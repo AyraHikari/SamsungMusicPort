@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/ripple_full_player_button" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/repeat_icon_lt" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/full_player_button_image_size" android:layout_height="@dimen/full_player_button_image_size" android:stateListAnimator="@animator/full_player_button_bounce_effect" />
+</FrameLayout>

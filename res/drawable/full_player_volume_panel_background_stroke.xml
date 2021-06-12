@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/full_player_volume_panel_background_corner_radius" />
+    <stroke android:width="@dimen/full_player_volume_background_stroke" android:color="@color/full_player_volume_bar_stroke" />
+</shape>

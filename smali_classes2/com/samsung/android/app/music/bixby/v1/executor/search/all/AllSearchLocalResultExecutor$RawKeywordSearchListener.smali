@@ -1,0 +1,179 @@
+.class final Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/samsung/android/app/music/bixby/v1/search/BixbySearchable$OnSearchListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x12
+    name = "RawKeywordSearchListener"
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+.field private final b:Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;)V
+    .locals 0
+    .param p2    # Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 154
+    iput-object p1, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 155
+    iput-object p2, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->b:Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$1;)V
+    .locals 0
+
+    .line 150
+    invoke-direct {p0, p1, p2}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;-><init>(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(II)V
+    .locals 4
+
+    .line 160
+    invoke-static {}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "[Before refine] onSearchFinished() - beginPosition: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, ", endPosition: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v0, p2}, Lcom/samsung/android/app/musiclibrary/core/bixby/v1/BixbyLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 p2, -0x1
+
+    if-ne p1, p2, :cond_1
+
+    .line 164
+    sget-boolean p1, Lcom/samsung/android/app/music/info/features/AppFeatures;->j:Z
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+    invoke-static {p1}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;->b(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;)Lcom/samsung/android/app/music/network/NetworkManager;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lcom/samsung/android/app/music/network/NetworkManager;->getNetworkInfo()Lcom/samsung/android/app/music/network/NetworkInfo;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lcom/samsung/android/app/music/network/NetworkInfo;->a:Lcom/samsung/android/app/music/network/NetworkInfo$NetworkState;
+
+    iget-boolean p1, p1, Lcom/samsung/android/app/music/network/NetworkInfo$NetworkState;->a:Z
+
+    if-eqz p1, :cond_0
+
+    .line 165
+    new-instance p1, Lcom/samsung/android/app/music/bixby/v1/search/OnlineKeywordRefiner;
+
+    iget-object p2, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+    .line 166
+    invoke-static {p2}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;->c(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;)Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Lcom/samsung/android/app/music/bixby/v1/search/OnlineKeywordRefiner;-><init>(Landroid/content/Context;)V
+
+    .line 167
+    iget-object p2, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+    invoke-static {p2}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;->d(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;)Lcom/samsung/android/app/musiclibrary/ui/list/ISearchView;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Lcom/samsung/android/app/musiclibrary/ui/list/ISearchView;->a()Ljava/lang/String;
+
+    move-result-object p2
+
+    new-instance v0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$KeywordRefineListener;
+
+    iget-object v1, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+    iget-object v2, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->b:Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$KeywordRefineListener;-><init>(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$1;)V
+
+    invoke-virtual {p1, p2, v0}, Lcom/samsung/android/app/music/bixby/v1/search/OnlineKeywordRefiner;->a(Ljava/lang/String;Lcom/samsung/android/app/music/bixby/v1/search/OnlineKeywordRefiner$OnOnlineKeywordRefineListener;)V
+
+    goto :goto_0
+
+    .line 170
+    :cond_0
+    iget-object p1, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+    const/4 p2, 0x0
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->b:Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;
+
+    invoke-static {p1, p2, v0}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;->a(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;ZLcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;)V
+
+    goto :goto_0
+
+    .line 173
+    :cond_1
+    iget-object p1, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->a:Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;
+
+    const/4 p2, 0x1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor$RawKeywordSearchListener;->b:Lcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;
+
+    invoke-static {p1, p2, v0}, Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;->a(Lcom/samsung/android/app/music/bixby/v1/executor/search/all/AllSearchLocalResultExecutor;ZLcom/samsung/android/app/musiclibrary/core/bixby/v1/Command;)V
+
+    :goto_0
+    return-void
+.end method

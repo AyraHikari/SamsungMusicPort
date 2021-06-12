@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:interpolator="@interpolator/sine_in_out_33" android:duration="@integer/sesl_loading_progress_rot_duration" android:repeatCount="infinite" android:valueFrom="0" android:valueTo="1800" android:valueType="floatType" android:propertyName="rotation" />
+</set>

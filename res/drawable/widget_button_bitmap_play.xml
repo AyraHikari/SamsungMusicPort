@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/music_widget_control_play" android:tint="@color/widget_button"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

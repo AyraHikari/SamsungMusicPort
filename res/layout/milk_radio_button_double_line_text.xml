@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="@dimen/milk_audio_quality_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/milk_audio_quality_radio_button_frame_width" android:layout_height="@dimen/milk_audio_quality_list_item_height_double_line">
+        <RadioButton android:id="@id/milk_radio_button" android:clickable="false" android:layout_width="@dimen/milk_audio_quality_radio_button_width" android:layout_height="@dimen/milk_audio_quality_radio_button_width" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="@dimen/milk_audio_quality_list_item_height_double_line" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/milk_fontsize_17_dp" android:textColor="?android:textColorPrimary" android:id="@id/milk_main_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif" />
+        <TextView android:textSize="@dimen/milk_fontsize_13_dp" android:textColor="?android:textColorPrimary" android:id="@id/milk_sub_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/milk_audio_quality_list_item_text_line_gap" android:includeFontPadding="false" android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/thumbnail" android:background="@drawable/browse_card_view_rounded_outline" android:layout_width="@dimen/browse_list_item_just_for_you_width" android:layout_height="@dimen/browse_list_item_just_for_you_width" android:foreground="@drawable/browse_ripple_list_card_rounded_kt" android:scaleType="centerCrop" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

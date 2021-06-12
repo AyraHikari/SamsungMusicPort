@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/sesl_action_bar_stacked_divider_alpha" android:tint="#ffe8e8e8" android:tintMode="src_over"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

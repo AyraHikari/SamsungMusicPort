@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/action_bar_check_box_layout" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/select_all_checkbox_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/checkbox_container" android:background="@drawable/ripple_action_bar" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/checkbox_width_winset" android:layout_height="@dimen/checkbox_height_winset" android:layout_marginStart="@dimen/mu_list_item_checkbox_space_outer">
+            <CheckBox android:id="@id/select_all_checkbox" android:background="@drawable/checkbox_background" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/milk_action_bar_checkbox_below_text" android:textColor="#fffafafa" android:gravity="center_horizontal" android:id="@id/select_all_checkbox_below_text" android:layout_width="@dimen/select_all_checkbox_container_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/select_all_checkbox_below_text_margin_top" android:text="@string/all" android:layout_marginStart="@dimen/select_all_checkbox_below_text_margin_left" />
+    </LinearLayout>
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#fffafafa" android:id="@id/select_all_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="2.0dip" android:text="@string/milk_select_track" android:singleLine="true" android:layout_centerVertical="true" android:fontFamily="roboto-condensed" android:layout_marginStart="@dimen/select_all_text_margin_start" />
+</RelativeLayout>

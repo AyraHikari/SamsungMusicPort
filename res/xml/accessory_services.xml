@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <application name="Music">
+        <serviceProfile id="/apps/Music" name="Music" role="provider" serviceImpl="com.samsung.android.app.music.service.accessory.SAProvider" serviceLimit="ANY" serviceTimeout="30" version="2.0">> <supportedTransports>
+                <transport type="TRANSPORT_BT" />
+            </supportedTransports>
+            <serviceChannel dataRate="high" id="300" priority="high" reliability="enable" />
+        </serviceProfile>
+    </application>
+</resources>

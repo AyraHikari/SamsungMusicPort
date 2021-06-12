@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/sesl_color_picker_used_color_group_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sesl_color_picker_used_color_group_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/sesl_color_picker_used_color_item_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="@dimen/sesl_color_picker_used_color_item_size" android:layout_height="@dimen/sesl_color_picker_used_color_item_size" android:layout_marginEnd="@dimen/sesl_color_picker_used_color_item_gap_margin" />
+        <View android:layout_width="@dimen/sesl_color_picker_used_color_item_size" android:layout_height="@dimen/sesl_color_picker_used_color_item_size" android:layout_marginEnd="@dimen/sesl_color_picker_used_color_item_gap_margin" />
+        <View android:layout_width="@dimen/sesl_color_picker_used_color_item_size" android:layout_height="@dimen/sesl_color_picker_used_color_item_size" android:layout_marginEnd="@dimen/sesl_color_picker_used_color_item_gap_margin" />
+        <View android:layout_width="@dimen/sesl_color_picker_used_color_item_size" android:layout_height="@dimen/sesl_color_picker_used_color_item_size" android:layout_marginEnd="@dimen/sesl_color_picker_used_color_item_gap_margin" />
+        <View android:layout_width="@dimen/sesl_color_picker_used_color_item_size" android:layout_height="@dimen/sesl_color_picker_used_color_item_size" android:layout_marginEnd="@dimen/sesl_color_picker_used_color_item_gap_margin" />
+        <View android:layout_width="@dimen/sesl_color_picker_used_color_item_size" android:layout_height="@dimen/sesl_color_picker_used_color_item_size" />
+    </LinearLayout>
+</LinearLayout>

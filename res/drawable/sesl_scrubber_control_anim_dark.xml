@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/sesl_scrubber_control_off_disabled_alpha_dark" />
+    <item android:state_pressed="true" android:id="@id/pressed" android:drawable="@drawable/sesl_seekbar_thumb_pressed_to_unpressed" />
+    <item android:id="@id/unpressed" android:drawable="@drawable/sesl_seekbar_thumb_unpressed_to_pressed" />
+    <transition android:drawable="@drawable/sesl_seekbar_thumb_unpressed_to_pressed_anim" android:toId="@id/pressed" android:fromId="@id/unpressed" />
+    <transition android:drawable="@drawable/sesl_seekbar_thumb_pressed_to_unpressed_anim" android:toId="@id/unpressed" android:fromId="@id/pressed" />
+</animated-selector>

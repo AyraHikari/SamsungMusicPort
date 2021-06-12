@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/sesl_list_choice_check_to_on_026_disabled" />
+    <item android:state_enabled="false" android:drawable="@drawable/sesl_list_choice_check_to_on_000_disabled" />
+    <item android:state_checked="true" android:drawable="@drawable/sesl_list_choice_check_to_on_026" />
+    <item android:drawable="@drawable/sesl_list_choice_check_to_on_000" />
+</animated-selector>

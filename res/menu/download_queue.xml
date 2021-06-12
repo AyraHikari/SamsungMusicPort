@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/download_queue_menu_pause" android:visible="false" android:title="@string/stop" app:showAsAction="always" />
+    <item android:id="@id/download_queue_menu_resume" android:visible="false" android:title="@string/milk_download_queue_resume_all" app:showAsAction="always" />
+</menu>

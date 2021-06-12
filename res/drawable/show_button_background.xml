@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/winset_show_button_background_corner_radius" />
+    <solid android:color="@color/show_button_background_winset" />
+    <stroke android:width="@dimen/winset_show_button_background_stroke" android:color="@android:color/transparent" />
+</shape>

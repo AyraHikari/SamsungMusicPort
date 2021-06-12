@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkbox" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/checkbox_width_winset" android:layout_height="@dimen/checkbox_height_winset" android:layout_marginEnd="18.0dip" />
+    <TextView android:id="@id/text1" android:paddingTop="@dimen/dialog_body_text_padding_top_winset_kt" android:paddingBottom="@dimen/dialog_body_text_padding_bottom_winset_kt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="15.0dip" style="@style/Font.Roboto.Regular.DialogListItemMainText" />
+</LinearLayout>

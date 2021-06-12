@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/milk_store_pop_scroll_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dialog_main" android:paddingLeft="@dimen/milk_store_pop_scroll_padding_left_right" android:paddingTop="@dimen/milk_store_pop_scroll_padding_top_bottom" android:paddingRight="@dimen/milk_store_pop_scroll_padding_left_right" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/milk_store_pop_scroll_title_height" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:marqueeRepeatLimit="marquee_forever" style="@style/Font.Roboto.Medium.DialogTitle" />
+        <RelativeLayout android:id="@id/custom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/title" />
+    </RelativeLayout>
+    <com.samsung.android.app.music.milk.store.widget.ScrollViewBottomFade android:scrollbarStyle="outsideOverlay" android:id="@id/scrollView_message" android:paddingBottom="@dimen/milk_store_pop_scroll_padding_top_bottom" android:fadingEdgeLength="@dimen/milk_store_pop_scroll_fade_size" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dialog_main" android:requiresFadingEdge="vertical" android:paddingStart="@dimen/milk_store_pop_scroll_padding_left_right" android:paddingEnd="@dimen/milk_store_pop_scroll_padding_left_right">
+        <TextView android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" style="@style/Font.Roboto.Regular.DialogDescription" />
+    </com.samsung.android.app.music.milk.store.widget.ScrollViewBottomFade>
+</RelativeLayout>

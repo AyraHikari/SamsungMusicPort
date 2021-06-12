@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/mu_ripple_button_winset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/music_detail_ic_play" />
+</ripple>

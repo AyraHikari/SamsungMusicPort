@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical" android:id="@id/dlna_dms_dialog_text" android:layout_width="fill_parent" android:minHeight="@dimen/dialog_list_item_height" android:paddingStart="@dimen/dialog_list_item_padding_horizontal" android:paddingEnd="@dimen/dialog_list_item_padding_horizontal" style="@style/Font.Roboto.Regular.DialogListItemMainText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

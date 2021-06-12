@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicSpinner android:layout_gravity="center_vertical" android:id="@id/spinner" android:background="@drawable/mu_ripple_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dropdown"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

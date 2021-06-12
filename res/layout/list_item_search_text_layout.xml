@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/text_layout" android:paddingTop="@dimen/mu_list_item_text_space_top_winset" android:paddingBottom="@dimen/mu_list_item_text_space_bottom_winset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/milk_store_common_track_list_height" android:layout_marginStart="@dimen/mu_list_item_space_outer_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/milk_store_item_common_explicit" />
+        <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:id="@id/text1" style="@style/Font.Roboto.Regular.ListItem.Line1" />
+    </LinearLayout>
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:id="@id/text2" style="@style/Font.Roboto.Regular.ListItem.Line2" />
+</LinearLayout>

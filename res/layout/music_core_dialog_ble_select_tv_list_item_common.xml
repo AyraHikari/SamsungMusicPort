@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/music_core_ble_dialog_body_text_one_line_padding_vertical" android:paddingBottom="@dimen/music_core_ble_dialog_body_text_one_line_padding_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/music_core_ble_select_tv_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/item_icon" android:background="@drawable/music_core_ble_select_tv_icon_background" android:layout_width="@dimen/music_core_ble_select_tv_icon" android:layout_height="@dimen/music_core_ble_select_tv_icon" android:src="@drawable/music_core_list_ic_tv" android:tint="@color/music_core_ble_select_tv_icon_color" android:layout_marginEnd="@dimen/music_core_ble_select_tv_icon_padding" />
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/text1" android:maxLines="1" style="@style/Font.Roboto.Regular.DialogBodyText" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="milk_store_album_grid_count">4</integer>
+    <integer name="milk_store_main_pick_column">2</integer>
+    <integer name="milk_store_main_top_chart_column">2</integer>
+    <integer name="milk_store_music_video_column">3</integer>
+    <integer name="milk_store_recommend_radio_column">2</integer>
+    <integer name="minimize_Size_Of_Soft_Input">26</integer>
+    <integer name="playlist_card_view_item_main_title_max_lines">1</integer>
+</resources>

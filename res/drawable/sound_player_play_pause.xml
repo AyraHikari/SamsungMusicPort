@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/sound_player_ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:drawable="@drawable/music_sound_player_ic_pause" android:state_activated="true" />
+            <item android:drawable="@drawable/music_sound_player_ic_play" />
+        </selector>
+    </item>
+</ripple>

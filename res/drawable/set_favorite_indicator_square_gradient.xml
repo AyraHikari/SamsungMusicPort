@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/set_favorite_image_gradient_stroke_start" android:endColor="@color/set_favorite_image_gradient_stroke_end" android:angle="270.0" />
+    <corners android:radius="@dimen/set_favorite_track_item_thumbnail_radius" />
+</shape>

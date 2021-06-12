@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/widget_album_art_size" android:width="@dimen/widget_album_art_size" />
+            <corners android:radius="@dimen/widget_background_radius" />
+            <solid android:color="@color/dark_gray_opacity_15" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/music_widget_ic_noitem" android:alpha="0.4" />
+    </item>
+</layer-list>

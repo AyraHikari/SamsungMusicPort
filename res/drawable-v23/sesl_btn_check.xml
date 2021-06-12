@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:id="@id/on" android:drawable="@drawable/sesl_btn_check_to_on_026" />
+    <item android:id="@id/off" android:drawable="@drawable/sesl_btn_check_to_on_000" />
+    <transition android:toId="@id/on" android:fromId="@id/off">
+        <animation-list>
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_000" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_001" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_002" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_003" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_004" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_005" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_006" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_007" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_008" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_009" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_010" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_011" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_012" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_013" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_014" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_015" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_016" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_017" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_018" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_019" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_020" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_021" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_022" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_023" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_024" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_025" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_026" />
+        </animation-list>
+    </transition>
+    <transition android:toId="@id/off" android:fromId="@id/on">
+        <animation-list>
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_026" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_025" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_024" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_023" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_022" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_021" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_020" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_019" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_018" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_017" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_016" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_015" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_014" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_013" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_012" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_011" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_010" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_009" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_008" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_007" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_006" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_005" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_004" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_003" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_002" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_001" />
+            <item android:duration="10" android:drawable="@drawable/sesl_btn_check_to_on_000" />
+        </animation-list>
+    </transition>
+</animated-selector>

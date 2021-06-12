@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.CheckedLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/deprecated_list_item_one_line_min_height_winset" android:paddingStart="@dimen/mu_list_item_space_outer_default" android:paddingEnd="@dimen/mu_list_item_space_outer_default" music:checkableId="@id/radio"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:music="http://schemas.android.com/apk/res-auto">
+    <RadioButton android:id="@id/radio" android:background="@null" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/list_item_radio_margin_right" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/text1" android:layout_marginTop="@dimen/list_item_one_line_text_layout_margin_vertical" android:layout_marginBottom="@dimen/list_item_one_line_text_layout_margin_vertical" style="@style/Font.Roboto.Regular.ListItem.Line1" />
+</com.samsung.android.app.musiclibrary.ui.widget.CheckedLinearLayout>

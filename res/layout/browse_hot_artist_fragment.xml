@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:background="@color/mu_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_fit_top" style="@style/Toolbar" />
+    <RelativeLayout android:id="@id/rootContainer" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/mu_actionbar_space_bottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.samsung.android.app.music.widget.BrowseRecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <include layout="@layout/list_loading_container" />
+        <FrameLayout android:id="@id/no_network_root_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/no_network_view_stub_2" android:layout="@layout/no_network_view_stub" android:inflatedId="@id/no_network_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/no_network_popup_view_stub_2" android:layout="@layout/no_network_popup_stub" android:inflatedId="@id/no_network_popup_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_fit_top">
+        <FrameLayout android:id="@id/transition_overlay_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:transitionName="thumbnail">
+            <com.samsung.android.app.music.browse.widget.RoundedImageView android:id="@id/transition_overlay_view_alpha" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" android:transitionName="fade" />
+        </FrameLayout>
+    </FrameLayout>
+    <View android:id="@id/fake_profile" android:layout_width="10.0dip" android:layout_height="10.0dip" android:alpha="0.0" android:transitionName="profile" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.samsung.android.app.musiclibrary.ui.widget.round.RoundedRelativeLayout android:id="@id/fake_list_container" android:background="@color/mu_content_area" android:layout_width="0.0dip" android:layout_height="500.0dip" android:transitionName="listContainer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rootContainer">
+        <ImageView android:id="@id/fake_list_container_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.samsung.android.app.musiclibrary.ui.widget.round.RoundedRelativeLayout>
+    <android.support.constraint.Guideline android:id="@id/guideline_fit_top" style="@style/Guideline.Fit.Top" />
+</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>

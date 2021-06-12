@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.Space android:id="@id/space_top" android:layout_width="fill_parent" android:layout_height="@dimen/browse_category_space_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/browse_header_layout" />
+        <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

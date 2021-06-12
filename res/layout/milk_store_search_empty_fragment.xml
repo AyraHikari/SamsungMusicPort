@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/milk_common_track_list_title_font_size" android:textColor="#b3fafafa" android:gravity="center" android:id="@id/search_guide_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="@dimen/milk_store_common_track_list_padding_left" android:layout_marginRight="@dimen/milk_store_common_track_list_padding_right" android:text="@string/milk_search_enter_keyword_guide" android:layout_centerInParent="true" android:fontFamily="sans-serif" />
+        <TextView android:textSize="@dimen/milk_common_track_list_title_font_size" android:textColor="#b3fafafa" android:gravity="center" android:id="@id/list_empty_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="@dimen/milk_store_common_track_list_padding_left" android:layout_marginRight="@dimen/milk_store_common_track_list_padding_right" android:text="@string/milk_search_no_auto_complete" android:layout_centerInParent="true" android:fontFamily="sans-serif" />
+    </RelativeLayout>
+    <com.samsung.android.app.music.milk.store.widget.NoNetworkLayout android:id="@id/no_network" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

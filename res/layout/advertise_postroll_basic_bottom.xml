@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/basic_text" android:background="@color/advertise_postroll_basic_button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/ad_full_banner_bottom_height">
+            <TextView android:textSize="@dimen/ad_popup_close_text_size" android:textColor="@color/white_opacity_100" android:gravity="center|right" android:id="@id/ad_banner_popup_close" android:layout_width="wrap_content" android:layout_height="@dimen/ad_popup_do_not_show_checkbox" android:text="@string/close" android:layout_alignParentRight="true" android:textAllCaps="true" android:layout_marginEnd="@dimen/ad_popup_close_margin_right" style="@style/Font.Roboto.Condensed.Bold" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

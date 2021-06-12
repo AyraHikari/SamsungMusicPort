@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:visibility="gone" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@dimen/sesl_bottom_navigation_margin" android:layout_marginBottom="@dimen/sesl_bottom_navigation_margin" />
+    <android.support.design.internal.BaselineLayout android:layout_gravity="center" android:duplicateParentState="true" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/smallLabel" android:paddingLeft="@dimen/sesl_bottom_show_button_padding_LR" android:paddingTop="@dimen/sesl_bottom_show_button_padding_TB" android:paddingRight="@dimen/sesl_bottom_show_button_padding_LR" android:paddingBottom="@dimen/sesl_bottom_show_button_padding_TB" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:id="@id/largeLabel" android:paddingLeft="@dimen/sesl_bottom_show_button_padding_LR" android:paddingTop="@dimen/sesl_bottom_show_button_padding_TB" android:paddingRight="@dimen/sesl_bottom_show_button_padding_LR" android:paddingBottom="@dimen/sesl_bottom_show_button_padding_TB" android:visibility="invisible" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </android.support.design.internal.BaselineLayout>
+</merge>

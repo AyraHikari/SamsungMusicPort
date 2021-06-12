@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/share_grid_item" android:paddingTop="@dimen/share_overlay_grid_item_padding_top_bottom" android:paddingBottom="@dimen/share_overlay_grid_item_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/share_overlay_grid_item_minimum_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/share_grid_item_image" android:layout_width="@dimen/share_overlay_grid_item_image_size" android:layout_height="@dimen/share_overlay_grid_item_image_size" android:layout_marginTop="@dimen/share_overlay_grid_item_icon_margin_top" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/share_overlay_grid_item_text_size" android:textColor="@color/milk_popup_message_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/share_grid_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/share_overlay_mu_grid_item_text_margin_top" android:maxLines="2" android:layout_below="@id/share_grid_item_image" android:layout_centerHorizontal="true" />
+</RelativeLayout>

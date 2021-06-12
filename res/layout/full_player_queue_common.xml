@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/now_playing_container" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/full_player_lyrics_queue_margin_bottom" android:layout_above="@id/full_player_control_layout" android:importantForAccessibility="no" android:layoutDirection="locale" android:paddingStart="@dimen/now_playing_container_padding_horizontal" android:paddingEnd="@dimen/now_playing_container_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/main_text" android:layout_width="0.0dip" app:layout_constraintBottom_toTopOf="@id/sub_text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" app:layout_constraintWidth_percent="0.75" style="@style/Font.Roboto.Regular.NoItem.Main" />
+    <TextView android:id="@id/sub_text" android:visibility="gone" android:layout_width="0.0dip" android:layout_marginTop="@dimen/mu_no_item_sub_text_margin_top" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/main_text" app:layout_constraintWidth_percent="0.75" app:layout_goneMarginTop="0.0dip" style="@style/Font.Roboto.Regular.NoItem.Sub" />
+</android.support.constraint.ConstraintLayout>

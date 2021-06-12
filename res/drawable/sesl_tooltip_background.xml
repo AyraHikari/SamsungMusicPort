@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/sesl_hover_tooltip_popup_left_margin" android:top="@dimen/sesl_hover_tooltip_popup_top_margin" android:right="@dimen/sesl_hover_tooltip_popup_right_margin" android:bottom="@dimen/sesl_hover_tooltip_popup_bottom_margin">
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/sesl_hover_popup_padding_left" android:top="@dimen/sesl_hover_popup_padding_top" android:right="@dimen/sesl_hover_popup_padding_right" android:bottom="@dimen/sesl_hover_popup_padding_bottom" />
+            <corners android:radius="@dimen/sesl_hover_popup_corner_radius" />
+            <solid android:color="?tooltipFrameBackground" />
+        </shape>
+    </item>
+</layer-list>

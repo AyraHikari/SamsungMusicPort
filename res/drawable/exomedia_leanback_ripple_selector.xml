@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="#66eeeeee"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector android:constantSize="true">
+            <item android:state_enabled="true">
+                <shape android:shape="oval">
+                    <solid android:color="#66eeeeee" />
+                    <size android:height="@dimen/exomedia_leanback_ripple_selector_size" android:width="@dimen/exomedia_leanback_ripple_selector_size" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/sesl_tablayout_subtab_indicator_radius" />
+    <solid android:color="@android:color/transparent" />
+    <stroke android:width="@dimen/sesl_tablayout_subtab_indicator_stroke_width" android:color="@color/sesl_tablayout_subtab_background_stroke_color_dark" />
+</shape>

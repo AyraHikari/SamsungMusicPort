@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d ալբոմ</item>
+        <item quantity="one">%d ալբոմ</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Ալբոմներ</item>
+        <item quantity="one">Ալբոմ</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Ձայնագրություններ</item>
+        <item quantity="one">Ձայնագրություն</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d շավիղ ավելացվել է Սիրվածներին: Շավիղները, որոնք արդեն Սիրվածներում են, չեն ավելացվել:</item>
+        <item quantity="one">%d շավիղ ավելացվել է Սիրվածներին: Շավիղը, որն արդեն Սիրվածներում է, չի ավելացվել:</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d երիզներ</item>
+        <item quantity="one">%d շավիղ</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d շավիղ հեռացվել է Սիրվածներից:</item>
+        <item quantity="one">%d շավիղ հեռացվել է սիրվածներից:</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d շավիղ ավելացվել է սիրվածներին</item>
+        <item quantity="one">%d շավիղ ավելացվել է սիրվածներին:</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Կարող եք առաջարկություններից հեռացնել մինչև %d շավիղ: Դիտեք հեռացված շավիղները, որոշ շավիղներ ընտրեք վերականգնելու համար, հետո նորից փորձեք:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Կարող եք առաջարկություններից հեռացնել մինչև %d շավիղ: Դիտեք հեռացված շավիղները, որոշ շավիղներ ընտրեք վերականգնելու համար, հետո նորից փորձեք:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Թակեք «Նվագարկել ռադիո» կոճակը՝ ամեն ամիս %d անվճար շավիղ վայելելու համար:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Թակեք «Նվագարկել ռադիո» կոճակը՝ ամեն ամիս %d անվճար շավիղ վայելելու համար:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Հնարավոր չէ ընտրել %d-ից ավելի կատարողներ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ընտրել %d-ից ավելի կատարող:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Հնարավոր չէ ընտրել %d-ից ավելի ժանրեր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ընտրել %d-ից ավելի ժանր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Հնարավոր չէ ընտրել %d-ից ավելի շավիղներ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ընտրել %d-ից ավելի շավիղ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d վայրկյան</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d վայրկյան</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Կարող եք օգտագործել %1$s-ը %2$d անգամ:</item>
+        <item quantity="one">Դուք կարող եք օգտագործել %s-ը 1 անգամ:</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">Հեղինակային իրավունքին առնչվող խնդրով պայմանավորված՝ հնարավոր չէ %d շավիղ գնել «պրեմիում» տոմսերով: Կարող եք դրանք գնել առանձին-առանձին:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հեղինակային իրավունքին առնչվող խնդրով պայմանավորված՝ հնարավոր չէ %d շավիղ գնել «պրեմիում» տոմսերով: Կարող եք դրանք գնել առանձին-առանձին:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d շավիղ կօգտագործվի առկա շավիղներից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d շավիղ կօգտագործվի առկա շավիղներից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">%d երգերի ներբեռնման սպասում…</item>
+        <item quantity="one">1 երգ ներբեռնելու սպասում…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Հեռախոսից վերացնե՞լ %d ալբոմ և ալբոմների բոլոր շավիղները:</item>
+        <item quantity="one">Հեռախոսից վերացնե՞լ 1 ալբոմ և ալբոմի բոլոր շավիղները:</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Վերացնե՞լ այս կատարողների բոլոր շավիղները:</item>
+        <item quantity="one">Վերացնե՞լ այս կատարողի բոլոր շավիղները:</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Վերացնե՞լ այս կոմպոզիտորների բոլոր շավիղները:</item>
+        <item quantity="one">Վերացնե՞լ այս կոմպոզիտորի բոլոր շավիղները:</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Վերացնե՞լ ընտրված շավիղները:</item>
+        <item quantity="one">Վերացնե՞լ ընտրված շավիղը:</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d շավիղ կգնվի: Եթե բավականաչափ շավիղներ չունեք, ապա հնարավոր չէ գնել այս շավիղները:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d շավիղ կգնվի: Եթե բավականաչափ շավիղներ չունեք, ապա հնարավոր չէ գնել այս շավիղները:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Գնե՞լ ընտրված շավիղները:</item>
+        <item quantity="one">Գնե՞լ ընտրված շավիղը:</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Դուք արդեն գնել եք այս երգերը: Ցանկացած ժամանակ նորից կարող եք ներբեռնել գնված երգերը:</item>
+        <item quantity="one">Դուք արդեն գնել եք այս երգը: Ցանկացած ժամանակ նորից կարող եք ներբեռնել գնված երգերը:</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Շավիղներն արդեն գնված են</item>
+        <item quantity="one">Շավիղն արդեն գնված է</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Ընդամենը %d տրված երգացանկ կարող եք ավելացնել որպես սիրված: Որոշ տրված երգացանկեր հեռացրեք «Սիրվածներ» ներդիրից:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընդամենը %d տրված երգացանկ կարող եք ավելացնել որպես սիրված: Որոշ տրված երգացանկեր հեռացրեք «Սիրվածներ» ներդիրից:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Հոսքային եղանակով փոխանցվող ընդամենը %d շավիղ կարող եք ավելացնել որպես Սիրված շավիղներ: Սիրված շավիղներից հեռացրեք հոսքային եղանակով փոխանցվող որոշ շավիղներ, հետո նորից փորձեք:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հոսքային եղանակով փոխանցվող ընդամենը %d շավիղ կարող եք ավելացնել որպես Սիրված շավիղ: Սիրված շավիղներից հեռացրեք հոսքային եղանակով փոխանցվող որոշ շավիղներ, հետո նորից փորձեք:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Ընդամենը %d շավիղ կարող եք ավելացնել որպես Սիրված շավիղներ: Սիրված շավիղներից հեռացրեք որոշ շավիղներ, հետո նորից փորձեք:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ընդամենը %d շավիղ կարող եք ավելացնել որպես Սիրված շավիղ: Սիրված շավիղներից հեռացրեք որոշ շավիղներ, հետո նորից փորձեք:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d թղթպանակ</item>
+        <item quantity="one">1 թղթապանակ</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Հեռախոսից վերացնե՞լ %d պանակ և պանակների բոլոր շավիղները:</item>
+        <item quantity="one">Հեռախոսից վերացնե՞լ 1 պանակ և պանակի բոլոր շավիղները:</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Վերացնե՞լ այս ժանրերի բոլոր շավիղները:</item>
+        <item quantity="one">Վերացնե՞լ այս ժանրի բոլոր շավիղները:</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d թաքցված պանակ նույնպես կվերացվի:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d թաքցված պանակ նույնպես կվերացվի:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d շավիղ վերականգնվեց:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d շավիղ վերականգնվեց:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Վերացնե՞լ %d տարր:</item>
+        <item quantity="one">Վերացնե՞լ 1 տարր:</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Արտահանվել է %d երգացանկ:</item>
+        <item quantity="one">Արտահանվել է %d երգացանկ:</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Ներմուծվել է %d երգացանկ:</item>
+        <item quantity="one">Ներմուծվել է %d երգացանկ:</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Հնարավոր չէ ընտրել %d-ից ավելի երգացանկեր:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ընտրել %d-ից ավելի երգացանկեր:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Վերացնե՞լ %d երգացանկ:</item>
+        <item quantity="one">Վերացնե՞լ 1 երգացանկ:</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d երիզներ</item>
+        <item quantity="one">1 երիզ</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d ձայնագրությունը ավելացվել է հերթին:</item>
+        <item quantity="one">%d շավիղ ավելացվել է հերթին:</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Վերացնե՞լ %d շավիղ:</item>
+        <item quantity="one">Վերացնե՞լ 1 շավիղ:</item>
+    </plurals>
+</resources>

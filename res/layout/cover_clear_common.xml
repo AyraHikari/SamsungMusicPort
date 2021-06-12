@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="@dimen/cover_clear_horizontal_margin" android:layout_marginEnd="@dimen/cover_clear_horizontal_margin">
+        <TextView android:textSize="@dimen/cover_clear_title_text_size" android:textColor="@color/cover_clear_text" android:id="@id/title" android:focusable="true" android:layout_height="wrap_content" android:text="@string/no_songs_playing" android:textAlignment="center" style="@style/Font.Roboto.Regular.Marquee" />
+        <TextView android:textSize="@dimen/cover_clear_artist_text_size" android:textColor="@color/cover_clear_text" android:id="@id/artist" android:focusable="true" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cover_clear_text_margin" android:textAlignment="center" style="@style/Font.Roboto.Regular.Marquee" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/cover_clear_horizontal_margin" android:layout_marginEnd="@dimen/cover_clear_horizontal_margin">
+        <FrameLayout android:id="@id/play_pause_btn" android:focusable="true" android:clickable="true" android:layout_width="@dimen/cover_clear_control_button_size" android:layout_height="@dimen/cover_clear_control_button_size" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@id/play_pause_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear_cover_pause" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/prev_btn" android:focusable="true" android:clickable="true" android:layout_width="@dimen/cover_clear_control_button_size" android:layout_height="@dimen/cover_clear_control_button_size" android:layout_toLeftOf="@id/play_pause_btn" android:layout_marginEnd="@dimen/cover_clear_control_margin">
+            <ImageView android:layout_gravity="center" android:id="@id/prev_icon" android:background="@drawable/ripple_action_bar" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear_music_prev" android:contentDescription="@string/tts_previous" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/next_btn" android:focusable="true" android:clickable="true" android:layout_width="@dimen/cover_clear_control_button_size" android:layout_height="@dimen/cover_clear_control_button_size" android:layout_toRightOf="@id/play_pause_btn" android:layout_marginStart="@dimen/cover_clear_control_margin">
+            <ImageView android:layout_gravity="center" android:id="@id/next_icon" android:background="@drawable/ripple_action_bar" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clear_music_next" android:contentDescription="@string/tts_next" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

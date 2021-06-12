@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d album</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Album</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Trek</item>
+        <item quantity="one">Trek</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d trek ditambahkan ke Favorit. Trek yang sudah ada di Favorit tidak ditambahkan.</item>
+        <item quantity="one">%d trek ditambahkan ke Favorit. Trek yang sudah ada Favorit tidak ditambahkan.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d trek</item>
+        <item quantity="one">%d trek</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d trek dihapus dari Favorit.</item>
+        <item quantity="one">%d trek dihapus dari favorit.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d trek ditambahkan ke favorit</item>
+        <item quantity="one">%d trek ditambahkan ke favorit.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Anda hanya dapat menghapus hingga %d trek dari rekomendasi. Lihat trek yang dihapus, pilih beberapa untuk dipulihkan, lalu coba lagi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Ketuk tombol Putar radio untuk menikmati %d trek gratis setiap bulan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Tidak dapat memilih lebih dari %d artis.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Tidak dapat memilih lebih dari %d genre.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Tidak dapat memilih lebih dari %d trek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d detik</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Anda dapat menggunakan %1$s %2$d berkali.</item>
+        <item quantity="one">Anda dapat menggunakan %s 1 kali.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d trek tidak dapat dibeli dengan tiket premium karena masalah hak cipta. Anda dapat membelinya secara terpisah.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d trek akan digunakan dari trek Anda yang tersedia.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Menunggu proses mengunduh %d lagu…</item>
+        <item quantity="one">Menunggu proses mengunduh 1 lagu…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Hapus %d album dan semua trek di dalamnya dari ponsel?</item>
+        <item quantity="one">Hapus 1 album dan semua trek di dalamnya dari ponsel?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Hapus semua trek dari artis ini?</item>
+        <item quantity="one">Hapus semua trek dari artis ini?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Hapus semua trek dari komponis ini?</item>
+        <item quantity="one">Hapus semua trek dari komponis ini?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Hapus trek yang dipilih?</item>
+        <item quantity="one">Hapus trek yang dipilih?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d trek akan dibeli. Jika trek Anda yang tersedia tidak cukup, maka trek ini tidak dapat dibeli.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Beli trek yang dipilih?</item>
+        <item quantity="one">Beli trek yang dipilih?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Anda telah membeli lagu ini. Anda dapat mengunduh kembali lagu yang telah dibeli kapan pun.</item>
+        <item quantity="one">Anda telah membeli lagu ini. Anda dapat mengunduh kembali lagu yang telah dibeli kapan pun.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Trek sudah dibeli</item>
+        <item quantity="one">Trek sudah dibeli</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Anda hanya dapat menambahkan %d daftar putar yang diberikan sebagai favorit. Hapus beberapa daftar putar yang diberikan dari tab Favorit.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Anda hanya dapat menambahkan %d trek streaming sebagai trek Favorit. Hapus beberapa trek streaming dari trek Favorit, lalu coba lagi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Anda hanya dapat menambahkan %d trek sebagai trek Favorit. Hapus beberapa trek dari trek Favorit, lalu coba lagi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d folder</item>
+        <item quantity="one">1 folder</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Hapus %d folder dan semua trek di dalamnya dari ponsel?</item>
+        <item quantity="one">Hapus 1 folder dan semua trek di dalamnya dari ponsel?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Hapus semua trek dalam genre ini?</item>
+        <item quantity="one">Hapus semua trek dalam genre ini?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d folder tersembunyi juga akan dihapus.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d trek dipulihkan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Hapus %d item?</item>
+        <item quantity="one">Hapus 1 item?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d daftar putar diekspor.</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d daftar putar diimpor.</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Tidak dapat memilih lebih dari %d daftar putar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Hapus %d daftar putar?</item>
+        <item quantity="one">Hapus 1 daftar putar?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d trek</item>
+        <item quantity="one">1 trek</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d trek ditambahkan ke antrean.</item>
+        <item quantity="one">%d trek ditambahkan ke antrean.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Hapus %d trek?</item>
+        <item quantity="one">Hapus 1 trek?</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="0.0dip" android:topRightRadius="@dimen/quick_panel_cp_icon_background_radius" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+    <solid android:color="@color/full_player_tag_icon_background" />
+</shape>

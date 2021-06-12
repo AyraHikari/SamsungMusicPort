@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/winset_dialog_body_text" android:textColor="@color/dialog_do_not_show_body_text" android:id="@id/dialog_main_text" android:paddingTop="@dimen/winset_dialog_body_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/winset_dialog_body_padding_horizontal" android:paddingEnd="@dimen/winset_dialog_body_padding_horizontal" />
+        <CheckBox android:textSize="@dimen/winset_dialog_do_not_show_check_box_text" android:textColor="@color/dialog_body_text_winset" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/winset_dialog_body_checkbox_margin_top" android:layout_marginBottom="@dimen/winset_dialog_body_checkbox_margin_bottom" android:checked="false" android:text="@string/do_not_show_again" android:drawableLeft="@android:color/transparent" android:drawablePadding="8.0dip" android:layout_marginStart="@dimen/winset_dialog_body_checkbox_margin_horizontal" android:layout_marginEnd="@dimen/winset_dialog_body_checkbox_margin_horizontal" />
+    </LinearLayout>
+</ScrollView>

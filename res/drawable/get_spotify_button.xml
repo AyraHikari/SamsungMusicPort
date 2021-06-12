@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/ripple_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:height="@dimen/spotify_detail_header_button_height">
+        <shape android:shape="rectangle">
+            <corners android:radius="6.0dip" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <item android:height="@dimen/spotify_detail_header_button_height">
+        <shape android:shape="rectangle">
+            <corners android:radius="6.0dip" />
+            <padding android:left="@dimen/spotify_button_padding_horizontal_kt" android:right="@dimen/spotify_button_padding_horizontal_kt" />
+            <solid android:color="@color/spotify_button_background_kt" />
+        </shape>
+    </item>
+</ripple>

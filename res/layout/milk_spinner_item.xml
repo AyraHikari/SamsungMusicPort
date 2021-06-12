@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="16.0dip" android:textColor="@color/milk_list_title_text_color" android:gravity="start" android:id="@id/spinner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="roboto-regular" android:paddingStart="@dimen/spinner_item_text_space_start" android:paddingEnd="@dimen/spinner_item_text_space_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

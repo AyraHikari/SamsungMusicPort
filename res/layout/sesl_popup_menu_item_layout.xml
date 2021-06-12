@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.view.menu.ListMenuItemView android:paddingTop="@dimen/sesl_popup_menu_item_top_padding" android:paddingBottom="@dimen/sesl_popup_menu_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/sesl_popup_menu_item_min_width" android:minHeight="@dimen/sesl_popup_menu_item_min_height" android:paddingStart="@dimen/sesl_popup_menu_item_start_padding" android:paddingEnd="@dimen/sesl_popup_menu_item_end_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceLargePopupMenu" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/title" android:fadingEdge="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:textAlignment="viewStart" android:paddingEnd="7.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textAppearance="?textAppearanceSmallPopupMenu" android:id="@id/shortcut" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/title" android:textAlignment="viewStart" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/submenuarrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:scaleType="center" android:layout_marginStart="8.0dip" />
+</android.support.v7.view.menu.ListMenuItemView>

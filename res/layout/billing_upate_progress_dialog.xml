@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/billing_update_progress_dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_width="@dimen/billing_update_progress_dialog_circle_width" android:layout_height="@dimen/billing_update_progress_dialog_circle_width" android:layout_marginRight="@dimen/billing_update_progress_dialog_padding" />
+    <TextView android:textSize="@dimen/billing_update_progress_dialog_text_size" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.OneUi" parent="@style/BaseAppTheme.OreoMr1" />
+    <style name="BaseAppTheme.OreoMr1" parent="@style/BaseAppTheme.Nougat">
+        <item name="android:windowLightNavigationBar">@bool/windowLightNavigationBar</item>
+    </style>
+</resources>

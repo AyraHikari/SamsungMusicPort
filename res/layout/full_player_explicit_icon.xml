@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/full_player_explicit_icon_text_size" android:textColor="@color/full_player_explicit_icon_text" android:gravity="center" android:background="@drawable/full_player_explicit_icon_background" android:layout_width="@dimen/full_player_explicit_icon_size" android:layout_height="@dimen/full_player_explicit_icon_size" android:text="@string/milk_19" android:fontFamily="roboto-regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

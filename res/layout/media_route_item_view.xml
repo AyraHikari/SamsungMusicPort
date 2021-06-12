@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/winset_dialog_padding" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/media_router_icon_stroke" android:layout_width="@dimen/media_router_list_icon_container_size" android:layout_height="@dimen/media_router_list_icon_container_size" android:layout_marginRight="@dimen/media_router_list_icon_right_padding">
+        <ImageView android:id="@id/media_route_icon" android:layout_width="@dimen/media_router_list_icon_size" android:layout_height="@dimen/media_router_list_icon_size" android:src="@drawable/smart_view_list_ic_mobile" android:tint="@color/media_router_icon_color" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/media_router_list_text_size" android:textColor="@color/media_route_list_text_color" android:id="@id/media_route_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

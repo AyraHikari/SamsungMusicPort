@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.SeslDropDownItemTextView android:ellipsize="marquee" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:minHeight="?dropdownListPreferredItemHeight" android:maxLines="1" style="?spinnerDropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/music_tab_ic_favorite" android:tint="@color/tab_heart_kt"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

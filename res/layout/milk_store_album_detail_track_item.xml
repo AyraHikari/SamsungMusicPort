@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:animateIds="text_layout" app:nowPlayingIds="text1, text2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guideline_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/mu_list_item_space_outer_default" />
+    <CheckBox android:id="@id/checkbox" android:visibility="gone" android:layout_marginStart="@dimen/mu_list_item_checkbox_space_outer" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Checkbox" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/text_layout" android:paddingTop="@dimen/mu_list_item_text_space_top_winset" android:paddingBottom="@dimen/mu_list_item_text_space_bottom_winset" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/now_playing" app:layout_constraintStart_toEndOf="@id/checkbox" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginStart="0.0dip">
+        <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/mu_list_item_text1_winset" android:id="@id/track_number" app:maxFontLevel="large" style="@style/ListItem.Text.TrackNumber" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/text_explicit" android:visibility="gone" layout="@layout/browse_item_common_explicit" />
+                <include android:id="@id/title_icon" layout="@layout/list_item_title_tag" />
+                <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/mu_list_item_text1_winset" android:layout_gravity="center_vertical" android:id="@id/text1" app:maxFontLevel="large" style="@style/Font.Roboto.Regular.ListItem.Line1" />
+            </LinearLayout>
+            <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/mu_list_item_text2_winset" android:id="@id/text2" app:maxFontLevel="large" style="@style/Font.Roboto.Regular.ListItem.Line2" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.samsung.android.app.musiclibrary.ui.widget.EqualizerAnimationView android:id="@id/now_playing" android:visibility="gone" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/more" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/mu_list_item_space_outer_default" style="@style/ListItem.NowPlaying" />
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guideline_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/mu_list_item_space_outer_default" />
+    <include android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline_end" app:layout_constraintTop_toTopOf="parent" layout="@layout/browse_ui_list_item_component_more_menu" />
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guideline_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/mu_list_item_album_detail_divider_inset_start" app:layout_constraintGuide_end="@dimen/mu_list_item_space_outer_default" />
+</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/track_header_menu_container_play" android:layout_width="wrap_content" android:layout_height="@dimen/milk_store_common_track_list_header_menu_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_button_text_kt" android:textColor="@color/black_opacity_90" android:gravity="center" android:layout_gravity="center" android:id="@id/play_all" android:background="@drawable/mu_ripple_button_header" android:paddingLeft="@dimen/list_button_inner_space_horizontal_kt" android:paddingRight="@dimen/list_button_inner_space_horizontal_kt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/milk_store_common_track_play_all" android:textAllCaps="true" android:fontFamily="roboto-condensed-light" />
+</FrameLayout>

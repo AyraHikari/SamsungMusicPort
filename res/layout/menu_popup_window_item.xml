@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/popup_menu_item_min_width" android:minHeight="?android:listPreferredItemHeightSmall" android:singleLine="true" android:paddingStart="@dimen/popup_menu_item_padding_horizontal" android:paddingEnd="@dimen/popup_menu_item_padding_horizontal" style="?android:spinnerDropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

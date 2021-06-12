@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/sesl_color_picker_selected_color_item_radius" android:bottomLeftRadius="@dimen/sesl_color_picker_selected_color_item_radius" />
+    <size android:height="@dimen/sesl_color_picker_selected_color_item_height" android:width="@dimen/sesl_color_picker_selected_color_item_width" />
+</shape>

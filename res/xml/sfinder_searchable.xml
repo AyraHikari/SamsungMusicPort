@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable android:label="@string/app_name" android:hint="@string/app_name" android:searchSuggestAuthority="@string/provider_search_authority" android:searchSuggestSelection=" ?" android:searchSuggestIntentAction="com.sec.android.app.music.intent.action.S_FIND" android:imeOptions="actionDone" android:searchSuggestThreshold="1" android:includeInGlobalSearch="true" android:searchSettingsDescription="@string/search_settings_description"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <extra-attr android:name="includeInInsightSearch" android:value="true" />
+    <extra-attr android:name="searchLayoutStyle" android:value="suggest_template_content_music" />
+    <extra-attr android:name="categoryFilters" android:value="music" />
+</searchable>

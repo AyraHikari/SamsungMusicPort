@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/edge_panel_album_art_size" android:layout_height="@dimen/edge_panel_album_art_size" android:src="@drawable/music_edge_panel_thumnail_bg" android:scaleType="fitCenter" android:contentDescription="@string/tts_go_to_music" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edge_panel_control_info_margin_top">
+        <TextView android:textSize="@dimen/edge_panel_control_info_title" android:textColor="@color/edge_panel_info_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title" android:textAlignment="center" style="@style/Font.Roboto.Regular.Marquee" />
+        <TextView android:textSize="@dimen/edge_panel_control_info_artist" android:textColor="@color/edge_panel_info_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/artist" android:textAlignment="center" style="@style/Font.Roboto.Regular.Marquee" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edge_panel_control_margin_top" android:baselineAligned="false" android:layoutDirection="ltr">
+        <ImageView android:layout_width="@dimen/edge_panel_control_button_size" android:layout_height="@dimen/edge_panel_control_button_size" android:src="@drawable/music_sound_picker_ic_prev" android:layout_toLeftOf="@id/play_pause_btn" />
+        <ImageView android:id="@id/play_pause_btn" android:layout_width="@dimen/edge_panel_control_button_size" android:layout_height="@dimen/edge_panel_control_button_size" android:layout_marginLeft="@dimen/edge_panel_control_button_margin_horizontal" android:layout_marginRight="@dimen/edge_panel_control_button_margin_horizontal" android:src="@drawable/music_sound_picker_ic_play" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/next_btn" android:background="@drawable/ripple_button_oval" android:layout_width="@dimen/edge_panel_control_button_size" android:layout_height="@dimen/edge_panel_control_button_size" android:src="@drawable/music_sound_picker_ic_next" android:layout_toRightOf="@id/play_pause_btn" />
+    </RelativeLayout>
+</LinearLayout>

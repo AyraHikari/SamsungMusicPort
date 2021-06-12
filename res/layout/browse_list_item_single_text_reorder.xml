@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/mu_list_item_space_outer_default" android:paddingEnd="@dimen/mu_list_item_space_outer_default"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/text1" android:paddingTop="@dimen/mu_list_item_text_space_top_winset" android:paddingBottom="@dimen/mu_list_item_text_space_bottom_winset" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/reorder" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Text.Line1" />
+    <ImageView android:id="@id/reorder" app:layout_constraintBottom_toBottomOf="@id/text1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/text1" style="@style/ListItem.Reorder" />
+    <View android:id="@id/bottom_divider" android:background="@drawable/list_divider" android:layout_width="0.0dip" android:layout_height="2.0px" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/ListItem.Divider" />
+</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>

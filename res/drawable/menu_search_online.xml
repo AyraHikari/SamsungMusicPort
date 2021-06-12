@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/music_ic_ab_web_search" android:tint="@color/mu_icon_menu"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

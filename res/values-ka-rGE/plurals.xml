@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d ალბომი</item>
+        <item quantity="one">%d ალბომი</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">ალბომები</item>
+        <item quantity="one">ალბომი</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">თვალთვალი</item>
+        <item quantity="one">ბილიკი</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d ბილიკი დაემატა ფავორიტებში. ფავორიტებში უკვე დამატებული ბილიკები არ დაემატა.</item>
+        <item quantity="one">რჩეულებში დაემატა %d ბილიკი. რჩეულებში უკვე დამატებული ბილიკი არ დაემატა.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d ბილიკი</item>
+        <item quantity="one">%d ბილიკი</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">ფავორიტებში წაიშალა %d მუსიკალური ბილიკი.</item>
+        <item quantity="one">რჩეულებში წაიშალა %d მუსიკალური ბილიკი.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d ბილიკი დაემატა ფავორიტებში</item>
+        <item quantity="one">რჩეულებში დაემატა %d ბილიკი.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">რეკომენდებულებიდან შეგიძლიათ წაშალოთ მხოლოდ %d მუსიკის ბილიკამდე. ნახეთ წაშლილი მუსიკის ბილიკები, აირჩიეთ აღსადგენები, შემდეგ კი ისევ სცადეთ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">რეკომენდებულებიდან შეგიძლიათ წაშალოთ მხოლოდ %d მუსიკის ბილიკი. ნახეთ წაშლილი მუსიკის ბილიკები, აირჩიეთ აღსადგენები, შემდეგ კი ისევ სცადეთ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">შეეხეთ რადიოს ჩართვის ღილაკს, რომ მოუსმინოთ %d უფასო მუსიკის ბილიკს ყოველთვე.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შეეხეთ რადიოს ჩართვის ღილაკს, რომ მოუსმინოთ %d უფასო მუსიკის ბილიკს ყოველთვე.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">%d-ზე მეტი შემსრულებლის არჩევა შეუძლებელია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ზე მეტი შემსრულებლის არჩევა შეუძლებელია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">%d-ზე მეტი ჟანრის არჩევა შეუძლებელია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ზე მეტი ჟანრის არჩევა შეუძლებელია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">%d-ზე მეტი მუსიკის ბილიკის არჩევა შეუძლებელია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ზე მეტი მუსიკის ბილიკის არჩევა შეუძლებელია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d წამი</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d წამი</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">შეგიძლიათ გამოიყენოთ %1$s %2$d-ჯერ.</item>
+        <item quantity="one">შეგიძლიათ გამოიყენოთ %s ერთხელ.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d მუსიკის ბილიკის შეძენა შეუძლებელია პრემიუმ ბილეთებით, საავტორო უფლებების გამო. მათი შეძენა შეგიძლიათ ინდივიდუალურად.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d მუსიკის ბილიკის შეძენა შეუძლებელია პრემიუმ ბილეთებით, საავტორო უფლებების გამო. მათი შეძენა შეგიძლიათ ინდივიდუალურად.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d მუსიკის ბილიკი გამოყენებული იქნება თქვენი ხელმისაწვდომი მუსიკის ბილიკებიდან.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d მუსიკის ბილიკი გამოყენებული იქნება თქვენი ხელმისაწვდომი მუსიკის ბილიკებიდან.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">დაელოდეთ %d სიმღერების ჩამოტვირთვას…</item>
+        <item quantity="one">დაელოდეთ 1 სიმღერის ჩამოტვირთვას…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">ტელეფონში წაიშალოს %d ალბომი და მუსიკის ყველა ბილიკი მათში?</item>
+        <item quantity="one">ტელეფონში წაიშალოს 1 ალბომი და მუსიკის ყველა ბილიკი მასში?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">წაიშალოს ამ შემსრულებლების ყველა მუსიკის ბილიკი?</item>
+        <item quantity="one">წაიშალოს ამ შემსრულებლის ყველა მუსიკის ბილიკი?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">წაიშალოს ამ კომპოზიტორების ყველა მუსიკის ბილიკი?</item>
+        <item quantity="one">წაიშალოს ამ კომპოზიტორის ყველა მუსიკის ბილიკი?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">წაიშალოს შერჩეული მუსიკის ბილიკები?</item>
+        <item quantity="one">წაიშალოს შერჩეული მუსიკის ბილიკი?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">შეძენილი იქნება %d მუსიკის ბილიკი. თუ არ გაქვთ საკმარისი ხელმისაწვდომი მუსიკის ბილიკი, ამ მუსიკის ბილიკებს ვერ შეიძენთ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">შეძენილი იქნება %d მუსიკის ბილიკი. თუ არ გაქვთ საკმარისი ხელმისაწვდომი მუსიკის ბილიკი, ამ მუსიკის ბილიკებს ვერ შეიძენთ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">შეიძენთ შერჩეულ მუსიკის ბილიკებს?</item>
+        <item quantity="one">შეიძენთ შერჩეულ მუსიკის ბილიკს?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">თქვენ უკვე შეიძინეთ ეს სიმღერები. შეძენილი სიმღერების ხელახლა ჩამოტვირთვა შეგიძლიათ ნებისმიერ დროს.</item>
+        <item quantity="one">თქვენ უკვე შეიძინეთ ეს სიმღერა. შეძენილი სიმღერების ხელახლა ჩამოტვირთვა შეგიძლიათ ნებისმიერ დროს.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">მუსიკის ბილიკები უკვე შეძენილია</item>
+        <item quantity="one">მუსიკის ბილიკი უკვე შეძენილია</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">რჩეულებში შეგიძლიათ დაამატოთ მხოლოდ %d მოწოდებული მუსიკის სია. რჩეულების გრაფაში წაშალეთ ზოგიერთი მოწოდებული მუსიკის სია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">რჩეულებში შეგიძლიათ დაამატოთ მხოლოდ %d მოწოდებული მუსიკის სია. რჩეულების გრაფაში წაშალეთ ზოგიერთი მოწოდებული მუსიკის სია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">რჩეულ მუსიკის ბილიკში შეგიძლიათ დაამატოთ სტრიმინგით მიღებული მხოლოდ %d მუსიკის ბილიკი. რჩეულ მუსიკის ბილიკებში წაშალეთ სტრიმინგით მიღებული ზოგიერთი ბილიკი და ისევ სცადეთ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">რჩეულ მუსიკის ბილიკში შეგიძლიათ დაამატოთ სტრიმინგით მიღებული მხოლოდ %d მუსიკის ბილიკი. რჩეულ მუსიკის ბილიკებში წაშალეთ სტრიმინგით მიღებული ზოგიერთი ბილიკი და ისევ სცადეთ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">რჩეულ მუსიკის ბილიკში შეგიძლიათ დაამატოთ მხოლოდ %d მუსიკის ბილიკი. რჩეულ მუსიკის ბილიკებში წაშალეთ ზოგიერთი ბილიკი და ისევ სცადეთ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">რჩეულ მუსიკის ბილიკში შეგიძლიათ დაამატოთ მხოლოდ %d მუსიკის ბილიკი. რჩეულ მუსიკის ბილიკებში წაშალეთ ზოგიერთი ბილიკი და ისევ სცადეთ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d საქაღალდე</item>
+        <item quantity="one">1 საქაღალდე</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">ტელეფონში წაიშალოს %d საქაღალდე და მუსიკის ყველა ბილიკი მათში?</item>
+        <item quantity="one">ტელეფონში წაიშალოს 1 საქაღალდე და მუსიკის ყველა ბილიკი მასში?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">წაიშალოს ყველა მუსიკის ბილიკი ამ ჟანრებში?</item>
+        <item quantity="one">წაიშალოს ყველა მუსიკის ბილიკი ამ ჟანრში?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d დამალული საქაღალდეც წაიშლება.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d დამალული საქაღალდეც წაიშლება.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">აღდგა %d მუსიკის ბილიკი.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">აღდგა %d მუსიკის ბილიკი.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">წაიშალოს %d ელემენტი?</item>
+        <item quantity="one">წაიშალოს 1 ელემენტი?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">დაექსპორტდა %d მუსიკის სია.</item>
+        <item quantity="one">დაექსპორტდა %d მუსიკის სია.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">დაიმპორტდა %d მუსიკის სია.</item>
+        <item quantity="one">დაიმპორტდა %d მუსიკის სია.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">%d-ზე მეტი მუსიკის სიის არჩევა შეუძლებელია.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-ზე მეტი მუსიკის სიის არჩევა შეუძლებელია.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">წაიშალოს მუსიკის %d სია?</item>
+        <item quantity="one">წაიშალოს მუსიკის 1 სია?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d ბილიკი</item>
+        <item quantity="one">1 მუსიკალური ბილიკი</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">რიგში დაემატა %d ბილიკი.</item>
+        <item quantity="one">რიგში სიაში დაემატა %d ბილიკი.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">წაიშალოს %d მუსიკის ბილიკი?</item>
+        <item quantity="one">წაიშალოს 1 მუსიკის ბილიკი?</item>
+    </plurals>
+</resources>

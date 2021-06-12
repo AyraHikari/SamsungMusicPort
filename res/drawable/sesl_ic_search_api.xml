@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="?searchViewIconColor" android:height="@dimen/sesl_action_button_src_size" android:width="@dimen/sesl_action_button_src_size" android:autoMirrored="true" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffffffff" android:pathData="M62.387,57.766L49.55,44.93c2.734,-3.684 4.355,-8.242 4.355,-13.171c0,-12.211 -9.937,-22.146 -22.149,-22.146c-12.21,0 -22.144,9.934 -22.144,22.146c0,12.212 9.934,22.148 22.144,22.148c4.929,0 9.488,-1.62 13.172,-4.355l12.837,12.836L62.387,57.766zM16.147,31.758c0,-8.607 7.002,-15.611 15.609,-15.611c8.61,0 15.614,7.003 15.614,15.611c0,8.609 -7.004,15.613 -15.614,15.613C23.149,47.371 16.147,40.367 16.147,31.758z" />
+</vector>

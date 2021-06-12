@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mr_ok_dialog_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/milk_dialog_title_message" />
+    <com.samsung.android.app.music.milk.dialog.component.InclusiveDelayButton android:textSize="@dimen/milk_fontsize_15_dp" android:textStyle="bold" android:textColor="@color/milk_popup_button_color_selector" android:id="@id/mr_dialog_positive_button" android:background="@null" android:paddingLeft="@dimen/milk_ok_dialog_button_margin_right" android:paddingRight="@dimen/milk_ok_dialog_button_margin_right" android:layout_width="wrap_content" android:layout_height="@dimen/milk_ok_dialog_button_height" android:layout_marginRight="6.0dip" android:layout_marginBottom="@dimen/milk_ok_dialog_button_margin_bottom" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/milk_yes_positive_button" android:layout_below="@id/mr_message_divider_line" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="roboto-condensed" />
+</RelativeLayout>

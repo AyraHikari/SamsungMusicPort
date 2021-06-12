@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/sesl_tab_n_badge_mtrl" android:tint="@color/sesl_badge_background_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

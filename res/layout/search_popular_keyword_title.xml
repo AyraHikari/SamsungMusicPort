@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/sub_header_text_size_kt" android:textColor="@color/sub_header_text_color_kt" android:gravity="start|center" android:layout_width="fill_parent" android:layout_height="@dimen/search_popular_keywords_title_height" android:text="@string/popular_searches" android:layoutDirection="rtl" android:paddingStart="@dimen/search_popular_keywords_title_padding_start" android:paddingEnd="@dimen/search_popular_keywords_title_padding_start" style="@style/Font.Roboto.Medium.Bold"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

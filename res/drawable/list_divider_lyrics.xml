@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/milk_search_lyric_item_divider_height" />
+    <solid android:color="@color/white_opacity_10" />
+</shape>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/milk_app_update_padding_left" android:paddingTop="2.0dip" android:paddingRight="@dimen/milk_app_update_padding_left" android:paddingBottom="@dimen/milk_app_update_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/mr_app_update_galaxy_apps_icon" android:layout_width="@dimen/milk_market_icon_size" android:layout_height="@dimen/milk_market_icon_size" android:layout_marginBottom="@dimen/milk_app_update_icon_bottom_margin" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/milk_market_name_text_size" android:textColor="@color/milk_app_update_text_color" android:layout_gravity="center" android:id="@id/mr_app_update_galaxy_apps_name" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

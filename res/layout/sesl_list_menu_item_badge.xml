@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/sesl_menu_item_badge_text_size" android:textColor="@color/sesl_menu_badge_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/badge" android:background="@drawable/sesl_noti_badge" android:focusable="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/sesl_menu_item_badge_size" android:layout_height="@dimen/sesl_menu_item_badge_size" android:importantForAccessibility="no" android:layout_marginStart="7.0dip" android:layout_marginEnd="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

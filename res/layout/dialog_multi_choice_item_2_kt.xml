@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/checkbox" android:background="@android:color/transparent" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/checkbox_width_winset" android:layout_height="@dimen/checkbox_height_winset" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dialog_body_text_padding_top_winset_kt" android:paddingBottom="@dimen/dialog_body_text_padding_bottom_winset_kt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="18.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/checkbox" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Font.Roboto.Regular.DialogListItemMainText" />
+        <TextView android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Font.Roboto.Regular.DialogListItemSubText" />
+        <TextView android:textSize="11.0sp" android:textColor="#7f979797" android:id="@id/text3" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Font.Roboto.Regular.DialogListItemSubText" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

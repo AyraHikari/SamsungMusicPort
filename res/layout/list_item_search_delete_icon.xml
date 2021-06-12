@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/delete_container" android:background="@drawable/mu_ripple_list" android:layout_width="@dimen/milk_search_record_delete_image_clickable_size" android:layout_height="@dimen/milk_search_record_delete_image_clickable_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/delete" android:layout_width="@dimen/milk_search_record_delete_image_size" android:layout_height="@dimen/milk_search_record_delete_image_size" android:src="@drawable/music_search_list_ic_close" android:contentDescription="@string/menu_delete" />
+</LinearLayout>

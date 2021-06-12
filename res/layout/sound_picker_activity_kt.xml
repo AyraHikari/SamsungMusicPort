@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <include layout="@layout/mu_auto_recommendation" />
+    <FrameLayout android:id="@android:id/tabcontent" android:background="@color/white_opacity_100" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+        <android.support.design.widget.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+    </LinearLayout>
+</LinearLayout>

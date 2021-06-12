@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog_permission_manage" android:paddingTop="@dimen/winset_dialog_body_padding_vertical" android:paddingBottom="@dimen/winset_dialog_body_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/winset_dialog_body_padding_horizontal" android:paddingEnd="@dimen/winset_dialog_body_padding_horizontal">
+        <TextView android:textSize="@dimen/winset_dialog_body_text" android:textColor="@color/dialog_body_text_winset" android:id="@id/dialog_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/winset_dialog_permission_body_margin_bottom" />
+    </LinearLayout>
+</ScrollView>

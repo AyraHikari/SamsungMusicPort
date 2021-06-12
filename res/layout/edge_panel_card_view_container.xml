@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:paddingLeft="@dimen/edge_panel_card_view_margin_horizontal" android:paddingRight="@dimen/edge_panel_card_view_margin_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/card_view_item_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/album_art_click_1" style="@style/EdgePanelCardViewAlbumArtClick" />
+            <LinearLayout style="@style/EdgePanelCardViewTextContainer">
+                <TextView android:id="@id/main_text_1" android:text="@string/recently_added" style="@style/EdgePanelCardViewText1" />
+                <TextView android:id="@id/sub_text_1" style="@style/EdgePanelCardViewText2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:background="@color/divider_list_blur" android:layout_width="fill_parent" android:layout_height="@dimen/widget_list_divider_height" android:layout_below="@id/card_view_item_1" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/edge_panel_card_view_main_text_size" android:textColor="@color/edge_panel_card_view_guide_text" android:gravity="center" android:id="@id/guide_view" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/edge_playlist_will_be_shown" />
+        <LinearLayout android:orientation="vertical" android:id="@id/card_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/card_view_item_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/album_art_click_2" style="@style/EdgePanelCardViewAlbumArtClick" />
+                    <LinearLayout style="@style/EdgePanelCardViewTextContainer">
+                        <TextView android:id="@id/main_text_2" android:text="@string/most_played" style="@style/EdgePanelCardViewText1" />
+                        <TextView android:id="@id/sub_text_2" style="@style/EdgePanelCardViewText2" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:background="@color/divider_list_blur" android:layout_width="fill_parent" android:layout_height="@dimen/widget_list_divider_height" android:layout_below="@id/card_view_item_2" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/card_view_item_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/album_art_click_3" style="@style/EdgePanelCardViewAlbumArtClick" />
+                    <LinearLayout style="@style/EdgePanelCardViewTextContainer">
+                        <TextView android:id="@id/main_text_3" android:text="@string/recently_played" style="@style/EdgePanelCardViewText1" />
+                        <TextView android:id="@id/sub_text_3" style="@style/EdgePanelCardViewText2" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:background="@color/divider_list_blur" android:layout_width="fill_parent" android:layout_height="@dimen/widget_list_divider_height" android:layout_below="@id/card_view_item_3" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/card_view_item_4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/album_art_click_4" style="@style/EdgePanelCardViewAlbumArtClick" />
+                    <LinearLayout style="@style/EdgePanelCardViewTextContainer">
+                        <TextView android:id="@id/main_text_4" android:text="@string/favourites" style="@style/EdgePanelCardViewText1" />
+                        <TextView android:id="@id/sub_text_4" style="@style/EdgePanelCardViewText2" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <ImageView android:background="@color/divider_list_blur" android:layout_width="fill_parent" android:layout_height="@dimen/widget_list_divider_height" android:layout_below="@id/card_view_item_4" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

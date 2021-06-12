@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d (na) album</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Mga Album</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Mga Track</item>
+        <item quantity="one">Track</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d (na) track ang idinagdag sa Mga Paborito. Hindi idinagdag ang mga track na nasa Mga Paborito na.</item>
+        <item quantity="one">%d track ang idinagdag sa Mga Paborito. Hindi idinagdag ang track na nasa Mga Paborito na.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d (na) track</item>
+        <item quantity="one">%d track</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d track ang inalis sa Mga Paborito.</item>
+        <item quantity="one">%d track ang inalis mula sa Mga Paborito.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d (na) track ang idinagdag sa mga paborito</item>
+        <item quantity="one">%d track ang idinagdag sa mga paborito.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Maaalis mo lang ang %d track mula sa mga rekomendasyon. Tingnan ang mga inalis na track, pumili ng ilan para i-restore, tapos subukang muli.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Maaalis mo lang ang hanggang %d track mula sa mga rekomendasyon. Tingnan ang mga inalis na track, pumili ng ilan para i-restore, tapos subukang muli.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">I-tap ang Play radio button para ma-enjoy ang %d libreng track bawat buwan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">I-tap ang Play radio button para ma-enjoy ang %d libreng track bawat buwan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Hindi maaaring pumili ng mas marami sa %d artist.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hindi maaaring pumili ng mas marami sa %d artist.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Hindi maaaring pumili ng mas marami sa %d genre.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hindi maaaring pumili ng mas marami sa %d genre.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Hindi maaaring pumili ng mas marami sa %d track.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hindi maaaring pumili ng mas marami sa %d track.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d segundo</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d segundo</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Magagamit mo ang %1$s nang %2$d (na) beses.</item>
+        <item quantity="one">Magagamit mo ang %s nang 1 beses.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d track ang hindi mabibili gamit ang mga premium ticket dahil sa problema sa copyright. Mabibili mo ang mga ito nang hiwalay.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d track ang hindi mabibili gamit ang mga premium ticket dahil sa problema sa copyright. Mabibili mo ang mga ito nang hiwalay.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d track ang gagamitin mula sa mga magagamit na track mo.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d track ang gagamitin mula sa mga magagamit na track mo.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Naghihintay na i-download ang %d kanta…</item>
+        <item quantity="one">Naghihintay na i-download ang 1 kanta…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Tanggalin ang %d album at lahat ng track na laman ng mga ito mula sa telepono mo?</item>
+        <item quantity="one">Tanggalin ang 1 album at lahat ng track na laman nito mula sa telepono mo?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Tanggalin ang lahat ng track ng mga artist na ito?</item>
+        <item quantity="one">Tanggalin ang lahat ng track ng artist na ito?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Tanggalin ang lahat ng track ng mga composer na ito?</item>
+        <item quantity="one">Tanggalin ang lahat ng track ng composer na ito?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Tanggalin ang mga napiling track?</item>
+        <item quantity="one">Tanggalin ang napiling track?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d track ang bibilhin. Kung wala kang sapat na magagamit na mga track, hindi mabibili ang mga track na ito.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d track ang bibilhin. Kung wala kang sapat na magagamit na mga track, hindi mabibili ang mga track na ito.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Bumili ang mga piniling track?</item>
+        <item quantity="one">Bilhin ang napiling track?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Nabili mo na ang mga kanta na ito. Muli mong maida-download ang mga nabiling kanta sa anumang oras.</item>
+        <item quantity="one">Nabili mo na ang kanta na ito. Muli mong maida-download ang mga nabiling kanta sa anumang oras.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Nabili na ang mga track</item>
+        <item quantity="one">Nabili na ang track</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Maaari ka lang magdagdag ng %d binigay na playlist bilang paborito. Alisin ang ilang binigay na playlist mula sa Mga Paboritong tab.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Maaari ka lang magdagdag ng %d binigay na playlist bilang paborito. Alisin ang ilang binigay na playlist mula sa Mga Paboritong tab.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Makadaragdag ka lang ng %d track sa pag-stream bilang Paboritong track. Alisin ang ilang track na nag-stream mula sa mga Paboritong track, tapos subukang muli.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Makadaragdag ka lang ng %d track na pag-streami bilang Paboritong track. Alisin ang ilang track na nag-stream mula sa mga Paboritong track, tapos subukang muli.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Makadaragdag ka lang ng %d track bilang mga Paboritong track. Alisin ang ilang track mula sa mga Paboritong track, tapos subukang muli.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Makadaragdag ka lang ng %d track bilang isang Paboritong track. Alisin ang ilang track mula sa mga Paboritong track, tapos subukang muli.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d (na) folder</item>
+        <item quantity="one">1 folder</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Tanggalin ang %d folder at lahat ng track na laman ng mga ito mula sa telepono mo?</item>
+        <item quantity="one">Tanggalin ang 1 folder at lahat ng track na laman nito mula sa telepono mo?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Tanggalin ang lahat ng track sa mga genre na ito?</item>
+        <item quantity="one">Tanggalin ang lahat ng track sa genre na ito?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d nakatagong folder ang tatanggalin din.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nakatagong folder ang tatanggalin din.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d track ang nai-restore.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d track ang naidagdag.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Tanggalin ang %d item?</item>
+        <item quantity="one">Tanggalin ang 1 item?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Ini-export ang %d playlist.</item>
+        <item quantity="one">Ini-export ang %d playlist.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Ini-import ang %d playlist.</item>
+        <item quantity="one">Ini-import ang %d playlist.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Hindi maaaring pumili ng higit sa %d playlist.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hindi maaaring pumili ng mas marami sa %d playlist.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Tanggalin ang %d playlist?</item>
+        <item quantity="one">Tanggalin ang 1 playlist?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d (na) track</item>
+        <item quantity="one">1 track</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d mga track ang na idagdag sa pila.</item>
+        <item quantity="one">%d track ang na idinagdag sa pila.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Tanggalin ang %d track?</item>
+        <item quantity="one">Tanggalin ang 1 track?</item>
+    </plurals>
+</resources>

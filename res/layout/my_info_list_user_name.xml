@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/mu_content_area" android:paddingTop="@dimen/my_info_user_name_padding_vertical" android:paddingBottom="@dimen/my_info_user_name_padding_vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_info_user_name_margin_top" android:foreground="?android:selectableItemBackground" android:minHeight="@dimen/my_info_user_name_height" android:paddingStart="@dimen/my_info_item_text_padding_horizontal" android:paddingEnd="@dimen/my_info_item_text_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mu_list_item_text1_winset" android:textColor="@color/mu_main_text" android:id="@id/my_info_user_name" style="@style/Font.Roboto.Regular" />
+    <TextView android:textSize="@dimen/mu_list_item_text2_winset" android:textColor="@color/mu_primary" android:id="@id/my_info_user_type" style="@style/Font.Roboto.Regular" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/milk_notice_list" android:background="@color/winset_list_blank_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/list_content_root_padding_horizontal" android:paddingEnd="@dimen/list_content_root_padding_horizontal" />
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="@dimen/milk_fontsize_16_dp" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/milk_notice_no_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/milk_notice_not_exist" android:includeFontPadding="false" />
+    </FrameLayout>
+</LinearLayout>

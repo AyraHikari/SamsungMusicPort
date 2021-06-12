@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/full_player_title_not_selected_main_text" android:textColor="@color/full_player_title_main_theme" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="@dimen/full_player_not_selected_album_title_width" android:layout_height="@dimen/full_player_title_not_selected_main_text_height" android:layout_marginTop="@dimen/full_player_title_not_selected_main_text_margin_top" android:maxLines="1" android:lines="1" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/full_player_title_not_selected_sub_text" android:textColor="@color/full_player_title_sub_theme" android:ellipsize="end" android:gravity="center" android:id="@id/artist" android:layout_width="@dimen/full_player_not_selected_album_title_width" android:layout_height="@dimen/full_player_title_not_selected_sub_text_height" android:layout_marginTop="@dimen/full_player_title_not_selected_sub_text_margin_top" android:maxLines="1" android:lines="1" android:includeFontPadding="false" />
+</LinearLayout>

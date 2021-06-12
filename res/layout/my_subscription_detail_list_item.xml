@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/my_info_item_text_padding_vertical" android:paddingBottom="@dimen/my_info_item_text_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/my_info_item_text_padding_horizontal" android:paddingEnd="@dimen/my_info_item_text_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/mu_list_item_text1_winset" android:textColor="@color/mu_main_text" android:id="@id/my_subscription_detail_text1" style="@style/Font.Roboto.Regular" />
+    <TextView android:textSize="@dimen/mu_list_item_text2_winset" android:textColor="@color/mu_sub_text" android:id="@id/my_subscription_detail_text2" style="@style/Font.Roboto.Regular" />
+</LinearLayout>

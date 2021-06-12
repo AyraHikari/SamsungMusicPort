@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="quick_panel_artist">13.0sp</dimen>
+    <dimen name="quick_panel_brand_name">12.0sp</dimen>
+    <dimen name="quick_panel_title">15.0sp</dimen>
+</resources>

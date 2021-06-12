@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/menu_group_bottom_bar">
+        <item android:icon="@drawable/music_ic_restore" android:id="@id/menu_delete_bottom_bar" android:title="@string/restore" />
+    </group>
+</menu>

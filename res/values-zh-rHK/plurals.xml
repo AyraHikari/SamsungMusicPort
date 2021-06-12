@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d 張專輯</item>
+        <item quantity="one">%d 張專輯</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">專輯</item>
+        <item quantity="one">專輯</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">曲目</item>
+        <item quantity="one">曲目</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d 首曲目已加入至我的最愛。不會加入已在我的最愛中的曲目。</item>
+        <item quantity="one">%d 首曲目已加入至我的最愛。不會加入已在我的最愛中的曲目。</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d 首曲目</item>
+        <item quantity="one">%d 首曲目</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d 首曲目已從我的最愛移除。</item>
+        <item quantity="one">%d 首曲目已從我的最愛移除。</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d 首曲目已加入至我的最愛</item>
+        <item quantity="one">%d 首曲目已加入至我的最愛。</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">您從推薦中最多僅可移除 %d 首曲目。檢視已移除的曲目，選擇一些以還原，然後重試。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">輕觸播放收音機按鍵以每月收聽 %d 首免費曲目。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">無法選擇超過 %d 位演出者。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">無法選擇超過 %d 個類別。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">無法選擇超過 %d 首曲目。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d 秒</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">您可以使用%1$s %2$d 次。</item>
+        <item quantity="one">您可以使用%s 1 次。</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">由於版權問題，無法使用精選優惠券購買 %d 首曲目。您可單獨購買這些曲目。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">將使用您的可用曲目中的 %d 首曲目。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">正在等待下載 %d 首歌曲…</item>
+        <item quantity="one">正在等待下載 1 首歌曲…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">從您的手機刪除 %d 張專輯與其中的所有曲目嗎？</item>
+        <item quantity="one">從您的手機刪除 1 張專輯與其中的所有曲目嗎？</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">刪除這些演出者的所有曲目嗎？</item>
+        <item quantity="one">刪除此演出者的所有曲目嗎？</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">刪除這些作曲家的所有曲目嗎？</item>
+        <item quantity="one">刪除此作曲家的所有曲目嗎？</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">刪除所選曲目嗎？</item>
+        <item quantity="one">刪除所選曲目嗎？</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">將購買 %d 首曲目。如果您沒有足夠的可用曲目，則無法購買這些曲目。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">購買所選曲目嗎？</item>
+        <item quantity="one">購買所選曲目嗎？</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">您已購買這些歌曲。您可以隨時再次下載已購買的歌曲。</item>
+        <item quantity="one">您已購買此歌曲。您可以隨時再次下載已購買的歌曲。</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">已購買曲目</item>
+        <item quantity="one">已購買曲目</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">您僅可加入 %d 個所提供的播放清單作為我的最愛。請從我的最愛標籤中移除部分所提供的播放清單。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">您僅可加入 %d 首串流曲目作為我的最愛曲目。請從我的最愛曲目中移除部分串流曲目，然後重試。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">您僅可加入 %d 首曲目作為我的最愛曲目。請從我的最愛曲目中移除部分曲目，然後重試。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d 個資料夾</item>
+        <item quantity="one">1 個資料夾</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">從您的手機刪除 %d 個資料夾與其中的所有曲目嗎？</item>
+        <item quantity="one">從您的手機刪除 1 個資料夾與其中的所有曲目嗎？</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">刪除這些類型的所有曲目嗎？</item>
+        <item quantity="one">刪除此類型的所有曲目嗎？</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d 個隱藏的資料夾也將被刪除。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">已還原 %d 首曲目。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">是否要刪除 %d 個項目？</item>
+        <item quantity="one">刪除 1 個項目嗎？</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">已匯出 %d 個播放清單。</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">已匯入 %d 個播放清單。</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">無法選擇超過 %d 個播放清單。</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">刪除 %d 個播放清單嗎？</item>
+        <item quantity="one">刪除 1 個播放清單嗎？</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d 首曲目</item>
+        <item quantity="one">1 首曲目</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d 首曲目已加入至隊列。</item>
+        <item quantity="one">%d 首曲目已加入至隊列。</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">刪除 %d 首曲目嗎？</item>
+        <item quantity="one">刪除 1 首曲目嗎？</item>
+    </plurals>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/set_favorite_like_indicator_stroke_thin" android:color="@color/set_favorite_genre_stroke" />
+</shape>

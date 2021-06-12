@@ -1,0 +1,88 @@
+.class Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment$QueryTextChangeHandler;
+.super Landroid/os/Handler;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "QueryTextChangeHandler"
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;
+
+
+# direct methods
+.method private constructor <init>(Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;)V
+    .locals 0
+
+    .line 204
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment$QueryTextChangeHandler;->a:Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;
+
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment$1;)V
+    .locals 0
+
+    .line 204
+    invoke-direct {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment$QueryTextChangeHandler;-><init>(Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 3
+
+    .line 211
+    iget-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment$QueryTextChangeHandler;->a:Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;->g()I
+
+    move-result p1
+
+    .line 212
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment$QueryTextChangeHandler;->a:Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;->getLoaderManager()Landroid/support/v4/app/LoaderManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/support/v4/app/LoaderManager;->getLoader(I)Landroid/support/v4/content/Loader;
+
+    move-result-object v0
+
+    .line 213
+    instance-of v1, v0, Lcom/samsung/android/app/musiclibrary/ui/contents/MusicCursorLoader;
+
+    if-eqz v1, :cond_0
+
+    .line 214
+    move-object v1, v0
+
+    check-cast v1, Lcom/samsung/android/app/musiclibrary/ui/contents/MusicCursorLoader;
+
+    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment$QueryTextChangeHandler;->a:Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;
+
+    invoke-virtual {v2, p1}, Lcom/samsung/android/app/musiclibrary/ui/list/SearchableFragment;->b(I)Lcom/samsung/android/app/musiclibrary/ui/list/query/QueryArgs;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Lcom/samsung/android/app/musiclibrary/ui/contents/MusicCursorLoader;->a(Lcom/samsung/android/app/musiclibrary/ui/list/query/QueryArgs;)V
+
+    .line 216
+    :cond_0
+    invoke-virtual {v0}, Landroid/support/v4/content/Loader;->forceLoad()V
+
+    return-void
+.end method

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center" android:layout_gravity="center" android:id="@id/no_item_text" android:visibility="gone" android:minHeight="@dimen/dialog_list_item_height" style="@style/Font.Roboto.Regular.DialogBodyText"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

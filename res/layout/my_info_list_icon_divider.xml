@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/mu_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/my_info_item_divider_height" android:layout_marginStart="@dimen/my_info_item_icon_divider_margin_start" android:layout_marginEnd="@dimen/my_info_item_divider_margin_horizontal" />
+</FrameLayout>

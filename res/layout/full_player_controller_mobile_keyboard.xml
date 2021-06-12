@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/full_player_control_layout" android:background="@android:color/transparent" android:layout_width="@dimen/full_player_control_layout_width" android:layout_height="@dimen/full_player_control_layout_height_mobile_keyboard" android:layout_marginBottom="@dimen/full_player_control_margin_bottom_mobile_keyboard" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <include layout="@layout/full_player_seekbar_common" />
+        <FrameLayout android:id="@id/full_player_button_layout" android:layout_width="fill_parent" android:layout_height="@dimen/full_player_button_height_mobile_keyboard" android:layout_alignParentBottom="true">
+            <FrameLayout android:layout_gravity="start" android:id="@id/shuffle_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/full_player_shuffle_repeat_width" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/shuffle_icon" android:background="@drawable/unbounded_ripple_light_full_player_button" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/full_player_button_image_size" android:layout_height="@dimen/full_player_button_image_size" android:src="@drawable/music_player_ic_shuffle_off" android:scaleType="fitXY" />
+            </FrameLayout>
+            <include android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/full_player_button_height_mobile_keyboard" layout="@layout/full_player_control_buttons_common" />
+            <FrameLayout android:layout_gravity="end" android:id="@id/repeat_button" android:focusable="true" android:clickable="true" android:layout_width="@dimen/full_player_shuffle_repeat_width" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/repeat_icon" android:background="@drawable/unbounded_ripple_light_full_player_button" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/full_player_button_image_size" android:layout_height="@dimen/full_player_button_image_size" android:src="@drawable/full_player_repeat_all_to_1" android:scaleType="fitXY" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicSpinner android:id="@id/spinner" android:visibility="gone" app:layout_constraintBottom_toBottomOf="@id/icon_shuffle" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/icon_shuffle" style="@style/ListItem.Header.Filter" />
+    <ImageView android:id="@id/heart_button" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/music_ic_ab_favorite_off" android:tint="@color/mu_icon_etc" android:alpha="0.5" app:layout_constraintBottom_toBottomOf="@id/heart_button_click" app:layout_constraintEnd_toEndOf="@id/heart_button_click" app:layout_constraintStart_toStartOf="@id/heart_button_click" app:layout_constraintTop_toTopOf="@id/heart_button_click" />
+    <View android:id="@id/heart_button_click" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="13.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/icon_shuffle" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/icon_shuffle" android:visibility="gone" android:src="@drawable/music_detail_ic_shuffle" android:contentDescription="@string/shuffle_play" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Header.Icon" />
+</android.support.constraint.ConstraintLayout>

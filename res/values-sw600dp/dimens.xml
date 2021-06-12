@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesl_config_prefDialogWidth">580.0dip</dimen>
+    <item type="dimen" name="mr_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">90.0%</item>
+    <dimen name="sesl_date_picker_dialog_min_width">608.0dip</dimen>
+    <dimen name="sesl_navigation_max_width">320.0dip</dimen>
+    <dimen name="sesl_search_plate_height">44.0dip</dimen>
+    <dimen name="sesl_search_plate_radius_size">22.0dip</dimen>
+    <dimen name="sesl_search_view_preferred_height">56.0dip</dimen>
+    <dimen name="sesl_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="sesl_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="sesl_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="sesl_snackbar_max_width">576.0dip</dimen>
+    <dimen name="sesl_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="sesl_snackbar_padding_vertical_2lines">@dimen/sesl_snackbar_padding_vertical</item>
+    <dimen name="sesl_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="sesl_time_picker_dialog_min_width">608.0dip</dimen>
+</resources>

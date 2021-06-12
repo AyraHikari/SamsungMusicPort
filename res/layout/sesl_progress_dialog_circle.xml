@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/sesl_progress_dialog_circle_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.SeslProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" style="@style/Widget.AppCompat.Light.ProgressBar.Circle" />
+    <TextView android:textSize="@dimen/sesl_progress_dialog_circle_message_text_size" android:textColor="@color/sesl_progress_dialog_circle_text_color_light" android:layout_gravity="center" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/sesl_progress_dialog_circle_message_width" android:maxLines="1" android:fontFamily="@string/sesl_font_family_regular" />
+</FrameLayout>

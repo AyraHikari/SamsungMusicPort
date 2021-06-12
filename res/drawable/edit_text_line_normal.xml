@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nine-patch android:src="@drawable/tw_common_textfield_default_mtrl_alpha" android:tint="@color/winset_edit_text_line_color_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

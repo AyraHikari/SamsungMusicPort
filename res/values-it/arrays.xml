@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="index_string_array">
+        <item>ABCDEFGHILMNOPQRSTUVZ</item>
+    </string-array>
+</resources>

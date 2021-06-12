@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">ཆེད་སྒྲིག་གྲངས་%d</item>
+        <item quantity="one">ཆེད་སྒྲིག་བརྙན་འཁོར་%d།</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">ཆེད་སྒྲིག་</item>
+        <item quantity="one">ཆེད་སྒྲིག</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">གླུ་གཞས།</item>
+        <item quantity="one">གླུ་གཞས།</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">གླུ་གཞས་%d བསྡུ་ཉར་སྣོད་ནང་འཇུག་ཟིན། བསྡུ་ཉར་སྣོད་ནང་སྔོན་ནས་བསྡུ་ཉར་བྱས་པའི་གླུ་གཞས་འཇུག་མི་ཐུབ།</item>
+        <item quantity="one">གླུ་གཞས་%dངའི་བསྡུ་གསོག་ནང་བསྣན་ཟིན།ངའི་བསྡུ་གསོག་ཁྲོད་སྔར་ཡོད་གཞས་དག་སྣོན་མི་སྲིད།</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">གླུ་གཞས་གྲངས་%d</item>
+        <item quantity="one">གླུ་གཞས་གྲངས་%d</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">གླུ་གཞས་གྲངས་%d བསྡུ་ལེན་ཤོག་བྱང་ལས་སུབ།</item>
+        <item quantity="one">གླུ་གཞས་%dངའི་བསྡུ་གསོག་ཁྲོད་ནས་སྤོས་ཚར།</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">གླུ་གཞས་%dབསྡུ་གསོག་སྣོད་ནང་སྣོན་འཇུག་བྱས་ཟིན།</item>
+        <item quantity="one">གླུ་གཞས་%dངའི་བསྡུ་གསོག་ནང་བསྣན་ཟིན།</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">མང་མཐར་འོས་སྦྱོར་ནང་ནས་གླུ་དབྱངས་%d་སྤོར་འདོར་བྱས་ཆོག སྤོར་འདོར་བྱས་པའི་གླུ་དབྱངས་ལ་ལྟ་རྟོག་བྱས་ཏེ་ཁག་ཅིག་བདམས་ནས་སོར་ཆུད་བྱེད་ཅིང་སླར་ཚོད་ལྟ་བྱེད།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">༼སྒྲོག་གཏོང༽ཆིག་འདམ་མཐེབ་གནོན་ལ་བརྡེབས་ནས་རིན་སྤོང་རོལ་དབྱངས་%d་འཐོབ་པར་བྱེད།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">མང་མཐར་སྒྱུ་རྩལ་བ་%d་འདམ།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">མང་མཐར་སྲོལ་ལུགས་%d་འདམ།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">མང་མཐར་གླུ་དབྱངས་%d་འདམ།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">སྐར་ཆ་%d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">ཁྱེད་ནས་བེད་སྤྱོད་ཐེངས་%1$s %2$dབྱས་ཆོག</item>
+        <item quantity="one">ཁྱེད་ནས་བེད་སྤྱོད་ཐེངས་%s 1 བྱས་ཆོག</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">པར་དབང་གནད་དོན་སྟབས་ཀྱིས་གླུ་དབྱངས་%d་རུ་མཐོ་རིམ་པར་གཞིའི་སྤ་སེ་སྤྱད་ནས་ཉོ་མི་ཐུབ།ཁྱེད་ཀྱི་ཁེར་རྐྱང་དུ་གླུ་དབྱངས་འདི་དག་ཉོས་ཆོག</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">ཁྱེད་ཀྱི་སྤྱོད་འཐུས་གླུ་དབྱངས་ནང་གི་%d་སྤྱོད་ངེས་ཡིན།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">གླུ་དབྱངས་%d་ཚུར་འབེབ་བྱེད་པར་སྒུག</item>
+        <item quantity="one">གླུ་དབྱངས་1་ཚུར་འབེབ་བྱེད་པར་སྒུག་ནས་འདུག</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">ཁྱེད་ཀྱི་ཁ་པར་ནས་ཆེད་སྒྲིག་%d་དང་དེའི་ནང་གི་གླུ་དབྱངས་མཐའ་དག་གསུབ་རྒྱུ་ཡིན་ནམ།</item>
+        <item quantity="one">ཁྱེད་ཀྱི་ཁ་པར་ནས་ཆེད་སྒྲིག་1་དང་དེའི་ནང་གི་གླུ་དབྱངས་མཐའ་དག་གསུབ་རྒྱུ་ཡིན་ནམ།</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">གཞས་པ་འདི་དག་གི་གཞས་ཆ་ཚང་བསུབ་འདོར་བྱེད་དམ།</item>
+        <item quantity="one">གཞས་པ་འདི་ཡི་གཞས་ཆ་ཚང་བསུབ་འདོར་བྱེད་དམ།</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">གླུ་གཞས་རྩོམ་མཁན་འདིའི་གླུ་གཞས་ཚང་མ་སུབ་བམ།</item>
+        <item quantity="one">རྩོམ་སྒྲིག་པ་འདི་ཡི་གཞས་ཆ་ཚང་བསུབ་འདོར་བྱེད་དམ།</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">བདམས་ཟིན་པའི་གླུ་དབྱངས་གསུབ་རྒྱུ་ཡིན་ནམ།</item>
+        <item quantity="one">བདམས་པའི་རོལ་དབྱངས་བསུབས་མི་ཐུབ་བམ།</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">གླུ་དབྱངས་%d་ཉོ།གལ་ཏེ་ཁྱེད་ལ་འདང་ངེས་ཀྱི་སྤྱོད་འཐུས་ཀྱི་གླུ་དབྱངས་མེད་ན་གླུ་དབྱངས་འདི་དག་ཉོ་མི་ཐུབ།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">གླུ་དབྱངས་མཐའ་དག་ཉོ་རྒྱུ་ཡིན་ནམ།</item>
+        <item quantity="one">བདམས་པའི་གླུ་དབྱངས་ཉོ་རྒྱུ་ཡིན་ནམ།</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">ཁྱེད་ཀྱིས་གླུ་དབྱངས་འདི་དག་ཉོས་ཟིན།ཁྱེད་ཀྱིས་དུས་ལྟར་སླར་ཉོས་ཟིན་པའི་གླུ་དབྱངས་ཚུར་འབེབ་བྱས་ཆོག</item>
+        <item quantity="one">ཁྱེད་ཀྱིས་གླུ་དབྱངས་འདི་ཉོས་ཟིན།ཁྱེད་ཀྱིས་དུས་ལྟར་སླར་ཉོས་ཟིན་པའི་གླུ་དབྱངས་ཚུར་འབེབ་བྱས་ཆོག</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">གླུ་དབྱངས་ཉོས་ཟིན།</item>
+        <item quantity="one">གླུ་དབྱངས་ཉོས་ཟིན།</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">ཁྱེད་ཀྱིས་ཕྱི་རོལ་ནས་ཐོན་པའི་སྒྲོག་གཏོང་སྟར་བྱང་%d་ཁོ་ན་ནི་མོས་པར་ཁ་སྣོན་བྱེད།མོས་པའི་ངོ་བྱང་ནང་ནས་ཕྱི་རོལ་ནས་ཐོན་པའི་སྒྲོག་གཏོང་སྟར་བྱང་ཁག་ཅིག་སྤོར་འདོར་བྱེད།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">ཁྱེད་ཀྱིས་སྐུད་ཐོག་སྒྲོག་གཏོང་གླུ་དབྱངས་%d་ཁོ་ན་མོས་པར་ཁ་སྣོན་བྱེད་ཐུབ།མོས་པའི་གླུ་དབྱངས་ནང་ནས་སྐུད་ཐོག་སྒྲོག་གཏོང་གླུ་དབྱངས་འགའ་སྤོར་འདོར་བྱས་ནས་སླར་ཚོད་ལྟ་བྱེད་རོགས།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">ཁྱེད་ཀྱིས་གླུ་དབྱངས་%d་ཁོ་ན་མོས་པར་ཁ་སྣོན་བྱེད་ཐུབ།མོས་པའི་གླུ་དབྱངས་ནང་ནས་སྐུད་ཐོག་སྒྲོག་གཏོང་གླུ་དབྱངས་འགའ་སྤོར་འདོར་བྱས་ནས་སླར་ཚོད་ལྟ་བྱེད་རོགས།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">ཡིག་སྣོད་%d</item>
+        <item quantity="one">ཡིག་སྣོད་1</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་ནང་ནས་ཡིག་སྣོད་%dདང་དེའི་ནང་གི་གླུ་གཞས་ཚང་མ་སུབ་བམ།</item>
+        <item quantity="one">ཁྱེད་ཀྱི་ལག་ཐོག་ཁ་པར་ནང་ནས་ཡིག་སྣོད་1དང་དེའི་ནང་གི་གླུ་གཞས་ཚང་མ་སུབ་བམ།</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">རྩེད་མོ་འདི་དག་གི་རྩེད་མོ་ཆ་ཚང་བསུབ་འདོར་བྱེད་དམ།</item>
+        <item quantity="one">རིགས་འདིའི་ནང་གི་གཞས་ཆ་ཚང་བསུབ་འདོར་བྱེད་དམ།</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">ཡིབ་པའི་ཡིག་ཁུག་%d་ཡང་གསུབ་ངེས་ཡིན།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">གླུ་དབྱངས་%d་སོར་ཆུད་བྱས་ཟིན།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">རྣམ་གྲངས་%dསུབ་བམ།</item>
+        <item quantity="one">དངོས་པོ་ 1 བསུབ་དགོས་སམ།</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">སྒྲོག་གཏོང་སྟར་བྱང་%d་ཕྱིར་འདྲེན་བྱས་ཟིན།</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">སྒྲོག་གཏོང་སྟར་བྱང་%d་ནང་འདྲེན་བྱས་ཟིན།</item>
+        <item quantity="one">N/A</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">མང་མཐར་སྒྲོག་གཏོང་སྟར་བྱང་%d་འདམ་ཐུབ།</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">གཞས་ཐོ་ %d བསུབ་འདོར་བྱེད་དམ།</item>
+        <item quantity="one">གཏོང་ཐོ་ 1 བསུབ་འདོར་བྱེད་དམ།</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">གླུ་གཞས་གྲངས་%d</item>
+        <item quantity="one">གླུ་གཞས་གྲངས་1</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">གླུ་གཞས་%d སྟར་པའི་ནང་སྣོན་པ།</item>
+        <item quantity="one">གླུ་གཞས་%dབསྟར་པའི་ཁྲོད་བསྣན་ཟིན།</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">གཞས་ %d དག་བསུབ་འདོར་བྱེད་དམ།</item>
+        <item quantity="one">གཞས་ 1 བསུབ་འདོར་བྱེད་དམ།</item>
+    </plurals>
+</resources>

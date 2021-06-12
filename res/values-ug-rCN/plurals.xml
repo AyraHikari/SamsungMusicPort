@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d پىلاستىنكا</item>
+        <item quantity="one">%d پىلاستىنكا</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">پىلاستىنكا</item>
+        <item quantity="one">پىلاستىنكا</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">ناخشا</item>
+        <item quantity="one">ناخشا</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d ناخشا يىغقۇچقا قوشۇلدى. يىغقۇچتا بار ناخشا قوشۇلمىدى.</item>
+        <item quantity="one">%d ناخشا يىغقۇچقا قوشۇلدى. يىغقۇچتا بار ناخشا قوشۇلمىدى.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d ناخشا</item>
+        <item quantity="one">%d ناخشا</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d ناخشا يىغقۇچتىن چىقىرىۋېتىلدى.</item>
+        <item quantity="one">%d ناخشا يىغقۇچتىن چىقىرىۋېتىلدى.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d ناخشا يىغقۇچقا قوشۇلدى.</item>
+        <item quantity="one">%d ناخشا يىغقۇچقا قوشۇلدى.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">تەۋسىيەدىن كۆپىدە %d ناخشا چىقىرىۋەتكىلى بولىدۇ. چىقىرىۋەتكەن ناخشىلارنى كۆرۈپ، بەزىلىرىنى ئەسلىگە كەلتۈرۈپ، قايتا سىناڭ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">تەۋسىيەدىن كۆپىدە %d ناخشا چىقىرىۋەتكىلى بولىدۇ. چىقىرىۋەتكەن ناخشىلارنى كۆرۈپ، بەزىلىرىنى ئەسلىگە كەلتۈرۈپ، قايتا سىناڭ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">رادىيو قويۇش كۇنۇپكىسىنى چېكىپ، ھەر ئايلىق %d ھەقسىز ناخشىدىن بەھرىلىنىڭ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">رادىيو قويۇش كۇنۇپكىسىنى چېكىپ، ھەر ئايلىق %d ھەقسىز ناخشىدىن بەھرىلىنىڭ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">‏%d دىن كۆپ سەنئەتكار تاللانمايدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d دىن كۆپ سەنئەتكار تاللانمايدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">‏%d دىن كۆپ ژانىر تاللانمايدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d دىن كۆپ ژانىر تاللانمايدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">‏%d دىن كۆپ ناخشا تاللانمايدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d دىن كۆپ ناخشا تاللانمايدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d سېكۇنت</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d سېكۇنت</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">‏%1$s نى %2$d قېتىم ئىشلىتەلەيسىز.</item>
+        <item quantity="one">‏%s نى 1 قېتىم ئىشلىتەلەيسىز.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">نەشر ھوقۇقى مەسىلىسى سەۋەبلىك %d ناخشىنى ئالىي بېلەت ئارقىلىق سېتىۋالغىلى بولمايدۇ. ئۇلارنى ئايرىم-ئايرىم سېتىۋالسىڭىز بولىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">نەشر ھوقۇقى مەسىلىسى سەۋەبلىك %d ناخشىنى ئالىي بېلەت ئارقىلىق سېتىۋالغىلى بولمايدۇ. ئۇلارنى ئايرىم-ئايرىم سېتىۋالسىڭىز بولىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">بارىدىن %d ناخشا ئىشلىتىلىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">بارىدىن %d ناخشا ئىشلىتىلىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">‏%d ناخشا چۈشۈرۈشنى كۈتۈۋاتىدۇ…</item>
+        <item quantity="one">1 ناخشا چۈشۈرۈشنى كۈتۈۋاتىدۇ…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">تېلېفوندىن %d پىلاستىنكا ۋە ئۇنىڭدىكى بارلىق ناخشىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">1 پىلاستىنكا ۋە ئۇنىڭدىكى بارلىق ناخشىنى تېلېفوندىن ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">بۇ سەنئەتكارلارنىڭ بارلىق ناخشا-مۇزىكىلىرىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">بۇ سەنئەتكارنىڭ بارلىق ناخشا-مۇزىكىلىرىنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">بۇ مۇزىكانتلارنىڭ بارلىق ئەسەرلىرىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">بۇ مۇزىكانتنىڭ بارلىق ئەسەرلىرىنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">تاللىغان ناخشىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">تاللىغان ناخشىنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">‏%d ناخشا سېتىۋېلىنىدۇ. يېتەرلىك ناخشىڭىز بولمىسا، بۇ ناخشىلارنى سېتىۋالغىلى بولمايدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ناخشا سېتىۋېلىنىدۇ. يېتەرلىك ناخشىڭىز بولمىسا، بۇ ناخشىلارنى سېتىۋالغىلى بولمايدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">تاللىغان ناخشىنى سېتىۋالامسىز؟</item>
+        <item quantity="one">تاللىغان ناخشىنى سېتىۋالامسىز؟</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">بۇ ناخشىلارنى سېتىۋالغان. سېتىۋالغان ناخشىلارنى خالىغان ۋاقىتتا چۈشۈرەلەيسىز.</item>
+        <item quantity="one">سىز بۇ ناخشىنى ئاللىبۇرۇن سېتىۋالغان. سېتىۋالغان ناخشىلارنى خالىغان ۋاقىتتا تەكرار چۈشۈرەلەيسىز.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">سېتىۋالغان ناخشا</item>
+        <item quantity="one">ناخشىنى سېتىۋالغان</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">پەقەت %d قويۇش تىزىملىكىنىلا يىغقۇچقا قوشالايسىز. يىغقۇچ بەتكۈچىدىن بىر قىسىم قويۇش تىزىملىكىنى چىقىرىۋېتىڭ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">پەقەت %d قويۇش تىزىملىكىنىلا يىغقۇچقا قوشالايسىز. يىغقۇچ بەتكۈچىدىن بىر قىسىم قويۇش تىزىملىكىنى چىقىرىۋېتىڭ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">‏%d ناخشىنىلا يىغقۇچقا قوشۇپ ئاقتۇرۇپ ئاڭلاشقا بولىدۇ. يىغقۇچتىن بىر قىسىم ئاقتۇرما ناخشىنى چىقىرىۋېتىپ قايتا سىناڭ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ناخشىنىلا يىغقۇچقا قوشۇپ ئاقتۇرۇپ ئاڭلاشقا بولىدۇ. يىغقۇچتىن بىر قىسىم ئاقتۇرما ناخشىنى چىقىرىۋېتىپ قايتا سىناڭ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">‏%d ناخشىنىلا يىغقۇچقا قوشۇشقا بولىدۇ. يىغقۇچتىن بىر قىسىم ناخشىنى چىقىرىۋېتىپ قايتا سىناڭ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d ناخشىنىلا يىغقۇچقا قوشۇشقا بولىدۇ. يىغقۇچتىن بىر قىسىم ناخشىنى چىقىرىۋېتىپ قايتا سىناڭ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d قىسقۇچ</item>
+        <item quantity="one">1 قىسقۇچ</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">تېلېفوندىن %d قىسقۇچ ۋە ئۇنىڭدىكى بارلىق ناخشىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">تېلېفوندىن 1 قىسقۇچ ۋە ئۇنىڭدىكى بارلىق ناخشىنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">بۇ ژانىردىكى بارلىق ئاۋازنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">بۇ ژانىردىكى بارلىق ئاۋازنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">‏%d يوشۇرۇن قىسقۇچمۇ ئۆچۈرۈلىدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d يوشۇرۇن قىسقۇچمۇ ئۆچۈرۈلىدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d ناخشا ئەسلىگە كەلدى.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ناخشا ئەسلىگە كەلدى.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">%d نەرسىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">1 نەرسىنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">‏%d قويۇش تىزىملىكى چىقىرىلدى.</item>
+        <item quantity="one">‏%d قويۇش تىزىملىكى چىقىرىلدى.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">‏%d قويۇش تىزىملىكى كىرگۈزۈلدى.</item>
+        <item quantity="one">‏%d قويۇش تىزىملىكى كىرگۈزۈلدى.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">‏%d دىن كۆپ قويۇش تىزىملىكى تاللانمايدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d دىن كۆپ قويۇش تىزىملىكى تاللانمايدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">%d قويۇش تىزىملىكىنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">1 قويۇش تىزىملىكىنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d ناخشا</item>
+        <item quantity="one">1 ناخشا</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d ناخشا ئۆچرەتكە قوشۇلدى.</item>
+        <item quantity="one">%d ناخشا ئۆچرەتكە قوشۇلدى.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">%d ئاۋازنى ئۆچۈرەمسىز؟</item>
+        <item quantity="one">1 قىسقۇچنى ئۆچۈرەمسىز؟</item>
+    </plurals>
+</resources>

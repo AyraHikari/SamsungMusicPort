@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container" android:background="@drawable/browse_card_view_rounded_outline" android:layout_width="@dimen/browse_list_item_just_for_you_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="@dimen/browse_list_item_ic_streaming_space" android:layout_height="@dimen/browse_list_item_ic_streaming_space" android:src="@drawable/browse_ic_streaming" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/white_opacity_100" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/browse_my_favorite_music_setting" android:lineSpacingExtra="4.0dip" android:textAllCaps="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" style="@style/Font.Roboto.Medium" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/white_opacity_100" android:gravity="center" android:id="@id/start" android:background="@drawable/browse_welcome_button_background" android:layout_width="88.0dip" android:layout_height="28.0dip" android:layout_marginTop="26.0dip" android:text="@string/start_kt" android:textAllCaps="true" style="@style/Font.Roboto.Medium" />
+</LinearLayout>

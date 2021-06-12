@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/music_tab_divider_height" />
+    <size android:width="@dimen/music_tab_divider_width" />
+    <solid android:color="@color/white_opacity_40" />
+</shape>

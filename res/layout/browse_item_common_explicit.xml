@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@id/text_explicit" android:visibility="gone" android:layout_marginRight="@dimen/mu_list_item_explicit_space_end" style="@style/ListItem.Explicit"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

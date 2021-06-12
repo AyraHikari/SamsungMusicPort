@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:focusable="true" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_add_to_height" app:clipIds="thumbnail"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guideline_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/mu_list_item_space_outer_default" />
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guideline_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/mu_list_item_space_outer_default" />
+    <View android:id="@id/thumbnail_stroke" android:layout_marginStart="@dimen/mu_list_item_space_outer_default" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.ThumbnailStoke" />
+    <ImageView android:id="@id/thumbnail" style="@style/ListItem.Thumbnail" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:id="@id/text1" android:layout_marginStart="@dimen/list_item_add_to_text_margin_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/guideline_end" app:layout_constraintStart_toEndOf="@id/thumbnail_stroke" app:layout_constraintTop_toTopOf="parent" app:maxFontLevel="large" style="@style/ListItem.Text.Line1" />
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guideline_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/mu_list_item_divider_inset_start" app:layout_constraintGuide_end="@dimen/mu_list_item_space_outer_default" />
+</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>

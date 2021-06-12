@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mr_cast_meta" android:paddingTop="12.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/mr_cast_close_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="?mediaRouteCloseDrawable" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/mr_cast_close_button">
+        <ImageView android:id="@id/mr_cast_meta_art" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/mr_cast_meta_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="13.0sp" android:ellipsize="end" android:id="@id/mr_cast_meta_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <Button android:id="@id/mr_cast_stop_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="114.0dip" android:layout_height="36.0sp" android:text="@string/mr_controller_stop_casting" />
+    </LinearLayout>
+</RelativeLayout>

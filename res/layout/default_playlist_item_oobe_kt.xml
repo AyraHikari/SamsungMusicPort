@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="13.0sp" android:textColor="#80505050" android:gravity="center" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/auto_playlist_will_be_shown" app:maxFontLevel="large" style="@style/Font.Roboto.Regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

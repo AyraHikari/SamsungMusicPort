@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="?android:listDivider" android:insetRight="@dimen/list_item_divider_checkbox_inset_padding_left"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_container" android:layout_width="fill_parent" android:layout_height="@dimen/widget_album_art_size">
+        <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_background_default" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@dimen/widget_phone_info_width_ratio">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@id/album_view_container" android:layout_width="@dimen/widget_album_art_size" android:layout_height="@dimen/widget_album_art_size">
+                    <ImageView android:id="@id/album_art_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                    <ImageView android:id="@id/album_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_album_cover_default_white" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@string/tts_go_to_music" />
+                    <ProgressBar android:layout_gravity="center" android:id="@id/albumart_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.DeviceDefault.ProgressBar.Small" />
+                    <TextView android:textSize="@dimen/widget_album_cp_icon_text_size" android:textColor="@color/remote_view_text_white_100" android:gravity="center" android:layout_gravity="bottom" android:id="@id/album_cp_icon" android:background="@drawable/widget_cp_icon_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/widget_album_cp_icon_height" android:text="@string/radio" />
+                    <ImageView android:id="@id/private_mode_image" style="@style/PrivateTagInfoThumb" />
+                </FrameLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/widget_track_info_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/widget_info_margin_start">
+                    <TextView android:textSize="@dimen/widget_info_title_text_size" android:textColor="@color/widget_text" android:id="@id/title" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_queued_tracks" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular.Marquee" />
+                    <TextView android:textSize="@dimen/widget_info_artist_text_size" android:textColor="@color/widget_text_dim" android:id="@id/artist" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular.Marquee" />
+                </LinearLayout>
+            </LinearLayout>
+            <include android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@dimen/widget_phone_control_width_ratio" layout="@layout/widget_layout_control_phone" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/widget_list_margin_top" android:layout_weight="1.0">
+        <ImageView android:id="@id/widget_list_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_background_default" />
+        <ListView android:scrollbarThumbVertical="@drawable/winset_list_scrollbar" android:id="@id/music_widget_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/widget_list_divider_height" android:requiresFadingEdge="none" />
+        <TextView android:textSize="@dimen/widget_list_empty_text_size" android:textColor="@color/widget_text" android:gravity="center" android:id="@id/widget_list_empty_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_tracks" />
+    </FrameLayout>
+</LinearLayout>

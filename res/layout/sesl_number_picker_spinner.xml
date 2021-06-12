@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:textSize="@dimen/sesl_time_picker_spinner_text_size" android:textColor="?colorPrimaryDark" android:gravity="center" android:id="@id/numberpicker_input" android:background="@null" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/sesl_number_picker_spinner_edit_text_height" android:maxLines="1" android:selectAllOnFocus="true" class="android.support.v7.widget.SeslNumberPicker$CustomEditText" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/progressContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="0.5" android:indeterminateTint="@color/white_opacity_100" style="?android:progressBarStyleLarge" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        <FrameLayout android:id="@id/listContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/no_network_stub" android:layout="@layout/milk_no_network_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

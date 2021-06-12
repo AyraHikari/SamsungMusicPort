@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/tag_icon_radius" />
+    <stroke android:width="@dimen/tag_icon_stroke" android:color="@color/mu_primary" />
+    <size android:height="@dimen/tag_meta_icon_height" android:width="@dimen/tag_icon_width_title" />
+</shape>

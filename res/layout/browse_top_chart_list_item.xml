@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="34.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/browse_top_chart_item_title" android:textColor="@color/mu_main_text" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/title_number" android:layout_width="45.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" style="@style/Font.Roboto.Regular" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/mu_main_text" android:gravity="center" android:id="@id/text_explicit" android:background="@drawable/explcit_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/browse_19" android:fontFamily="sans-serif" />
+        <TextView android:textSize="@dimen/browse_top_chart_item_title" android:textColor="@color/mu_main_text" android:ellipsize="end" android:id="@id/title" android:maxLines="1" style="@style/Font.Roboto.Regular" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="45.0dip" android:layout_height="wrap_content">
+            <com.samsung.android.app.music.milk.store.widget.RankView android:textSize="@dimen/browse_top_chart_item_rank" android:id="@id/rank" android:includeFontPadding="false" android:layout_centerHorizontal="true" style="@style/Font.Roboto.Regular" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/browse_top_chart_item_artist" android:textColor="@color/mu_sub_text" android:ellipsize="end" android:id="@id/artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Font.Roboto.Regular" />
+    </LinearLayout>
+</LinearLayout>

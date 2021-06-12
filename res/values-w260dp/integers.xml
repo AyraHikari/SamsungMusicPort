@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sesl_date_picker_spinner_number_text_size">32</integer>
+    <integer name="sesl_date_picker_spinner_number_text_size_small">30</integer>
+</resources>

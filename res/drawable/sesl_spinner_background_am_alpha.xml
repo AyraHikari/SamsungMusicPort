@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:autoMirrored="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <nine-patch android:src="@drawable/sesl_spinner_mtrl_am_alpha" android:tint="@color/sesl_spinner_icon_color_disabled" android:autoMirrored="true" />
+    </item>
+    <item>
+        <nine-patch android:src="@drawable/sesl_spinner_mtrl_am_alpha" android:tint="@color/sesl_spinner_icon_color_normal" android:autoMirrored="true" />
+    </item>
+</selector>

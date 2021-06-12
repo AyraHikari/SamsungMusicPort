@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">ඇල්බම් %d</item>
+        <item quantity="one">ඇල්බම %d</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">ඇල්බම</item>
+        <item quantity="one">ඇල්බමය</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">ඛණ්ඩ</item>
+        <item quantity="one">ඛණ්ඩය</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">ඛණ්ඩ %d ක් ප්‍රියතමයන් වෙත එක් කෙරිණි. ප්‍රියතමයන් වල දැනටමත් ඇති ඛණ්ඩ එක් නොකෙරිණි.</item>
+        <item quantity="one">සංගීත ඛණ්ඩ %d ක් ප්‍රියතමයන් වෙත එක් කෙරිණි. සංගීත ඛණ්ඩය දැනටමත් ප්‍රියතමයන් තුළ ඇති නිසා එක් නොකෙරිණි.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">ඛණ්ඩ %d</item>
+        <item quantity="one">ඛණ්ඩ %d</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">ප්‍රියතම වෙතින් ඛණ්ඩ %d ක් ඉවත් කෙරිණි.</item>
+        <item quantity="one">සංගීත ඛණ්ඩ %d ක් ප්‍රියතමයන් වෙතින් ඉවත් කෙරිණි.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">සංගීත ඛණ්ඩ %d ක් ප්‍රියතම දෑ වෙත එක් කෙරිණි.</item>
+        <item quantity="one">සංගීත ඛණ්ඩ %d ක් ප්‍රියතමයන් වෙත එක් කෙරිණි.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">ඔබට නිර්දේශවලින් ඛණ්ඩ %dක් දක්වා පමණක් ඉවත් කළ හැකිය. ඉවත් කළ ඛණ්ඩ බලා, ප්‍රතිසාධනයට සමහරක් තෝරා, නැවත උත්සාහ කරන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට නිර්දේශවලින් ඛණ්ඩ %dක් දක්වා පමණක් ඉවත් කළ හැකිය. ඉවත් කළ ඛණ්ඩ බලා, ප්‍රතිසාධනයට සමහරක් තෝරා, නැවත උත්සාහ කරන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">සෑම මසකම නොමිලේ ඛණ්ඩ %dක් භුක්ති විඳීමට රේඩියෝව වාදනය බොත්තම තට්ටු කරන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">සෑම මසකම නොමිලේ ඛණ්ඩ %dක් භුක්ති විඳීමට රේඩියෝව වාදනය බොත්තම තට්ටු කරන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">ශිල්පීන් %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ශිල්පීන් %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">ප්‍රභේද %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ප්‍රභේද %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">ඛණ්ඩ %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඛණ්ඩ %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">තත්පර %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">තත්පර %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">ඔබට %1$s %2$d වරක් භාවිතා කළ හැකිය.</item>
+        <item quantity="one">1 අවස්ථාවකදී ඔබට %s භාවිතා කළ හැකිය.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">කතු හිමිකම් ගැටලුවක් නිසා ශ්‍රව්‍ය ඛණ්ඩ %dක් පාරිතෝෂික ප්‍රවේශපත් සමගින් මිල දී ගත නොහැකිය. ඔබට ඒවා තනි තනිව මිල දී ගත හැකිය.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">කතු හිමිකම් ගැටලුවක් නිසා ශ්‍රව්‍ය ඛණ්ඩ %dක් පාරිතෝෂික ප්‍රවේශපත් සමගින් මිල දී ගත නොහැකිය. ඔබට ඒවා තනි තනිව මිල දී ගත හැකිය.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">ශ්‍රව්‍ය ඛණ්ඩ %dක් ඔබේ පවතින ශ්‍රව්‍ය ඛණ්ඩවලින් භාවිතා වනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ශ්‍රව්‍ය ඛණ්ඩ %dක් ඔබේ පවතින ශ්‍රව්‍ය ඛණ්ඩවලින් භාවිතා වනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">ගීත %dක් බාගැනීමට රැඳෙමින්…</item>
+        <item quantity="one">ගීත 1ක් බාගැනීමට රැඳෙමින්…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">ඇල්බම %dක් සහ ඒවායේ ඇති සියලු ඛණ්ඩ ඔබේ දුරකථනයෙන් මකන්න ද?</item>
+        <item quantity="one">ඇල්බම 1ක් සහ එහි ඇති සියලු ඛණ්ඩ ඔබේ දුරකථනයෙන් මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">මෙම ශිල්පීන්ගේ සියලු සංගීත ඛණ්ඩ මකන්න ද?</item>
+        <item quantity="one">මෙම ශිල්පියාගේ සියලු සංගීත ඛණ්ඩ මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">මෙම රචකයන්ගේ සියලු සංගීත ඛණ්ඩ මකන්න ද?</item>
+        <item quantity="one">මෙම රචකයාගේ සියලු සංගීත ඛණ්ඩ මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">තේරූ ඛණ්ඩ මකන්න ද?</item>
+        <item quantity="one">තේරූ ඛණ්ඩය මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">ශ්‍රව්‍ය ඛණ්ඩ %dක් මිල දී ගනු ඇත. ඔබට ප්‍රමාණවත් ශ්‍රව්‍ය ඛණ්ඩ නොමැති නම්, මෙම ශ්‍රව්‍ය ඛණ්ඩ මිල දී ගත නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ශ්‍රව්‍ය ඛණ්ඩ %dක් මිල දී ගනු ඇත. ඔබට ප්‍රමාණවත් ශ්‍රව්‍ය ඛණ්ඩ නොමැති නම්, මෙම ශ්‍රව්‍ය ඛණ්ඩ මිල දී ගත නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">තේරූ ඛණ්ඩ මිල දී ගන්න ද?</item>
+        <item quantity="one">තේරූ ඛණ්ඩය මිල දී ගන්න ද?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">ඔබ දැනටමත් මෙම ගීත මිල දී ගෙන ඇත. ඔබට ඕනෑම වේලාවක මිලදී ගත් ගීත නැවත බාගත හැකිය.</item>
+        <item quantity="one">ඔබ දැනටමත් මෙම ගීතය මිල දී ගෙන ඇත. ඔබට ඕනෑම වේලාවක මිලදී ගත් ගීත නැවත බාගත හැකිය.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">ඛණ්ඩය දැනටමත් මිල දී ගෙන ඇත</item>
+        <item quantity="one">ඛණ්ඩය දැනටමත් මිල දී ගෙන ඇත</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">ඔබට ප්‍රියතමයන් ලෙස සැපයූ ගීත ලැයිස්තු %dක් පමණක් එක් කළ හැක. ප්‍රියතම පටිත්තෙන් සමහර සැපයූ ගීත ලැයිස්තු ඉවත් කරන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට ප්‍රියතමයක් ලෙස සැපයූ ගීත ලැයිස්තු %dක් පමණක් එක් කළ හැක. ප්‍රියතම පටිත්තෙන් සමහර සැපයූ ගීත ලැයිස්තු ඉවත් කරන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">ඔබට ප්‍රියතම ඛණ්ඩ ලෙස ප්‍රවාහ ඛණ්ඩ %dක් පමණක් එක් කළ හැක. ප්‍රියතම ඛණ්ඩවලින් සමහර ප්‍රවාහ ඛණ්ඩ ඉවත් කර, නැවත උත්සාහ කරන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට ප්‍රියතම ඛණ්ඩයක් ලෙස ප්‍රවාහ ඛණ්ඩ %dක් පමණක් එක් කළ හැක. ප්‍රියතම ඛණ්ඩවලින් සමහර ප්‍රවාහ ඛණ්ඩ ඉවත් කර, නැවත උත්සාහ කරන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">ඔබට ප්‍රියතම ඛණ්ඩ ලෙස ඛණ්ඩ %dක් පමණක් එක් කළ හැක. ප්‍රියතම ඛණ්ඩවලින් සමහර ඛණ්ඩ ඉවත් කර, නැවත උත්සාහ කරන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඔබට ප්‍රියතම ඛණ්ඩයක් ලෙස ඛණ්ඩ %dක් පමණක් එක් කළ හැක. ප්‍රියතම ඛණ්ඩවලින් සමහර ඛණ්ඩ ඉවත් කර, නැවත උත්සාහ කරන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">ෆෝල්ඩර %d</item>
+        <item quantity="one">ෆෝල්ඩර් 1</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">ෆෝල්ඩර %dක් සහ ඒවායේ ඇති සියලු ඛණ්ඩ ඔබේ දුරකථනයෙන් මකන්න ද?</item>
+        <item quantity="one">ෆෝල්ඩර 1ක් සහ එහි ඇති සියලු ඛණ්ඩ ඔබේ දුරකථනයෙන් මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">මෙම ප්‍රභේදවල සියලු සංගීත ඛණ්ඩ මකන්න ද?</item>
+        <item quantity="one">මෙම ප්‍රභේදයේ සියලු සංගීත ඛණ්ඩ මකන්න ද?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">සැඟවුණු ෆෝල්ඩර %dක් ද මැකෙනු ඇත.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">සැඟවුණු ෆෝල්ඩර %dක් ද මැකෙනු ඇත.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">ඛණ්ඩ %dක් ප්‍රතිසාධිතයි.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ඛණ්ඩ %dක් ප්‍රතිසාධිතයි.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">අයිතම %dක් මකන්නද?</item>
+        <item quantity="one">අයිතම 1ක් මකන්නද?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">ගීත ලැයිස්තු %dක් නිර්යාත කෙරිණි.</item>
+        <item quantity="one">ගීත ලැයිස්තු %dක් නිර්යාත කෙරිණි.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">ගීත ලැයිස්තු %dක් ආයාත කෙරිණි.</item>
+        <item quantity="one">ගීත ලැයිස්තු %dක් ආයාත කෙරිණි.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">ගීත ලැයිස්තු %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ගීත ලැයිස්තු %dකට වඩා තේරිය නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">ගීත ලැයිස්තු %dක් මකන්නද?</item>
+        <item quantity="one">1 ගීත ලැයිස්තුවක් මකන්නද?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">ඛණ්ඩ %d</item>
+        <item quantity="one">ගීත 1</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">සංගීත ඛණ්ඩ %d ක් පෝළිමට එක් කෙරිණි.</item>
+        <item quantity="one">සංගීත ඛණ්ඩ %d ක් පෝලිම වෙත එක් කෙරිණි.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">සංගීත ඛණ්ඩ %dක් මකන්නද?</item>
+        <item quantity="one">1 ඛණ්ඩයක් මකන්නද?</item>
+    </plurals>
+</resources>

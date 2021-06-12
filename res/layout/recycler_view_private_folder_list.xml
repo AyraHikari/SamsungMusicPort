@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/deprecated_list_item_one_line_min_height_winset" android:paddingStart="@dimen/mu_list_item_space_outer_default" android:paddingEnd="@dimen/mu_list_item_space_outer_default"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/folder_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/private_mode_ic_folder_mtrl" android:layout_centerVertical="true" android:layout_marginStart="@dimen/list_item_private_folder_selection_icon_margin_left" android:layout_marginEnd="@dimen/list_item_private_folder_selection_icon_margin_right" />
+    <ImageView android:id="@id/sd_card_folder_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gallery_ic_sd_mtrl" android:layout_centerVertical="true" android:layout_marginStart="@dimen/list_item_private_folder_selection_icon_margin_left" android:layout_marginEnd="@dimen/list_item_private_folder_selection_icon_margin_right" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/deprecated_list_item_two_line_text_layout_margin_vertical" android:layout_marginBottom="@dimen/deprecated_list_item_two_line_text_layout_margin_vertical" android:layout_centerVertical="true" android:layout_toEndOf="@id/folder_icon">
+        <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/mu_list_item_text1_winset" android:textColor="@color/mu_main_text_winset" android:id="@id/text1" style="@style/Font.Roboto.Regular.ListItem" />
+        <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/mu_list_item_text2_winset" android:textColor="@color/mu_sub_text_winset" android:ellipsize="middle" android:id="@id/text2" style="@style/Font.Roboto.Regular.ListItem" />
+    </LinearLayout>
+</RelativeLayout>

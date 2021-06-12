@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/media_router_list_sub_title_text_size" android:textColor="@color/dialog_message_text_color" android:paddingLeft="@dimen/winset_dialog_padding" android:paddingTop="@dimen/winset_dialog_padding" android:paddingRight="@dimen/winset_dialog_padding" android:paddingBottom="@dimen/media_router_list_sub_title_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/media_route_list_sub_title" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/media_route_list" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="#00fafafa" android:dividerHeight="18.0dip" />
+</LinearLayout>

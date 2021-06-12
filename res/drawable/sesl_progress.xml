@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/sesl_vector_drawable_progress"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="progressBase1" android:animation="@anim/sesl_progress_indeterminate_base" />
+    <target android:name="progressBase2" android:animation="@anim/sesl_progress_indeterminate_base" />
+    <target android:name="root" android:animation="@anim/sesl_progress_indeterminate_rot" />
+</animated-vector>

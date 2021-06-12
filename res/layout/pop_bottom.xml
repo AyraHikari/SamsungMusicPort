@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/ppmt_pop_bottom_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:orientation="vertical" android:id="@id/ppmt_pop_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ppmt_pop_button_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/ppmt_pop_button_margin1" android:visibility="gone" android:layout_width="@dimen/ppmt_pop_bottom_btn_horizontal_margin" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:id="@id/ppmt_pop_button1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ppmt_pop_bottom_btn_margin_top" android:layout_marginBottom="@dimen/ppmt_pop_bottom_btn_margin_bottom" android:minWidth="@dimen/ppmt_pop_bottom_btn_min_width">
+            <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/ppmt_pop_button1_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ppmt_pop_bottom_btn_horizontal_margin" android:layout_marginRight="@dimen/ppmt_pop_bottom_btn_horizontal_margin" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+        <View android:id="@id/ppmt_pop_button_margin2" android:visibility="gone" android:layout_width="@dimen/ppmt_pop_bottom_btn_horizontal_margin" android:layout_height="fill_parent" />
+        <View android:orientation="vertical" android:id="@id/ppmt_pop_line_for_centeralign" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:id="@id/ppmt_pop_button2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ppmt_pop_bottom_btn_margin_top" android:layout_marginBottom="@dimen/ppmt_pop_bottom_btn_margin_bottom" android:minWidth="@dimen/ppmt_pop_bottom_btn_min_width">
+            <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/ppmt_pop_button2_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/ppmt_pop_bottom_btn_horizontal_margin" android:layout_marginRight="@dimen/ppmt_pop_bottom_btn_horizontal_margin" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+        <View android:id="@id/ppmt_pop_button_margin3" android:visibility="gone" android:layout_width="@dimen/ppmt_pop_bottom_btn_horizontal_margin" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="about_update_button_width">175.0dip</dimen>
+    <dimen name="device_height">411.0dip</dimen>
+    <dimen name="device_width">732.0dip</dimen>
+</resources>

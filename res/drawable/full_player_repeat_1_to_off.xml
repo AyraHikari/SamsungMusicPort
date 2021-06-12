@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_01" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_02" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_03" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_04" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_05" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_06" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_07" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_08" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_09" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_once_to_none_10" />
+    <item android:duration="30" android:drawable="@drawable/music_player_ic_repeat_none_to_all_01" />
+</animation-list>

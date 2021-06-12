@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="?actionMenuTextColor" android:height="@dimen/sesl_action_button_src_size" android:width="@dimen/sesl_action_button_src_size" android:autoMirrored="true" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@android:color/white" android:pathData="M30.6,17.75a5.4,5.32 0,1 0,10.8 0a5.4,5.32 0,1 0,-10.8 0z" />
+    <path android:fillColor="@android:color/white" android:pathData="M30.6,36a5.4,5.32 0,1 0,10.8 0a5.4,5.32 0,1 0,-10.8 0z" />
+    <path android:fillColor="@android:color/white" android:pathData="M30.6,54.25a5.4,5.32 0,1 0,10.8 0a5.4,5.32 0,1 0,-10.8 0z" />
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" style="@style/Toolbar" />
+    <com.samsung.android.app.music.widget.MusicSubTabLayout android:id="@id/sub_tabs" android:focusable="true" android:scrollbars="none" style="@style/SubTab.Container" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ViewStub android:id="@id/bottom_bar_stub" android:layout="@layout/download_basket_bottom_bar_container" android:layout_width="fill_parent" android:layout_height="@dimen/mini_player_layout_height" />
+</LinearLayout>

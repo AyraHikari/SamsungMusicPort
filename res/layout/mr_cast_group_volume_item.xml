@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="#ff80868b" android:gravity="center_vertical" android:id="@id/mr_group_volume_route_name" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <ImageView android:gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="16.0dip" android:src="?mediaRouteAudioTrackDrawable" android:scaleType="center" />
+        <android.support.v7.app.MediaRouteVolumeSlider android:id="@id/mr_group_volume_slider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/mr_controller_volume_slider" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="19.0sp" android:textColor="@color/white_opacity_90" android:ellipsize="end" android:gravity="center" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginBottom="8.0dip" android:maxLines="1" android:textAllCaps="true" app:maxFontLevel="large" style="@style/Font.Roboto.Condensed.Bold" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:overScrollMode="never" />
+</LinearLayout>

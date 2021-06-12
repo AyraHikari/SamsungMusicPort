@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@android:anim/decelerate_interpolator"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale android:interpolator="@anim/interpolator_sine_in_33" android:duration="300" android:pivotX="50.0%" android:pivotY="50.0%" android:startOffset="500" android:fromXScale="0.0" android:toXScale="1.0" android:fromYScale="0.0" android:toYScale="1.0" />
+    <alpha android:interpolator="@anim/interpolator_sine_in_out_33" android:duration="300" android:startOffset="500" android:fromAlpha="0.0" android:toAlpha="1.0" />
+</set>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/mu_background" android:layout_width="fill_parent" android:layout_height="@dimen/track_detail_section_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

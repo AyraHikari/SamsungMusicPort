@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="500" android:drawable="@drawable/music_core_turning_on_tv_01" />
+    <item android:duration="500" android:drawable="@drawable/music_core_turning_on_tv_02" />
+    <item android:duration="500" android:drawable="@drawable/music_core_turning_on_tv_03" />
+</animation-list>

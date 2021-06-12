@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d album</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Album</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Spår</item>
+        <item quantity="one">Låt</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d spår har lagts till i Favoriter. Spåren som redan finns i Favoriter har inte lagts till.</item>
+        <item quantity="one">%d låt har lagts till i Favoriter. Låtar som redan finns i Favoriter har inte lagts till.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d låtar</item>
+        <item quantity="one">%d låt</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d spår har tagits bort från Favoriter.</item>
+        <item quantity="one">%d låt har tagits bort från Favoriter.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d spår har lagts till i favoriter.</item>
+        <item quantity="one">%d spår har lagts till bland favoriterna.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Du kan högst ta bort %d spår från rekommendationerna. Visa borttagna spår, välj att återställa några och försök sedan igen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du kan högst ta bort %d spår från rekommendationerna. Visa borttagna spår, välj att återställa några och försök sedan igen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Tryck på alternativknappen för uppspelning om du vill ha %d gratis spår varje månad.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tryck på alternativknappen för uppspelning om du vill ha %d gratis spår varje månad.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Det går inte att välja fler än %d artister.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att välja fler än %d artist.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Det går inte att välja fler än %d genrer.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att välja fler än %d genre.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Det går inte att välja fler än %d spår.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att välja fler än %d spår.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d sekunder</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Du kan använda %1$s %2$d gånger.</item>
+        <item quantity="one">Du kan använda %s 1 gång.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d spår går inte att köpa med premiumprogrammet på grund av ett upphovsrättsproblem. Du kan köpa dem enskilt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d spår går inte att köpa med premiumprogrammet på grund av ett upphovsrättsproblem. Du kan köpa det enskilt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d spår kommer att användas från dina tillgängliga spår.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d spår kommer att användas från dina tillgängliga spår.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Väntar på att hämta %d låtar …</item>
+        <item quantity="one">Väntar på att hämta 1 låt …</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Vill du radera %d album och alla spåren på dem från telefonen?</item>
+        <item quantity="one">Vill du radera ett album och alla spåren på det från telefonen?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Ta bort alla spår med de här artisterna?</item>
+        <item quantity="one">Ta bort alla spår med den här artisten?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Ta bort alla spår med de här kompositörerna?</item>
+        <item quantity="one">Ta bort alla spår med den här kompositören?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Vill du radera de valda spåren?</item>
+        <item quantity="one">Vill du radera det valda spåret?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d spår kommer att köpas. Om du inte har tillräckligt med tillgängliga spår kan du inte köpa dessa spår.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d spår kommer att köpas. Om du inte har tillräckligt med tillgängliga spår kan du inte köpa detta spår.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Vill du köpa de valda spåren?</item>
+        <item quantity="one">Vill du köpa det valda spåret?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Du har redan köpt dessa låtar. Du kan hämta köpta låtar igen när som helst.</item>
+        <item quantity="one">Du har redan köpt denna låt. Du kan hämta köpta låtar igen när som helst.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Spåren är redan köpta</item>
+        <item quantity="one">Spåret är redan köpt</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Du kan bara lägga till %d angivna spellistor som favorit. Ta bort några angivna spellistor från fliken Favoriter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du kan bara lägga till %d angiven spellista som favorit. Ta bort några angivna spellistor från fliken Favoriter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Du kan bara lägga till %d strömmande spår i Favoritspår. Ta bort några strömmande spår från Favoritspår och försök igen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du kan bara lägga till %d strömmande spår i Favoritspår. Ta bort några strömmande spår från Favoritspår och försök igen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Du kan bara lägga till %d spår i Favoritspår. Ta bort några spår från Favoritspår och försök igen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du kan bara lägga till %d spår i Favoritspår. Ta bort några spår från Favoritspår och försök igen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d mappar</item>
+        <item quantity="one">1 mapp</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Vill du radera %d mappar och alla spåren i dem från telefonen?</item>
+        <item quantity="one">Vill du radera en mapp och alla spåren i den från telefonen?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Ta bort alla spår i de här genrerna?</item>
+        <item quantity="one">Ta bort alla spår i den här genren?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d dolda mappar raderas också.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dold mapp raderas också.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d spår återställdes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d spår återställdes.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Ta bort %d objekt?</item>
+        <item quantity="one">Ta bort ett objekt?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Exporterade %d spellistor.</item>
+        <item quantity="one">Exporterade %d spellista.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Importerade %d spellistor.</item>
+        <item quantity="one">Importerade %d spellista.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Det går inte att välja fler än %d spellistor.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Det går inte att välja fler än %d spellista.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Ta bort %d spellistor?</item>
+        <item quantity="one">Ta bort en spellista?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d låtar</item>
+        <item quantity="one">1 låt</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d spår har lagts till i kön.</item>
+        <item quantity="one">%d spår har lagts till i kön.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Ta bort %d spår?</item>
+        <item quantity="one">Ta bort ett spår?</item>
+    </plurals>
+</resources>

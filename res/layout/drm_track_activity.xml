@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.musiclibrary.ui.widget.TransitionView android:id="@id/background_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/soft_key_background_common" />
+    <FrameLayout android:id="@id/music_list" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

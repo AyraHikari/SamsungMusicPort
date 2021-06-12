@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:gravity="center_vertical" android:paddingTop="@dimen/full_player_recommend_list_padding_side" android:paddingBottom="@dimen/full_player_recommend_list_padding_side" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/recommend_list_container_track" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/recommend_list_container_artist" layout="@layout/full_player_recommend_list_item" />
+    <include android:id="@id/recommend_list_container_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@id/recommend_list_container_track" app:layout_constraintRight_toRightOf="parent" layout="@layout/full_player_recommend_list_item" />
+</android.support.constraint.ConstraintLayout>

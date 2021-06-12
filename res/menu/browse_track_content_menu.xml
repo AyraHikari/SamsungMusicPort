@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/music_ic_ab_favorite_off" android:id="@id/toggle_heart" android:title="@string/tts_favourite" app:showAsAction="always" />
+    <item android:icon="@drawable/ab_btn_share" android:id="@id/menu_share" android:title="@string/menu_share" app:showAsAction="always" />
+</menu>

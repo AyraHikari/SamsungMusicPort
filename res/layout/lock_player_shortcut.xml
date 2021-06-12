@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/lock_player_shortcut_text" android:textColor="@color/lock_player_shortcut" android:gravity="center" android:layout_gravity="center" android:id="@id/lock_player_shortcut" android:background="@drawable/lock_player_shortcut_background" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="@dimen/lock_player_shortcut_height" android:text="@string/brand_name" android:includeFontPadding="false" android:paddingStart="@dimen/lock_player_shortcut_padding_horizontal" android:paddingEnd="@dimen/lock_player_shortcut_padding_horizontal" style="@style/Font.Roboto.Regular" />
+</FrameLayout>

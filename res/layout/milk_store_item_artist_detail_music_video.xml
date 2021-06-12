@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_rect_light" android:layout_width="fill_parent" android:layout_height="170.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.music.milk.store.widget.CornerRoundRelativeLayout android:id="@id/image_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/image_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.samsung.android.app.music.milk.store.widget.RatioImageView android:id="@id/image_music_video" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:showImageOnFail="@drawable/store_main_video_icon" app:showImageOnLoading="@drawable/store_main_video_icon" app:ratio="0.75" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/image_play_btn" android:clickable="true" android:layout_width="@dimen/milk_store_artist_detail_music_video_item_play_btn_width" android:layout_height="@dimen/milk_store_artist_detail_music_video_item_play_btn_height" android:layout_marginRight="14.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/store_main_play_video_btn" android:contentDescription="@string/milk_radio_accessibility_play" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_text" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_below="@id/image_frame" android:layout_centerVertical="true">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <include layout="@layout/milk_store_item_common_explicit" />
+                <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="13.0dip" android:textColor="#fffafafa" android:ellipsize="end" android:id="@id/text_song_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:fontFamily="roboto-regular" />
+            </LinearLayout>
+            <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="10.0dip" android:textColor="#fffafafa" android:ellipsize="end" android:id="@id/text_artist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:fontFamily="roboto-regular" />
+        </LinearLayout>
+    </com.samsung.android.app.music.milk.store.widget.CornerRoundRelativeLayout>
+</RelativeLayout>

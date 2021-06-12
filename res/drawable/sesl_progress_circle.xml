@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/progress">
+        <rotate android:fromDegrees="270.0" android:toDegrees="270.0">
+            <shape android:shape="ring" android:useLevel="true" android:thickness="@dimen/sesl_progress_circle_thickness">
+                <size android:height="@dimen/sesl_progress_circle_size" android:width="@dimen/sesl_progress_circle_size" />
+                <solid android:color="?progressActivatedColor" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

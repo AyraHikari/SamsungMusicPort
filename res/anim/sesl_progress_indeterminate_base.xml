@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:interpolator="@interpolator/sine_in_out_70" android:duration="@integer/sesl_loading_progress_anim_duration" android:repeatCount="infinite" android:repeatMode="reverse" android:valueFrom="1.0" android:valueTo="0.2" android:valueType="floatType" android:propertyName="trimPathEnd" />
+    <objectAnimator android:interpolator="@interpolator/sine_in_out_70" android:duration="@integer/sesl_loading_progress_anim_duration" android:repeatCount="infinite" android:repeatMode="reverse" android:valueFrom="0.0" android:valueTo="0.4" android:valueType="floatType" android:propertyName="trimPathOffset" />
+</set>

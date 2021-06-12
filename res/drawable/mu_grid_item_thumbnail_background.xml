@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/mu_ripple_button_winset"
+  xmlns:android="http://schemas.android.com/apk/res/android">// Missing GUI guide <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/mu_grid_item_thumbnail_radius_stroke" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</ripple>

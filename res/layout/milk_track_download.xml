@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="@dimen/milk_track_option_icon_size" android:layout_height="@dimen/milk_track_option_icon_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/download" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_player_download" android:scaleType="fitXY" android:tint="@color/mu_icon" android:contentDescription="@string/milk_radio_accessibility_download" android:alpha="0.7" />
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="true" android:indeterminateDrawable="@anim/milk_circle_progress" android:indeterminateDuration="1000" android:alpha="0.7" style="?android:progressBarStyleSmall" />
+</LinearLayout>

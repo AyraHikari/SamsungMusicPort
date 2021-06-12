@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/navigation_container" android:layout_width="wrap_content" android:layout_height="37.0dip" android:paddingStart="20.0dip" android:paddingEnd="18.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@color/folder_name_text_parent" android:gravity="center" android:id="@id/root" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textAllCaps="true" style="@style/Font.Roboto.Regular" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tw_breadcrumb_arrow" android:tint="@color/mu_icon_etc" android:alpha="0.5" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+        <HorizontalScrollView android:id="@id/navigation_scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/navigation" android:layout_width="wrap_content" android:layout_height="fill_parent" android:animateLayoutChanges="true" />
+        </HorizontalScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/folder_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

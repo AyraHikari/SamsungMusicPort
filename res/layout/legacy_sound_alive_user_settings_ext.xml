@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.music.support.sdl.samsung.touchwiz.widget.TwSeekBarBubble android:id="@id/seekbar_bubble" android:paddingTop="@dimen/legacy_sound_alive_ext_seekbar_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/legacy_sound_alive_seekbar_bubble_padding_horizontal" android:paddingEnd="@dimen/legacy_sound_alive_seekbar_bubble_padding_horizontal" android:layout_marginEnd="@dimen/legacy_sound_alive_eq_ext_control_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/legacy_sound_alive_user_settings_ext_level" />
+    <LinearLayout android:layout_width="@dimen/legacy_sound_alive_ext_line_width" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_marginStart="@dimen/legacy_sound_alive_eq_ext_dbscale_layout">
+        <include android:id="@id/ext_control0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/legacy_sound_alive_user_settings_ext_control_bar" />
+        <include android:id="@id/ext_control1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/legacy_sound_alive_user_settings_ext_control_bar" />
+        <include android:id="@id/ext_control2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/legacy_sound_alive_user_settings_ext_control_bar" />
+        <include android:id="@id/ext_control3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/legacy_sound_alive_user_settings_ext_control_bar" />
+        <include android:id="@id/ext_control4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/legacy_sound_alive_user_settings_ext_control_bar" />
+    </LinearLayout>
+</com.samsung.android.app.music.support.sdl.samsung.touchwiz.widget.TwSeekBarBubble>

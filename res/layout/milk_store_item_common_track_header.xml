@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/milk_store_common_track_list_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/shadow" android:background="@drawable/detail_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/milk_store_common_track_list_header_height" android:layout_marginRight="@dimen/milk_store_common_track_list_header_right_margin">
+        <LinearLayout android:orientation="horizontal" android:id="@id/track_header_menu_container" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="@dimen/milk_store_common_track_list_header_menu_height" android:layout_alignParentRight="true">
+            <include layout="@layout/milk_store_item_common_track_header_select" />
+            <View android:id="@id/track_header_menu_blank" android:layout_width="@dimen/milk_store_common_track_list_header_item_margin" android:layout_height="fill_parent" />
+            <include layout="@layout/milk_store_item_common_track_header_play" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

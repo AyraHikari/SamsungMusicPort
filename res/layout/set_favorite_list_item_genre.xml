@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/set_favorite_list_genre_background" android:layout_width="@dimen/set_favorite_grid_item_width" android:layout_height="@dimen/set_favorite_grid_item_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/set_favorite_genre_item_text" android:textColor="@color/mu_main_text" android:gravity="center" android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Font.Roboto.Light" />
+    <com.samsung.android.app.music.milk.store.setfavorite.view.SetFavoriteCircleIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/activated" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_ic_fav_a" />
+    <ImageView android:layout_gravity="center" android:id="@id/selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_ic_fav_b" />
+    <View android:id="@id/clickable_view" android:background="@drawable/ripple_button_oval" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

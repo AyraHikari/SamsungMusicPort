@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:interpolator="@interpolator/sesl_progress_rect1_trans_interpolator" android:duration="2000" android:repeatCount="infinite" android:pathData="M -522.59998,0 c 48.89972,0 166.02656,0 301.21729,0 c 197.58128,0 420.9827,0 420.9827,0 " android:propertyXName="translateX" />
+    <objectAnimator android:interpolator="@interpolator/sesl_progress_rect1_scale_interpolator" android:duration="2000" android:repeatCount="infinite" android:pathData="M 0 0.1 L 1 0.826849212646 L 2 0.1" android:propertyYName="scaleX" />
+</set>

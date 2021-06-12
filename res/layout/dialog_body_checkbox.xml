@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dialog_body_checkbox_body_padding_vertical" android:paddingBottom="@dimen/dialog_body_checkbox_body_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dialog_body_checkbox_body_padding_horizontal" android:paddingEnd="@dimen/dialog_body_checkbox_body_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_body_checkbox_title_text_size" android:textStyle="bold" android:textColor="@color/dialog_title_text_color" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dialog_body_checkbox_title_margin_bottom" />
+    <TextView android:textSize="@dimen/dialog_body_checkbox_message_text_size" android:textColor="@color/dialog_message_text_color" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingExtra="@dimen/dialog_body_checkbox_message_text_space_size" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dialog_body_checkbox_text_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox" android:layout_width="@dimen/checkbox_width_winset" android:layout_height="@dimen/checkbox_height_winset" android:layout_marginEnd="@dimen/dialog_body_checkbox_choice_item_margin_end" />
+        <TextView android:textSize="@dimen/dialog_body_checkbox_choice_item_text_size" android:textColor="@color/dialog_body_checkbox_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_music_mode_do_not_show_again" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

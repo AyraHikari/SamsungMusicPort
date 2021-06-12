@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="17.0sp" android:textColor="@color/mu_main_text_winset" android:gravity="center_vertical" android:id="@id/action_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="2.0dip" android:singleLine="true" android:layout_centerVertical="true" android:alpha="0.0" app:maxFontLevel="large" style="@style/Font.Roboto.Condensed.Bold" />
+</FrameLayout>

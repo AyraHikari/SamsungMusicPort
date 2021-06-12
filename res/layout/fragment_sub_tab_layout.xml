@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.music.widget.MusicSubTabLayout android:id="@id/tabs" android:layout_below="@id/toolbar" style="@style/SubTab.Container" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tabs" />
+</RelativeLayout>

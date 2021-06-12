@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/list_category_layout" android:paddingTop="@dimen/deprecated_list_item_section_padding_top" android:paddingBottom="@dimen/deprecated_list_item_section_padding_bottom" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/deprecated_list_item_section_divider_text1_winset" android:textColor="@color/dark_gray_opacity_47" android:id="@id/list_category_text" android:textAllCaps="true" android:paddingStart="@dimen/deprecated_list_item_section_text1_padding_start" android:paddingEnd="@dimen/deprecated_list_item_section_text1_padding_end" style="@style/ListSubTitle.LeftAlign" />
+    <View android:id="@id/sub_title_divider" android:background="@color/dark_gray_opacity_18" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_search_section_divider_height" android:layout_marginStart="@dimen/list_item_search_section_divider_margin_start" android:layout_marginEnd="@dimen/list_item_search_section_divider_margin_end" />
+</LinearLayout>

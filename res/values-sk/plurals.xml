@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">Albumy: %d</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albumy</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Skladby</item>
+        <item quantity="one">Skladba</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">Skladby v počte %d boli pridané do priečinka Obľúbené. Skladby, ktoré sú už v priečinku Obľúbené, sa nepridali.</item>
+        <item quantity="one">Pridala sa %d skladba do priečinka Obľúbené. Skladba, ktorá už je v priečinku Obľúbené, sa nepridala.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">Skladby: %d</item>
+        <item quantity="one">%d skladieb</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">Odstránené skladby z priečinka Obľúbené: %d.</item>
+        <item quantity="one">Odstránila sa %d skladba z obľúbených.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">Počet skladieb pridaných medzi obľúbené: %d.</item>
+        <item quantity="one">Pridala sa %d skladba medzi obľúbené.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Z odporúčaní môžete odstrániť najviac %d skladieb. Pozrite si odstránené skladby, vyberte niektoré na obnovenie a potom to skúste znova.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Z odporúčaní môžete odstrániť najviac %d skladbu. Pozrite si odstránené skladby, vyberte niektoré na obnovenie a potom to skúste znova.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Z odporúčaní môžete odstrániť najviac %d skladby. Pozrite si odstránené skladby, vyberte niektoré na obnovenie a potom to skúste znova.</item>
+        <item quantity="many">Z odporúčaní môžete odstrániť najviac %d skladby. Pozrite si odstránené skladby, vyberte niektoré na obnovenie a potom to skúste znova.</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Ťuknite na tlačidlo Prehrať rádio a každý mesiac môžete počúvať %d skladieb zadarmo.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ťuknite na tlačidlo Prehrať rádio a každý mesiac môžete počúvať %d skladbu zadarmo.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ťuknite na tlačidlo Prehrať rádio a každý mesiac môžete počúvať %d skladby zadarmo.</item>
+        <item quantity="many">Ťuknite na tlačidlo Prehrať rádio a každý mesiac môžete počúvať %d skladby zadarmo.</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Nedá sa vybrať viac než %d interpretov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nedá sa vybrať viac než %d interpret.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nedajú sa vybrať viac než %d interpreti.</item>
+        <item quantity="many">Nedá sa vybrať viac než %d interpreta.</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Nedá sa vybrať viac než %d žánrov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nedá sa vybrať viac než %d žáner.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nedajú sa vybrať viac než %d žánre.</item>
+        <item quantity="many">Nedá sa vybrať viac než %d žánru.</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Nedá sa vybrať viac než %d skladieb.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nedá sa vybrať viac než %d skladba.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nedajú sa vybrať viac než %d skladby.</item>
+        <item quantity="many">Nedá sa vybrať viac než %d skladby.</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d sekúnd</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekunda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d sekundy</item>
+        <item quantity="many">%d sekundy</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">%1$s môžete použiť %2$d-krát.</item>
+        <item quantity="one">%s môžete použiť raz.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d skladieb sa nedá zakúpiť s prémiovými lístkami z dôvodu problému s autorskými právami. Môžete si ich zakúpiť jednotlivo.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d skladba sa nedá zakúpiť s prémiovými lístkami z dôvodu problému s autorskými právami. Môžete si ich zakúpiť jednotlivo.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d skladby sa nedajú zakúpiť s prémiovými lístkami z dôvodu problému s autorskými právami. Môžete si ich zakúpiť jednotlivo.</item>
+        <item quantity="many">%d skladby sa nedá zakúpiť s prémiovými lístkami z dôvodu problému s autorskými právami. Môžete si ich zakúpiť jednotlivo.</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">Použije sa %d skladieb z vašich dostupných skladieb.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Použije sa %d skladba z vašich dostupných skladieb.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Použijú sa %d skladby z vašich dostupných skladieb.</item>
+        <item quantity="many">Použije sa %d skladby z vašich dostupných skladieb.</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Čaká sa na stiahnutie %d piesní…</item>
+        <item quantity="one">Čaká sa na stiahnutie 1 piesne…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Chcete odstrániť z telefónu albumy (%d) a všetky skladby, ktoré obsahujú?</item>
+        <item quantity="one">Chcete odstrániť z telefónu 1 album a všetky skladby, ktoré obsahuje?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Chcete odstrániť všetky skladby od týchto interpretov?</item>
+        <item quantity="one">Chcete odstrániť všetky skladby od tohto interpreta?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Chcete odstrániť všetky skladby od týchto skladateľov?</item>
+        <item quantity="one">Chcete odstrániť všetky skladby od tohto skladateľa?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Odstrániť vybraté skladby?</item>
+        <item quantity="one">Odstrániť vybratú skladbu?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">Zakúpi sa %d skladieb. Ak nemáte dosť dostupných skladieb, tieto skladby sa nebudú dať zakúpiť.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zakúpi sa %d skladba. Ak nemáte dosť dostupných skladieb, tieto skladby sa nebudú dať zakúpiť.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Zakúpia sa %d skladby. Ak nemáte dosť dostupných skladieb, tieto skladby sa nebudú dať zakúpiť.</item>
+        <item quantity="many">Zakúpi sa %d skladby. Ak nemáte dosť dostupných skladieb, tieto skladby sa nebudú dať zakúpiť.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Kúpiť vybraté skladby?</item>
+        <item quantity="one">Kúpiť vybratú skladbu?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Tieto piesne ste si už kúpili. Zakúpené piesne si môžete kedykoľvek stiahnuť znova.</item>
+        <item quantity="one">Túto pieseň ste si už kúpili. Zakúpené piesne si môžete kedykoľvek stiahnuť znova.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Skladby sú už zakúpené</item>
+        <item quantity="one">Skladba je už zakúpená</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Ako obľúbené môžete pridať iba %d poskytnutých prehrávacích zoznamov. Odstráňte niektoré poskytnuté prehrávacie zoznamy z karty Obľúbené.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ako obľúbený môžete pridať iba %d poskytnutý prehrávací zoznam. Odstráňte niektoré poskytnuté prehrávacie zoznamy z karty Obľúbené.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ako obľúbené môžete pridať iba %d poskytnuté prehrávacie zoznamy. Odstráňte niektoré poskytnuté prehrávacie zoznamy z karty Obľúbené.</item>
+        <item quantity="many">Ako obľúbené môžete pridať iba %d poskytnutého prehrávacieho zoznamu. Odstráňte niektoré poskytnuté prehrávacie zoznamy z karty Obľúbené.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Ako obľúbené skladby môžete pridať maximálne %d streamovaných skladieb. Odstráňte niektoré streamované skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ako obľúbenú skladbu môžete pridať maximálne %d streamovanú skladbu. Odstráňte niektoré streamované skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ako obľúbené skladby môžete pridať maximálne %d streamované skladby. Odstráňte niektoré streamované skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+        <item quantity="many">Ako obľúbené skladby môžete pridať maximálne %d streamovanej skladby. Odstráňte niektoré streamované skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Ako obľúbené skladby môžete pridať maximálne %d skladieb. Odstráňte niektoré skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ako obľúbenú skladbu môžete pridať maximálne %d skladbu. Odstráňte niektoré skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ako obľúbené skladby môžete pridať maximálne %d skladby. Odstráňte niektoré skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+        <item quantity="many">Ako obľúbené skladby môžete pridať maximálne %d skladby. Odstráňte niektoré skladby zo zoznamu Obľúbené skladby a potom to skúste znova.</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">Počet priečinkov: %d</item>
+        <item quantity="one">1 priečinok</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Chcete odstrániť z telefónu priečinky (%d) a všetky skladby, ktoré obsahujú?</item>
+        <item quantity="one">Chcete odstrániť z telefónu 1 priečinok a všetky skladby, ktoré obsahuje?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Chcete odstrániť všetky skladby týchto žánrov?</item>
+        <item quantity="one">Chcete odstrániť všetky skladby tohto žánru?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">Odstráni sa aj %d skrytých priečinkov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstráni sa aj %d skrytý priečinok.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstránia sa aj %d skryté priečinky.</item>
+        <item quantity="many">Odstráni sa aj %d skrytého priečinka.</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">Bolo obnovené %d skladieb.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Bola obnovená %d skladba.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Boli obnovené %d skladby.</item>
+        <item quantity="many">Bolo obnovené %d skladby.</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Chcete vykonať odstránenie %d položiek?</item>
+        <item quantity="one">Chcete odstrániť 1 položku?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Exportovalo sa %d prehrávacích zoznamov.</item>
+        <item quantity="one">Exportoval sa %d prehrávací zoznam.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Importovalo sa %d prehrávacích zoznamov.</item>
+        <item quantity="one">Importoval sa %d prehrávací zoznam.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Nedá sa vybrať viac než %d prehrávacích zoznamov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nedá sa vybrať viac než %d prehrávací zoznam.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nedajú sa vybrať viac než %d prehrávacie zoznamy.</item>
+        <item quantity="many">Nedá sa vybrať viac než %d prehrávacieho zoznamu.</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Chcete vykonať odstránenie %d prehrávacích zoznamov?</item>
+        <item quantity="one">Chcete odstrániť 1 prehrávací zoznam?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">Skladby: %d</item>
+        <item quantity="one">1 stopa</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">Vykonalo sa pridanie %d skladieb do frontu.</item>
+        <item quantity="one">Pridala sa %d skladba do frontu.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Chcete vykonať odstránenie %d skladieb?</item>
+        <item quantity="one">Chcete odstrániť 1 skladbu?</item>
+    </plurals>
+</resources>

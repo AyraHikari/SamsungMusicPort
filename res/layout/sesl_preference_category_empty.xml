@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="@dimen/sesl_list_subheader_min_height" android:importantForAccessibility="no" style="?android:listSeparatorTextViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

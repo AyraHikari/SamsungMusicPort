@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="sesl_desktop_mode">false</bool>
+    <bool name="windowFullScreen">false</bool>
+    <bool name="windowLightNavigationBar">true</bool>
+    <bool name="windowLightStatusBar">true</bool>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="small_screen_ui_enabled">true</bool>
+    <bool name="tablet_ui_enabled">false</bool>
+    <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="music_core_support_skip_silence">true</bool>
+    <bool name="sesl_action_bar_text_item_mode">false</bool>
+    <bool name="sesl_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="sesl_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="sesl_seekbar_sliding_animation">true</bool>
+</resources>

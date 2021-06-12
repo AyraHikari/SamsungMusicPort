@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/winset_spinner_item_padding_vertical" android:paddingBottom="@dimen/winset_spinner_item_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/winset_spinner_item_height" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/winset_spinner_item_text" android:textColor="@color/spinner_dropdown_text_selector" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@android:id/text1" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Font.Roboto.Regular" />
+    <TextView android:textSize="@dimen/winset_spinner_item_sub_text" android:textColor="@color/spinner_item_sub_text" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@android:id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Font.Roboto.Regular" />
+</LinearLayout>

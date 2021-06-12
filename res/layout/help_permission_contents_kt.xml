@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/help_permission_title_text_size_kt" android:textColor="@color/mu_primary" android:gravity="center_vertical" android:id="@id/help_page_title" android:layout_height="56.0dip" android:layout_marginTop="@dimen/help_permission_title_margin_top_kt" android:text="@string/help_page_title" app:maxFontLevel="large" style="@style/Font.Roboto.Light" />
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_permission_description_margin_top" android:fillViewport="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/help_permission_description_text_size_kt" android:textColor="@color/help_description_text_color" android:gravity="top" android:id="@id/permission_description" android:layout_width="fill_parent" android:text="@string/permission_guide_description" app:maxFontLevel="large" style="@style/Font.Roboto.Regular" />
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/permission_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_permission_item_view_margin_top" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

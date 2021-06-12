@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/label_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/milk_store_album_label" style="@style/Font.Roboto.Medium.DialogDescription" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | " style="@style/Font.Roboto.Medium.DialogDescription" />
+        <TextView android:id="@id/text_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Font.Roboto.Medium.DialogDescription" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/distributed_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="24.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/milk_store_album_distributed_by" style="@style/Font.Roboto.Medium.DialogDescription" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | " style="@style/Font.Roboto.Medium.DialogDescription" />
+        <TextView android:id="@id/text_distributed" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Font.Roboto.Medium.DialogDescription" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/discription_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/no_discription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/Font.Roboto.Regular.DialogDescription" />
+    </RelativeLayout>
+</LinearLayout>

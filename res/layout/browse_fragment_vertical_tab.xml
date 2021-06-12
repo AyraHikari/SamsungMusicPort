@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_fit_top" style="@style/Toolbar" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/mu_actionbar_space_bottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <include layout="@layout/list_loading_container" />
+        <android.support.constraint.ConstraintLayout android:id="@id/contentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/highlight_item_guide" android:background="@drawable/browse_vertical_tab_selected" android:visibility="gone" android:layout_width="@dimen/default_vertical_tab_highlight_item_width" android:layout_height="@dimen/default_vertical_tab_highlight_item_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/tabLayout" app:layout_constraintStart_toStartOf="@id/tabLayout" app:layout_constraintTop_toTopOf="parent" />
+            <com.samsung.android.app.music.widget.VerticalScrollTabLayout android:id="@id/tabLayout" android:background="@color/browse_vertical_tab_layout_background" android:layout_width="@dimen/default_vertical_tab_width" android:layout_height="fill_parent" app:tabSpacing="@dimen/default_vertical_tab_item_spacing" app:focusedItemHeight="@dimen/default_vertical_tab_item_text_size" app:defaultTextColor="@color/browse_item_vertical_tab_text_color" app:highlightTextColor="@color/browse_item_vertical_tab_text_color_selected" />
+            <FrameLayout android:id="@id/content" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tabLayout" app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ViewStub android:id="@id/no_network_view_stub" android:layout="@layout/no_network_view_stub" android:inflatedId="@id/no_network_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <ViewStub android:id="@id/no_network_popup_view_stub" android:layout="@layout/no_network_popup_stub" android:inflatedId="@id/no_network_popup_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <android.support.constraint.Guideline android:id="@id/guideline_fit_top" style="@style/Guideline.Fit.Top" />
+</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>

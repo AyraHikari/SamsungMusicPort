@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/thumbnail_layout" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@integer/detail_landscape_album_layout_weight">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/list_item_album_info_thumbnail_kt" />
+        <include layout="@layout/list_item_album_info_text_kt" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layout_weight="@integer/detail_landscape_list_layout_weight">
+        <include layout="@layout/list_loading_container" />
+        <include android:id="@id/list_root" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/mu_recycler_view_list" />
+    </FrameLayout>
+</LinearLayout>

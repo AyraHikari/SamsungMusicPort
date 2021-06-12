@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" style="@style/Toolbar" />
+    <TabHost android:id="@android:id/tabhost" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/mu_select_all_checkbox" />
+            <RelativeLayout android:id="@id/tab_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/winset_tab_padding_start" android:paddingEnd="@dimen/winset_tab_padding_start">
+                <include android:layout_width="fill_parent" android:layout_height="@dimen/winset_tab_bottom_divider_height" android:layout_alignBottom="@id/horizontal_tab_scroll" layout="@layout/tab_divider_blur" />
+                <HorizontalScrollView android:id="@id/horizontal_tab_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+                    <TabWidget android:id="@android:id/tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tabStripEnabled="false" android:measureWithLargestChild="true" />
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

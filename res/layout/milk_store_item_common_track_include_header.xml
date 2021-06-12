@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0dip" android:textColor="@color/milk_radio_station_list_text" android:gravity="center_vertical" android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/milk_store_today" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

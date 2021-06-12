@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/full_player_progress_scrubbing_speed_text" android:textColor="@color/hover_popup_text" android:gravity="center" android:id="@id/music_player_progress_scrubbing_speed_text" android:background="@drawable/hover_popup_background" android:paddingTop="@dimen/full_player_progress_scrubbing_speed_text_padding_vertical" android:paddingBottom="@dimen/full_player_progress_scrubbing_speed_text_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/full_player_progress_scrubbing_speed_text_min_height" android:paddingStart="@dimen/full_player_progress_scrubbing_speed_text_padding_horizontal" android:paddingEnd="@dimen/full_player_progress_scrubbing_speed_text_padding_horizontal" />
+</LinearLayout>

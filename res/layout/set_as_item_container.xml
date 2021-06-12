@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.musiclibrary.ui.widget.round.RoundedLinearLayout android:orientation="vertical" android:id="@id/set_as_recommend" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/normal" layout="@layout/set_as_item" />
+        <include android:id="@id/recommend" android:nextFocusDown="@id/phone_ringtone" layout="@layout/set_as_item" />
+        <RelativeLayout android:id="@id/progress_layout" android:paddingLeft="@dimen/set_as_item_padding_horizontal" android:paddingRight="@dimen/set_as_item_padding_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/set_as_progress_layout_height" android:layout_marginTop="@dimen/set_as_progress_layout_margin_top" android:layoutDirection="ltr">
+            <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="@dimen/set_as_progress_height" android:max="1000" style="?android:progressBarStyleHorizontal" />
+            <TextView android:textSize="@dimen/set_as_progress_time_text" android:textColor="@color/mu_sub_text" android:id="@id/current_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_as_progress_text_margin_top" android:layout_below="@id/progress" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/set_as_progress_time_text" android:textColor="@color/mu_sub_text" android:id="@id/duration_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_as_progress_text_margin_top" android:layout_below="@id/progress" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </com.samsung.android.app.musiclibrary.ui.widget.round.RoundedLinearLayout>
+    <TextView android:textColor="@color/mu_list_subheader_text" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/header_set_as" android:layout_width="fill_parent" android:layout_height="@dimen/set_as_sub_header_height" android:layout_marginTop="@dimen/set_as_sub_header_margin_top" android:text="@string/legacy_set_as" android:singleLine="true" android:textDirection="locale" android:paddingStart="@dimen/set_as_sub_header_padding" android:paddingEnd="@dimen/set_as_sub_header_padding" style="@style/Font.Roboto.Medium.Bold" />
+    <com.samsung.android.app.musiclibrary.ui.widget.round.RoundedLinearLayout android:orientation="vertical" android:id="@id/set_as_tone" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/phone_ringtone" layout="@layout/set_as_item" />
+        <View android:background="@color/mu_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/mu_list_divider_height_winset" android:layout_marginStart="@dimen/set_as_divider_margin_start" android:layout_marginEnd="@dimen/set_as_divider_margin_end" />
+        <include android:id="@id/caller_ringtone" layout="@layout/set_as_item" />
+        <View android:background="@color/mu_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/mu_list_divider_height_winset" android:layout_marginStart="@dimen/set_as_divider_margin_start" android:layout_marginEnd="@dimen/set_as_divider_margin_end" />
+        <include android:id="@id/alarm_tone" layout="@layout/set_as_item" />
+    </com.samsung.android.app.musiclibrary.ui.widget.round.RoundedLinearLayout>
+</LinearLayout>

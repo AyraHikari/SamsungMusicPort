@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceListItem" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@android:id/text1" android:paddingTop="@dimen/sesl_select_dialog_item_padding_vertical" android:paddingBottom="@dimen/sesl_select_dialog_item_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall" android:textAlignment="viewStart" android:paddingStart="@dimen/sesl_select_dialog_item_padding_horizontal" android:paddingEnd="@dimen/sesl_select_dialog_item_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

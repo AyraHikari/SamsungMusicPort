@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/private_mode_stub" android:layout="@layout/mini_player_private_mode_stub_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/mini_player_radio_tag_text_size" android:textColor="@color/blur_text" android:gravity="center" android:id="@id/radio_tag_text" android:background="@drawable/mini_player_radio_tag_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mini_player_radio_tag_height" android:text="@string/radio" android:singleLine="true" android:includeFontPadding="false" android:textAllCaps="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Font.Roboto.Bold" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.internal.SeslTabDotLineIndicator android:id="@id/indicator" android:background="@drawable/sesl_tablayout_maintab_indicator_opentheme_background" android:layout_width="0.0dip" android:layout_height="4.0dip" android:layout_below="@id/title" android:layout_centerHorizontal="true" android:layout_alignStart="@id/title" android:layout_alignEnd="@id/title" />
+    <View android:id="@id/main_tab_touch_background" android:layout_width="1.0dip" android:layout_height="43.0dip" android:layout_centerInParent="true" />
+    <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerInParent="true" />
+</RelativeLayout>

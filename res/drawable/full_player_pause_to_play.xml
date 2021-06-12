@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="28" android:drawable="@drawable/music_player_ic_control_play_to_pause_06" />
+    <item android:duration="28" android:drawable="@drawable/music_player_ic_control_play_to_pause_05" />
+    <item android:duration="28" android:drawable="@drawable/music_player_ic_control_play_to_pause_04" />
+    <item android:duration="28" android:drawable="@drawable/music_player_ic_control_play_to_pause_03" />
+    <item android:duration="28" android:drawable="@drawable/music_player_ic_control_play_to_pause_02" />
+    <item android:duration="28" android:drawable="@drawable/music_player_ic_control_play_to_pause_01" />
+</animation-list>

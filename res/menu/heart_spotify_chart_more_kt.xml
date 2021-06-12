@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_hide_now" android:title="@string/spotify_hide_the_for_now_kt" />
+    <item android:id="@id/menu_do_not_show_again" android:title="@string/spotify_do_not_show_again_kt" />
+</menu>

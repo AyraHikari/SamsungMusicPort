@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sesl_dialog_enter_anim_duration">100</integer>
+    <integer name="sesl_dialog_exit_anim_duration">100</integer>
+</resources>

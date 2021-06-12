@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="device_height">711.0dip</dimen>
+    <dimen name="device_width">1137.0dip</dimen>
+    <dimen name="list_content_root_padding_horizontal">0.0dip</dimen>
+    <dimen name="list_item_playlist_padding_end_kt">33.0dip</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/my_info_no_item_description_text" android:textColor="@color/mu_no_item_sub_text" android:id="@id/my_info_no_item_description" android:layout_marginTop="@dimen/my_info_no_item_description_margin_top" style="@style/Font.Roboto.Regular" />
+    <Button android:id="@id/my_info_no_item_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/my_info_no_item_button_margin_top" android:layout_marginBottom="@dimen/my_info_no_item_button_margin_bottom" android:minWidth="@dimen/winset_raised_button_min_width" android:text="@string/milk_buy_premium" />
+</LinearLayout>

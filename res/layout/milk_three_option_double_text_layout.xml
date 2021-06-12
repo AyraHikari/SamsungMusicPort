@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/milk_option_1" layout="@layout/milk_radio_button_double_line_text" />
+    <LinearLayout android:orientation="vertical" android:id="@id/setting_option_divider1" android:background="@drawable/settings_option_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/milk_audio_quality_radio_button_frame_width" android:layout_marginRight="@dimen/milk_audio_quality_side_padding" />
+    <include android:id="@id/milk_option_2" layout="@layout/milk_radio_button_double_line_text" />
+    <LinearLayout android:orientation="vertical" android:id="@id/setting_option_divider2" android:background="@drawable/settings_option_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/milk_audio_quality_radio_button_frame_width" android:layout_marginRight="@dimen/milk_audio_quality_side_padding" />
+    <include android:id="@id/milk_option_3" layout="@layout/milk_radio_button_double_line_text" />
+</LinearLayout>

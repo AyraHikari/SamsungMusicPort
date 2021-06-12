@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:paddingBottom="@dimen/help_checkbox_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/help_legal_item_text_size_kt" android:textColor="@color/help_checkbox_item_text_color" android:id="@id/text" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/help_checkbox_item_text_space_start_kt" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/checkbox" app:layout_constraintTop_toTopOf="parent" app:maxFontLevel="large" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mr_button_content_description">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‏‎‏‏‎‎‎‏‎‏‏‏‎‎‎‏‎‎‏‎‎‎‏‏‎‏‏‎‎‏‎‏‎‎‎‏‏‎‏‎‏‎‏‏‎‎‎‎‏‏‎‎‎‏‏‎‏‎‏‏‏‎Cast button‎‏‎‎‏‎</string>
+    <string name="mr_cast_button_connected">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‏‎‎‏‎‎‎‎‎‎‎‎‎‎‏‎‎‏‏‏‏‏‏‎‏‎‏‎‎‏‏‏‎‏‎‏‎‏‏‎‏‎‏‎‎‎‎‎‏‎‏‎‎‎‎‎‏‏‎‎‏‏‎Cast button. Connected‎‏‎‎‏‎</string>
+    <string name="mr_cast_button_connecting">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‏‎‏‎‏‏‏‏‎‎‏‎‏‎‎‏‏‏‏‏‏‏‎‏‎‎‏‏‎‎‏‎‏‏‏‏‏‏‎‎‏‎‎‎‏‎‏‎‏‏‏‏‎‏‏‏‎‎‎‎‏‎‎Cast button. Connecting‎‏‎‎‏‎</string>
+    <string name="mr_cast_button_disconnected">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‎‏‏‎‎‎‎‏‏‎‏‏‎‏‎‎‏‏‎‎‏‏‏‎‎‎‏‏‏‏‏‎‏‎‏‏‎‎‎‏‎‏‎‏‏‏‎‎‎‏‎‏‎‎‎‎‏‎‏‎‏‏‎‎Cast button. Disconnected‎‏‎‎‏‎</string>
+    <string name="mr_chooser_searching">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‏‎‏‏‎‏‎‏‏‎‏‎‎‎‏‎‎‎‎‏‏‏‏‏‎‎‏‏‎‏‏‎‎‏‎‏‎‏‎‏‏‎‎‎‎‎‏‏‎‎‏‎‏‏‏‎‏‏‎‏‏‎‎Finding devices‎‏‎‎‏‎</string>
+    <string name="mr_chooser_title">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‎‏‏‎‏‎‎‎‏‏‎‎‏‎‏‏‏‎‏‏‎‎‎‏‏‎‎‏‏‎‏‏‏‎‏‎‎‏‏‎‎‎‏‏‏‏‎‎‏‎‎‎‎‏‏‎‎‎‏‎‎‏‏‎Cast to‎‏‎‎‏‎</string>
+    <string name="mr_controller_album_art">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‏‏‎‎‏‏‎‏‎‏‏‏‏‎‏‎‎‎‏‏‎‎‏‏‎‎‏‎‏‏‎‏‎‏‎‎‏‏‏‎‏‎‎‎‏‏‏‎‎‎‎‏‎‏‎‏‏‏‎‎‎‎‎Album art‎‏‎‎‏‎</string>
+    <string name="mr_controller_casting_screen">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‎‏‎‎‎‎‏‎‏‏‎‎‏‏‎‏‏‏‏‎‎‎‏‎‏‎‎‎‎‏‏‎‎‎‎‏‏‏‏‎‏‏‏‎‏‎‎‏‏‎‏‏‏‏‎‏‏‏‏‏‏‎‎‎Casting screen‎‏‎‎‏‎</string>
+    <string name="mr_controller_close_description">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‎‏‏‎‎‏‏‎‏‏‏‏‏‎‎‏‎‎‎‏‏‎‎‏‏‎‎‎‏‎‏‏‏‏‏‎‏‎‏‎‎‎‎‏‏‎‏‏‎‎‏‎‏‎‎‎‏‏‎‎‏‎‎‎Close‎‏‎‎‏‎</string>
+    <string name="mr_controller_collapse_group">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‎‏‏‏‎‎‎‎‎‎‎‏‎‏‎‏‏‏‏‏‎‎‏‏‎‏‎‏‎‎‏‎‏‏‏‎‏‏‎‎‏‏‏‎‎‎‎‏‎‏‏‎‎‎‎‏‎‎‎‏‏‎Collapse‎‏‎‎‏‎</string>
+    <string name="mr_controller_disconnect">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‎‏‏‎‎‎‎‏‏‏‏‏‏‏‎‏‎‎‎‎‏‏‎‎‎‏‏‎‏‏‎‎‎‏‎‏‏‏‎‎‏‎‏‎‎‎‏‎‏‏‎‏‎‏‎‎‏‏‎‎‎‎‎‎Disconnect‎‏‎‎‏‎</string>
+    <string name="mr_controller_expand_group">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‏‏‎‏‏‎‎‎‏‎‎‎‎‎‏‎‏‏‏‏‏‎‎‎‏‎‏‏‎‏‏‏‏‎‏‎‎‎‏‎‏‎‏‎‏‎‎‎‏‏‎‏‏‏‏‏‎‎‏‏‏‎Expand‎‏‎‎‏‎</string>
+    <string name="mr_controller_no_info_available">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‎‎‏‏‎‏‎‎‎‏‎‎‏‏‏‎‎‎‏‏‎‎‎‏‏‎‏‏‎‏‏‎‏‏‏‏‏‏‎‏‎‎‏‏‏‎‎‏‏‏‎‏‏‏‏‎‏‎‏‏‎‎‎No info available‎‏‎‎‏‎</string>
+    <string name="mr_controller_no_media_selected">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‎‏‎‏‎‏‏‎‎‎‏‏‎‎‏‏‎‏‎‏‏‎‏‎‏‏‎‎‎‏‎‎‏‏‏‏‏‏‎‏‎‎‎‏‎‎‎‎‏‎‎‏‎‎‎‏‎‏‎‏‏‎No media selected‎‏‎‎‏‎</string>
+    <string name="mr_controller_pause">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‎‏‎‏‏‏‏‎‏‎‏‏‏‏‏‏‎‎‏‎‏‏‏‎‎‏‎‎‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‏‎‏‏‏‏‎‎‏‏‏‏‏‎‏‎Pause‎‏‎‎‏‎</string>
+    <string name="mr_controller_play">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‎‏‏‏‏‏‎‏‏‏‏‏‏‎‏‏‏‎‎‎‏‏‎‏‎‏‎‎‎‏‏‏‎‎‎‎‎‎‎‎‏‏‎‎‎‏‎‎‎‎‏‏‎‎‏‎‎‏‎‎‎‎‎‎Play‎‏‎‎‏‎</string>
+    <string name="mr_controller_stop">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‏‎‎‎‎‎‏‎‏‏‏‏‎‎‎‎‏‏‎‏‏‏‏‏‏‎‏‎‎‏‎‏‏‎‎‏‎‏‎‏‏‎‎‏‏‎‏‏‏‏‎‎‏‏‏‏‎‎‏‎‏‏‎Stop‎‏‎‎‏‎</string>
+    <string name="mr_controller_stop_casting">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‏‎‎‏‏‏‏‎‏‏‏‎‏‎‏‏‏‎‎‎‏‎‏‎‎‏‎‎‎‏‏‏‏‎‎‎‎‎‏‎‏‏‎‏‎‎‎‎‎‏‏‎‎‏‎‎‏‎‎‎‎‎Stop casting‎‏‎‎‏‎</string>
+    <string name="mr_controller_volume_slider">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‎‏‏‏‎‏‎‏‏‎‏‎‏‎‏‎‏‏‏‎‏‎‎‎‎‏‏‏‏‎‎‏‎‎‎‏‎‎‎‏‏‎‎‏‎‎‏‏‏‏‎‏‏‎‎‏‎‎‏‎‏‏‎Volume slider‎‏‎‎‏‎</string>
+    <string name="mr_system_route_name">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‏‏‎‎‏‎‏‏‏‎‎‎‏‏‏‎‏‏‎‏‏‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‎‏‎‏‏‎‎‏‏‎‏‏‎‎‎‏‏‎‎‏‎‎‎‎‎System‎‏‎‎‏‎</string>
+    <string name="mr_user_route_category_name">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‏‏‏‏‎‎‎‎‏‏‏‎‎‏‎‎‏‏‏‎‎‎‏‎‎‎‏‏‎‏‎‎‏‏‎‏‎‏‏‏‎‎‏‏‎‎‎‎‎‏‎‎‏‎‏‏‏‎‎‏‎‏‎Devices‎‏‎‎‏‎</string>
+</resources>

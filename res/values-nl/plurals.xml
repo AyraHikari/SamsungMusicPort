@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d albums</item>
+        <item quantity="one">%d album</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albums</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Nummers</item>
+        <item quantity="one">Nummer</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">%d nummers toegevoegd aan Favorieten. Nummers die al in Favorieten zijn opgenomen, worden niet toegevoegd.</item>
+        <item quantity="one">%d nummer toegevoegd aan Favorieten. Nummer dat al in Favorieten is opgenomen, wordt niet toegevoegd.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d nummers</item>
+        <item quantity="one">%d nummer</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">%d nummers verwijderd uit Favorieten.</item>
+        <item quantity="one">%d nummer verwijderd uit Favorieten.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">%d nummers toegevoegd aan favorieten.</item>
+        <item quantity="one">%d nummer toegevoegd aan favorieten.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">U kunt slechts %d nummers verwijderen uit aanbevelingen. Geef verwijderde nummers weer, selecteer een aantal om te herstellen en probeer het opnieuw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">U kunt slechts %d nummer verwijderen uit aanbevelingen. Geef verwijderde nummers weer, selecteer een aantal om te herstellen en probeer het opnieuw.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Tik op de knop Radio afspelen om elke maand te profiteren van %d gratis nummers.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tik op de knop Radio afspelen om elke maand te profiteren van %d gratis nummer.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Kan niet meer dan %d artiesten selecteren.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d artiest selecteren.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Kan niet meer dan %d genres selecteren.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d genre selecteren.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Kan niet meer dan %d nummers selecteren.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d nummer selecteren.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d seconden</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seconde</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">U kunt %1$s %2$d maal gebruiken.</item>
+        <item quantity="one">U kunt %s 1 maal gebruiken.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">%d nummers kunnen vanwege auteursrecht niet worden gekocht met premiumtickets. U kunt ze afzonderlijk kopen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nummer kan vanwege auteursrecht niet worden gekocht met premiumtickets. U kunt het afzonderlijk kopen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d nummers van uw beschikbare nummers worden gebruikt.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nummer van uw beschikbare nummers wordt gebruikt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Wachten op downloaden van %d nummers…</item>
+        <item quantity="one">Wachten op downloaden van 1 nummer…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">%d albums en alle nummers erin van uw telefoon verwijderen?</item>
+        <item quantity="one">1 album en alle nummers erin van uw telefoon verwijderen?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Alle nummers van deze artiesten verwijderen?</item>
+        <item quantity="one">Alle nummers van deze artiest verwijderen?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Alle nummers van deze componisten verwijderen?</item>
+        <item quantity="one">Alle nummers van deze componist verwijderen?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">De geselecteerde nummers verwijderen?</item>
+        <item quantity="one">Het geselecteerde nummer verwijderen?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d nummers worden gekocht. Als u niet voldoende beschikbare nummers hebt, kunnen deze nummers niet worden gekocht.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nummer wordt gekocht. Als u niet voldoende beschikbare nummers hebt, kunnen deze nummers niet worden gekocht.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">De geselecteerde nummers kopen?</item>
+        <item quantity="one">Het geselecteerde nummer kopen?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">U hebt deze nummers al gekocht. U kunt gekochte nummers op elk gewenst moment opnieuw downloaden.</item>
+        <item quantity="one">U hebt dit nummer al gekocht. U kunt gekochte nummers op elk gewenst moment opnieuw downloaden.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Nummers al gekocht</item>
+        <item quantity="one">Nummer al gekocht</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">U kunt slechts %d meegeleverde afspeellijsten als favoriet toevoegen. Verwijder een aantal meegeleverde afspeellijsten uit het tabblad Favorieten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">U kunt slechts %d meegeleverde afspeellijst als favoriet toevoegen. Verwijder een aantal meegeleverde afspeellijsten uit het tabblad Favorieten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">U kunt slechts %d streamingnummers toevoegen als Favoriete nummers. Verwijder een aantal streamingnummers uit Favoriete nummers en probeer het opnieuw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">U kunt slechts %d streamingnummer toevoegen als Favoriet nummer. Verwijder een aantal streamingnummers uit Favoriete nummers en probeer het opnieuw.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">U kunt slechts %d nummers toevoegen als Favoriete nummers. Verwijder een aantal nummers uit Favoriete nummers en probeer het opnieuw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">U kunt slechts %d nummer toevoegen als Favoriet nummer. Verwijder een aantal nummers uit Favoriete nummers en probeer het opnieuw.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d mappen</item>
+        <item quantity="one">1 map</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">%d mappen en alle nummers erin van uw telefoon verwijderen?</item>
+        <item quantity="one">1 map en alle nummers erin van uw telefoon verwijderen?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Alle nummers in deze genres verwijderen?</item>
+        <item quantity="one">Alle nummers in dit genre verwijderen?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">%d verborgen mappen worden ook verwijderd.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d verborgen map wordt ook verwijderd.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d nummers hersteld.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nummer hersteld.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">%d items verwijderen?</item>
+        <item quantity="one">1 item verwijderen?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d afspeellijsten geëxporteerd.</item>
+        <item quantity="one">%d afspeellijst geëxporteerd.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d afspeellijsten geïmporteerd.</item>
+        <item quantity="one">%d afspeellijst geïmporteerd.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Kan niet meer dan %d afspeellijsten selecteren.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Kan niet meer dan %d afspeellijsten selecteren.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">%d afspeellijsten verwijderen?</item>
+        <item quantity="one">1 afspeellijst verwijderen?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d nummers</item>
+        <item quantity="one">1 nummer</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">%d nummers toegevoegd aan wachtrij.</item>
+        <item quantity="one">%d nummer toegevoegd aan wachtrij.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">%d nummers verwijderen?</item>
+        <item quantity="one">1 nummer verwijderen?</item>
+    </plurals>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/mini_player_albumart_size" android:layout_height="@dimen/mini_player_albumart_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="@dimen/mini_player_loading_size" android:layout_height="@dimen/mini_player_loading_size" android:indeterminateTint="@color/white_opacity_100" style="?android:progressBarStyleSmall" />
+</FrameLayout>

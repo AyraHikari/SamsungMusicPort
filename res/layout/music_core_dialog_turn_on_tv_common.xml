@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/music_core_ble_turn_on_tv_padding_top" android:paddingBottom="@dimen/winset_dialog_body_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/music_core_ble_turn_on_tv_padding_horizontal" android:paddingEnd="@dimen/music_core_ble_turn_on_tv_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/turn_on_tv_img" android:layout_width="@dimen/music_core_ble_turn_on_tv_drawable_width" android:layout_height="@dimen/music_core_ble_turn_on_tv_drawable_height" android:layout_marginBottom="@dimen/music_core_ble_turn_on_tv_drawable_margin_bottom" android:src="@drawable/music_core_ble_turn_on_tv" android:scaleType="centerInside" />
+    <TextView android:textSize="@dimen/music_core_ble_turn_on_tv_text" android:textColor="@color/mu_dialog_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_core_ble_turning_on_tv" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.app.music.widget.WindowFocusLinearLayout android:orientation="vertical" android:paddingTop="@dimen/winset_dialog_body_padding_vertical" android:paddingBottom="@dimen/winset_dialog_body_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/winset_dialog_edit_text_layout_padding_left_kt" android:paddingEnd="@dimen/winset_dialog_edit_text_layout_padding_right_kt">
+        <TextView android:textSize="@dimen/winset_dialog_message_text_size_kt" android:textColor="@color/mu_dialog_description" android:id="@id/description_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/winset_dialog_message_text_layout_margin_bottom_kt" android:paddingStart="@dimen/winset_dialog_message_text_layout_padding_left_kt" />
+        <android.support.design.widget.TextInputLayout android:id="@id/text_input_layout" android:paddingTop="@dimen/winset_dialog_edit_text_layout_padding_top_kt" android:paddingBottom="@dimen/winset_dialog_edit_text_layout_padding_bottom_kt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/list_main_header_edit_text" android:background="@drawable/edit_text_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="50" android:inputType="textCapSentences" android:imeOptions="actionDone|flagNoExtractUi" />
+        </android.support.design.widget.TextInputLayout>
+    </com.samsung.android.app.music.widget.WindowFocusLinearLayout>
+</ScrollView>

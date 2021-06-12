@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/legacy_sound_alive_ext_layout_height">
+        <TextView android:textSize="@dimen/legacy_sound_alive_ext_text_size" android:textColor="@color/legacy_sound_alive_eq_ext_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legacy_sound_alive_ext_1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_alignParentStart="true" style="@style/LegacySoundAliveEqExtTextStyle" />
+        <Switch android:id="@id/ext_control1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_marginEnd="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_alignParentEnd="true" />
+        <View android:background="@color/divider_list_winset" android:layout_width="fill_parent" android:layout_height="@dimen/legacy_sound_alive_ext_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/legacy_sound_alive_ext_layout_height">
+        <TextView android:textSize="@dimen/legacy_sound_alive_ext_text_size" android:textColor="@color/legacy_sound_alive_eq_ext_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legacy_sound_alive_ext_2" android:layout_centerVertical="true" android:layout_marginStart="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_alignParentStart="true" style="@style/LegacySoundAliveEqExtTextStyle" />
+        <Switch android:id="@id/ext_control2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_marginEnd="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_alignParentEnd="true" />
+        <View android:background="@color/divider_list_winset" android:layout_width="fill_parent" android:layout_height="@dimen/legacy_sound_alive_ext_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/legacy_sound_alive_ext_layout_height">
+        <TextView android:textSize="@dimen/legacy_sound_alive_ext_text_size" android:textColor="@color/legacy_sound_alive_eq_ext_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legacy_sound_alive_ext_5" android:layout_centerVertical="true" android:layout_marginStart="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_alignParentStart="true" style="@style/LegacySoundAliveEqExtTextStyle" />
+        <Switch android:id="@id/ext_control3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_marginEnd="@dimen/legacy_sound_alive_ext_layout_margin_horizontal" android:layout_alignParentEnd="true" />
+        <View android:background="@color/divider_list_winset" android:layout_width="fill_parent" android:layout_height="@dimen/legacy_sound_alive_ext_divider" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

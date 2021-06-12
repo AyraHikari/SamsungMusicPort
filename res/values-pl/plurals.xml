@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">Liczba albumów: %d</item>
+        <item quantity="one">Albumów: %d</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">Albumy</item>
+        <item quantity="one">Album</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">Utwory</item>
+        <item quantity="one">Utwór</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">Utworów dodanych do Ulubionych: %d. Utwory będące już w Ulubionych nie zostały dodane.</item>
+        <item quantity="one">Utworów dodanych do Ulubionych: %d. Utwór będący już w Ulubionych nie został dodany.</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">Utworów: %d</item>
+        <item quantity="one">Utworów: %d</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">Utworów usuniętych z Ulubionych: %d.</item>
+        <item quantity="one">Utworów usuniętych z Ulubionych: %d.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">Utworów dodanych do ulubionych: %d.</item>
+        <item quantity="one">%d utwór dodano do ulubionych.</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">Z zaleceń możesz usunąć maksymalnie tylko %d utworów. Wyświetl usunięte utwory, wybierz niektóre do przywrócenia, a następnie spróbuj ponownie.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Z zaleceń możesz usunąć maksymalnie tylko %d utwór. Wyświetl usunięte utwory, wybierz niektóre do przywrócenia, a następnie spróbuj ponownie.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Z zaleceń możesz usunąć maksymalnie tylko %d utwory. Wyświetl usunięte utwory, wybierz niektóre do przywrócenia, a następnie spróbuj ponownie.</item>
+        <item quantity="many">Z zaleceń możesz usunąć maksymalnie tylko %d utworów. Wyświetl usunięte utwory, wybierz niektóre do przywrócenia, a następnie spróbuj ponownie.</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">Dotknij przycisku Włącz radio, aby co miesiąc cieszyć się %d darmowymi utworami.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dotknij przycisku Włącz radio, aby co miesiąc cieszyć się %d darmowym utworem.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Dotknij przycisku Włącz radio, aby co miesiąc cieszyć się %d darmowymi utworami.</item>
+        <item quantity="many">Dotknij przycisku Włącz radio, aby co miesiąc cieszyć się %d darmowymi utworami.</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">Nie można wybrać więcej niż %d wykonawców.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nie można wybrać więcej niż %d wykonawcy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nie można wybrać więcej niż %d wykonawców.</item>
+        <item quantity="many">Nie można wybrać więcej niż %d wykonawców.</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">Nie można wybrać więcej niż %d gatunków.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nie można wybrać więcej niż %d gatunku.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nie można wybrać więcej niż %d gatunków.</item>
+        <item quantity="many">Nie można wybrać więcej niż %d gatunków.</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">Nie można wybrać więcej niż %d utworów.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nie można wybrać więcej niż %d utworu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nie można wybrać więcej niż %d utworów.</item>
+        <item quantity="many">Nie można wybrać więcej niż %d utworów.</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d sekund</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d sekunda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d sekundy</item>
+        <item quantity="many">%d sekund</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Można użyć %1$s %2$d razy.</item>
+        <item quantity="one">Można użyć %s raz.</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">Nie można kupić %d utworów przy użyciu biletów premium z powodu praw autorskich. Można kupić je osobno.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nie można kupić %d utworu przy użyciu biletów premium z powodu praw autorskich. Można kupić je osobno.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nie można kupić %d utworów przy użyciu biletów premium z powodu praw autorskich. Można kupić je osobno.</item>
+        <item quantity="many">Nie można kupić %d utworów przy użyciu biletów premium z powodu praw autorskich. Można kupić je osobno.</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">%d utworów zostanie użytych z Twoich dostępnych utworów.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d utwór zostanie użyty z Twoich dostępnych utworów.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d utwory zostaną użyte z Twoich dostępnych utworów.</item>
+        <item quantity="many">%d utworów zostanie użytych z Twoich dostępnych utworów.</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">Oczekiwanie na pobranie utworów: %d…</item>
+        <item quantity="one">Oczekiwanie na pobranie 1 utworu…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">Usunąć albumów: %d i wszystkie zawarte w nich utwory z telefonu?</item>
+        <item quantity="one">Usunąć 1 album i wszystkie zawarte w nim utwory z telefonu?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">Usunąć wszystkie utwory tych wykonawców?</item>
+        <item quantity="one">Usunąć wszystkie utwory tego wykonawcy?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">Usunąć wszystkie utwory tych kompozytorów?</item>
+        <item quantity="one">Usunąć wszystkie utwory tego kompozytora?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">Usunąć wybrane utwory?</item>
+        <item quantity="one">Usunąć wybrany utwór?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">Zostanie kupionych %d utworów. Jeśli nie masz wystarczająco dużo dostępnych utworów, kupno tych utworów będzie niemożliwe.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zostanie kupiony %d utwór. Jeśli nie masz wystarczająco dużo dostępnych utworów, kupno tych utworów będzie niemożliwe.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Zostaną kupione %d utwory. Jeśli nie masz wystarczająco dużo dostępnych utworów, kupno tych utworów będzie niemożliwe.</item>
+        <item quantity="many">Zostanie kupionych %d utworów. Jeśli nie masz wystarczająco dużo dostępnych utworów, kupno tych utworów będzie niemożliwe.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">Kupić wybrane utwory?</item>
+        <item quantity="one">Kupić wybrany utwór?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">Te utwory zostały już zakupione. Zakupione utwory możesz pobrać w dowolnym momencie.</item>
+        <item quantity="one">Ten utwór został już zakupiony. Zakupione utwory możesz pobrać w dowolnym momencie.</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">Utwory już zakupione</item>
+        <item quantity="one">Utwór już zakupiony</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">Możesz dodać tylko %d podanych list odtwarzania jako ulubione. Usuń niektóre podane listy odtwarzania z karty Ulubione.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Możesz dodać tylko %d podaną listę odtwarzania jako ulubioną. Usuń niektóre podane listy odtwarzania z karty Ulubione.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Możesz dodać tylko %d podane listy odtwarzania jako ulubione. Usuń niektóre podane listy odtwarzania z karty Ulubione.</item>
+        <item quantity="many">Możesz dodać tylko %d podanych list odtwarzania jako ulubione. Usuń niektóre podane listy odtwarzania z karty Ulubione.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">Możesz dodać tylko %d utworów strumieniowych jako Ulubione utwory. Usuń niektóre utwory strumieniowe z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Możesz dodać tylko %d utwór strumieniowy jako Ulubiony utwór. Usuń niektóre utwory strumieniowe z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Możesz dodać tylko %d utwory strumieniowe jako Ulubione utwory. Usuń niektóre utwory strumieniowe z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+        <item quantity="many">Możesz dodać tylko %d utworów strumieniowych jako Ulubione utwory. Usuń niektóre utwory strumieniowe z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">Możesz dodać tylko %d utworów jako Ulubione utwory. Usuń niektóre utwory z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Możesz dodać tylko %d utwór jako Ulubiony utwór. Usuń niektóre utwory z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Możesz dodać tylko %d utwory jako Ulubione utwory. Usuń niektóre utwory z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+        <item quantity="many">Możesz dodać tylko %d utworów jako Ulubione utwory. Usuń niektóre utwory z Ulubionych utworów, a następnie spróbuj ponownie.</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">Katalogów: %d</item>
+        <item quantity="one">Katalogów: 1</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">Usunąć katalogów: %d i wszystkie zawarte w nich utwory z telefonu?</item>
+        <item quantity="one">Usunąć 1 katalog i wszystkie zawarte w nim utwory z telefonu?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">Usunąć wszystkie utwory tych gatunków?</item>
+        <item quantity="one">Usunąć wszystkie utwory tego gatunku?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">Zostanie również usuniętych %d ukrytych katalogów.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zostanie również usunięty %d ukryty katalog.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Zostaną również usunięte %d ukryte katalogi.</item>
+        <item quantity="many">Zostanie również usuniętych %d ukrytych katalogów.</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">Przywrócono %d utworów.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Przywrócono %d utwór.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Przywrócono %d utwory.</item>
+        <item quantity="many">Przywrócono %d utworów.</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Usunąć elementów: %d?</item>
+        <item quantity="one">Usunąć 1 element?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">Wyeksportowano %d list odtwarzania.</item>
+        <item quantity="one">Wyeksportowano %d listę odtwarzania.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">Zaimportowano %d list odtwarzania.</item>
+        <item quantity="one">Zaimportowano %d listę odtwarzania.</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">Nie można wybrać więcej niż %d list odtwarzania.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nie można wybrać więcej niż %d listy odtwarzania.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nie można wybrać więcej niż %d list odtwarzania.</item>
+        <item quantity="many">Nie można wybrać więcej niż %d list odtwarzania.</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">Usunąć list odtwarzania: %d?</item>
+        <item quantity="one">Usunąć 1 listę odtwarzania?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">Utworów: %d</item>
+        <item quantity="one">1 utwór</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">Utworów dodanych do kolejki: %d.</item>
+        <item quantity="one">%d utwór dodano do kolejki.</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">Usunąć utworów: %d?</item>
+        <item quantity="one">Usunąć 1 utwór?</item>
+    </plurals>
+</resources>

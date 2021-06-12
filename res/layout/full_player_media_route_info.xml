@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/full_player_media_route_info_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/media_route_icon" android:layout_width="@dimen/full_player_media_route_info_icon_size" android:layout_height="@dimen/full_player_media_route_info_icon_size" android:layout_marginRight="@dimen/full_player_media_route_info_icon_right_margin" android:src="@drawable/smart_view_list_ic_mobile" android:tint="@color/media_router_player_color" />
+    <TextView android:textSize="@dimen/full_player_media_route_info_text_size" android:textColor="@color/media_router_player_color" android:id="@id/media_route_name" android:layout_width="wrap_content" android:layout_height="@dimen/full_player_media_route_info_icon_size" />
+</LinearLayout>

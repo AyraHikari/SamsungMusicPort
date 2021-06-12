@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/app_bar_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/set_favorite_guide_height" app:sesl_layout_heightPercent="0.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_favorite_guide_margin_top" android:paddingStart="@dimen/set_favorite_guide_padding_horizontal" android:paddingEnd="@dimen/set_favorite_guide_padding_horizontal" app:layout_scrollFlags="noScrollHold|noSnap|exitUntilCollapsed|scroll">
+            <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/set_favorite_guide_text1" android:textColor="@color/mu_main_text" android:gravity="center" android:id="@id/guide_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:maxFontLevel="large" style="@style/Font.Roboto.Regular" />
+            <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/set_favorite_guide_text2" android:textColor="@color/mu_sub_text" android:gravity="center" android:id="@id/guide_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_favorite_guide_spacing" app:maxFontLevel="large" style="@style/Font.Roboto.Regular" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/recycler_view" android:background="@color/mu_content_area" android:paddingTop="@dimen/set_favorite_list_padding_top" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior" app:round="top" />
+</android.support.design.widget.CoordinatorLayout>

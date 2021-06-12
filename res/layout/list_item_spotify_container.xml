@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/list_item_heart_spotify_space_outer_kt">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/mu_list_subheader_text" android:id="@id/text1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/white_opacity_60" android:id="@id/text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.samsung.android.app.musiclibrary.ui.widget.MusicRecyclerView android:id="@id/container" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="25.0dip" android:overScrollMode="never" />
+</LinearLayout>

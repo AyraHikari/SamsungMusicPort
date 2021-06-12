@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNalbum">
+        <item quantity="other">%d ਐਲਬਮਸ</item>
+        <item quantity="one">%d ਐਲਬਮ</item>
+    </plurals>
+    <plurals name="NNNartist_album">
+        <item quantity="other">ਐਲਬਮਸ</item>
+        <item quantity="one">ਐਲਬਮ</item>
+    </plurals>
+    <plurals name="NNNartist_track">
+        <item quantity="other">ਟ੍ਰੈਕਸ</item>
+        <item quantity="one">ਟ੍ਰੈਕ</item>
+    </plurals>
+    <plurals name="NNNsometrackstofavorite">
+        <item quantity="other">ਮਨਪਸੰਦਾਂ ਵਿੱਚ %d ਟ੍ਰੈਕਸ ਜੋੜੇ ਗਏ। ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਮਨਪਸੰਦਾਂ ਵਿੱਚ ਮੌਜੂਦ ਟ੍ਰੈਕਸ ਨਹੀਂ ਜੋੜੇ ਗਏ।</item>
+        <item quantity="one">%d ਟ੍ਰੈਕ ਮਨਪਸੰਦਾਂ ਵਿੱਚ ਜੋੜੇ ਗਏ। ਮਨਪਸੰਦਾਂ ਵਿੱਚ ਪਹਿਲਾਂ ਤੋਂ ਸ਼ਾਮਲ ਟ੍ਰੈਕ ਨੂੰ ਜੋੜਿਆ ਨਹੀਂ ਗਿਆ।</item>
+    </plurals>
+    <plurals name="NNNtrack">
+        <item quantity="other">%d ਟ੍ਰੈਕਸ</item>
+        <item quantity="one">%d ਟ੍ਰੈਕ</item>
+    </plurals>
+    <plurals name="NNNtracksfromfavorite">
+        <item quantity="other">ਮਨਪਸੰਦਾਂ ਤੋਂ %d ਟ੍ਰੈਕਸ ਹਟਾ ਦਿੱਤੇ ਗਏ।</item>
+        <item quantity="one">%d ਟ੍ਰੈਕ ਮਨਪਸੰਦਾਂ ਵਿੱਚੋਂ ਹਟਾਏ ਗਏ।</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorite">
+        <item quantity="other">ਮਨਪਸੰਦ ਵਿੱਚ %d ਟ੍ਰੈਕ ਜੋੜੇ ਗਏ।</item>
+        <item quantity="one">%d ਟ੍ਰੈਕ ਨੂੰ ਮਨਪਸੰਦਾਂ ਵਿੱਚ ਜੋੜਿਆ ਗਿਆ।</item>
+    </plurals>
+    <plurals name="browse_contextual_menu_ban_exceed_desc">
+        <item quantity="other">ਤੁਸੀਂ ਸਿਫਾਰਿਸ਼ਾਂ ਵਿੱਚੋਂ ਵੱਧ ਤੋਂ ਵੱਧ ਸਿਰਫ %d ਟ੍ਰੈਕਸ ਹਟਾ ਸਕਦੇ ਹੋ। ਹਟਾਏ ਗਏ ਟ੍ਰੈਕਸ ਦੇਖੋ, ਪੁਨਰ ਸਥਾਪਿਤ ਕਰਨ ਲਈ ਕੁਝ ਟ੍ਰੈਕਸ ਚੁਣੋ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਤੁਸੀਂ ਸਿਫਾਰਿਸ਼ਾਂ ਵਿੱਚੋਂ ਵੱਧ ਤੋਂ ਵੱਧ ਸਿਰਫ %d ਟ੍ਰੈਕ ਹਟਾ ਸਕਦੇ ਹੋ। ਹਟਾਏ ਗਏ ਟ੍ਰੈਕਸ ਦੇਖੋ, ਪੁਨਰ ਸਥਾਪਿਤ ਕਰਨ ਲਈ ਕੁਝ ਟ੍ਰੈਕਸ ਚੁਣੋ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="browse_play_radio_tips">
+        <item quantity="other">ਹਰ ਮਹੀਨੇ %d ਮੁਫ਼ਤ ਟ੍ਰੈਕਸ ਦਾ ਅਨੰਦ ਲੈਣ ਲਈ ਪਲੇ ਰੇਡੀਓ ਬਟਨ ਨੂੰ ਟੈਪ ਕਰੋ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਹਰ ਮਹੀਨੇ %d ਮੁਫ਼ਤ ਟ੍ਰੈਕ ਦਾ ਅਨੰਦ ਲੈਣ ਲਈ ਪਲੇ ਰੇਡੀਓ ਬਟਨ ਨੂੰ ਟੈਪ ਕਰੋ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_artist_more_than">
+        <item quantity="other">%d ਤੋਂ ਜ਼ਿਆਦਾ ਕਲਾਕਾਰ ਚੁਣੇ ਨਹੀਂ ਜਾ ਸਕਦੇ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਤੋਂ ਜ਼ਿਆਦਾ ਕਲਾਕਾਰ ਨੂੰ ਚੁਣਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_genre_more_than">
+        <item quantity="other">%d ਤੋਂ ਜ਼ਿਆਦਾ ਸ਼ੈਲੀਆਂ ਨੂੰ ਚੁਣਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਤੋਂ ਜ਼ਿਆਦਾ ਸ਼ੈਲੀ ਚੁਣੀ ਨਹੀਂ ਜਾ ਸਕਦੀ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cannot_select_track_more_than">
+        <item quantity="other">%d ਤੋਂ ਜ਼ਿਆਦਾ ਟ੍ਰੈਕਸ ਨੂੰ ਚੁਣਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਤੋਂ ਜ਼ਿਆਦਾ ਟ੍ਰੈਕ ਚੁਣਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="cross_fade_sec">
+        <item quantity="other">%d ਸਕਿੰਟ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਸਕਿੰਟ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">ਤੁਸੀਂ %1$d ਵਾਰੀ %2$s ਦਾ ਉਪਯੋਗ ਕਰ ਸਕਦੇ ਹੋ।</item>
+        <item quantity="one">ਤੁਸੀਂ 1 ਵਾਰੀ %s ਦਾ ਉਪਯੋਗ ਕਰ ਸਕਦੇ ਹੋ।</item>
+    </plurals>
+    <plurals name="milk_download_basket_alc_popup_message">
+        <item quantity="other">ਕਾਪੀਰਾਈਟ ਦੇ ਮੁੱਦੇ ਦੇ ਕਾਰਨ %d ਟ੍ਰੈਕਸ ਨੂੰ ਪ੍ਰੀਮੀਅਮ ਟਿਕਟਸ ਰਾਹੀਂ ਖਰੀਦਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ਤੇ ਖਰੀਦ ਸਕਦੇ ਹੋ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਕਾਪੀਰਾਈਟ ਦੇ ਮੁੱਦੇ ਦੇ ਕਾਰਨ %d ਟ੍ਰੈਕ ਨੂੰ ਪ੍ਰੀਮੀਅਮ ਟਿਕਟਸ ਰਾਹੀਂ ਖਰੀਦਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਵੱਖਰੇ ਤੌਰ ਤੇ ਖਰੀਦ ਸਕਦੇ ਹੋ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_basket_popup_buy_track_message_desc">
+        <item quantity="other">ਉਪਲਬਧ ਟ੍ਰੈਕਸ ਵਿੱਚੋਂ %d ਟ੍ਰੈਕਸ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾਵੇਗੀ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਉਪਲਬਧ ਟ੍ਰੈਕਸ ਵਿੱਚੋਂ %d ਟ੍ਰੈਕ ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾਵੇਗੀ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="milk_download_queue_songs_downloading">
+        <item quantity="other">%d ਗੀਤਾਂ ਦੇ ਡਾਉਨਲੋਡ ਹੋਣ ਦੀ ਉਡੀਕ ਹੋ ਰਹੀ ਹੈ…</item>
+        <item quantity="one">1 ਗੀਤ ਦੇ ਡਾਉਨਲੋਡ ਹੋਣ ਦੀ ਉਡੀਕ ਹੋ ਰਹੀ ਹੈ…</item>
+    </plurals>
+    <plurals name="n_albums_deleted_msg">
+        <item quantity="other">ਕੀ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚੋਂ %d ਐਲਬਮਸ ਅਤੇ ਉਨ੍ਹਾਂ ਵਿੱਚ ਮੌਜੂਦ ਸਾਰੇ ਟ੍ਰੈਕਸ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+        <item quantity="one">ਕੀ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚੋਂ 1 ਐਲਬਮ ਅਤੇ ਉਸ ਵਿੱਚ ਮੌਜੂਦ ਸਾਰੇ ਟ੍ਰੈਕਸ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+    </plurals>
+    <plurals name="n_artists_deleted_msg">
+        <item quantity="other">ਕੀ ਇਨ੍ਹਾਂ ਕਲਾਕਾਰਾਂ ਦੇ ਸਾਰੇ ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+        <item quantity="one">ਕੀ ਇਸ ਕਲਾਕਾਰ ਦੇ ਸਾਰੇ ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+    </plurals>
+    <plurals name="n_composers_deleted_msg">
+        <item quantity="other">ਕੀ ਇਨ੍ਹਾਂ ਰਚਨਾਕਾਰਾਂ ਦੇ ਸਾਰੇ ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+        <item quantity="one">ਕੀ ਇਸ ਰਚਨਾਕਾਰ ਦੇ ਸਾਰੇ ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+    </plurals>
+    <plurals name="n_download_basket_delete_tracks_q">
+        <item quantity="other">ਕੀ ਚੁਣੇ ਗਏ ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+        <item quantity="one">ਕੀ ਚੁਣਿਆ ਗਿਆ ਟ੍ਰੈਕ ਮਿਟਾਉਣਾ ਹੈ?</item>
+    </plurals>
+    <plurals name="n_download_basket_not_enough_available_count_message">
+        <item quantity="other">%d ਟ੍ਰੈਕਸ ਨੂੰ ਖਰੀਦਿਆ ਜਾਵੇਗਾ। ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਉਚਿਤ ਉਪਲਬਧ ਟ੍ਰੈਕਸ ਨਹੀਂ ਹਨ, ਤਾਂ ਇਹ ਟ੍ਰੈਕਸ ਖਰੀਦ ਨਹੀਂ ਸਕਦੇ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਟ੍ਰੈਕ ਖਰੀਦਿਆ ਜਾਵੇਗਾ। ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਉਚਿਤ ਉਪਲਬਧ ਟ੍ਰੈਕਸ ਨਹੀਂ ਹਨ, ਤਾਂ ਇਹ ਟ੍ਰੈਕ ਖਰੀਦ ਨਹੀਂ ਸਕਦੇ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_buy_track_title">
+        <item quantity="other">ਕੀ ਚੁਣੇ ਗਏ ਟ੍ਰੈਕਸ ਖਰੀਦਣੇ ਹਨ?</item>
+        <item quantity="one">ਕੀ ਚੁਣੇ ਗਏ ਟ੍ਰੈਕ ਨੂੰ ਖਰੀਦਣਾ ਹੈ?</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again">
+        <item quantity="other">ਤੁਸੀਂ ਇਹ ਗੀਤ ਪਹਿਲਾਂ ਹੀ ਖਰੀਦ ਲਏ ਹਨ। ਤੁਸੀਂ ਕਦੇ ਵੀ ਖਰੀਦੇ ਹੋਏ ਗੀਤਾਂ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ।</item>
+        <item quantity="one">ਤੁਸੀਂ ਇਹ ਗੀਤ ਪਹਿਲਾਂ ਖਰੀਦ ਲਿਆ ਹੈ। ਤੁਸੀਂ ਕਦੇ ਵੀ ਖਰੀਦੇ ਹੋਏ ਗੀਤਾਂ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ।</item>
+    </plurals>
+    <plurals name="n_download_basket_popup_download_again_title">
+        <item quantity="other">ਟ੍ਰੈਕਸ ਪਹਿਲਾਂ ਹੀ ਖਰੀਦੇ ਗਏ</item>
+        <item quantity="one">ਟ੍ਰੈਕ ਪਹਿਲਾਂ ਹੀ ਖਰੀਦਿਆ ਗਿਆ</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_playlist_kt">
+        <item quantity="other">ਤੁਸੀਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ %d ਪਲੇਸੂਚੀਆਂ ਨੂੰ ਮਨਪਸੰਦ ਵਜੋਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਮਨਪਸੰਦ ਟੈਬ ਵਿੱਚੋਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਕੁਝ ਪਲੇਸੂਚੀਆਂ ਨੂੰ ਹਟਾਉ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਤੁਸੀਂ ਪ੍ਰਦਾਨ ਕੀਤੀ %d ਪਲੇਸੂਚੀ ਨੂੰ ਮਨਪਸੰਦ ਵਜੋਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਮਨਪਸੰਦ ਟੈਬ ਵਿੱਚੋਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਕੁਝ ਪਲੇਸੂਚੀਆਂ ਨੂੰ ਹਟਾਉ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_streaming_track_kt">
+        <item quantity="other">ਤੁਸੀਂ ਸਿਰਫ %d ਸਟ੍ਰੀਮਿੰਗ ਟ੍ਰੈਕਸ ਨੂੰ ਮਨਪਸੰਦ ਟ੍ਰੈਕਸ ਵਜੋਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਮਨਪਸੰਦ ਟ੍ਰੈਕਸ ਵਿੱਚੋਂ ਕੁਝ ਸਟ੍ਰੀਮਿੰਗ ਟ੍ਰੈਕਸ ਨੂੰ ਹਟਾਉ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਤੁਸੀਂ ਸਿਰਫ %d ਸਟ੍ਰੀਮਿੰਗ ਟ੍ਰੈਕ ਨੂੰ ਮਨਪਸੰਦ ਟ੍ਰੈਕ ਵਜੋਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਮਨਪਸੰਦ ਟ੍ਰੈਕਸ ਵਿੱਚੋਂ ਕੁਝ ਸਟ੍ਰੀਮਿੰਗ ਟ੍ਰੈਕਸ ਨੂੰ ਹਟਾਉ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_favorite_max_message_track_kt">
+        <item quantity="other">ਤੁਸੀਂ ਸਿਰਫ %d ਟ੍ਰੈਕਸ ਨੂੰ ਮਨਪਸੰਦ ਟ੍ਰੈਕਸ ਵਜੋਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਮਨਪਸੰਦ ਟ੍ਰੈਕਸ ਵਿੱਚੋਂ ਕੁਝ ਟ੍ਰੈਕਸ ਨੂੰ ਹਟਾਉ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਤੁਸੀਂ ਸਿਰਫ %d ਟ੍ਰੈਕ ਨੂੰ ਮਨਪਸੰਦ ਟ੍ਰੈਕ ਵਜੋਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਮਨਪਸੰਦ ਟ੍ਰੈਕਸ ਵਿੱਚੋਂ ਕੁਝ ਟ੍ਰੈਕਸ ਨੂੰ ਹਟਾਉ, ਫਿਰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_folders">
+        <item quantity="other">%d ਫੋਲਡਰਸ</item>
+        <item quantity="one">1 ਫੋਲਡਰ</item>
+    </plurals>
+    <plurals name="n_folders_deleted_msg">
+        <item quantity="other">ਕੀ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚੋਂ %d ਫੋਲਡਰਸ ਅਤੇ ਉਨ੍ਹਾਂ ਵਿੱਚ ਮੌਜੂਦ ਸਾਰੇ ਟ੍ਰੈਕਸ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+        <item quantity="one">ਕੀ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚੋਂ 1 ਫੋਲਡਰ ਅਤੇ ਉਸ ਵਿੱਚ ਮੌਜੂਦ ਸਾਰੇ ਟ੍ਰੈਕਸ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+    </plurals>
+    <plurals name="n_genres_deleted_msg">
+        <item quantity="other">ਕੀ ਇਨ੍ਹਾਂ ਸ਼ੈਲੀਆਂ ਦੇ ਸਾਰੇ ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+        <item quantity="one">ਕੀ ਇਸ ਸ਼ੈਲੀ ਦੇ ਸਾਰੇ ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+    </plurals>
+    <plurals name="n_hidden_folders_deleted_kt">
+        <item quantity="other">ਲੁਕਾਏ ਗਏ %d ਫੋਲਡਰਸ ਨੂੰ ਵੀ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਲੁਕਾਏ ਗਏ %d ਫੋਲਡਰ ਨੂੰ ਵੀ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_hidden_tracks_remove">
+        <item quantity="other">%d ਟ੍ਰੈਕਸ ਪੁਨਰ ਸਥਾਪਿਤ ਕੀਤੇ ਗਏ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਟ੍ਰੈਕ ਪੁਨਰ ਸਥਾਪਿਤ ਕੀਤਾ ਗਿਆ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">ਕੀ %d ਆਈਟਮਸ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+        <item quantity="one">ਕੀ 1 ਆਈਟਮ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+    </plurals>
+    <plurals name="n_playlist_exported_kt">
+        <item quantity="other">%d ਪਲੇਸੂਚੀਆਂ ਨੂੰ ਨਿਰਯਾਤ ਕੀਤਾ ਗਿਆ।</item>
+        <item quantity="one">%d ਪਲੇਸੂਚੀ ਨੂੰ ਨਿਰਯਾਤ ਕੀਤਾ ਗਿਆ।</item>
+    </plurals>
+    <plurals name="n_playlist_imported_kt">
+        <item quantity="other">%d ਪਲੇਸੂਚੀਆਂ ਨੂੰ ਆਯਾਤ ਕੀਤਾ ਗਿਆ।</item>
+        <item quantity="one">%d ਪਲੇਸੂਚੀ ਨੂੰ ਆਯਾਤ ਕੀਤਾ ਗਿਆ।</item>
+    </plurals>
+    <plurals name="n_playlist_imported_max_message_kt">
+        <item quantity="other">%d ਤੋਂ ਜ਼ਿਆਦਾ ਪਲੇਸੂਚੀਆਂ ਚੁਣੀਆਂ ਨਹੀਂ ਜਾ ਸਕਦੀਆਂ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਤੋਂ ਜ਼ਿਆਦਾ ਪਲੇਸੂਚੀਆਂ ਚੁਣੀਆਂ ਨਹੀਂ ਜਾ ਸਕਦੀਆਂ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_playlists_deleted_msg">
+        <item quantity="other">ਕੀ %d ਪਲੇਸੂਚੀਆਂ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+        <item quantity="one">ਕੀ 1 ਪਲੇਸੂਚੀ ਮਿਟਾਉਣੀ ਹੈ?</item>
+    </plurals>
+    <plurals name="n_tracks">
+        <item quantity="other">%d ਟ੍ਰੈਕਸ</item>
+        <item quantity="one">1 ਟ੍ਰੈਕ</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_queue">
+        <item quantity="other">ਕਤਾਰ ਵਿੱਚ %d ਟ੍ਰੈਕਸ ਜੋੜੇ ਗਏ।</item>
+        <item quantity="one">%d ਟ੍ਰੈਕ ਨੂੰ ਕਤਾਰ ਵਿੱਚ ਜੋੜਿਆ ਗਿਆ।</item>
+    </plurals>
+    <plurals name="n_tracks_deleted_msg">
+        <item quantity="other">ਕੀ %d ਟ੍ਰੈਕਸ ਮਿਟਾਉਣੇ ਹਨ?</item>
+        <item quantity="one">ਕੀ 1 ਟ੍ਰੈਕ ਮਿਟਾਉਣਾ ਹੈ?</item>
+    </plurals>
+</resources>

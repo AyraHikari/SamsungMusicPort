@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/content_root" android:background="@color/mu_background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/list_content_root_padding_horizontal" android:paddingEnd="@dimen/list_content_root_padding_horizontal">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Toolbar" />
+        <FrameLayout android:id="@id/content" android:background="@color/mu_content_area" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    </android.support.constraint.ConstraintLayout>
+</merge>

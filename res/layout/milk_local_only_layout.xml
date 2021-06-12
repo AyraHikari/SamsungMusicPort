@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/local_only_button_container" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <TextView android:textSize="@dimen/pull_down_option_text" android:textColor="@color/blur_text" android:gravity="center_vertical" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/use_my_music_mode" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/pull_down_option_text_space_start" />
+        <Switch android:layout_gravity="end" android:id="@id/switch_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/pull_down_option_switch_space_start" android:layout_marginEnd="@dimen/pull_down_option_switch_space_end" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/local_only_desc_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="#99fafafa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="44.0dip" android:text="@string/milk_offline_mode_desc" android:layout_centerVertical="true" android:fontFamily="roboto-regular" android:textAlignment="center" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/prev_btn" android:focusable="true" android:clickable="true" android:layout_width="@dimen/full_player_rew_ff_button_width" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="end|center" android:id="@id/prev_icon" android:background="@drawable/unbounded_ripple_light_full_player_button" android:duplicateParentState="true" android:layout_width="@dimen/full_player_rew_ff_button_size" android:layout_height="@dimen/full_player_rew_ff_button_size" android:src="@drawable/full_player_prev_back" android:scaleType="fitXY" android:tint="@color/full_player_control_icon_theme" android:contentDescription="@string/tts_previous" android:layout_marginEnd="@dimen/full_player_rew_ff_button_margin" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/play_pause_btn" android:focusable="true" android:clickable="true" android:layout_width="@dimen/full_player_button_width" android:layout_height="fill_parent" android:layout_marginStart="@dimen/full_player_play_pause_margin_horizontal" android:layout_marginEnd="@dimen/full_player_play_pause_margin_horizontal">
+        <ImageView android:layout_gravity="center" android:id="@id/play_pause_icon" android:background="@drawable/ripple_full_player_play_pause_button" android:duplicateParentState="true" android:layout_width="@dimen/full_player_play_pause_icon_size" android:layout_height="@dimen/full_player_play_pause_icon_size" android:src="@drawable/full_player_play_pause" android:scaleType="fitXY" android:tint="@color/full_player_control_icon_theme" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/next_btn" android:focusable="true" android:clickable="true" android:layout_width="@dimen/full_player_rew_ff_button_width" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/next_icon" android:background="@drawable/unbounded_ripple_light_full_player_button" android:duplicateParentState="true" android:layout_width="@dimen/full_player_rew_ff_button_size" android:layout_height="@dimen/full_player_rew_ff_button_size" android:src="@drawable/full_player_next_forward" android:scaleType="fitXY" android:tint="@color/full_player_control_icon_theme" android:contentDescription="@string/tts_next" android:layout_marginStart="@dimen/full_player_rew_ff_button_margin" />
+    </FrameLayout>
+</LinearLayout>

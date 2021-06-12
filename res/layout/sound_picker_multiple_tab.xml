@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TabHost android:id="@android:id/tabhost" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <HorizontalScrollView android:id="@id/horizontal_tab_scroll" android:background="@color/tab_background_sound_alive" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:elevation="@dimen/winset_tab_elevation">
+                <TabWidget android:id="@android:id/tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureWithLargestChild="true" />
+            </HorizontalScrollView>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </TabHost>
+</merge>

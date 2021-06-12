@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="milk_radio_cover_art_width">282.0dip</dimen>
+    <dimen name="about_update_button_width">197.0dip</dimen>
+    <dimen name="device_height">732.0dip</dimen>
+    <dimen name="device_width">411.0dip</dimen>
+    <dimen name="browse_top_chart_info_list_item_width">184.0dip</dimen>
+    <dimen name="milk_event_popup_do_not_show_frame_height">60.0dip</dimen>
+    <dimen name="milk_event_popup_image_height">420.0dip</dimen>
+    <dimen name="milk_event_popup_image_width">315.0dip</dimen>
+    <dimen name="milk_radio_between_of_artist_and_lyric_padding">14.0dip</dimen>
+    <dimen name="milk_radio_lyrics_button_height">22.0dip</dimen>
+    <dimen name="milk_radio_lyrics_button_padding">9.0dip</dimen>
+    <dimen name="milk_radio_lyrics_button_text_size">11.0dip</dimen>
+    <dimen name="milk_radio_spinner_left_padding">28.0dip</dimen>
+    <dimen name="milk_store_common_track_list_explicit_circle_size">19.0dip</dimen>
+    <dimen name="milk_store_common_track_list_explicit_circle_stroke">4.0px</dimen>
+    <dimen name="milk_store_common_track_list_explicit_font_size">11.0dip</dimen>
+    <dimen name="milk_store_common_track_list_explicit_marginRight">5.0dip</dimen>
+    <dimen name="milk_store_main_music_video_item_text_container_height">52.0dip</dimen>
+    <dimen name="milk_store_main_top_chart_item_title_number_width">47.0dip</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sesl_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="sesl_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="sesl_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="sesl_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="sesl_dialog_fixed_width_minor">90.0%</item>
+</resources>

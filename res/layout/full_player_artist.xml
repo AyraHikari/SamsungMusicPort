@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:textSize="@dimen/full_player_title_sub_text" android:textColor="@color/full_player_title_sub_theme" android:gravity="center" android:focusable="false" android:layout_width="0.0dip" android:layout_height="0.0dip" android:minHeight="@dimen/full_player_title_sub_text_height" android:includeFontPadding="false" android:fontFamily="roboto-regular" music:maxFontLevel="large" music:textSizeDelta="@dimen/full_player_easymode_title_sub_text_delta" style="@style/Font.Roboto.Regular.Marquee"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:music="http://schemas.android.com/apk/res-auto" />

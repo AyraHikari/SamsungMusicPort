@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/mu_grid_item_thumbnail_radius_stroke" />
+    <solid android:color="@color/black_opacity_35" />
+</shape>

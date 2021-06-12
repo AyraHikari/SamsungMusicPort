@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/menu_group_bottom_bar">
+        <item android:icon="@drawable/music_bottombar_ic_download" android:id="@id/menu_download_bottom_bar" android:title="@string/download" />
+    </group>
+</menu>

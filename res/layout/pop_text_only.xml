@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/ppmt_pop_layout_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ppmt_pop_layout_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/ppmt_pop_layout" android:layout_width="@dimen/ppmt_pop_layout_width" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/ppmt_pop_textonly_text_horizontal_margin" android:layout_marginTop="@dimen/ppmt_pop_textonly_text_margin_top" android:layout_marginRight="@dimen/ppmt_pop_textonly_text_horizontal_margin" android:layout_marginBottom="@dimen/ppmt_pop_textonly_text_margin_bottom" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0dip" android:id="@id/ppmt_pop_body_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textSize="13.0dip" android:gravity="right" android:id="@id/ppmt_pop_body_message_for_rtl" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+            </ScrollView>
+            <include android:id="@id/ppmt_pop_bottom1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ppmt_pop_bottom_height" android:layout_weight="0.0" layout="@layout/pop_bottom" />
+            <include android:id="@id/ppmt_pop_bottom2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ppmt_pop_bottom_height" android:layout_weight="0.0" layout="@layout/pop_bottom" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="end|center|top" android:id="@id/ppmt_pop_close_btn" android:background="@drawable/ic_close" android:layout_width="@dimen/ppmt_pop_close_btn_width" android:layout_height="@dimen/ppmt_pop_close_btn_height" android:scaleType="fitXY" />
+    </FrameLayout>
+    <View android:id="@id/ppmt_pop_layout_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+</LinearLayout>

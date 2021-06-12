@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/milk_search_preset_string_padding_left" android:paddingRight="@dimen/milk_search_preset_string_padding_right" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#66fafafa" android:gravity="center_vertical" android:id="@id/text_search_preset_footer_no_record" android:layout_width="fill_parent" android:layout_height="@dimen/milk_search_preset_footer_no_record_text_height" android:layout_marginLeft="6.0dip" android:text="@string/milk_search_no_search_history" android:fontFamily="sans-serif" />
+    <RelativeLayout android:id="@id/search_preset_delete_record_container" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginLeft="@dimen/milk_search_preset_delete_record_container_margin_left" android:layout_marginRight="@dimen/milk_search_preset_delete_record_container_margin_right">
+        <View android:id="@id/divider" android:background="#33fafafa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0px" />
+        <TextView android:textSize="14.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/text_search_preset_delete_record" android:layout_width="fill_parent" android:layout_height="@dimen/milk_search_preset_delete_record_text_height" android:layout_marginLeft="@dimen/milk_search_preset_delete_record_text_margin_left" android:layout_marginRight="@dimen/milk_search_preset_delete_record_text_margin_right" android:text="@string/milk_search_delete_history" android:layout_below="@id/divider" android:textAllCaps="true" android:fontFamily="sans-serif" />
+    </RelativeLayout>
+</RelativeLayout>

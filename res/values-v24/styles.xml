@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V24.Theme.AppCompat.Light" />
+    <style name="TextAppearance.Compat.Notification.Info.Media" parent="@style/TextAppearance.Compat.Notification.Info" />
+    <style name="TextAppearance.Compat.Notification.Media" parent="@style/TextAppearance.Compat.Notification" />
+    <style name="TextAppearance.Compat.Notification.Time.Media" parent="@style/TextAppearance.Compat.Notification.Time" />
+    <style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" parent="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Colored" parent="@android:style/TextAppearance.Material.Widget.Button.Colored" />
+    <style name="Font.Roboto.Condensed" parent="@style/Font.Roboto">
+        <item name="android:fontFamily">sec-roboto-condensed</item>
+    </style>
+    <style name="Theme.OneUi" parent="@style/BaseAppTheme.Nougat" />
+    <style name="Base.V24.Theme.AppCompat" parent="@style/Base.V21.Theme.AppCompat">
+        <item name="android:contextPopupMenuStyle">@style/Base.Widget.AppCompat.ContextPopupMenu</item>
+        <item name="android:textAppearancePopupMenuHeader">@style/TextAppearance.AppCompat.Widget.PopupMenu.Header</item>
+    </style>
+    <style name="Base.V24.Theme.AppCompat.Light" parent="@style/Base.V21.Theme.AppCompat.Light">
+        <item name="android:contextPopupMenuStyle">@style/Base.Widget.AppCompat.Light.ContextPopupMenu</item>
+        <item name="android:textAppearancePopupMenuHeader">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Header</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ContextPopupMenu" parent="@android:style/Widget.Material.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/sesl_list_popup_background_dark</item>
+        <item name="android:popupAnimationStyle">@style/Base.Animation.AppCompat.MenuPopup</item>
+        <item name="android:overlapAnchor">true</item>
+        <item name="android:popupElevation">@dimen/sesl_menu_popup_elevation</item>
+        <item name="android:popupEnterTransition">@null</item>
+        <item name="android:popupExitTransition">@null</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Light.ContextPopupMenu" parent="@style/Base.Widget.AppCompat.ContextPopupMenu">
+        <item name="android:popupBackground">@drawable/sesl_list_popup_background</item>
+    </style>
+    <style name="BaseAppTheme.Nougat" parent="@style/BaseAppTheme">
+        <item name="android:windowFullscreen">@bool/windowFullScreen</item>
+        <item name="android:windowLightStatusBar">@bool/windowLightStatusBar</item>
+    </style>
+</resources>
