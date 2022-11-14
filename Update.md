@@ -38,4 +38,7 @@ Download link for Samsung Music, please do not mirror or reupload the file
 - I've added original languages to apk, so there's no need to reupload two version
 
 ## [Version 1.1.0](https://www.pling.com/p/1537956/)
-- Initial release port (unstable)
+- Bump app version to the latest one (OneUI 3.0) (unstable)
+
+## [Version 1.0.0](https://www.pling.com/p/1537956/)
+- Initial release port (stable)
