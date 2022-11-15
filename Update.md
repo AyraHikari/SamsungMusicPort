@@ -7,7 +7,13 @@ Download link for Samsung Music, please do not mirror or reupload the file
 # Changelog
 
 ## [Version 1.2.0](https://www.pling.com/p/1537956/)
-- Upcoming...
+- This is new port of Samsung Music, this changelog fix from previous port build. Others are from Samsung itself.
+- Bump version to 16.2.28.9 (1622809100)
+- SD Card detection fixed (Tested on OTG)
+- Equalizer fixed
+- Crossfade fixed
+- Skip fade track fixed
+- Changed updater API inside, so you'll noticed in-app when there's an update
 
 ## [Version 1.1.4](https://www.pling.com/p/1537956/)
 - Fixed storage issues for some devices (tested on OOS 11, Android 11)
