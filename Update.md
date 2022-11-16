@@ -10,6 +10,7 @@ Download link for Samsung Music, please do not mirror or reupload the file
 - Fixed an issues where Android 11 cannot play any music
 - Fixed mismatch API detection
 - Fixed crashing on queue
+- Fixed knox detection on several country region
 
 ## [Version 1.2.0](https://www.pling.com/p/1537956/)
 - This is new port of Samsung Music, this changelog fix from previous port build. Others are from Samsung itself.
