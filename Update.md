@@ -10,6 +10,7 @@ Download link for Samsung Music, please do not mirror or reupload the file
 - Fixed edit track detail not working
 - Fixed crashing after changed track detail
 - Fixed crashing after deleting some music
+- Fixed updater logic failure
 - Now app has two version: Spotify and Melon
 - Bump version build to 1622809201
 
