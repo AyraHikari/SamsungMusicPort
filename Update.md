@@ -9,8 +9,9 @@ Download link for Samsung Music, please do not mirror or reupload the file
 ## [Version 1.2.2](https://www.pling.com/p/1537956/)
 - Fixed edit track detail not working
 - Fixed crashing after changed track detail
-- Fixed crashing after deleting some musics
+- Fixed crashing after deleting some music
 - Now app has two version: Spotify and Melon
+- Bump version build to 1622809200
 
 ## [Version 1.2.1](https://www.pling.com/p/1537956/)
 - Fixed an issues where Android 11 cannot play any music
