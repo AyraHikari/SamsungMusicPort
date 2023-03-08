@@ -1,10 +1,16 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.2.3 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.2.4 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.2.4](https://www.pling.com/p/1537956/)
+- Fixed verify error detection in some country region
+- Fixed Melon services in some country region
+- Bring back two version: Spotify and Melon
+- Known issues: text search blank (i messed up with regex, will fix it later)
 
 ## [Version 1.2.3](https://www.pling.com/p/1537956/)
 - New port, based on build 16.2.29.8
