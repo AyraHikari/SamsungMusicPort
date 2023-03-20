@@ -1,10 +1,15 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.2.5 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.2.6 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.2.6](https://www.pling.com/p/1537956/)
+- Bump latest version: 16.2.30.0
+- Fixed crashing when volume pressed on media player
+- Fixed random crashing when app trying to call incompatible framework
 
 ## [Version 1.2.5](https://www.pling.com/p/1537956/)
 - Fixed equalizer button
