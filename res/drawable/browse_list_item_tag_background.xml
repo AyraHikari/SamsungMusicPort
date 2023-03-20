@@ -2,6 +2,6 @@
 <shape android:shape="rectangle"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <corners android:radius="@dimen/tag_icon_radius" />
-    <stroke android:width="@dimen/browse_list_item_tag_stroke" android:color="@color/mu_primary" />
+    <stroke android:width="@dimen/browse_list_item_tag_stroke" android:color="@color/basics_primary_209_4_7" />
     <size android:height="@dimen/tag_meta_icon_height" />
 </shape>

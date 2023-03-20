@@ -12,61 +12,9 @@
         <item quantity="other">Треки</item>
         <item quantity="one">Дорожки</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">Композиций добавлено в избранное: %d. Композиции, уже находящиеся в избранном, добавлены не были.</item>
-        <item quantity="one">Композиций добавлено в избранное: %d. Композиции, уже находящиеся в избранном, добавлены не были.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">Композиций: %d</item>
         <item quantity="one">Композиций: %d</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">Композиций удалено из избранного: %d.</item>
-        <item quantity="one">Композиций удалено из избранного: %d.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">Композиций, добавленных в избранное: %d</item>
-        <item quantity="one">Композиций, добавленных в избранное: %d.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Из рекомендаций можно удалить не более %d композиции. Просмотрите список удаленных композиций, восстановите часть из них и повторите попытку.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Из рекомендаций можно удалить не более %d композиции. Просмотрите список удаленных композиций, восстановите часть из них и повторите попытку.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Из рекомендаций можно удалить не более %d композиций. Просмотрите список удаленных композиций, восстановите часть из них и повторите попытку.</item>
-        <item quantity="many">Из рекомендаций можно удалить не более %d композиций. Просмотрите список удаленных композиций, восстановите часть из них и повторите попытку.</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Коснитесь кнопки “Включить радио”, чтобы каждый месяц слушать по %d бесплатной композиции.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Коснитесь кнопки “Включить радио”, чтобы каждый месяц слушать по %d бесплатной композиции.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Коснитесь кнопки “Включить радио”, чтобы каждый месяц слушать по %d бесплатные композиции.</item>
-        <item quantity="many">Коснитесь кнопки “Включить радио”, чтобы каждый месяц слушать по %d бесплатных композиций.</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Невозможно выбрать более %d исполнителя.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Невозможно выбрать более %d исполнителя.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Невозможно выбрать более %d исполнителей.</item>
-        <item quantity="many">Невозможно выбрать более %d исполнителей.</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Невозможно выбрать более %d жанра.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Невозможно выбрать более %d жанра.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Невозможно выбрать более %d жанров.</item>
-        <item quantity="many">Невозможно выбрать более %d жанров.</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Невозможно выбрать более %d композиции.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Невозможно выбрать более %d композиции.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Невозможно выбрать более %d композиций.</item>
-        <item quantity="many">Невозможно выбрать более %d композиций.</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d секунды</item>
@@ -76,29 +24,63 @@
         <item quantity="few">%d секунды</item>
         <item quantity="many">%d секунд</item>
     </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Не показывать в течение %d дня</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не показывать в течение %d дня</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Не показывать в течение %d дней</item>
+        <item quantity="many">Не показывать в течение %d дней</item>
+    </plurals>
     <plurals name="drm_can_use_n_times">
         <item quantity="other">Вы можете использовать %1$s %2$d раз.</item>
         <item quantity="one">Вы можете использовать %s 1 раз.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">%d композиции невозможно купить с помощью премиум-билетов из-за ограничения правообладателя. Эти композиции можно приобрести отдельно.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d композицию невозможно купить с помощью премиум-билетов из-за ограничения правообладателя. Эту композицию можно приобрести отдельно.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">%d композиции невозможно купить с помощью премиум-билетов из-за ограничения правообладателя. Эти композиции можно приобрести отдельно.</item>
-        <item quantity="many">%d композиций невозможно купить с помощью премиум-билетов из-за ограничения правообладателя. Эти композиции можно приобрести отдельно.</item>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Перемотать на %d секунды вперед</item>
+        <item quantity="one">Перемотать на %d секунду вперед</item>
+        <item quantity="few">Перемотать на %d секунды вперед</item>
+        <item quantity="many">Перемотать на %d секунд вперед</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Будет использовано %d доступной композиции.</item>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Перемотать на %d секунды назад</item>
+        <item quantity="one">Перемотать на %d секунду назад</item>
+        <item quantity="few">Перемотать на %d секунды назад</item>
+        <item quantity="many">Перемотать на %d секунд назад</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">Будет удалено %d композиции с истекшим сроком действия. Вы можете посмотреть историю загрузок в меню “Сведения о Melon” > “История покупок”.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Будет использована %d доступная композиция.</item>
+        <item quantity="one">Будет удалена %d композиция с истекшим сроком действия. Вы можете посмотреть историю загрузок в меню “Сведения о Melon” > “История покупок”.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">Будет использовано %d доступные композиции.</item>
-        <item quantity="many">Будет использовано %d доступных композиций.</item>
+        <item quantity="few">Будет удалено %d композиции с истекшим сроком действия. Вы можете посмотреть историю загрузок в меню “Сведения о Melon” > “История покупок”.</item>
+        <item quantity="many">Будет удалено %d композиций с истекшим сроком действия. Вы можете посмотреть историю загрузок в меню “Сведения о Melon” > “История покупок”.</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Не удалось продлить период DCF для %d композиции. Повторите попытку или удалите файлы из списка ниже и снова загрузите их.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не удалось продлить период DCF для %d композиции. Повторите попытку или удалите файл из списка ниже и снова загрузите его.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Не удалось продлить период DCF для %d композиций. Повторите попытку или удалите файлы из списка ниже и снова загрузите их.</item>
+        <item quantity="many">Не удалось продлить период DCF для %d композиций. Повторите попытку или удалите файлы из списка ниже и снова загрузите их.</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Невозможно импортировать более %d элемента.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Невозможно импортировать более %d элемента.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Невозможно импортировать более %d элементов.</item>
+        <item quantity="many">Невозможно импортировать более %d элементов.</item>
     </plurals>
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Ожидание загрузки песен (%d)…</item>
         <item quantity="one">Ожидание загрузки 1 композиции…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нового уведомления</item>
+        <item quantity="one">%d новое уведомление</item>
+        <item quantity="few">%d новых уведомления</item>
+        <item quantity="many">%d новых уведомлений</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Удалить с телефона альбомы (%d) и все содержащиеся в них композиции?</item>
@@ -111,54 +93,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Удалить все композиции этих композиторов?</item>
         <item quantity="one">Удалить все композиции этого композитора?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Удалить выбранные композиции?</item>
-        <item quantity="one">Удалить выбранную композицию?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Будет приобретено %d композиции. Если у вас недостаточно доступных композиций, покупка будет отменена.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Будет приобретена %d композиция. Если у вас недостаточно доступных композиций, покупка будет отменена.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Будет приобретено %d композиции. Если у вас недостаточно доступных композиций, покупка будет отменена.</item>
-        <item quantity="many">Будет приобретено %d композиций. Если у вас недостаточно доступных композиций, покупка будет отменена.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Приобрести выбранные композиции?</item>
-        <item quantity="one">Приобрести выбранную композицию?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Вы уже приобрели эти песни. Приобретенные песни можно в любой момент загрузить повторно.</item>
-        <item quantity="one">Вы уже приобрели эту песню. Приобретенные песни можно в любой момент загрузить повторно.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Композиции уже приобретены</item>
-        <item quantity="one">Композиция уже приобретена</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">В раздел “Избранное” можно добавить только %d рекомендуемых списка воспроизведения. Удалите несколько списков на вкладке “Избранное”.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">В раздел “Избранное” можно добавить только %d рекомендуемый список воспроизведения. Удалите несколько списков на вкладке “Избранное”.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">В раздел “Избранное” можно добавить только %d рекомендуемых списка воспроизведения. Удалите несколько списков на вкладке “Избранное”.</item>
-        <item quantity="many">В раздел “Избранное” можно добавить только %d рекомендуемых списков воспроизведения. Удалите несколько списков на вкладке “Избранное”.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">В список избранного можно добавить не больше %d композиции для потокового воспроизведения. Удалите часть композиций для потокового воспроизведения из списка, а затем повторите попытку.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">В список избранного можно добавить не больше %d композиции для потокового воспроизведения. Удалите часть композиций для потокового воспроизведения из списка, а затем повторите попытку.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">В список избранного можно добавить не больше %d композиций для потокового воспроизведения. Удалите часть композиций для потокового воспроизведения из списка, а затем повторите попытку.</item>
-        <item quantity="many">В список избранного можно добавить не больше %d композиций для потокового воспроизведения. Удалите часть композиций для потокового воспроизведения из списка, а затем повторите попытку.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">В список избранного можно добавить не более %d композиции. Удалите часть композиций из списка, а затем повторите попытку.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">В список избранного можно добавить не более %d композиции. Удалите часть композиций из списка, а затем повторите попытку.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">В список избранного можно добавить не более %d композиций. Удалите часть композиций из списка, а затем повторите попытку.</item>
-        <item quantity="many">В список избранного можно добавить не более %d композиций. Удалите часть композиций из списка, а затем повторите попытку.</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">Папки: %d</item>
@@ -180,25 +114,73 @@
         <item quantity="few">Также будут удалены %d скрытые папки.</item>
         <item quantity="many">Также будет удалено %d скрытых папок.</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">Восстановлено %d композиции.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Восстановлена %d композиция.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Восстановлено %d композиции.</item>
-        <item quantity="many">Восстановлено %d композиций.</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Удалить элементы (%d)?</item>
         <item quantity="one">Удалить 1 элемент?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Невозможно ввести более %d символа.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Невозможно ввести более %d символа.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Невозможно ввести более %d символов.</item>
+        <item quantity="many">Невозможно ввести более %d символов.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Невозможно добавить больше %d альбома. Выберите меньше альбомов для добавления или удалите что-то из избранного.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Невозможно добавить больше %d альбома. Выберите меньше альбомов для добавления или удалите что-то из избранного.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Невозможно добавить больше %d альбомов. Выберите меньше альбомов для добавления или удалите что-то из избранного.</item>
+        <item quantity="many">Невозможно добавить больше %d альбомов. Выберите меньше альбомов для добавления или удалите что-то из избранного.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Невозможно добавить больше %d исполнителя. Выберите меньше исполнителей для добавления или удалите что-то из избранного.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Невозможно добавить больше %d исполнителя. Выберите меньше исполнителей для добавления или удалите что-то из избранного.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Невозможно добавить больше %d исполнителей. Выберите меньше исполнителей для добавления или удалите что-то из избранного.</item>
+        <item quantity="many">Невозможно добавить больше %d исполнителей. Выберите меньше исполнителей для добавления или удалите что-то из избранного.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Вы можете добавить до %d списка воспроизведения. Удалите часть списков воспроизведения на вкладке “Избранное”.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вы можете добавить до %d списка воспроизведения. Удалите часть списков воспроизведения на вкладке “Избранное”.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Можно добавить до %d списков воспроизведения. Удалите часть списков воспроизведения на вкладке “Избранное”.</item>
+        <item quantity="many">Можно добавить до %d списков воспроизведения. Удалите часть списков воспроизведения на вкладке “Избранное”.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Невозможно добавить больше %d потоковой композиции. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Невозможно добавить больше %d потоковой композиции. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Невозможно добавить больше %d потоковых композиций. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+        <item quantity="many">Невозможно добавить больше %d потоковых композиций. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Невозможно добавить больше %d композиции. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Невозможно добавить больше %d композиции. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Невозможно добавить больше %d композиций. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+        <item quantity="many">Невозможно добавить больше %d композиций. Выберите меньше композиций для добавления или удалите что-то из избранного.</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Экспортировано %d списка воспроизведения.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Экспортирован %d список воспроизведения.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Экспортировано %d списка воспроизведения.</item>
+        <item quantity="many">Экспортировано %d списков воспроизведения.</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Импортировано %d списка воспроизведения.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Импортирован %d список воспроизведения.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Импортировано %d списка воспроизведения.</item>
+        <item quantity="many">Импортировано %d списков воспроизведения.</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Невозможно выбрать более %d списка воспроизведения.</item>
@@ -216,12 +198,84 @@
         <item quantity="other">Композиций: %d</item>
         <item quantity="one">1 композиция</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">В избранное добавлены только %d композиции. Остальные композиции уже были добавлены раньше.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">В избранное добавлена только %d композиция. Остальные композиции уже были добавлены раньше.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">В избранное добавлены только %d композиции. Остальные композиции уже были добавлены раньше.</item>
+        <item quantity="many">В избранное добавлены только %d композиций. Остальные композиции уже были добавлены раньше.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">Композиций, добавленных в избранное: %d</item>
+        <item quantity="one">1 композиция добавлена в избранное</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">Композиций добавлено в список воспроизведения: %d.</item>
+        <item quantity="one">1 композиция добавлена в список воспроизведения</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">В очередь добавлено %d муз. файла (-ов).</item>
         <item quantity="one">Композиций, добавленных в очередь: %d.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">Удалить композиции (%d)?</item>
-        <item quantity="one">Удалить 1 композицию?</item>
+        <item quantity="other">Удалить %d композиции?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Удалить %d композицию?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Удалить %d композиции?</item>
+        <item quantity="many">Удалить %d композиций?</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Время сна: %d часа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Время сна: %d час</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Время сна: %d часа</item>
+        <item quantity="many">Время сна: %d часов</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Время сна: %d минуты</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Время сна: %d минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Время сна: %d минуты</item>
+        <item quantity="many">Время сна: %d минут</item>
+    </plurals>
+    <plurals name="time_difference_short_days">
+        <item quantity="other">%d д</item>
+        <item quantity="one">%d д</item>
+        <item quantity="few">%d д</item>
+        <item quantity="many">%d д</item>
+    </plurals>
+    <plurals name="time_difference_short_hours">
+        <item quantity="other">%d ч</item>
+        <item quantity="one">%d ч</item>
+        <item quantity="few">%d ч</item>
+        <item quantity="many">%d ч</item>
+    </plurals>
+    <plurals name="time_difference_short_minutes">
+        <item quantity="other">%d м</item>
+        <item quantity="one">%d м</item>
+        <item quantity="few">%d м</item>
+        <item quantity="many">%d м</item>
+    </plurals>
+    <plurals name="time_difference_words_days">
+        <item quantity="other">%d дн.</item>
+        <item quantity="one">%d дн.</item>
+        <item quantity="few">%d дн.</item>
+        <item quantity="many">%d дн.</item>
+    </plurals>
+    <plurals name="time_difference_words_hours">
+        <item quantity="other">%d ч.</item>
+        <item quantity="one">%d ч.</item>
+        <item quantity="few">%d ч.</item>
+        <item quantity="many">%d ч.</item>
+    </plurals>
+    <plurals name="time_difference_words_minutes">
+        <item quantity="other">%d мин.</item>
+        <item quantity="one">%d мин.</item>
+        <item quantity="few">%d мин.</item>
+        <item quantity="many">%d мин.</item>
     </plurals>
 </resources>

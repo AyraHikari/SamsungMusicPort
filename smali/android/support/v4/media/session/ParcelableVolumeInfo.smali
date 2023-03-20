@@ -1,9 +1,17 @@
 .class public Landroid/support/v4/media/session/ParcelableVolumeInfo;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ParcelableVolumeInfo.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
+
+
+# annotations
+.annotation build Landroid/annotation/SuppressLint;
+    value = {
+        "BanParcelableUsage"
+    }
+.end annotation
 
 
 # static fields
@@ -19,51 +27,26 @@
 
 
 # instance fields
-.field public audioStream:I
+.field public a:I
 
-.field public controlType:I
+.field public b:I
 
-.field public currentVolume:I
+.field public c:I
 
-.field public maxVolume:I
+.field public d:I
 
-.field public volumeType:I
+.field public e:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 65
-    new-instance v0, Landroid/support/v4/media/session/ParcelableVolumeInfo$1;
+    new-instance v0, Landroid/support/v4/media/session/ParcelableVolumeInfo$a;
 
-    invoke-direct {v0}, Landroid/support/v4/media/session/ParcelableVolumeInfo$1;-><init>()V
+    invoke-direct {v0}, Landroid/support/v4/media/session/ParcelableVolumeInfo$a;-><init>()V
 
     sput-object v0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>(IIIII)V
-    .locals 0
-
-    .line 34
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 35
-    iput p1, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->volumeType:I
-
-    .line 36
-    iput p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->audioStream:I
-
-    .line 37
-    iput p3, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->controlType:I
-
-    .line 38
-    iput p4, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->maxVolume:I
-
-    .line 39
-    iput p5, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->currentVolume:I
 
     return-void
 .end method
@@ -71,43 +54,43 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 42
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 43
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->volumeType:I
+    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->a:I
 
-    .line 44
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->controlType:I
+    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->c:I
 
-    .line 45
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->maxVolume:I
+    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->d:I
 
-    .line 46
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->currentVolume:I
+    iput v0, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->e:I
 
-    .line 47
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
-    iput p1, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->audioStream:I
+    iput p1, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->b:I
 
     return-void
 .end method
@@ -125,28 +108,28 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 57
-    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->volumeType:I
+    .line 1
+    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->a:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 58
-    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->controlType:I
+    .line 2
+    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->c:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 59
-    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->maxVolume:I
+    .line 3
+    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->d:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 60
-    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->currentVolume:I
+    .line 4
+    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->e:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 61
-    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->audioStream:I
+    .line 5
+    iget p2, p0, Landroid/support/v4/media/session/ParcelableVolumeInfo;->b:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

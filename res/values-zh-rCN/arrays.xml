@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25 倍</item>
+        <item>0.5 倍</item>
+        <item>0.75 倍</item>
+        <item>正常</item>
+        <item>1.25 倍</item>
+        <item>1.5 倍</item>
+        <item>2 倍</item>
+    </string-array>
     <string-array name="index_string_array">
         <item>ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
     </string-array>

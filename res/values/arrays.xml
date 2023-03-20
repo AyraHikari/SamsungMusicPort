@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="index_string_array">
-        <item>ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
-    </string-array>
     <string-array name="barge_in_commands">
         <item>@string/barge_in_commnad_next</item>
-        <item>@string/barge_in_commnad_previous</item>
-        <item>@string/barge_in_commnad_pause</item>
-        <item>@string/barge_in_commnad_play</item>
+        <item>@string/tts_previous</item>
+        <item>@string/tts_pause</item>
+        <item>@string/menu_play</item>
         <item>@string/barge_in_commnad_volume_up</item>
         <item>@string/barge_in_commnad_volume_down</item>
     </string-array>
-    <array name="favorite_gradation_colors">
-        <item>@color/list_item_heart_default_background_gradation_color1_kt</item>
-        <item>@color/list_item_heart_default_background_gradation_color2_kt</item>
-        <item>@color/list_item_heart_default_background_gradation_color3_kt</item>
-        <item>@color/list_item_heart_default_background_gradation_color4_kt</item>
-        <item>@color/list_item_heart_default_background_gradation_color5_kt</item>
-        <item>@color/list_item_heart_default_background_gradation_color6_kt</item>
-        <item>@color/list_item_heart_default_background_gradation_color1_kt</item>
-    </array>
+    <string-array name="dark_mode_entries">
+        <item>@string/system_default</item>
+        <item>@string/on</item>
+        <item>@string/off</item>
+    </string-array>
+    <string-array name="dark_mode_entries_tablet">
+        <item>@string/system_default_tablet</item>
+        <item>@string/on</item>
+        <item>@string/off</item>
+    </string-array>
+    <string-array name="dark_mode_entry_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="domain_allowed_list">
+        <item>*.melon.com</item>
+        <item>*.melon.co.kr</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="index_string_array">
+        <item>ABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+    </string-array>
     <array name="lyrics_magnification_state_backgrounds">
         <item>@drawable/ic_magnifying_glass_01</item>
         <item>@drawable/ic_magnifying_glass_02</item>
@@ -47,24 +66,14 @@
         <item>2</item>
         <item>3</item>
     </integer-array>
-    <string-array name="milk_store_artist_detail_album">
-        <item>@string/milk_store_sorting_date_released</item>
-        <item>@string/milk_store_sorting_participating</item>
-    </string-array>
-    <integer-array name="music_library_circle_artwork_effect_colors">
-        <item>0xFFFF00C6</item>
-        <item>0xFF00EAFF</item>
-        <item>0xFF0F14FF</item>
-        <item>0xFFFF00C6</item>
-    </integer-array>
-    <string-array name="music_library_circle_artwork_effect_positions">
-        <item>0.00f</item>
-        <item>0.34f</item>
-        <item>0.62f</item>
-        <item>1.00f</item>
-    </string-array>
     <string-array name="my_sound_entries">
         <item>@string/on</item>
         <item>@string/off</item>
     </string-array>
+    <array name="progress_spinner_sequence">
+        <item>#fff4b400</item>
+        <item>#ffdb4437</item>
+        <item>#ff4285f4</item>
+        <item>#ff0f9d58</item>
+    </array>
 </resources>

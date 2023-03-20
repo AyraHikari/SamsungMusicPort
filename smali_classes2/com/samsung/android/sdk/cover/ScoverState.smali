@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/cover/ScoverState;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ScoverState.java"
 
 
 # static fields
@@ -123,34 +123,34 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 288
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 289
+    .line 2
     iput-boolean v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->switchState:Z
 
     const/4 v0, 0x2
 
-    .line 290
+    .line 3
     iput v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->type:I
 
     const/4 v0, 0x0
 
-    .line 291
+    .line 4
     iput v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->color:I
 
-    .line 292
+    .line 5
     iput v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->widthPixel:I
 
-    .line 293
+    .line 6
     iput v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->heightPixel:I
 
-    .line 294
+    .line 7
     iput-boolean v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->attached:Z
 
-    .line 295
+    .line 8
     iput v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->model:I
 
     return-void
@@ -159,30 +159,30 @@
 .method public constructor <init>(ZIIII)V
     .locals 0
 
-    .line 307
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 308
+    .line 10
     iput-boolean p1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->switchState:Z
 
-    .line 309
+    .line 11
     iput p2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->type:I
 
-    .line 310
+    .line 12
     iput p3, p0, Lcom/samsung/android/sdk/cover/ScoverState;->color:I
 
-    .line 311
+    .line 13
     iput p4, p0, Lcom/samsung/android/sdk/cover/ScoverState;->widthPixel:I
 
-    .line 312
+    .line 14
     iput p5, p0, Lcom/samsung/android/sdk/cover/ScoverState;->heightPixel:I
 
     const/4 p1, 0x0
 
-    .line 313
+    .line 15
     iput-boolean p1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->attached:Z
 
-    .line 314
+    .line 16
     iput p1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->model:I
 
     return-void
@@ -191,30 +191,30 @@
 .method public constructor <init>(ZIIIIZ)V
     .locals 0
 
-    .line 326
+    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 327
+    .line 18
     iput-boolean p1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->switchState:Z
 
-    .line 328
+    .line 19
     iput p2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->type:I
 
-    .line 329
+    .line 20
     iput p3, p0, Lcom/samsung/android/sdk/cover/ScoverState;->color:I
 
-    .line 330
+    .line 21
     iput p4, p0, Lcom/samsung/android/sdk/cover/ScoverState;->widthPixel:I
 
-    .line 331
+    .line 22
     iput p5, p0, Lcom/samsung/android/sdk/cover/ScoverState;->heightPixel:I
 
-    .line 332
+    .line 23
     iput-boolean p6, p0, Lcom/samsung/android/sdk/cover/ScoverState;->attached:Z
 
     const/4 p1, 0x0
 
-    .line 333
+    .line 24
     iput p1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->model:I
 
     return-void
@@ -223,28 +223,28 @@
 .method public constructor <init>(ZIIIIZI)V
     .locals 0
 
-    .line 347
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 348
+    .line 26
     iput-boolean p1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->switchState:Z
 
-    .line 349
+    .line 27
     iput p2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->type:I
 
-    .line 350
+    .line 28
     iput p3, p0, Lcom/samsung/android/sdk/cover/ScoverState;->color:I
 
-    .line 351
+    .line 29
     iput p4, p0, Lcom/samsung/android/sdk/cover/ScoverState;->widthPixel:I
 
-    .line 352
+    .line 30
     iput p5, p0, Lcom/samsung/android/sdk/cover/ScoverState;->heightPixel:I
 
-    .line 353
+    .line 31
     iput-boolean p6, p0, Lcom/samsung/android/sdk/cover/ScoverState;->attached:Z
 
-    .line 354
+    .line 32
     iput p7, p0, Lcom/samsung/android/sdk/cover/ScoverState;->model:I
 
     return-void
@@ -255,7 +255,6 @@
 .method public getAttachState()Z
     .locals 1
 
-    .line 410
     iget-boolean v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->attached:Z
 
     return v0
@@ -264,7 +263,6 @@
 .method public getColor()I
     .locals 1
 
-    .line 382
     iget v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->color:I
 
     return v0
@@ -273,7 +271,6 @@
 .method public getModel()I
     .locals 1
 
-    .line 419
     iget v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->model:I
 
     return v0
@@ -282,7 +279,6 @@
 .method public getSwitchState()Z
     .locals 1
 
-    .line 364
     iget-boolean v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->switchState:Z
 
     return v0
@@ -291,7 +287,6 @@
 .method public getType()I
     .locals 1
 
-    .line 373
     iget v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->type:I
 
     return v0
@@ -300,7 +295,6 @@
 .method public getWindowHeight()I
     .locals 1
 
-    .line 400
     iget v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->heightPixel:I
 
     return v0
@@ -309,83 +303,81 @@
 .method public getWindowWidth()I
     .locals 1
 
-    .line 391
     iget v0, p0, Lcom/samsung/android/sdk/cover/ScoverState;->widthPixel:I
 
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 4
+    .locals 3
 
-    const-string v0, "ScoverState(switchState=%b type=%d color=%d widthPixel=%d heightPixel=%d)"
+    const/4 v0, 0x6
 
-    const/4 v1, 0x6
+    new-array v0, v0, [Ljava/lang/Object;
 
-    .line 428
-    new-array v1, v1, [Ljava/lang/Object;
+    iget-boolean v1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->switchState:Z
 
-    iget-boolean v2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->switchState:Z
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object v1
 
-    move-result-object v2
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    iget v1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->type:I
 
-    iget v2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->type:I
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
-    move-result-object v2
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    iget v1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->color:I
 
-    iget v2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->color:I
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
-    move-result-object v2
+    const/4 v2, 0x2
 
-    const/4 v3, 0x2
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    iget v1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->widthPixel:I
 
-    iget v2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->widthPixel:I
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
-    move-result-object v2
+    const/4 v2, 0x3
 
-    const/4 v3, 0x3
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    iget v1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->heightPixel:I
 
-    iget v2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->heightPixel:I
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
-    move-result-object v2
+    const/4 v2, 0x4
 
-    const/4 v3, 0x4
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    iget-boolean v1, p0, Lcom/samsung/android/sdk/cover/ScoverState;->attached:Z
 
-    iget-boolean v2, p0, Lcom/samsung/android/sdk/cover/ScoverState;->attached:Z
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object v1
 
-    move-result-object v2
+    const/4 v2, 0x5
 
-    const/4 v3, 0x5
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    const-string v1, "ScoverState(switchState=%b type=%d color=%d widthPixel=%d heightPixel=%d)"
 
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;
 .super Lcom/samsung/android/cover/ICoverStateListenerCallback$Stub;
-.source "SourceFile"
+.source "ScoverManager.java"
 
 
 # annotations
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x1
     name = "CoverStateListenerDelegate"
 .end annotation
 
@@ -27,25 +27,25 @@
 
 .field private final mListener:Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
 
-.field final synthetic this$0:Lcom/samsung/android/sdk/cover/ScoverManager;
+.field public final synthetic this$0:Lcom/samsung/android/sdk/cover/ScoverManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/sdk/cover/ScoverManager;Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/samsung/android/sdk/cover/ScoverManager;Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;Landroid/os/Handler;)V
     .locals 0
 
-    .line 748
+    .line 1
     iput-object p1, p0, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;->this$0:Lcom/samsung/android/sdk/cover/ScoverManager;
 
-    .line 749
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/cover/ICoverStateListenerCallback$Stub;-><init>()V
 
-    .line 750
+    .line 3
     iput-object p2, p0, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;->mListener:Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
 
     if-nez p3, :cond_0
 
-    .line 752
+    .line 4
     invoke-static {p1}, Lcom/samsung/android/sdk/cover/ScoverManager;->access$000(Lcom/samsung/android/sdk/cover/ScoverManager;)Landroid/content/Context;
 
     move-result-object p2
@@ -61,7 +61,7 @@
 
     move-result-object p2
 
-    .line 755
+    .line 5
     :goto_0
     new-instance p3, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate$1;
 
@@ -72,10 +72,9 @@
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;)Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
+.method public static synthetic access$200(Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;)Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
     .locals 0
 
-    .line 731
     iget-object p0, p0, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;->mListener:Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
 
     return-object p0
@@ -86,7 +85,6 @@
 .method public getListener()Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
     .locals 1
 
-    .line 778
     iget-object v0, p0, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;->mListener:Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
 
     return-object v0
@@ -94,13 +92,7 @@
 
 .method public getListenerInfo()Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 801
     iget-object v0, p0, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;->mListener:Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListener;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -112,13 +104,7 @@
 
 .method public onCoverAttachStateChanged(Z)V
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 789
     iget-object v0, p0, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x0
@@ -136,13 +122,7 @@
 
 .method public onCoverSwitchStateChanged(Z)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 783
     iget-object v0, p0, Lcom/samsung/android/sdk/cover/ScoverManager$CoverStateListenerDelegate;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x0

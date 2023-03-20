@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailProvider;
 .super Landroid/content/BroadcastReceiver;
-.source "SourceFile"
+.source "SlookCocktailProvider.java"
 
 
 # static fields
@@ -27,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 94
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -48,16 +47,16 @@
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 2
+    .locals 3
 
-    .line 108
+    .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "com.samsung.android.cocktail.action.COCKTAIL_UPDATE"
 
-    .line 109
+    .line 2
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -77,14 +76,14 @@
     :cond_0
     const-string v1, "com.samsung.android.cocktail.action.COCKTAIL_ENABLED"
 
-    .line 115
+    .line 3
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 116
+    .line 4
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailProvider;->onEnabled(Landroid/content/Context;)V
 
     goto :goto_1
@@ -92,14 +91,14 @@
     :cond_1
     const-string v1, "com.samsung.android.cocktail.action.COCKTAIL_DISABLED"
 
-    .line 117
+    .line 5
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 118
+    .line 6
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailProvider;->onDisabled(Landroid/content/Context;)V
 
     goto :goto_1
@@ -107,14 +106,14 @@
     :cond_2
     const-string v1, "com.samsung.android.cocktail.action.COCKTAIL_VISIBILITY_CHANGED"
 
-    .line 119
+    .line 7
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 120
+    .line 8
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object p2
@@ -123,42 +122,38 @@
 
     const-string v0, "cocktailId"
 
-    .line 121
+    .line 9
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_4
+    if-eqz v1, :cond_4
 
-    const-string v0, "cocktailId"
-
-    .line 122
+    .line 10
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result v0
 
     const-string v1, "cocktailVisibility"
 
-    .line 123
+    .line 11
     invoke-virtual {p2, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_4
+    if-eqz v2, :cond_4
 
-    const-string v1, "cocktailVisibility"
-
-    .line 124
+    .line 12
     invoke-virtual {p2, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result p2
 
-    .line 125
+    .line 13
     invoke-virtual {p0, p1, v0, p2}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailProvider;->onVisibilityChanged(Landroid/content/Context;II)V
 
     goto :goto_1
 
-    .line 110
+    .line 14
     :cond_3
     :goto_0
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
@@ -169,21 +164,19 @@
 
     const-string v0, "cocktailIds"
 
-    .line 111
+    .line 15
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_4
+    if-eqz v1, :cond_4
 
-    const-string v0, "cocktailIds"
-
-    .line 112
+    .line 16
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->getIntArray(Ljava/lang/String;)[I
 
     move-result-object p2
 
-    .line 113
+    .line 17
     invoke-static {p1}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;
 
     move-result-object v0

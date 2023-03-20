@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lorg/simpleframework/xml/Root;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Root.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/AnnotationDefault;
     value = .subannotation Lorg/simpleframework/xml/Root;
-        a = ""
-        b = true
+        name = ""
+        strict = true
     .end subannotation
 .end annotation
 
@@ -20,8 +20,8 @@
 
 
 # virtual methods
-.method public abstract a()Ljava/lang/String;
+.method public abstract name()Ljava/lang/String;
 .end method
 
-.method public abstract b()Z
+.method public abstract strict()Z
 .end method

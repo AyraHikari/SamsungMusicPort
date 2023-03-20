@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/core/MethodScanner;
 .super Lorg/simpleframework/xml/core/ContactList;
-.source "SourceFile"
+.source "MethodScanner.java"
 
 
 # annotations
@@ -26,23 +26,18 @@
 # direct methods
 .method public constructor <init>(Lorg/simpleframework/xml/core/Detail;Lorg/simpleframework/xml/core/Support;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 100
+    .line 1
     invoke-direct {p0}, Lorg/simpleframework/xml/core/ContactList;-><init>()V
 
-    .line 101
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/core/MethodPartFactory;
 
     invoke-direct {v0, p1, p2}, Lorg/simpleframework/xml/core/MethodPartFactory;-><init>(Lorg/simpleframework/xml/core/Detail;Lorg/simpleframework/xml/core/Support;)V
 
     iput-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->factory:Lorg/simpleframework/xml/core/MethodPartFactory;
 
-    .line 102
+    .line 3
     new-instance v0, Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     const/4 v1, 0x0
@@ -51,20 +46,20 @@
 
     iput-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
-    .line 103
+    .line 4
     new-instance v0, Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {v0, v1}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;-><init>(Lorg/simpleframework/xml/core/MethodScanner$1;)V
 
     iput-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
-    .line 104
+    .line 5
     iput-object p2, p0, Lorg/simpleframework/xml/core/MethodScanner;->support:Lorg/simpleframework/xml/core/Support;
 
-    .line 105
+    .line 6
     iput-object p1, p0, Lorg/simpleframework/xml/core/MethodScanner;->detail:Lorg/simpleframework/xml/core/Detail;
 
-    .line 106
+    .line 7
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/core/MethodScanner;->scan(Lorg/simpleframework/xml/core/Detail;)V
 
     return-void
@@ -72,13 +67,8 @@
 
 .method private build()V
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 418
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-virtual {v0}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->iterator()Ljava/util/Iterator;
@@ -99,10 +89,10 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 419
+    .line 2
     iget-object v2, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
-    invoke-virtual {v2, v1}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -110,7 +100,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 422
+    .line 3
     invoke-direct {p0, v2, v1}, Lorg/simpleframework/xml/core/MethodScanner;->build(Lorg/simpleframework/xml/core/MethodPart;Ljava/lang/String;)V
 
     goto :goto_0
@@ -121,31 +111,21 @@
 
 .method private build(Lorg/simpleframework/xml/core/MethodPart;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 456
+    .line 7
     new-instance v0, Lorg/simpleframework/xml/core/MethodContact;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/core/MethodContact;-><init>(Lorg/simpleframework/xml/core/MethodPart;)V
 
-    invoke-virtual {p0, v0}, Lorg/simpleframework/xml/core/MethodScanner;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
 .method private build(Lorg/simpleframework/xml/core/MethodPart;Ljava/lang/String;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 438
+    .line 4
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-virtual {v0, p2}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->take(Ljava/lang/String;)Lorg/simpleframework/xml/core/MethodPart;
@@ -154,12 +134,12 @@
 
     if-eqz p2, :cond_0
 
-    .line 441
+    .line 5
     invoke-direct {p0, p1, p2}, Lorg/simpleframework/xml/core/MethodScanner;->build(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodPart;)V
 
     goto :goto_0
 
-    .line 443
+    .line 6
     :cond_0
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/core/MethodScanner;->build(Lorg/simpleframework/xml/core/MethodPart;)V
 
@@ -169,24 +149,19 @@
 
 .method private build(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodPart;)V
     .locals 6
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 470
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->f()Ljava/lang/annotation/Annotation;
+    .line 8
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getAnnotation()Ljava/lang/annotation/Annotation;
 
     move-result-object v0
 
-    .line 471
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->a()Ljava/lang/String;
+    .line 9
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 473
-    invoke-interface {p2}, Lorg/simpleframework/xml/core/MethodPart;->f()Ljava/lang/annotation/Annotation;
+    .line 10
+    invoke-interface {p2}, Lorg/simpleframework/xml/core/MethodPart;->getAnnotation()Ljava/lang/annotation/Annotation;
 
     move-result-object v2
 
@@ -202,28 +177,28 @@
 
     if-eqz v0, :cond_1
 
-    .line 476
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->b()Ljava/lang/Class;
+    .line 11
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getType()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 478
-    invoke-interface {p2}, Lorg/simpleframework/xml/core/MethodPart;->b()Ljava/lang/Class;
+    .line 12
+    invoke-interface {p2}, Lorg/simpleframework/xml/core/MethodPart;->getType()Ljava/lang/Class;
 
     move-result-object v5
 
     if-ne v0, v5, :cond_0
 
-    .line 481
+    .line 13
     new-instance v0, Lorg/simpleframework/xml/core/MethodContact;
 
     invoke-direct {v0, p1, p2}, Lorg/simpleframework/xml/core/MethodContact;-><init>(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodPart;)V
 
-    invoke-virtual {p0, v0}, Lorg/simpleframework/xml/core/MethodScanner;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 479
+    .line 14
     :cond_0
     new-instance p1, Lorg/simpleframework/xml/core/MethodException;
 
@@ -239,7 +214,7 @@
 
     throw p1
 
-    .line 474
+    .line 15
     :cond_1
     new-instance p1, Lorg/simpleframework/xml/core/MethodException;
 
@@ -260,21 +235,16 @@
 
 .method private extend(Ljava/lang/Class;Lorg/simpleframework/xml/DefaultType;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 141
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->support:Lorg/simpleframework/xml/core/Support;
 
-    invoke-virtual {v0, p1, p2}, Lorg/simpleframework/xml/core/Support;->b(Ljava/lang/Class;Lorg/simpleframework/xml/DefaultType;)Lorg/simpleframework/xml/core/ContactList;
+    invoke-virtual {v0, p1, p2}, Lorg/simpleframework/xml/core/Support;->getMethods(Ljava/lang/Class;Lorg/simpleframework/xml/DefaultType;)Lorg/simpleframework/xml/core/ContactList;
 
     move-result-object p1
 
-    .line 143
-    invoke-virtual {p1}, Lorg/simpleframework/xml/core/ContactList;->iterator()Ljava/util/Iterator;
+    .line 2
+    invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
@@ -291,7 +261,7 @@
 
     check-cast p2, Lorg/simpleframework/xml/core/Contact;
 
-    .line 144
+    .line 3
     check-cast p2, Lorg/simpleframework/xml/core/MethodContact;
 
     invoke-direct {p0, p2}, Lorg/simpleframework/xml/core/MethodScanner;->process(Lorg/simpleframework/xml/core/MethodContact;)V
@@ -304,18 +274,13 @@
 
 .method private extract(Lorg/simpleframework/xml/core/Detail;)V
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 157
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->e()Ljava/util/List;
+    .line 1
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->getMethods()Ljava/util/List;
 
     move-result-object p1
 
-    .line 159
+    .line 2
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -333,17 +298,17 @@
 
     check-cast v0, Lorg/simpleframework/xml/core/MethodDetail;
 
-    .line 160
-    invoke-virtual {v0}, Lorg/simpleframework/xml/core/MethodDetail;->a()[Ljava/lang/annotation/Annotation;
+    .line 3
+    invoke-virtual {v0}, Lorg/simpleframework/xml/core/MethodDetail;->getAnnotations()[Ljava/lang/annotation/Annotation;
 
     move-result-object v1
 
-    .line 161
-    invoke-virtual {v0}, Lorg/simpleframework/xml/core/MethodDetail;->b()Ljava/lang/reflect/Method;
+    .line 4
+    invoke-virtual {v0}, Lorg/simpleframework/xml/core/MethodDetail;->getMethod()Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    .line 163
+    .line 5
     array-length v2, v1
 
     const/4 v3, 0x0
@@ -353,7 +318,7 @@
 
     aget-object v4, v1, v3
 
-    .line 164
+    .line 6
     invoke-direct {p0, v0, v4, v1}, Lorg/simpleframework/xml/core/MethodScanner;->scan(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
     add-int/lit8 v3, v3, 0x1
@@ -366,23 +331,18 @@
 
 .method private extract(Lorg/simpleframework/xml/core/Detail;Lorg/simpleframework/xml/DefaultType;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 179
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->e()Ljava/util/List;
+    .line 7
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->getMethods()Ljava/util/List;
 
     move-result-object p1
 
-    .line 181
+    .line 8
     sget-object v0, Lorg/simpleframework/xml/DefaultType;->PROPERTY:Lorg/simpleframework/xml/DefaultType;
 
     if-ne p2, v0, :cond_1
 
-    .line 182
+    .line 9
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -401,26 +361,26 @@
 
     check-cast p2, Lorg/simpleframework/xml/core/MethodDetail;
 
-    .line 183
-    invoke-virtual {p2}, Lorg/simpleframework/xml/core/MethodDetail;->a()[Ljava/lang/annotation/Annotation;
+    .line 10
+    invoke-virtual {p2}, Lorg/simpleframework/xml/core/MethodDetail;->getAnnotations()[Ljava/lang/annotation/Annotation;
 
     move-result-object v0
 
-    .line 184
-    invoke-virtual {p2}, Lorg/simpleframework/xml/core/MethodDetail;->b()Ljava/lang/reflect/Method;
+    .line 11
+    invoke-virtual {p2}, Lorg/simpleframework/xml/core/MethodDetail;->getMethod()Ljava/lang/reflect/Method;
 
     move-result-object p2
 
-    .line 185
+    .line 12
     iget-object v1, p0, Lorg/simpleframework/xml/core/MethodScanner;->factory:Lorg/simpleframework/xml/core/MethodPartFactory;
 
-    invoke-virtual {v1, p2}, Lorg/simpleframework/xml/core/MethodPartFactory;->a(Ljava/lang/reflect/Method;)Ljava/lang/Class;
+    invoke-virtual {v1, p2}, Lorg/simpleframework/xml/core/MethodPartFactory;->getType(Ljava/lang/reflect/Method;)Ljava/lang/Class;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 188
+    .line 13
     invoke-direct {p0, p2, v0}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;[Ljava/lang/annotation/Annotation;)V
 
     goto :goto_0
@@ -432,13 +392,13 @@
 .method private insert(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
     .locals 3
 
-    .line 338
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->a()Ljava/lang/String;
+    .line 1
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 339
-    invoke-virtual {p2, v0}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 2
+    invoke-virtual {p2, v0}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -446,7 +406,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 342
+    .line 3
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/core/MethodScanner;->isText(Lorg/simpleframework/xml/core/MethodPart;)Z
 
     move-result v2
@@ -455,9 +415,9 @@
 
     move-object p1, v1
 
-    .line 346
+    .line 4
     :cond_0
-    invoke-virtual {p2, v0, p1}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v0, p1}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -465,12 +425,12 @@
 .method private isText(Lorg/simpleframework/xml/core/MethodPart;)Z
     .locals 0
 
-    .line 359
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->f()Ljava/lang/annotation/Annotation;
+    .line 1
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getAnnotation()Ljava/lang/annotation/Annotation;
 
     move-result-object p1
 
-    .line 361
+    .line 2
     instance-of p1, p1, Lorg/simpleframework/xml/Text;
 
     if-eqz p1, :cond_0
@@ -487,52 +447,47 @@
 
 .method private process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 253
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->factory:Lorg/simpleframework/xml/core/MethodPartFactory;
 
-    invoke-virtual {v0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodPartFactory;->a(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Lorg/simpleframework/xml/core/MethodPart;
+    invoke-virtual {v0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodPartFactory;->getInstance(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Lorg/simpleframework/xml/core/MethodPart;
 
     move-result-object p1
 
-    .line 254
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->g()Lorg/simpleframework/xml/core/MethodType;
+    .line 2
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getMethodType()Lorg/simpleframework/xml/core/MethodType;
 
     move-result-object p2
 
-    .line 256
+    .line 3
     sget-object p3, Lorg/simpleframework/xml/core/MethodType;->GET:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, p3, :cond_0
 
-    .line 257
+    .line 4
     iget-object p3, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
 
-    .line 259
+    .line 5
     :cond_0
     sget-object p3, Lorg/simpleframework/xml/core/MethodType;->IS:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, p3, :cond_1
 
-    .line 260
+    .line 6
     iget-object p3, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
 
-    .line 262
+    .line 7
     :cond_1
     sget-object p3, Lorg/simpleframework/xml/core/MethodType;->SET:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, p3, :cond_2
 
-    .line 263
+    .line 8
     iget-object p2, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, p2}, Lorg/simpleframework/xml/core/MethodScanner;->process(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
@@ -543,52 +498,47 @@
 
 .method private process(Ljava/lang/reflect/Method;[Ljava/lang/annotation/Annotation;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 279
+    .line 9
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->factory:Lorg/simpleframework/xml/core/MethodPartFactory;
 
-    invoke-virtual {v0, p1, p2}, Lorg/simpleframework/xml/core/MethodPartFactory;->a(Ljava/lang/reflect/Method;[Ljava/lang/annotation/Annotation;)Lorg/simpleframework/xml/core/MethodPart;
+    invoke-virtual {v0, p1, p2}, Lorg/simpleframework/xml/core/MethodPartFactory;->getInstance(Ljava/lang/reflect/Method;[Ljava/lang/annotation/Annotation;)Lorg/simpleframework/xml/core/MethodPart;
 
     move-result-object p1
 
-    .line 280
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->g()Lorg/simpleframework/xml/core/MethodType;
+    .line 10
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getMethodType()Lorg/simpleframework/xml/core/MethodType;
 
     move-result-object p2
 
-    .line 282
+    .line 11
     sget-object v0, Lorg/simpleframework/xml/core/MethodType;->GET:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, v0, :cond_0
 
-    .line 283
+    .line 12
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, v0}, Lorg/simpleframework/xml/core/MethodScanner;->process(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
 
-    .line 285
+    .line 13
     :cond_0
     sget-object v0, Lorg/simpleframework/xml/core/MethodType;->IS:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, v0, :cond_1
 
-    .line 286
+    .line 14
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, v0}, Lorg/simpleframework/xml/core/MethodScanner;->process(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
 
-    .line 288
+    .line 15
     :cond_1
     sget-object v0, Lorg/simpleframework/xml/core/MethodType;->SET:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, v0, :cond_2
 
-    .line 289
+    .line 16
     iget-object p2, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, p2}, Lorg/simpleframework/xml/core/MethodScanner;->process(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
@@ -600,24 +550,24 @@
 .method private process(Lorg/simpleframework/xml/core/MethodContact;)V
     .locals 2
 
-    .line 319
-    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodContact;->c()Lorg/simpleframework/xml/core/MethodPart;
+    .line 19
+    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodContact;->getRead()Lorg/simpleframework/xml/core/MethodPart;
 
     move-result-object v0
 
-    .line 320
-    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodContact;->d()Lorg/simpleframework/xml/core/MethodPart;
+    .line 20
+    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodContact;->getWrite()Lorg/simpleframework/xml/core/MethodPart;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 323
+    .line 21
     iget-object v1, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, v1}, Lorg/simpleframework/xml/core/MethodScanner;->insert(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
 
-    .line 325
+    .line 22
     :cond_0
     iget-object p1, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
@@ -629,15 +579,15 @@
 .method private process(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
     .locals 1
 
-    .line 303
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->a()Ljava/lang/String;
+    .line 17
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 306
-    invoke-virtual {p2, v0, p1}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 18
+    invoke-virtual {p2, v0, p1}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-void
@@ -645,52 +595,47 @@
 
 .method private remove(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 379
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->factory:Lorg/simpleframework/xml/core/MethodPartFactory;
 
-    invoke-virtual {v0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodPartFactory;->a(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Lorg/simpleframework/xml/core/MethodPart;
+    invoke-virtual {v0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodPartFactory;->getInstance(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)Lorg/simpleframework/xml/core/MethodPart;
 
     move-result-object p1
 
-    .line 380
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->g()Lorg/simpleframework/xml/core/MethodType;
+    .line 2
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getMethodType()Lorg/simpleframework/xml/core/MethodType;
 
     move-result-object p2
 
-    .line 382
+    .line 3
     sget-object p3, Lorg/simpleframework/xml/core/MethodType;->GET:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, p3, :cond_0
 
-    .line 383
+    .line 4
     iget-object p3, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, p3}, Lorg/simpleframework/xml/core/MethodScanner;->remove(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
 
-    .line 385
+    .line 5
     :cond_0
     sget-object p3, Lorg/simpleframework/xml/core/MethodType;->IS:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, p3, :cond_1
 
-    .line 386
+    .line 6
     iget-object p3, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, p3}, Lorg/simpleframework/xml/core/MethodScanner;->remove(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
 
-    .line 388
+    .line 7
     :cond_1
     sget-object p3, Lorg/simpleframework/xml/core/MethodType;->SET:Lorg/simpleframework/xml/core/MethodType;
 
     if-ne p2, p3, :cond_2
 
-    .line 389
+    .line 8
     iget-object p2, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-direct {p0, p1, p2}, Lorg/simpleframework/xml/core/MethodScanner;->remove(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
@@ -701,21 +646,16 @@
 
 .method private remove(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodScanner$PartMap;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 403
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->a()Ljava/lang/String;
+    .line 9
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 406
-    invoke-virtual {p2, p1}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 10
+    invoke-virtual {p2, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-void
@@ -723,108 +663,103 @@
 
 .method private scan(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 205
+    .line 9
     instance-of v0, p2, Lorg/simpleframework/xml/Attribute;
 
     if-eqz v0, :cond_0
 
-    .line 206
+    .line 10
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 208
+    .line 11
     :cond_0
     instance-of v0, p2, Lorg/simpleframework/xml/ElementUnion;
 
     if-eqz v0, :cond_1
 
-    .line 209
+    .line 12
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 211
+    .line 13
     :cond_1
     instance-of v0, p2, Lorg/simpleframework/xml/ElementListUnion;
 
     if-eqz v0, :cond_2
 
-    .line 212
+    .line 14
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 214
+    .line 15
     :cond_2
     instance-of v0, p2, Lorg/simpleframework/xml/ElementMapUnion;
 
     if-eqz v0, :cond_3
 
-    .line 215
+    .line 16
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 217
+    .line 17
     :cond_3
     instance-of v0, p2, Lorg/simpleframework/xml/ElementList;
 
     if-eqz v0, :cond_4
 
-    .line 218
+    .line 18
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 220
+    .line 19
     :cond_4
     instance-of v0, p2, Lorg/simpleframework/xml/ElementArray;
 
     if-eqz v0, :cond_5
 
-    .line 221
+    .line 20
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 223
+    .line 21
     :cond_5
     instance-of v0, p2, Lorg/simpleframework/xml/ElementMap;
 
     if-eqz v0, :cond_6
 
-    .line 224
+    .line 22
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 226
+    .line 23
     :cond_6
     instance-of v0, p2, Lorg/simpleframework/xml/Element;
 
     if-eqz v0, :cond_7
 
-    .line 227
+    .line 24
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 229
+    .line 25
     :cond_7
     instance-of v0, p2, Lorg/simpleframework/xml/Version;
 
     if-eqz v0, :cond_8
 
-    .line 230
+    .line 26
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 232
+    .line 27
     :cond_8
     instance-of v0, p2, Lorg/simpleframework/xml/Text;
 
     if-eqz v0, :cond_9
 
-    .line 233
+    .line 28
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->process(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
-    .line 235
+    .line 29
     :cond_9
     instance-of v0, p2, Lorg/simpleframework/xml/Transient;
 
     if-eqz v0, :cond_a
 
-    .line 236
+    .line 30
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/core/MethodScanner;->remove(Ljava/lang/reflect/Method;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
 
     :cond_a
@@ -833,43 +768,38 @@
 
 .method private scan(Lorg/simpleframework/xml/core/Detail;)V
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 118
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->d()Lorg/simpleframework/xml/DefaultType;
+    .line 1
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->getOverride()Lorg/simpleframework/xml/DefaultType;
 
     move-result-object v0
 
-    .line 119
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->c()Lorg/simpleframework/xml/DefaultType;
+    .line 2
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->getAccess()Lorg/simpleframework/xml/DefaultType;
 
     move-result-object v1
 
-    .line 120
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->b()Ljava/lang/Class;
+    .line 3
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Detail;->getSuper()Ljava/lang/Class;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    .line 123
+    .line 4
     invoke-direct {p0, v2, v0}, Lorg/simpleframework/xml/core/MethodScanner;->extend(Ljava/lang/Class;Lorg/simpleframework/xml/DefaultType;)V
 
-    .line 125
+    .line 5
     :cond_0
     invoke-direct {p0, p1, v1}, Lorg/simpleframework/xml/core/MethodScanner;->extract(Lorg/simpleframework/xml/core/Detail;Lorg/simpleframework/xml/DefaultType;)V
 
-    .line 126
+    .line 6
     invoke-direct {p0, p1}, Lorg/simpleframework/xml/core/MethodScanner;->extract(Lorg/simpleframework/xml/core/Detail;)V
 
-    .line 127
+    .line 7
     invoke-direct {p0}, Lorg/simpleframework/xml/core/MethodScanner;->build()V
 
-    .line 128
+    .line 8
     invoke-direct {p0}, Lorg/simpleframework/xml/core/MethodScanner;->validate()V
 
     return-void
@@ -877,13 +807,8 @@
 
 .method private validate()V
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 491
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-virtual {v0}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->iterator()Ljava/util/Iterator;
@@ -904,10 +829,10 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 492
+    .line 2
     iget-object v2, p0, Lorg/simpleframework/xml/core/MethodScanner;->write:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
-    invoke-virtual {v2, v1}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -915,7 +840,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 495
+    .line 3
     invoke-direct {p0, v2, v1}, Lorg/simpleframework/xml/core/MethodScanner;->validate(Lorg/simpleframework/xml/core/MethodPart;Ljava/lang/String;)V
 
     goto :goto_0
@@ -926,21 +851,16 @@
 
 .method private validate(Lorg/simpleframework/xml/core/MethodPart;Ljava/lang/String;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 510
+    .line 4
     iget-object v0, p0, Lorg/simpleframework/xml/core/MethodScanner;->read:Lorg/simpleframework/xml/core/MethodScanner$PartMap;
 
     invoke-virtual {v0, p2}, Lorg/simpleframework/xml/core/MethodScanner$PartMap;->take(Ljava/lang/String;)Lorg/simpleframework/xml/core/MethodPart;
 
     move-result-object p2
 
-    .line 511
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->h()Ljava/lang/reflect/Method;
+    .line 5
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getMethod()Ljava/lang/reflect/Method;
 
     move-result-object p1
 
@@ -948,7 +868,7 @@
 
     return-void
 
-    .line 514
+    .line 6
     :cond_0
     new-instance p2, Lorg/simpleframework/xml/core/MethodException;
 

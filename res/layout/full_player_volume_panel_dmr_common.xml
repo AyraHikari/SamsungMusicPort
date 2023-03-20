@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/full_player_volume_panel_height"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/allshare_volume_mute" android:src="@drawable/music_ic_dlna_vol_mute" android:tint="@color/full_player_volume_dmr_icon_color" android:layout_marginStart="@dimen/full_player_volume_panel_dmr_icon_margin" style="@style/AllShareVolumeButton" />
+    <ImageView android:id="@id/allshare_volume_mute" android:src="@drawable/music_player_ic_mute" android:tint="@color/full_player_volume_dmr_icon_color" android:layout_marginStart="@dimen/full_player_volume_panel_dmr_icon_margin" style="@style/AllShareVolumeButton" />
     <ImageView android:id="@id/allshare_volume_up" android:src="@drawable/music_ic_dlna_vol_up" android:tint="@color/full_player_volume_dmr_icon_color" android:layout_marginStart="@dimen/full_player_volume_panel_dmr_icon_margin" android:layout_marginEnd="@dimen/full_player_volume_panel_dmr_icon_margin" style="@style/AllShareVolumeButton" />
     <ImageView android:id="@id/allshare_volume_down" android:src="@drawable/music_ic_dlna_vol_down" android:tint="@color/full_player_volume_dmr_icon_color" android:layout_marginEnd="@dimen/full_player_volume_panel_dmr_icon_margin" style="@style/AllShareVolumeButton" />
 </LinearLayout>

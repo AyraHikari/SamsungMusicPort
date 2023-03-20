@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/common/api/Scope;
-.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.super Lcom/google/android/gms/common/internal/safeparcel/a;
 
 # interfaces
 .implements Lcom/google/android/gms/common/internal/ReflectedParcelable;
@@ -18,35 +18,34 @@
 
 
 # instance fields
-.field private final a:I
+.field public final a:I
 
-.field private final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 24
-    new-instance v0, Lcom/google/android/gms/common/api/zza;
+    new-instance v0, Lcom/google/android/gms/common/api/n;
 
-    invoke-direct {v0}, Lcom/google/android/gms/common/api/zza;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/common/api/n;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/api/Scope;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method constructor <init>(ILjava/lang/String;)V
+.method public constructor <init>(ILjava/lang/String;)V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/a;-><init>()V
 
     const-string v0, "scopeUri must not be null or empty"
 
     .line 2
-    invoke-static {p2, v0}, Lcom/google/android/gms/common/internal/Preconditions;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2, v0}, Lcom/google/android/gms/common/internal/s;->h(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     .line 3
     iput p1, p0, Lcom/google/android/gms/common/api/Scope;->a:I
@@ -62,7 +61,7 @@
 
     const/4 v0, 0x1
 
-    .line 6
+    .line 5
     invoke-direct {p0, v0, p1}, Lcom/google/android/gms/common/api/Scope;-><init>(ILjava/lang/String;)V
 
     return-void
@@ -70,10 +69,9 @@
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
+.method public final e()Ljava/lang/String;
     .locals 1
 
-    .line 8
     iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
 
     return-object v0
@@ -88,7 +86,7 @@
 
     return p1
 
-    .line 11
+    .line 1
     :cond_0
     instance-of v0, p1, Lcom/google/android/gms/common/api/Scope;
 
@@ -98,7 +96,7 @@
 
     return p1
 
-    .line 13
+    .line 2
     :cond_1
     iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
 
@@ -116,7 +114,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 14
     iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -129,7 +126,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    .line 15
     iget-object v0, p0, Lcom/google/android/gms/common/api/Scope;->b:Ljava/lang/String;
 
     return-object v0
@@ -138,20 +134,20 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
 
-    .line 17
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->a(Landroid/os/Parcel;)I
+    .line 1
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/c;->a(Landroid/os/Parcel;)I
 
     move-result p2
 
-    .line 18
+    .line 2
     iget v0, p0, Lcom/google/android/gms/common/api/Scope;->a:I
 
     const/4 v1, 0x1
 
-    invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->a(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v0}, Lcom/google/android/gms/common/internal/safeparcel/c;->k(Landroid/os/Parcel;II)V
 
-    .line 20
-    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Scope;->a()Ljava/lang/String;
+    .line 3
+    invoke-virtual {p0}, Lcom/google/android/gms/common/api/Scope;->e()Ljava/lang/String;
 
     move-result-object v0
 
@@ -159,11 +155,11 @@
 
     const/4 v2, 0x0
 
-    .line 21
-    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->a(Landroid/os/Parcel;ILjava/lang/String;Z)V
+    .line 4
+    invoke-static {p1, v1, v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/c;->p(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
-    .line 22
-    invoke-static {p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelWriter;->a(Landroid/os/Parcel;I)V
+    .line 5
+    invoke-static {p1, p2}, Lcom/google/android/gms/common/internal/safeparcel/c;->b(Landroid/os/Parcel;I)V
 
     return-void
 .end method

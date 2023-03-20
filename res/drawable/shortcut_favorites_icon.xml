@@ -6,7 +6,5 @@
             <solid android:color="@color/short_cut_icon_background" />
         </shape>
     </item>
-    <item>
-        <bitmap android:src="@drawable/quick_ic_favorites" />
-    </item>
+    <item android:drawable="@drawable/quick_ic_favorites" />
 </layer-list>

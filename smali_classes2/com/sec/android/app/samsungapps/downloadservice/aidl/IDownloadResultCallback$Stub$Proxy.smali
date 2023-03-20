@@ -1,6 +1,6 @@
 .class Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "IDownloadResultCallback.java"
 
 # interfaces
 .implements Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback;
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "Proxy"
 .end annotation
 
@@ -22,13 +22,13 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/os/IBinder;)V
+.method public constructor <init>(Landroid/os/IBinder;)V
     .locals 0
 
-    .line 92
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 93
+    .line 2
     iput-object p1, p0, Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-void
@@ -39,7 +39,6 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 1
 
-    .line 97
     iget-object v0, p0, Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-object v0
@@ -55,13 +54,8 @@
 
 .method public onDownloadCanceled()V
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 152
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
@@ -69,10 +63,10 @@
     :try_start_0
     const-string v1, "com.sec.android.app.samsungapps.downloadservice.aidl.IDownloadResultCallback"
 
-    .line 154
+    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 155
+    .line 3
     iget-object v1, p0, Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x5
@@ -85,7 +79,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 158
+    .line 4
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return-void
@@ -95,18 +89,14 @@
 
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
+    .line 5
     throw v1
 .end method
 
 .method public onDownloadFailed()V
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 141
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
@@ -114,10 +104,10 @@
     :try_start_0
     const-string v1, "com.sec.android.app.samsungapps.downloadservice.aidl.IDownloadResultCallback"
 
-    .line 143
+    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 144
+    .line 3
     iget-object v1, p0, Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x4
@@ -130,7 +120,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 147
+    .line 4
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return-void
@@ -140,18 +130,14 @@
 
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
+    .line 5
     throw v1
 .end method
 
 .method public onDownloadSuccess()V
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 130
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
@@ -159,10 +145,10 @@
     :try_start_0
     const-string v1, "com.sec.android.app.samsungapps.downloadservice.aidl.IDownloadResultCallback"
 
-    .line 132
+    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 133
+    .line 3
     iget-object v1, p0, Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x3
@@ -175,7 +161,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 136
+    .line 4
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return-void
@@ -185,18 +171,14 @@
 
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
+    .line 5
     throw v1
 .end method
 
 .method public onInstallFailed(Ljava/lang/String;)V
     .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 118
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
@@ -204,13 +186,13 @@
     :try_start_0
     const-string v1, "com.sec.android.app.samsungapps.downloadservice.aidl.IDownloadResultCallback"
 
-    .line 120
+    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 121
+    .line 3
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 122
+    .line 4
     iget-object p1, p0, Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v1, 0x2
@@ -223,7 +205,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 125
+    .line 5
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return-void
@@ -233,18 +215,14 @@
 
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
+    .line 6
     throw p1
 .end method
 
 .method public onProgress(JJ)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 105
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
@@ -252,16 +230,16 @@
     :try_start_0
     const-string v1, "com.sec.android.app.samsungapps.downloadservice.aidl.IDownloadResultCallback"
 
-    .line 107
+    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 108
+    .line 3
     invoke-virtual {v0, p1, p2}, Landroid/os/Parcel;->writeLong(J)V
 
-    .line 109
+    .line 4
     invoke-virtual {v0, p3, p4}, Landroid/os/Parcel;->writeLong(J)V
 
-    .line 110
+    .line 5
     iget-object p1, p0, Lcom/sec/android/app/samsungapps/downloadservice/aidl/IDownloadResultCallback$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 p2, 0x0
@@ -272,7 +250,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 113
+    .line 6
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return-void
@@ -282,5 +260,6 @@
 
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
+    .line 7
     throw p1
 .end method

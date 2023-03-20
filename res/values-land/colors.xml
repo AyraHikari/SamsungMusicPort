@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="full_player_title_main_theme">@color/white_opacity_100</color>
-    <color name="full_player_title_sub_theme">@color/white_opacity_60</color>
-    <color name="media_router_player_color">@color/dark_gray_opacity_80</color>
-    <color name="full_player_menu_icon_color">@color/white_opacity_100</color>
-    <color name="full_player_menu_volume_icon_color">@color/white_opacity_100</color>
-    <color name="full_player_menu_volume_icon_disabled_color">@color/white_opacity_40</color>
+    <color name="full_player_title_main">@color/basics_text_white</color>
+    <color name="full_player_title_sub">@color/white_opacity_60</color>
     <color name="lock_player_shortcut_stroke">#66ffffff</color>
+    <color name="melon_home_mix_item_text1">#fffafafa</color>
 </resources>

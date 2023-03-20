@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplayStatusSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "WifiDisplayStatusSdlCompat.java"
 
 
 # annotations
@@ -27,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +37,7 @@
 
     const-string v0, "android.hardware.display.extra.WIFI_DISPLAY_STATUS"
 
-    .line 33
+    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p0
@@ -47,7 +46,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 35
+    .line 2
     invoke-virtual {p0}, Landroid/hardware/display/WifiDisplayStatus;->getActiveDisplayState()I
 
     move-result p0
@@ -73,24 +72,24 @@
         }
     .end annotation
 
-    .line 42
+    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 44
+    .line 2
     invoke-virtual {p0}, Landroid/hardware/display/DisplayManager;->getWifiDisplayStatus()Landroid/hardware/display/WifiDisplayStatus;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 46
+    .line 3
     invoke-virtual {p0}, Landroid/hardware/display/WifiDisplayStatus;->getDisplays()[Landroid/hardware/display/WifiDisplay;
 
     move-result-object p0
 
-    .line 47
+    .line 4
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -100,40 +99,40 @@
 
     aget-object v3, p0, v2
 
-    .line 48
+    .line 5
     invoke-virtual {v3}, Landroid/hardware/display/WifiDisplay;->isAvailable()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 49
+    .line 6
     new-instance v4, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplayStatusSdlCompat$SdlWifiDeviceInfo;
 
     invoke-direct {v4}, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplayStatusSdlCompat$SdlWifiDeviceInfo;-><init>()V
 
-    .line 50
+    .line 7
     invoke-virtual {v3}, Landroid/hardware/display/WifiDisplay;->getPrimaryDeviceType()Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, v4, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplayStatusSdlCompat$SdlWifiDeviceInfo;->primaryDeviceType:Ljava/lang/String;
 
-    .line 51
+    .line 8
     invoke-virtual {v3}, Landroid/hardware/display/WifiDisplay;->getDeviceAddress()Ljava/lang/String;
 
     move-result-object v5
 
     iput-object v5, v4, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplayStatusSdlCompat$SdlWifiDeviceInfo;->deviceAddress:Ljava/lang/String;
 
-    .line 52
+    .line 9
     invoke-virtual {v3}, Landroid/hardware/display/WifiDisplay;->getDeviceName()Ljava/lang/String;
 
     move-result-object v3
 
     iput-object v3, v4, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplayStatusSdlCompat$SdlWifiDeviceInfo;->deviceName:Ljava/lang/String;
 
-    .line 53
+    .line 10
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_0
@@ -151,14 +150,14 @@
 .method public static getWifiDisplayStatus(Landroid/hardware/display/DisplayManager;)I
     .locals 0
 
-    .line 23
+    .line 1
     invoke-virtual {p0}, Landroid/hardware/display/DisplayManager;->getWifiDisplayStatus()Landroid/hardware/display/WifiDisplayStatus;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 25
+    .line 2
     invoke-virtual {p0}, Landroid/hardware/display/WifiDisplayStatus;->getActiveDisplayState()I
 
     move-result p0
@@ -174,16 +173,16 @@
 .method public static isScanning(Landroid/hardware/display/DisplayManager;)Z
     .locals 2
 
-    .line 63
+    .line 1
     invoke-virtual {p0}, Landroid/hardware/display/DisplayManager;->getWifiDisplayStatus()Landroid/hardware/display/WifiDisplayStatus;
 
     move-result-object p0
 
     const/4 v0, 0x0
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_0
 
-    .line 65
+    .line 2
     invoke-virtual {p0}, Landroid/hardware/display/WifiDisplayStatus;->getScanState()I
 
     move-result p0
@@ -192,11 +191,8 @@
 
     if-ne p0, v1, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v1
 
     :cond_0
-    return v0
-
-    :cond_1
     return v0
 .end method

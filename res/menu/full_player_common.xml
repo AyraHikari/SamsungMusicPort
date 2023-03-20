@@ -3,24 +3,24 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:menuCategory="system">
         <item android:icon="@drawable/menu_mobile_device_to_tv" android:id="@id/menu_mobile_device_to_tv" android:visible="false" android:title="@string/music_core_smart_view" app:showAsAction="always" />
-        <item android:icon="@drawable/menu_volume" android:id="@id/menu_volume" android:title="@string/tts_volume" app:showAsAction="always" />
-        <item android:icon="@drawable/menu_player_sound_alive" android:id="@id/menu_sound_alive" android:title="@string/menu_sound_quality_and_effects" app:showAsAction="always" />
+        <item android:icon="@drawable/music_player_ic_volume" android:id="@id/menu_volume" android:title="@string/tts_volume" app:showAsAction="always" />
+        <item android:icon="@drawable/music_player_ic_playing" android:id="@id/menu_sound_alive" android:title="@string/menu_sound_quality_and_effects" app:showAsAction="always" />
+        <item android:id="@id/menu_share" android:title="@string/menu_share" />
+        <item android:id="@id/menu_details_full_player" android:title="@string/menu_track_details" />
         <item android:id="@id/menu_online_share" android:visible="false" android:title="@string/menu_share" />
         <item android:id="@id/menu_download" android:visible="false" android:title="@string/download" />
-        <item android:id="@id/menu_share" android:title="@string/menu_share" />
+        <item android:id="@id/menu_online_track_details" android:visible="false" android:title="@string/menu_track_details" />
         <item android:id="@id/menu_go_album" android:title="@string/album" />
         <item android:id="@id/menu_go_artist" android:title="@string/artist" />
         <item android:id="@id/menu_online_go_album" android:visible="false" android:title="@string/album" />
         <item android:id="@id/menu_online_go_artist" android:visible="false" android:title="@string/artist" />
         <item android:id="@id/menu_music_video" android:visible="false" android:title="@string/milk_store_music_video" />
+        <item android:id="@id/legacy_menu_set_as" android:title="@string/legacy_set_as" />
         <item android:id="@id/menu_delete" android:title="@string/menu_delete" />
         <item android:id="@id/menu_play_on_other_device" android:title="@string/play_on_other_device" />
         <item android:id="@id/menu_screen_sharing" android:title="@string/music_core_smart_view" />
-        <item android:id="@id/legacy_menu_set_as" android:title="@string/legacy_set_as" />
         <item android:id="@id/menu_listen_via_bt" android:title="@string/menu_via_bluetooth" />
         <item android:id="@id/menu_listen_via_device" android:title="@string/menu_via_device" />
-        <item android:id="@id/menu_details_full_player" android:title="@string/menu_details" />
-        <item android:id="@id/menu_media_router" android:visible="false" android:title="@string/menu_media_route_title" />
         <item android:id="@id/menu_launch_setting" android:title="@string/settings" />
     </group>
 </menu>

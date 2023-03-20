@@ -2,5 +2,5 @@
 <shape android:shape="rectangle"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <size android:height="@dimen/mu_list_divider_height_winset" />
-    <solid android:color="@color/divider_list_blur" />
+    <solid android:color="@color/legacy_divider_list_blur" />
 </shape>

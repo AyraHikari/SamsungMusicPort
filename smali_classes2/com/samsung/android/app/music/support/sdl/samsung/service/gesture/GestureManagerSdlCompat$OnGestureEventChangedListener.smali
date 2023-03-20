@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$OnGestureEventChangedListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "GestureManagerSdlCompat.java"
 
 
 # annotations

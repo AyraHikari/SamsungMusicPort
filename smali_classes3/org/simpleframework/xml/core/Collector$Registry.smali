@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/core/Collector$Registry;
 .super Ljava/util/LinkedHashMap;
-.source "SourceFile"
+.source "Collector.java"
 
 
 # annotations
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "Registry"
 .end annotation
 
@@ -17,7 +17,7 @@
     value = {
         "Ljava/util/LinkedHashMap<",
         "Ljava/lang/Object;",
-        "Ljava/lang/Object;",
+        "Lorg/simpleframework/xml/core/Variable;",
         ">;"
     }
 .end annotation
@@ -27,16 +27,16 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 179
+    .line 1
     invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lorg/simpleframework/xml/core/Collector$1;)V
+.method public synthetic constructor <init>(Lorg/simpleframework/xml/core/Collector$1;)V
     .locals 0
 
-    .line 179
+    .line 2
     invoke-direct {p0}, Lorg/simpleframework/xml/core/Collector$Registry;-><init>()V
 
     return-void
@@ -55,8 +55,7 @@
         }
     .end annotation
 
-    .line 189
-    invoke-virtual {p0}, Lorg/simpleframework/xml/core/Collector$Registry;->keySet()Ljava/util/Set;
+    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
 

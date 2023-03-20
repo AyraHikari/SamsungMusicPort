@@ -1,6 +1,6 @@
 .class public Lcom/samsung/auth/Locale;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Locale.java"
 
 
 # annotations
@@ -26,29 +26,24 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     :try_start_0
-    const-string v0, "gnustl_shared"
-
-    .line 22
-    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
-
     const-string v0, "locale-font"
 
-    .line 23
+    .line 1
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
-    .line 25
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
     return-void
@@ -57,34 +52,18 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static native f1(I[B[B[B[BIJ)[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/samsung/auth/LocaleFontException;
-        }
-    .end annotation
 .end method
 
 .method public static native f2(I[B[B[B[BIJ)[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/samsung/auth/LocaleFontException;
-        }
-    .end annotation
 .end method
 
 .method public static native f3(I[B[B[B[BIJ)[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/samsung/auth/LocaleFontException;
-        }
-    .end annotation
 .end method
 
 .method public static native setApplicationInfo(Ljava/lang/String;Ljava/lang/String;)V

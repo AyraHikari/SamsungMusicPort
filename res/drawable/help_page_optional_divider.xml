@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape android:shape="line"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <stroke android:width="6.0px" android:color="@color/mu_dot_divider" android:dashWidth="6.0px" android:dashGap="3.0dip" />
+    <stroke android:width="6.0px" android:color="@color/basics_dot_divider" android:dashWidth="6.0px" android:dashGap="3.0dip" />
 </shape>

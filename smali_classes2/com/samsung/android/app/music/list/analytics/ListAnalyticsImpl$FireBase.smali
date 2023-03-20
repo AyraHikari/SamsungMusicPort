@@ -1,9 +1,9 @@
-.class final Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;
+.class public final Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ListAnalyticsImpl.kt"
 
 # interfaces
-.implements Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment$ListAnalytics;
+.implements Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment$f;
 
 
 # annotations
@@ -12,39 +12,15 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x12
+    accessFlags = 0x11
     name = "FireBase"
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;
+.field public final a:Lcom/samsung/android/app/music/list/analytics/b;
 
-.field private final b:Lkotlin/jvm/functions/Function3;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function3<",
-            "Landroid/view/View;",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Long;",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final c:Lkotlin/jvm/functions/Function3;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function3<",
-            "Landroid/view/View;",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Long;",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic b:Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;
 
 
 # direct methods
@@ -56,89 +32,98 @@
         }
     .end annotation
 
-    .line 30
-    iput-object p1, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->a:Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;
+    const-string v0, "this$0"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iput-object p1, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->b:Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 31
-    new-instance v0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$itemClick$1;
+    .line 2
+    invoke-static {p1}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->e(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$itemClick$1;-><init>(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;)V
+    move-result-object v0
 
-    check-cast v0, Lkotlin/jvm/functions/Function3;
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/h;
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->b:Lkotlin/jvm/functions/Function3;
+    move-result-object v0
 
-    .line 58
-    new-instance v0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$thumbnailClick$1;
+    const/4 v1, 0x0
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$thumbnailClick$1;-><init>(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;)V
+    if-nez v0, :cond_0
 
-    check-cast v0, Lkotlin/jvm/functions/Function3;
-
-    iput-object v0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->c:Lkotlin/jvm/functions/Function3;
-
-    .line 86
-    invoke-static {p1}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->b(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;
-
-    move-result-object p1
-
-    .line 140
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;->isResumed()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_8
-
-    const/4 p1, 0x0
-
-    .line 87
-    check-cast p1, Ljava/lang/String;
-
-    .line 88
-    iget-object v0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->a:Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;
-
-    invoke-static {v0}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->a(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)I
-
-    move-result v0
-
-    const v1, 0x100002
-
-    if-eq v0, v1, :cond_7
-
-    const v1, 0x100004
-
-    if-eq v0, v1, :cond_1
-
-    const v1, 0x100007
-
-    if-eq v0, v1, :cond_0
+    move-object v0, v1
 
     goto :goto_0
 
     :cond_0
-    const-string p1, "my_music_folder_detail"
+    invoke-static {v0}, Lcom/samsung/android/app/music/list/analytics/d;->a(Landroid/app/Activity;)Lcom/samsung/android/app/music/list/analytics/b;
 
-    goto :goto_0
+    move-result-object v0
 
-    .line 90
+    :goto_0
+    iput-object v0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->a:Lcom/samsung/android/app/music/list/analytics/b;
+
+    .line 3
+    invoke-static {p1}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->e(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;
+
+    move-result-object v0
+
+    .line 4
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getLifecycle()Landroidx/lifecycle/k;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroidx/lifecycle/k;->d()Landroidx/lifecycle/k$c;
+
+    move-result-object v2
+
+    sget-object v3, Landroidx/lifecycle/k$c;->e:Landroidx/lifecycle/k$c;
+
+    invoke-virtual {v2, v3}, Landroidx/lifecycle/k$c;->a(Landroidx/lifecycle/k$c;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_a
+
+    .line 5
+    invoke-static {p1}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->f(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)I
+
+    move-result v0
+
+    const v2, 0x100002
+
+    if-eq v0, v2, :cond_7
+
+    const v2, 0x100004
+
+    if-eq v0, v2, :cond_2
+
+    const p1, 0x100007
+
+    if-eq v0, p1, :cond_1
+
+    goto :goto_2
+
     :cond_1
-    iget-object p1, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->a:Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;
+    const-string v1, "my_music_folder_detail"
 
-    invoke-static {p1}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->b(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;
+    goto :goto_2
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;->getArguments()Landroid/os/Bundle;
-
-    move-result-object p1
-
-    if-nez p1, :cond_2
-
-    invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->a()V
-
+    .line 6
     :cond_2
+    invoke-static {p1}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->e(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lkotlin/jvm/internal/j;->c(Ljava/lang/Object;)V
+
     const-string v0, "key_playlist_id"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
@@ -153,7 +138,10 @@
 
     const-string p1, "my_music_tab_playlists_2nd_recently_added"
 
-    goto :goto_0
+    :goto_1
+    move-object v1, p1
+
+    goto :goto_2
 
     :cond_3
     const-wide/16 v2, -0xc
@@ -164,7 +152,7 @@
 
     const-string p1, "my_music_tab_playlists_2nd_most_played"
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_4
     const-wide/16 v2, -0xd
@@ -175,7 +163,7 @@
 
     const-string p1, "my_music_tab_playlists_2nd_recently_played"
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_5
     const-wide/16 v2, -0xb
@@ -186,89 +174,100 @@
 
     const-string p1, "my_music_tab_playlists_2nd_favourites"
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_6
     const-string p1, "my_music_playlist_detail"
 
-    goto :goto_0
-
-    :cond_7
-    const-string p1, "my_music_album_detail"
-
-    :goto_0
-    if-eqz p1, :cond_9
-
-    .line 102
-    iget-object v0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->a:Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;
-
-    invoke-static {v0}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;->b(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;)Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Activity;
-
-    invoke-static {v0, p1}, Lcom/samsung/android/app/music/list/analytics/GoogleFireBase;->a(Landroid/app/Activity;Ljava/lang/String;)V
-
     goto :goto_1
 
-    .line 143
+    :cond_7
+    const-string v1, "my_music_album_detail"
+
+    :goto_2
+    if-nez v1, :cond_8
+
+    goto :goto_3
+
+    .line 7
     :cond_8
-    new-instance v0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$$special$$inlined$doOnResume$1;
+    invoke-static {p0}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->c(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;)Lcom/samsung/android/app/music/list/analytics/b;
 
-    invoke-direct {v0, p1, p0}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$$special$$inlined$doOnResume$1;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;)V
+    move-result-object p1
 
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;
+    if-nez p1, :cond_9
 
-    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;->addOnResumeLifeCycleCallback(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;)V
+    goto :goto_3
 
     :cond_9
-    :goto_1
+    invoke-virtual {p1, v1}, Lcom/samsung/android/app/music/list/analytics/b;->f(Ljava/lang/String;)V
+
+    goto :goto_3
+
+    .line 8
+    :cond_a
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getLifecycle()Landroidx/lifecycle/k;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$special$$inlined$doOnResume$1;
+
+    invoke-direct {v2, v0, p1, p0}, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase$special$$inlined$doOnResume$1;-><init>(Lcom/samsung/android/app/musiclibrary/ui/k;Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl;Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;)V
+
+    invoke-virtual {v1, v2}, Landroidx/lifecycle/k;->a(Landroidx/lifecycle/r;)V
+
+    :goto_3
     return-void
+.end method
+
+.method public static final synthetic c(Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;)Lcom/samsung/android/app/music/list/analytics/b;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->a:Lcom/samsung/android/app/music/list/analytics/b;
+
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public a()Lkotlin/jvm/functions/Function3;
+.method public a()Lkotlin/jvm/functions/q;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lkotlin/jvm/functions/Function3<",
+            "Lkotlin/jvm/functions/q<",
             "Landroid/view/View;",
             "Ljava/lang/Integer;",
             "Ljava/lang/Long;",
-            "Lkotlin/Unit;",
+            "Lkotlin/u;",
             ">;"
         }
     .end annotation
 
-    .line 31
-    iget-object v0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->b:Lkotlin/jvm/functions/Function3;
+    invoke-static {p0}, Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment$f$a;->a(Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment$f;)Lkotlin/jvm/functions/q;
+
+    move-result-object v0
 
     return-object v0
 .end method
 
-.method public b()Lkotlin/jvm/functions/Function3;
+.method public b()Lkotlin/jvm/functions/q;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lkotlin/jvm/functions/Function3<",
+            "Lkotlin/jvm/functions/q<",
             "Landroid/view/View;",
             "Ljava/lang/Integer;",
             "Ljava/lang/Long;",
-            "Lkotlin/Unit;",
+            "Lkotlin/u;",
             ">;"
         }
     .end annotation
 
-    .line 58
-    iget-object v0, p0, Lcom/samsung/android/app/music/list/analytics/ListAnalyticsImpl$FireBase;->c:Lkotlin/jvm/functions/Function3;
+    invoke-static {p0}, Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment$f$a;->b(Lcom/samsung/android/app/musiclibrary/ui/list/RecyclerViewFragment$f;)Lkotlin/jvm/functions/q;
+
+    move-result-object v0
 
     return-object v0
 .end method

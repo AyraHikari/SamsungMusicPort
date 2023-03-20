@@ -5,6 +5,5 @@
     <group android:id="@id/menu_more_group">
         <item android:id="@id/menu_sound_alive" android:title="@string/menu_sound_quality_and_effects" />
         <item android:id="@id/menu_launch_setting" android:title="@string/settings" />
-        <item android:id="@id/menu_contact_us" android:title="@string/contact_us" />
     </group>
 </menu>

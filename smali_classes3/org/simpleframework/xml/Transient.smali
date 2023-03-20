@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lorg/simpleframework/xml/Transient;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Transient.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,13 +1,12 @@
 .class public Lorg/simpleframework/xml/core/UnionException;
 .super Lorg/simpleframework/xml/core/PersistenceException;
-.source "SourceFile"
+.source "UnionException.java"
 
 
 # direct methods
 .method public varargs constructor <init>(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 39
     invoke-static {p1, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1

@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AccessTokenResponse.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -19,26 +19,25 @@
 
 
 # instance fields
-.field access_token:Ljava/lang/String;
+.field public access_token:Ljava/lang/String;
 
-.field created_date:Ljava/lang/String;
+.field public created_date:Ljava/lang/String;
 
-.field expires_in:I
+.field public expires_in:I
 
-.field id:Ljava/lang/String;
+.field public id:Ljava/lang/String;
 
-.field resultCode:I
+.field public resultCode:I
 
-.field scope:Ljava/lang/String;
+.field public scope:Ljava/lang/String;
 
-.field token_type:Ljava/lang/String;
+.field public token_type:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 52
     new-instance v0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse$1;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse$1;-><init>()V
@@ -48,55 +47,55 @@
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 26
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->id:Ljava/lang/String;
 
-    .line 28
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->resultCode:I
 
-    .line 29
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->access_token:Ljava/lang/String;
 
-    .line 30
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->token_type:Ljava/lang/String;
 
-    .line 31
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->scope:Ljava/lang/String;
 
-    .line 32
+    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->created_date:Ljava/lang/String;
 
-    .line 33
+    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -119,7 +118,6 @@
 .method public getAccessToken()Ljava/lang/String;
     .locals 1
 
-    .line 65
     iget-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->access_token:Ljava/lang/String;
 
     return-object v0
@@ -128,7 +126,6 @@
 .method public getCreatedDate()Ljava/lang/String;
     .locals 1
 
-    .line 73
     iget-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->created_date:Ljava/lang/String;
 
     return-object v0
@@ -137,7 +134,6 @@
 .method public getExpiresIn()I
     .locals 1
 
-    .line 77
     iget v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->expires_in:I
 
     return v0
@@ -146,7 +142,6 @@
 .method public getTokenType()Ljava/lang/String;
     .locals 1
 
-    .line 69
     iget-object v0, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->token_type:Ljava/lang/String;
 
     return-object v0
@@ -155,37 +150,37 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 43
+    .line 1
     iget-object p2, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->id:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 44
+    .line 2
     iget p2, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->resultCode:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 45
+    .line 3
     iget-object p2, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->access_token:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 46
+    .line 4
     iget-object p2, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->token_type:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 47
+    .line 5
     iget-object p2, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->scope:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 48
+    .line 6
     iget-object p2, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->created_date:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 49
+    .line 7
     iget p2, p0, Lcom/samsung/android/app/music/model/spotify/AccessTokenResponse;->expires_in:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple android:color="@color/ripple_button_player"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:gravity="center" android:id="@android:id/mask" android:height="@dimen/full_player_button_ripple_size" android:width="@dimen/full_player_button_ripple_size">
+    <item android:gravity="center" android:id="@android:id/mask">
         <shape android:shape="oval">
             <solid android:color="@android:color/white" />
         </shape>

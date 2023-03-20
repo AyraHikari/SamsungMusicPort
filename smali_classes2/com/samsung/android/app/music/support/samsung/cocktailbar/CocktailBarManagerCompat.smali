@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "CocktailBarManagerCompat.java"
 
 
 # annotations
@@ -20,8 +20,6 @@
     .end annotation
 .end field
 
-.field private static final sInstanceLock:Ljava/lang/Object;
-
 
 # instance fields
 .field private final mContext:Landroid/content/Context;
@@ -32,26 +30,13 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 38
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->sInstanceLock:Ljava/lang/Object;
-
-    return-void
-.end method
-
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 16
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -64,7 +49,7 @@
 .method private ensureParent()Z
     .locals 2
 
-    .line 63
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mParent:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     const/4 v1, 0x1
@@ -73,7 +58,7 @@
 
     return v1
 
-    .line 66
+    .line 2
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mContext:Landroid/content/Context;
 
@@ -82,9 +67,6 @@
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mParent:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
-
-    .line 67
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mParent:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     if-eqz v0, :cond_1
 
@@ -100,30 +82,30 @@
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
     .locals 2
 
-    .line 25
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->sInstance:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 
     if-nez v0, :cond_1
 
-    .line 26
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->sInstanceLock:Ljava/lang/Object;
+    .line 2
+    const-class v0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 
     monitor-enter v0
 
-    .line 27
+    .line 3
     :try_start_0
     sget-object v1, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->sInstance:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 
     if-nez v1, :cond_0
 
-    .line 28
+    .line 4
     new-instance v1, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;-><init>(Landroid/content/Context;)V
 
     sput-object v1, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->sInstance:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 
-    .line 30
+    .line 5
     :cond_0
     monitor-exit v0
 
@@ -138,7 +120,7 @@
 
     throw p0
 
-    .line 32
+    .line 6
     :cond_1
     :goto_0
     sget-object p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->sInstance:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
@@ -151,21 +133,21 @@
 .method public registerStateListener(Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;)Z
     .locals 1
 
-    .line 48
+    .line 1
     new-instance v0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$1;
 
     invoke-direct {v0, p0, p1}, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$1;-><init>(Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;)V
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mStateChangedListener:Lcom/samsung/android/cocktailbar/SemCocktailBarManager$CocktailBarStateChangedListener;
 
-    .line 55
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->ensureParent()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 56
+    .line 3
     iget-object p1, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mParent:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mStateChangedListener:Lcom/samsung/android/cocktailbar/SemCocktailBarManager$CocktailBarStateChangedListener;
@@ -185,14 +167,12 @@
 .method public unregisterStateListener(Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;)V
     .locals 1
 
-    .line 71
+    .line 1
     iget-object p1, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mParent:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     if-eqz p1, :cond_0
 
-    .line 72
-    iget-object p1, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mParent:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
-
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;->mStateChangedListener:Lcom/samsung/android/cocktailbar/SemCocktailBarManager$CocktailBarStateChangedListener;
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->unregisterStateListener(Lcom/samsung/android/cocktailbar/SemCocktailBarManager$CocktailBarStateChangedListener;)V

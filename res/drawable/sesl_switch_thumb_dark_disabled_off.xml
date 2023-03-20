@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:gravity="center">
+    <item android:gravity="center" android:left="3.0dip" android:right="3.0dip">
         <shape android:shape="oval">
             <size android:height="22.0dip" android:width="22.0dip" />
             <solid android:color="@color/sesl_switch_thumb_off_disabled_color_dark" />

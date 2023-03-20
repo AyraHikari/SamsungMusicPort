@@ -1,10 +1,10 @@
 .class public Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SpotifySimplifiedTrack.java"
 
 
 # instance fields
-.field artists:Ljava/util/List;
+.field public artists:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -14,7 +14,7 @@
     .end annotation
 .end field
 
-.field available_markets:Ljava/util/List;
+.field public available_markets:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -24,44 +24,44 @@
     .end annotation
 .end field
 
-.field disc_number:I
+.field public disc_number:I
 
-.field duration_ms:I
+.field public duration_ms:I
 
-.field explicit:Z
+.field public explicit:Z
 
-.field href:Ljava/lang/String;
+.field public href:Ljava/lang/String;
 
-.field id:Ljava/lang/String;
+.field public id:Ljava/lang/String;
 
-.field is_local:Z
+.field public is_local:Z
 
-.field name:Ljava/lang/String;
+.field public name:Ljava/lang/String;
 
-.field preview_url:Ljava/lang/String;
+.field public preview_url:Ljava/lang/String;
 
-.field track_number:I
+.field public track_number:I
 
-.field type:Ljava/lang/String;
+.field public type:Ljava/lang/String;
 
-.field uri:Ljava/lang/String;
+.field public uri:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 1
 
-    .line 42
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 43
+    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->available_markets:Ljava/util/List;
 
-    .line 44
+    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -84,7 +84,6 @@
         }
     .end annotation
 
-    .line 48
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->artists:Ljava/util/List;
 
     return-object v0
@@ -101,7 +100,6 @@
         }
     .end annotation
 
-    .line 52
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->available_markets:Ljava/util/List;
 
     return-object v0
@@ -110,7 +108,6 @@
 .method public getDiscNumber()I
     .locals 1
 
-    .line 57
     iget v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->disc_number:I
 
     return v0
@@ -119,7 +116,6 @@
 .method public getDurationMs()I
     .locals 1
 
-    .line 61
     iget v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->duration_ms:I
 
     return v0
@@ -128,7 +124,6 @@
 .method public getExplicit()Z
     .locals 1
 
-    .line 65
     iget-boolean v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->explicit:Z
 
     return v0
@@ -137,7 +132,6 @@
 .method public getHref()Ljava/lang/String;
     .locals 1
 
-    .line 69
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->href:Ljava/lang/String;
 
     return-object v0
@@ -146,7 +140,6 @@
 .method public getId()Ljava/lang/String;
     .locals 1
 
-    .line 73
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->id:Ljava/lang/String;
 
     return-object v0
@@ -155,7 +148,6 @@
 .method public getIsLocal()Z
     .locals 1
 
-    .line 77
     iget-boolean v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->is_local:Z
 
     return v0
@@ -164,7 +156,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 81
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->name:Ljava/lang/String;
 
     return-object v0
@@ -173,7 +164,6 @@
 .method public getPreviewUrl()Ljava/lang/String;
     .locals 1
 
-    .line 85
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->preview_url:Ljava/lang/String;
 
     return-object v0
@@ -182,7 +172,6 @@
 .method public getTrackNumber()I
     .locals 1
 
-    .line 89
     iget v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->track_number:I
 
     return v0
@@ -191,7 +180,6 @@
 .method public getType()Ljava/lang/String;
     .locals 1
 
-    .line 93
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->type:Ljava/lang/String;
 
     return-object v0
@@ -200,7 +188,6 @@
 .method public getUri()Ljava/lang/String;
     .locals 1
 
-    .line 97
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifySimplifiedTrack;->uri:Ljava/lang/String;
 
     return-object v0
@@ -209,10 +196,9 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 102
-    sget-object v0, Lorg/apache/commons/lang3/builder/ToStringStyle;->MULTI_LINE_STYLE:Lorg/apache/commons/lang3/builder/ToStringStyle;
+    sget-object v0, Lorg/apache/commons/lang3/builder/e;->B:Lorg/apache/commons/lang3/builder/e;
 
-    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/ToStringBuilder;->b(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/ToStringStyle;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/d;->f(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/e;)Ljava/lang/String;
 
     move-result-object v0
 

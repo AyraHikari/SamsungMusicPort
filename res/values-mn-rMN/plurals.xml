@@ -12,61 +12,9 @@
         <item quantity="other">Дуунууд</item>
         <item quantity="one">Дуу</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d дуу Дуртай зүйлсэд нэмсэн. Дуртай зүйлсэд аль хэдийн байгаа дуунууд нэмэгдээгүй.</item>
-        <item quantity="one">%d дуу Дуртай зүйлсэд нэмсэн. Дуу аль хэдийнэ Дуртай зүйлс байгаад нэмэгдсэнгүй.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d дуу</item>
         <item quantity="one">%d дуу</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d дуу Дуртай зүйлсээс арилгасан.</item>
-        <item quantity="one">%d дуу Дуртай зүйлсээс арилгасан.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d дуу дуртай зүйлсэд нэмсэн</item>
-        <item quantity="one">%d дуу Дуртай зүйлсэд нэмсэн.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Та санал болгосноос зөвхөн %d хүртэлх дууг арилгах боломжтой. Арилгасан дууг харж, сэргээх заримыг нь сонгоод дараа нь дахин оролд.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Та санал болгосноос зөвхөн %d хүртэлх дууг арилгах боломжтой. Арилгасан дууг харж, сэргээх заримыг нь сонгоод дараа нь дахин оролд.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Сар бүр %d үнэгүй дууг эдлэхийн тулд Радио тоглуулах товчийг товш.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Сар бүр %d үнэгүй дууг эдлэхийн тулд Радио тоглуулах товчийг товш.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">%d-с их дуучид сонгох боломжгүй.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d-с их дуучин сонгох боломжгүй.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">%d-с их жанрууд сонгох боломжгүй.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d-с их жанр сонгох боломжгүй.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">%d-с их дуунууд сонгох боломжгүй.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d-с их дуу сонгох боломжгүй.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d секунд</item>
@@ -76,22 +24,38 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">Та %1$s-г %2$d удаа ашиглаж болно</item>
-        <item quantity="one">Та %s-г 1 удаа ашиглаж болно</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">%d дууг зохиогчийн эрхийн асуудлын улмаас дээд зэргийн тасалбараар худалдаж авах боломжгүй. Та тэдгээрийг тусад нь худалдаж авах боломжтой.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">%d өдрийн турш бүү харуул</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d дууг зохиогчийн эрхийн асуудлын улмаас дээд зэргийн тасалбараар худалдаж авах боломжгүй. Та тэдгээрийг тусад нь худалдаж авах боломжтой.</item>
+        <item quantity="one">%d өдрийн турш бүү харуул</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d дууг таны боломжит дуунуудаас ашиглах болно.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Та %1$s-г %2$d удаа ашиглаж болно</item>
+        <item quantity="one">Та %s-г 1 удаа ашиглаж болно</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d хугацаа нь дууссан дуу устгагдана. Та татах түүхээ Melon мэдээлэл > Худалдан авах түүхээс шалгах боломжтой.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d дууг таны боломжит дуунуудаас ашиглах болно.</item>
+        <item quantity="one">%d хугацаа нь дууссан дуу устгагдана. Та татах түүхээ Melon мэдээлэл > Худалдан авах түүхээс шалгах боломжтой.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">%d дууны DCF хугацааг сунгаж чадсангүй. Та дахин оролдох эсвэл файлуудыг дахин татаж авахаас өмнө тэдгээрийг жагсаалтаас устгах боломжтой.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дууны DCF хугацааг сунгаж чадсангүй. Та дахин оролдох эсвэл файлуудыг дахин татаж авахаас өмнө тэдгээрийг жагсаалтаас устгах боломжтой.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">%d-с олон зүйл импортлох боломжгүй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с олон зүйл импортлох боломжгүй.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -111,54 +75,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Эдгээр зохиолчийн бүх дууг устгах уу?</item>
         <item quantity="one">Энэ зохиолчийн бүх дууг устгах уу?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Сонгосон дуунуудыг устгах уу?</item>
-        <item quantity="one">Сонгосон дууг устгах уу?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d дууг худалдаж авна. Хэрэв танд хангалттай боломжит дуу байхгүй бол эдгээр дуунуудыг худалдаж авах боломжгүй.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d дууг худалдаж авна. Хэрэв танд хангалттай боломжит дуу байхгүй бол эдгээр дуунуудыг худалдаж авах боломжгүй.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Сонгосон дуунуудыг худалдан авах уу?</item>
-        <item quantity="one">Сонгосон дууг худалдан авах уу?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Та эдгээр дуунуудыг хэдийн худалдаж авсан. Та хүссэн үедээ худалдаж авсан дуунуудаа татаж авах боломжтой.</item>
-        <item quantity="one">Та энэхүү дууг хэдийн худалдаж авсан. Та хүссэн үедээ худалдаж авсан дуунуудаа татаж авах боломжтой.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Дуунуудыг аль хэдийн худалдаж авсан</item>
-        <item quantity="one">Дууг аль хэдийн худалдаж авсан</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Та дуртай болгон зөвхөн олгосон %d тоглуулах жагсаалтыг нэмэх боломжтой. Зарим олгосон тоглуулах жагсаалтыг Дуртай табаас арилга.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Та дуртай болгон зөвхөн олгосон %d тоглуулах жагсаалтыг нэмэх боломжтой. Зарим олгосон тоглуулах жагсаалтыг Дуртай табаас арилга.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Та зөвхөн Дуртай дуу болгон %d урсгах дууг нэмэх боломжтой. Дуртай дуунаас зарим урсгах дууг арилгаад, дараа нь дахин оролд.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Та зөвхөн Дуртай дуу болгон %d урсгах дууг нэмэх боломжтой. Дуртай дуунаас зарим урсгах дууг арилгаад, дараа нь дахин оролд.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Та зөвхөн Дуртай дуу болгон %d дууг нэмэх боломжтой. Дуртай дуунаас зарим дууг арилгаад, дараа нь дахин оролд.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Та зөвхөн Дуртай дуу болгон %d дууг нэмэх боломжтой. Дуртай дуунаас зарим дууг арилгаад, дараа нь дахин оролд.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d хавтас</item>
@@ -180,25 +96,73 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d дууг сэргээсэн.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d дууг сэргээсэн.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">%d зүйлийг устгах уу?</item>
         <item quantity="one">1 зүйлийг устгах уу?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">%d-с илүү тэмдэгт оруулах боломжгүй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү тэмдэгт оруулах боломжгүй.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">%d-с илүү цомог нэмэх боломжгүй. Цөөн тооны цомог нэм эсвэл заримыг нь Дуртай зүйлсээс арилга.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү цомог нэмэх боломжгүй. Цөөн тооны цомог нэм эсвэл заримыг нь Дуртай зүйлсээс арилга.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">%d-с илүү дуучин нэмэх боломжгүй. Цөөн тооны дуучид нэм эсвэл заримыг нь Дуртай зүйлсээс арилга.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү дуучин нэмэх боломжгүй. Цөөн тооны дуучид нэм эсвэл заримыг нь Дуртай зүйлсээс арилга.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Та зөвхөн %d хүртэлх тоглуулах жагсаалт нэмэх боломжтой. Дуртай зүйлс табаас зарим тоглуулах жагсаалтыг арилгах.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Та зөвхөн %d хүртэлх тоглуулах жагсаалт нэмэх боломжтой. Дуртай зүйлс табаас зарим тоглуулах жагсаалтыг арилгах.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">%d-с илүү тоглуулах дуу нэмэх боломжгүй. Цөөн тооны дуу нэм эсвэл заримыг нь Дуртай дуунаас арилга.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү тоглуулах дуу нэмэх боломжгүй. Цөөн тооны дуу нэм эсвэл заримыг нь Дуртай дуунаас арилга.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">%d-с илүү дуу нэмэх боломжгүй. Цөөн тооны дуу нэм эсвэл заримыг нь Дуртай дуунаас арилга.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү дуу нэмэх боломжгүй. Цөөн тооны дуу нэм эсвэл заримыг нь Дуртай дуунаас арилга.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">%d тоглуулах жагсаалт экспортолсон.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d тоглуулах жагсаалт экспортолсон.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">%d тоглуулах жагсаалт импортолсон.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d тоглуулах жагсаалт импортолсон.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">%d-с илүү тоглуулах жагсаалт сонгох боломжгүй.</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d дуу</item>
         <item quantity="one">1 дуу</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Зөвхөн %d дууг Дуртай зүйлсэд нэмсэн. Үлдсэн нь аль хэдийн Дуртай зүйлсэд байсан.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Зөвхөн %d дууг Дуртай зүйлсэд нэмсэн. Үлдсэн нь аль хэдийн Дуртай зүйлсэд байсан.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d дуу дуртай зүйлсэд нэмсэн</item>
+        <item quantity="one">1 дуу дуртай зүйлсэд нэмсэн</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d дуу тоглуулах жагсаалтад нэмсэн</item>
+        <item quantity="one">1 дуу тоглуулах жагсаалтад нэмсэн</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">%d дууг тоглуулах жагсаалтанд нэмлээ.</item>
         <item quantity="one">%d дуу дараалалд нэмсэн.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">%d дууг устгах уу?</item>
-        <item quantity="one">1 дууг устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дууг устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Унтах цаг: %d цаг</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Унтах цаг: %d цаг</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Унтах цаг: %d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Унтах цаг: %d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

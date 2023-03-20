@@ -1,6 +1,6 @@
-.class final Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;
+.class Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SmartClipCompat.java"
 
 # interfaces
 .implements Lcom/samsung/android/content/smartclip/SemSmartClipDataExtractionListener;
@@ -12,22 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$filePath:Ljava/lang/String;
+.field public final synthetic val$filePath:Ljava/lang/String;
 
-.field final synthetic val$title:Ljava/lang/String;
+.field public final synthetic val$title:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 22
     iput-object p1, p0, Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;->val$title:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;->val$filePath:Ljava/lang/String;
@@ -42,35 +41,35 @@
 .method public onExtractSmartClipData(Landroid/view/View;Lcom/samsung/android/content/smartclip/SemSmartClipCroppedArea;Lcom/samsung/android/content/smartclip/SemSmartClipDataElement;)I
     .locals 1
 
-    .line 27
+    .line 1
     invoke-interface {p2, p1}, Lcom/samsung/android/content/smartclip/SemSmartClipCroppedArea;->intersects(Landroid/view/View;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 30
+    .line 2
     invoke-static {p1, p2, p3}, Lcom/samsung/android/content/smartclip/SemSmartClipViewHelper;->extractDefaultSmartClipData(Landroid/view/View;Lcom/samsung/android/content/smartclip/SemSmartClipCroppedArea;Lcom/samsung/android/content/smartclip/SemSmartClipDataElement;)I
 
-    .line 32
+    .line 3
     new-instance p1, Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;
 
-    const-string p2, "title"
+    iget-object p2, p0, Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;->val$title:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;->val$title:Ljava/lang/String;
+    const-string v0, "title"
 
-    invoke-direct {p1, p2, v0}, Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p1, v0, p2}, Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {p3, p1}, Lcom/samsung/android/content/smartclip/SemSmartClipDataElement;->addTag(Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;)Z
 
-    .line 34
+    .line 4
     new-instance p1, Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;
 
-    const-string p2, "file_path_audio"
+    iget-object p2, p0, Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;->val$filePath:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/content/SmartClipCompat$1;->val$filePath:Ljava/lang/String;
+    const-string v0, "file_path_audio"
 
-    invoke-direct {p1, p2, v0}, Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p1, v0, p2}, Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-interface {p3, p1}, Lcom/samsung/android/content/smartclip/SemSmartClipDataElement;->addTag(Lcom/samsung/android/content/smartclip/SemSmartClipMetaTag;)Z
 

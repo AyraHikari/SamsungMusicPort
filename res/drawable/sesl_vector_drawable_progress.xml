@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:name="root" android:translateX="24.0" android:translateY="24.0">
-        <path android:name="progressBase1" android:fillColor="#00000000" android:pathData="M18.969,0c0,10.494-8.507,19-19,19s-19-8.506-19-19" android:strokeColor="@color/sesl_loading_progress_color1" android:strokeWidth="2.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeAlpha="1.0" android:fillAlpha="1.0" />
-        <path android:name="progressBase2" android:fillColor="#00000000" android:pathData="M-19.016-0.016c0-10.494,8.507-19,19-19s19,8.506,19,19" android:strokeColor="@color/sesl_loading_progress_color2" android:strokeWidth="2.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeAlpha="1.0" android:fillAlpha="1.0" />
+<vector android:height="96.0dip" android:width="96.0dip" android:viewportWidth="96.0" android:viewportHeight="96.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="s5" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="48.0" android:translateY="48.0" aapt:layer_name="container">
+        <group android:name="s5pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Rectangle">
+            <path android:name="s5pg1p10" android:fillColor="#ffffffff" android:pathData="M 30 -30 C 30 -30 30 30 30 30 C 30 30 30 30 30 30 C 30 30 -30 30 -30 30 C -30 30 -30 30 -30 30 C -30 30 -30 -30 -30 -30 C -30 -30 -30 -30 -30 -30 C -30 -30 30 -30 30 -30 C 30 -30 30 -30 30 -30 Z" android:fillAlpha="0.0" aapt:layer_name="Rectangle Path 1" />
+        </group>
+    </group>
+    <group android:name="s5s4" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="48.0" android:translateY="48.0" aapt:layer_name="dot4 ParentLink">
+        <group android:name="s4" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="35.0" android:translateY="0.0" aapt:layer_name="dot4">
+            <group android:name="s4pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Oval Copy 16">
+                <path android:name="s4pg1p10" android:fillColor="?progressCircleDotColor1" android:pathData="M 0 -2.25 C 1.243 -2.25 2.25 -1.243 2.25 0 C 2.25 1.243 1.243 2.25 0 2.25 C -1.243 2.25 -2.25 1.243 -2.25 0 C -2.25 -1.243 -1.243 -2.25 0 -2.25 Z" android:fillAlpha="1.0" aapt:layer_name="Ellipse Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="s5s3" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="48.0" android:translateY="48.0" aapt:layer_name="dot3 ParentLink">
+        <group android:name="s3" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="35.0" aapt:layer_name="dot3">
+            <group android:name="s3pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Oval Copy 14">
+                <path android:name="s3pg1p10" android:fillColor="?progressCircleDotColor2" android:pathData="M 0 -2.25 C 1.243 -2.25 2.25 -1.243 2.25 0 C 2.25 1.243 1.243 2.25 0 2.25 C -1.243 2.25 -2.25 1.243 -2.25 0 C -2.25 -1.243 -1.243 -2.25 0 -2.25 Z" android:fillAlpha="1.0" aapt:layer_name="Ellipse Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="s5s2" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="48.0" android:translateY="48.0" aapt:layer_name="dot2 ParentLink">
+        <group android:name="s2" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="-35.0" android:translateY="0.0" aapt:layer_name="dot2">
+            <group android:name="s2pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Oval Copy 16">
+                <path android:name="s2pg1p10" android:fillColor="?progressCircleDotColor2" android:pathData="M 0 -2.25 C 1.243 -2.25 2.25 -1.243 2.25 0 C 2.25 1.243 1.243 2.25 0 2.25 C -1.243 2.25 -2.25 1.243 -2.25 0 C -2.25 -1.243 -1.243 -2.25 0 -2.25 Z" android:fillAlpha="1.0" aapt:layer_name="Ellipse Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="s5s1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="48.0" android:translateY="48.0" aapt:layer_name="dot1 ParentLink">
+        <group android:name="s1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="-35.0" aapt:layer_name="dot1">
+            <group android:name="s1pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Oval Copy 15">
+                <path android:name="s1pg1p10" android:fillColor="?progressCircleDotColor2" android:pathData="M 0 -2.25 C 1.243 -2.25 2.25 -1.243 2.25 0 C 2.25 1.243 1.243 2.25 0 2.25 C -1.243 2.25 -2.25 1.243 -2.25 0 C -2.25 -1.243 -1.243 -2.25 0 -2.25 Z" android:fillAlpha="1.0" aapt:layer_name="Ellipse Path 1" />
+            </group>
+        </group>
     </group>
 </vector>

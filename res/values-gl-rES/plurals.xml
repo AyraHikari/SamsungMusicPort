@@ -12,61 +12,9 @@
         <item quantity="other">Pistas</item>
         <item quantity="one">Pista</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d pistas engadidas a Favoritos. As pistas que xa se atopan en Favoritos non se engadirán.</item>
-        <item quantity="one">%d pista engadida a Favoritos. A pista que xa se atopa en Favoritos non se engadirá.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d pistas</item>
         <item quantity="one">%d pista</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d pistas eliminadas de Favoritos.</item>
-        <item quantity="one">%d pista eliminada de Favoritos.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d pistas engadidas aos favoritos.</item>
-        <item quantity="one">%d pista engadida aos favoritos.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Só podes eliminar como máximo %d pistas das recomendacións. Consulta as pistas eliminadas, selecciona algunhas para restaurar e téntao outra vez.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Só podes eliminar como máximo %d pista das recomendacións. Consulta as pistas eliminadas, selecciona algunhas para restaurar e téntao outra vez.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Pulsa o botón Reproducir radio para obter %d pistas gratuítas ao mes.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Pulsa o botón Reproducir radio para obter %d pista gratuíta ao mes.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Non se poden seleccionar máis de %d artistas.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Non se pode seleccionar máis de %d artista.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Non se poden seleccionar máis de %d xéneros.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Non se pode seleccionar máis de %d xénero.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Non se poden seleccionar máis de %d pistas.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Non se pode seleccionar máis de %d pista.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d segundos</item>
@@ -76,22 +24,38 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">Pode utilizar %1$s %2$d veces</item>
-        <item quantity="one">Pode utilizar %s 1 vez</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Non se poden comprar %d pistas con tíckets premium por unha cuestión de copyright. Podes compralas individualmente.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Non amosar durante %d días</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Non se pode comprar %d pista con tíckets premium por unha cuestión de copyright. Podes comprala individualmente.</item>
+        <item quantity="one">Non amosar durante %d día</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Usaranse %d pistas das túas pistas dispoñibles.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Pode utilizar %1$s %2$d veces</item>
+        <item quantity="one">Pode utilizar %s 1 vez</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">Eliminaranse %d pistas caducadas. Consulta o teu historial de descargas en Información de Melon > Historial de compras.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Usarase %d pista das túas pistas dispoñibles.</item>
+        <item quantity="one">Eliminarase %d pista caducada. Consulta o teu historial de descargas en Información de Melon > Historial de compras.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Non se puido ampliar o período DCF para %d pistas. Téntao outra vez ou elimina arquivos da lista seguinte e, despois, volve descargalos.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non se puido ampliar o período DCF para %d pista. Téntao outra vez ou elimina arquivos da lista seguinte e, despois, volve descargala.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Non se poden importar máis de %d elementos.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non se pode importar máis de %d elemento.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -111,54 +75,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Queres eliminar todas as pistas destes compositores?</item>
         <item quantity="one">Queres eliminar todas as pistas deste compositor?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Queres eliminar as pistas seleccionadas?</item>
-        <item quantity="one">Queres eliminar a pista seleccionada?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Vanse comprar %d pistas. Se non tes suficientes pistas dispoñibles, estas pistas non se poderán comprar.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Vaise comprar %d pista. Se non tes suficientes pistas dispoñibles, estas pistas non se poderán comprar.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Queres comprar as pistas seleccionadas?</item>
-        <item quantity="one">Queres comprar a pista seleccionada?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Xa compraches estas cancións. Podes volver descargar as cancións compradas cando queiras.</item>
-        <item quantity="one">Xa compraches esta canción. Podes volver descargar as cancións compradas cando queiras.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Pistas xa compradas</item>
-        <item quantity="one">Pista xa comprada</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Só podes engadir como favoritas %d listas de reprodución facilitadas. Elimina algunhas das listas de reprodución facilitadas da pestana Favoritos.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Só podes engadir como favorita %d lista de reprodución facilitada. Elimina algunhas das listas de reprodución facilitadas da pestana Favoritos.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Só podes engadir %d pistas en transmisión como pistas favoritas. Elimina algunhas das pistas en transmisión de Pistas favoritas e téntao outra vez.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Só podes engadir %d pista en transmisión como pista favorita. Elimina algunhas das pistas en transmisión de Pistas favoritas e téntao outra vez.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Só podes engadir %d pistas como pistas favoritas. Elimina algunhas das pistas de Pistas favoritas e téntao outra vez.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Só podes engadir %d pista como pista favorita. Elimina algunhas das pistas de Pistas favoritas e téntao outra vez.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d carpetas</item>
@@ -180,30 +96,78 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">Restauráronse %d pistas.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Restaurouse %d pista.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Queres eliminar %d elementos?</item>
         <item quantity="one">Queres eliminar 1 elemento?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Non se poden inserir máis de %d caracteres.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non se pode inserir máis de %d carácter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Non se poden engadir máis de %d álbums. Engade menos álbums ou elimina algúns de Favoritos.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non se pode engadir máis de %d álbum. Engade menos álbums ou elimina algúns de Favoritos.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Non se poden engadir máis de %d artistas. Engade menos artistas ou elimina algúns de Favoritos.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non se pode engadir máis de %d artista. Engade menos artistas ou elimina algúns de Favoritos.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Non podes engadir máis de %d listas de reprodución. Elimina algunhas da pestana Favoritos.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non podes engadir máis de %d lista de reprodución. Elimina algunhas da pestana Favoritos.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Non se poden engadir máis de %d pistas de streaming. Engade menos pistas ou elimina algunhas de Pistas favoritas.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non se pode engadir máis de %d pista de streaming. Engade menos pistas ou elimina algunhas de Pistas favoritas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Non se poden engadir máis de %d pistas. Engade menos pistas ou elimina algunhas de Pistas favoritas.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Non se pode engadir máis de %d pista. Engade menos pistas ou elimina algunhas de Pistas favoritas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Exportáronse %d listas de reprodución.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Exportouse %d lista de reprodución.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Importáronse %d listas de reprodución.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Importouse %d lista de reprodución.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Non se poden seleccionar máis de %d listas de reprodución.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Non se poden seleccionar máis de %d listas de reprodución.</item>
+        <item quantity="one">Non se pode seleccionar máis de %d lista de reprodución.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d pistas</item>
         <item quantity="one">1 pista</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Só se engadiron %d pistas a Favoritos. As demais xa estaban en Favoritos.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Só se engadiu %d pista a Favoritos. As demais xa estaban en Favoritos.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d pistas engadidas aos favoritos.</item>
+        <item quantity="one">1 pista engadida aos favoritos.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">Engadíronse %d pistas á lista de reprodución</item>
+        <item quantity="one">Engadiuse 1 pista á lista de reprodución.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">Engadíronse %d pistas á cola.</item>
         <item quantity="one">%d pista engadida á cola.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">Queres eliminar %d cancións?</item>
-        <item quantity="one">Queres eliminar 1 pista?</item>
+        <item quantity="other">Queres eliminar %d pistas?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Queres eliminar %d pista?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Tempo de sono: %d horas</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tempo de sono: %d hora</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Tempo de sono: %d minutos</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tempo de sono: %d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

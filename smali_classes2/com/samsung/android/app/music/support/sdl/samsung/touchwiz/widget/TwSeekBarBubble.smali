@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;
 .super Landroid/widget/FrameLayout;
-.source "SourceFile"
+.source "TwSeekBarBubble.java"
 
 
 # annotations
@@ -53,12 +53,11 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     const-string v0, "ro.build.scafe"
 
-    .line 50
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -71,38 +70,38 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 107
+    .line 1
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x0
 
-    .line 54
+    .line 2
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->debug:Z
 
     const/4 v0, 0x4
 
-    .line 83
+    .line 3
     iput v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleAlign:I
 
-    .line 85
+    .line 4
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDisplay:Z
 
     const p1, 0x421551ec    # 37.33f
 
-    .line 93
+    .line 5
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->TWSEEKBARBUBBLE_DEFAULT_TEXT_SIZE:F
 
-    .line 97
-    sget p1, Lcom/samsung/android/app/music/support/sdl/R$color;->tw_seekbar_bubble_text_color:I
+    .line 6
+    sget p1, Lcom/samsung/android/app/music/support/sdl/R$color;->tw_seekbar_buble_text_color:I
 
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleFontColor:I
 
     const/4 p1, 0x0
 
-    .line 99
+    .line 7
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScale:F
 
-    .line 108
+    .line 8
     sget-object p1, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScafe:Ljava/lang/String;
 
     const-string v0, "americano"
@@ -117,10 +116,10 @@
 
     const-string v0, "This API can be used in models based on L platform."
 
-    .line 110
+    .line 9
     invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 112
+    .line 10
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->init()V
 
@@ -130,38 +129,38 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 123
+    .line 11
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x0
 
-    .line 54
+    .line 12
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->debug:Z
 
     const/4 p2, 0x4
 
-    .line 83
+    .line 13
     iput p2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleAlign:I
 
-    .line 85
+    .line 14
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDisplay:Z
 
     const p1, 0x421551ec    # 37.33f
 
-    .line 93
+    .line 15
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->TWSEEKBARBUBBLE_DEFAULT_TEXT_SIZE:F
 
-    .line 97
-    sget p1, Lcom/samsung/android/app/music/support/sdl/R$color;->tw_seekbar_bubble_text_color:I
+    .line 16
+    sget p1, Lcom/samsung/android/app/music/support/sdl/R$color;->tw_seekbar_buble_text_color:I
 
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleFontColor:I
 
     const/4 p1, 0x0
 
-    .line 99
+    .line 17
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScale:F
 
-    .line 124
+    .line 18
     sget-object p1, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScafe:Ljava/lang/String;
 
     const-string p2, "americano"
@@ -176,10 +175,10 @@
 
     const-string p2, "This API can be used in models based on L platform."
 
-    .line 126
+    .line 19
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 128
+    .line 20
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->init()V
 
@@ -189,38 +188,38 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 139
+    .line 21
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x0
 
-    .line 54
+    .line 22
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->debug:Z
 
     const/4 p2, 0x4
 
-    .line 83
+    .line 23
     iput p2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleAlign:I
 
-    .line 85
+    .line 24
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDisplay:Z
 
     const p1, 0x421551ec    # 37.33f
 
-    .line 93
+    .line 25
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->TWSEEKBARBUBBLE_DEFAULT_TEXT_SIZE:F
 
-    .line 97
-    sget p1, Lcom/samsung/android/app/music/support/sdl/R$color;->tw_seekbar_bubble_text_color:I
+    .line 26
+    sget p1, Lcom/samsung/android/app/music/support/sdl/R$color;->tw_seekbar_buble_text_color:I
 
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleFontColor:I
 
     const/4 p1, 0x0
 
-    .line 99
+    .line 27
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScale:F
 
-    .line 140
+    .line 28
     sget-object p1, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScafe:Ljava/lang/String;
 
     const-string p2, "americano"
@@ -235,10 +234,10 @@
 
     const-string p2, "This API can be used in models based on L platform."
 
-    .line 142
+    .line 29
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 144
+    .line 30
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->init()V
 
@@ -248,33 +247,33 @@
 .method private calculateBubblePosition(Landroid/graphics/Point;)V
     .locals 8
 
-    .line 468
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
-    .line 469
+    .line 2
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 471
+    .line 3
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 472
+    .line 4
     invoke-virtual {v0, v2}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
 
-    .line 474
+    .line 5
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v3
 
-    .line 475
+    .line 6
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v0
 
-    .line 477
+    .line 7
     iget v4, v2, Landroid/graphics/Rect;->left:I
 
     iget v5, v2, Landroid/graphics/Rect;->right:I
@@ -283,7 +282,7 @@
 
     sub-int/2addr v3, v4
 
-    .line 479
+    .line 8
     iget-object v4, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mTextPainter:Landroid/graphics/Paint;
 
     iget-object v5, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleText:Ljava/lang/CharSequence;
@@ -302,19 +301,19 @@
 
     invoke-virtual {v4, v5, v7, v6, v1}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 484
+    .line 9
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
     move-result v4
 
     if-ge v3, v4, :cond_0
 
-    .line 485
+    .line 10
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
     move-result v3
 
-    .line 487
+    .line 11
     :cond_0
     iget v1, v2, Landroid/graphics/Rect;->left:I
 
@@ -324,27 +323,43 @@
 
     add-int/2addr v3, v1
 
-    .line 489
+    .line 12
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleAlign:I
 
-    packed-switch v1, :pswitch_data_0
+    const/4 v2, 0x2
+
+    if-eqz v1, :cond_5
+
+    const/4 v4, 0x1
+
+    if-eq v1, v4, :cond_4
+
+    if-eq v1, v2, :cond_3
+
+    const/4 v4, 0x3
+
+    if-eq v1, v4, :cond_2
+
+    const/4 v4, 0x4
+
+    if-eq v1, v4, :cond_1
 
     goto :goto_0
 
-    .line 507
-    :pswitch_0
+    .line 13
+    :cond_1
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosLeft:I
 
-    div-int/lit8 v3, v3, 0x2
+    div-int/2addr v3, v2
 
     sub-int/2addr v1, v3
 
     iput v1, p1, Landroid/graphics/Point;->x:I
 
-    .line 508
+    .line 14
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosTop:I
 
-    div-int/lit8 v0, v0, 0x2
+    div-int/2addr v0, v2
 
     sub-int/2addr v1, v0
 
@@ -352,17 +367,17 @@
 
     goto :goto_0
 
-    .line 503
-    :pswitch_1
+    .line 15
+    :cond_2
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosLeft:I
 
-    div-int/lit8 v3, v3, 0x2
+    div-int/2addr v3, v2
 
     sub-int/2addr v1, v3
 
     iput v1, p1, Landroid/graphics/Point;->x:I
 
-    .line 504
+    .line 16
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosTop:I
 
     sub-int/2addr v1, v0
@@ -371,35 +386,35 @@
 
     goto :goto_0
 
-    .line 499
-    :pswitch_2
+    .line 17
+    :cond_3
     iget v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosLeft:I
 
-    div-int/lit8 v3, v3, 0x2
+    div-int/2addr v3, v2
 
     sub-int/2addr v0, v3
 
     iput v0, p1, Landroid/graphics/Point;->x:I
 
-    .line 500
+    .line 18
     iget v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosTop:I
 
     iput v0, p1, Landroid/graphics/Point;->y:I
 
     goto :goto_0
 
-    .line 495
-    :pswitch_3
+    .line 19
+    :cond_4
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosLeft:I
 
     sub-int/2addr v1, v3
 
     iput v1, p1, Landroid/graphics/Point;->x:I
 
-    .line 496
+    .line 20
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosTop:I
 
-    div-int/lit8 v0, v0, 0x2
+    div-int/2addr v0, v2
 
     sub-int/2addr v1, v0
 
@@ -407,16 +422,16 @@
 
     goto :goto_0
 
-    .line 491
-    :pswitch_4
+    .line 21
+    :cond_5
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosLeft:I
 
     iput v1, p1, Landroid/graphics/Point;->x:I
 
-    .line 492
+    .line 22
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosTop:I
 
-    div-int/lit8 v0, v0, 0x2
+    div-int/2addr v0, v2
 
     sub-int/2addr v1, v0
 
@@ -424,22 +439,13 @@
 
     :goto_0
     return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
 .method private init()V
     .locals 2
 
-    .line 152
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->getContext()Landroid/content/Context;
+    .line 1
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -457,50 +463,48 @@
 
     const/4 v0, 0x0
 
-    .line 153
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->setClickable(Z)V
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setClickable(Z)V
 
-    .line 154
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->setFocusable(Z)V
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setFocusable(Z)V
 
     const-string v1, " "
 
-    .line 156
+    .line 4
     iput-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleText:Ljava/lang/CharSequence;
 
-    .line 160
+    .line 5
     iput v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosLeft:I
 
-    .line 161
+    .line 6
     iput v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosTop:I
 
-    .line 163
+    .line 7
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
 
-    .line 165
+    .line 8
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mTextPainter:Landroid/graphics/Paint;
 
-    .line 166
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mTextPainter:Landroid/graphics/Paint;
-
     const/4 v1, 0x1
 
+    .line 9
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 168
+    .line 10
     iget v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->TWSEEKBARBUBBLE_DEFAULT_TEXT_SIZE:F
 
     iget v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScale:F
 
-    mul-float v0, v0, v1
+    mul-float/2addr v0, v1
 
     const/high16 v1, 0x3f000000    # 0.5f
 
@@ -513,49 +517,49 @@
 
 
 # virtual methods
-.method protected dispatchDraw(Landroid/graphics/Canvas;)V
+.method public dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 13
 
-    .line 307
+    .line 1
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchDraw(Landroid/graphics/Canvas;)V
 
-    .line 309
+    .line 2
     iget-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDisplay:Z
 
     if-eqz v0, :cond_2
 
-    .line 311
+    .line 3
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
-    .line 312
+    .line 4
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 313
+    .line 5
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 318
+    .line 6
     new-instance v3, Landroid/graphics/Rect;
 
     invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
 
-    .line 319
+    .line 7
     invoke-virtual {v0, v3}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
 
-    .line 321
+    .line 8
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v4
 
-    .line 322
+    .line 9
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v5
 
-    .line 324
+    .line 10
     iget v6, v3, Landroid/graphics/Rect;->left:I
 
     iget v7, v3, Landroid/graphics/Rect;->right:I
@@ -564,7 +568,7 @@
 
     sub-int/2addr v4, v6
 
-    .line 326
+    .line 11
     iget v6, v3, Landroid/graphics/Rect;->top:I
 
     iget v7, v3, Landroid/graphics/Rect;->bottom:I
@@ -573,10 +577,10 @@
 
     sub-int v6, v5, v6
 
-    .line 329
+    .line 12
     iget-object v7, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mTextPainter:Landroid/graphics/Paint;
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -588,14 +592,14 @@
 
     invoke-virtual {v7, v8}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 330
+    .line 13
     iget-object v7, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mTextPainter:Landroid/graphics/Paint;
 
     iget v8, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleFontSize:F
 
     invoke-virtual {v7, v8}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 331
+    .line 14
     iget-object v7, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mTextPainter:Landroid/graphics/Paint;
 
     iget-object v8, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleText:Ljava/lang/CharSequence;
@@ -614,19 +618,19 @@
 
     invoke-virtual {v7, v8, v9, v10, v2}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 333
+    .line 15
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
     move-result v7
 
     if-ge v4, v7, :cond_0
 
-    .line 334
+    .line 16
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
     move-result v4
 
-    .line 337
+    .line 17
     :cond_0
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
@@ -634,12 +638,12 @@
 
     if-ge v6, v7, :cond_1
 
-    .line 338
+    .line 18
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v6
 
-    .line 341
+    .line 19
     :cond_1
     iget v7, v3, Landroid/graphics/Rect;->left:I
 
@@ -649,97 +653,81 @@
 
     add-int/2addr v7, v8
 
-    .line 346
+    .line 20
     new-instance v8, Landroid/graphics/Point;
 
     invoke-direct {v8}, Landroid/graphics/Point;-><init>()V
 
-    .line 347
+    .line 21
     invoke-direct {p0, v8}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->calculateBubblePosition(Landroid/graphics/Point;)V
 
-    .line 349
+    .line 22
     iget v9, v8, Landroid/graphics/Point;->x:I
 
     iget v10, v8, Landroid/graphics/Point;->y:I
 
-    iget v11, v8, Landroid/graphics/Point;->x:I
+    add-int v11, v9, v7
 
-    add-int/2addr v11, v7
-
-    iget v12, v8, Landroid/graphics/Point;->y:I
-
-    add-int/2addr v12, v5
+    add-int v12, v10, v5
 
     invoke-virtual {v1, v9, v10, v11, v12}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 352
+    .line 23
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 353
+    .line 24
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 355
+    .line 25
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
 
     iget v1, v8, Landroid/graphics/Point;->x:I
 
     iput v1, v0, Landroid/graphics/Rect;->left:I
 
-    .line 356
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    add-int/2addr v7, v1
 
-    iget v1, v8, Landroid/graphics/Point;->x:I
+    .line 26
+    iput v7, v0, Landroid/graphics/Rect;->right:I
 
-    add-int/2addr v1, v7
+    .line 27
+    iget v7, v8, Landroid/graphics/Point;->y:I
 
-    iput v1, v0, Landroid/graphics/Rect;->right:I
+    iput v7, v0, Landroid/graphics/Rect;->top:I
 
-    .line 357
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    add-int/2addr v7, v5
 
-    iget v1, v8, Landroid/graphics/Point;->y:I
+    .line 28
+    iput v7, v0, Landroid/graphics/Rect;->bottom:I
 
-    iput v1, v0, Landroid/graphics/Rect;->top:I
+    .line 29
+    iget v0, v3, Landroid/graphics/Rect;->left:I
 
-    .line 358
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    add-int/2addr v1, v0
 
-    iget v1, v8, Landroid/graphics/Point;->y:I
-
-    add-int/2addr v1, v5
-
-    iput v1, v0, Landroid/graphics/Rect;->bottom:I
-
-    .line 362
-    iget v0, v8, Landroid/graphics/Point;->x:I
-
-    iget v1, v3, Landroid/graphics/Rect;->left:I
-
-    add-int/2addr v0, v1
-
-    .line 363
+    .line 30
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
-    move-result v1
+    move-result v0
 
-    sub-int/2addr v4, v1
+    sub-int/2addr v4, v0
 
     div-int/lit8 v4, v4, 0x2
 
-    add-int/2addr v0, v4
+    add-int/2addr v1, v4
 
-    iget v1, v2, Landroid/graphics/Rect;->left:I
+    iget v0, v2, Landroid/graphics/Rect;->left:I
 
-    sub-int/2addr v0, v1
+    sub-int/2addr v1, v0
 
-    .line 364
-    iget v1, v8, Landroid/graphics/Point;->y:I
+    .line 31
+    iget v0, v8, Landroid/graphics/Point;->y:I
 
     iget v3, v3, Landroid/graphics/Rect;->top:I
 
-    add-int/2addr v1, v3
+    add-int/2addr v0, v3
 
-    .line 365
+    .line 32
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v3
@@ -748,28 +736,28 @@
 
     div-int/lit8 v6, v6, 0x2
 
-    add-int/2addr v1, v6
+    add-int/2addr v0, v6
 
     iget v2, v2, Landroid/graphics/Rect;->top:I
 
-    sub-int/2addr v1, v2
+    sub-int/2addr v0, v2
 
-    .line 368
+    .line 33
     iget-object v2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleText:Ljava/lang/CharSequence;
 
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    int-to-float v0, v0
-
     int-to-float v1, v1
+
+    int-to-float v0, v0
 
     iget-object v3, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mTextPainter:Landroid/graphics/Paint;
 
-    invoke-virtual {p1, v2, v0, v1, v3}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
+    invoke-virtual {p1, v2, v1, v0, v3}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 369
+    .line 34
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     :cond_2
@@ -779,7 +767,6 @@
 .method public getBubbleFontSize()F
     .locals 1
 
-    .line 295
     iget v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleFontSize:F
 
     return v0
@@ -788,7 +775,6 @@
 .method public getBubbleHeight()I
     .locals 1
 
-    .line 277
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
@@ -801,7 +787,6 @@
 .method public getBubbleWidth()I
     .locals 1
 
-    .line 270
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
@@ -816,7 +801,6 @@
 
     const/4 v0, 0x0
 
-    .line 263
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDisplay:Z
 
     return-void
@@ -825,17 +809,17 @@
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
 
-    .line 379
+    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
-    .line 380
+    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
-    .line 382
+    .line 3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result p1
@@ -844,7 +828,7 @@
 
     goto :goto_0
 
-    .line 384
+    .line 4
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
 
@@ -858,31 +842,25 @@
 
     if-eqz p1, :cond_1
 
-    .line 388
+    .line 5
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
-    sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->PRESSED_STATE_SET:[I
+    sget-object v0, Landroid/widget/FrameLayout;->PRESSED_STATE_SET:[I
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 390
+    .line 6
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
 
-    iget p1, p1, Landroid/graphics/Rect;->left:I
+    iget v0, p1, Landroid/graphics/Rect;->left:I
 
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    iget v1, p1, Landroid/graphics/Rect;->top:I
 
-    iget v0, v0, Landroid/graphics/Rect;->top:I
+    iget v2, p1, Landroid/graphics/Rect;->right:I
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    iget p1, p1, Landroid/graphics/Rect;->bottom:I
 
-    iget v1, v1, Landroid/graphics/Rect;->right:I
-
-    iget-object v2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->invalidate(IIII)V
+    invoke-virtual {p0, v0, v1, v2, p1}, Landroid/widget/FrameLayout;->invalidate(IIII)V
 
     const/4 p1, 0x1
 
@@ -897,62 +875,83 @@
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
-    .locals 3
+    .locals 4
 
-    .line 406
+    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
-    .line 407
+    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
-    .line 409
+    .line 3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result p1
 
-    const/4 v2, 0x3
+    const/4 v2, 0x1
 
-    if-eq p1, v2, :cond_0
+    if-eqz p1, :cond_2
 
-    packed-switch p1, :pswitch_data_0
+    if-eq p1, v2, :cond_1
+
+    const/4 v0, 0x3
+
+    if-eq p1, v0, :cond_0
 
     goto :goto_0
 
-    .line 437
-    :pswitch_0
+    .line 4
+    :cond_0
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
-    sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->EMPTY_STATE_SET:[I
+    sget-object v0, Landroid/widget/FrameLayout;->EMPTY_STATE_SET:[I
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 439
+    .line 5
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
 
-    iget p1, p1, Landroid/graphics/Rect;->left:I
+    iget v0, p1, Landroid/graphics/Rect;->left:I
 
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    iget v1, p1, Landroid/graphics/Rect;->top:I
 
-    iget v0, v0, Landroid/graphics/Rect;->top:I
+    iget v3, p1, Landroid/graphics/Rect;->right:I
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    iget p1, p1, Landroid/graphics/Rect;->bottom:I
 
-    iget v1, v1, Landroid/graphics/Rect;->right:I
-
-    iget-object v2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->invalidate(IIII)V
+    invoke-virtual {p0, v0, v1, v3, p1}, Landroid/widget/FrameLayout;->invalidate(IIII)V
 
     goto :goto_0
 
-    .line 411
-    :pswitch_1
+    .line 6
+    :cond_1
+    iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
+
+    sget-object v0, Landroid/widget/FrameLayout;->EMPTY_STATE_SET:[I
+
+    invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
+
+    .line 7
+    iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+
+    iget v0, p1, Landroid/graphics/Rect;->left:I
+
+    iget v1, p1, Landroid/graphics/Rect;->top:I
+
+    iget v3, p1, Landroid/graphics/Rect;->right:I
+
+    iget p1, p1, Landroid/graphics/Rect;->bottom:I
+
+    invoke-virtual {p0, v0, v1, v3, p1}, Landroid/widget/FrameLayout;->invalidate(IIII)V
+
+    goto :goto_0
+
+    .line 8
+    :cond_2
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
 
     float-to-int v0, v0
@@ -963,82 +962,36 @@
 
     move-result p1
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_3
 
-    .line 415
+    .line 9
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
-    sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->PRESSED_STATE_SET:[I
+    sget-object v0, Landroid/widget/FrameLayout;->PRESSED_STATE_SET:[I
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 417
+    .line 10
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
 
-    iget p1, p1, Landroid/graphics/Rect;->left:I
+    iget v0, p1, Landroid/graphics/Rect;->left:I
 
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    iget v1, p1, Landroid/graphics/Rect;->top:I
 
-    iget v0, v0, Landroid/graphics/Rect;->top:I
+    iget v3, p1, Landroid/graphics/Rect;->right:I
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
+    iget p1, p1, Landroid/graphics/Rect;->bottom:I
 
-    iget v1, v1, Landroid/graphics/Rect;->right:I
+    invoke-virtual {p0, v0, v1, v3, p1}, Landroid/widget/FrameLayout;->invalidate(IIII)V
 
-    iget-object v2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->invalidate(IIII)V
-
-    goto :goto_0
-
-    .line 444
-    :cond_0
-    iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
-
-    sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->EMPTY_STATE_SET:[I
-
-    invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
-
-    .line 446
-    iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
-
-    iget p1, p1, Landroid/graphics/Rect;->left:I
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->top:I
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->right:I
-
-    iget-object v2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDrawnRect:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->invalidate(IIII)V
-
-    :cond_1
+    :cond_3
     :goto_0
-    const/4 p1, 0x1
-
-    return p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return v2
 .end method
 
 .method public setBubbleAlign(I)V
     .locals 0
 
-    .line 249
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleAlign:I
 
     return-void
@@ -1047,8 +1000,8 @@
 .method public setBubbleBackgroundDrawable(I)V
     .locals 1
 
-    .line 191
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->getContext()Landroid/content/Context;
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1070,7 +1023,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 181
+    .line 1
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleBackground:Landroid/graphics/drawable/Drawable;
 
     :cond_0
@@ -1080,7 +1033,6 @@
 .method public setBubbleFontColor(I)V
     .locals 0
 
-    .line 302
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleFontColor:I
 
     return-void
@@ -1095,12 +1047,12 @@
 
     if-gtz v0, :cond_0
 
-    .line 285
+    .line 1
     iget p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->TWSEEKBARBUBBLE_DEFAULT_TEXT_SIZE:F
 
     iget v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mScale:F
 
-    mul-float p1, p1, v0
+    mul-float/2addr p1, v0
 
     const/high16 v0, 0x3f000000    # 0.5f
 
@@ -1110,7 +1062,7 @@
 
     goto :goto_0
 
-    .line 287
+    .line 2
     :cond_0
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleFontSize:F
 
@@ -1121,7 +1073,7 @@
 .method public setBubblePosition(Landroid/view/View;II)V
     .locals 1
 
-    .line 225
+    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1130,23 +1082,23 @@
 
     return-void
 
-    .line 228
+    .line 2
     :cond_0
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 229
-    invoke-virtual {p0, p1, v0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
+    .line 3
+    invoke-virtual {p0, p1, v0}, Landroid/widget/FrameLayout;->offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
 
-    .line 230
+    .line 4
     iget p1, v0, Landroid/graphics/Rect;->left:I
 
     add-int/2addr p1, p2
 
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubblePosLeft:I
 
-    .line 231
+    .line 5
     iget p1, v0, Landroid/graphics/Rect;->top:I
 
     add-int/2addr p1, p3
@@ -1159,8 +1111,8 @@
 .method public setBubbleText(I)V
     .locals 1
 
-    .line 209
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->getContext()Landroid/content/Context;
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1180,7 +1132,7 @@
 .method public setBubbleText(Ljava/lang/CharSequence;)V
     .locals 0
 
-    .line 200
+    .line 1
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleText:Ljava/lang/CharSequence;
 
     return-void
@@ -1191,7 +1143,6 @@
 
     const/4 v0, 0x1
 
-    .line 256
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/touchwiz/widget/TwSeekBarBubble;->mBubbleDisplay:Z
 
     return-void

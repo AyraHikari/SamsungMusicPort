@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "IBleProxyService.java"
 
 # interfaces
 .implements Lcom/samsung/android/library/beaconmanager/IBleProxyService;
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "Proxy"
 .end annotation
 
@@ -22,13 +22,13 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/os/IBinder;)V
+.method public constructor <init>(Landroid/os/IBinder;)V
     .locals 0
 
-    .line 108
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 109
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-void
@@ -39,7 +39,6 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 1
 
-    .line 113
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-object v0
@@ -47,18 +46,13 @@
 
 .method public getBeaconManagerVersion()I
     .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 121
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 122
+    .line 2
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -66,10 +60,10 @@
     :try_start_0
     const-string v2, "com.samsung.android.library.beaconmanager.IBleProxyService"
 
-    .line 125
+    .line 3
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 126
+    .line 4
     iget-object v2, p0, Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x1
@@ -78,20 +72,20 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 127
+    .line 5
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 128
+    .line 6
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 131
+    .line 7
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 132
+    .line 8
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return v2
@@ -99,10 +93,10 @@
     :catchall_0
     move-exception v2
 
-    .line 131
+    .line 9
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 132
+    .line 10
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -118,18 +112,13 @@
 
 .method public registerScanCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyCallback;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 175
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 176
+    .line 2
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -137,13 +126,13 @@
     :try_start_0
     const-string v2, "com.samsung.android.library.beaconmanager.IBleProxyService"
 
-    .line 179
+    .line 3
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
-    .line 180
-    invoke-interface {p1}, Lcom/samsung/android/library/beaconmanager/IBleProxyCallback;->asBinder()Landroid/os/IBinder;
+    .line 4
+    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
     move-result-object p1
 
@@ -155,16 +144,16 @@
     :goto_0
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 181
+    .line 5
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 182
+    .line 6
     invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 183
+    .line 7
     invoke-virtual {v0, p4}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 184
+    .line 8
     iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 p2, 0x4
@@ -173,10 +162,10 @@
 
     invoke-interface {p1, p2, v0, v1, p3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 185
+    .line 9
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 186
+    .line 10
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -187,11 +176,11 @@
 
     const/4 p3, 0x1
 
-    .line 189
+    .line 11
     :cond_1
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 190
+    .line 12
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return p3
@@ -199,10 +188,10 @@
     :catchall_0
     move-exception p1
 
-    .line 189
+    .line 13
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 190
+    .line 14
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw p1
@@ -210,18 +199,13 @@
 
 .method public registerTvCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;I)Z
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 138
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 139
+    .line 2
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -229,13 +213,13 @@
     :try_start_0
     const-string v2, "com.samsung.android.library.beaconmanager.IBleProxyService"
 
-    .line 142
+    .line 3
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
-    .line 143
-    invoke-interface {p1}, Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;->asBinder()Landroid/os/IBinder;
+    .line 4
+    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
     move-result-object p1
 
@@ -247,10 +231,10 @@
     :goto_0
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 144
+    .line 5
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 145
+    .line 6
     iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 p2, 0x2
@@ -259,10 +243,10 @@
 
     invoke-interface {p1, p2, v0, v1, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 146
+    .line 7
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 147
+    .line 8
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -273,11 +257,11 @@
 
     const/4 v2, 0x1
 
-    .line 150
+    .line 9
     :cond_1
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 151
+    .line 10
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return v2
@@ -285,10 +269,10 @@
     :catchall_0
     move-exception p1
 
-    .line 150
+    .line 11
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 151
+    .line 12
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw p1
@@ -296,18 +280,13 @@
 
 .method public unregisterScanCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyCallback;)Z
     .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 196
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 197
+    .line 2
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -315,13 +294,13 @@
     :try_start_0
     const-string v2, "com.samsung.android.library.beaconmanager.IBleProxyService"
 
-    .line 200
+    .line 3
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
-    .line 201
-    invoke-interface {p1}, Lcom/samsung/android/library/beaconmanager/IBleProxyCallback;->asBinder()Landroid/os/IBinder;
+    .line 4
+    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
     move-result-object p1
 
@@ -333,7 +312,7 @@
     :goto_0
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 202
+    .line 5
     iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x5
@@ -342,10 +321,10 @@
 
     invoke-interface {p1, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 203
+    .line 6
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 204
+    .line 7
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -356,11 +335,11 @@
 
     const/4 v3, 0x1
 
-    .line 207
+    .line 8
     :cond_1
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 208
+    .line 9
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return v3
@@ -368,10 +347,10 @@
     :catchall_0
     move-exception p1
 
-    .line 207
+    .line 10
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 208
+    .line 11
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw p1
@@ -379,18 +358,13 @@
 
 .method public unregisterTvCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;)Z
     .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    .line 157
+    .line 1
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 158
+    .line 2
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -398,13 +372,13 @@
     :try_start_0
     const-string v2, "com.samsung.android.library.beaconmanager.IBleProxyService"
 
-    .line 161
+    .line 3
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
-    .line 162
-    invoke-interface {p1}, Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;->asBinder()Landroid/os/IBinder;
+    .line 4
+    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
     move-result-object p1
 
@@ -416,7 +390,7 @@
     :goto_0
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 163
+    .line 5
     iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/IBleProxyService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x3
@@ -425,10 +399,10 @@
 
     invoke-interface {p1, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 164
+    .line 6
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 165
+    .line 7
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -439,11 +413,11 @@
 
     const/4 v3, 0x1
 
-    .line 168
+    .line 8
     :cond_1
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 169
+    .line 9
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return v3
@@ -451,10 +425,10 @@
     :catchall_0
     move-exception p1
 
-    .line 168
+    .line 10
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 169
+    .line 11
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw p1

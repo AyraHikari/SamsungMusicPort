@@ -7,14 +7,5 @@
         <item android:icon="@drawable/music_bottombar_ic_share" android:id="@id/menu_bottom_bar_share" android:title="@string/menu_share" />
         <item android:icon="@drawable/music_bottombar_ic_delete" android:id="@id/menu_delete_bottom_bar" android:title="@string/menu_delete" />
     </group>
-    <group android:id="@id/menu_group_secure">
-        <item android:id="@id/menu_move_to_knox" android:title="@string/menu_move_to_container" app:showAsAction="never" />
-        <item android:id="@id/menu_move_to_personal_mode" android:title="@string/menu_move_to_personal_mode" app:showAsAction="never" />
-        <item android:id="@id/menu_move_to_knox_b2b" android:title="@string/menu_move_to_container" app:showAsAction="never" />
-        <item android:id="@id/menu_move_to_secure_folder" android:title="@string/menu_move_to_container" app:showAsAction="never" />
-        <item android:id="@id/menu_move_to_secure_folder_b2b" android:title="@string/menu_move_to_container" app:showAsAction="never" />
-        <item android:id="@id/menu_move_out_of_secure_folder" android:title="@string/menu_move_out_of_secure_folder" app:showAsAction="never" />
-        <item android:id="@id/menu_move_to_private" android:title="@string/menu_move_to_private" app:showAsAction="never" />
-        <item android:id="@id/menu_remove_from_private" android:title="@string/menu_remove_from_private" app:showAsAction="never" />
-    </group>
+    <item android:id="@id/menu_send_to_your_watch" android:title="@string/send_to_watch" app:showAsAction="never" />
 </menu>

@@ -5,7 +5,7 @@
         <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/milk_offline_mode_popup" android:fontFamily="sec-roboto-light" android:textAlignment="center" />
         <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="36.0dip">
             <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/milk_local_only_dialog_color" android:layout_gravity="center_vertical" android:id="@id/goto_samsungmusic_setting_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/milk_goto_samsung_music_setting" android:fontFamily="roboto-regular" />
+                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/basics_primary_dark_209_4_4" android:layout_gravity="center_vertical" android:id="@id/goto_samsungmusic_setting_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings" android:fontFamily="roboto-regular" />
                 <ImageView android:layout_gravity="center_vertical" android:id="@id/local_only_arrow_button" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/store_album_detail_arrow_detail" />
             </LinearLayout>
         </RelativeLayout>

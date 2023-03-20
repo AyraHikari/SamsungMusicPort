@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.AppCompatSeekBar android:paddingTop="@dimen/full_player_seekbar_vertical_padding" android:paddingBottom="@dimen/full_player_seekbar_vertical_padding" android:layout_width="0.0dip" android:paddingStart="@dimen/full_player_seekbar_margin_horizontal" android:paddingEnd="@dimen/full_player_seekbar_margin_horizontal" style="@style/SeekBar.FullPlayer"
+<androidx.appcompat.widget.AppCompatSeekBar android:paddingTop="@dimen/full_player_seekbar_vertical_padding" android:paddingBottom="@dimen/full_player_seekbar_vertical_padding" android:layout_width="0.0dip" android:paddingStart="@dimen/full_player_seekbar_margin_horizontal" android:paddingEnd="@dimen/full_player_seekbar_margin_horizontal" style="@style/SeekBar.FullPlayer"
   xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/gms/common/stats/StatsEvent;
-.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.super Lcom/google/android/gms/common/internal/safeparcel/a;
 
 # interfaces
 .implements Lcom/google/android/gms/common/internal/ReflectedParcelable;
@@ -9,46 +9,45 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/a;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()J
+.method public abstract e()I
 .end method
 
-.method public abstract b()I
+.method public abstract f()J
 .end method
 
-.method public abstract c()J
+.method public abstract i()J
 .end method
 
-.method public abstract d()Ljava/lang/String;
+.method public abstract j()Ljava/lang/String;
 .end method
 
 .method public toString()Ljava/lang/String;
     .locals 8
 
-    .line 2
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->a()J
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->f()J
 
     move-result-wide v0
 
-    .line 3
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->b()I
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->e()I
 
     move-result v2
 
-    .line 4
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->c()J
+    .line 3
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->i()J
 
     move-result-wide v3
 
-    .line 5
-    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->d()Ljava/lang/String;
+    .line 4
+    invoke-virtual {p0}, Lcom/google/android/gms/common/stats/StatsEvent;->j()Ljava/lang/String;
 
     move-result-object v5
 
@@ -73,8 +72,6 @@
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v0, "\t"
 
     invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

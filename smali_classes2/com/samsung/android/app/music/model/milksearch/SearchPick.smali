@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/milksearch/SearchPick;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchPick.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -29,10 +29,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 39
     new-instance v0, Lcom/samsung/android/app/music/model/milksearch/SearchPick$1;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/milksearch/SearchPick$1;-><init>()V
@@ -42,34 +41,34 @@
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 19
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickId:Ljava/lang/String;
 
-    .line 21
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickTitle:Ljava/lang/String;
 
-    .line 22
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickEditorName:Ljava/lang/String;
 
-    .line 23
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -92,7 +91,6 @@
 .method public getImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 64
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->imageUrl:Ljava/lang/String;
 
     return-object v0
@@ -101,7 +99,6 @@
 .method public getPickEditorName()Ljava/lang/String;
     .locals 1
 
-    .line 60
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickEditorName:Ljava/lang/String;
 
     return-object v0
@@ -110,7 +107,6 @@
 .method public getPickId()Ljava/lang/String;
     .locals 1
 
-    .line 52
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickId:Ljava/lang/String;
 
     return-object v0
@@ -119,7 +115,6 @@
 .method public getPickTitle()Ljava/lang/String;
     .locals 1
 
-    .line 56
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickTitle:Ljava/lang/String;
 
     return-object v0
@@ -128,22 +123,22 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 28
+    .line 1
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickId:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 29
+    .line 2
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickTitle:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 30
+    .line 3
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->pickEditorName:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 31
+    .line 4
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPick;->imageUrl:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

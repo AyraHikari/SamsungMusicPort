@@ -1,6 +1,6 @@
 .class abstract Lcom/samsung/android/sdk/look/AbstractBaseReflection;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AbstractBaseReflection.java"
 
 
 # static fields
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field protected mBaseClass:Ljava/lang/Class;
+.field public mBaseClass:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -53,36 +53,36 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 20
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 15
+    .line 2
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
-    .line 16
+    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
-    .line 17
+    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mReflectionList:Ljava/util/ArrayList;
 
-    .line 18
+    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mClassMap:Ljava/util/HashMap;
 
-    .line 21
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadReflection()V
 
     return-void
@@ -98,36 +98,36 @@
         }
     .end annotation
 
-    .line 28
+    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 15
+    .line 14
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
-    .line 16
+    .line 15
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
-    .line 17
+    .line 16
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mReflectionList:Ljava/util/ArrayList;
 
-    .line 18
+    .line 17
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mClassMap:Ljava/util/HashMap;
 
-    .line 29
+    .line 18
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadReflection(Ljava/lang/Class;)V
 
     return-void
@@ -136,36 +136,36 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 24
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 15
+    .line 8
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
-    .line 16
+    .line 9
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
-    .line 17
+    .line 10
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mReflectionList:Ljava/util/ArrayList;
 
-    .line 18
+    .line 11
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mClassMap:Ljava/util/HashMap;
 
-    .line 25
+    .line 12
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadReflection(Ljava/lang/String;)V
 
     return-void
@@ -174,23 +174,23 @@
 .method private addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
 
-    .line 108
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
     monitor-enter v0
 
-    .line 109
+    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 110
+    .line 3
     iget-object p1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mReflectionList:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 108
+    .line 4
     monitor-exit v0
 
     return-void
@@ -208,7 +208,7 @@
 .method private getReflectionInstance(Ljava/lang/String;)Ljava/lang/Object;
     .locals 12
 
-    .line 78
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
     monitor-enter v0
@@ -217,18 +217,13 @@
 
     if-nez p1, :cond_0
 
-    .line 79
+    .line 2
     :try_start_0
     monitor-exit v0
 
     return-object v1
 
-    :catchall_0
-    move-exception p1
-
-    goto :goto_3
-
-    .line 81
+    .line 3
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
@@ -238,17 +233,17 @@
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    move v4, v3
 
     :goto_0
     if-lt v4, v2, :cond_1
 
-    .line 103
+    .line 4
     monitor-exit v0
 
     return-object v1
 
-    .line 83
+    .line 5
     :cond_1
     iget-object v5, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mNameList:Ljava/util/ArrayList;
 
@@ -258,12 +253,12 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 84
+    .line 6
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
     move-result v6
 
-    .line 85
+    .line 7
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v7
@@ -275,24 +270,24 @@
     :cond_2
     add-int/lit8 v7, v6, -0x1
 
-    .line 90
+    .line 8
     invoke-virtual {v5}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v5
 
-    .line 91
+    .line 9
     invoke-virtual {p1}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v8
 
-    const/4 v9, 0x0
+    move v9, v3
 
     :goto_1
     if-lt v9, v6, :cond_3
 
     goto :goto_2
 
-    .line 93
+    .line 10
     :cond_3
     aget-char v10, v5, v9
 
@@ -312,7 +307,7 @@
     :cond_4
     if-ne v9, v7, :cond_5
 
-    .line 97
+    .line 11
     iget-object p1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mReflectionList:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -328,8 +323,10 @@
 
     goto :goto_1
 
-    .line 78
-    :goto_3
+    :catchall_0
+    move-exception p1
+
+    .line 12
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -348,14 +345,14 @@
         }
     .end annotation
 
-    .line 445
+    .line 1
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object v0
 
     if-nez p1, :cond_0
 
-    .line 448
+    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -374,7 +371,7 @@
 
     return-object p1
 
-    .line 452
+    .line 3
     :cond_0
     array-length v1, p1
 
@@ -388,7 +385,7 @@
     :cond_1
     aget-object v3, p1, v2
 
-    .line 454
+    .line 4
     :try_start_0
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -406,18 +403,16 @@
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v0
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-object v0, v3
 
     goto :goto_1
 
     :catch_0
     move-exception v3
 
-    .line 456
+    .line 5
     sget-object v4, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -453,7 +448,6 @@
 .method private getUniqueFieldName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 464
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "FIELD_"
@@ -486,16 +480,16 @@
 
     return-object p1
 
-    .line 472
+    .line 1
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 473
+    .line 2
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 475
+    .line 3
     array-length p1, p2
 
     const/4 v1, 0x0
@@ -503,20 +497,20 @@
     :goto_0
     if-lt v1, p1, :cond_1
 
-    .line 481
+    .line 4
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 
-    .line 475
+    .line 5
     :cond_1
     aget-object v2, p2, v1
 
     if-eqz v2, :cond_2
 
-    .line 477
+    .line 6
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v2
@@ -536,9 +530,9 @@
 
     const/4 v0, 0x0
 
-    .line 149
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 1
     invoke-virtual {p0, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->createInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -563,10 +557,9 @@
 
     const/4 p2, 0x0
 
-    .line 158
     new-array p2, p2, [Ljava/lang/Object;
 
-    .line 161
+    .line 3
     :cond_0
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadConstructorIfNeeded([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
@@ -576,7 +569,7 @@
 
     if-nez p1, :cond_1
 
-    .line 163
+    .line 4
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object p1
@@ -590,11 +583,11 @@
     :cond_1
     const/4 v1, 0x1
 
-    .line 168
+    .line 5
     :try_start_0
     invoke-virtual {p1, v1}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
 
-    .line 169
+    .line 6
     invoke-virtual {p1, p2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -608,10 +601,10 @@
     :catch_0
     move-exception p1
 
-    .line 178
+    .line 7
     invoke-virtual {p1}, Ljava/lang/InstantiationException;->printStackTrace()V
 
-    .line 179
+    .line 8
     sget-object p2, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -628,17 +621,17 @@
 
     const-string v2, " InstantiationException encountered invoking constructor "
 
-    .line 180
+    .line 9
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 181
+    .line 10
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 179
+    .line 11
     invoke-virtual {p2, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     goto :goto_0
@@ -646,7 +639,7 @@
     :catch_1
     move-exception p1
 
-    .line 174
+    .line 12
     sget-object p2, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -663,17 +656,17 @@
 
     const-string v2, " InvocationTargetException encountered invoking constructor "
 
-    .line 175
+    .line 13
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 176
+    .line 14
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 174
+    .line 15
     invoke-virtual {p2, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     goto :goto_0
@@ -681,7 +674,7 @@
     :catch_2
     move-exception p1
 
-    .line 171
+    .line 16
     sget-object p2, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -698,7 +691,7 @@
 
     const-string v2, " IllegalAccessException encountered invoking constructor "
 
-    .line 172
+    .line 17
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -707,19 +700,19 @@
 
     move-result-object p1
 
-    .line 171
+    .line 18
     invoke-virtual {p2, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     :goto_0
     return-object v0
 .end method
 
-.method protected varargs createInstance([Ljava/lang/Object;)Ljava/lang/Object;
+.method public varargs createInstance([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 153
+    .line 2
     invoke-virtual {p0, v0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->createInstance([Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -727,13 +720,13 @@
     return-object p1
 .end method
 
-.method protected abstract getBaseClassName()Ljava/lang/String;
+.method public abstract getBaseClassName()Ljava/lang/String;
 .end method
 
-.method protected getBooleanStaticValue(Ljava/lang/String;Z)Z
+.method public getBooleanStaticValue(Ljava/lang/String;Z)Z
     .locals 0
 
-    .line 265
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -742,7 +735,7 @@
 
     return p2
 
-    .line 268
+    .line 2
     :cond_0
     check-cast p1, Ljava/lang/Boolean;
 
@@ -753,7 +746,7 @@
     return p1
 .end method
 
-.method protected getClass(Ljava/lang/String;)Ljava/lang/Class;
+.method public getClass(Ljava/lang/String;)Ljava/lang/Class;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -765,11 +758,11 @@
         }
     .end annotation
 
-    .line 54
+    .line 1
     :try_start_0
     invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    move-result-object v0
+    move-result-object p1
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -778,7 +771,7 @@
     :catch_0
     move-exception v0
 
-    .line 56
+    .line 2
     sget-object v1, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -801,10 +794,10 @@
 
     invoke-virtual {v1, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
     :goto_0
-    return-object v0
+    return-object p1
 .end method
 
 .method public getClassType()Ljava/lang/Class;
@@ -817,16 +810,15 @@
         }
     .end annotation
 
-    .line 485
     iget-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method protected getDoubleStaticValue(Ljava/lang/String;D)D
+.method public getDoubleStaticValue(Ljava/lang/String;D)D
     .locals 0
 
-    .line 293
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -835,7 +827,7 @@
 
     return-wide p2
 
-    .line 296
+    .line 2
     :cond_0
     check-cast p1, Ljava/lang/Double;
 
@@ -846,10 +838,10 @@
     return-wide p1
 .end method
 
-.method protected getFloatStaticValue(Ljava/lang/String;F)F
+.method public getFloatStaticValue(Ljava/lang/String;F)F
     .locals 0
 
-    .line 286
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -858,7 +850,7 @@
 
     return p2
 
-    .line 289
+    .line 2
     :cond_0
     check-cast p1, Ljava/lang/Float;
 
@@ -869,10 +861,10 @@
     return p1
 .end method
 
-.method protected getIntStaticValue(Ljava/lang/String;I)I
+.method public getIntStaticValue(Ljava/lang/String;I)I
     .locals 0
 
-    .line 272
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -881,7 +873,7 @@
 
     return p2
 
-    .line 275
+    .line 2
     :cond_0
     check-cast p1, Ljava/lang/Integer;
 
@@ -892,10 +884,10 @@
     return p1
 .end method
 
-.method protected getLongStaticValue(Ljava/lang/String;J)J
+.method public getLongStaticValue(Ljava/lang/String;J)J
     .locals 0
 
-    .line 279
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -904,7 +896,7 @@
 
     return-wide p2
 
-    .line 282
+    .line 2
     :cond_0
     check-cast p1, Ljava/lang/Long;
 
@@ -915,57 +907,57 @@
     return-wide p1
 .end method
 
-.method protected getNormalValue(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+.method public getNormalValue(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 4
 
-    const/4 v0, 0x0
+    const-string v0, "Cannot get value : "
+
+    const/4 v1, 0x0
 
     if-eqz p1, :cond_2
 
     if-eqz p2, :cond_2
 
-    .line 222
+    .line 1
     invoke-virtual {p2}, Ljava/lang/String;->isEmpty()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     goto :goto_0
 
-    .line 227
+    .line 2
     :cond_0
     invoke-virtual {p0, p2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadFieldIfNeeded(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v1
+    move-result-object v2
 
-    if-nez v1, :cond_1
+    if-nez v2, :cond_1
 
-    .line 230
+    .line 3
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object p1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "Cannot get value : "
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    return-object v0
+    return-object v1
 
-    .line 235
+    .line 4
     :cond_1
     :try_start_0
-    invoke-virtual {v1, p1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
     :try_end_0
@@ -976,8 +968,8 @@
     :catch_0
     move-exception p1
 
-    .line 237
-    sget-object v1, Ljava/lang/System;->err:Ljava/io/PrintStream;
+    .line 5
+    sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -995,7 +987,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 238
+    .line 6
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -1004,177 +996,173 @@
 
     move-result-object p1
 
-    .line 237
-    invoke-virtual {v1, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    .line 7
+    invoke-virtual {v0, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    return-object v0
+    return-object v1
 
-    .line 223
+    .line 8
     :cond_2
     :goto_0
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object p1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "Cannot get value : "
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    return-object v0
+    return-object v1
 .end method
 
-.method protected getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
-    .locals 5
+.method public getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 6
 
-    .line 307
-    iget-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
+    const-string v0, " IllegalAccessException encountered get "
 
-    const/4 v1, 0x0
+    .line 1
+    iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
-    if-eqz v0, :cond_1
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1
 
     if-eqz p1, :cond_1
 
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     goto/16 :goto_1
 
-    .line 313
+    .line 2
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
+    iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-virtual {v1, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v0
+    move-result-object v1
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    .line 314
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    .line 3
+    invoke-virtual {v1, v3}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 315
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 4
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p1
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object v0
+    return-object p1
 
     :catch_0
-    move-exception v0
+    move-exception v1
 
-    .line 327
-    sget-object v2, Ljava/lang/System;->err:Ljava/io/PrintStream;
+    .line 5
+    sget-object v3, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v4, " IllegalAccessException encountered get "
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 6
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 328
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 327
-    invoke-virtual {v2, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    .line 7
+    invoke-virtual {v3, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 318
+    .line 8
     :catch_1
     :try_start_1
-    iget-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
+    iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-virtual {v1, p1}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 319
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 9
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p1
     :try_end_1
     .catch Ljava/lang/NoSuchFieldException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_2
 
-    return-object v0
+    return-object p1
 
     :catch_2
-    move-exception v0
+    move-exception v1
 
-    .line 323
-    sget-object v2, Ljava/lang/System;->err:Ljava/io/PrintStream;
+    .line 10
+    sget-object v3, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v4, " IllegalAccessException encountered get "
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 11
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 324
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 323
-    invoke-virtual {v2, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    .line 12
+    invoke-virtual {v3, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     goto :goto_0
 
     :catch_3
     move-exception p1
 
-    .line 321
+    .line 13
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
@@ -1184,51 +1172,51 @@
 
     move-result-object v3
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     const-string v3, " No field "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     :goto_0
-    return-object v1
+    return-object v2
 
-    .line 308
+    .line 14
     :cond_1
     :goto_1
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object v0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "Cannot get static value : "
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    return-object v1
+    return-object v2
 .end method
 
-.method protected getStringStaticValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public getStringStaticValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 300
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getStaticValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1237,21 +1225,21 @@
 
     return-object p2
 
-    .line 303
+    .line 2
     :cond_0
     check-cast p1, Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method protected invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+.method public invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 368
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 1
     invoke-virtual {p0, p1, p2, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1259,7 +1247,7 @@
     return-object p1
 .end method
 
-.method protected varargs invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+.method public varargs invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1281,7 +1269,7 @@
 
     if-eqz p2, :cond_3
 
-    .line 376
+    .line 3
     invoke-virtual {p2}, Ljava/lang/String;->isEmpty()Z
 
     move-result v1
@@ -1295,10 +1283,9 @@
 
     const/4 p4, 0x0
 
-    .line 382
     new-array p4, p4, [Ljava/lang/Object;
 
-    .line 385
+    .line 4
     :cond_1
     invoke-virtual {p0, p2, p3}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadMethodIfNeeded(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
@@ -1306,7 +1293,7 @@
 
     if-nez p3, :cond_2
 
-    .line 387
+    .line 5
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object p1
@@ -1327,7 +1314,7 @@
 
     return-object v0
 
-    .line 392
+    .line 6
     :cond_2
     :try_start_0
     invoke-virtual {p3, p1, p4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -1342,7 +1329,7 @@
     :catch_0
     move-exception p1
 
-    .line 397
+    .line 7
     sget-object p3, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance p4, Ljava/lang/StringBuilder;
@@ -1359,22 +1346,22 @@
 
     const-string v1, " InvocationTargetException encountered invoking "
 
-    .line 398
+    .line 8
     invoke-virtual {p4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 399
+    .line 9
     invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 397
+    .line 10
     invoke-virtual {p3, p2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 400
+    .line 11
     invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
 
     goto :goto_0
@@ -1382,7 +1369,7 @@
     :catch_1
     move-exception p1
 
-    .line 394
+    .line 12
     sget-object p3, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance p4, Ljava/lang/StringBuilder;
@@ -1401,7 +1388,7 @@
 
     invoke-virtual {p4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 395
+    .line 13
     invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -1410,13 +1397,13 @@
 
     move-result-object p1
 
-    .line 394
+    .line 14
     invoke-virtual {p3, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     :goto_0
     return-object v0
 
-    .line 377
+    .line 15
     :cond_3
     :goto_1
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
@@ -1440,12 +1427,12 @@
     return-object v0
 .end method
 
-.method protected varargs invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+.method public varargs invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 372
+    .line 2
     invoke-virtual {p0, p1, p2, v0, p3}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->invokeNormalMethod(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1453,14 +1440,14 @@
     return-object p1
 .end method
 
-.method protected invokeStaticMethod(Ljava/lang/String;)Ljava/lang/Object;
+.method public invokeStaticMethod(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 407
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1468,7 +1455,7 @@
     return-object p1
 .end method
 
-.method protected varargs invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+.method public varargs invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1487,7 +1474,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 415
+    .line 3
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
     move-result v1
@@ -1501,10 +1488,9 @@
 
     const/4 p3, 0x0
 
-    .line 421
     new-array p3, p3, [Ljava/lang/Object;
 
-    .line 424
+    .line 4
     :cond_1
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadMethodIfNeeded(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
@@ -1512,7 +1498,7 @@
 
     if-nez p2, :cond_2
 
-    .line 426
+    .line 5
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object p2
@@ -1533,22 +1519,22 @@
 
     return-object v0
 
-    .line 431
+    .line 6
     :cond_2
     :try_start_0
     invoke-virtual {p2, v0, p3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p2
+    move-result-object p1
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p2
+    return-object p1
 
     :catch_0
     move-exception p2
 
-    .line 436
+    .line 7
     sget-object p3, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1565,19 +1551,19 @@
 
     const-string v2, " InvocationTargetException encountered invoking "
 
-    .line 437
+    .line 8
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 438
+    .line 9
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 436
+    .line 10
     invoke-virtual {p3, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     goto :goto_0
@@ -1585,7 +1571,7 @@
     :catch_1
     move-exception p2
 
-    .line 433
+    .line 11
     sget-object p3, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1604,7 +1590,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 434
+    .line 12
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -1613,13 +1599,13 @@
 
     move-result-object p1
 
-    .line 433
+    .line 13
     invoke-virtual {p3, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     :goto_0
     return-object v0
 
-    .line 416
+    .line 14
     :cond_3
     :goto_1
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
@@ -1643,12 +1629,12 @@
     return-object v0
 .end method
 
-.method protected varargs invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+.method public varargs invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 411
+    .line 2
     invoke-virtual {p0, p1, v0, p2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1656,7 +1642,7 @@
     return-object p1
 .end method
 
-.method protected loadClassIfNeeded(Ljava/lang/String;)Ljava/lang/Class;
+.method public loadClassIfNeeded(Ljava/lang/String;)Ljava/lang/Class;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1668,7 +1654,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mClassMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1679,14 +1665,14 @@
 
     if-nez v0, :cond_0
 
-    .line 65
+    .line 2
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 67
+    .line 3
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mClassMap:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -1695,7 +1681,7 @@
     return-object v0
 .end method
 
-.method protected loadConstructorIfNeeded([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+.method public loadConstructorIfNeeded([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1706,24 +1692,24 @@
         }
     .end annotation
 
-    .line 115
+    .line 1
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getUniqueConstructorName([Ljava/lang/Class;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 116
+    .line 2
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getReflectionInstance(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 118
+    .line 3
     check-cast v1, Ljava/lang/reflect/Constructor;
 
     return-object v1
 
-    .line 121
+    .line 4
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
@@ -1739,77 +1725,59 @@
 
     if-eqz v1, :cond_1
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
     if-nez p1, :cond_2
 
     const/4 p1, 0x0
 
-    .line 126
     new-array p1, p1, [Ljava/lang/Class;
 
-    .line 131
+    .line 5
     :cond_2
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
     invoke-virtual {v1, p1}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
-    move-result-object v1
+    move-result-object v2
+
+    .line 6
+    invoke-direct {p0, v0, v2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 132
-    :try_start_1
-    invoke-direct {p0, v0, v1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
-    :try_end_1
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_0
+    return-object v2
 
-    return-object v1
-
+    .line 7
     :catch_0
-    move-object v2, v1
-
-    .line 136
-    :catch_1
-    :try_start_2
+    :try_start_1
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
     invoke-virtual {v1, p1}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
-    move-result-object p1
-    :try_end_2
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_2 .. :try_end_2} :catch_3
+    move-result-object v2
 
-    const/4 v1, 0x1
+    const/4 p1, 0x1
 
-    .line 137
-    :try_start_3
-    invoke-virtual {p1, v1}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
+    .line 8
+    invoke-virtual {v2, p1}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
 
-    .line 138
-    invoke-direct {p0, v0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
-    :try_end_3
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_3 .. :try_end_3} :catch_2
+    .line 9
+    invoke-direct {p0, v0, v2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
 
-    return-object p1
+    return-object v2
 
-    :catch_2
-    move-exception v0
+    :catch_1
+    move-exception p1
 
-    goto :goto_0
+    .line 10
+    sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
-    :catch_3
-    move-exception v0
-
-    move-object p1, v2
-
-    .line 141
-    :goto_0
-    sget-object v1, Ljava/lang/System;->err:Ljava/io/PrintStream;
-
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
@@ -1819,62 +1787,60 @@
 
     move-result-object v3
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     const-string v3, " No method "
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p1
 
-    invoke-virtual {v1, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    return-object p1
+    invoke-virtual {v0, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     :cond_3
-    :goto_1
+    :goto_0
     return-object v2
 .end method
 
-.method protected loadFieldIfNeeded(Ljava/lang/String;)Ljava/lang/reflect/Field;
-    .locals 5
+.method public loadFieldIfNeeded(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    .locals 4
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_3
 
-    .line 188
+    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
-    .line 192
+    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getUniqueFieldName(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 193
+    .line 3
     invoke-direct {p0, v1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getReflectionInstance(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 195
+    .line 4
     check-cast v2, Ljava/lang/reflect/Field;
 
     return-object v2
 
-    .line 198
+    .line 5
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
@@ -1882,68 +1848,45 @@
 
     return-object v0
 
-    .line 204
+    .line 6
     :cond_2
     :try_start_0
-    iget-object v2, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
-
     invoke-virtual {v2, p1}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v2
+    move-result-object v0
+
+    .line 7
+    invoke-direct {p0, v1, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
     :try_end_0
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 205
-    :try_start_1
-    invoke-direct {p0, v1, v2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_1 .. :try_end_1} :catch_0
+    return-object v0
 
-    return-object v2
-
+    .line 8
     :catch_0
-    move-object v0, v2
-
-    .line 209
-    :catch_1
-    :try_start_2
+    :try_start_1
     iget-object v2, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
     invoke-virtual {v2, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object p1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_2 .. :try_end_2} :catch_3
+    move-result-object v0
 
-    const/4 v0, 0x1
+    const/4 p1, 0x1
 
-    .line 210
-    :try_start_3
-    invoke-virtual {p1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    .line 9
+    invoke-virtual {v0, p1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 211
-    invoke-direct {p0, v1, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldException; {:try_start_3 .. :try_end_3} :catch_2
+    .line 10
+    invoke-direct {p0, v1, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_1 .. :try_end_1} :catch_1
 
-    return-object p1
+    return-object v0
 
-    :catch_2
-    move-exception v0
-
-    move-object v4, v0
-
-    move-object v0, p1
-
-    move-object p1, v4
-
-    goto :goto_0
-
-    :catch_3
+    :catch_1
     move-exception p1
 
-    .line 214
-    :goto_0
+    .line 11
     sget-object v1, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1970,14 +1913,12 @@
 
     invoke-virtual {v1, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    return-object v0
-
     :cond_3
-    :goto_1
+    :goto_0
     return-object v0
 .end method
 
-.method protected loadMethodIfNeeded(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+.method public loadMethodIfNeeded(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1990,24 +1931,24 @@
         }
     .end annotation
 
-    .line 335
+    .line 1
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getUniqueMethodName(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 336
+    .line 2
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getReflectionInstance(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 338
+    .line 3
     check-cast v1, Ljava/lang/reflect/Method;
 
     return-object v1
 
-    .line 341
+    .line 4
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
@@ -2030,10 +1971,9 @@
 
     const/4 p2, 0x0
 
-    .line 346
     new-array p2, p2, [Ljava/lang/Class;
 
-    .line 350
+    .line 5
     :cond_2
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
@@ -2042,14 +1982,14 @@
 
     move-result-object v1
 
-    .line 351
+    .line 6
     invoke-direct {p0, v0, v1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object v1
 
-    .line 355
+    .line 7
     :catch_0
     :try_start_1
     iget-object v1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
@@ -2060,10 +2000,10 @@
 
     const/4 p2, 0x1
 
-    .line 356
+    .line 8
     invoke-virtual {p1, p2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 357
+    .line 9
     invoke-direct {p0, v0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->addReflectionInstance(Ljava/lang/String;Ljava/lang/Object;)V
     :try_end_1
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
@@ -2073,7 +2013,7 @@
     :catch_1
     move-exception p1
 
-    .line 360
+    .line 10
     sget-object p2, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2100,17 +2040,15 @@
 
     invoke-virtual {p2, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    return-object v2
-
     :cond_3
     :goto_0
     return-object v2
 .end method
 
-.method protected loadReflection()V
+.method public loadReflection()V
     .locals 1
 
-    .line 33
+    .line 1
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object v0
@@ -2120,7 +2058,7 @@
     return-void
 .end method
 
-.method protected loadReflection(Ljava/lang/Class;)V
+.method public loadReflection(Ljava/lang/Class;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2130,11 +2068,8 @@
         }
     .end annotation
 
-    .line 41
+    .line 3
     iput-object p1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
-
-    .line 43
-    iget-object p1, p0, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->mBaseClass:Ljava/lang/Class;
 
     if-nez p1, :cond_0
 
@@ -2142,22 +2077,22 @@
 
     const-string v0, "There\'s no class."
 
-    .line 44
+    .line 4
     invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 48
+    .line 5
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadStaticFields()V
 
     return-void
 .end method
 
-.method protected loadReflection(Ljava/lang/String;)V
+.method public loadReflection(Ljava/lang/String;)V
     .locals 0
 
-    .line 37
+    .line 2
     invoke-virtual {p0, p1}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p1
@@ -2167,44 +2102,44 @@
     return-void
 .end method
 
-.method protected loadStaticFields()V
+.method public loadStaticFields()V
     .locals 0
 
     return-void
 .end method
 
-.method protected setNormalValue(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
+.method public setNormalValue(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
+
+    const-string v0, "Cannot set value : "
 
     if-eqz p1, :cond_2
 
     if-eqz p2, :cond_2
 
-    .line 244
+    .line 1
     invoke-virtual {p2}, Ljava/lang/String;->isEmpty()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     goto :goto_1
 
-    .line 249
+    .line 2
     :cond_0
     invoke-virtual {p0, p2}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->loadFieldIfNeeded(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v0
+    move-result-object v1
 
-    if-nez v0, :cond_1
+    if-nez v1, :cond_1
 
-    .line 252
+    .line 3
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
 
     move-result-object p1
 
     new-instance p3, Ljava/lang/StringBuilder;
-
-    const-string v0, "Cannot set value : "
 
     invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -2218,10 +2153,10 @@
 
     return-void
 
-    .line 257
+    .line 4
     :cond_1
     :try_start_0
-    invoke-virtual {v0, p1, p3}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {v1, p1, p3}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2230,7 +2165,7 @@
     :catch_0
     move-exception p1
 
-    .line 259
+    .line 5
     sget-object p3, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2249,7 +2184,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 260
+    .line 6
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -2258,13 +2193,13 @@
 
     move-result-object p1
 
-    .line 259
+    .line 7
     invoke-virtual {p3, p1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     :goto_0
     return-void
 
-    .line 245
+    .line 8
     :cond_2
     :goto_1
     invoke-virtual {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->getBaseClassName()Ljava/lang/String;
@@ -2272,8 +2207,6 @@
     move-result-object p1
 
     new-instance p3, Ljava/lang/StringBuilder;
-
-    const-string v0, "Cannot set value : "
 
     invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

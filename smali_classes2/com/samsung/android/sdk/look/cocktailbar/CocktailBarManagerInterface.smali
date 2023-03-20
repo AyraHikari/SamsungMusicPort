@@ -1,6 +1,6 @@
 .class interface abstract Lcom/samsung/android/sdk/look/cocktailbar/CocktailBarManagerInterface;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "CocktailBarManagerInterface.java"
 
 
 # virtual methods

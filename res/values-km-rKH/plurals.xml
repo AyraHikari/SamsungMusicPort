@@ -12,64 +12,20 @@
         <item quantity="other">បទ</item>
         <item quantity="one">បទ</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">បាន​ថែម %d បទ ទៅ​សំណព្វ។ មិន​បាន​ថែម​បទ​ដែល​មាន​ក្នុង​សំណព្វ​ហើយ។</item>
-        <item quantity="one">បាន​ថែម %d បទ ទៅ​សំណព្វ។ មិន​បាន​ថែម​បទ​ដែល​មាន​ក្នុង​សំណព្វ​ហើយ។</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d បទ</item>
         <item quantity="one">%d បទ</item>
     </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">បាន​លុប %d បទ ពី​សំណព្វ។</item>
-        <item quantity="one">បាន​លុប %d បទ ពី​សំណព្វ។</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">បាន​ថែម %d បទ ទៅ​សំណព្វ</item>
-        <item quantity="one">បាន​ថែម %d បទ ទៅ​សំណព្វ។</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">អ្នក​អាច​លុប​ដល់​ទៅ %d បទ​ប៉ុណ្ណោះ​ពី​ការឲ្យ​យោបល់។ បង្ហាញ​បទ​ដែល​បាន​លុប, ជ្រើស​ខ្លះ​ដែល​ត្រូវ​ស្ដារ រួច​សាកល្បង​ម្ដងទៀត។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">ប៉ះ​ប៊ូតុង​ចាក់​វិទ្យុ ដើម្បី​រីករាយ​នឹង​បទ​ឥតគិតថ្លៃ %d រៀងរាល់​ខែ។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">មិន​អាច​ជ្រើស​សិល្បករ​លើសពី %d។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">មិន​អាច​ជ្រើស​បែប​លើសពី %d។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">មិន​អាច​ជ្រើស​បទ​លើសពី %d។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d វិនាទី</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">កុំ​បង្ហាញ​ក្នុង​ពេល %d ថ្ងៃ</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
@@ -80,16 +36,24 @@
         <item quantity="other">អ្នក​អាច​ប្រើ %1$s %2$d ដង។</item>
         <item quantity="one">អ្នក​អាច​ប្រើ %s 1 ដង។</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">ចម្រៀង %d បទ​មិន​អាច​ទិញ​ជាមួយ​សំបុត្រ​ប្រណិត​ឡើយ ដោយសារ​បញ្ហា​សិទ្ធិ​អ្នកនិពន្ធ។ អ្នក​អាច​ទិញ​ពួកវា​មួយៗ។</item>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">នឹង​លុប​បទ​ផុតកំណត់ %d បទ។ អ្នក​អាច​ពិនិត្យ​ប្រវត្តិ​នៃ​ការទាញយក​របស់​អ្នក​ក្នុង​ព័ត៌មាន Melon > ប្រវត្តិ​នៃ​ការទិញ។</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">នឹង​ប្រើ %d បទ ពី​បទ​ដែល​មាន។</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">មិន​អាច​ពន្យារ​អំឡុងពេល DCF សម្រាប់ %d បទ។ អ្នក​អាច​សាកល្បង​ម្ដងទៀត ឬ​ក៏​លុប​ឯកសារ​ពី​បញ្ជី​ខាងក្រោម មុនពេល​ទាញយក​ពួកវា​ឡើងវិញ។</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">មិន​អាច​នាំចូល​ធាតុ​លើសពី %d។</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
@@ -112,54 +76,6 @@
         <item quantity="other">លុប​បទ​ទាំងអស់​ដោយ​អ្នកតែង​ទាំងនេះ?</item>
         <item quantity="one">លុប​បទ​ទាំងអស់​ដោយ​អ្នកតែង​នេះ?</item>
     </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">លុប​បទ​ដែល​បាន​ជ្រើស?</item>
-        <item quantity="one">លុប​បទ​ដែល​បាន​ជ្រើស?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">នឹង​ទិញ %d បទ។ បើ​អ្នក​មិនមាន​បទ​គ្រប់គ្រាន់​ទេ នោះ​បទ​ទាំងនេះ​មិន​អាច​ទិញ​បាន​ឡើយ។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">ទិញ​បទ​ដែល​បាន​ជ្រើស?</item>
-        <item quantity="one">ទិញ​បទ​ដែល​បាន​ជ្រើស?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">អ្នក​បាន​ទិញ​ចម្រៀង​ទាំងនេះ​ហើយ។ អ្នក​អាច​ទាញយក​ចម្រៀង​ដែល​បាន​ទិញ​ម្ដងទៀត នៅ​គ្រប់ពេល។</item>
-        <item quantity="one">អ្នក​បាន​ទិញ​ចម្រៀង​នេះ​ហើយ។ អ្នក​អាច​ទាញយក​ចម្រៀង​ដែល​បាន​ទិញ​ម្ដងទៀត នៅ​គ្រប់ពេល។</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">បាន​ទិញ​បទ​ហើយ</item>
-        <item quantity="one">បាន​ទិញ​បទ​ហើយ</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">អ្នក​អាច​ថែម​បញ្ជីចាក់​ដែល​បាន​ផ្ដល់​ជូន %d ជា​សំណព្វ។ លុប​បញ្ជីចាក់​ដែល​បាន​ផ្ដល់​ជូន​ខ្លះ​ពី​ថេប​សំណព្វ។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">អ្នក​អាច​ថែម​បទ​ស្ទ្រីមីង %d ប៉ុណ្ណោះ ជា​បទ​សំណព្វ។ លុប​បទ​ស្ទ្រីមីង​ខ្លះ​ពី​បទ​សំណព្វ រួច​សាកល្បង​ម្ដងទៀត។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">អ្នក​អាច​ថែម %d បទ​ប៉ុណ្ណោះ​ជា​បទ​សំណព្វ។ លុប​បទ​ខ្លះ​ពី​បទ​សំណព្វ រួច​សាកល្បង​ម្ដងទៀត។</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d សឺមី</item>
         <item quantity="one">សឺមី 1</item>
@@ -180,25 +96,73 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">បាន​ស្ដារ %d បទ។</item>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">លុប %d ធាតុ?</item>
+        <item quantity="one">លុប​ធាតុ 1?</item>
+    </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">មិន​អាច​វាយបញ្ចូល​លើសពី %d តួ។</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_items_deleted_msg">
-        <item quantity="other">លុប %d ធាតុ?</item>
-        <item quantity="one">លុប​ធាតុ 1?</item>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">មិន​អាច​ថែម​អាល់ប៊ុម​លើសពី %d។ ថែម​អាល់ប៊ុម​តិច​ជាងនេះ ឬ​ក៏​លុប​ខ្លះ​ពី​សំណព្វ។</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">មិន​អាច​ថែម​សិល្បករ​លើសពី %d។ ថែម​សិល្បករ​តិច​ជាងនេះ ឬ​ក៏​លុប​ខ្លះ​ពី​សំណព្វ។</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">អ្នក​អាច​ថែម​បញ្ជីចាក់​ដល់ទៅ %d ប៉ុណ្ណោះ។ លុប​បញ្ជីចាក់​ខ្លះ​ពី​ថេប​សំណព្វ។</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">មិន​អាច​ថែម​បទ​ស្ទ្រីមីង​លើសពី %d។ ថែម​បទ​តិច​ជាងនេះ ឬ​ក៏​លុប​ខ្លះ​ពី​បទ​សំណព្វ។</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">មិន​អាច​ថែម​បទ​លើសពី %d។ ថែម​បទ​តិច​ជាងនេះ ឬ​ក៏​លុប​ខ្លះ​ពី​បទ​សំណព្វ។</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">បាន​នាំចេញ​បញ្ជីចាក់ %d។</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">បាន​នាំចូល​បញ្ជីចាក់ %d។</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">មិន​អាច​ជ្រើស​បញ្ជីចាក់​លើសពី %d។</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d បទ</item>
         <item quantity="one">1 បទ</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">បទ %d ប៉ុណ្ណោះ ត្រូវ​បាន​ថែម​ទៅ​សំណព្វ។ បទ​នៅសល់​ស្ថិត​ក្នុង​សំណព្វ​ហើយ។</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">បាន​ថែម %d បទ ទៅ​សំណព្វ</item>
+        <item quantity="one">បាន​ថែម 1 បទ ទៅ​សំណព្វ</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">បាន​ថែម %d បទ​ទៅ​បញ្ជីចាក់។</item>
+        <item quantity="one">បាន​ថែម 1 បទ​ទៅ​បញ្ជីចាក់</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">បាន​ថែម %d បទ ទៅ​ជួរ។</item>
         <item quantity="one">បាន​ថែម %d បទ ទៅ​ជួរ។</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">លុប​បទ %d?</item>
-        <item quantity="one">លុប 1 បទ?</item>
+        <item quantity="other">លុប %d បទ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">ពេល​គេង៖ %d ម៉ោង</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">ពេល​គេង៖ %d នាទី</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

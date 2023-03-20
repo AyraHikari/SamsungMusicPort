@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AudioThumbnailCompat.java"
 
 
 # annotations

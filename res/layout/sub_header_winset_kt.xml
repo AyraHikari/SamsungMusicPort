@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/sub_header_text_size_kt" android:textColor="@color/sub_header_text_color_kt" android:id="@id/sub_title" android:paddingTop="@dimen/sub_header_text_padding_top_kt" android:paddingBottom="@dimen/sub_header_text_padding_bottom_kt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" android:paddingStart="@dimen/sub_header_text_padding_start_kt" style="@style/Font.Roboto.Condensed.Bold" />
-    <View android:id="@id/divider" android:background="@color/sub_header_divider_kt" android:layout_width="fill_parent" android:layout_height="@dimen/sub_header_divider_height_kt" android:layout_marginStart="@dimen/sub_header_divider_margin_start_kt" android:layout_marginEnd="@dimen/sub_header_divider_margin_end_kt" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/basics_text_subheader" android:gravity="center" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="36.0dip" android:paddingStart="24.0dip" style="@style/Font.Roboto.Medium" />
+    <com.samsung.android.app.music.view.OvalDottedDash android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="@dimen/sub_header_dot_size" android:layout_marginStart="16.0dip" android:layout_marginEnd="20.0dip" />
 </LinearLayout>

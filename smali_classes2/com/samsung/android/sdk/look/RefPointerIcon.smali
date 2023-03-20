@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/sdk/look/RefPointerIcon;
 .super Lcom/samsung/android/sdk/look/AbstractBaseReflection;
-.source "SourceFile"
+.source "RefPointerIcon.java"
 
 
 # static fields
@@ -8,10 +8,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 5
     invoke-direct {p0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;-><init>()V
 
     return-void
@@ -20,19 +19,19 @@
 .method public static get()Lcom/samsung/android/sdk/look/RefPointerIcon;
     .locals 1
 
-    .line 15
+    .line 1
     sget-object v0, Lcom/samsung/android/sdk/look/RefPointerIcon;->sInstance:Lcom/samsung/android/sdk/look/RefPointerIcon;
 
     if-nez v0, :cond_0
 
-    .line 16
+    .line 2
     new-instance v0, Lcom/samsung/android/sdk/look/RefPointerIcon;
 
     invoke-direct {v0}, Lcom/samsung/android/sdk/look/RefPointerIcon;-><init>()V
 
     sput-object v0, Lcom/samsung/android/sdk/look/RefPointerIcon;->sInstance:Lcom/samsung/android/sdk/look/RefPointerIcon;
 
-    .line 18
+    .line 3
     :cond_0
     sget-object v0, Lcom/samsung/android/sdk/look/RefPointerIcon;->sInstance:Lcom/samsung/android/sdk/look/RefPointerIcon;
 
@@ -41,7 +40,7 @@
 
 
 # virtual methods
-.method protected getBaseClassName()Ljava/lang/String;
+.method public getBaseClassName()Ljava/lang/String;
     .locals 1
 
     const-string v0, "android.view.PointerIcon"
@@ -54,10 +53,9 @@
 
     const/4 v0, 0x2
 
-    .line 29
     new-array v1, v0, [Ljava/lang/Class;
 
-    .line 30
+    .line 3
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const/4 v3, 0x0
@@ -70,11 +68,9 @@
 
     aput-object v2, v1, v4
 
-    const-string v2, "setHoveringSpenIcon"
-
-    .line 32
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 4
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -83,13 +79,15 @@
 
     aput-object p2, v0, v4
 
-    invoke-virtual {p0, v2, v1, v0}, Lcom/samsung/android/sdk/look/RefPointerIcon;->invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    const-string p1, "setHoveringSpenIcon"
+
+    invoke-virtual {p0, p1, v1, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 33
+    .line 5
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
@@ -110,27 +108,22 @@
 
     const/4 v0, 0x2
 
-    .line 22
     new-array v1, v0, [Ljava/lang/Class;
 
-    .line 23
+    .line 1
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const/4 v3, 0x0
 
     aput-object v2, v1, v3
 
-    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
     const/4 v4, 0x1
 
     aput-object v2, v1, v4
 
-    const-string v2, "setHoveringSpenIcon"
-
-    .line 25
     new-array v0, v0, [Ljava/lang/Object;
 
+    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -143,7 +136,9 @@
 
     aput-object p1, v0, v4
 
-    invoke-virtual {p0, v2, v1, v0}, Lcom/samsung/android/sdk/look/RefPointerIcon;->invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    const-string p1, "setHoveringSpenIcon"
+
+    invoke-virtual {p0, p1, v1, v0}, Lcom/samsung/android/sdk/look/AbstractBaseReflection;->invokeStaticMethod(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

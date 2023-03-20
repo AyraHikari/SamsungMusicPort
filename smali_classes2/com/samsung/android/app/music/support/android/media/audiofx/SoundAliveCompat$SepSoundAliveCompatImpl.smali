@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SoundAliveCompat.java"
 
 # interfaces
 .implements Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$ISoundAliveCompat;
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "SepSoundAliveCompatImpl"
 .end annotation
 
@@ -31,28 +31,27 @@
 .method public constructor <init>(IILcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$OnErrorListener;)V
     .locals 0
 
-    .line 154
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 155
+    .line 2
     iput p1, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mPriority:I
 
-    .line 156
+    .line 3
     iput p2, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mAudioSessionId:I
 
-    .line 157
+    .line 4
     iput-object p3, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mOnErrorListener:Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$OnErrorListener;
 
-    .line 158
+    .line 5
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->ensureSoundAlive()V
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;)Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$OnErrorListener;
+.method public static synthetic access$000(Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;)Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$OnErrorListener;
     .locals 0
 
-    .line 145
     iget-object p0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mOnErrorListener:Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$OnErrorListener;
 
     return-object p0
@@ -61,7 +60,7 @@
 .method private ensureSoundAlive()V
     .locals 3
 
-    .line 172
+    .line 1
     :try_start_0
     new-instance v0, Landroid/media/audiofx/SemSoundAlive;
 
@@ -73,9 +72,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
 
-    .line 173
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
-
+    .line 2
     new-instance v1, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl$1;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl$1;-><init>(Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;)V
@@ -86,7 +83,7 @@
 
     goto :goto_0
 
-    .line 181
+    .line 3
     :catch_0
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->release()V
 
@@ -99,24 +96,22 @@
 .method public release()V
     .locals 2
 
-    .line 163
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
 
     if-eqz v0, :cond_0
 
-    .line 164
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
-
     const/4 v1, 0x0
 
+    .line 2
     invoke-virtual {v0, v1}, Landroid/media/audiofx/SemSoundAlive;->setErrorListener(Landroid/media/audiofx/SemSoundAlive$OnErrorListener;)V
 
-    .line 165
+    .line 3
     iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
 
     invoke-virtual {v0}, Landroid/media/audiofx/SemSoundAlive;->release()V
 
-    .line 166
+    .line 4
     iput-object v1, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
 
     :cond_0
@@ -126,24 +121,22 @@
 .method public set3dEffectPosition(ZD)V
     .locals 1
 
-    .line 187
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 188
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->ensureSoundAlive()V
 
-    .line 192
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 194
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->mSemSoundAlive:Landroid/media/audiofx/SemSoundAlive;
-
     invoke-virtual {v0, p1, p2, p3}, Landroid/media/audiofx/SemSoundAlive;->set3dEffectPosition(ZD)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -153,10 +146,10 @@
     :catch_0
     move-exception p1
 
-    .line 197
+    .line 5
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 198
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;->release()V
 
     :cond_1

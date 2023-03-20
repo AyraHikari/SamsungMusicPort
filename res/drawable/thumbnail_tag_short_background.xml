@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape android:shape="rectangle"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:topRightRadius="@dimen/mu_list_item_thumbnail_radius_thumbnail" android:bottomLeftRadius="@dimen/mu_list_item_thumbnail_radius_thumbnail" />
+    <corners android:topRightRadius="@dimen/mu_list_thumbnail_radius_small" android:bottomLeftRadius="@dimen/mu_list_thumbnail_radius_small" />
     <solid android:color="@color/black_opacity_20" />
 </shape>

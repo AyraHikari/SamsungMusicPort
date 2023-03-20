@@ -12,64 +12,20 @@
         <item quantity="other">ເພັງ</item>
         <item quantity="one">ເພງ</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">ເພີ່ມ %d ເພງໃສ່ລາຍການທີ່ມັກແລ້ວ. ເພງທີ່ຢູ່ໃນລາຍການທີ່ມັກແລ້ວບໍ່ຖືກເພີ່ມເຂົ້າ.</item>
-        <item quantity="one">ເພີ່ມ %d ເພງໃສ່ລາຍການທີ່ມັກແລ້ວ. ເພງຢູ່ໃນລາຍການທີ່ມັກບໍ່ຖືກເພີ່ມເຂົ້າ.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d ເພງ</item>
         <item quantity="one">%d ເພງ</item>
     </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">ເອົາ %d ເພງອອກຈາກລາຍການທີ່ມັກແລ້ວ.</item>
-        <item quantity="one">ເອົາ %d ເພງອອກຈາກລາຍການທີ່ມັກແລ້ວ.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">ເພີ່ມ %d ເພງໃສ່ລາຍການທີ່ມັກແລ້ວ</item>
-        <item quantity="one">ເພີ່ມ %d ເພງໃສ່ລາຍການທີ່ມັກແລ້ວ.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">ທ່ານສາມາດເອົາອອກໄປໄດ້ບໍ່ເກີນ %d ເພງເທົ່ານັ້ນຈາກຄຳແນະນຳ. ເບິ່ງເພງທີ່ເອົາອອກໄປ, ເລືອກບາງເພງເພື່ອຣີສະຕໍ, ຈາກນັ້ນ ລອງໃໝ່ອີກ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">ແຕະປຸ່ມຫຼິ້ນວິທະຍຸ ເພື່ອມ່ວນຊື່ນກັບ %d ເພງຟຣີໃນທຸກໆເດືອນ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">ບໍ່ສາມາດເລືອກນັກຮ້ອງໄດ້ຫຼາຍກວ່າ %d ຄົນ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">ບໍ່ສາມາດເລືອກໄດ້ຫຼາຍກວ່າ %d ປະເພດ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">ບໍ່ສາມາດເລືອກໄດ້ຫຼາຍກວ່າ %d ເພງ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d ວິນາທີ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">ຢ່າສະແດງເປັນເວລາ %d ວັນ</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
@@ -80,16 +36,24 @@
         <item quantity="other">ທ່ານສາມາດໃຊ້ %1$s %2$d ຄັ້ງ.</item>
         <item quantity="one">ທ່ານສາມາດໃຊ້ %s 1 ຄັ້ງ.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">ບໍ່ສາມາດຊື້ %d ເພງດ້ວຍປີ້ພຣີມ້ຽມໄດ້ ຍ້ອນບັນຫາດ້ານລິຂະສິດ. ທ່ານສາມາດຊື້ພວກມັນໄດ້ແບບແຕ່ລະອັນໄດ້.</item>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d ເພງທີ່ໝົດອາຍຸຈະຖືກລຶບ. ທ່ານສາມາດກວດເບິ່ງປະຫວັດດາວໂຫຼດຂອງທ່ານໃນຂໍ້ມູນ Melon > ປະຫວັດການຊື້.</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d ເພງຈະຖືກໃຊ້ຈາກເພງທີ່ມີໃຫ້ຂອງທ່ານ.</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">ບໍ່ສາມາດຂະຫຍາຍໄລຍະເວລາ DCF ສຳລັບ %d ເພງ. ທ່ານສາມາດລອງໃໝ່ອີກ, ຫຼື ລຶບໄຟລ໌ໃນລາຍການລຸ່ມນີ້ກ່ອນທີ່ຈະດາວໂຫຼດພວກມັນຄືນໃໝ່.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">ບໍ່ສາມາດນຳເຂົ້າໄດ້ຫຼາຍກວ່າ %d ລາຍການ.</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
@@ -112,54 +76,6 @@
         <item quantity="other">ລຶບເພງທັງໝົດໂດຍຜູ້ແຕ່ງເຫຼົ່ານີ້ບໍ?</item>
         <item quantity="one">ລຶບເພງທັງໝົດໂດຍຜູ້ແຕ່ງຄົນນີ້ບໍ?</item>
     </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">ລຶບເພງທີ່ເລືອກໄວ້ບໍ?</item>
-        <item quantity="one">ລຶບເພງທີ່ເລືອກໄວ້ບໍ?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d ເພງຈະຖືກຊື້. ຖ້າທ່ານບໍ່ມີເພງທີ່ມີໃຫ້ພຽງພໍ, ຈາກນັ້ນ ບໍ່ສາມາດຊື້ເພງເຫຼົ່ານີ້ໄດ້.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">ຊື້ເພງທີ່ເລືອກໄວ້ບໍ?</item>
-        <item quantity="one">ຊື້ເພງທີ່ເລືອກໄວ້ບໍ?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">ທ່ານໄດ້ຊື້ເພງເຫຼົ່ານີ້ຮຽບຮ້ອຍແລ້ວ. ທ່ານສາມາດດາວໂຫຼດເພງທີ່ຊື້ແລ້ວອີກຄັ້ງໄດ້ຕະຫຼອດເວລາ.</item>
-        <item quantity="one">ທ່ານໄດ້ຊື້ເພງນີ້ຮຽບຮ້ອຍແລ້ວ. ທ່ານສາມາດດາວໂຫຼດເພງທີ່ຊື້ແລ້ວອີກຄັ້ງໄດ້ຕະຫຼອດເວລາ.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">ຊື້ເພງຮຽບຮ້ອຍແລ້ວ</item>
-        <item quantity="one">ຊື້ເພງຮຽບຮ້ອຍແລ້ວ</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">ທ່ານສາມາດເພີ່ມ %d ລາຍການຫຼິ້ນທີ່ຈັດໃຫ້ເປັນລາຍການທີ່ມັກເທົ່ານັ້ນ. ເອົາບາງລາຍການຫຼິ້ນທີ່ຈັດໃຫ້ອອກໄປຈາກແຖບລາຍການທີ່ມັກ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">ທ່ານສາມາດເພີ່ມໄດ້ພຽງ %d ເພງສະຕຣີມມິງເທົ່ານັ້ນເປັນເພງທີ່ມັກ. ເອົາບາງເພງສະຕຣິມມິງອອກຈາກເພງທີ່ມັກ, ຈາກນັ້ນ ລອງໃໝ່ອີກ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">ທ່ານສາມາດເພີ່ມໄດ້ພຽງ %d ເພງເທົ່ານັ້ນເປັນເພງທີ່ມັກ. ເອົາບາງເພງອອກຈາກເພງທີ່ມັກ, ຈາກນັ້ນ ລອງໃໝ່ອີກ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d ໂຟລເດີ</item>
         <item quantity="one">1 ໂຟລເດີ</item>
@@ -180,25 +96,73 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">ຣີສະຕໍ %d ເພງແລ້ວ.</item>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">ລຶບ %d ລາຍການບໍ?</item>
+        <item quantity="one">ລຶບ 1 ລາຍການບໍ?</item>
+    </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">ບໍ່ສາມາດປ້ອນຕົວອັກສອນເຂົ້າໄດ້ຫຼາຍກວ່າ %d ຕົວ.</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_items_deleted_msg">
-        <item quantity="other">ລຶບ %d ລາຍການບໍ?</item>
-        <item quantity="one">ລຶບ 1 ລາຍການບໍ?</item>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">ບໍ່ສາມາດເພີ່ມໄດ້ຫຼາຍກວ່າ %d ອາລະບຳ. ເພີ່ມອາລະບຳໜ້ອຍລົງ ຫຼື ເອົາບາງສ່ວນອອກຈາກລາຍການທີ່ມັກ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">ບໍ່ສາມາດເພີ່ມນັກຮ້ອງໄດ້ຫຼາຍກວ່າ %d ຄົນ. ເພີ່ມນັກຮ້ອງໜ້ອຍລົງ ຫຼື ເອົາບາງຄົນອອກຈາກລາຍການທີ່ມັກ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">ທ່ານສາມາດເພີ່ມໄດ້ບໍ່ເກີນ %d ລາຍການຫຼິ້ນເທົ່ານັ້ນ. ເອົາບາງລາຍການຫຼິ້ນອອກໄປຈາກແຖບລາຍການທີ່ມັກ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">ບໍ່ສາມາດເພີ່ມໄດ້ຫຼາຍກວ່າ %d ເພງສະຕຣີມ. ເພີ່ມເພງໜ້ອຍລົງ ຫຼື ເອົາບາງເພງອອກຈາກເພງທີ່ມັກ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">ບໍ່ສາມາດເພີ່ມໄດ້ຫຼາຍກວ່າ %d ເພງ. ເພີ່ມເພງໜ້ອຍລົງ ຫຼື ເອົາບາງເພງອອກຈາກເພງທີ່ມັກ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">ສົ່ງອອກ %d ລາຍການຫຼິ້ນແລ້ວ.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">ນຳເຂົ້າ %d ລາຍການຫຼິ້ນແລ້ວ.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">ບໍ່ສາມາດເລືອກໄດ້ຫຼາຍກວ່າ %d ລາຍການຫຼິ້ນ.</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d ເພງ</item>
         <item quantity="one">1 ເພງ</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">ສະເພາະ %d ເພງເທົ່ານັ້ນທີ່ຖືກເພີ່ມໃສ່ລາຍການທີ່ມັກ. ເພງທີ່ເຫຼືອມີຢູ່ໃນລາຍການທີ່ມັກຮຽບຮ້ອຍແລ້ວ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">ເພີ່ມ %d ເພງໃສ່ລາຍການທີ່ມັກແລ້ວ</item>
+        <item quantity="one">ເພີ່ມ 1 ເພງໃສ່ລາຍການທີ່ມັກແລ້ວ</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">ເພີ່ມ %d ເພງໃສ່ລາຍການເພງແລ້ວ.</item>
+        <item quantity="one">ເພີ່ມ 1 ເພງໃສ່ລາຍການເພງແລ້ວ</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">ເພີ່ມ %d ເພງໃສ່ຄີວແລ້ວ.</item>
         <item quantity="one">ເພີ່ມ %d ເພງໃສ່ຄິວແລ້ວ.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">ລຶບ %d ເພງບໍ?</item>
-        <item quantity="one">ລຶບ 1 ເພງແລ້ວ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">ເວລານອນຫຼັບ: %d ຊົ່ວໂມງ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">ເວລານອນຫຼັບ: %d ນາທີ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

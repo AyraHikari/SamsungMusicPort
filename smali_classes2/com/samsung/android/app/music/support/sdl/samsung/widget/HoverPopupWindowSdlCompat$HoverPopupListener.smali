@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat$HoverPopupListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "HoverPopupWindowSdlCompat.java"
 
 
 # annotations

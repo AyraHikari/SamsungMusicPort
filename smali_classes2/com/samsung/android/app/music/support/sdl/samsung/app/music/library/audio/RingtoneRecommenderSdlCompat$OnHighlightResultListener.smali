@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "RingtoneRecommenderSdlCompat.java"
 
 
 # annotations

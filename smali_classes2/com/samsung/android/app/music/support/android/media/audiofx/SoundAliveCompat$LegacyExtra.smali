@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyExtra;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SoundAliveCompat.java"
 
 
 # annotations
@@ -23,10 +23,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
-    .line 94
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v1, 0x800
@@ -37,25 +37,25 @@
 
     if-eqz v0, :cond_0
 
-    .line 95
+    .line 2
     sput v3, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyExtra;->SET_PRESET:I
 
-    .line 96
+    .line 3
     sput v2, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyExtra;->SET_USER_EQ_DATA:I
 
-    .line 97
+    .line 4
     sput v1, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyExtra;->SET_USER_EXT_PARAM:I
 
     goto :goto_0
 
-    .line 99
+    .line 5
     :cond_0
     sput v3, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyExtra;->SET_PRESET:I
 
-    .line 100
+    .line 6
     sput v2, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyExtra;->SET_USER_EQ_DATA:I
 
-    .line 101
+    .line 7
     sput v1, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyExtra;->SET_USER_EXT_PARAM:I
 
     :goto_0
@@ -65,7 +65,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 86
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

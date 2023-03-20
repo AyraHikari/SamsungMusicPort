@@ -1,6 +1,6 @@
-.class final Lcom/samsung/android/app/music/model/milksearch/SearchStation$1;
+.class Lcom/samsung/android/app/music/model/milksearch/SearchStation$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchStation.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +40,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/app/music/model/milksearch/SearchStation;
     .locals 1
 
-    .line 42
+    .line 2
     new-instance v0, Lcom/samsung/android/app/music/model/milksearch/SearchStation;
 
     invoke-direct {v0, p1}, Lcom/samsung/android/app/music/model/milksearch/SearchStation;-><init>(Landroid/os/Parcel;)V
@@ -52,7 +51,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 39
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/model/milksearch/SearchStation$1;->createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/app/music/model/milksearch/SearchStation;
 
     move-result-object p1
@@ -63,7 +62,7 @@
 .method public newArray(I)[Lcom/samsung/android/app/music/model/milksearch/SearchStation;
     .locals 0
 
-    .line 47
+    .line 2
     new-array p1, p1, [Lcom/samsung/android/app/music/model/milksearch/SearchStation;
 
     return-object p1
@@ -72,7 +71,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 39
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/model/milksearch/SearchStation$1;->newArray(I)[Lcom/samsung/android/app/music/model/milksearch/SearchStation;
 
     move-result-object p1

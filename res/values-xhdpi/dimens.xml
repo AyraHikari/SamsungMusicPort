@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="divider_action_bar_width">1.0px</dimen>
-    <dimen name="sesl_action_bar_background_divider_height">1.0px</dimen>
-    <dimen name="sesl_edit_textfield_cursor_width">3.0px</dimen>
+    <dimen name="mu_list_divider_height_winset">1.0px</dimen>
     <dimen name="sesl_list_divider_height">1.0px</dimen>
-    <dimen name="sesl_switch_divider_height">1.0px</dimen>
 </resources>

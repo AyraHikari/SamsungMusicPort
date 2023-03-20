@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/stream/Stack;
 .super Ljava/util/ArrayList;
-.source "SourceFile"
+.source "Stack.java"
 
 
 # annotations
@@ -19,7 +19,6 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 44
     invoke-direct {p0, p1}, Ljava/util/ArrayList;-><init>(I)V
 
     return-void
@@ -35,8 +34,8 @@
         }
     .end annotation
 
-    .line 87
-    invoke-virtual {p0}, Lorg/simpleframework/xml/stream/Stack;->size()I
+    .line 1
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
@@ -49,8 +48,8 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 92
-    invoke-virtual {p0, v0}, Lorg/simpleframework/xml/stream/Stack;->get(I)Ljava/lang/Object;
+    .line 2
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -65,8 +64,8 @@
         }
     .end annotation
 
-    .line 55
-    invoke-virtual {p0}, Lorg/simpleframework/xml/stream/Stack;->size()I
+    .line 1
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
@@ -79,8 +78,8 @@
     :cond_0
     add-int/lit8 v0, v0, -0x1
 
-    .line 60
-    invoke-virtual {p0, v0}, Lorg/simpleframework/xml/stream/Stack;->remove(I)Ljava/lang/Object;
+    .line 2
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -95,8 +94,7 @@
         }
     .end annotation
 
-    .line 105
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/stream/Stack;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-object p1
 .end method
@@ -109,8 +107,8 @@
         }
     .end annotation
 
-    .line 71
-    invoke-virtual {p0}, Lorg/simpleframework/xml/stream/Stack;->size()I
+    .line 1
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
@@ -123,8 +121,8 @@
     :cond_0
     add-int/lit8 v0, v0, -0x1
 
-    .line 76
-    invoke-virtual {p0, v0}, Lorg/simpleframework/xml/stream/Stack;->get(I)Ljava/lang/Object;
+    .line 2
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 

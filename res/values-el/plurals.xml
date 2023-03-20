@@ -12,61 +12,9 @@
         <item quantity="other">Κομμάτια</item>
         <item quantity="one">Κομμάτι</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d κομμάτια προστέθηκαν στα Αγαπημένα. Τα κομμάτια που υπάρχουν ήδη στα Αγαπημένα σας δεν προστέθηκαν.</item>
-        <item quantity="one">%d κομμάτι προστέθηκε στα Αγαπημένα. Το κομμάτι που υπάρχει ήδη στα Αγαπημένα σας δεν προστέθηκε.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d κομμάτια</item>
         <item quantity="one">%d κομμάτι</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d κομμάτια αφαιρέθηκαν από τα Αγαπημένα.</item>
-        <item quantity="one">%d κομμάτι αφαιρέθηκε από τα Αγαπημένα.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d κομμάτια προστέθηκαν στα αγαπημένα.</item>
-        <item quantity="one">%d κομμάτι προστέθηκε στα αγαπημένα.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Μπορείτε να καταργήσετε έως και %d κομμάτια από τις προτάσεις. Δείτε τα κομμάτια που καταργήσατε, επιλέξτε μερικά για επαναφορά και, στη συνέχεια, δοκιμάστε ξανά.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Μπορείτε να καταργήσετε %d κομμάτι από τις προτάσεις. Δείτε τα κομμάτια που καταργήσατε, επιλέξτε μερικά για επαναφορά και, στη συνέχεια, δοκιμάστε ξανά.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Πατήστε το κουμπί «Αναπαραγωγή ραδιοφώνου» για να απολαμβάνετε %d δωρεάν κομμάτια κάθε μήνα.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Πατήστε το κουμπί «Αναπαραγωγή ραδιοφώνου» για να απολαμβάνετε %d δωρεάν κομμάτι κάθε μήνα.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Δεν μπορείτε να επιλέξετε πάνω από %d καλλιτέχνες.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Δεν μπορείτε να επιλέξετε πάνω από %d καλλιτέχνη.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Δεν μπορείτε να επιλέξετε πάνω από %d είδη.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Δεν μπορείτε να επιλέξετε πάνω από %d είδος.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Δεν μπορείτε να επιλέξετε πάνω από %d κομμάτια.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Δεν μπορείτε να επιλέξετε πάνω από %d κομμάτι.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d δευτερόλεπτα</item>
@@ -76,22 +24,46 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">Μπορείτε να χρησιμοποιήσετε το %1$s %2$d φορές.</item>
-        <item quantity="one">Μπορείτε να χρησιμοποιήσετε το %s 1 φορά.</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Δεν είναι δυνατή η αγορά %d κομματιών με εισιτήρια premium λόγω προβλήματος με τα πνευματικά δικαιώματα. Μπορείτε να τα αγοράσετε μεμονωμένα.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Να μην εμφανιστεί για %d ημέρες</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Δεν είναι δυνατή η αγορά %d κομματιού με εισιτήρια premium λόγω προβλήματος με τα πνευματικά δικαιώματα. Μπορείτε να το αγοράσετε μεμονωμένα.</item>
+        <item quantity="one">Να μην εμφανιστεί για %d ημέρα</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Θα χρησιμοποιηθούν %d κομμάτια από τα διαθέσιμα κομμάτια.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Μπορείτε να χρησιμοποιήσετε το %1$s %2$d φορές.</item>
+        <item quantity="one">Μπορείτε να χρησιμοποιήσετε το %s 1 φορά.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Γρήγορη προώθηση κατά %d δευτερόλεπτα</item>
+        <item quantity="one">Γρήγορη προώθηση κατά %d δευτερόλεπτο</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Μετάβαση προς τα πίσω κατά %d δευτερόλεπτα</item>
+        <item quantity="one">Μετάβαση προς τα πίσω κατά %d δευτερόλεπτο</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">Θα διαγραφούν %d κομμάτια που έχουν λήξει. Μπορείτε να δείτε το ιστορικό λήψεων από το μενού Πληροφορίες Melon > Ιστορικό αγορών.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Θα χρησιμοποιηθεί %d κομμάτι από τα διαθέσιμα κομμάτια.</item>
+        <item quantity="one">Θα διαγραφεί %d κομμάτι που έχει λήξει. Μπορείτε να δείτε το ιστορικό λήψεων από το μενού Πληροφορίες Melon > Ιστορικό αγορών.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Δεν ήταν δυνατή η επέκταση της περιόδου DCF για %d κομμάτια. Μπορείτε να δοκιμάσετε ξανά ή να διαγράψετε αρχεία από την παρακάτω λίστα πριν τα κατεβάσετε πάλι.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Δεν ήταν δυνατή η επέκταση της περιόδου DCF για %d κομμάτι. Μπορείτε να δοκιμάσετε ξανά ή να διαγράψετε αρχεία από την παρακάτω λίστα πριν τα κατεβάσετε πάλι.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Δεν είναι δυνατή η εισαγωγή περισσότερων από %d στοιχείων.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Δεν είναι δυνατή η εισαγωγή περισσότερων από %d στοιχείου.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -99,6 +71,10 @@
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Αναμονή για λήψη %d τραγουδιών…</item>
         <item quantity="one">Αναμονή για λήψη 1 τραγουδιού…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d νέες ειδοποιήσεις</item>
+        <item quantity="one">%d νέα ειδοποίηση</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Θέλετε να διαγράψετε %d άλμπουμ και όλα τα κομμάτια που περιέχουν από το τηλέφωνό σας;</item>
@@ -111,54 +87,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Να διαγραφούν όλα τα κομμάτια από αυτούς τους συνθέτες;</item>
         <item quantity="one">Να διαγραφούν όλα τα κομμάτια αυτού του συνθέτη;</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Να διαγραφούν τα επιλεγμένα κομμάτια;</item>
-        <item quantity="one">Να διαγραφεί το επιλεγμένο κομμάτι;</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Θα αγοράσετε %d κομμάτια. Αν δεν έχετε αρκετά διαθέσιμα κομμάτια, τότε δεν θα είναι δυνατή η αγορά αυτών των κομματιών.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Θα αγοράσετε %d κομμάτι. Αν δεν έχετε αρκετά διαθέσιμα κομμάτια, τότε δεν θα είναι δυνατή η αγορά αυτών των κομματιών.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Θέλετε να αγοράσετε τα επιλεγμένα κομμάτια;</item>
-        <item quantity="one">Θέλετε να αγοράσετε το επιλεγμένο κομμάτι;</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Έχετε ήδη αγοράσει αυτά τα τραγούδια. Μπορείτε να κατεβάσετε ξανά τα τραγούδια που έχετε αγοράσει ανά πάσα στιγμή.</item>
-        <item quantity="one">Έχετε ήδη αγοράσει αυτό το τραγούδι. Μπορείτε να κατεβάσετε ξανά τα τραγούδια που έχετε αγοράσει ανά πάσα στιγμή.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Έχετε ήδη αγοράσει τα κομμάτια</item>
-        <item quantity="one">Έχετε ήδη αγοράσει το κομμάτι</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Μπορείτε να προσθέσετε μόνο %d λίστες αναπαραγωγής ως αγαπημένες. Καταργήστε ορισμένες λίστες αναπαραγωγής από την καρτέλα «Αγαπημένα».</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Μπορείτε να προσθέσετε μόνο %d λίστα αναπαραγωγής ως αγαπημένη. Καταργήστε ορισμένες λίστες αναπαραγωγής από την καρτέλα «Αγαπημένα».</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Μπορείτε να προσθέσετε μόνο %d κομμάτια από ροή ως αγαπημένα κομμάτια. Καταργήστε ορισμένα κομμάτια ροής από τα αγαπημένα κομμάτια και δοκιμάστε ξανά.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Μπορείτε να προσθέσετε μόνο %d κομμάτι από ροή ως αγαπημένο κομμάτι. Καταργήστε ορισμένα κομμάτια ροής από τα αγαπημένα κομμάτια και δοκιμάστε ξανά.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Μπορείτε να προσθέσετε μόνο %d κομμάτια ως αγαπημένα κομμάτια. Καταργήστε ορισμένα κομμάτια από τα αγαπημένα κομμάτια και δοκιμάστε ξανά.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Μπορείτε να προσθέσετε μόνο %d κομμάτι ως αγαπημένο κομμάτι. Καταργήστε ορισμένα κομμάτια από τα αγαπημένα κομμάτια και δοκιμάστε ξανά.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d φάκελοι</item>
@@ -180,30 +108,78 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">Έγινε επαναφορά %d κομματιών.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Έγινε επαναφορά %d κομματιού.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Θέλετε να διαγράψετε %d στοιχεία;</item>
         <item quantity="one">Να διαγραφεί 1 στοιχείο;</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Δεν μπορείτε να καταχωρήσετε πάνω από %d χαρακτήρες.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Δεν μπορείτε να καταχωρήσετε πάνω από %d χαρακτήρα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Δεν είναι δυνατή η προσθήκη περισσότερων από %d άλμπουμ. Προσθέστε λιγότερα άλμπουμ ή καταργήστε ορισμένα από τα Αγαπημένα.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Δεν είναι δυνατή η προσθήκη περισσότερων από %d άλμπουμ. Προσθέστε λιγότερα άλμπουμ ή καταργήστε ορισμένα από τα Αγαπημένα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Δεν είναι δυνατή η προσθήκη περισσότερων από %d καλλιτέχνες. Προσθέστε λιγότερους καλλιτέχνες ή καταργήστε ορισμένα από τα Αγαπημένα.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Δεν είναι δυνατή η προσθήκη περισσότερων από %d καλλιτέχνη. Προσθέστε λιγότερους καλλιτέχνες ή καταργήστε ορισμένα από τα Αγαπημένα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Μπορείτε να προσθέσετε μόνο έως %d λίστες αναπαραγωγής. Καταργήστε ορισμένες λίστες αναπαραγωγής από την καρτέλα «Αγαπημένα».</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Μπορείτε να προσθέσετε μόνο έως %d λίστα αναπαραγωγής. Καταργήστε ορισμένες λίστες αναπαραγωγής από την καρτέλα «Αγαπημένα».</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Δεν είναι δυνατή η προσθήκη περισσότερων από %d κομματιών μετάδοσης μέσω ροής. Προσθέστε λιγότερα κομμάτια ή καταργήστε ορισμένα από τα Αγαπημένα κομμάτια.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Δεν είναι δυνατή η προσθήκη περισσότερων από %d κομματιού μετάδοσης μέσω ροής. Προσθέστε λιγότερα κομμάτια ή καταργήστε ορισμένα από τα Αγαπημένα κομμάτια.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Δεν είναι δυνατή η προσθήκη περισσότερων από %d κομματιών. Προσθέστε λιγότερα κομμάτια ή καταργήστε ορισμένα από τα Αγαπημένα κομμάτια.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Δεν είναι δυνατή η προσθήκη περισσότερων από %d κομματιού. Προσθέστε λιγότερα κομμάτια ή καταργήστε ορισμένα από τα Αγαπημένα κομμάτια.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Έγινε εξαγωγή %d λιστών αναπαραγωγής.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Έγινε εξαγωγή %d λίστας αναπαραγωγής.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Έγινε εισαγωγή %d λιστών αναπαραγωγής.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Έγινε εισαγωγή %d λίστας αναπαραγωγής.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Δεν μπορείτε να επιλέξετε πάνω από %d λίστες αναπαραγωγής.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Δεν μπορείτε να επιλέξετε πάνω από %d λίστες αναπαραγωγής.</item>
+        <item quantity="one">Δεν μπορείτε να επιλέξετε πάνω από %d λίστα αναπαραγωγής.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -216,12 +192,48 @@
         <item quantity="other">%d κομμάτια</item>
         <item quantity="one">1 κομμάτι</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Μόνο %d κομμάτια προστέθηκαν στα Αγαπημένα. Τα υπόλοιπα υπήρχαν ήδη στα Αγαπημένα.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Μόνο %d κομμάτι προστέθηκε στα Αγαπημένα. Τα υπόλοιπα υπήρχαν ήδη στα Αγαπημένα.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d κομμάτια προστέθηκαν στα αγαπημένα.</item>
+        <item quantity="one">1 κομμάτι προστέθηκε στα αγαπημένα.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d κομμάτια προστέθηκαν στη λίστα αναπαραγωγής.</item>
+        <item quantity="one">1 κομμάτι προστέθηκε στη λίστα αναπαραγωγής.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">Προστέθηκαν %d κομμάτια στην ουρά.</item>
         <item quantity="one">%d κομμάτι προστέθηκε στην ουρά.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">Διαγραφή %d κομματιών;</item>
-        <item quantity="one">Διαγραφή 1 κομματιού;</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Διαγραφή %d κομματιού;</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Χρόνος ύπνου: %d ώρες</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Χρόνος ύπνου: %d ώρα</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Χρόνος ύπνου: %d λεπτά</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Χρόνος ύπνου: %d λεπτό</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

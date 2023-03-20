@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchSeedResult.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -43,10 +43,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 67
     new-instance v0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult$1;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult$1;-><init>()V
@@ -59,80 +58,80 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 33
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 34
+    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->seedType:Ljava/lang/String;
 
-    .line 35
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->artistId:Ljava/lang/String;
 
-    .line 36
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->artistName:Ljava/lang/String;
 
-    .line 37
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackId:Ljava/lang/String;
 
-    .line 38
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackTitle:Ljava/lang/String;
 
-    .line 39
+    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackCount:Ljava/lang/String;
 
-    .line 40
+    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->providerType:Ljava/lang/String;
 
-    .line 41
+    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->score:Ljava/lang/String;
 
-    .line 42
+    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->seedUsable:Ljava/lang/String;
 
-    .line 43
+    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->imageUrl:Ljava/lang/String;
 
-    .line 44
+    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -155,7 +154,6 @@
 .method public getArtistId()Ljava/lang/String;
     .locals 1
 
-    .line 84
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->artistId:Ljava/lang/String;
 
     return-object v0
@@ -164,7 +162,6 @@
 .method public getArtistName()Ljava/lang/String;
     .locals 1
 
-    .line 88
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->artistName:Ljava/lang/String;
 
     return-object v0
@@ -173,7 +170,6 @@
 .method public getCoverArtUrl()Ljava/lang/String;
     .locals 1
 
-    .line 100
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->imageUrl:Ljava/lang/String;
 
     return-object v0
@@ -182,7 +178,6 @@
 .method public getImgUrl()Ljava/lang/String;
     .locals 1
 
-    .line 145
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->imageUrl:Ljava/lang/String;
 
     return-object v0
@@ -191,7 +186,6 @@
 .method public getProviderType()Ljava/lang/String;
     .locals 1
 
-    .line 123
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->providerType:Ljava/lang/String;
 
     return-object v0
@@ -200,7 +194,7 @@
 .method public getScore()F
     .locals 2
 
-    .line 127
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->score:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -213,14 +207,14 @@
 
     return v1
 
-    .line 132
+    .line 2
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->score:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
-    move-result v0
+    move-result v1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -229,19 +223,16 @@
     :catch_0
     move-exception v0
 
-    .line 134
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    const/4 v0, 0x0
-
     :goto_0
-    return v0
+    return v1
 .end method
 
 .method public getSeedType()Ljava/lang/String;
     .locals 1
 
-    .line 80
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->seedType:Ljava/lang/String;
 
     return-object v0
@@ -250,7 +241,6 @@
 .method public getSeedUsable()Ljava/lang/String;
     .locals 1
 
-    .line 141
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->seedUsable:Ljava/lang/String;
 
     return-object v0
@@ -259,7 +249,7 @@
 .method public getTrackCount()I
     .locals 2
 
-    .line 109
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackCount:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -272,14 +262,14 @@
 
     return v1
 
-    .line 114
+    .line 2
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackCount:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result v0
+    move-result v1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -288,19 +278,16 @@
     :catch_0
     move-exception v0
 
-    .line 116
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    const/4 v0, 0x0
-
     :goto_0
-    return v0
+    return v1
 .end method
 
 .method public getTrackId()Ljava/lang/String;
     .locals 1
 
-    .line 92
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackId:Ljava/lang/String;
 
     return-object v0
@@ -309,7 +296,6 @@
 .method public getTrackName()Ljava/lang/String;
     .locals 1
 
-    .line 96
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackTitle:Ljava/lang/String;
 
     return-object v0
@@ -318,7 +304,6 @@
 .method public isExplicity()Z
     .locals 2
 
-    .line 104
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->explicit:Ljava/lang/String;
 
     const-string v1, "1"
@@ -357,57 +342,57 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 49
+    .line 1
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->seedType:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 50
+    .line 2
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->artistId:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 51
+    .line 3
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->artistName:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 52
+    .line 4
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackId:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 53
+    .line 5
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackTitle:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 54
+    .line 6
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->trackCount:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 55
+    .line 7
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->providerType:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 56
+    .line 8
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->score:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 57
+    .line 9
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->seedUsable:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 58
+    .line 10
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->imageUrl:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 59
+    .line 11
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchSeedResult;->explicit:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

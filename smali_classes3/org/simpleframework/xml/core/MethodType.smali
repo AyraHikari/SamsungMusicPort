@@ -1,6 +1,6 @@
 .class final enum Lorg/simpleframework/xml/core/MethodType;
 .super Ljava/lang/Enum;
-.source "SourceFile"
+.source "MethodType.java"
 
 
 # annotations
@@ -30,10 +30,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public static constructor <clinit>()V
+    .locals 9
 
-    .line 39
+    .line 1
     new-instance v0, Lorg/simpleframework/xml/core/MethodType;
 
     const-string v1, "GET"
@@ -46,59 +46,51 @@
 
     sput-object v0, Lorg/simpleframework/xml/core/MethodType;->GET:Lorg/simpleframework/xml/core/MethodType;
 
-    .line 44
-    new-instance v0, Lorg/simpleframework/xml/core/MethodType;
+    .line 2
+    new-instance v1, Lorg/simpleframework/xml/core/MethodType;
 
-    const-string v1, "IS"
+    const-string v4, "IS"
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    const/4 v5, 0x2
+    const/4 v6, 0x2
 
-    invoke-direct {v0, v1, v4, v5}, Lorg/simpleframework/xml/core/MethodType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v1, v4, v5, v6}, Lorg/simpleframework/xml/core/MethodType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lorg/simpleframework/xml/core/MethodType;->IS:Lorg/simpleframework/xml/core/MethodType;
+    sput-object v1, Lorg/simpleframework/xml/core/MethodType;->IS:Lorg/simpleframework/xml/core/MethodType;
 
-    .line 49
-    new-instance v0, Lorg/simpleframework/xml/core/MethodType;
+    .line 3
+    new-instance v4, Lorg/simpleframework/xml/core/MethodType;
 
-    const-string v1, "SET"
+    const-string v7, "SET"
 
-    invoke-direct {v0, v1, v5, v3}, Lorg/simpleframework/xml/core/MethodType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v4, v7, v6, v3}, Lorg/simpleframework/xml/core/MethodType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lorg/simpleframework/xml/core/MethodType;->SET:Lorg/simpleframework/xml/core/MethodType;
+    sput-object v4, Lorg/simpleframework/xml/core/MethodType;->SET:Lorg/simpleframework/xml/core/MethodType;
 
-    .line 54
-    new-instance v0, Lorg/simpleframework/xml/core/MethodType;
+    .line 4
+    new-instance v7, Lorg/simpleframework/xml/core/MethodType;
 
-    const-string v1, "NONE"
+    const-string v8, "NONE"
 
-    invoke-direct {v0, v1, v3, v2}, Lorg/simpleframework/xml/core/MethodType;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v7, v8, v3, v2}, Lorg/simpleframework/xml/core/MethodType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lorg/simpleframework/xml/core/MethodType;->NONE:Lorg/simpleframework/xml/core/MethodType;
+    sput-object v7, Lorg/simpleframework/xml/core/MethodType;->NONE:Lorg/simpleframework/xml/core/MethodType;
 
-    const/4 v0, 0x4
+    const/4 v8, 0x4
 
-    .line 34
-    new-array v0, v0, [Lorg/simpleframework/xml/core/MethodType;
+    new-array v8, v8, [Lorg/simpleframework/xml/core/MethodType;
 
-    sget-object v1, Lorg/simpleframework/xml/core/MethodType;->GET:Lorg/simpleframework/xml/core/MethodType;
+    aput-object v0, v8, v2
 
-    aput-object v1, v0, v2
+    aput-object v1, v8, v5
 
-    sget-object v1, Lorg/simpleframework/xml/core/MethodType;->IS:Lorg/simpleframework/xml/core/MethodType;
+    aput-object v4, v8, v6
 
-    aput-object v1, v0, v4
+    aput-object v7, v8, v3
 
-    sget-object v1, Lorg/simpleframework/xml/core/MethodType;->SET:Lorg/simpleframework/xml/core/MethodType;
-
-    aput-object v1, v0, v5
-
-    sget-object v1, Lorg/simpleframework/xml/core/MethodType;->NONE:Lorg/simpleframework/xml/core/MethodType;
-
-    aput-object v1, v0, v3
-
-    sput-object v0, Lorg/simpleframework/xml/core/MethodType;->$VALUES:[Lorg/simpleframework/xml/core/MethodType;
+    .line 5
+    sput-object v8, Lorg/simpleframework/xml/core/MethodType;->$VALUES:[Lorg/simpleframework/xml/core/MethodType;
 
     return-void
 .end method
@@ -111,10 +103,10 @@
         }
     .end annotation
 
-    .line 68
+    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 69
+    .line 2
     iput p3, p0, Lorg/simpleframework/xml/core/MethodType;->prefix:I
 
     return-void
@@ -123,7 +115,6 @@
 .method public static valueOf(Ljava/lang/String;)Lorg/simpleframework/xml/core/MethodType;
     .locals 1
 
-    .line 34
     const-class v0, Lorg/simpleframework/xml/core/MethodType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -138,7 +129,6 @@
 .method public static values()[Lorg/simpleframework/xml/core/MethodType;
     .locals 1
 
-    .line 34
     sget-object v0, Lorg/simpleframework/xml/core/MethodType;->$VALUES:[Lorg/simpleframework/xml/core/MethodType;
 
     invoke-virtual {v0}, [Lorg/simpleframework/xml/core/MethodType;->clone()Ljava/lang/Object;
@@ -155,7 +145,6 @@
 .method public getPrefix()I
     .locals 1
 
-    .line 80
     iget v0, p0, Lorg/simpleframework/xml/core/MethodType;->prefix:I
 
     return v0

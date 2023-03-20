@@ -7,8 +7,8 @@
     <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bottom_dialog_text_space_vertical" android:layout_marginStart="@dimen/bottom_dialog_close_btn_view_size" android:layout_marginEnd="@dimen/bottom_dialog_close_btn_view_size">
         <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <ImageView android:id="@id/bottom_dialog_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/bottom_dialog_main_text_space_interval_horizontal" />
-            <TextView android:textSize="@dimen/bottom_dialog_main_text" android:textColor="@color/blur_text" android:id="@id/bottom_dialog_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+            <TextView android:textSize="@dimen/bottom_dialog_main_text" android:textColor="@color/basics_icon_white" android:id="@id/bottom_dialog_main_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
         </LinearLayout>
-        <TextView android:textSize="@dimen/bottom_dialog_go_to_text" android:textColor="@color/bottom_dialog_go_to_color" android:gravity="center_vertical" android:id="@id/bottom_positive" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_dialog_go_to_height" />
+        <TextView android:textSize="@dimen/bottom_dialog_go_to_text" android:textColor="@color/basics_primary_dark_209_4_4" android:gravity="center_vertical" android:id="@id/bottom_positive" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_dialog_go_to_height" />
     </LinearLayout>
 </RelativeLayout>

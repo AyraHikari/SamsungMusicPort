@@ -1,13 +1,12 @@
 .class public Lcom/samsung/android/app/music/support/android/hardware/display/WifiDisplayCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "WifiDisplayCompat.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,26 +15,26 @@
 .method public static getDeviceAddress(Landroid/hardware/display/DisplayManager;)Ljava/lang/String;
     .locals 1
 
-    .line 12
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_1
 
-    .line 13
+    .line 2
     invoke-virtual {p0}, Landroid/hardware/display/DisplayManager;->semGetWifiDisplayStatus()Landroid/hardware/display/SemWifiDisplayStatus;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 15
+    .line 3
     invoke-virtual {p0}, Landroid/hardware/display/SemWifiDisplayStatus;->getActiveDisplay()Landroid/hardware/display/SemWifiDisplay;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 17
+    .line 4
     invoke-virtual {p0}, Landroid/hardware/display/SemWifiDisplay;->getDeviceAddress()Ljava/lang/String;
 
     move-result-object p0
@@ -47,7 +46,7 @@
 
     return-object p0
 
-    .line 22
+    .line 5
     :cond_1
     invoke-static {p0}, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplaySdlCompat;->getDeviceAddress(Landroid/hardware/display/DisplayManager;)Ljava/lang/String;
 
@@ -59,26 +58,26 @@
 .method public static getDeviceName(Landroid/hardware/display/DisplayManager;)Ljava/lang/String;
     .locals 1
 
-    .line 27
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_1
 
-    .line 28
+    .line 2
     invoke-virtual {p0}, Landroid/hardware/display/DisplayManager;->semGetWifiDisplayStatus()Landroid/hardware/display/SemWifiDisplayStatus;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 30
+    .line 3
     invoke-virtual {p0}, Landroid/hardware/display/SemWifiDisplayStatus;->getActiveDisplay()Landroid/hardware/display/SemWifiDisplay;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 32
+    .line 4
     invoke-virtual {p0}, Landroid/hardware/display/SemWifiDisplay;->getDeviceName()Ljava/lang/String;
 
     move-result-object p0
@@ -90,7 +89,7 @@
 
     return-object p0
 
-    .line 37
+    .line 5
     :cond_1
     invoke-static {p0}, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplaySdlCompat;->getDeviceName(Landroid/hardware/display/DisplayManager;)Ljava/lang/String;
 
@@ -102,26 +101,26 @@
 .method public static getPrimaryDeviceType(Landroid/hardware/display/DisplayManager;)Ljava/lang/String;
     .locals 1
 
-    .line 42
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_1
 
-    .line 43
+    .line 2
     invoke-virtual {p0}, Landroid/hardware/display/DisplayManager;->semGetWifiDisplayStatus()Landroid/hardware/display/SemWifiDisplayStatus;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 45
+    .line 3
     invoke-virtual {p0}, Landroid/hardware/display/SemWifiDisplayStatus;->getActiveDisplay()Landroid/hardware/display/SemWifiDisplay;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 47
+    .line 4
     invoke-virtual {p0}, Landroid/hardware/display/SemWifiDisplay;->getPrimaryDeviceType()Ljava/lang/String;
 
     move-result-object p0
@@ -133,7 +132,7 @@
 
     return-object p0
 
-    .line 52
+    .line 5
     :cond_1
     invoke-static {p0}, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/WifiDisplaySdlCompat;->getPrimaryDeviceType(Landroid/hardware/display/DisplayManager;)Ljava/lang/String;
 

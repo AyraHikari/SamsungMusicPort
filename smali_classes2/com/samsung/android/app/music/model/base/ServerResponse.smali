@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/model/base/ServerResponse;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ServerResponse.java"
 
 
 # virtual methods

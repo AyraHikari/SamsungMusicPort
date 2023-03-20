@@ -1,63 +1,59 @@
 .class public Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
 .super Landroid/view/View;
-.source "SourceFile"
+.source "TransitionView.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$Companion;
+        Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$a;
     }
 .end annotation
 
 
 # static fields
-.field public static final b:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$Companion;
+.field public static final q:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$a;
 
-# The value of this static final field might be set in the static constructor
-.field private static final m:Ljava/lang/String; = "TransitionView"
+.field public static final r:Ljava/lang/String;
 
 
 # instance fields
-.field private a:Landroid/graphics/ColorFilter;
+.field public a:Landroid/graphics/ColorFilter;
 
-.field private final c:Landroid/widget/ImageView$ScaleType;
+.field public final b:Landroid/widget/ImageView$ScaleType;
 
-.field private d:Landroid/animation/Animator;
+.field public final c:Landroid/graphics/Matrix;
 
-.field private final e:Landroid/graphics/Matrix;
+.field public final d:Landroid/graphics/Matrix;
 
-.field private final f:Landroid/graphics/Matrix;
+.field public e:F
 
-.field private g:F
+.field public f:F
 
-.field private h:F
+.field public g:Landroid/graphics/drawable/Drawable;
 
-.field private i:Landroid/graphics/drawable/Drawable;
+.field public h:Landroid/graphics/drawable/Drawable;
 
-.field private j:Landroid/graphics/drawable/Drawable;
+.field public final o:Z
 
-.field private final k:Z
-
-.field private l:Landroid/graphics/drawable/Drawable;
+.field public p:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$Companion;
+    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$a;-><init>(Lkotlin/jvm/internal/g;)V
 
-    sput-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$Companion;
+    sput-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->q:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$a;
 
     const-string v0, "TransitionView"
 
-    .line 261
-    sput-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
+    sput-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->r:Ljava/lang/String;
 
     return-void
 .end method
@@ -69,8 +65,8 @@
 
     const/4 v1, 0x0
 
-    .line 70
-    invoke-direct {p0, p1, v1, v0, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    .line 8
+    invoke-direct {p0, p1, v0, v1, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
 .end method
@@ -80,19 +76,8 @@
 
     const/4 v0, 0x0
 
-    .line 68
+    .line 7
     invoke-direct {p0, p1, p2, v0, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 66
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
 .end method
@@ -100,41 +85,37 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 0
 
-    .line 64
+    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 30
+    .line 2
     sget-object p1, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/widget/ImageView$ScaleType;
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b:Landroid/widget/ImageView$ScaleType;
 
-    .line 32
+    .line 3
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:Landroid/graphics/Matrix;
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/graphics/Matrix;
 
-    .line 33
+    .line 4
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->f:Landroid/graphics/Matrix;
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->d:Landroid/graphics/Matrix;
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 34
-    iput p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:F
+    .line 5
+    iput p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:F
 
-    .line 145
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getContext()Landroid/content/Context;
+    .line 6
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
-
-    const-string p2, "context"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -154,28 +135,76 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
+    iput-boolean p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
 
     return-void
 .end method
 
-.method private final a(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;F)V
+.method public static final synthetic a()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->r:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public static synthetic e(Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;ILandroid/graphics/PorterDuff$Mode;ILjava/lang/Object;)V
+    .locals 0
+
+    if-nez p4, :cond_1
+
+    and-int/lit8 p3, p3, 0x2
+
+    if-eqz p3, :cond_0
+
+    sget-object p2, Landroid/graphics/PorterDuff$Mode;->SRC_ATOP:Landroid/graphics/PorterDuff$Mode;
+
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->d(ILandroid/graphics/PorterDuff$Mode;)V
+
+    return-void
+
+    :cond_1
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Super calls with default arguments not supported in this target, function: setColorFilter"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static final getLOG_TAG()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->q:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$a;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$a;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final b(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;F)V
     .locals 3
 
-    .line 332
+    .line 1
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     move-result v0
 
-    .line 252
+    .line 2
     :try_start_0
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getPaddingTop()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
 
@@ -183,14 +212,14 @@
 
     invoke-virtual {p1, v1, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 253
+    .line 3
     invoke-virtual {p3}, Landroid/graphics/Matrix;->isIdentity()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 254
+    .line 4
     invoke-virtual {p1, p3}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
     :cond_0
@@ -198,19 +227,19 @@
 
     int-to-float p3, p3
 
-    mul-float p4, p4, p3
+    mul-float/2addr p4, p3
 
     float-to-int p3, p4
 
-    .line 255
+    .line 5
     invoke-virtual {p2, p3}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    .line 256
+    .line 6
     invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 336
+    .line 7
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     return-void
@@ -223,11 +252,43 @@
     throw p2
 .end method
 
-.method private final a(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;)V
-    .locals 6
+.method public final c(I)Z
+    .locals 0
 
-    .line 148
-    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public final d(ILandroid/graphics/PorterDuff$Mode;)V
+    .locals 1
+
+    const-string v0, "mode"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Landroid/graphics/PorterDuffColorFilter;
+
+    invoke-direct {v0, p1, p2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
+
+    invoke-virtual {p0, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    return-void
+.end method
+
+.method public final f(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;)V
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->r:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -249,221 +310,199 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    const/4 v1, 0x0
-
-    if-eqz p1, :cond_1
-
-    if-ne p1, p2, :cond_0
-
-    const/4 v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
     const/4 v2, 0x0
 
-    :goto_0
-    const/4 v3, 0x0
+    if-nez p1, :cond_0
 
-    .line 153
-    check-cast v3, Landroid/graphics/drawable/Drawable$Callback;
-
-    invoke-virtual {p1, v3}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
-
-    .line 154
-    invoke-virtual {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->unscheduleDrawable(Landroid/graphics/drawable/Drawable;)V
-
-    .line 155
-    iget-boolean v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
-
-    if-nez v3, :cond_2
-
-    if-nez v2, :cond_2
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->isAttachedToWindow()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    .line 156
-    sget-object v3, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "hide old: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 157
-    invoke-virtual {p1, v1, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
+    move v3, v2
 
     goto :goto_1
 
+    :cond_0
+    if-ne p1, p2, :cond_1
+
+    move v3, v1
+
+    goto :goto_0
+
     :cond_1
-    const/4 v2, 0x0
+    move v3, v2
+
+    :goto_0
+    const/4 v4, 0x0
+
+    .line 2
+    invoke-virtual {p1, v4}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
+
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/view/View;->unscheduleDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 4
+    iget-boolean v4, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
+
+    if-nez v4, :cond_2
+
+    if-nez v3, :cond_2
+
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    const-string v4, "hide old: "
+
+    .line 5
+    invoke-static {v4, p1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v0, v4}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6
+    invoke-virtual {p1, v2, v2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     :cond_2
     :goto_1
-    if-eqz p2, :cond_9
+    if-nez p2, :cond_3
 
-    .line 161
-    move-object v3, p0
+    goto :goto_4
 
-    check-cast v3, Landroid/graphics/drawable/Drawable$Callback;
-
-    invoke-virtual {p2, v3}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
-
-    .line 162
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v4, 0x17
-
-    if-lt v3, v4, :cond_3
-
-    .line 163
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getLayoutDirection()I
-
-    move-result v3
-
-    invoke-virtual {p2, v3}, Landroid/graphics/drawable/Drawable;->setLayoutDirection(I)Z
-
-    .line 165
+    .line 7
     :cond_3
+    invoke-virtual {p2, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
+
+    .line 8
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
+
+    move-result v4
+
+    invoke-virtual {p2, v4}, Landroid/graphics/drawable/Drawable;->setLayoutDirection(I)Z
+
+    .line 9
     invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->isStateful()Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_4
+    if-eqz v4, :cond_4
 
-    .line 166
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getDrawableState()[I
+    .line 10
+    invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {p2, v3}, Landroid/graphics/drawable/Drawable;->setState([I)Z
+    invoke-virtual {p2, v4}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
     :cond_4
-    if-eqz v2, :cond_5
+    if-eqz v3, :cond_5
 
-    .line 168
-    iget-boolean v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
+    .line 11
+    iget-boolean v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
 
-    if-eqz v2, :cond_8
+    if-eqz v3, :cond_8
 
-    .line 169
+    .line 12
     :cond_5
-    iget-boolean v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
+    iget-boolean v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
 
-    if-eqz v2, :cond_6
+    if-eqz v3, :cond_6
 
-    .line 170
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getVisibility()I
+    .line 13
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_7
+    if-nez v3, :cond_7
 
     :goto_2
-    const/4 v1, 0x1
+    move v2, v1
 
     goto :goto_3
 
-    .line 172
+    .line 14
     :cond_6
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->isAttachedToWindow()Z
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_7
+    if-eqz v3, :cond_7
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getWindowVisibility()I
+    invoke-virtual {p0}, Landroid/view/View;->getWindowVisibility()I
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_7
+    if-nez v3, :cond_7
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->isShown()Z
+    invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_7
+    if-eqz v3, :cond_7
 
     goto :goto_2
 
-    .line 174
+    .line 15
     :cond_7
     :goto_3
-    sget-object v2, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "show new: "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    const-string v4, "show new: "
 
-    .line 175
-    invoke-virtual {p2, v1, v0}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
+    invoke-static {v4, v3}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
-    .line 176
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a:Landroid/graphics/ColorFilter;
+    move-result-object v3
 
-    invoke-virtual {p2, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+    invoke-static {v0, v3}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 179
+    .line 16
+    invoke-virtual {p2, v2, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
+
+    .line 17
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getColorFilter()Landroid/graphics/ColorFilter;
+
+    move-result-object v1
+
+    invoke-virtual {p2, v1}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    .line 18
     :cond_8
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getMeasuredWidth()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/widget/ImageView$ScaleType;
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
-    invoke-static {p2, p3, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionViewKt;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;IILandroid/widget/ImageView$ScaleType;)V
+    move-result v2
 
-    :cond_9
-    if-eqz p1, :cond_b
+    iget-object v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b:Landroid/widget/ImageView$ScaleType;
 
-    if-eqz p2, :cond_b
+    invoke-static {p2, p3, v1, v2, v3}, Lcom/samsung/android/app/musiclibrary/ui/widget/b0;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;IILandroid/widget/ImageView$ScaleType;)V
 
-    .line 183
+    :goto_4
+    const-string p3, "requestLayout 1"
+
+    if-eqz p1, :cond_a
+
+    if-eqz p2, :cond_a
+
+    .line 19
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    move-result p3
+    move-result v1
 
     invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    move-result v0
+    move-result v2
 
-    if-ne p3, v0, :cond_a
+    if-ne v1, v2, :cond_9
 
+    .line 20
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result p1
@@ -472,79 +511,34 @@
 
     move-result p2
 
-    if-eq p1, p2, :cond_c
-
-    .line 184
-    :cond_a
-    sget-object p1, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
-
-    const-string p2, "requestLayout 1"
-
-    invoke-static {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 185
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->requestLayout()V
-
-    goto :goto_4
-
-    .line 188
-    :cond_b
-    sget-object p1, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
-
-    const-string p2, "requestLayout 1"
-
-    invoke-static {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 189
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->requestLayout()V
-
-    :cond_c
-    :goto_4
-    return-void
-.end method
-
-.method public static synthetic a(Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;ILandroid/graphics/PorterDuff$Mode;ILjava/lang/Object;)V
-    .locals 0
-
-    if-nez p4, :cond_1
-
-    and-int/lit8 p3, p3, 0x2
-
-    if-eqz p3, :cond_0
-
-    .line 246
-    sget-object p2, Landroid/graphics/PorterDuff$Mode;->SRC_ATOP:Landroid/graphics/PorterDuff$Mode;
-
-    :cond_0
-    invoke-virtual {p0, p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(ILandroid/graphics/PorterDuff$Mode;)V
-
-    return-void
-
-    .line 0
-    :cond_1
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
-
-    const-string p1, "Super calls with default arguments not supported in this target, function: setColorFilter"
-
-    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method public static final synthetic a(Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;Landroid/animation/Animator;)V
-    .locals 0
+    if-eq p1, p2, :cond_b
 
     .line 21
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->d:Landroid/animation/Animator;
+    :cond_9
+    invoke-static {v0, p3}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 22
+    invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
+
+    goto :goto_5
+
+    .line 23
+    :cond_a
+    invoke-static {v0, p3}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 24
+    invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
+
+    :cond_b
+    :goto_5
     return-void
 .end method
 
-.method private final a(ZZ)V
+.method public final g(ZZ)V
     .locals 3
 
-    .line 129
-    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->r:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -566,80 +560,38 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 130
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v0, :cond_0
-
-    .line 131
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
-
-    .line 133
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v0, :cond_1
-
-    .line 134
-    invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
-
-    :cond_1
-    return-void
-.end method
-
-.method private final a(I)Z
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
+    if-nez v0, :cond_0
 
     goto :goto_0
 
+    .line 3
     :cond_0
-    const/4 p1, 0x1
+    invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
+    .line 4
     :goto_0
-    return p1
-.end method
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
-.method public static final getLOG_TAG()Ljava/lang/String;
-    .locals 1
+    if-nez v0, :cond_1
 
-    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView$Companion;
+    goto :goto_1
 
-    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
+    .line 5
+    :cond_1
+    invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a(ILandroid/graphics/PorterDuff$Mode;)V
-    .locals 1
-
-    const-string v0, "mode"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 247
-    new-instance v0, Landroid/graphics/PorterDuffColorFilter;
-
-    invoke-direct {v0, p1, p2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
-
-    check-cast v0, Landroid/graphics/ColorFilter;
-
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->setColorFilter(Landroid/graphics/ColorFilter;)V
-
+    :goto_1
     return-void
 .end method
 
 .method public final getColorFilter()Landroid/graphics/ColorFilter;
     .locals 1
 
-    .line 22
     iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a:Landroid/graphics/ColorFilter;
 
     return-object v0
@@ -648,8 +600,7 @@
 .method public final getCurrentImageDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 40
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -657,8 +608,7 @@
 .method public final getNextImageDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 53
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -666,44 +616,44 @@
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    .line 232
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
+    const-string v0, "drawable"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    if-nez v0, :cond_0
 
-    if-eqz v0, :cond_0
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
-    xor-int/lit8 p1, p1, 0x1
-
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
     return-void
 
-    .line 235
+    .line 2
     :cond_0
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method
 
-.method protected onAttachedToWindow()V
+.method public onAttachedToWindow()V
     .locals 2
 
-    .line 92
+    .line 1
     invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
-    .line 93
-    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
+    .line 2
+    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
 
     if-eqz v0, :cond_0
 
@@ -711,141 +661,154 @@
 
     const/4 v1, 0x0
 
-    .line 94
-    invoke-direct {p0, v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(ZZ)V
+    .line 3
+    invoke-virtual {p0, v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g(ZZ)V
 
     :cond_0
     return-void
 .end method
 
-.method protected onDetachedFromWindow()V
+.method public onDetachedFromWindow()V
     .locals 1
 
-    .line 99
+    .line 1
     invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
-    .line 100
-    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
+    .line 2
+    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 101
-    invoke-direct {p0, v0, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(ZZ)V
+    .line 3
+    invoke-virtual {p0, v0, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g(ZZ)V
 
     :cond_0
     return-void
 .end method
 
-.method protected onDraw(Landroid/graphics/Canvas;)V
+.method public onDraw(Landroid/graphics/Canvas;)V
     .locals 4
+
+    .line 1
+    invoke-static {p1}, Lkotlin/jvm/internal/j;->c(Ljava/lang/Object;)V
+
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getCurrentImageDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/graphics/Matrix;
+
+    iget v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:F
+
+    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;F)V
+
+    .line 4
+    :goto_0
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getNextImageDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    goto :goto_1
+
+    .line 5
+    :cond_1
+    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->d:Landroid/graphics/Matrix;
+
+    iget v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->f:F
+
+    iget v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:F
+
+    mul-float/2addr v2, v3
+
+    invoke-virtual {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;F)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public onMeasure(II)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
+
+    .line 2
+    iget-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
 
     if-nez p1, :cond_0
 
-    .line 218
-    invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->a()V
+    goto :goto_0
 
-    .line 219
+    .line 3
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
+    iget-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/graphics/Matrix;
 
-    if-eqz v0, :cond_1
-
-    .line 220
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:Landroid/graphics/Matrix;
-
-    iget v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:F
-
-    invoke-direct {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;F)V
-
-    .line 222
-    :cond_1
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v0, :cond_2
-
-    .line 223
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->f:Landroid/graphics/Matrix;
-
-    iget v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:F
-
-    iget v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:F
-
-    mul-float v2, v2, v3
-
-    invoke-direct {p0, p1, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;F)V
-
-    :cond_2
-    return-void
-.end method
-
-.method protected onMeasure(II)V
-    .locals 3
-
-    .line 119
-    invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
-
-    .line 120
-    iget-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
-
-    if-eqz p1, :cond_0
-
-    .line 121
-    iget-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:Landroid/graphics/Matrix;
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/widget/ImageView$ScaleType;
+    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b:Landroid/widget/ImageView$ScaleType;
 
-    invoke-static {p1, p2, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionViewKt;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;IILandroid/widget/ImageView$ScaleType;)V
+    invoke-static {p1, p2, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/b0;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;IILandroid/widget/ImageView$ScaleType;)V
 
-    .line 123
-    :cond_0
-    iget-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
+    .line 4
+    :goto_0
+    iget-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
-    if-eqz p1, :cond_1
+    if-nez p1, :cond_1
 
-    .line 124
-    iget-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->f:Landroid/graphics/Matrix;
+    goto :goto_1
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getMeasuredWidth()I
+    .line 5
+    :cond_1
+    iget-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->d:Landroid/graphics/Matrix;
+
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getMeasuredHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/widget/ImageView$ScaleType;
+    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->b:Landroid/widget/ImageView$ScaleType;
 
-    invoke-static {p1, p2, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionViewKt;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;IILandroid/widget/ImageView$ScaleType;)V
+    invoke-static {p1, p2, v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/b0;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;IILandroid/widget/ImageView$ScaleType;)V
 
-    :cond_1
+    :goto_1
     return-void
 .end method
 
 .method public onVisibilityAggregated(Z)V
     .locals 1
 
-    .line 106
+    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onVisibilityAggregated(Z)V
 
-    .line 107
-    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
+    .line 2
+    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 108
-    invoke-direct {p0, p1, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(ZZ)V
+    .line 3
+    invoke-virtual {p0, p1, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g(ZZ)V
 
     :cond_0
     return-void
@@ -854,37 +817,40 @@
 .method public setAlpha(F)V
     .locals 2
 
-    .line 113
+    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->setAlpha(F)V
 
-    .line 114
-    iput p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:F
+    .line 2
+    iput p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:F
 
-    .line 115
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->l:Landroid/graphics/drawable/Drawable;
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->p:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
+    goto :goto_0
+
+    :cond_0
     const/high16 v1, 0x437f0000    # 255.0f
 
-    mul-float p1, p1, v1
+    mul-float/2addr p1, v1
 
     float-to-int p1, p1
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    :cond_0
+    :goto_0
     return-void
 .end method
 
 .method public setBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 241
+    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 242
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->l:Landroid/graphics/drawable/Drawable;
+    .line 2
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->p:Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
@@ -896,7 +862,7 @@
 
     const/4 v1, 0x2
 
-    invoke-static {p0, p1, v0, v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;ILandroid/graphics/PorterDuff$Mode;ILjava/lang/Object;)V
+    invoke-static {p0, p1, v0, v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e(Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;ILandroid/graphics/PorterDuff$Mode;ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -904,140 +870,112 @@
 .method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
-    .line 24
+    .line 1
     iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a:Landroid/graphics/ColorFilter;
 
-    .line 25
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+    goto :goto_0
 
-    .line 26
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v0, :cond_1
-
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    .line 27
+    .line 3
+    :goto_0
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
+
+    if-nez v0, :cond_1
+
+    goto :goto_1
+
     :cond_1
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->invalidate()V
+    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    .line 4
+    :goto_1
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method
 
 .method public final setCurrentImageDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 3
+    .locals 2
 
-    .line 42
-    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->r:Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v1, "setImageDrawable drawable: "
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "setImageDrawable drawable: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 43
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
 
-    invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    if-nez v0, :cond_0
 
-    if-eqz v0, :cond_0
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
 
-    .line 44
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c:Landroid/graphics/Matrix;
 
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->e:Landroid/graphics/Matrix;
+    invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->f(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;)V
 
-    invoke-direct {p0, v0, p1, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;)V
+    .line 4
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g:Landroid/graphics/drawable/Drawable;
 
-    .line 45
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->i:Landroid/graphics/drawable/Drawable;
-
-    .line 46
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->invalidate()V
+    .line 5
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
     return-void
 .end method
 
-.method public final setFraction(F)V
-    .locals 0
-    .annotation build Landroid/support/annotation/Keep;
-    .end annotation
-
-    .line 78
-    iput p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:F
-
-    .line 79
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->invalidate()V
-
-    return-void
-.end method
-
 .method public final setNextImageDrawable(Landroid/graphics/drawable/Drawable;)V
-    .locals 3
+    .locals 2
 
-    .line 55
-    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->r:Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v1, "setNextImageDrawable drawable: "
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "setNextImageDrawable drawable: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 56
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
-    invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/j;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    if-nez v0, :cond_0
 
-    if-eqz v0, :cond_0
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
-    .line 57
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->d:Landroid/graphics/Matrix;
 
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->f:Landroid/graphics/Matrix;
+    invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->f(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;)V
 
-    invoke-direct {p0, v0, p1, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/Matrix;)V
+    .line 4
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->h:Landroid/graphics/drawable/Drawable;
 
-    .line 58
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->j:Landroid/graphics/drawable/Drawable;
-
-    .line 59
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->invalidate()V
+    .line 5
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
     return-void
@@ -1046,16 +984,16 @@
 .method public setVisibility(I)V
     .locals 4
 
-    .line 83
+    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 84
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(I)Z
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->c(I)Z
 
     move-result v0
 
-    .line 85
-    sget-object v1, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->m:Ljava/lang/String;
+    .line 3
+    sget-object v1, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->r:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1077,17 +1015,17 @@
 
     move-result-object p1
 
-    invoke-static {v1, p1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 86
-    iget-boolean p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->k:Z
+    .line 4
+    iget-boolean p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->o:Z
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x1
 
-    .line 87
-    invoke-direct {p0, v0, p1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->a(ZZ)V
+    .line 5
+    invoke-virtual {p0, v0, p1}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->g(ZZ)V
 
     :cond_0
     return-void

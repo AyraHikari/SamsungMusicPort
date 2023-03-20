@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$3;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowActivity.java"
 
 # interfaces
 .implements Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;
+.field public final synthetic this$0:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)V
+.method public constructor <init>(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)V
     .locals 0
 
-    .line 606
     iput-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$3;->this$0:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onWindowExit()Z
     .locals 1
 
-    .line 608
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$3;->this$0:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;
 
     invoke-static {v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->access$200(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$ExitListener;

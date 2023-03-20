@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/media/AudioManagerSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AudioManagerSdlCompat.java"
 
 
 # static fields
@@ -19,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +27,6 @@
 .method public static getEarProtectLimitIndex()I
     .locals 1
 
-    .line 26
     invoke-static {}, Landroid/media/AudioManager;->getEarProtectLimitIndex()I
 
     move-result v0
@@ -39,7 +37,6 @@
 .method public static isFMActive(Landroid/media/AudioManager;)Z
     .locals 0
 
-    .line 30
     invoke-virtual {p0}, Landroid/media/AudioManager;->isFMActive()Z
 
     move-result p0
@@ -50,7 +47,6 @@
 .method public static isHdmiConnected(Landroid/media/AudioManager;)Z
     .locals 0
 
-    .line 38
     invoke-virtual {p0}, Landroid/media/AudioManager;->isHdmiConnected()Z
 
     move-result p0
@@ -61,7 +57,6 @@
 .method public static isRecordActive(Landroid/media/AudioManager;)Z
     .locals 0
 
-    .line 34
     invoke-virtual {p0}, Landroid/media/AudioManager;->isRecordActive()Z
 
     move-result p0
@@ -72,5 +67,16 @@
 .method public static setSmartVoumeEnable(Z)V
     .locals 2
 
+    .line 1
+    sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
+
+    const/16 v1, 0x8fd
+
+    if-ge v0, v1, :cond_0
+
+    .line 2
+    invoke-static {p0}, Landroid/media/AudioManager;->setSmartVoumeEnable(Z)V
+
+    :cond_0
     return-void
 .end method

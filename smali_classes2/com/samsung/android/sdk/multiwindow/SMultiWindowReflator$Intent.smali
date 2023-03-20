@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowReflator.java"
 
 
 # annotations
@@ -25,11 +25,11 @@
 
 .field public static EXTRA_WINDOW_SCALE:Ljava/lang/String;
 
-.field static FIELD_NAMES:[Ljava/lang/String;
+.field public static FIELD_NAMES:[Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 5
 
     const-string v0, "EXTRA_WINDOW_MODE"
@@ -42,16 +42,14 @@
 
     const-string v4, "EXTRA_WINDOW_SCALE"
 
-    .line 85
+    .line 1
     filled-new-array {v0, v1, v2, v3, v4}, [Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->FIELD_NAMES:[Ljava/lang/String;
 
-    .line 94
-    sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->FIELD_NAMES:[Ljava/lang/String;
-
+    .line 2
     array-length v0, v0
 
     const/4 v1, 0x0
@@ -59,7 +57,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 97
+    .line 3
     :try_start_0
     const-class v2, Landroid/content/Intent;
 
@@ -71,7 +69,7 @@
 
     move-result-object v2
 
-    .line 98
+    .line 4
     const-class v3, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;
 
     sget-object v4, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->FIELD_NAMES:[Ljava/lang/String;
@@ -82,7 +80,7 @@
 
     move-result-object v3
 
-    .line 99
+    .line 5
     invoke-virtual {v2, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -105,7 +103,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 78
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

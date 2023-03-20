@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/look/Slook$VERSION_CODES;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Slook.java"
 
 
 # annotations
@@ -24,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 68
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

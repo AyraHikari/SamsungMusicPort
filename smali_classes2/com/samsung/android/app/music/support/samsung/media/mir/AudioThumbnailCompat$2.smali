@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AudioThumbnailCompat.java"
 
 # interfaces
 .implements Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
@@ -12,24 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;
+.field public final synthetic this$0:Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;
 
-.field final synthetic val$listener:Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;
+.field public final synthetic val$listener:Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;
 
-.field final synthetic val$uri:Landroid/net/Uri;
+.field public final synthetic val$uri:Landroid/net/Uri;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;Landroid/net/Uri;)V
+.method public constructor <init>(Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;Landroid/net/Uri;)V
     .locals 0
 
-    .line 95
     iput-object p1, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$2;->this$0:Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;
 
     iput-object p2, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$2;->val$listener:Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;
@@ -46,7 +45,6 @@
 .method public onResult(II)V
     .locals 3
 
-    .line 98
     iget-object p1, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$2;->val$listener:Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;
 
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$2;->val$uri:Landroid/net/Uri;

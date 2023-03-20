@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowManager.java"
 
 
 # static fields
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 0
 
     return-void
@@ -29,18 +29,18 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 44
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 39
+    .line 2
     iput-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
     :try_start_0
     const-string v0, "multiwindow_facade"
 
-    .line 46
+    .line 3
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -58,19 +58,19 @@
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;
     .locals 1
 
-    .line 60
+    .line 1
     sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->sInstance:Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;
 
     if-nez v0, :cond_0
 
-    .line 61
+    .line 2
     new-instance v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;-><init>(Landroid/content/Context;)V
 
     sput-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->sInstance:Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;
 
-    .line 63
+    .line 3
     :cond_0
     sget-object p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->sInstance:Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;
 
@@ -90,14 +90,12 @@
         }
     .end annotation
 
-    .line 74
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
     if-eqz v0, :cond_0
 
-    .line 75
-    iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
-
+    .line 2
     invoke-virtual {v0}, Lcom/samsung/android/multiwindow/MultiWindowFacade;->getRunningScaleWindows()Ljava/util/List;
 
     move-result-object v0
@@ -106,7 +104,7 @@
 
     return-object v0
 
-    .line 77
+    .line 3
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
@@ -126,14 +124,12 @@
         }
     .end annotation
 
-    .line 87
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
     if-eqz v0, :cond_0
 
-    .line 88
-    iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
-
+    .line 2
     invoke-virtual {v0, p1, p2}, Lcom/samsung/android/multiwindow/MultiWindowFacade;->getRunningTasks(II)Ljava/util/List;
 
     move-result-object p1
@@ -145,7 +141,7 @@
 
     const-string p2, "The mMultiWindowFacade is null"
 
-    .line 90
+    .line 3
     invoke-static {p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 p1, 0x0
@@ -154,47 +150,43 @@
 .end method
 
 .method public minimizeTask(ILandroid/graphics/Point;Z)Z
-    .locals 2
+    .locals 3
 
-    const/4 v0, 0x0
+    const-string v0, "SMultiWindowManager"
 
-    .line 104
+    const/4 v1, 0x0
+
+    .line 1
     :try_start_0
-    iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
+    iget-object v2, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
-    .line 105
-    iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowManager;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
-
-    invoke-virtual {v1, p1, p2, p3}, Lcom/samsung/android/multiwindow/MultiWindowFacade;->minimizeTask(ILandroid/graphics/Point;Z)Z
+    .line 2
+    invoke-virtual {v2, p1, p2, p3}, Lcom/samsung/android/multiwindow/MultiWindowFacade;->minimizeTask(ILandroid/graphics/Point;Z)Z
 
     move-result p1
 
-    move v0, p1
+    move v1, p1
 
     goto :goto_0
 
     :cond_0
-    const-string p1, "SMultiWindowManager"
+    const-string p1, "The mMultiWindowFacade is null"
 
-    const-string p2, "The mMultiWindowFacade is null"
-
-    .line 107
-    invoke-static {p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    .line 3
+    invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/lang/NoSuchMethodError; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
     :catch_0
-    const-string p1, "SMultiWindowManager"
+    const-string p1, "There is no method minimizeTask()"
 
-    const-string p2, "There is no method minimizeTask()"
-
-    .line 111
-    invoke-static {p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    .line 4
+    invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
-    return v0
+    return v1
 .end method

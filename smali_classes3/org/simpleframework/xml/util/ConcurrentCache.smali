@@ -1,6 +1,6 @@
 .class public Lorg/simpleframework/xml/util/ConcurrentCache;
 .super Ljava/util/concurrent/ConcurrentHashMap;
-.source "SourceFile"
+.source "ConcurrentCache.java"
 
 # interfaces
 .implements Lorg/simpleframework/xml/util/Cache;
@@ -25,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 38
     invoke-direct {p0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     return-void
@@ -43,8 +42,7 @@
         }
     .end annotation
 
-    .line 51
-    invoke-virtual {p0, p1, p2}, Lorg/simpleframework/xml/util/ConcurrentCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -52,8 +50,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 90
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/ConcurrentCache;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -70,8 +67,7 @@
         }
     .end annotation
 
-    .line 77
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/ConcurrentCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -88,8 +84,7 @@
         }
     .end annotation
 
-    .line 64
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/ConcurrentCache;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

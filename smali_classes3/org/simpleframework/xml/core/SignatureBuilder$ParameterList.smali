@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/core/SignatureBuilder$ParameterList;
 .super Ljava/util/ArrayList;
-.source "SourceFile"
+.source "SignatureBuilder.java"
 
 
 # annotations
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "ParameterList"
 .end annotation
 
@@ -26,7 +26,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 353
+    .line 1
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     return-void
@@ -35,7 +35,7 @@
 .method public constructor <init>(Lorg/simpleframework/xml/core/SignatureBuilder$ParameterList;)V
     .locals 0
 
-    .line 362
+    .line 2
     invoke-direct {p0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     return-void

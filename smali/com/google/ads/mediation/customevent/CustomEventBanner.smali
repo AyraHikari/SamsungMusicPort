@@ -1,8 +1,6 @@
 .class public interface abstract Lcom/google/ads/mediation/customevent/CustomEventBanner;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/google/ads/mediation/customevent/CustomEvent;
+.source "com.google.android.gms:play-services-ads-lite@@18.3.0"
 
 
 # annotations
@@ -11,5 +9,8 @@
 
 
 # virtual methods
-.method public abstract requestBannerAd(Lcom/google/ads/mediation/customevent/CustomEventBannerListener;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Lcom/google/ads/AdSize;Lcom/google/ads/mediation/MediationAdRequest;Ljava/lang/Object;)V
+.method public abstract synthetic destroy()V
+.end method
+
+.method public abstract requestBannerAd(Lcom/google/ads/mediation/customevent/a;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Lcom/google/ads/c;Lcom/google/ads/mediation/a;Ljava/lang/Object;)V
 .end method

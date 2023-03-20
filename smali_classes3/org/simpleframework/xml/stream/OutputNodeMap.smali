@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/stream/OutputNodeMap;
 .super Ljava/util/LinkedHashMap;
-.source "SourceFile"
+.source "OutputNodeMap.java"
 
 # interfaces
 .implements Lorg/simpleframework/xml/stream/NodeMap;
@@ -28,10 +28,10 @@
 .method public constructor <init>(Lorg/simpleframework/xml/stream/OutputNode;)V
     .locals 0
 
-    .line 44
+    .line 1
     invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 45
+    .line 2
     iput-object p1, p0, Lorg/simpleframework/xml/stream/OutputNodeMap;->source:Lorg/simpleframework/xml/stream/OutputNode;
 
     return-void
@@ -42,7 +42,7 @@
 .method public bridge synthetic get(Ljava/lang/String;)Lorg/simpleframework/xml/stream/Node;
     .locals 0
 
-    .line 32
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/stream/OutputNodeMap;->get(Ljava/lang/String;)Lorg/simpleframework/xml/stream/OutputNode;
 
     move-result-object p1
@@ -53,7 +53,7 @@
 .method public get(Ljava/lang/String;)Lorg/simpleframework/xml/stream/OutputNode;
     .locals 0
 
-    .line 115
+    .line 2
     invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -66,10 +66,9 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 68
     iget-object v0, p0, Lorg/simpleframework/xml/stream/OutputNodeMap;->source:Lorg/simpleframework/xml/stream/OutputNode;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/stream/OutputNode;->a()Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/stream/Node;->getName()Ljava/lang/String;
 
     move-result-object v0
 
@@ -79,7 +78,7 @@
 .method public bridge synthetic getNode()Lorg/simpleframework/xml/stream/Node;
     .locals 1
 
-    .line 32
+    .line 1
     invoke-virtual {p0}, Lorg/simpleframework/xml/stream/OutputNodeMap;->getNode()Lorg/simpleframework/xml/stream/OutputNode;
 
     move-result-object v0
@@ -90,7 +89,7 @@
 .method public getNode()Lorg/simpleframework/xml/stream/OutputNode;
     .locals 1
 
-    .line 57
+    .line 2
     iget-object v0, p0, Lorg/simpleframework/xml/stream/OutputNodeMap;->source:Lorg/simpleframework/xml/stream/OutputNode;
 
     return-object v0
@@ -107,8 +106,7 @@
         }
     .end annotation
 
-    .line 126
-    invoke-virtual {p0}, Lorg/simpleframework/xml/stream/OutputNodeMap;->keySet()Ljava/util/Set;
+    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
@@ -122,7 +120,7 @@
 .method public bridge synthetic put(Ljava/lang/String;Ljava/lang/String;)Lorg/simpleframework/xml/stream/Node;
     .locals 0
 
-    .line 32
+    .line 1
     invoke-virtual {p0, p1, p2}, Lorg/simpleframework/xml/stream/OutputNodeMap;->put(Ljava/lang/String;Ljava/lang/String;)Lorg/simpleframework/xml/stream/OutputNode;
 
     move-result-object p1
@@ -133,20 +131,20 @@
 .method public put(Ljava/lang/String;Ljava/lang/String;)Lorg/simpleframework/xml/stream/OutputNode;
     .locals 2
 
-    .line 82
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/stream/OutputAttribute;
 
     iget-object v1, p0, Lorg/simpleframework/xml/stream/OutputNodeMap;->source:Lorg/simpleframework/xml/stream/OutputNode;
 
     invoke-direct {v0, v1, p1, p2}, Lorg/simpleframework/xml/stream/OutputAttribute;-><init>(Lorg/simpleframework/xml/stream/OutputNode;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 84
+    .line 3
     iget-object p2, p0, Lorg/simpleframework/xml/stream/OutputNodeMap;->source:Lorg/simpleframework/xml/stream/OutputNode;
 
     if-eqz p2, :cond_0
 
-    .line 85
-    invoke-virtual {p0, p1, v0}, Lorg/simpleframework/xml/stream/OutputNodeMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 4
+    invoke-virtual {p0, p1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-object v0
@@ -155,7 +153,7 @@
 .method public bridge synthetic remove(Ljava/lang/String;)Lorg/simpleframework/xml/stream/Node;
     .locals 0
 
-    .line 32
+    .line 1
     invoke-virtual {p0, p1}, Lorg/simpleframework/xml/stream/OutputNodeMap;->remove(Ljava/lang/String;)Lorg/simpleframework/xml/stream/OutputNode;
 
     move-result-object p1
@@ -166,7 +164,7 @@
 .method public remove(Ljava/lang/String;)Lorg/simpleframework/xml/stream/OutputNode;
     .locals 0
 
-    .line 101
+    .line 2
     invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

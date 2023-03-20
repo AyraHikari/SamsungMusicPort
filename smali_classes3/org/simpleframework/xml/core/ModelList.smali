@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/core/ModelList;
 .super Ljava/util/ArrayList;
-.source "SourceFile"
+.source "ModelList.java"
 
 
 # annotations
@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 42
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     return-void
@@ -28,13 +27,13 @@
 .method public build()Lorg/simpleframework/xml/core/ModelList;
     .locals 3
 
-    .line 53
+    .line 1
     new-instance v0, Lorg/simpleframework/xml/core/ModelList;
 
     invoke-direct {v0}, Lorg/simpleframework/xml/core/ModelList;-><init>()V
 
-    .line 55
-    invoke-virtual {p0}, Lorg/simpleframework/xml/core/ModelList;->iterator()Ljava/util/Iterator;
+    .line 2
+    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
@@ -51,7 +50,7 @@
 
     check-cast v2, Lorg/simpleframework/xml/core/Model;
 
-    .line 56
+    .line 3
     invoke-virtual {v0, v2}, Lorg/simpleframework/xml/core/ModelList;->register(Lorg/simpleframework/xml/core/Model;)V
 
     goto :goto_0
@@ -63,8 +62,8 @@
 .method public isEmpty()Z
     .locals 2
 
-    .line 70
-    invoke-virtual {p0}, Lorg/simpleframework/xml/core/ModelList;->iterator()Ljava/util/Iterator;
+    .line 1
+    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -83,8 +82,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 72
-    invoke-interface {v1}, Lorg/simpleframework/xml/core/Model;->a()Z
+    .line 2
+    invoke-interface {v1}, Lorg/simpleframework/xml/core/Model;->isEmpty()Z
 
     move-result v1
 
@@ -103,8 +102,8 @@
 .method public lookup(I)Lorg/simpleframework/xml/core/Model;
     .locals 1
 
-    .line 90
-    invoke-virtual {p0}, Lorg/simpleframework/xml/core/ModelList;->size()I
+    .line 1
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
@@ -112,8 +111,8 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 93
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/ModelList;->get(I)Ljava/lang/Object;
+    .line 2
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -130,13 +129,13 @@
 .method public register(Lorg/simpleframework/xml/core/Model;)V
     .locals 4
 
-    .line 108
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Model;->b()I
+    .line 1
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Model;->getIndex()I
 
     move-result v0
 
-    .line 109
-    invoke-virtual {p0}, Lorg/simpleframework/xml/core/ModelList;->size()I
+    .line 2
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
@@ -149,16 +148,16 @@
 
     const/4 v3, 0x0
 
-    .line 113
-    invoke-virtual {p0, v3}, Lorg/simpleframework/xml/core/ModelList;->add(Ljava/lang/Object;)Z
+    .line 3
+    invoke-virtual {p0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_0
     add-int/lit8 v3, v0, -0x1
 
     if-ne v2, v3, :cond_1
 
-    .line 116
-    invoke-virtual {p0, v3, p1}, Lorg/simpleframework/xml/core/ModelList;->set(ILjava/lang/Object;)Ljava/lang/Object;
+    .line 4
+    invoke-virtual {p0, v3, p1}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
     add-int/lit8 v2, v2, 0x1
@@ -172,7 +171,7 @@
 .method public take()Lorg/simpleframework/xml/core/Model;
     .locals 2
 
-    .line 129
+    .line 1
     :cond_0
     invoke-virtual {p0}, Lorg/simpleframework/xml/core/ModelList;->isEmpty()Z
 
@@ -182,15 +181,15 @@
 
     const/4 v0, 0x0
 
-    .line 130
-    invoke-virtual {p0, v0}, Lorg/simpleframework/xml/core/ModelList;->remove(I)Ljava/lang/Object;
+    .line 2
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lorg/simpleframework/xml/core/Model;
 
-    .line 132
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Model;->a()Z
+    .line 3
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Model;->isEmpty()Z
 
     move-result v1
 

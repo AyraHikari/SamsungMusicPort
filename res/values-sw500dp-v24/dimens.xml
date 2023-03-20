@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="play_speed_preference_item_padding_vertical">15.0dip</dimen>
+    <dimen name="preference_item_padding_vertical">15.0dip</dimen>
 </resources>

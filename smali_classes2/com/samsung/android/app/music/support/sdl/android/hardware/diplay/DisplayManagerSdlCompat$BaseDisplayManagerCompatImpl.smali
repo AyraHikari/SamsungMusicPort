@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/DisplayManagerSdlCompat$BaseDisplayManagerCompatImpl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "DisplayManagerSdlCompat.java"
 
 # interfaces
 .implements Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/DisplayManagerSdlCompat$DisplayManagerCompatImpl;
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "BaseDisplayManagerCompatImpl"
 .end annotation
 
@@ -21,16 +21,14 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 129
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/DisplayManagerSdlCompat$1;)V
+.method public synthetic constructor <init>(Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/DisplayManagerSdlCompat$1;)V
     .locals 0
 
-    .line 129
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/DisplayManagerSdlCompat$BaseDisplayManagerCompatImpl;-><init>()V
 
     return-void

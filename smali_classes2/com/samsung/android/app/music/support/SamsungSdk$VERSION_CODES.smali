@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/SamsungSdk$VERSION_CODES;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SamsungSdk.java"
 
 
 # annotations
@@ -41,12 +41,19 @@
 
 .field public static final SEP_2801:I = 0x31831
 
+.field public static final SEP_2901:I = 0x31895
+
+.field public static final SEP_2903:I = 0x31897
+
+.field public static final SEP_3001:I = 0x318f9
+
+.field public static final SEP_3101:I = 0x3195d
+
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$OnSdlErrorListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SoundAliveSdlCompat.java"
 
 
 # annotations

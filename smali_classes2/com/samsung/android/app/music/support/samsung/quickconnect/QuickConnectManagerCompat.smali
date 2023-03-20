@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "QuickConnectManagerCompat.java"
 
 
 # annotations
@@ -22,25 +22,25 @@
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 2
 
-    .line 25
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 26
+    .line 2
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 28
+    .line 3
     iput-object v1, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
 
-    .line 29
+    .line 4
     iput-object v1, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mSdlListener:Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectSdlListener;
 
     goto :goto_0
 
-    .line 31
+    .line 5
     :cond_0
     new-instance v0, Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
 
@@ -48,7 +48,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
 
-    .line 32
+    .line 6
     new-instance p1, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectSdlListener;
 
     invoke-direct {p1, v1}, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectSdlListener;-><init>(Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$1;)V
@@ -64,20 +64,20 @@
 .method public registerListener(Landroid/app/Activity;Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectListener;)V
     .locals 1
 
-    .line 37
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 40
+    .line 2
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mSdlListener:Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectSdlListener;
 
     invoke-virtual {v0, p2}, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectSdlListener;->setListener(Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectListener;)V
 
-    .line 41
+    .line 3
     iget-object p2, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
 
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mSdlListener:Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat$QuickConnectSdlListener;
@@ -90,17 +90,15 @@
 .method public terminate()V
     .locals 1
 
-    .line 52
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 55
+    .line 2
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
-
     invoke-virtual {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;->terminate()V
 
     return-void
@@ -109,17 +107,15 @@
 .method public unregisterListener()V
     .locals 1
 
-    .line 45
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 48
+    .line 2
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/quickconnect/QuickConnectManagerCompat;->mQuickConnectManagerSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;
-
     invoke-virtual {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat;->unregisterListener()V
 
     return-void

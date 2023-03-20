@@ -1,19 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="sesl_config_prefDialogWidth">580.0dip</dimen>
-    <item type="dimen" name="mr_dialog_fixed_width_major">60.000004%</item>
-    <item type="dimen" name="mr_dialog_fixed_width_minor">90.0%</item>
-    <dimen name="sesl_date_picker_dialog_min_width">608.0dip</dimen>
-    <dimen name="sesl_navigation_max_width">320.0dip</dimen>
-    <dimen name="sesl_search_plate_height">44.0dip</dimen>
-    <dimen name="sesl_search_plate_radius_size">22.0dip</dimen>
-    <dimen name="sesl_search_view_preferred_height">56.0dip</dimen>
-    <dimen name="sesl_snackbar_action_inline_max_width">0.0dip</dimen>
-    <dimen name="sesl_snackbar_background_corner_radius">2.0dip</dimen>
-    <dimen name="sesl_snackbar_extra_spacing_horizontal">24.0dip</dimen>
-    <dimen name="sesl_snackbar_max_width">576.0dip</dimen>
-    <dimen name="sesl_snackbar_min_width">320.0dip</dimen>
-    <item type="dimen" name="sesl_snackbar_padding_vertical_2lines">@dimen/sesl_snackbar_padding_vertical</item>
-    <dimen name="sesl_tab_scrollable_min_width">160.0dip</dimen>
-    <dimen name="sesl_time_picker_dialog_min_width">608.0dip</dimen>
+    <dimen name="app_widget_album">61.0dip</dimen>
+    <dimen name="app_widget_land_album">61.0dip</dimen>
+    <dimen name="app_widget_setting_actionbar_bottom">8.0dip</dimen>
+    <dimen name="app_widget_setting_preview_end_space">20.0dip</dimen>
+    <dimen name="app_widget_setting_preview_height">153.0dip</dimen>
+    <dimen name="app_widget_setting_preview_middle_space">10.0dip</dimen>
+    <dimen name="app_widget_setting_preview_min_height">398.0dip</dimen>
+    <dimen name="app_widget_setting_preview_padding_horizontal">0.0dip</dimen>
+    <dimen name="app_widget_setting_preview_padding_vertical">50.0dip</dimen>
+    <dimen name="app_widget_setting_preview_start_space">10.0dip</dimen>
+    <item type="dimen" name="app_widget_setting_preview_width_ratio">0.86</item>
+    <dimen name="app_widget_title">16.0dip</dimen>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="ext_app_widget_container_height">115.0dip</dimen>
+    <dimen name="ext_app_widget_land_container_height">110.0dip</dimen>
+    <dimen name="ext_app_widget_list_margin">7.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_content_height">153.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_list_artist">13.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_list_bottom_space">9.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_list_end_space">9.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_list_start_space">9.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_list_text_space">18.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_list_text_vertical_space">8.0dip</dimen>
+    <dimen name="ext_app_widget_setting_preview_list_title">15.0dip</dimen>
+    <dimen name="full_player_artist_margin_top">4.0dip</dimen>
+    <item type="dimen" name="full_player_bottom_margin_percent">0.084</item>
+    <dimen name="full_player_button_image_size">42.0dip</dimen>
+    <dimen name="full_player_button_ripple_size">63.0dip</dimen>
+    <dimen name="full_player_controller_height">84.0dip</dimen>
+    <dimen name="full_player_duration_text">16.0dip</dimen>
+    <dimen name="full_player_play_pause_icon_size">64.0dip</dimen>
+    <dimen name="full_player_recommend_button_image_height">17.0dip</dimen>
+    <dimen name="full_player_recommend_button_image_width">37.0dip</dimen>
+    <dimen name="full_player_recommend_button_margin">10.0dip</dimen>
+    <dimen name="full_player_recommend_button_size">56.0dip</dimen>
+    <dimen name="full_player_tag_end_margin">46.0dip</dimen>
+    <dimen name="full_player_title_main_text">30.0sp</dimen>
+    <dimen name="full_player_title_main_text_height">35.0dip</dimen>
+    <dimen name="full_player_title_sub_text">18.0dip</dimen>
+    <dimen name="full_player_title_sub_text_height">21.0dip</dimen>
+    <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
+    <dimen name="sesl_spinning_date_picker_margin_top">30.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
 </resources>

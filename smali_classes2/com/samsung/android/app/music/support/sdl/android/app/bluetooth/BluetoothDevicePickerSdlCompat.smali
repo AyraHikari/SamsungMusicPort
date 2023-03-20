@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/app/bluetooth/BluetoothDevicePickerSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "BluetoothDevicePickerSdlCompat.java"
 
 
 # static fields
@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

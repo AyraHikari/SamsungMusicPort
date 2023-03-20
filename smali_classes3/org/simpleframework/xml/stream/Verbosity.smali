@@ -1,6 +1,6 @@
 .class public final enum Lorg/simpleframework/xml/stream/Verbosity;
 .super Ljava/lang/Enum;
-.source "SourceFile"
+.source "Verbosity.java"
 
 
 # annotations
@@ -22,10 +22,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public static constructor <clinit>()V
+    .locals 5
 
-    .line 37
+    .line 1
     new-instance v0, Lorg/simpleframework/xml/stream/Verbosity;
 
     const-string v1, "HIGH"
@@ -36,31 +36,27 @@
 
     sput-object v0, Lorg/simpleframework/xml/stream/Verbosity;->HIGH:Lorg/simpleframework/xml/stream/Verbosity;
 
-    .line 42
-    new-instance v0, Lorg/simpleframework/xml/stream/Verbosity;
+    .line 2
+    new-instance v1, Lorg/simpleframework/xml/stream/Verbosity;
 
-    const-string v1, "LOW"
+    const-string v3, "LOW"
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    invoke-direct {v0, v1, v3}, Lorg/simpleframework/xml/stream/Verbosity;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v4}, Lorg/simpleframework/xml/stream/Verbosity;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lorg/simpleframework/xml/stream/Verbosity;->LOW:Lorg/simpleframework/xml/stream/Verbosity;
+    sput-object v1, Lorg/simpleframework/xml/stream/Verbosity;->LOW:Lorg/simpleframework/xml/stream/Verbosity;
 
-    const/4 v0, 0x2
+    const/4 v3, 0x2
 
-    .line 32
-    new-array v0, v0, [Lorg/simpleframework/xml/stream/Verbosity;
+    new-array v3, v3, [Lorg/simpleframework/xml/stream/Verbosity;
 
-    sget-object v1, Lorg/simpleframework/xml/stream/Verbosity;->HIGH:Lorg/simpleframework/xml/stream/Verbosity;
+    aput-object v0, v3, v2
 
-    aput-object v1, v0, v2
+    aput-object v1, v3, v4
 
-    sget-object v1, Lorg/simpleframework/xml/stream/Verbosity;->LOW:Lorg/simpleframework/xml/stream/Verbosity;
-
-    aput-object v1, v0, v3
-
-    sput-object v0, Lorg/simpleframework/xml/stream/Verbosity;->$VALUES:[Lorg/simpleframework/xml/stream/Verbosity;
+    .line 3
+    sput-object v3, Lorg/simpleframework/xml/stream/Verbosity;->$VALUES:[Lorg/simpleframework/xml/stream/Verbosity;
 
     return-void
 .end method
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 32
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -82,7 +77,6 @@
 .method public static valueOf(Ljava/lang/String;)Lorg/simpleframework/xml/stream/Verbosity;
     .locals 1
 
-    .line 32
     const-class v0, Lorg/simpleframework/xml/stream/Verbosity;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -97,7 +91,6 @@
 .method public static values()[Lorg/simpleframework/xml/stream/Verbosity;
     .locals 1
 
-    .line 32
     sget-object v0, Lorg/simpleframework/xml/stream/Verbosity;->$VALUES:[Lorg/simpleframework/xml/stream/Verbosity;
 
     invoke-virtual {v0}, [Lorg/simpleframework/xml/stream/Verbosity;->clone()Ljava/lang/Object;

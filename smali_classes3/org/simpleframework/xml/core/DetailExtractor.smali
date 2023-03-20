@@ -1,30 +1,10 @@
 .class Lorg/simpleframework/xml/core/DetailExtractor;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "DetailExtractor.java"
 
 
 # instance fields
-.field private final a:Lorg/simpleframework/xml/util/Cache;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lorg/simpleframework/xml/util/Cache<",
-            "Lorg/simpleframework/xml/core/ContactList;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final b:Lorg/simpleframework/xml/util/Cache;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lorg/simpleframework/xml/util/Cache<",
-            "Lorg/simpleframework/xml/core/ContactList;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final c:Lorg/simpleframework/xml/util/Cache;
+.field private final details:Lorg/simpleframework/xml/util/Cache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lorg/simpleframework/xml/util/Cache<",
@@ -34,31 +14,93 @@
     .end annotation
 .end field
 
-.field private final d:Lorg/simpleframework/xml/DefaultType;
+.field private final fields:Lorg/simpleframework/xml/util/Cache;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/simpleframework/xml/util/Cache<",
+            "Lorg/simpleframework/xml/core/ContactList;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private final e:Lorg/simpleframework/xml/core/Support;
+.field private final methods:Lorg/simpleframework/xml/util/Cache;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/simpleframework/xml/util/Cache<",
+            "Lorg/simpleframework/xml/core/ContactList;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final override:Lorg/simpleframework/xml/DefaultType;
+
+.field private final support:Lorg/simpleframework/xml/core/Support;
 
 
 # direct methods
-.method private a(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
+.method public constructor <init>(Lorg/simpleframework/xml/core/Support;)V
+    .locals 1
 
-    .line 147
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, p1, v0}, Lorg/simpleframework/xml/core/DetailExtractor;-><init>(Lorg/simpleframework/xml/core/Support;Lorg/simpleframework/xml/DefaultType;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/simpleframework/xml/core/Support;Lorg/simpleframework/xml/DefaultType;)V
+    .locals 1
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    new-instance v0, Lorg/simpleframework/xml/util/ConcurrentCache;
+
+    invoke-direct {v0}, Lorg/simpleframework/xml/util/ConcurrentCache;-><init>()V
+
+    iput-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->methods:Lorg/simpleframework/xml/util/Cache;
+
+    .line 4
+    new-instance v0, Lorg/simpleframework/xml/util/ConcurrentCache;
+
+    invoke-direct {v0}, Lorg/simpleframework/xml/util/ConcurrentCache;-><init>()V
+
+    iput-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->fields:Lorg/simpleframework/xml/util/Cache;
+
+    .line 5
+    new-instance v0, Lorg/simpleframework/xml/util/ConcurrentCache;
+
+    invoke-direct {v0}, Lorg/simpleframework/xml/util/ConcurrentCache;-><init>()V
+
+    iput-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->details:Lorg/simpleframework/xml/util/Cache;
+
+    .line 6
+    iput-object p2, p0, Lorg/simpleframework/xml/core/DetailExtractor;->override:Lorg/simpleframework/xml/DefaultType;
+
+    .line 7
+    iput-object p1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->support:Lorg/simpleframework/xml/core/Support;
+
+    return-void
+.end method
+
+.method private getFields(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
+    .locals 2
+
+    .line 4
     new-instance v0, Lorg/simpleframework/xml/core/FieldScanner;
 
-    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->e:Lorg/simpleframework/xml/core/Support;
+    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->support:Lorg/simpleframework/xml/core/Support;
 
     invoke-direct {v0, p2, v1}, Lorg/simpleframework/xml/core/FieldScanner;-><init>(Lorg/simpleframework/xml/core/Detail;Lorg/simpleframework/xml/core/Support;)V
 
     if-eqz p2, :cond_0
 
-    .line 150
-    iget-object p2, p0, Lorg/simpleframework/xml/core/DetailExtractor;->b:Lorg/simpleframework/xml/util/Cache;
+    .line 5
+    iget-object p2, p0, Lorg/simpleframework/xml/core/DetailExtractor;->fields:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {p2, p1, v0}, Lorg/simpleframework/xml/util/Cache;->cache(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -66,25 +108,20 @@
     return-object v0
 .end method
 
-.method private b(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
+.method private getMethods(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 190
+    .line 4
     new-instance v0, Lorg/simpleframework/xml/core/MethodScanner;
 
-    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->e:Lorg/simpleframework/xml/core/Support;
+    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->support:Lorg/simpleframework/xml/core/Support;
 
     invoke-direct {v0, p2, v1}, Lorg/simpleframework/xml/core/MethodScanner;-><init>(Lorg/simpleframework/xml/core/Detail;Lorg/simpleframework/xml/core/Support;)V
 
     if-eqz p2, :cond_0
 
-    .line 193
-    iget-object p2, p0, Lorg/simpleframework/xml/core/DetailExtractor;->a:Lorg/simpleframework/xml/util/Cache;
+    .line 5
+    iget-object p2, p0, Lorg/simpleframework/xml/core/DetailExtractor;->methods:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {p2, p1, v0}, Lorg/simpleframework/xml/util/Cache;->cache(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -94,11 +131,11 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Class;)Lorg/simpleframework/xml/core/Detail;
+.method public getDetail(Ljava/lang/Class;)Lorg/simpleframework/xml/core/Detail;
     .locals 2
 
-    .line 104
-    iget-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->c:Lorg/simpleframework/xml/util/Cache;
+    .line 1
+    iget-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->details:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {v0, p1}, Lorg/simpleframework/xml/util/Cache;->fetch(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -108,15 +145,15 @@
 
     if-nez v0, :cond_0
 
-    .line 107
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/core/DetailScanner;
 
-    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->d:Lorg/simpleframework/xml/DefaultType;
+    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->override:Lorg/simpleframework/xml/DefaultType;
 
     invoke-direct {v0, p1, v1}, Lorg/simpleframework/xml/core/DetailScanner;-><init>(Ljava/lang/Class;Lorg/simpleframework/xml/DefaultType;)V
 
-    .line 108
-    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->c:Lorg/simpleframework/xml/util/Cache;
+    .line 3
+    iget-object v1, p0, Lorg/simpleframework/xml/core/DetailExtractor;->details:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {v1, p1, v0}, Lorg/simpleframework/xml/util/Cache;->cache(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -124,16 +161,11 @@
     return-object v0
 .end method
 
-.method public b(Ljava/lang/Class;)Lorg/simpleframework/xml/core/ContactList;
+.method public getFields(Ljava/lang/Class;)Lorg/simpleframework/xml/core/ContactList;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 124
-    iget-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->b:Lorg/simpleframework/xml/util/Cache;
+    .line 1
+    iget-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->fields:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {v0, p1}, Lorg/simpleframework/xml/util/Cache;->fetch(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -143,15 +175,15 @@
 
     if-nez v0, :cond_0
 
-    .line 127
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/DetailExtractor;->a(Ljava/lang/Class;)Lorg/simpleframework/xml/core/Detail;
+    .line 2
+    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/DetailExtractor;->getDetail(Ljava/lang/Class;)Lorg/simpleframework/xml/core/Detail;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 130
-    invoke-direct {p0, p1, v1}, Lorg/simpleframework/xml/core/DetailExtractor;->a(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
+    .line 3
+    invoke-direct {p0, p1, v1}, Lorg/simpleframework/xml/core/DetailExtractor;->getFields(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
 
     move-result-object v0
 
@@ -159,16 +191,11 @@
     return-object v0
 .end method
 
-.method public c(Ljava/lang/Class;)Lorg/simpleframework/xml/core/ContactList;
+.method public getMethods(Ljava/lang/Class;)Lorg/simpleframework/xml/core/ContactList;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 166
-    iget-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->a:Lorg/simpleframework/xml/util/Cache;
+    .line 1
+    iget-object v0, p0, Lorg/simpleframework/xml/core/DetailExtractor;->methods:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {v0, p1}, Lorg/simpleframework/xml/util/Cache;->fetch(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -178,15 +205,15 @@
 
     if-nez v0, :cond_0
 
-    .line 169
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/DetailExtractor;->a(Ljava/lang/Class;)Lorg/simpleframework/xml/core/Detail;
+    .line 2
+    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/DetailExtractor;->getDetail(Ljava/lang/Class;)Lorg/simpleframework/xml/core/Detail;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 172
-    invoke-direct {p0, p1, v1}, Lorg/simpleframework/xml/core/DetailExtractor;->b(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
+    .line 3
+    invoke-direct {p0, p1, v1}, Lorg/simpleframework/xml/core/DetailExtractor;->getMethods(Ljava/lang/Class;Lorg/simpleframework/xml/core/Detail;)Lorg/simpleframework/xml/core/ContactList;
 
     move-result-object v0
 

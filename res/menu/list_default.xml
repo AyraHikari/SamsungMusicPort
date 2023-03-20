@@ -4,7 +4,6 @@
     <item android:icon="@drawable/music_ic_ab_favorite_off" android:id="@id/toggle_heart" android:title="@string/heart" app:showAsAction="always" />
     <item android:id="@id/menu_launch_search" android:title="@string/search" app:showAsAction="always" />
     <group android:id="@id/menu_more_group">
-        <item android:id="@id/menu_my_info" android:visible="false" android:title="@string/menu_my_info" />
         <item android:id="@id/menu_launch_edit_mode" android:title="@string/menu_edit" />
         <item android:id="@id/menu_ts_online_store" android:visible="false" android:title="@string/lgt_mp3_ringtone" />
         <item android:id="@id/menu_sound_alive" android:title="@string/menu_sound_quality_and_effects" />

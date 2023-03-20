@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/sdk/look/smartclip/ExtractionListenerProxy;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlookSmartClip.java"
 
 # interfaces
 .implements Ljava/lang/reflect/InvocationHandler;
@@ -15,10 +15,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 270
     const-class v0, Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -31,17 +30,12 @@
 .end method
 
 .method private constructor <init>(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip$DataExtractionListener;)V
-    .locals 1
+    .locals 0
 
-    .line 274
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
-    .line 272
-    iput-object v0, p0, Lcom/samsung/android/sdk/look/smartclip/ExtractionListenerProxy;->mDataExtractionListener:Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip$DataExtractionListener;
-
-    .line 275
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/sdk/look/smartclip/ExtractionListenerProxy;->mDataExtractionListener:Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip$DataExtractionListener;
 
     return-void
@@ -53,7 +47,7 @@
     :try_start_0
     const-string v0, "com.samsung.android.smartclip.SmartClipDataExtractionListener"
 
-    .line 281
+    .line 1
     invoke-static {v0}, Lcom/samsung/android/sdk/look/smartclip/ReflectionUtils;->getClassByName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
@@ -65,7 +59,7 @@
     :catch_0
     move-exception v0
 
-    .line 283
+    .line 2
     sget-object v1, Lcom/samsung/android/sdk/look/smartclip/ExtractionListenerProxy;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -82,12 +76,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 284
+    .line 3
     invoke-virtual {v0}, Ljava/lang/ClassNotFoundException;->printStackTrace()V
 
     const/4 v0, 0x0
 
-    .line 288
+    .line 4
     :goto_0
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -95,19 +89,18 @@
 
     const/4 v2, 0x1
 
-    .line 289
     new-array v2, v2, [Ljava/lang/Class;
 
     const/4 v3, 0x0
 
     aput-object v0, v2, v3
 
-    .line 290
+    .line 5
     new-instance v0, Lcom/samsung/android/sdk/look/smartclip/ExtractionListenerProxy;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/sdk/look/smartclip/ExtractionListenerProxy;-><init>(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip$DataExtractionListener;)V
 
-    .line 287
+    .line 6
     invoke-static {v1, v2, v0}, Ljava/lang/reflect/Proxy;->newProxyInstance(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
 
     move-result-object p0
@@ -119,27 +112,22 @@
 # virtual methods
 .method public invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Throwable;
-        }
-    .end annotation
 
-    .line 295
+    .line 1
     invoke-virtual {p2}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     const-string p2, "onExtractSmartClipData"
 
-    .line 297
+    .line 2
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 298
+    .line 3
     iget-object p1, p0, Lcom/samsung/android/sdk/look/smartclip/ExtractionListenerProxy;->mDataExtractionListener:Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip$DataExtractionListener;
 
     const/4 p2, 0x0

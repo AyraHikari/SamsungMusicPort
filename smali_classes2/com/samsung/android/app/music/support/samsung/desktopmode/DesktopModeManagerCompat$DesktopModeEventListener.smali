@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$DesktopModeEventListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "DesktopModeManagerCompat.java"
 
 
 # annotations
@@ -15,8 +15,5 @@
 
 
 # virtual methods
-.method public abstract onDesktopDockConnectionChanged(Z)V
-.end method
-
 .method public abstract onDesktopModeChanged(Z)V
 .end method

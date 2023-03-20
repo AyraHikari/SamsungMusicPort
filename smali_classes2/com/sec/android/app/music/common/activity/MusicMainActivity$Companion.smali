@@ -1,6 +1,6 @@
 .class public final Lcom/sec/android/app/music/common/activity/MusicMainActivity$Companion;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MusicMainActivity.kt"
 
 
 # annotations
@@ -18,16 +18,14 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 89
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/g;)V
     .locals 0
 
-    .line 89
     invoke-direct {p0}, Lcom/sec/android/app/music/common/activity/MusicMainActivity$Companion;-><init>()V
 
     return-void

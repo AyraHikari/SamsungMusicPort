@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/library/beaconmanager/IBleProxyCallback;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "IBleProxyCallback.java"
 
 # interfaces
 .implements Landroid/os/IInterface;
@@ -16,9 +16,4 @@
 
 # virtual methods
 .method public abstract onScanResultCallback(Landroid/bluetooth/le/ScanResult;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 .end method

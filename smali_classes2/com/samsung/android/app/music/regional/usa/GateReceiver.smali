@@ -1,13 +1,12 @@
 .class public Lcom/samsung/android/app/music/regional/usa/GateReceiver;
 .super Landroid/content/BroadcastReceiver;
-.source "SourceFile"
+.source "GateReceiver.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 16
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -18,80 +17,78 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
 
-    .line 20
+    .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
-    const-string v0, "GATE"
+    .line 2
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 21
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v1, "MusicGateReceiver. received GATE intent. action = "
 
-    const-string v2, "MusicGateReceiver. received GATE intent. action = "
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    const-string v1, "GATE"
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->g(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 23
+    .line 3
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->GATE_INTENT_ACTION:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 24
+    .line 4
     sget-object p1, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->GATE_INTENT_EXTRA_ENABLED:Ljava/lang/String;
 
-    .line 25
-    invoke-virtual {p2, p1, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+    .line 5
+    invoke-virtual {p2, p1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result p1
 
-    .line 24
+    .line 6
     invoke-static {p1}, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->setGateEnabled(Z)V
 
-    const-string p1, "GATE"
+    .line 7
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    .line 26
-    new-instance p2, Ljava/lang/StringBuilder;
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string p2, "MusicGateReceiver. received GATE intent. enabled = "
 
-    const-string v0, "MusicGateReceiver. received GATE intent. enabled = "
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 27
+    .line 8
     invoke-static {}, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->isGateEnabled()Z
 
-    move-result v0
+    move-result p2
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object p1
 
-    .line 26
-    invoke-static {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->c(Ljava/lang/String;Ljava/lang/String;)V
+    .line 9
+    invoke-static {v1, p1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 28
+    .line 10
     :cond_0
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->ACTION_SCREEN_TEXT:Ljava/lang/String;
 
@@ -101,41 +98,39 @@
 
     if-eqz p1, :cond_1
 
-    .line 29
+    .line 11
     sget-object p1, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->EXTRA_SCREEN_TEXT:Ljava/lang/String;
 
-    .line 30
-    invoke-virtual {p2, p1, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+    .line 12
+    invoke-virtual {p2, p1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result p1
 
-    .line 29
+    .line 13
     invoke-static {p1}, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->setGateLcdtextEnabled(Z)V
 
-    const-string p1, "GATE"
+    .line 14
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    .line 31
-    new-instance p2, Ljava/lang/StringBuilder;
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string p2, "MusicGateReceiver. received LCDTEXT intent. enabled = "
 
-    const-string v0, "MusicGateReceiver. received LCDTEXT intent. enabled = "
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 32
+    .line 15
     invoke-static {}, Lcom/samsung/android/app/music/support/samsung/feature/GateConfigCompat;->isGateLcdtextEnabled()Z
 
-    move-result v0
+    move-result p2
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object p1
 
-    .line 31
-    invoke-static {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->c(Ljava/lang/String;Ljava/lang/String;)V
+    .line 16
+    invoke-static {v1, p1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
     :goto_0

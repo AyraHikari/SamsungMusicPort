@@ -1,204 +1,539 @@
 .class public final Lcom/samsung/android/app/music/background/BeyondBackgroundController;
-.super Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObserverAdapter;
-.source "SourceFile"
+.super Ljava/lang/Object;
+.source "BeyondBackground.kt"
 
 # interfaces
-.implements Landroid/arch/lifecycle/LifecycleObserver;
-.implements Lcom/samsung/android/app/musiclibrary/core/player/ActiveMediaChangePublisher$MediaChangeObservableObserver;
-.implements Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+.implements Lcom/samsung/android/app/musiclibrary/ui/player/c$a;
+.implements Lcom/samsung/android/app/music/player/vi/h;
+.implements Landroidx/lifecycle/r;
 
 
 # instance fields
-.field private final a:Landroid/content/ContentResolver;
+.field public final a:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
 
-.field private final b:Landroid/database/ContentObserver;
+.field public final b:Ljava/lang/ref/WeakReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/app/Activity;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private c:Z
+.field public final c:Lcom/samsung/android/app/music/background/j;
 
-.field private d:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+.field public final d:Lcom/samsung/android/app/music/background/c;
 
-.field private final e:Lcom/samsung/android/app/music/background/BeyondBackgroundTrajectoryHelper;
+.field public e:Z
 
-.field private final f:Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
+.field public final f:Z
 
-.field private g:Z
+.field public final g:Lkotlinx/coroutines/l0;
 
-.field private h:Z
+.field public h:Z
 
-.field private final i:Z
+.field public o:Lkotlinx/coroutines/w1;
 
-.field private final j:Landroid/app/Activity;
+.field public final p:Landroid/content/ContentResolver;
 
-.field private final k:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
+.field public final q:Lcom/samsung/android/app/music/background/BeyondBackgroundController$f;
 
 
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;)V
-    .locals 2
+    .locals 6
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "transitionView"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 762
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObserverAdapter;-><init>()V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->j:Landroid/app/Activity;
+    .line 2
+    iput-object p2, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->a:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
 
-    iput-object p2, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->k:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
+    .line 3
+    new-instance v0, Ljava/lang/ref/WeakReference;
 
-    .line 763
-    iget-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->j:Landroid/app/Activity;
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    invoke-virtual {p1}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->b:Ljava/lang/ref/WeakReference;
 
-    move-result-object p1
+    .line 4
+    invoke-static {p1}, Lcom/samsung/android/app/musiclibrary/ui/util/c;->C(Landroid/content/Context;)Z
 
-    const-string p2, "activity.contentResolver"
+    move-result v0
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    iput-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->e:Z
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->a:Landroid/content/ContentResolver;
+    .line 5
+    invoke-static {p1}, Lcom/samsung/android/app/musiclibrary/ui/util/c;->z(Landroid/app/Activity;)Z
 
-    .line 765
-    new-instance p1, Lcom/samsung/android/app/music/background/BeyondBackgroundController$settingObserver$1;
+    move-result v0
 
-    iget-object p2, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->k:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
+    iput-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Z
 
-    invoke-virtual {p2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->getHandler()Landroid/os/Handler;
+    .line 6
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/core/service/v3/b;->a:Lcom/samsung/android/app/musiclibrary/core/service/v3/b;
 
-    move-result-object p2
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/b;->a()Lkotlinx/coroutines/m1;
 
-    invoke-direct {p1, p0, p2}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$settingObserver$1;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Landroid/os/Handler;)V
+    move-result-object v0
 
-    check-cast p1, Landroid/database/ContentObserver;
+    invoke-static {v0}, Lkotlinx/coroutines/m0;->a(Lkotlin/coroutines/g;)Lkotlinx/coroutines/l0;
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->b:Landroid/database/ContentObserver;
+    move-result-object v0
 
-    const/4 p1, 0x1
+    iput-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Lkotlinx/coroutines/l0;
 
-    .line 776
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->c:Z
+    .line 7
+    invoke-virtual {p1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
-    .line 778
-    sget-object p1, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;->EmptyMediaChangeObservable:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+    move-result-object v0
 
-    const-string p2, "MediaChangeObservable.EmptyMediaChangeObservable"
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+    const-string v1, "activity.applicationContext.contentResolver"
 
-    .line 820
-    new-instance p1, Lcom/samsung/android/app/music/background/BeyondBackgroundTrajectoryHelper;
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p1}, Lcom/samsung/android/app/music/background/BeyondBackgroundTrajectoryHelper;-><init>()V
+    iput-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->p:Landroid/content/ContentResolver;
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->e:Lcom/samsung/android/app/music/background/BeyondBackgroundTrajectoryHelper;
+    .line 8
+    invoke-virtual {p2}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
-    .line 822
-    new-instance p1, Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
+    move-result-object v0
 
-    iget-object p2, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->j:Landroid/app/Activity;
+    new-instance v1, Lcom/samsung/android/app/music/background/BeyondBackgroundController$f;
 
-    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->k:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
+    invoke-direct {v1, p0, v0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$f;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Landroid/os/Handler;)V
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->e:Lcom/samsung/android/app/music/background/BeyondBackgroundTrajectoryHelper;
+    iput-object v1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->q:Lcom/samsung/android/app/music/background/BeyondBackgroundController$f;
 
-    invoke-direct {p1, p2, v0, v1}, Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;-><init>(Landroid/app/Activity;Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;Lcom/samsung/android/app/music/background/BeyondBackgroundTrajectoryHelper;)V
+    .line 9
+    new-instance v0, Lcom/samsung/android/app/music/background/j;
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
+    invoke-direct {v0}, Lcom/samsung/android/app/music/background/j;-><init>()V
 
-    .line 824
-    iget-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->j:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->c:Lcom/samsung/android/app/music/background/j;
 
-    check-cast p1, Landroid/content/Context;
+    .line 10
+    sget-object v1, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c;->e:Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$a;
 
-    invoke-static {p1}, Lcom/samsung/android/app/music/util/UiUtils;->j(Landroid/content/Context;)Z
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$a;->a()Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$b;
 
-    move-result p1
+    move-result-object v1
 
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
+    .line 11
+    iget-boolean v2, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->e:Z
 
-    .line 825
-    iget-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->j:Landroid/app/Activity;
+    if-eqz v2, :cond_0
 
-    invoke-static {p1}, Lcom/samsung/android/app/music/util/UiUtils;->i(Landroid/app/Activity;)Z
+    .line 12
+    invoke-static {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/d;->b(Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$b;)Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/a;
 
-    move-result p1
+    move-result-object v1
 
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->i:Z
+    .line 13
+    new-instance v2, Lcom/samsung/android/app/music/background/e;
 
-    .line 828
-    iget-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->k:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/a;->g()J
 
-    iget-boolean p2, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
+    move-result-wide v3
 
-    if-eqz p2, :cond_0
+    long-to-int v3, v3
 
-    .line 829
-    new-instance p2, Landroid/graphics/drawable/ColorDrawable;
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/a;->j()J
 
-    const/high16 v0, -0x1000000
+    move-result-wide v4
 
-    invoke-direct {p2, v0}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+    long-to-int v1, v4
 
-    check-cast p2, Landroid/graphics/drawable/Drawable;
+    invoke-direct {v2, p1, v3, v1}, Lcom/samsung/android/app/music/background/e;-><init>(Landroid/content/Context;II)V
 
     goto :goto_0
 
-    .line 831
+    .line 14
     :cond_0
-    new-instance p2, Lcom/samsung/android/app/music/background/BeyondBackgroundDrawable;
+    new-instance v2, Lcom/samsung/android/app/music/background/e;
 
-    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->j:Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$b;->a()I
 
-    check-cast v0, Landroid/content/Context;
+    move-result v3
 
-    new-instance v1, Lcom/samsung/android/app/music/background/BeyondBackgroundController$1;
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$b;->b()I
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$1;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)V
+    move-result v1
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v2, p1, v3, v1}, Lcom/samsung/android/app/music/background/e;-><init>(Landroid/content/Context;II)V
 
-    invoke-direct {p2, v0, v1}, Lcom/samsung/android/app/music/background/BeyondBackgroundDrawable;-><init>(Landroid/content/Context;Lkotlin/jvm/functions/Function2;)V
-
-    check-cast p2, Landroid/graphics/drawable/Drawable;
-
-    .line 828
+    .line 15
     :goto_0
-    invoke-virtual {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->setCurrentImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p2, v2}, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;->setCurrentImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 16
+    new-instance p1, Lcom/samsung/android/app/music/background/c;
+
+    invoke-direct {p1, p2, v2, v0}, Lcom/samsung/android/app/music/background/c;-><init>(Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;Lcom/samsung/android/app/music/background/e;Lcom/samsung/android/app/music/background/j;)V
+
+    .line 17
+    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
+
+    .line 18
+    new-instance p1, Lcom/samsung/android/app/music/background/BeyondBackgroundController$a;
+
+    invoke-direct {p1, p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$a;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)V
+
+    invoke-virtual {v2, p1}, Lcom/samsung/android/app/music/background/e;->c(Lkotlin/jvm/functions/l;)V
 
     return-void
 .end method
 
-.method public static final synthetic a(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Landroid/content/ContentResolver;
+.method public static final synthetic a(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Lkotlinx/coroutines/l0;
     .locals 0
 
-    .line 759
-    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->a:Landroid/content/ContentResolver;
+    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Lkotlinx/coroutines/l0;
 
     return-object p0
 .end method
 
-.method public static final synthetic a(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Z)V
+.method public static final synthetic d(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Lcom/samsung/android/app/music/background/c;
     .locals 0
 
-    .line 759
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->c:Z
+    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
+
+    return-object p0
+.end method
+
+.method public static final synthetic e(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Landroid/content/ContentResolver;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->p:Landroid/content/ContentResolver;
+
+    return-object p0
+.end method
+
+.method public static final synthetic g(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Ljava/lang/String;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->u()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic i(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Z
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->v()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final synthetic m(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Lcom/samsung/android/app/music/background/BeyondBackgroundController$f;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->q:Lcom/samsung/android/app/music/background/BeyondBackgroundController$f;
+
+    return-object p0
+.end method
+
+.method public static final synthetic o(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Z
+
+    return p0
+.end method
+
+.method public static final synthetic p(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->e:Z
+
+    return p0
+.end method
+
+.method public static final synthetic s(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
+
+    return p0
+.end method
+
+.method public static final synthetic t(Lcom/samsung/android/app/music/background/BeyondBackgroundController;ZLkotlin/coroutines/d;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->x(ZLkotlin/coroutines/d;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public f(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
+    .locals 1
+
+    const-string v0, "s"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;->J()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->y(Z)V
 
     return-void
 .end method
 
-.method private final a()Z
+.method public j(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/music/player/vi/h$a;->c(Lcom/samsung/android/app/music/player/vi/h;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
+
+    return-void
+.end method
+
+.method public l(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
     .locals 3
 
-    .line 885
-    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->a:Landroid/content/ContentResolver;
+    const-string v0, "m"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->l()J
+
+    move-result-wide v0
+
+    long-to-int v0, v0
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->d()J
+
+    move-result-wide v1
+
+    invoke-virtual {p0, v0, v1, v2}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->z(IJ)V
+
+    return-void
+.end method
+
+.method public final onDestroyCalled()V
+    .locals 3
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_DESTROY:Landroidx/lifecycle/k$b;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Lkotlinx/coroutines/l0;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, v2, v1}, Lkotlinx/coroutines/m0;->c(Lkotlinx/coroutines/l0;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/background/c;->j()V
+
+    :goto_0
+    return-void
+.end method
+
+.method public final onStartCalled()V
+    .locals 9
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_START:Landroidx/lifecycle/k$b;
+    .end annotation
+
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
+
+    .line 2
+    iget-object v1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
+
+    if-nez v1, :cond_0
+
+    goto :goto_1
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->w()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 4
+    iget-object v1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->o:Lkotlinx/coroutines/w1;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {v1, v2, v0, v2}, Lkotlinx/coroutines/w1$a;->a(Lkotlinx/coroutines/w1;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
+
+    .line 5
+    :goto_0
+    iget-object v3, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Lkotlinx/coroutines/l0;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    new-instance v6, Lcom/samsung/android/app/music/background/BeyondBackgroundController$b;
+
+    invoke-direct {v6, p0, v2}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$b;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Lkotlin/coroutines/d;)V
+
+    const/4 v7, 0x3
+
+    const/4 v8, 0x0
+
+    invoke-static/range {v3 .. v8}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/l0;Lkotlin/coroutines/g;Lkotlinx/coroutines/n0;Lkotlin/jvm/functions/p;ILjava/lang/Object;)Lkotlinx/coroutines/w1;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->o:Lkotlinx/coroutines/w1;
+
+    goto :goto_1
+
+    .line 6
+    :cond_2
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/background/c;->p(Z)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public final onStopCalled()V
+    .locals 9
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_STOP:Landroidx/lifecycle/k$b;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 1
+    iput-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
+
+    .line 2
+    iget-object v1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
+
+    if-nez v1, :cond_0
+
+    goto :goto_1
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->w()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 4
+    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->o:Lkotlinx/coroutines/w1;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, v2, v1}, Lkotlinx/coroutines/w1$a;->a(Lkotlinx/coroutines/w1;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
+
+    .line 5
+    :goto_0
+    iget-object v3, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Lkotlinx/coroutines/l0;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    new-instance v6, Lcom/samsung/android/app/music/background/BeyondBackgroundController$c;
+
+    invoke-direct {v6, p0, v1}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$c;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Lkotlin/coroutines/d;)V
+
+    const/4 v7, 0x3
+
+    const/4 v8, 0x0
+
+    invoke-static/range {v3 .. v8}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/l0;Lkotlin/coroutines/g;Lkotlinx/coroutines/n0;Lkotlin/jvm/functions/p;ILjava/lang/Object;)Lkotlinx/coroutines/w1;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->o:Lkotlinx/coroutines/w1;
+
+    goto :goto_1
+
+    .line 6
+    :cond_2
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/background/c;->p(Z)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public final u()Ljava/lang/String;
+    .locals 5
+
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/core/service/v3/a;->q:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/impl/f;->Z()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/samsung/android/app/musiclibrary/ui/imageloader/a;->a:Lcom/samsung/android/app/musiclibrary/ui/imageloader/a;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->l()J
+
+    move-result-wide v2
+
+    long-to-int v2, v2
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->d()J
+
+    move-result-wide v3
+
+    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/a;->d(IJ)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final v()Z
+    .locals 3
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->p:Landroid/content/ContentResolver;
 
     const-string v1, "reduce_animations"
 
@@ -216,314 +551,215 @@
     return v2
 .end method
 
-.method public static final synthetic b(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Landroid/database/ContentObserver;
-    .locals 0
+.method public final w()Z
+    .locals 2
 
-    .line 759
-    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->b:Landroid/database/ContentObserver;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    return-object p0
-.end method
+    const/16 v1, 0x1c
 
-.method public static final synthetic c(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Z
-    .locals 0
+    if-lt v0, v1, :cond_0
 
-    .line 759
-    iget-boolean p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->c:Z
-
-    return p0
-.end method
-
-.method public static final synthetic d(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Z
-    .locals 0
-
-    .line 759
-    invoke-direct {p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->a()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static final synthetic e(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
-    .locals 0
-
-    .line 759
-    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
-
-    return-object p0
-.end method
-
-.method public static final synthetic f(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
-    .locals 0
-
-    .line 759
-    iget-object p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->k:Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
-
-    return-object p0
-.end method
-
-.method public static final synthetic g(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)Z
-    .locals 0
-
-    .line 759
-    iget-boolean p0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->i:Z
-
-    return p0
-.end method
-
-
-# virtual methods
-.method public getMediaChangeObservable()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
-    .locals 1
-
-    .line 777
-    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
-
-    return-object v0
-.end method
-
-.method public final onDestroyCalled()V
-    .locals 1
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroid/arch/lifecycle/Lifecycle$Event;
-    .end annotation
-
-    .line 815
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
-
-    if-nez v0, :cond_0
-
-    .line 816
-    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
-
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;->b()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public onMetadataChanged(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;)V
-    .locals 8
-
-    if-eqz p1, :cond_1
-
-    .line 863
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
-
-    if-eqz v0, :cond_0
+    const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 864
     :cond_0
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;->getCpAttrs()J
+    const/4 v0, 0x0
 
-    move-result-wide v0
+    :goto_0
+    return v0
+.end method
 
-    long-to-int v0, v0
+.method public final x(ZLkotlin/coroutines/d;)Ljava/lang/Object;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z",
+            "Lkotlin/coroutines/d<",
+            "-",
+            "Lkotlin/u;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/martworkcache/MArtworkUtils;->a(I)Landroid/net/Uri;
+    instance-of v0, p2, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;
 
-    move-result-object v3
+    if-eqz v0, :cond_0
 
-    .line 865
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;->getAlbumId()J
+    move-object v0, p2
 
-    move-result-wide v4
+    check-cast v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;
 
-    .line 866
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/core/martworkcache/TintColorCache;->getInstance()Lcom/samsung/android/app/musiclibrary/core/martworkcache/TintColorCache;
+    iget v1, v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;->d:I
+
+    const/high16 v2, -0x80000000
+
+    and-int v3, v1, v2
+
+    if-eqz v3, :cond_0
+
+    sub-int/2addr v1, v2
+
+    iput v1, v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;->d:I
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;
+
+    invoke-direct {v0, p0, p2}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Lkotlin/coroutines/d;)V
+
+    :goto_0
+    iget-object p2, v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;->b:Ljava/lang/Object;
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/c;->c()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 867
-    iget-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->j:Landroid/app/Activity;
+    .line 1
+    iget v2, v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;->d:I
 
-    move-object v2, p1
+    const/4 v3, 0x1
 
-    check-cast v2, Landroid/content/Context;
+    if-eqz v2, :cond_2
 
-    const v6, 0x7f100087
+    if-ne v2, v3, :cond_1
 
-    new-instance p1, Lcom/samsung/android/app/music/background/BeyondBackgroundController$onMetadataChanged$1;
+    iget-object p1, v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;->a:Ljava/lang/Object;
 
-    invoke-direct {p1, p0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$onMetadataChanged$1;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;)V
+    check-cast p1, Lcom/samsung/android/app/music/background/c;
 
-    move-object v7, p1
+    invoke-static {p2}, Lkotlin/n;->b(Ljava/lang/Object;)V
 
-    check-cast v7, Lcom/samsung/android/app/musiclibrary/core/martworkcache/TintColorCache$OnGetTintInfo;
+    goto :goto_1
 
-    invoke-virtual/range {v1 .. v7}, Lcom/samsung/android/app/musiclibrary/core/martworkcache/TintColorCache;->getColor(Landroid/content/Context;Landroid/net/Uri;JILcom/samsung/android/app/musiclibrary/core/martworkcache/TintColorCache$OnGetTintInfo;)V
-
-    return-void
-
+    .line 2
     :cond_1
-    :goto_0
-    return-void
-.end method
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-.method public onPlaybackStateChanged(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;)V
-    .locals 2
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
-    if-eqz p1, :cond_2
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 877
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->h:Z
+    throw p1
 
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 878
-    :cond_0
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Z
-
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;->isSupposedToPlaying()Z
-
-    move-result v1
-
-    if-eq v0, v1, :cond_1
-
-    .line 879
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;->isSupposedToPlaying()Z
-
-    move-result p1
-
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Z
-
-    .line 880
-    iget-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
-
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->g:Z
-
-    invoke-virtual {p1, v0}, Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;->b(Z)V
-
-    :cond_1
-    return-void
-
+    .line 3
     :cond_2
-    :goto_0
-    return-void
+    invoke-static {p2}, Lkotlin/n;->b(Ljava/lang/Object;)V
+
+    .line 4
+    iget-object p2, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
+
+    if-nez p2, :cond_3
+
+    goto :goto_1
+
+    .line 5
+    :cond_3
+    invoke-static {}, Lkotlinx/coroutines/a1;->c()Lkotlinx/coroutines/i2;
+
+    move-result-object v2
+
+    new-instance v4, Lcom/samsung/android/app/music/background/BeyondBackgroundController$e;
+
+    const/4 v5, 0x0
+
+    invoke-direct {v4, p2, p1, v5}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$e;-><init>(Lcom/samsung/android/app/music/background/c;ZLkotlin/coroutines/d;)V
+
+    iput-object p2, v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;->a:Ljava/lang/Object;
+
+    iput v3, v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$d;->d:I
+
+    invoke-static {v2, v4, v0}, Lkotlinx/coroutines/j;->g(Lkotlin/coroutines/g;Lkotlin/jvm/functions/p;Lkotlin/coroutines/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v1, :cond_4
+
+    return-object v1
+
+    .line 6
+    :cond_4
+    :goto_1
+    sget-object p1, Lkotlin/u;->a:Lkotlin/u;
+
+    return-object p1
 .end method
 
-.method public final onStartCalled()V
-    .locals 7
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_START:Landroid/arch/lifecycle/Lifecycle$Event;
-    .end annotation
-
-    .line 782
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1c
-
-    if-lt v0, v1, :cond_0
-
-    .line 783
-    sget-object v0, Lkotlinx/coroutines/GlobalScope;->a:Lkotlinx/coroutines/GlobalScope;
-
-    move-object v1, v0
-
-    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    new-instance v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$onStartCalled$1;
-
-    const/4 v4, 0x0
-
-    invoke-direct {v0, p0, v4}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$onStartCalled$1;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Lkotlin/coroutines/Continuation;)V
-
-    move-object v4, v0
-
-    check-cast v4, Lkotlin/jvm/functions/Function2;
-
-    const/4 v5, 0x3
-
-    const/4 v6, 0x0
-
-    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->a(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
-
-    goto :goto_0
-
-    .line 795
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
-
-    iget-boolean v1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->c:Z
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;->a(Z)V
-
-    :goto_0
-    return-void
-.end method
-
-.method public final onStopCalled()V
-    .locals 7
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_STOP:Landroid/arch/lifecycle/Lifecycle$Event;
-    .end annotation
-
-    .line 801
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1c
-
-    if-lt v0, v1, :cond_0
-
-    .line 802
-    sget-object v0, Lkotlinx/coroutines/GlobalScope;->a:Lkotlinx/coroutines/GlobalScope;
-
-    move-object v1, v0
-
-    check-cast v1, Lkotlinx/coroutines/CoroutineScope;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    new-instance v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController$onStopCalled$1;
-
-    const/4 v4, 0x0
-
-    invoke-direct {v0, p0, v4}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$onStopCalled$1;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Lkotlin/coroutines/Continuation;)V
-
-    move-object v4, v0
-
-    check-cast v4, Lkotlin/jvm/functions/Function2;
-
-    const/4 v5, 0x3
-
-    const/4 v6, 0x0
-
-    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->a(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
-
-    goto :goto_0
-
-    .line 809
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f:Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/background/BeyondBackgroundAnimationHelper;->a(Z)V
-
-    :goto_0
-    return-void
-.end method
-
-.method public setMediaChangeObservable(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;)V
+.method public final y(Z)V
     .locals 1
 
-    const-string v0, "<set-?>"
+    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    if-nez v0, :cond_0
 
-    .line 777
-    iput-object p1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/background/c;->r(Z)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public final z(IJ)V
+    .locals 12
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->d:Lcom/samsung/android/app/music/background/c;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    iget-object v1, p0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->b:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/app/Activity;
+
+    if-nez v1, :cond_1
+
+    return-void
+
+    .line 3
+    :cond_1
+    sget-object v2, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c;->e:Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$a;
+
+    invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v3, "activity.applicationContext"
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v2, v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c$a;->b(Landroid/content/Context;)Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c;
+
+    move-result-object v4
+
+    const/4 v8, 0x0
+
+    .line 4
+    new-instance v9, Lcom/samsung/android/app/music/background/BeyondBackgroundController$g;
+
+    invoke-direct {v9, p0, v0}, Lcom/samsung/android/app/music/background/BeyondBackgroundController$g;-><init>(Lcom/samsung/android/app/music/background/BeyondBackgroundController;Lcom/samsung/android/app/music/background/c;)V
+
+    const/4 v10, 0x4
+
+    const/4 v11, 0x0
+
+    move v5, p1
+
+    move-wide v6, p2
+
+    invoke-static/range {v4 .. v11}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c;->n(Lcom/samsung/android/app/musiclibrary/ui/imageloader/tintinfo/c;IJLandroid/graphics/Bitmap;Lkotlin/jvm/functions/p;ILjava/lang/Object;)V
 
     return-void
 .end method

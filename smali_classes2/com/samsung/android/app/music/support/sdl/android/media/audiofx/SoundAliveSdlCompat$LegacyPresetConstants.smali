@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$LegacyPresetConstants;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SoundAliveSdlCompat.java"
 
 
 # annotations
@@ -38,7 +38,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

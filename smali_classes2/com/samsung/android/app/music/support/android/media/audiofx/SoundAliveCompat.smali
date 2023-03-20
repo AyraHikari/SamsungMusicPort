@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SoundAliveCompat.java"
 
 
 # annotations
@@ -37,10 +37,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
-    .line 22
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v1, 0x5
@@ -55,47 +55,47 @@
 
     if-eqz v0, :cond_0
 
-    .line 23
+    .line 2
     sput v5, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_NORMAL:I
 
-    .line 24
+    .line 3
     sput v4, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_POP:I
 
-    .line 25
+    .line 4
     sput v3, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_ROCK:I
 
     const/4 v0, 0x3
 
-    .line 26
+    .line 5
     sput v0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_JAZZ:I
 
-    .line 27
+    .line 6
     sput v2, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_CLASSIC:I
 
-    .line 28
+    .line 7
     sput v1, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_USER:I
 
     goto :goto_0
 
-    .line 30
+    .line 8
     :cond_0
     sput v5, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_NORMAL:I
 
-    .line 31
+    .line 9
     sput v4, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_POP:I
 
-    .line 32
+    .line 10
     sput v3, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_ROCK:I
 
-    .line 33
+    .line 11
     sput v2, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_JAZZ:I
 
-    .line 34
+    .line 12
     sput v1, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_CLASSIC:I
 
     const/16 v0, 0xd
 
-    .line 35
+    .line 13
     sput v0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->PRESET_USER:I
 
     :goto_0
@@ -105,15 +105,15 @@
 .method public constructor <init>(IILcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$OnErrorListener;)V
     .locals 1
 
-    .line 129
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 130
+    .line 2
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
-    .line 131
+    .line 3
     new-instance v0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;
 
     invoke-direct {v0, p1, p2, p3}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SepSoundAliveCompatImpl;-><init>(IILcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$OnErrorListener;)V
@@ -122,7 +122,7 @@
 
     goto :goto_0
 
-    .line 133
+    .line 4
     :cond_0
     new-instance v0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$SdlSoundAliveCompatImpl;
 
@@ -137,7 +137,7 @@
 .method public static isSupport3DEffect()Z
     .locals 1
 
-    .line 113
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
@@ -146,7 +146,7 @@
 
     return v0
 
-    .line 117
+    .line 2
     :cond_0
     invoke-static {}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->isSupport3DEffect()Z
 
@@ -160,7 +160,6 @@
 .method public release()V
     .locals 1
 
-    .line 138
     iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->IMPL:Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$ISoundAliveCompat;
 
     invoke-interface {v0}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$ISoundAliveCompat;->release()V
@@ -171,7 +170,6 @@
 .method public set3DEffectPosition(ZD)V
     .locals 1
 
-    .line 142
     iget-object v0, p0, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat;->IMPL:Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$ISoundAliveCompat;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$ISoundAliveCompat;->set3dEffectPosition(ZD)V

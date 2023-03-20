@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="sesl_color_picker_dialog_padding_left">9.5dip</dimen>
-    <dimen name="sesl_color_picker_main_content_width">520.0dip</dimen>
-    <dimen name="sesl_color_picker_opacity_seekbar_background_width">257.5dip</dimen>
-    <dimen name="sesl_color_picker_seekbar_width">268.0dip</dimen>
-    <dimen name="sesl_color_picker_used_color_group_width">260.0dip</dimen>
-    <dimen name="sesl_color_picker_used_color_item_gap_margin">8.399994dip</dimen>
-    <dimen name="sesl_color_picker_used_color_item_size">36.0dip</dimen>
+    <dimen name="legacy_sound_alive_eq_ext_dbscale_layout">158.0dip</dimen>
+    <dimen name="legacy_sound_alive_eq_line_margin">16.0dip</dimen>
+    <dimen name="legacy_sound_alive_eq_line_width">354.0dip</dimen>
+    <dimen name="legacy_sound_alive_eq_seekbar_height">201.0dip</dimen>
+    <dimen name="legacy_sound_alive_ext_line_margin">56.0dip</dimen>
+    <dimen name="legacy_sound_alive_ext_line_width">354.0dip</dimen>
+    <dimen name="legacy_sound_alive_ext_seekbar_height">202.0dip</dimen>
+    <dimen name="legacy_sound_alive_ext_seekbar_padding_top">24.0dip</dimen>
     <dimen name="sesl_date_picker_calendar_day_height">28.0dip</dimen>
     <dimen name="sesl_date_picker_calendar_header_button_height">32.0dip</dimen>
     <dimen name="sesl_date_picker_calendar_header_button_width">32.0dip</dimen>
@@ -16,21 +17,6 @@
     <dimen name="sesl_date_picker_gap_between_header_and_weekend">9.0dip</dimen>
     <dimen name="sesl_date_picker_gap_between_weekend_and_calender">7.0dip</dimen>
     <dimen name="sesl_date_picker_selected_day_circle_radius">12.0dip</dimen>
-    <dimen name="about_app_name_margin_bottom">10.0dip</dimen>
-    <dimen name="about_detail_msg_text_margin_bottom">10.0dip</dimen>
-    <dimen name="about_icon_margin_bottom">19.0dip</dimen>
-    <dimen name="about_link_text_margin_vertical">15.0dip</dimen>
-    <dimen name="about_update_button_margin_horizontal">11.0dip</dimen>
-    <dimen name="about_update_button_width">210.0dip</dimen>
-    <dimen name="about_version_text_margin_bottom">8.0dip</dimen>
-    <dimen name="device_height">360.0dip</dimen>
-    <dimen name="device_width">640.0dip</dimen>
-    <dimen name="legacy_sound_alive_eq_ext_dbscale_layout">158.0dip</dimen>
-    <dimen name="legacy_sound_alive_eq_line_margin">16.0dip</dimen>
-    <dimen name="legacy_sound_alive_eq_line_width">354.0dip</dimen>
-    <dimen name="legacy_sound_alive_eq_seekbar_height">201.0dip</dimen>
-    <dimen name="legacy_sound_alive_ext_line_margin">56.0dip</dimen>
-    <dimen name="legacy_sound_alive_ext_line_width">354.0dip</dimen>
-    <dimen name="legacy_sound_alive_ext_seekbar_height">202.0dip</dimen>
-    <dimen name="legacy_sound_alive_ext_seekbar_padding_top">24.0dip</dimen>
+    <dimen name="sesl_spinning_date_picker_height">244.0dip</dimen>
+    <dimen name="sesl_spinning_date_picker_height_dialog">244.0dip</dimen>
 </resources>

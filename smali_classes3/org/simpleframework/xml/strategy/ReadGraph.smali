@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/strategy/ReadGraph;
 .super Ljava/util/HashMap;
-.source "SourceFile"
+.source "ReadGraph.java"
 
 
 # instance fields
@@ -19,38 +19,38 @@
 .method public constructor <init>(Lorg/simpleframework/xml/strategy/Contract;Lorg/simpleframework/xml/strategy/Loader;)V
     .locals 1
 
-    .line 74
+    .line 1
     invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
 
-    .line 75
-    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->b()Ljava/lang/String;
+    .line 2
+    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->getReference()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->refer:Ljava/lang/String;
 
-    .line 76
-    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->c()Ljava/lang/String;
+    .line 3
+    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->getIdentity()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->mark:Ljava/lang/String;
 
-    .line 77
-    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->d()Ljava/lang/String;
+    .line 4
+    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->getLength()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->length:Ljava/lang/String;
 
-    .line 78
-    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->a()Ljava/lang/String;
+    .line 5
+    invoke-virtual {p1}, Lorg/simpleframework/xml/strategy/Contract;->getLabel()Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->label:Ljava/lang/String;
 
-    .line 79
+    .line 6
     iput-object p2, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->loader:Lorg/simpleframework/xml/strategy/Loader;
 
     return-void
@@ -58,13 +58,8 @@
 
 .method private readArray(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 216
+    .line 1
     iget-object p1, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->length:Ljava/lang/String;
 
     invoke-interface {p3, p1}, Lorg/simpleframework/xml/stream/NodeMap;->remove(Ljava/lang/String;)Lorg/simpleframework/xml/stream/Node;
@@ -73,12 +68,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 220
-    invoke-interface {p1}, Lorg/simpleframework/xml/stream/Node;->b()Ljava/lang/String;
+    .line 2
+    invoke-interface {p1}, Lorg/simpleframework/xml/stream/Node;->getValue()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 221
+    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result p1
@@ -88,7 +83,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 223
+    .line 4
     :goto_0
     new-instance p3, Lorg/simpleframework/xml/strategy/ArrayValue;
 
@@ -99,13 +94,8 @@
 
 .method private readInstance(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 120
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->mark:Ljava/lang/String;
 
     invoke-interface {p3, v0}, Lorg/simpleframework/xml/stream/NodeMap;->remove(Ljava/lang/String;)Lorg/simpleframework/xml/stream/Node;
@@ -114,34 +104,34 @@
 
     if-nez v0, :cond_0
 
-    .line 123
+    .line 2
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/strategy/ReadGraph;->readReference(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
 
     move-result-object p1
 
     return-object p1
 
-    .line 125
+    .line 3
     :cond_0
-    invoke-interface {v0}, Lorg/simpleframework/xml/stream/Node;->b()Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/stream/Node;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 127
-    invoke-virtual {p0, v0}, Lorg/simpleframework/xml/strategy/ReadGraph;->containsKey(Ljava/lang/Object;)Z
+    .line 4
+    invoke-virtual {p0, v0}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 130
+    .line 5
     invoke-direct {p0, p1, p2, p3, v0}, Lorg/simpleframework/xml/strategy/ReadGraph;->readValue(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;Ljava/lang/String;)Lorg/simpleframework/xml/strategy/Value;
 
     move-result-object p1
 
     return-object p1
 
-    .line 128
+    .line 6
     :cond_1
     new-instance p1, Lorg/simpleframework/xml/strategy/CycleException;
 
@@ -162,13 +152,8 @@
 
 .method private readReference(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 146
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->refer:Ljava/lang/String;
 
     invoke-interface {p3, v0}, Lorg/simpleframework/xml/stream/NodeMap;->remove(Ljava/lang/String;)Lorg/simpleframework/xml/stream/Node;
@@ -177,39 +162,39 @@
 
     if-nez v0, :cond_0
 
-    .line 149
+    .line 2
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/strategy/ReadGraph;->readValue(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
 
     move-result-object p1
 
     return-object p1
 
-    .line 151
+    .line 3
     :cond_0
-    invoke-interface {v0}, Lorg/simpleframework/xml/stream/Node;->b()Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/stream/Node;->getValue()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 152
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/strategy/ReadGraph;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 4
+    invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
 
-    .line 154
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/strategy/ReadGraph;->containsKey(Ljava/lang/Object;)Z
+    .line 5
+    invoke-virtual {p0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 157
+    .line 6
     new-instance p1, Lorg/simpleframework/xml/strategy/Reference;
 
     invoke-direct {p1, p3, p2}, Lorg/simpleframework/xml/strategy/Reference;-><init>(Ljava/lang/Object;Ljava/lang/Class;)V
 
     return-object p1
 
-    .line 155
+    .line 7
     :cond_1
     new-instance p2, Lorg/simpleframework/xml/strategy/CycleException;
 
@@ -230,32 +215,27 @@
 
 .method private readValue(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 173
-    invoke-interface {p1}, Lorg/simpleframework/xml/strategy/Type;->b()Ljava/lang/Class;
+    .line 1
+    invoke-interface {p1}, Lorg/simpleframework/xml/strategy/Type;->getType()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 175
+    .line 2
     invoke-virtual {v0}, Ljava/lang/Class;->isArray()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 176
+    .line 3
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/strategy/ReadGraph;->readArray(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
 
     move-result-object p1
 
     return-object p1
 
-    .line 178
+    .line 4
     :cond_0
     new-instance p1, Lorg/simpleframework/xml/strategy/ObjectValue;
 
@@ -266,20 +246,15 @@
 
 .method private readValue(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;Ljava/lang/String;)Lorg/simpleframework/xml/strategy/Value;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 195
+    .line 5
     invoke-direct {p0, p1, p2, p3}, Lorg/simpleframework/xml/strategy/ReadGraph;->readValue(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
 
     move-result-object p1
 
     if-eqz p4, :cond_0
 
-    .line 198
+    .line 6
     new-instance p2, Lorg/simpleframework/xml/strategy/Allocate;
 
     invoke-direct {p2, p1, p0, p4}, Lorg/simpleframework/xml/strategy/Allocate;-><init>(Lorg/simpleframework/xml/strategy/Value;Ljava/util/Map;Ljava/lang/String;)V
@@ -294,32 +269,27 @@
 # virtual methods
 .method public read(Lorg/simpleframework/xml/strategy/Type;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 94
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->label:Ljava/lang/String;
 
     invoke-interface {p2, v0}, Lorg/simpleframework/xml/stream/NodeMap;->remove(Ljava/lang/String;)Lorg/simpleframework/xml/stream/Node;
 
     move-result-object v0
 
-    .line 95
-    invoke-interface {p1}, Lorg/simpleframework/xml/strategy/Type;->b()Ljava/lang/Class;
+    .line 2
+    invoke-interface {p1}, Lorg/simpleframework/xml/strategy/Type;->getType()Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 97
+    .line 3
     invoke-virtual {v1}, Ljava/lang/Class;->isArray()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 98
+    .line 4
     invoke-virtual {v1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
     move-result-object v1
@@ -327,19 +297,19 @@
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 101
-    invoke-interface {v0}, Lorg/simpleframework/xml/stream/Node;->b()Ljava/lang/String;
+    .line 5
+    invoke-interface {v0}, Lorg/simpleframework/xml/stream/Node;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 102
+    .line 6
     iget-object v1, p0, Lorg/simpleframework/xml/strategy/ReadGraph;->loader:Lorg/simpleframework/xml/strategy/Loader;
 
-    invoke-virtual {v1, v0}, Lorg/simpleframework/xml/strategy/Loader;->a(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-virtual {v1, v0}, Lorg/simpleframework/xml/strategy/Loader;->load(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 104
+    .line 7
     :cond_1
     invoke-direct {p0, p1, v1, p2}, Lorg/simpleframework/xml/strategy/ReadGraph;->readInstance(Lorg/simpleframework/xml/strategy/Type;Ljava/lang/Class;Lorg/simpleframework/xml/stream/NodeMap;)Lorg/simpleframework/xml/strategy/Value;
 

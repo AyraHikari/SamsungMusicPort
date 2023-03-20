@@ -1,21 +1,47 @@
-.class public Lcom/samsung/android/app/music/dialog/LowBatteryPopup;
+.class public final Lcom/samsung/android/app/music/dialog/LowBatteryPopup;
 .super Landroid/app/Activity;
-.source "SourceFile"
+.source "LowBatteryPopup.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/samsung/android/app/music/dialog/LowBatteryPopup$a;
+    }
+.end annotation
 
 
 # static fields
-.field private static final a:Ljava/lang/String; = "LowBatteryPopup"
+.field public static final c:Lcom/samsung/android/app/music/dialog/LowBatteryPopup$a;
+
+.field public static final d:Ljava/lang/String;
 
 
 # instance fields
-.field private final b:Landroid/content/BroadcastReceiver;
+.field public final a:Lcom/samsung/android/app/music/dialog/LowBatteryPopup$b;
 
-.field private c:Landroid/support/v7/app/AlertDialog;
+.field public b:Landroidx/appcompat/app/e;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$a;-><init>(Lkotlin/jvm/internal/g;)V
+
+    sput-object v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->c:Lcom/samsung/android/app/music/dialog/LowBatteryPopup$a;
+
+    const-class v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->d:Ljava/lang/String;
 
     return-void
 .end method
@@ -23,244 +49,263 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 24
+    .line 1
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 51
-    new-instance v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$1;
+    .line 2
+    new-instance v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$b;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$1;-><init>(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$b;-><init>(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b:Landroid/content/BroadcastReceiver;
-
-    const/4 v0, 0x0
-
-    .line 73
-    iput-object v0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->c:Landroid/support/v7/app/AlertDialog;
+    iput-object v0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->a:Lcom/samsung/android/app/music/dialog/LowBatteryPopup$b;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)Landroid/support/v7/app/AlertDialog;
+.method public static synthetic a(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 24
-    iget-object p0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->c:Landroid/support/v7/app/AlertDialog;
+    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->g(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic b(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;Landroid/content/DialogInterface;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->h(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;Landroid/content/DialogInterface;)V
+
+    return-void
+.end method
+
+.method public static synthetic c(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->i(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;Landroid/content/DialogInterface;I)V
+
+    return-void
+.end method
+
+.method public static final synthetic d(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)Landroidx/appcompat/app/e;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b:Landroidx/appcompat/app/e;
 
     return-object p0
 .end method
 
-.method static synthetic a()Ljava/lang/String;
+.method public static final synthetic e()Ljava/lang/String;
     .locals 1
 
-    .line 24
-    sget-object v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->a:Ljava/lang/String;
+    sget-object v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->d:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;)V
-    .locals 2
-
-    .line 28
-    new-instance v0, Landroid/content/Intent;
-
-    const-class v1, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;
-
-    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    .line 29
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
-
-    const/high16 v1, 0x10000000
-
-    .line 30
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
-
-    .line 31
-    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
-    return-void
-.end method
-
-.method private a(Landroid/content/Context;I)V
-    .locals 2
-
-    .line 76
-    sget-object v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->a:Ljava/lang/String;
-
-    const-string v1, "showLowBatteryMsg() is called"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 77
-    new-instance v0, Landroid/support/v7/app/AlertDialog$Builder;
-
-    invoke-direct {v0, p1}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    .line 78
-    new-instance p1, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$2;
-
-    invoke-direct {p1, p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$2;-><init>(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
-
-    invoke-virtual {v0, p1}, Landroid/support/v7/app/AlertDialog$Builder;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    .line 85
-    new-instance p1, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$3;
-
-    invoke-direct {p1, p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$3;-><init>(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
-
-    invoke-virtual {v0, p1}, Landroid/support/v7/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    const p1, 0x7f0b00a6
-
-    .line 93
-    invoke-virtual {v0, p1}, Landroid/support/v7/app/AlertDialog$Builder;->setTitle(I)Landroid/support/v7/app/AlertDialog$Builder;
-
-    const/4 p1, 0x1
-
-    .line 94
-    new-array p1, p1, [Ljava/lang/Object;
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p2
-
-    const/4 v1, 0x0
-
-    aput-object p2, p1, v1
-
-    const p2, 0x7f0b0191
-
-    invoke-virtual {p0, p2, p1}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Landroid/support/v7/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    move-result-object p1
-
-    new-instance p2, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$4;
-
-    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$4;-><init>(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
-
-    const v1, 0x7f0b02d3
-
-    .line 95
-    invoke-virtual {p1, v1, p2}, Landroid/support/v7/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    .line 102
-    invoke-virtual {v0}, Landroid/support/v7/app/AlertDialog$Builder;->create()Landroid/support/v7/app/AlertDialog;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->c:Landroid/support/v7/app/AlertDialog;
-
-    .line 103
-    iget-object p1, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->c:Landroid/support/v7/app/AlertDialog;
-
-    invoke-virtual {p1}, Landroid/support/v7/app/AlertDialog;->show()V
-
-    return-void
-.end method
-
-.method private b()V
-    .locals 1
-
-    const-string v0, "activity"
-
-    .line 107
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/ActivityManager;
-
-    .line 108
-    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ui/support/app/ActivityManagerCompat;->a(Landroid/app/ActivityManager;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 110
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->stopLockTask()V
-
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 112
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->moveTaskToBack(Z)Z
-
-    .line 113
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->finish()V
-
-    .line 115
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/core/service/ServiceCommand;->getInstance()Lcom/samsung/android/app/musiclibrary/core/service/ServiceCommand;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/ServiceCommand;->exit()V
-
-    return-void
-.end method
-
-.method static synthetic b(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
+.method public static final g(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 24
-    invoke-direct {p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b()V
+    const/16 p0, 0x52
+
+    if-ne p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public static final h(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;Landroid/content/DialogInterface;)V
+    .locals 0
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object p1, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b:Landroidx/appcompat/app/e;
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Landroidx/appcompat/app/j;->dismiss()V
+
+    .line 2
+    :goto_0
+    invoke-static {p0}, Lcom/samsung/android/app/music/activity/j;->b(Landroid/app/Activity;)V
+
+    return-void
+.end method
+
+.method public static final i(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object p1, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b:Landroidx/appcompat/app/e;
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Landroidx/appcompat/app/j;->dismiss()V
+
+    .line 2
+    :goto_0
+    invoke-static {p0}, Lcom/samsung/android/app/music/activity/j;->b(Landroid/app/Activity;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected onCreate(Landroid/os/Bundle;)V
+.method public final f(Landroid/content/Context;I)V
+    .locals 3
+
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->d:Ljava/lang/String;
+
+    const-string v1, "showLowBatteryMsg() is called"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2
+    new-instance v0, Landroidx/appcompat/app/e$a;
+
+    invoke-direct {v0, p1}, Landroidx/appcompat/app/e$a;-><init>(Landroid/content/Context;)V
+
+    .line 3
+    sget-object p1, Lcom/samsung/android/app/music/dialog/g;->a:Lcom/samsung/android/app/music/dialog/g;
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/app/e$a;->n(Landroid/content/DialogInterface$OnKeyListener;)Landroidx/appcompat/app/e$a;
+
+    .line 4
+    new-instance p1, Lcom/samsung/android/app/music/dialog/e;
+
+    invoke-direct {p1, p0}, Lcom/samsung/android/app/music/dialog/e;-><init>(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/app/e$a;->m(Landroid/content/DialogInterface$OnCancelListener;)Landroidx/appcompat/app/e$a;
+
+    const p1, 0x7f130073
+
+    .line 5
+    invoke-virtual {v0, p1}, Landroidx/appcompat/app/e$a;->s(I)Landroidx/appcompat/app/e$a;
+
+    .line 6
+    invoke-static {p0}, Lcom/samsung/android/app/musiclibrary/ktx/app/a;->j(Landroid/app/Activity;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const p1, 0x7f1301df
+
+    goto :goto_0
+
+    :cond_0
+    const p1, 0x7f1301e0
+
+    :goto_0
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    .line 7
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    aput-object p2, v1, v2
+
+    invoke-virtual {p0, p1, v1}, Landroid/app/Activity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/app/e$a;->h(Ljava/lang/CharSequence;)Landroidx/appcompat/app/e$a;
+
+    move-result-object p1
+
+    const p2, 0x7f1302f5
+
+    .line 8
+    new-instance v1, Lcom/samsung/android/app/music/dialog/f;
+
+    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/dialog/f;-><init>(Lcom/samsung/android/app/music/dialog/LowBatteryPopup;)V
+
+    invoke-virtual {p1, p2, v1}, Landroidx/appcompat/app/e$a;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/e$a;
+
+    .line 9
+    invoke-virtual {v0}, Landroidx/appcompat/app/e$a;->create()Landroidx/appcompat/app/e;
+
+    move-result-object p1
+
+    .line 10
+    iput-object p1, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b:Landroidx/appcompat/app/e;
+
+    .line 11
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
+
+    return-void
+.end method
+
+.method public onCreate(Landroid/os/Bundle;)V
     .locals 1
 
-    .line 36
+    .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     const/4 p1, 0x1
 
-    .line 37
-    invoke-direct {p0, p0, p1}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->a(Landroid/content/Context;I)V
+    .line 2
+    invoke-virtual {p0, p0, p1}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->f(Landroid/content/Context;I)V
 
     const/4 p1, 0x3
 
-    .line 38
-    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->setVolumeControlStream(I)V
+    .line 3
+    invoke-virtual {p0, p1}, Landroid/app/Activity;->setVolumeControlStream(I)V
 
-    .line 40
+    .line 4
     new-instance p1, Landroid/content/IntentFilter;
 
     invoke-direct {p1}, Landroid/content/IntentFilter;-><init>()V
 
     const-string v0, "android.intent.action.BATTERY_CHANGED"
 
-    .line 41
+    .line 5
     invoke-virtual {p1, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 42
-    iget-object v0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b:Landroid/content/BroadcastReceiver;
+    .line 6
+    iget-object v0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->a:Lcom/samsung/android/app/music/dialog/LowBatteryPopup$b;
 
-    invoke-virtual {p0, v0, p1}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v0, p1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     return-void
 .end method
 
-.method protected onDestroy()V
+.method public onDestroy()V
     .locals 1
 
-    .line 47
-    iget-object v0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->b:Landroid/content/BroadcastReceiver;
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->a:Lcom/samsung/android/app/music/dialog/LowBatteryPopup$b;
 
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 48
+    .line 2
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
     return-void

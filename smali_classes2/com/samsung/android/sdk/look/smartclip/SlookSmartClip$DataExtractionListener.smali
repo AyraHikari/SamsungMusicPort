@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip$DataExtractionListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlookSmartClip.java"
 
 
 # annotations

@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowReflator.java"
 
 
 # annotations
@@ -33,11 +33,11 @@
 
 .field public static FEATURE_MULTIWINDOW_TABLET:Ljava/lang/String;
 
-.field static FIELD_NAMES:[Ljava/lang/String;
+.field public static FIELD_NAMES:[Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 9
 
     const-string v0, "FEATURE_MULTIWINDOW"
@@ -58,16 +58,14 @@
 
     const-string v8, "FEATURE_MULTIWINDOW_TABLET"
 
-    .line 120
+    .line 1
     filled-new-array/range {v0 .. v8}, [Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;->FIELD_NAMES:[Ljava/lang/String;
 
-    .line 133
-    sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;->FIELD_NAMES:[Ljava/lang/String;
-
+    .line 2
     array-length v0, v0
 
     const/4 v1, 0x0
@@ -75,7 +73,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 136
+    .line 3
     :try_start_0
     const-class v2, Landroid/content/pm/PackageManager;
 
@@ -87,7 +85,7 @@
 
     move-result-object v2
 
-    .line 137
+    .line 4
     const-class v3, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;
 
     sget-object v4, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;->FIELD_NAMES:[Ljava/lang/String;
@@ -98,7 +96,7 @@
 
     move-result-object v3
 
-    .line 138
+    .line 5
     invoke-virtual {v2, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -121,7 +119,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 109
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

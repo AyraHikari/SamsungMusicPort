@@ -1,6 +1,6 @@
 .class public abstract Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;
 .super Ljava/util/ArrayList;
-.source "SourceFile"
+.source "SlookSmartClipMetaTagArray.java"
 
 
 # annotations
@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 31
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     return-void

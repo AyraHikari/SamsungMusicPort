@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SoundAliveSdlCompat.java"
 
 
 # annotations
@@ -44,10 +44,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    .line 16
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -76,28 +75,27 @@
 .method public constructor <init>(IILcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$OnSdlErrorListener;)V
     .locals 0
 
-    .line 76
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 77
+    .line 2
     iput p1, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mPriority:I
 
-    .line 78
+    .line 3
     iput p2, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mAudioSessionId:I
 
-    .line 79
+    .line 4
     iput-object p3, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mOnErrorListener:Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$OnSdlErrorListener;
 
-    .line 80
+    .line 5
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;)Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$OnSdlErrorListener;
+.method public static synthetic access$000(Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;)Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$OnSdlErrorListener;
     .locals 0
 
-    .line 15
     iget-object p0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mOnErrorListener:Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$OnSdlErrorListener;
 
     return-object p0
@@ -106,7 +104,7 @@
 .method private ensureSoundAlive()V
     .locals 3
 
-    .line 85
+    .line 1
     :try_start_0
     new-instance v0, Landroid/media/audiofx/SoundAlive;
 
@@ -118,56 +116,50 @@
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
-    .line 86
-    sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
+    .line 2
+    sget v1, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
-    const/16 v1, 0x837
+    const/16 v2, 0x837
 
-    if-ge v0, v1, :cond_0
-
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x16
-
-    if-lt v0, v1, :cond_1
-
-    .line 87
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
+    .line 3
     new-instance v1, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$1;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat$1;-><init>(Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;)V
 
     invoke-virtual {v0, v1}, Landroid/media/audiofx/SoundAlive;->setErrorListener(Landroid/media/audiofx/SoundAlive$OnErrorListener;)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception v0
 
-    .line 96
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 4
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v2, "ensureSoundAlive()"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 97
+    .line 5
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
-    :cond_1
-    :goto_0
+    :goto_1
     return-void
 .end method
 
 .method public static isSupport3DEffect()Z
     .locals 2
 
-    .line 284
+    .line 1
     sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
     const/16 v1, 0x8fd
@@ -178,7 +170,7 @@
 
     return v0
 
-    .line 287
+    .line 2
     :cond_0
     invoke-static {}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->isSupportLegacyApi()Z
 
@@ -188,56 +180,54 @@
 .end method
 
 .method private static isSupportLegacyApi()Z
-    .locals 6
+    .locals 5
 
-    .line 298
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->sIsSupportLegacyAPI:Ljava/lang/Boolean;
 
     if-nez v0, :cond_1
 
-    const-string v0, "android.media.audiofx.SoundAlive"
+    const/4 v0, 0x2
 
-    const-string v1, "set3DPosition"
+    new-array v0, v0, [Ljava/lang/Class;
 
-    const/4 v2, 0x2
+    .line 2
+    sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    .line 300
-    new-array v2, v2, [Ljava/lang/Class;
+    const/4 v2, 0x0
 
-    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    aput-object v1, v0, v2
 
-    const/4 v4, 0x0
+    sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
-    aput-object v3, v2, v4
+    const/4 v3, 0x1
 
-    sget-object v3, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput-object v1, v0, v3
 
-    const/4 v5, 0x1
+    const-string v1, "android.media.audiofx.SoundAlive"
 
-    aput-object v3, v2, v5
+    const-string v4, "set3DPosition"
 
-    .line 301
-    invoke-static {v0, v1, v2}, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->getMethod(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    .line 3
+    invoke-static {v1, v4, v0}, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->getMethod(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->sLegacySet3DPosition:Ljava/lang/reflect/Method;
 
-    .line 303
-    sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->sLegacySet3DPosition:Ljava/lang/reflect/Method;
-
     if-eqz v0, :cond_0
 
-    const/4 v4, 0x1
+    move v2, v3
 
+    .line 4
     :cond_0
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->sIsSupportLegacyAPI:Ljava/lang/Boolean;
 
-    .line 305
+    .line 5
     :cond_1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->sIsSupportLegacyAPI:Ljava/lang/Boolean;
 
@@ -251,7 +241,7 @@
 .method private static legacySet3DPosition(Landroid/media/audiofx/SoundAlive;ZD)V
     .locals 3
 
-    .line 291
+    .line 1
     invoke-static {}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->isSupportLegacyApi()Z
 
     move-result v0
@@ -260,7 +250,7 @@
 
     return-void
 
-    .line 294
+    .line 2
     :cond_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->sLegacySet3DPosition:Ljava/lang/reflect/Method;
 
@@ -294,29 +284,27 @@
 .method public getBandLevelRange()[S
     .locals 3
 
-    .line 210
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 211
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 213
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 215
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0}, Landroid/media/audiofx/SoundAlive;->getBandLevelRange()[S
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object v0
@@ -324,20 +312,25 @@
     :catch_0
     move-exception v0
 
-    .line 217
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 5
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v2, "getBandLevelRange()"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 218
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
     const/4 v0, 0x0
 
-    .line 221
     new-array v0, v0, [S
 
     return-object v0
@@ -346,29 +339,27 @@
 .method public getNumberOfBands()I
     .locals 3
 
-    .line 195
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 196
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 198
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 200
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0}, Landroid/media/audiofx/SoundAlive;->getNumberOfBands()S
 
     move-result v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
     return v0
@@ -376,14 +367,20 @@
     :catch_0
     move-exception v0
 
-    .line 202
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 5
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v2, "getNumberOfBands()"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 203
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
@@ -395,29 +392,27 @@
 .method public getNumberOfPreset()I
     .locals 3
 
-    .line 240
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 241
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 243
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 245
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0}, Landroid/media/audiofx/SoundAlive;->getNumberOfPresets()S
 
     move-result v0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
     return v0
@@ -425,14 +420,20 @@
     :catch_0
     move-exception v0
 
-    .line 247
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 5
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v2, "getNumberOfPreset()"
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 248
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
@@ -444,29 +445,27 @@
 .method public getPresetName(S)Ljava/lang/String;
     .locals 2
 
-    .line 225
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 226
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 228
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 230
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1}, Landroid/media/audiofx/SoundAlive;->getPresetName(S)Ljava/lang/String;
 
     move-result-object p1
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object p1
@@ -474,14 +473,20 @@
     :catch_0
     move-exception p1
 
-    .line 232
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 5
+    :goto_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v1, "getPresetName()"
 
     invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 233
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
@@ -493,46 +498,50 @@
 .method public getRoundedStrength(S)S
     .locals 2
 
-    .line 269
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 270
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 272
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 274
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1}, Landroid/media/audiofx/SoundAlive;->getRoundedStrength(S)S
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p1
 
-    .line 276
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 5
+    :goto_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v1, "getRoundedStrength()"
 
     invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 277
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
-    :goto_0
+    :goto_1
     const/4 p1, 0x0
 
     return p1
@@ -541,261 +550,257 @@
 .method public release()V
     .locals 4
 
-    .line 102
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_0
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    .line 104
+    .line 2
     :try_start_0
-    sget v1, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
+    sget v2, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
-    const/16 v2, 0x837
+    const/16 v3, 0x837
 
-    if-ge v1, v2, :cond_0
+    .line 3
+    invoke-virtual {v0, v1}, Landroid/media/audiofx/SoundAlive;->setErrorListener(Landroid/media/audiofx/SoundAlive$OnErrorListener;)V
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 4
+    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
-    const/16 v2, 0x16
-
-    if-lt v1, v2, :cond_1
-
-    .line 106
-    :cond_0
-    iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
-    invoke-virtual {v1, v0}, Landroid/media/audiofx/SoundAlive;->setErrorListener(Landroid/media/audiofx/SoundAlive$OnErrorListener;)V
-
-    .line 108
-    :cond_1
-    iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
-    invoke-virtual {v1}, Landroid/media/audiofx/SoundAlive;->release()V
+    invoke-virtual {v0}, Landroid/media/audiofx/SoundAlive;->release()V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v0
 
     goto :goto_0
 
-    :catch_0
-    move-exception v1
+    :catch_1
+    move-exception v0
 
-    .line 110
+    .line 5
+    :goto_0
     sget-object v2, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v3, "release()"
 
-    invoke-static {v2, v3, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v2, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 112
-    :goto_0
-    iput-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
+    .line 6
+    :goto_1
+    iput-object v1, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
-    :cond_2
+    :cond_0
     return-void
 .end method
 
 .method public set3DEffectPosition(ZD)V
-    .locals 2
+    .locals 3
 
-    .line 117
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 118
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 122
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
-    .line 123
-    sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
+    .line 4
+    sget v1, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
-    const/16 v1, 0x8fd
+    const/16 v2, 0x8fd
 
-    if-lt v0, v1, :cond_1
+    if-lt v1, v2, :cond_1
 
-    .line 125
+    .line 5
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1, p2, p3}, Landroid/media/audiofx/SoundAlive;->set3DEffectPosition(ZD)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p1
 
-    .line 128
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 6
+    :goto_0
     sget-object p2, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string p3, "set3DEffectPosition()"
 
     invoke-static {p2, p3, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 129
+    .line 7
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 131
     :cond_1
-    sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
+    const/16 v2, 0x837
 
-    const/16 v1, 0x837
-
-    if-ge v0, v1, :cond_2
-
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x16
-
-    if-lt v0, v1, :cond_3
-
-    .line 133
-    :cond_2
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
+    .line 8
     invoke-static {v0, p1, p2, p3}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->legacySet3DPosition(Landroid/media/audiofx/SoundAlive;ZD)V
 
-    :cond_3
-    :goto_0
+    :cond_2
+    :goto_1
     return-void
 .end method
 
 .method public setBandLevel(SS)V
     .locals 1
 
-    .line 167
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 168
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 170
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 172
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1, p2}, Landroid/media/audiofx/SoundAlive;->setBandLevel(SS)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p1
 
-    .line 174
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 5
+    :goto_0
     sget-object p2, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v0, "setBandLevel()"
 
     invoke-static {p2, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 175
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
-    :goto_0
+    :goto_1
     return-void
 .end method
 
 .method public setEnabled(Z)V
     .locals 2
 
-    .line 139
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 140
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 142
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 144
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1}, Landroid/media/audiofx/SoundAlive;->setEnabled(Z)I
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p1
 
-    .line 146
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 5
+    :goto_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v1, "setEnabled()"
 
     invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 147
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
-    :goto_0
+    :goto_1
     return-void
 .end method
 
 .method public setSquarePosition(II)V
     .locals 4
 
-    .line 153
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 154
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 156
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 158
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1, p2}, Landroid/media/audiofx/SoundAlive;->setSquarePostion(II)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception v0
 
-    .line 160
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 5
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -820,46 +825,50 @@
 
     invoke-static {v1, p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 161
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
-    :goto_0
+    :goto_1
     return-void
 .end method
 
 .method public setStrength(SS)V
     .locals 4
 
-    .line 181
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 182
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 184
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 186
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1, p2}, Landroid/media/audiofx/SoundAlive;->setStrength(SS)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception v0
 
-    .line 188
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 5
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -884,56 +893,60 @@
 
     invoke-static {v1, p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 189
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
-    :goto_0
+    :goto_1
     return-void
 .end method
 
 .method public usePreset(S)V
     .locals 2
 
-    .line 255
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-nez v0, :cond_0
 
-    .line 256
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->ensureSoundAlive()V
 
-    .line 258
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
 
     if-eqz v0, :cond_1
 
-    .line 260
+    .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->mSoundAlive:Landroid/media/audiofx/SoundAlive;
-
     invoke-virtual {v0, p1}, Landroid/media/audiofx/SoundAlive;->usePreset(S)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    goto :goto_1
 
     :catch_0
     move-exception p1
 
-    .line 262
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 5
+    :goto_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->LOG_TAG:Ljava/lang/String;
 
     const-string v1, "usePreset()"
 
     invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 263
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/app/music/support/sdl/android/media/audiofx/SoundAliveSdlCompat;->release()V
 
     :cond_1
-    :goto_0
+    :goto_1
     return-void
 .end method

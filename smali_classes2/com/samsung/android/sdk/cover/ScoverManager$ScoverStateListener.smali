@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/sdk/cover/ScoverManager$ScoverStateListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ScoverManager.java"
 
 
 # annotations

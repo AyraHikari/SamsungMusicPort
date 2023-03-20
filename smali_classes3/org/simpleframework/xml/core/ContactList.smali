@@ -1,6 +1,6 @@
 .class abstract Lorg/simpleframework/xml/core/ContactList;
 .super Ljava/util/ArrayList;
-.source "SourceFile"
+.source "ContactList.java"
 
 
 # annotations
@@ -14,10 +14,9 @@
 
 
 # direct methods
-.method protected constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 39
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     return-void

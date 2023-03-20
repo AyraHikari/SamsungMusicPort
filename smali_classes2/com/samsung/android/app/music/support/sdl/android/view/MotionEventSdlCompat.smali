@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/view/MotionEventSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MotionEventSdlCompat.java"
 
 
 # static fields
@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

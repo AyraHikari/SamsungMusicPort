@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progressContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:id="@id/loading_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
-    <TextView android:textSize="@dimen/progress_client_area_text" android:textColor="@color/mu_progress_text" android:id="@id/loading_text" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:singleLine="true" />
+    <androidx.appcompat.widget.SeslProgressBar android:id="@id/loading_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    <TextView android:textSize="@dimen/progress_client_area_text" android:textColor="@color/basics_text_main" android:id="@id/loading_text" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:singleLine="true" />
 </LinearLayout>

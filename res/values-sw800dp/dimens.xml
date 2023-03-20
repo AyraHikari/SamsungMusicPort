@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="device_height">1280.0dip</dimen>
-    <dimen name="device_width">800.0dip</dimen>
+    <item type="dimen" name="full_player_album_max_height_percent">0.4</item>
+    <item type="dimen" name="full_player_album_small_area_percent">0.35</item>
+    <item type="dimen" name="full_player_album_small_area_percent_queue">0.5</item>
+    <dimen name="full_player_album_top_margin_nonplayback">50.0dip</dimen>
+    <item type="dimen" name="full_player_album_width_percent">0.53</item>
+    <item type="dimen" name="full_player_album_width_percent_queue">0.64</item>
+    <item type="dimen" name="full_player_top_margin_percent">0.14</item>
 </resources>

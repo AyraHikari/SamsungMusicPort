@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlookSmartClipDataElement.java"
 
 
 # virtual methods

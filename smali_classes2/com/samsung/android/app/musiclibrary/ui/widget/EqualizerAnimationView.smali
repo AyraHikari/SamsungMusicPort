@@ -1,346 +1,106 @@
 .class public Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;
 .super Landroid/view/View;
-.source "SourceFile"
+.source "EqualizerAnimationView.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
+        Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
     }
 .end annotation
 
 
 # instance fields
-.field private a:I
+.field public a:I
 
-.field private b:I
+.field public b:I
 
-.field private c:I
+.field public c:I
 
-.field private d:I
+.field public d:I
 
-.field private e:[I
+.field public e:[I
 
-.field private f:[I
+.field public f:[I
 
-.field private g:[I
+.field public g:[I
 
-.field private h:Z
+.field public h:Z
 
-.field private i:Landroid/graphics/Paint;
+.field public o:Landroid/graphics/Paint;
 
-.field private j:Ljava/util/Random;
+.field public p:Ljava/util/Random;
 
-.field private k:Landroid/os/HandlerThread;
+.field public q:Landroid/os/HandlerThread;
 
-.field private l:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
+.field public r:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
+
+.field public s:Lcom/samsung/android/app/musiclibrary/ui/widget/c;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 67
-    invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
-
-    const/4 p1, 0x3
-
-    .line 40
-    new-array v0, p1, [I
-
-    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    .line 42
-    new-array v0, p1, [I
-
-    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
-
-    .line 44
-    new-array p1, p1, [I
-
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g:[I
-
-    .line 68
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 0
-
-    .line 62
+    .line 1
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x3
 
-    .line 40
-    new-array p2, p1, [I
+    new-array v0, p1, [I
 
-    iput-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
+    .line 2
+    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
 
-    .line 42
-    new-array p2, p1, [I
+    new-array v0, p1, [I
 
-    iput-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
+    .line 3
+    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
 
-    .line 44
     new-array p1, p1, [I
 
+    .line 4
     iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g:[I
 
-    .line 63
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d()V
+    .line 5
+    new-instance p1, Lcom/samsung/android/app/musiclibrary/ui/widget/c;
+
+    invoke-direct {p1, p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/c;-><init>(Landroid/view/View;)V
+
+    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->s:Lcom/samsung/android/app/musiclibrary/ui/widget/c;
+
+    .line 6
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d()V
+
+    .line 7
+    iget-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->s:Lcom/samsung/android/app/musiclibrary/ui/widget/c;
+
+    invoke-virtual {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/widget/c;->w(Landroid/util/AttributeSet;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+.method public static synthetic a(Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;)V
     .locals 0
 
-    .line 57
-    invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    const/4 p1, 0x3
-
-    .line 40
-    new-array p2, p1, [I
-
-    iput-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    .line 42
-    new-array p2, p1, [I
-
-    iput-object p2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
-
-    .line 44
-    new-array p1, p1, [I
-
-    iput-object p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g:[I
-
-    .line 58
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d()V
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->j()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;)V
+.method public static synthetic b(Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;)V
     .locals 0
 
-    .line 20
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f()V
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->i()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;)V
-    .locals 0
 
-    .line 20
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g()V
-
-    return-void
-.end method
-
-.method private d()V
-    .locals 3
-
-    .line 72
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    .line 74
-    sget v1, Lcom/samsung/android/app/musiclibrary/R$dimen;->mu_list_item_equalizer_animation_point_base_cx:I
-
-    .line 75
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->a:I
-
-    .line 76
-    sget v1, Lcom/samsung/android/app/musiclibrary/R$dimen;->mu_list_item_equalizer_animation_point_base_cy:I
-
-    .line 77
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->b:I
-
-    .line 78
-    sget v1, Lcom/samsung/android/app/musiclibrary/R$dimen;->mu_list_item_equalizer_animation_point_radius:I
-
-    .line 79
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->c:I
-
-    .line 80
-    sget v1, Lcom/samsung/android/app/musiclibrary/R$dimen;->mu_list_item_equalizer_animation_point_gap:I
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v1
-
-    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d:I
-
-    .line 82
-    new-instance v1, Landroid/graphics/Paint;
-
-    invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
-
-    iput-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->i:Landroid/graphics/Paint;
-
-    .line 83
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->i:Landroid/graphics/Paint;
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
-
-    .line 84
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->i:Landroid/graphics/Paint;
-
-    sget v2, Lcom/samsung/android/app/musiclibrary/R$color;->mu_primary:I
-
-    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
-
-    move-result v0
-
-    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
-
-    .line 85
-    new-instance v0, Ljava/util/Random;
-
-    invoke-direct {v0}, Ljava/util/Random;-><init>()V
-
-    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->j:Ljava/util/Random;
-
-    return-void
-.end method
-
-.method private e()V
-    .locals 6
-
-    .line 121
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    const/4 v1, 0x0
-
-    aget v0, v0, v1
-
-    const/4 v2, 0x2
-
-    const/4 v3, 0x1
-
-    if-gtz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    aget v0, v0, v3
-
-    if-gtz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    aget v0, v0, v2
-
-    if-lez v0, :cond_1
-
-    .line 122
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    iget-object v4, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    iget-object v5, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    aput v1, v5, v2
-
-    aput v1, v4, v3
-
-    aput v1, v0, v1
-
-    .line 123
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->invalidate()V
-
-    :cond_1
-    return-void
-.end method
-
-.method private f()V
-    .locals 2
-
-    .line 128
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h()V
-
-    .line 129
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->postInvalidate()V
-
-    .line 130
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->l:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
-
-    const/16 v1, 0x64
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;->a(I)V
-
-    return-void
-.end method
-
-.method private g()V
-    .locals 2
-
-    .line 134
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h()V
-
-    .line 135
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->postInvalidate()V
-
-    .line 136
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    const/4 v1, 0x0
-
-    aget v0, v0, v1
-
-    if-gtz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    const/4 v1, 0x1
-
-    aget v0, v0, v1
-
-    if-gtz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    const/4 v1, 0x2
-
-    aget v0, v0, v1
-
-    if-lez v0, :cond_1
-
-    .line 137
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->l:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
-
-    const/16 v1, 0x50
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;->b(I)V
-
-    :cond_1
-    return-void
-.end method
-
-.method private h()V
-    .locals 4
+# virtual methods
+.method public final c()V
+    .locals 5
 
     const/4 v0, 0x0
 
@@ -349,25 +109,23 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 143
+    .line 1
     iget-boolean v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
 
     if-eqz v1, :cond_2
 
-    .line 144
+    .line 2
     iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
 
-    aget v1, v1, v0
+    aget v2, v1, v0
 
-    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
+    iget-object v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
 
-    aget v2, v2, v0
+    aget v4, v3, v0
 
-    if-ge v1, v2, :cond_0
+    if-ge v2, v4, :cond_0
 
-    .line 145
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
+    .line 3
     aget v2, v1, v0
 
     add-int/lit8 v2, v2, 0x1
@@ -376,21 +134,15 @@
 
     goto :goto_1
 
-    .line 146
+    .line 4
     :cond_0
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
+    aget v2, v1, v0
 
-    aget v1, v1, v0
+    aget v4, v3, v0
 
-    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
+    if-le v2, v4, :cond_1
 
-    aget v2, v2, v0
-
-    if-le v1, v2, :cond_1
-
-    .line 147
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
+    .line 5
     aget v2, v1, v0
 
     add-int/lit8 v2, v2, -0x1
@@ -399,21 +151,19 @@
 
     goto :goto_1
 
-    .line 149
+    .line 6
     :cond_1
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
+    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->p:Ljava/util/Random;
 
-    iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->j:Ljava/util/Random;
+    const/4 v2, 0x6
 
-    const/4 v3, 0x6
+    invoke-virtual {v1, v2}, Ljava/util/Random;->nextInt(I)I
 
-    invoke-virtual {v2, v3}, Ljava/util/Random;->nextInt(I)I
+    move-result v1
 
-    move-result v2
+    aput v1, v3, v0
 
-    aput v2, v1, v0
-
-    .line 150
+    .line 7
     iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g:[I
 
     iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
@@ -430,37 +180,33 @@
 
     goto :goto_1
 
-    .line 153
+    .line 8
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g:[I
 
     iget-object v2, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
 
-    aget v2, v2, v0
+    aget v3, v2, v0
 
-    iget-object v3, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
+    iget-object v4, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f:[I
 
-    aget v3, v3, v0
+    aget v4, v4, v0
 
-    sub-int/2addr v2, v3
+    sub-int/2addr v3, v4
 
-    aput v2, v1, v0
+    aput v3, v1, v0
 
-    .line 154
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    aget v1, v1, v0
+    .line 9
+    aget v1, v2, v0
 
     if-lez v1, :cond_3
 
-    .line 155
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
+    .line 10
+    aget v1, v2, v0
 
-    aget v2, v1, v0
+    add-int/lit8 v1, v1, -0x1
 
-    add-int/lit8 v2, v2, -0x1
-
-    aput v2, v1, v0
+    aput v1, v2, v0
 
     :cond_3
     :goto_1
@@ -472,44 +218,181 @@
     return-void
 .end method
 
+.method public final d()V
+    .locals 3
 
-# virtual methods
-.method public a()V
+    .line 1
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    .line 2
+    sget v1, Lcom/samsung/android/app/musiclibrary/q;->j:I
+
+    .line 3
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->a:I
+
+    .line 4
+    sget v1, Lcom/samsung/android/app/musiclibrary/q;->k:I
+
+    .line 5
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->b:I
+
+    .line 6
+    sget v1, Lcom/samsung/android/app/musiclibrary/q;->m:I
+
+    .line 7
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->c:I
+
+    .line 8
+    sget v1, Lcom/samsung/android/app/musiclibrary/q;->l:I
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d:I
+
+    .line 9
+    new-instance v1, Landroid/graphics/Paint;
+
+    invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->o:Landroid/graphics/Paint;
+
+    const/4 v2, 0x1
+
+    .line 10
+    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 11
+    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->o:Landroid/graphics/Paint;
+
+    sget v2, Lcom/samsung/android/app/musiclibrary/p;->l:I
+
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
+    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 12
+    new-instance v0, Ljava/util/Random;
+
+    invoke-direct {v0}, Ljava/util/Random;-><init>()V
+
+    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->p:Ljava/util/Random;
+
+    return-void
+.end method
+
+.method public e()V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
+
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->r:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;->c()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final f()V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
+
+    const/4 v1, 0x0
+
+    aget v2, v0, v1
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    if-gtz v2, :cond_0
+
+    aget v2, v0, v4
+
+    if-gtz v2, :cond_0
+
+    aget v2, v0, v3
+
+    if-lez v2, :cond_1
+
+    .line 2
+    :cond_0
+    aput v1, v0, v3
+
+    aput v1, v0, v4
+
+    aput v1, v0, v1
+
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
+
+    :cond_1
+    return-void
+.end method
+
+.method public g()V
     .locals 2
 
-    .line 93
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->k:Landroid/os/HandlerThread;
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->q:Landroid/os/HandlerThread;
 
     if-nez v0, :cond_0
 
-    .line 94
+    .line 2
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "EqualizerAnimation"
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->k:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->q:Landroid/os/HandlerThread;
 
-    .line 95
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->k:Landroid/os/HandlerThread;
-
+    .line 3
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 96
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
+    .line 4
+    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
 
-    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->k:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->q:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;-><init>(Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;-><init>(Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->l:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
+    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->r:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
 
-    .line 98
+    .line 5
     :cond_0
     iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
 
@@ -517,123 +400,158 @@
 
     const/4 v0, 0x1
 
-    .line 99
+    .line 6
     iput-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
 
-    .line 100
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->l:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
+    .line 7
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->r:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
 
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;->a()V
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;->e()V
 
     :cond_1
     return-void
 .end method
 
-.method public b()V
-    .locals 1
-
-    .line 105
-    iget-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    .line 106
-    iput-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
-
-    .line 107
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->l:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
-
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;->b()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public c()V
+.method public h()V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 112
+    .line 1
     iput-boolean v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
 
-    .line 113
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->k:Landroid/os/HandlerThread;
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->q:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_0
 
-    .line 114
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->l:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->r:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
 
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$BackgroundUpdateHandler;->c()V
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;->a()V
 
-    .line 115
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->k:Landroid/os/HandlerThread;
+    .line 4
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->q:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
     const/4 v0, 0x0
 
-    .line 116
-    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->k:Landroid/os/HandlerThread;
+    .line 5
+    iput-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->q:Landroid/os/HandlerThread;
 
     :cond_0
     return-void
 .end method
 
-.method protected onDraw(Landroid/graphics/Canvas;)V
-    .locals 10
+.method public final i()V
+    .locals 2
 
-    .line 177
-    invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
+    .line 1
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->c()V
 
-    .line 179
+    .line 2
+    invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
+
+    .line 3
     iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
 
     const/4 v1, 0x0
 
+    aget v1, v0, v1
+
+    if-gtz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    aget v1, v0, v1
+
+    if-gtz v1, :cond_0
+
+    const/4 v1, 0x2
+
     aget v0, v0, v1
 
-    const/4 v2, 0x1
+    if-lez v0, :cond_1
 
-    if-nez v0, :cond_0
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->r:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
 
+    const/16 v1, 0x50
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;->b(I)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final j()V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->c()V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
+
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->r:Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;
+
+    const/16 v1, 0x64
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView$a;->d(I)V
+
+    return-void
+.end method
+
+.method public onDraw(Landroid/graphics/Canvas;)V
+    .locals 10
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
+
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
+
+    const/4 v1, 0x0
+
+    aget v2, v0, v1
+
+    const/4 v3, 0x1
+
+    if-nez v2, :cond_0
+
+    aget v2, v0, v3
+
+    if-nez v2, :cond_0
+
+    const/4 v2, 0x2
 
     aget v0, v0, v2
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
-
-    const/4 v3, 0x2
-
-    aget v0, v0, v3
-
-    if-nez v0, :cond_0
-
-    .line 180
+    .line 3
     invoke-virtual {p1, v1}, Landroid/graphics/Canvas;->drawColor(I)V
 
     return-void
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
     :goto_0
-    const/4 v3, 0x3
+    const/4 v2, 0x3
 
-    if-ge v0, v3, :cond_3
+    if-ge v0, v2, :cond_3
 
-    const/16 v3, 0xff
+    const/16 v2, 0xff
 
-    const/4 v4, 0x0
+    move v4, v1
 
-    const/16 v5, 0xff
+    move v5, v2
 
-    .line 186
+    .line 4
     :goto_1
     iget-object v6, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e:[I
 
@@ -641,7 +559,7 @@
 
     if-ge v4, v6, :cond_2
 
-    .line 187
+    .line 5
     iget-object v6, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g:[I
 
     aget v6, v6, v0
@@ -652,7 +570,7 @@
 
     aget v6, v6, v0
 
-    sub-int/2addr v6, v2
+    sub-int/2addr v6, v3
 
     if-lt v4, v6, :cond_1
 
@@ -660,38 +578,36 @@
 
     rsub-int v5, v5, 0xff
 
-    .line 190
+    .line 6
     :cond_1
-    iget-object v6, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->i:Landroid/graphics/Paint;
+    iget-object v6, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->o:Landroid/graphics/Paint;
 
     invoke-virtual {v6, v5}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 191
+    .line 7
     iget v6, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->a:I
 
     iget v7, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d:I
 
-    mul-int v7, v7, v0
+    mul-int v8, v7, v0
 
-    add-int/2addr v6, v7
+    add-int/2addr v6, v8
 
     int-to-float v6, v6
 
-    iget v7, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->b:I
+    iget v8, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->b:I
 
-    iget v8, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->d:I
+    mul-int/2addr v7, v4
 
-    mul-int v8, v8, v4
+    sub-int/2addr v8, v7
 
-    sub-int/2addr v7, v8
-
-    int-to-float v7, v7
+    int-to-float v7, v8
 
     iget v8, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->c:I
 
     int-to-float v8, v8
 
-    iget-object v9, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->i:Landroid/graphics/Paint;
+    iget-object v9, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->o:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v6, v7, v8, v9}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
@@ -708,33 +624,33 @@
     return-void
 .end method
 
-.method protected onVisibilityChanged(Landroid/view/View;I)V
+.method public onVisibilityChanged(Landroid/view/View;I)V
     .locals 0
 
-    .line 163
+    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
     if-nez p2, :cond_1
 
-    .line 165
+    .line 2
     iget-boolean p1, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h:Z
 
     if-eqz p1, :cond_0
 
-    .line 166
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->a()V
+    .line 3
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->g()V
 
     goto :goto_0
 
-    .line 168
+    .line 4
     :cond_0
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->e()V
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->f()V
 
     goto :goto_0
 
-    .line 171
+    .line 5
     :cond_1
-    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->c()V
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->h()V
 
     :goto_0
     return-void
@@ -743,8 +659,7 @@
 .method public setColor(I)V
     .locals 1
 
-    .line 89
-    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->i:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/samsung/android/app/musiclibrary/ui/widget/EqualizerAnimationView;->o:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 

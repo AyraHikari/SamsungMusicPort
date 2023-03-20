@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/full_player_recommend_button_background" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:contentDescription="@string/browse_just_for_you"
+<FrameLayout android:background="@drawable/full_player_recommend_button_background" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:contentDescription="@string/browse_just_for_you" android:accessibilityTraversalAfter="@id/album_transition_view"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/recommend_button_image" android:layout_width="wrap_content" android:layout_height="@dimen/full_player_recommend_button_image_height" android:src="@drawable/music_ic_foryou" android:scaleType="centerInside" />
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/full_player_recommend_button_image_width" android:layout_height="@dimen/full_player_recommend_button_image_height" android:src="@drawable/music_ic_foryou" android:scaleType="fitCenter" />
 </FrameLayout>

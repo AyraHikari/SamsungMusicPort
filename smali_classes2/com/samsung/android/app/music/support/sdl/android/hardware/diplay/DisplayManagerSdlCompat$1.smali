@@ -1,6 +1,6 @@
 .class synthetic Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/DisplayManagerSdlCompat$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "DisplayManagerSdlCompat.java"
 
 
 # annotations
@@ -9,6 +9,6 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation

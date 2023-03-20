@@ -1,6 +1,6 @@
 .class public Lorg/simpleframework/xml/util/LimitedCache;
 .super Ljava/util/LinkedHashMap;
-.source "SourceFile"
+.source "LimitedCache.java"
 
 # interfaces
 .implements Lorg/simpleframework/xml/util/Cache;
@@ -31,7 +31,7 @@
 
     const v0, 0xc350
 
-    .line 46
+    .line 1
     invoke-direct {p0, v0}, Lorg/simpleframework/xml/util/LimitedCache;-><init>(I)V
 
     return-void
@@ -40,10 +40,10 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 57
+    .line 2
     invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 58
+    .line 3
     iput p1, p0, Lorg/simpleframework/xml/util/LimitedCache;->capacity:I
 
     return-void
@@ -61,8 +61,7 @@
         }
     .end annotation
 
-    .line 71
-    invoke-virtual {p0, p1, p2}, Lorg/simpleframework/xml/util/LimitedCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -70,8 +69,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 110
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/LimitedCache;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/util/LinkedHashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -88,15 +86,14 @@
         }
     .end annotation
 
-    .line 97
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/LimitedCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method protected removeEldestEntry(Ljava/util/Map$Entry;)Z
+.method public removeEldestEntry(Ljava/util/Map$Entry;)Z
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -107,8 +104,7 @@
         }
     .end annotation
 
-    .line 123
-    invoke-virtual {p0}, Lorg/simpleframework/xml/util/LimitedCache;->size()I
+    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->size()I
 
     move-result p1
 
@@ -137,8 +133,7 @@
         }
     .end annotation
 
-    .line 84
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/LimitedCache;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

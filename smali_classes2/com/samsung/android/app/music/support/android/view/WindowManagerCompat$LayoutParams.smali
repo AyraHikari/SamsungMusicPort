@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "WindowManagerCompat.java"
 
 
 # annotations
@@ -29,78 +29,71 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 3
 
-    .line 18
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x0
+    move v2, v1
 
     goto :goto_0
 
+    .line 2
     :cond_0
-    sget v0, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_DELAYED_ADJUST_RESIZE:I
+    sget v2, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_DELAYED_ADJUST_RESIZE:I
 
     :goto_0
-    sput v0, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_DELAYED_ADJUST_RESIZE:I
-
-    .line 26
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    sput v2, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_DELAYED_ADJUST_RESIZE:I
 
     if-eqz v0, :cond_1
 
-    const/4 v0, 0x0
+    move v2, v1
 
     goto :goto_1
 
+    .line 3
     :cond_1
-    sget v0, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->MULTIWINDOW_FLAG_DISABLE_FLOATING_WINDOW:I
+    sget v2, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->MULTIWINDOW_FLAG_DISABLE_FLOATING_WINDOW:I
 
     :goto_1
-    sput v0, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->MULTIWINDOW_FLAG_DISABLE_FLOATING_WINDOW:I
-
-    .line 30
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    sput v2, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->MULTIWINDOW_FLAG_DISABLE_FLOATING_WINDOW:I
 
     if-eqz v0, :cond_2
 
-    const/4 v0, 0x1
+    const/4 v2, 0x1
 
     goto :goto_2
 
+    .line 4
     :cond_2
-    sget v0, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_ADJUST_RESIZE_FULLSCREEN:I
+    sget v2, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_ADJUST_RESIZE_FULLSCREEN:I
 
     :goto_2
-    sput v0, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_ADJUST_RESIZE_FULLSCREEN:I
-
-    .line 37
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    sput v2, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->SAMSUNG_FLAG_SOFT_INPUT_ADJUST_RESIZE_FULLSCREEN:I
 
     if-eqz v0, :cond_3
 
-    const/4 v0, 0x0
+    move v2, v1
 
     goto :goto_3
 
+    .line 5
     :cond_3
-    sget v0, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->SAMSUNG_FLAG_ENABLE_STATUSBAR_OPEN_BY_NOTIFICATION:I
+    sget v2, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->SAMSUNG_FLAG_ENABLE_STATUSBAR_OPEN_BY_NOTIFICATION:I
 
     :goto_3
-    sput v0, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->SAMSUNG_FLAG_ENABLE_STATUSBAR_OPEN_BY_NOTIFICATION:I
-
-    .line 41
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    sput v2, Lcom/samsung/android/app/music/support/android/view/WindowManagerCompat$LayoutParams;->SAMSUNG_FLAG_ENABLE_STATUSBAR_OPEN_BY_NOTIFICATION:I
 
     if-eqz v0, :cond_4
 
     goto :goto_4
 
+    .line 6
     :cond_4
     sget v1, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->PRIVATE_FLAG_NO_MOVE_ANIMATION:I
 
@@ -113,7 +106,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -122,17 +114,17 @@
 .method public static addExtensionFlags(Landroid/view/WindowManager$LayoutParams;I)V
     .locals 1
 
-    .line 47
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
-    .line 48
+    .line 2
     invoke-virtual {p0, p1}, Landroid/view/WindowManager$LayoutParams;->semAddExtensionFlags(I)V
 
     goto :goto_0
 
-    .line 50
+    .line 3
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->addSamsungFlags(Landroid/view/WindowManager$LayoutParams;I)V
 
@@ -143,14 +135,14 @@
 .method public static addMultiWindowFlags(Landroid/view/WindowManager$LayoutParams;I)V
     .locals 1
 
-    .line 63
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 67
+    .line 2
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->addMultiWindowFlags(Landroid/view/WindowManager$LayoutParams;I)V
 
@@ -161,14 +153,14 @@
 .method public static addPrivateFlags(Landroid/view/WindowManager$LayoutParams;I)V
     .locals 1
 
-    .line 72
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 76
+    .line 2
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->addPrivateFlags(Landroid/view/WindowManager$LayoutParams;I)V
 
@@ -179,17 +171,17 @@
 .method public static clearExtensionFlags(Landroid/view/WindowManager$LayoutParams;I)V
     .locals 1
 
-    .line 55
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
-    .line 56
+    .line 2
     invoke-virtual {p0, p1}, Landroid/view/WindowManager$LayoutParams;->semClearExtensionFlags(I)V
 
     goto :goto_0
 
-    .line 58
+    .line 3
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat$LayoutParams;->clearSamsungFlags(Landroid/view/WindowManager$LayoutParams;I)V
 

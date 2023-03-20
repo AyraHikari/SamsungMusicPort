@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/milksearch/SearchCheckArtistInfoResult;
 .super Lcom/samsung/android/app/music/model/ResponseModel;
-.source "SourceFile"
+.source "SearchCheckArtistInfoResult.java"
 
 
 # static fields
@@ -28,10 +28,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 28
     new-instance v0, Lcom/samsung/android/app/music/model/milksearch/SearchCheckArtistInfoResult$1;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/milksearch/SearchCheckArtistInfoResult$1;-><init>()V
@@ -41,13 +40,13 @@
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 24
+    .line 1
     invoke-direct {p0, p1}, Lcom/samsung/android/app/music/model/ResponseModel;-><init>(Landroid/os/Parcel;)V
 
-    .line 25
+    .line 2
     sget-object v0, Lcom/samsung/android/app/music/model/milksearch/SearchCheckArtistInfo;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->createTypedArrayList(Landroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
@@ -72,7 +71,6 @@
         }
     .end annotation
 
-    .line 14
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchCheckArtistInfoResult;->presetList:Ljava/util/List;
 
     return-object v0
@@ -81,10 +79,10 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 19
+    .line 1
     invoke-super {p0, p1, p2}, Lcom/samsung/android/app/music/model/ResponseModel;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 20
+    .line 2
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchCheckArtistInfoResult;->presetList:Ljava/util/List;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V

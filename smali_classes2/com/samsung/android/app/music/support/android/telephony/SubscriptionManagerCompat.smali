@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/telephony/SubscriptionManagerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SubscriptionManagerCompat.java"
 
 
 # annotations
@@ -26,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,19 +34,19 @@
 .method public static getActiveSimSlot(Landroid/content/Context;)I
     .locals 1
 
-    .line 26
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
-    .line 27
+    .line 2
     invoke-static {p0}, Lcom/samsung/android/app/music/support/android/telephony/SubscriptionManagerCompat;->getActiveSimSlotFromSep(Landroid/content/Context;)I
 
     move-result p0
 
     goto :goto_0
 
-    .line 29
+    .line 3
     :cond_0
     invoke-static {}, Lcom/samsung/android/app/music/support/android/telephony/SubscriptionManagerCompat;->getActiveSimSlotFromSdl()I
 
@@ -62,19 +61,19 @@
 
     const-string v0, "gsm.sim.state"
 
-    .line 80
+    .line 1
     invoke-static {v0}, Lcom/samsung/android/app/music/support/sdl/android/os/SystemPropertiesSdlCompat;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, ","
 
-    .line 81
+    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 82
+    .line 3
     array-length v1, v0
 
     const/4 v2, 0x2
@@ -86,32 +85,30 @@
     if-ne v1, v4, :cond_1
 
     :cond_0
-    const/4 v2, 0x0
+    move v2, v3
 
     goto :goto_0
 
-    .line 84
+    .line 4
     :cond_1
     array-length v1, v0
 
     if-ne v1, v2, :cond_3
 
-    const-string v1, "READY"
+    .line 5
+    aget-object v1, v0, v3
 
-    .line 85
-    aget-object v5, v0, v3
+    const-string v5, "READY"
 
-    invoke-virtual {v1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    const-string v1, "READY"
+    aget-object v1, v0, v4
 
-    aget-object v5, v0, v4
-
-    invoke-virtual {v1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -119,19 +116,17 @@
 
     goto :goto_0
 
+    .line 6
     :cond_2
-    const-string v1, "READY"
-
-    .line 87
     aget-object v0, v0, v4
 
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    const/4 v2, 0x1
+    move v2, v4
 
     goto :goto_0
 
@@ -150,12 +145,12 @@
         }
     .end annotation
 
-    .line 38
+    .line 1
     invoke-static {p0}, Landroid/telephony/SubscriptionManager;->from(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;
 
     move-result-object p0
 
-    .line 39
+    .line 2
     invoke-virtual {p0}, Landroid/telephony/SubscriptionManager;->getActiveSubscriptionInfoCount()I
 
     move-result v0
@@ -171,17 +166,17 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 54
+    .line 3
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultVoiceSubscriptionId()I
 
     move-result v0
 
-    .line 55
+    .line 4
     invoke-virtual {p0, v0}, Landroid/telephony/SubscriptionManager;->getActiveSubscriptionInfo(I)Landroid/telephony/SubscriptionInfo;
 
     move-result-object p0
 
-    .line 56
+    .line 5
     invoke-virtual {p0}, Landroid/telephony/SubscriptionInfo;->getSimSlotIndex()I
 
     move-result p0

@@ -1,6 +1,6 @@
 .class public final Lcom/samsung/android/app/music/support/android/telephony/SubscriptionManagerCompat$SimSlot;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SubscriptionManagerCompat.java"
 
 
 # annotations
@@ -28,7 +28,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "IBleProxyTvCallback.java"
 
 # interfaces
 .implements Landroid/os/IInterface;
@@ -16,9 +16,4 @@
 
 # virtual methods
 .method public abstract onScanRegisteredTv(Lcom/samsung/android/library/beaconmanager/Tv;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 .end method

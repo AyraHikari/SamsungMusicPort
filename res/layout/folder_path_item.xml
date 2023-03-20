@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/folder_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:includeFontPadding="false" style="@style/Font.Roboto.Regular" />
-    <ImageView android:id="@id/breadcrumb_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tw_breadcrumb_arrow" android:scaleType="center" android:tint="@color/mu_icon_etc" android:alpha="0.5" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <TextView android:textSize="13.0dip" android:gravity="center" android:id="@id/folder_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:includeFontPadding="false" style="@style/Font.Roboto.Regular" />
+    <ImageView android:id="@id/breadcrumb_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tw_breadcrumb_arrow" android:scaleType="center" android:tint="@color/basics_icon" android:alpha="0.5" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
 </LinearLayout>

@@ -1,6 +1,6 @@
 .class public final Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "HoverPopupWindowCompat.java"
 
 
 # annotations
@@ -53,133 +53,100 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 30
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x50
 
+    .line 2
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->BOTTOM:I
-
-    .line 34
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x5050
 
+    .line 3
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->BOTTOM_UNDER:I
-
-    .line 38
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x11
 
+    .line 4
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->CENTER:I
-
-    .line 42
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x1
 
+    .line 5
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->CENTER_HORIZONTAL:I
-
-    .line 46
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x201
 
+    .line 6
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->CENTER_HORIZONTAL_ON_POINT:I
-
-    .line 50
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x101
 
+    .line 7
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->CENTER_HORIZONTAL_ON_WINDOW:I
-
-    .line 54
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x10
 
+    .line 8
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->CENTER_VERTICAL:I
-
-    .line 58
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0xf0f
 
+    .line 9
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->HORIZONTAL_GRAVITY_MASK:I
-
-    .line 62
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x3
 
+    .line 10
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->LEFT:I
-
-    .line 65
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x103
 
+    .line 11
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->LEFT_CENTER_AXIS:I
-
-    .line 69
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x303
 
+    .line 12
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->LEFT_OUTSIDE:I
-
-    .line 73
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x0
 
+    .line 13
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->NO_GRAVITY:I
-
-    .line 77
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x5
 
+    .line 14
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->RIGHT:I
-
-    .line 80
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x105
 
+    .line 15
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->RIGHT_CENTER_AXIS:I
-
-    .line 84
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x505
 
+    .line 16
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->RIGHT_OUTSIDE:I
-
-    .line 88
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x30
 
+    .line 17
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->TOP:I
-
-    .line 91
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v0, 0x3030
 
+    .line 18
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->TOP_ABOVE:I
-
-    .line 95
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const v0, 0xf0f0
 
+    .line 19
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$Gravity;->VERTICAL_GRAVITY_MASK:I
 
     return-void
@@ -188,7 +155,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

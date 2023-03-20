@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/bluetooth/BluetoothDevicePickerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "BluetoothDevicePickerCompat.java"
 
 
 # static fields
@@ -14,35 +14,30 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 9
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const-string v0, "android.bluetooth.devicepicker.action.LAUNCH"
 
+    .line 2
     sput-object v0, Lcom/samsung/android/app/music/support/android/bluetooth/BluetoothDevicePickerCompat;->ACTION_LAUNCH:Ljava/lang/String;
-
-    .line 13
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const-string v0, "android.bluetooth.devicepicker.extra.NEED_AUTH"
 
+    .line 3
     sput-object v0, Lcom/samsung/android/app/music/support/android/bluetooth/BluetoothDevicePickerCompat;->EXTRA_NEED_AUTH:Ljava/lang/String;
-
-    .line 17
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const-string v0, "android.bluetooth.devicepicker.extra.FILTER_TYPE"
 
+    .line 4
     sput-object v0, Lcom/samsung/android/app/music/support/android/bluetooth/BluetoothDevicePickerCompat;->EXTRA_FILTER_TYPE:Ljava/lang/String;
-
-    .line 21
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x6
 
+    .line 5
     sput v0, Lcom/samsung/android/app/music/support/android/bluetooth/BluetoothDevicePickerCompat;->FILTER_TYPE_AUDIO_AV:I
 
     return-void
@@ -51,7 +46,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

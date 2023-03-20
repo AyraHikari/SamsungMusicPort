@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <bool name="sesl_desktop_mode">false</bool>
-    <bool name="windowFullScreen">false</bool>
-    <bool name="windowLightNavigationBar">true</bool>
-    <bool name="windowLightStatusBar">true</bool>
-    <bool name="abc_action_bar_embed_tabs">true</bool>
-    <bool name="small_screen_ui_enabled">true</bool>
-    <bool name="tablet_ui_enabled">false</bool>
-    <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="action_choose_expand_selected">true</bool>
+    <bool name="action_choose_symmetrical_dimen">false</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="m3_sys_typescale_body_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_body_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_body_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_display_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_display_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_display_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_headline_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_headline_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_headline_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_label_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_label_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_label_small_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_title_large_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_title_medium_text_all_caps">false</bool>
+    <bool name="m3_sys_typescale_title_small_text_all_caps">false</bool>
     <bool name="music_core_support_skip_silence">true</bool>
+    <bool name="one_ui_large_screen_dialog_enabled">false</bool>
     <bool name="sesl_action_bar_text_item_mode">false</bool>
     <bool name="sesl_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="sesl_config_desktop_mode">false</bool>
     <bool name="sesl_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="sesl_seekbar_sliding_animation">true</bool>
+    <bool name="small_screen_ui_enabled">true</bool>
+    <bool name="tablet_ui_enabled">false</bool>
+    <bool name="windowFullScreen">true</bool>
+    <bool name="windowLightNavigationBar">true</bool>
+    <bool name="windowLightStatusBar">true</bool>
 </resources>

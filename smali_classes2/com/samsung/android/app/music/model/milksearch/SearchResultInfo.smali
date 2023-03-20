@@ -1,9 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;
 .super Lcom/samsung/android/app/music/model/ResponseModel;
-.source "SourceFile"
-
-# interfaces
-.implements Landroid/os/Parcelable;
+.source "SearchResultInfo.java"
 
 
 # static fields
@@ -45,10 +42,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 77
     new-instance v0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo$1;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo$1;-><init>()V
@@ -61,68 +57,68 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 38
+    .line 1
     invoke-direct {p0}, Lcom/samsung/android/app/music/model/ResponseModel;-><init>()V
 
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 42
+    .line 2
     invoke-direct {p0, p1}, Lcom/samsung/android/app/music/model/ResponseModel;-><init>(Landroid/os/Parcel;)V
 
-    .line 43
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->totalCount:I
 
-    .line 44
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->trackCount:I
 
-    .line 45
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->albumCount:I
 
-    .line 46
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->artistCount:I
 
-    .line 47
+    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->playlistCount:I
 
-    .line 48
+    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->mvCount:I
 
-    .line 49
+    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->lyricsCount:I
 
-    .line 50
+    .line 10
     const-class v0, Lcom/samsung/android/app/music/model/milksearch/SearchList;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -137,21 +133,21 @@
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->searchList:Lcom/samsung/android/app/music/model/milksearch/SearchList;
 
-    .line 51
+    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->recommendKeyword:Ljava/lang/String;
 
-    .line 52
+    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->fromBixby:Ljava/lang/String;
 
-    .line 53
+    .line 13
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -174,7 +170,6 @@
 .method public getAlbumTotalCount()I
     .locals 1
 
-    .line 102
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->albumCount:I
 
     return v0
@@ -183,7 +178,6 @@
 .method public getArtistTotalCount()I
     .locals 1
 
-    .line 110
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->artistCount:I
 
     return v0
@@ -192,7 +186,6 @@
 .method public getLyricsTotalCount()I
     .locals 1
 
-    .line 126
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->lyricsCount:I
 
     return v0
@@ -201,7 +194,6 @@
 .method public getMvTotalCount()I
     .locals 1
 
-    .line 122
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->mvCount:I
 
     return v0
@@ -210,7 +202,6 @@
 .method public getPlaylistTotalCount()I
     .locals 1
 
-    .line 118
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->playlistCount:I
 
     return v0
@@ -219,7 +210,6 @@
 .method public getRecommendKeyword()Ljava/lang/String;
     .locals 1
 
-    .line 146
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->recommendKeyword:Ljava/lang/String;
 
     return-object v0
@@ -228,7 +218,6 @@
 .method public getSearchList()Lcom/samsung/android/app/music/model/milksearch/SearchList;
     .locals 1
 
-    .line 138
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->searchList:Lcom/samsung/android/app/music/model/milksearch/SearchList;
 
     return-object v0
@@ -237,7 +226,6 @@
 .method public getSpotifyPlaylistCount()I
     .locals 1
 
-    .line 130
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->spotifyPlaylistCount:I
 
     return v0
@@ -246,7 +234,6 @@
 .method public getTotalCount()I
     .locals 1
 
-    .line 90
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->totalCount:I
 
     return v0
@@ -255,7 +242,6 @@
 .method public getTrackTotalCount()I
     .locals 1
 
-    .line 94
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->trackCount:I
 
     return v0
@@ -264,7 +250,6 @@
 .method public isBixbyCall()Z
     .locals 2
 
-    .line 150
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->fromBixby:Ljava/lang/String;
 
     const-string v1, "1"
@@ -279,7 +264,6 @@
 .method public isRecommendSearch()Z
     .locals 2
 
-    .line 154
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->isRecommendKeywordSearch:Ljava/lang/String;
 
     const-string v1, "1"
@@ -294,7 +278,6 @@
 .method public setAlbumTotalCount(I)V
     .locals 0
 
-    .line 106
     iput p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->albumCount:I
 
     return-void
@@ -303,7 +286,6 @@
 .method public setArtistTotalCount(I)V
     .locals 0
 
-    .line 114
     iput p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->artistCount:I
 
     return-void
@@ -312,7 +294,6 @@
 .method public setIsBixbyCall(Ljava/lang/String;)V
     .locals 0
 
-    .line 158
     iput-object p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->fromBixby:Ljava/lang/String;
 
     return-void
@@ -321,7 +302,6 @@
 .method public setIsRecommendSearch(Ljava/lang/String;)V
     .locals 0
 
-    .line 162
     iput-object p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->isRecommendKeywordSearch:Ljava/lang/String;
 
     return-void
@@ -330,7 +310,6 @@
 .method public setSearchList(Lcom/samsung/android/app/music/model/milksearch/SearchList;)V
     .locals 0
 
-    .line 142
     iput-object p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->searchList:Lcom/samsung/android/app/music/model/milksearch/SearchList;
 
     return-void
@@ -339,7 +318,6 @@
 .method public setSpotifyPlaylistCount(I)V
     .locals 0
 
-    .line 134
     iput p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->spotifyPlaylistCount:I
 
     return-void
@@ -348,7 +326,6 @@
 .method public setTrackTotalCount(I)V
     .locals 0
 
-    .line 98
     iput p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->trackCount:I
 
     return-void
@@ -357,60 +334,60 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 58
+    .line 1
     invoke-super {p0, p1, p2}, Lcom/samsung/android/app/music/model/ResponseModel;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 59
+    .line 2
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->totalCount:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 60
+    .line 3
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->trackCount:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 61
+    .line 4
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->albumCount:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 62
+    .line 5
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->artistCount:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 63
+    .line 6
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->playlistCount:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 64
+    .line 7
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->mvCount:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 65
+    .line 8
     iget v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->lyricsCount:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 66
+    .line 9
     iget-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->searchList:Lcom/samsung/android/app/music/model/milksearch/SearchList;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 67
+    .line 10
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->recommendKeyword:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 68
+    .line 11
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->fromBixby:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 69
+    .line 12
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchResultInfo;->isRecommendKeywordSearch:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

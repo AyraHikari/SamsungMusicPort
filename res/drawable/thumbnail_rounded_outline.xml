@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape android:shape="rectangle"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="@dimen/mu_list_item_thumbnail_radius_stroke" />
+    <corners android:radius="@dimen/mu_list_thumbnail_radius_small" />
 </shape>

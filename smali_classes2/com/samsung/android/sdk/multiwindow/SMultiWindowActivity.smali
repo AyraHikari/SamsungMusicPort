@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowActivity.java"
 
 
 # annotations
@@ -54,54 +54,50 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 3
 
-    .line 64
+    .line 1
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_A:I
 
     sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_A:I
 
-    .line 70
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_B:I
+    .line 2
+    sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_B:I
 
-    sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_B:I
+    sput v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_B:I
 
-    .line 75
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_C:I
+    .line 3
+    sget v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_C:I
 
-    sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_C:I
+    sput v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_C:I
 
-    .line 80
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_D:I
+    .line 4
+    sget v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_D:I
 
-    sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_D:I
+    sput v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_D:I
 
-    .line 85
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_E:I
+    .line 5
+    sget v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_E:I
 
-    sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_E:I
+    sput v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_E:I
 
-    .line 90
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_F:I
+    .line 6
+    sget v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_F:I
 
-    sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_F:I
-
-    .line 96
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_A:I
-
-    sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_B:I
+    sput v2, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_F:I
 
     or-int/2addr v0, v1
 
+    .line 7
     sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_FULL:I
 
-    .line 102
+    .line 8
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->NOTIFY_STATE_HIDDEN:I
 
     sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->NOTIFY_STATE_HIDDEN:I
 
-    .line 108
+    .line 9
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->NOTIFY_STATE_SHOWN:I
 
     sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->NOTIFY_STATE_SHOWN:I
@@ -110,113 +106,105 @@
 .end method
 
 .method public constructor <init>(Landroid/app/Activity;)V
-    .locals 11
+    .locals 10
 
-    .line 190
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 191
+    .line 2
     new-instance v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     invoke-direct {v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
-    .line 192
+    .line 3
     new-instance v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     invoke-direct {v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    .line 194
+    .line 4
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 196
+    .line 5
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "getWindowMode"
 
     const/4 v3, 0x0
 
-    move-object v4, v3
+    invoke-virtual {v1, v0, p1, v2, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    check-cast v4, [Ljava/lang/Class;
-
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
-
-    .line 197
+    .line 6
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "setWindowMode"
+    const/4 v2, 0x2
 
-    const/4 v5, 0x2
+    new-array v4, v2, [Ljava/lang/Class;
 
-    new-array v6, v5, [Ljava/lang/Class;
+    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    const/4 v6, 0x0
 
-    const/4 v8, 0x0
+    aput-object v5, v4, v6
 
-    aput-object v7, v6, v8
+    sget-object v5, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    sget-object v7, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    const/4 v7, 0x1
 
-    const/4 v9, 0x1
+    aput-object v5, v4, v7
 
-    aput-object v7, v6, v9
+    const-string v5, "setWindowMode"
 
-    invoke-virtual {v1, v0, p1, v2, v6}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v5, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 198
+    .line 7
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "getWindowInfo"
+    const-string v4, "getWindowInfo"
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v4, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 199
+    .line 8
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "getWindow"
+    const-string v4, "getWindow"
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v4, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
     :try_start_0
     const-string v1, "com.samsung.android.multiwindow.MultiWindowStyle"
 
-    .line 202
+    .line 9
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 203
-    iget-object v2, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
+    .line 10
+    iget-object v4, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v6, "getMultiWindowStyle"
+    const-string v5, "getMultiWindowStyle"
 
-    move-object v7, v3
+    invoke-virtual {v4, v0, p1, v5, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    check-cast v7, [Ljava/lang/Class;
+    .line 11
+    iget-object v4, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    invoke-virtual {v2, v0, p1, v6, v7}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    const-string v5, "setMultiWindowStyle"
 
-    .line 204
-    iget-object v2, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
+    new-array v8, v7, [Ljava/lang/Class;
 
-    const-string v6, "setMultiWindowStyle"
+    aput-object v1, v8, v6
 
-    new-array v7, v9, [Ljava/lang/Class;
-
-    aput-object v1, v7, v8
-
-    invoke-virtual {v2, v0, p1, v6, v7}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v4, v0, p1, v5, v8}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 208
+    .line 12
     :catch_0
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -226,57 +214,57 @@
 
     move-result-object v1
 
-    .line 210
-    iget-object v2, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
+    .line 13
+    iget-object v4, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v6, "updateMultiWindowSetting"
+    new-array v5, v2, [Ljava/lang/Class;
 
-    new-array v7, v5, [Ljava/lang/Class;
+    const-class v8, Ljava/lang/StringBuilder;
 
-    const-class v10, Ljava/lang/StringBuilder;
+    aput-object v8, v5, v6
 
-    aput-object v10, v7, v8
+    sget-object v8, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    sget-object v10, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    aput-object v8, v5, v7
 
-    aput-object v10, v7, v9
+    const-string v9, "updateMultiWindowSetting"
 
-    invoke-virtual {v2, v0, p1, v6, v7}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v4, v0, p1, v9, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 211
+    .line 14
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string v6, "getMultiPhoneWindowEvent"
+    const-string v5, "getMultiPhoneWindowEvent"
 
-    invoke-virtual {v0, v1, v2, v6, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v0, v1, v4, v5, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 212
+    .line 15
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string v6, "getWindowManager"
+    const-string v5, "getWindowManager"
 
-    invoke-virtual {v0, v1, v2, v6, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v0, v1, v4, v5, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 213
+    .line 16
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string v6, "getAttributes"
+    const-string v5, "getAttributes"
 
-    invoke-virtual {v0, v1, v2, v6, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v0, v1, v4, v5, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 215
+    .line 17
     invoke-virtual {p1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -285,12 +273,12 @@
 
     move-result-object p1
 
-    .line 216
+    .line 18
     iget p1, p1, Landroid/util/DisplayMetrics;->density:F
 
     iput p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mDensity:F
 
-    .line 219
+    .line 19
     :try_start_1
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->getMultiPhoneWindowEvent()Ljava/lang/Object;
 
@@ -298,187 +286,173 @@
 
     if-eqz p1, :cond_0
 
-    .line 221
+    .line 20
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 222
+    .line 21
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "setStateChangeListener"
+    const-string v4, "setStateChangeListener"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v5, v7, [Ljava/lang/Class;
 
-    const-class v6, Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$StateChangeListener;
+    const-class v9, Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$StateChangeListener;
 
-    aput-object v6, v4, v8
+    aput-object v9, v5, v6
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v4, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 223
+    .line 22
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "setStateChangeListener2"
+    const-string v4, "setStateChangeListener2"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v5, v7, [Ljava/lang/Class;
 
-    const-class v6, Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$StateChangeListener2;
+    const-class v9, Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$StateChangeListener2;
 
-    aput-object v6, v4, v8
+    aput-object v9, v5, v6
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v4, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 224
+    .line 23
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "setExitListener"
+    const-string v4, "setExitListener"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v5, v7, [Ljava/lang/Class;
 
-    const-class v6, Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;
+    const-class v9, Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;
 
-    aput-object v6, v4, v8
+    aput-object v9, v5, v6
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v4, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 225
+    .line 24
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "setMinimizeIcon"
+    const-string v4, "setMinimizeIcon"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v5, v7, [Ljava/lang/Class;
 
-    const-class v6, Landroid/graphics/drawable/Drawable;
+    const-class v9, Landroid/graphics/drawable/Drawable;
 
-    aput-object v6, v4, v8
+    aput-object v9, v5, v6
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v4, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 226
+    .line 25
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "setMinimizeView"
+    const-string v4, "setMinimizeView"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v5, v7, [Ljava/lang/Class;
 
-    const-class v6, Landroid/view/View;
+    const-class v9, Landroid/view/View;
 
-    aput-object v6, v4, v8
+    aput-object v9, v5, v6
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
+    invoke-virtual {v1, v0, p1, v4, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 227
+    .line 26
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "minimizeWindow"
+    const-string v4, "minimizeWindow"
 
-    new-array v4, v5, [Ljava/lang/Class;
+    new-array v5, v2, [Ljava/lang/Class;
 
-    sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v6, v4, v8
+    aput-object v9, v5, v6
 
-    sget-object v6, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    aput-object v8, v5, v7
 
-    aput-object v6, v4, v9
+    invoke-virtual {v1, v0, p1, v4, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
-
-    .line 228
+    .line 27
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "multiWindow"
+    const-string v4, "multiWindow"
 
-    new-array v4, v5, [Ljava/lang/Class;
+    new-array v2, v2, [Ljava/lang/Class;
 
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    aput-object v9, v2, v6
 
-    aput-object v5, v4, v8
+    aput-object v8, v2, v7
 
-    sget-object v5, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    invoke-virtual {v1, v0, p1, v4, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    aput-object v5, v4, v9
-
-    invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
-
-    .line 229
+    .line 28
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "normalWindow"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v4, v7, [Ljava/lang/Class;
 
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    aput-object v5, v4, v8
+    aput-object v9, v4, v6
 
     invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 231
+    .line 29
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "moveWindow"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v4, v7, [Ljava/lang/Class;
 
     const-class v5, Landroid/view/View;
 
-    aput-object v5, v4, v8
+    aput-object v5, v4, v6
 
     invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 232
+    .line 30
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "setIsolatedCenterPoint"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v4, v7, [Ljava/lang/Class;
 
     const-class v5, Landroid/graphics/Point;
 
-    aput-object v5, v4, v8
+    aput-object v5, v4, v6
 
     invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 233
+    .line 31
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "disableMultiWindowTrayBar"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v4, v7, [Ljava/lang/Class;
 
-    sget-object v5, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
-    aput-object v5, v4, v8
+    aput-object v8, v4, v6
 
     invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 234
+    .line 32
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "disableMultiWindowFloatingWindow"
 
-    new-array v4, v9, [Ljava/lang/Class;
+    new-array v4, v7, [Ljava/lang/Class;
 
-    sget-object v5, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
-    aput-object v5, v4, v8
+    aput-object v8, v4, v6
 
     invoke-virtual {v1, v0, p1, v2, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    .line 235
+    .line 33
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "getScaleInfo"
-
-    check-cast v3, [Ljava/lang/Class;
 
     invoke-virtual {v1, v0, p1, v2, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
     :try_end_1
     .catch Ljava/lang/NoClassDefFoundError; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 240
+    .line 34
     :catch_1
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->getWindowInfo()Landroid/os/Bundle;
@@ -487,7 +461,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 242
+    .line 35
     sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->EXTRA_WINDOW_DEFAULT_SIZE:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
@@ -502,28 +476,25 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
+.method public static synthetic access$000(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
     .locals 0
 
-    .line 44
     iget-object p0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mStateChangeListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
 
     return-object p0
 .end method
 
-.method static synthetic access$100(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener2;
+.method public static synthetic access$100(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener2;
     .locals 0
 
-    .line 44
     iget-object p0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mStateChangeListener2:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener2;
 
     return-object p0
 .end method
 
-.method static synthetic access$200(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$ExitListener;
+.method public static synthetic access$200(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$ExitListener;
     .locals 0
 
-    .line 44
     iget-object p0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mExitListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$ExitListener;
 
     return-object p0
@@ -532,7 +503,6 @@
 .method private checkMode(I)Z
     .locals 1
 
-    .line 122
     iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
     and-int/2addr p1, v0
@@ -553,7 +523,6 @@
 .method private checkOption(I)Z
     .locals 1
 
-    .line 133
     iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
     and-int/2addr p1, v0
@@ -574,14 +543,14 @@
 .method private getLastSize()Landroid/graphics/Rect;
     .locals 2
 
-    .line 169
+    .line 1
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->getWindowInfo()Landroid/os/Bundle;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 171
+    .line 2
     sget-object v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->EXTRA_WINDOW_LAST_SIZE:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
@@ -600,7 +569,7 @@
 
     goto :goto_1
 
-    .line 174
+    .line 3
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mDefaultSize:Landroid/graphics/Rect;
 
@@ -611,14 +580,11 @@
 .method private getMultiPhoneWindowEvent()Ljava/lang/Object;
     .locals 3
 
-    .line 181
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v1, "getMultiPhoneWindowEvent"
 
     const/4 v2, 0x0
-
-    check-cast v2, [Ljava/lang/Object;
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -630,14 +596,11 @@
 .method private getWindowInfo()Landroid/os/Bundle;
     .locals 3
 
-    .line 161
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v1, "getWindowInfo"
 
     const/4 v2, 0x0
-
-    check-cast v2, [Ljava/lang/Object;
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -653,12 +616,12 @@
 
     if-nez p0, :cond_0
 
-    .line 698
+    .line 10
     new-instance p0, Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/content/Intent;-><init>()V
 
-    .line 700
+    .line 11
     :cond_0
     new-instance v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
@@ -666,7 +629,7 @@
 
     const/4 v1, 0x1
 
-    .line 701
+    .line 12
     invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFeatureEnabled(I)Z
 
     move-result v1
@@ -678,7 +641,7 @@
     :cond_1
     const/4 v1, 0x2
 
-    .line 705
+    .line 13
     invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFeatureEnabled(I)Z
 
     move-result v0
@@ -690,10 +653,10 @@
     :cond_2
     const/high16 v0, 0x10000000
 
-    .line 709
+    .line 14
     invoke-virtual {p0, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 712
+    .line 15
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_COMMON_PINUP:I
@@ -706,12 +669,12 @@
 
     or-int/lit8 v0, v0, 0x0
 
-    .line 716
+    .line 16
     sget-object v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->EXTRA_WINDOW_MODE:Ljava/lang/String;
 
     invoke-virtual {p0, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 717
+    .line 17
     sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->EXTRA_WINDOW_SCALE:Ljava/lang/String;
 
     invoke-virtual {p0, v0, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;F)Landroid/content/Intent;
@@ -724,7 +687,7 @@
 
     if-nez p0, :cond_0
 
-    .line 663
+    .line 1
     new-instance p0, Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/content/Intent;-><init>()V
@@ -732,30 +695,31 @@
     :cond_0
     const/high16 v0, 0x10000000
 
-    .line 665
+    .line 2
     invoke-virtual {p0, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 666
+    .line 3
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
 
     and-int/2addr v0, p1
 
-    .line 669
+    .line 4
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_FULL:I
 
     if-ne p1, v1, :cond_1
 
-    .line 670
+    .line 5
     sget p1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_NORMAL:I
 
+    :goto_0
     or-int/lit8 p1, p1, 0x0
 
-    goto :goto_0
+    goto :goto_2
 
     :cond_1
     if-nez v0, :cond_2
 
-    .line 672
+    .line 6
     sget p1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_COMMON_PINUP:I
@@ -764,29 +728,26 @@
 
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_COMMON_SCALE:I
 
-    or-int/2addr p1, v0
+    goto :goto_1
 
-    or-int/lit8 p1, p1, 0x0
-
-    goto :goto_0
-
-    .line 676
+    .line 7
     :cond_2
     sget p1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
+    :goto_1
     or-int/2addr p1, v0
 
-    or-int/lit8 p1, p1, 0x0
+    goto :goto_0
 
-    .line 678
-    :goto_0
+    .line 8
+    :goto_2
     sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->EXTRA_WINDOW_MODE:Ljava/lang/String;
 
     invoke-virtual {p0, v0, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     if-eqz p2, :cond_3
 
-    .line 681
+    .line 9
     sget-object p1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$Intent;->EXTRA_WINDOW_POSITION:Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
@@ -796,9 +757,9 @@
 .end method
 
 .method private setWindowMode()V
-    .locals 6
+    .locals 5
 
-    .line 152
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -809,69 +770,59 @@
 
     if-eqz v0, :cond_0
 
-    .line 153
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "setWindowMode"
+    const/4 v2, 0x2
 
-    const/4 v3, 0x2
+    new-array v2, v2, [Ljava/lang/Object;
 
-    new-array v3, v3, [Ljava/lang/Object;
+    const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    iget v4, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    iget v5, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    aput-object v5, v3, v4
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    aput-object v4, v3, v1
+    aput-object v4, v2, v3
 
-    invoke-virtual {v0, v2, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    aput-object v3, v2, v1
+
+    const-string v1, "setWindowMode"
+
+    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-void
 .end method
 
 .method private static supportMultiWindowStyle()Z
-    .locals 2
-
-    const/4 v0, 0x0
+    .locals 1
 
     :try_start_0
-    const-string v1, "com.samsung.android.multiwindow.MultiWindowStyle"
+    const-string v0, "com.samsung.android.multiwindow.MultiWindowStyle"
 
-    .line 781
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v1
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-nez v1, :cond_0
-
-    return v0
-
-    :cond_0
     const/4 v0, 0x1
 
     return v0
 
     :catch_0
+    const/4 v0, 0x0
+
     return v0
 .end method
 
 .method private updateWindowMode()V
     .locals 3
 
-    .line 140
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -882,22 +833,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 141
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v1, "getWindowMode"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "getWindowMode"
 
-    check-cast v2, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 143
+    .line 3
     check-cast v0, Ljava/lang/Integer;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
@@ -915,7 +864,7 @@
 .method public disableMultiWindow(Z)V
     .locals 4
 
-    .line 774
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -936,10 +885,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 775
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "disableMultiWindow"
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -960,7 +907,7 @@
 .method public disableMultiWindowFloatingWindow(Z)V
     .locals 4
 
-    .line 765
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -981,10 +928,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 766
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "disableMultiWindowFloatingWindow"
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -1005,7 +950,7 @@
 .method public disableMultiWindowTrayBar(Z)V
     .locals 4
 
-    .line 754
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -1026,10 +971,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 755
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "disableMultiWindowTrayBar"
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -1050,7 +993,7 @@
 .method public exitWindow()V
     .locals 3
 
-    .line 475
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -1071,18 +1014,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 476
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v1, "exitWindow"
 
     const/4 v2, 0x0
 
-    check-cast v2, [Ljava/lang/Object;
-
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-void
 
     :cond_0
     return-void
@@ -1091,34 +1028,32 @@
 .method public getRectInfo()Landroid/graphics/Rect;
     .locals 5
 
-    .line 490
+    .line 1
     invoke-virtual {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->isMultiWindow()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 491
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->getLastSize()Landroid/graphics/Rect;
 
     move-result-object v0
 
     return-object v0
 
-    .line 493
+    .line 3
     :cond_0
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
-    .line 494
+    .line 4
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "getWindowManager"
 
     const/4 v3, 0x0
-
-    check-cast v3, [Ljava/lang/Object;
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1126,14 +1061,14 @@
 
     check-cast v1, Landroid/view/WindowManager;
 
-    .line 495
+    .line 5
     invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
 
-    .line 497
+    .line 6
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "getAttributes"
@@ -1144,7 +1079,7 @@
 
     check-cast v1, Landroid/view/WindowManager$LayoutParams;
 
-    .line 498
+    .line 7
     iget v1, v1, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     and-int/lit16 v1, v1, 0x400
@@ -1153,14 +1088,14 @@
 
     if-nez v1, :cond_1
 
-    .line 499
+    .line 8
     new-instance v1, Landroid/graphics/Rect;
 
     const/high16 v3, 0x41c80000    # 25.0f
 
     iget v4, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mDensity:F
 
-    mul-float v4, v4, v3
+    mul-float/2addr v4, v3
 
     float-to-int v3, v4
 
@@ -1172,7 +1107,7 @@
 
     return-object v1
 
-    .line 501
+    .line 9
     :cond_1
     new-instance v1, Landroid/graphics/Rect;
 
@@ -1188,7 +1123,7 @@
 .method public getScaleInfo()Landroid/graphics/PointF;
     .locals 3
 
-    .line 525
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x2
@@ -1199,7 +1134,7 @@
 
     if-nez v0, :cond_0
 
-    .line 526
+    .line 2
     new-instance v0, Landroid/graphics/PointF;
 
     const/high16 v1, 0x3f800000    # 1.0f
@@ -1208,17 +1143,15 @@
 
     return-object v0
 
-    .line 528
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v1, "getScaleInfo"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "getScaleInfo"
 
-    check-cast v2, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1230,10 +1163,10 @@
 .method public getZoneInfo()I
     .locals 2
 
-    .line 514
+    .line 1
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 515
+    .line 2
     iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
@@ -1246,7 +1179,7 @@
 .method public isMinimized()Z
     .locals 2
 
-    .line 303
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x2
@@ -1261,11 +1194,11 @@
 
     return v1
 
-    .line 307
+    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 308
+    .line 3
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
@@ -1291,7 +1224,7 @@
 .method public isMultiWindow()Z
     .locals 2
 
-    .line 271
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -1306,11 +1239,11 @@
 
     return v0
 
-    .line 275
+    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 276
+    .line 3
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
@@ -1323,7 +1256,7 @@
 .method public isNormalWindow()Z
     .locals 2
 
-    .line 254
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -1336,11 +1269,11 @@
 
     return v1
 
-    .line 258
+    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 259
+    .line 3
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_NORMAL:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
@@ -1353,7 +1286,7 @@
 .method public isScaleWindow()Z
     .locals 2
 
-    .line 287
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x2
@@ -1368,11 +1301,11 @@
 
     return v0
 
-    .line 291
+    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 292
+    .line 3
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_COMMON_SCALE:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkOption(I)Z
@@ -1385,7 +1318,7 @@
 .method public minimizeWindow()V
     .locals 5
 
-    .line 451
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x2
@@ -1396,10 +1329,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 452
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 453
+    .line 3
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
@@ -1408,7 +1341,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 454
+    .line 4
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkOption(I)Z
@@ -1417,7 +1350,7 @@
 
     if-nez v0, :cond_1
 
-    .line 455
+    .line 5
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "minimizeWindow"
@@ -1428,28 +1361,24 @@
 
     if-eqz v0, :cond_0
 
-    .line 456
+    .line 6
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "minimizeWindow"
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget v3, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
+    const/4 v3, 0x0
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget v4, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    move-result-object v3
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v4, 0x0
+    move-result-object v4
 
-    aput-object v3, v1, v4
+    aput-object v4, v1, v3
 
     const/4 v3, 0x1
 
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v4
+    sget-object v4, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     aput-object v4, v1, v3
 
@@ -1457,7 +1386,7 @@
 
     goto :goto_0
 
-    .line 458
+    .line 7
     :cond_0
     iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
@@ -1469,27 +1398,21 @@
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 459
-    iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 8
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     or-int/2addr v0, v1
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 460
-    iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 9
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_COMMON_MINIMIZED:I
 
     or-int/2addr v0, v1
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 461
-    iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 10
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
 
     not-int v1, v1
@@ -1498,7 +1421,7 @@
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 462
+    .line 11
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->setWindowMode()V
 
     :cond_1
@@ -1509,7 +1432,7 @@
 .method public moveWindow(Landroid/view/View;)V
     .locals 4
 
-    .line 341
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -1530,10 +1453,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 342
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "moveWindow"
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -1542,8 +1463,6 @@
     aput-object p1, v1, v3
 
     invoke-virtual {v0, v2, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-void
 
     :cond_0
     return-void
@@ -1554,16 +1473,16 @@
 
     const/4 v0, 0x0
 
-    .line 353
+    .line 1
     invoke-virtual {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->multiWindow(Landroid/graphics/Rect;)V
 
     return-void
 .end method
 
 .method public multiWindow(F)V
-    .locals 9
+    .locals 11
 
-    .line 417
+    .line 25
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x2
@@ -1574,10 +1493,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 418
+    .line 26
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 419
+    .line 27
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
@@ -1596,7 +1515,7 @@
 
     return-void
 
-    .line 422
+    .line 28
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
@@ -1611,103 +1530,95 @@
     :try_start_0
     const-string v0, "com.samsung.android.multiwindow.MultiWindowStyle"
 
-    .line 424
+    .line 29
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    if-eqz v0, :cond_1
-
-    .line 426
+    .line 30
     invoke-virtual {v0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string v3, "setType"
+    const-string v4, "setType"
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    .line 427
-    new-array v5, v4, [Ljava/lang/Class;
+    new-array v6, v5, [Ljava/lang/Class;
 
-    sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    .line 31
+    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
-    aput-object v6, v5, v7
+    aput-object v7, v6, v8
 
-    new-array v6, v4, [Ljava/lang/Object;
+    new-array v9, v5, [Ljava/lang/Object;
 
-    sget v8, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->TYPE_CASCADE:I
+    sget v10, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->TYPE_CASCADE:I
 
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v8
+    move-result-object v10
 
-    aput-object v8, v6, v7
+    aput-object v10, v9, v8
 
-    invoke-static {v0, v2, v3, v5, v6}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v3, v4, v6, v9}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v3, "setOption"
+    const-string v4, "setOption"
 
-    .line 428
-    new-array v5, v1, [Ljava/lang/Class;
+    new-array v6, v1, [Ljava/lang/Class;
 
-    sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    aput-object v7, v6, v8
 
-    aput-object v6, v5, v7
+    .line 32
+    sget-object v7, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    sget-object v6, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
-
-    aput-object v6, v5, v4
+    aput-object v7, v6, v5
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    sget v6, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->OPTION_SCALE:I
+    sget v7, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->OPTION_SCALE:I
 
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v6
+    move-result-object v7
 
-    aput-object v6, v1, v7
+    aput-object v7, v1, v8
 
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    sget-object v7, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    move-result-object v6
+    aput-object v7, v1, v5
 
-    aput-object v6, v1, v4
-
-    invoke-static {v0, v2, v3, v5, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v3, v4, v6, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v1, "setScale"
 
-    .line 429
-    new-array v3, v4, [Ljava/lang/Class;
+    new-array v4, v5, [Ljava/lang/Class;
 
-    sget-object v5, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    .line 33
+    sget-object v6, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    aput-object v5, v3, v7
+    aput-object v6, v4, v8
 
-    new-array v5, v4, [Ljava/lang/Object;
+    new-array v6, v5, [Ljava/lang/Object;
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
 
-    aput-object p1, v5, v7
+    aput-object p1, v6, v8
 
-    invoke-static {v0, v2, v1, v3, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v3, v1, v4, v6}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 430
+    .line 34
     iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v0, "setMultiWindowStyle"
+    new-array v0, v5, [Ljava/lang/Object;
 
-    new-array v1, v4, [Ljava/lang/Object;
+    aput-object v3, v0, v8
 
-    aput-object v2, v1, v7
-
-    invoke-virtual {p1, v0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
@@ -1718,7 +1629,7 @@
     :catch_0
     move-exception p1
 
-    .line 437
+    .line 35
     invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
 
     goto :goto_0
@@ -1726,7 +1637,7 @@
     :catch_1
     move-exception p1
 
-    .line 435
+    .line 36
     invoke-virtual {p1}, Ljava/lang/InstantiationException;->printStackTrace()V
 
     goto :goto_0
@@ -1734,7 +1645,7 @@
     :catch_2
     move-exception p1
 
-    .line 433
+    .line 37
     invoke-virtual {p1}, Ljava/lang/ClassNotFoundException;->printStackTrace()V
 
     :cond_1
@@ -1743,199 +1654,187 @@
 .end method
 
 .method public multiWindow(Landroid/graphics/Rect;)V
-    .locals 10
+    .locals 14
 
-    .line 357
-    iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
+    const-string v0, "com.samsung.android.multiwindow.MultiWindowStyle"
 
-    const/4 v1, 0x2
+    .line 2
+    iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFeatureEnabled(I)Z
+    const/4 v2, 0x2
 
-    move-result v0
+    invoke-virtual {v1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFeatureEnabled(I)Z
 
-    if-eqz v0, :cond_4
+    move-result v1
 
-    .line 358
+    if-eqz v1, :cond_4
+
+    .line 3
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 359
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
+    .line 4
+    sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
-    invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
+    invoke-direct {p0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
-    sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
+    sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
 
-    invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkOption(I)Z
+    invoke-direct {p0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkOption(I)Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
     return-void
 
-    .line 362
+    .line 5
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
+    iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v2, "multiWindow"
+    const-string v3, "multiWindow"
 
-    invoke-virtual {v0, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->checkMethod(Ljava/lang/String;)Z
+    invoke-virtual {v1, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->checkMethod(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v1
 
-    const/16 v2, 0x800
+    const/16 v4, 0x800
 
-    const/4 v3, 0x0
+    const-string v5, "setOption"
 
-    const/4 v4, 0x1
+    const-string v6, "setBounds"
 
-    if-eqz v0, :cond_2
+    const-string v7, "setType"
+
+    const-string v8, "setMultiWindowStyle"
+
+    const/4 v9, 0x1
+
+    const/4 v10, 0x0
+
+    if-eqz v1, :cond_2
 
     if-nez p1, :cond_1
 
-    .line 364
+    .line 6
     iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v0, "multiWindow"
+    new-array v0, v2, [Ljava/lang/Object;
 
-    new-array v1, v1, [Ljava/lang/Object;
+    iget v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    iget v2, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
 
-    move-result-object v2
+    aput-object v1, v0, v10
 
-    aput-object v2, v1, v3
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    aput-object v1, v0, v9
 
-    move-result-object v2
-
-    aput-object v2, v1, v4
-
-    invoke-virtual {p1, v0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v3, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_0
 
-    .line 366
+    .line 7
     :cond_1
-    iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
+    iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v5, "setMultiWindowStyle"
+    invoke-virtual {v1, v8}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->checkMethod(Ljava/lang/String;)Z
 
-    invoke-virtual {v0, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->checkMethod(Ljava/lang/String;)Z
+    move-result v1
 
-    move-result v0
+    if-eqz v1, :cond_4
 
-    if-eqz v0, :cond_4
-
+    .line 8
     :try_start_0
-    const-string v0, "com.samsung.android.multiwindow.MultiWindowStyle"
-
-    .line 368
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
-
-    .line 370
+    .line 9
     invoke-virtual {v0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v1
 
-    const-string v6, "setType"
+    new-array v3, v9, [Ljava/lang/Class;
 
-    .line 371
-    new-array v7, v4, [Ljava/lang/Class;
+    .line 10
+    sget-object v11, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    sget-object v8, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    aput-object v11, v3, v10
 
-    aput-object v8, v7, v3
+    new-array v12, v9, [Ljava/lang/Object;
 
-    new-array v8, v4, [Ljava/lang/Object;
+    sget v13, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->TYPE_CASCADE:I
 
-    sget v9, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->TYPE_CASCADE:I
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v13
 
-    move-result-object v9
+    aput-object v13, v12, v10
 
-    aput-object v9, v8, v3
+    invoke-static {v0, v1, v7, v3, v12}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-static {v0, v5, v6, v7, v8}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    new-array v3, v9, [Ljava/lang/Class;
 
-    const-string v6, "setBounds"
+    .line 11
+    const-class v7, Landroid/graphics/Rect;
 
-    .line 372
-    new-array v7, v4, [Ljava/lang/Class;
+    aput-object v7, v3, v10
 
-    const-class v8, Landroid/graphics/Rect;
+    new-array v7, v9, [Ljava/lang/Object;
 
-    aput-object v8, v7, v3
+    aput-object p1, v7, v10
 
-    new-array v8, v4, [Ljava/lang/Object;
+    invoke-static {v0, v1, v6, v3, v7}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    aput-object p1, v8, v3
+    new-array p1, v2, [Ljava/lang/Class;
 
-    invoke-static {v0, v5, v6, v7, v8}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    aput-object v11, p1, v10
 
-    const-string p1, "setOption"
+    .line 12
+    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    .line 373
-    new-array v6, v1, [Ljava/lang/Class;
+    aput-object v3, p1, v9
 
-    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    new-array v2, v2, [Ljava/lang/Object;
 
-    aput-object v7, v6, v3
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    sget-object v7, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    move-result-object v3
 
-    aput-object v7, v6, v4
+    aput-object v3, v2, v10
 
-    new-array v1, v1, [Ljava/lang/Object;
+    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    aput-object v3, v2, v9
 
-    move-result-object v2
+    invoke-static {v0, v1, v5, p1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    aput-object v2, v1, v3
-
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v2
-
-    aput-object v2, v1, v4
-
-    invoke-static {v0, v5, p1, v6, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 374
+    .line 13
     iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v0, "setMultiWindowStyle"
+    new-array v0, v9, [Ljava/lang/Object;
 
-    new-array v1, v4, [Ljava/lang/Object;
+    aput-object v1, v0, v10
 
-    aput-object v5, v1, v3
-
-    invoke-virtual {p1, v0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v8, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto/16 :goto_0
+    goto :goto_0
 
     :cond_2
     if-nez p1, :cond_3
 
-    .line 384
+    .line 14
     iget p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_MASK:I
@@ -1946,18 +1845,14 @@
 
     iput p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 385
-    iget p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 15
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     or-int/2addr p1, v0
 
     iput p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 386
-    iget p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 16
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
 
     not-int v0, v0
@@ -1966,113 +1861,95 @@
 
     iput p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 387
+    .line 17
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->setWindowMode()V
 
     goto :goto_0
 
-    .line 389
+    .line 18
     :cond_3
-    iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
+    iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v5, "setMultiWindowStyle"
+    invoke-virtual {v1, v8}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->checkMethod(Ljava/lang/String;)Z
 
-    invoke-virtual {v0, v5}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->checkMethod(Ljava/lang/String;)Z
+    move-result v1
 
-    move-result v0
+    if-eqz v1, :cond_4
 
-    if-eqz v0, :cond_4
-
+    .line 19
     :try_start_1
-    const-string v0, "com.samsung.android.multiwindow.MultiWindowStyle"
-
-    .line 391
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
-
-    .line 393
+    .line 20
     invoke-virtual {v0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v1
 
-    const-string v6, "setType"
+    new-array v3, v9, [Ljava/lang/Class;
 
-    .line 394
-    new-array v7, v4, [Ljava/lang/Class;
+    .line 21
+    sget-object v11, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    sget-object v8, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    aput-object v11, v3, v10
 
-    aput-object v8, v7, v3
+    new-array v12, v9, [Ljava/lang/Object;
 
-    new-array v8, v4, [Ljava/lang/Object;
+    sget v13, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->TYPE_CASCADE:I
 
-    sget v9, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->TYPE_CASCADE:I
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v13
 
-    move-result-object v9
+    aput-object v13, v12, v10
 
-    aput-object v9, v8, v3
+    invoke-static {v0, v1, v7, v3, v12}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-static {v0, v5, v6, v7, v8}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    new-array v3, v9, [Ljava/lang/Class;
 
-    const-string v6, "setBounds"
+    .line 22
+    const-class v7, Landroid/graphics/Rect;
 
-    .line 395
-    new-array v7, v4, [Ljava/lang/Class;
+    aput-object v7, v3, v10
 
-    const-class v8, Landroid/graphics/Rect;
+    new-array v7, v9, [Ljava/lang/Object;
 
-    aput-object v8, v7, v3
+    aput-object p1, v7, v10
 
-    new-array v8, v4, [Ljava/lang/Object;
+    invoke-static {v0, v1, v6, v3, v7}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    aput-object p1, v8, v3
+    new-array p1, v2, [Ljava/lang/Class;
 
-    invoke-static {v0, v5, v6, v7, v8}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
+    aput-object v11, p1, v10
 
-    const-string p1, "setOption"
+    .line 23
+    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    .line 396
-    new-array v6, v1, [Ljava/lang/Class;
+    aput-object v3, p1, v9
 
-    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    new-array v2, v2, [Ljava/lang/Object;
 
-    aput-object v7, v6, v3
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    sget-object v7, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    move-result-object v3
 
-    aput-object v7, v6, v4
+    aput-object v3, v2, v10
 
-    new-array v1, v1, [Ljava/lang/Object;
+    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    aput-object v3, v2, v9
 
-    move-result-object v2
+    invoke-static {v0, v1, v5, p1, v2}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    aput-object v2, v1, v3
-
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v2
-
-    aput-object v2, v1, v4
-
-    invoke-static {v0, v5, p1, v6, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 397
+    .line 24
     iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v0, "setMultiWindowStyle"
+    new-array v0, v9, [Ljava/lang/Object;
 
-    new-array v1, v4, [Ljava/lang/Object;
+    aput-object v1, v0, v10
 
-    aput-object v5, v1, v3
-
-    invoke-virtual {p1, v0, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v8, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catch Ljava/lang/ClassNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/InstantiationException; {:try_start_1 .. :try_end_1} :catch_0
@@ -2087,7 +1964,7 @@
 .method public normalWindow()V
     .locals 5
 
-    .line 317
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2098,10 +1975,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 318
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateWindowMode()V
 
-    .line 319
+    .line 3
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_FREESTYLE:I
 
     invoke-direct {p0, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->checkMode(I)Z
@@ -2110,7 +1987,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 320
+    .line 4
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
     const-string v2, "normalWindow"
@@ -2121,10 +1998,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 321
+    .line 5
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "normalWindow"
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -2142,7 +2017,7 @@
 
     goto :goto_0
 
-    .line 323
+    .line 6
     :cond_0
     iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
@@ -2154,9 +2029,7 @@
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 324
-    iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 7
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_OPTION_SPLIT_ZONE_MASK:I
 
     not-int v1, v1
@@ -2165,9 +2038,7 @@
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 325
-    iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 8
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_MASK:I
 
     not-int v1, v1
@@ -2176,16 +2047,14 @@
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 326
-    iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
-
+    .line 9
     sget v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->WINDOW_MODE_NORMAL:I
 
     or-int/2addr v0, v1
 
     iput v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
-    .line 327
+    .line 10
     invoke-direct {p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->setWindowMode()V
 
     :cond_1
@@ -2196,7 +2065,7 @@
 .method public setExitListener(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$ExitListener;)Z
     .locals 5
 
-    .line 604
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2219,18 +2088,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 605
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mExitListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$ExitListener;
 
-    .line 606
+    .line 3
     new-instance p1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$3;
 
     invoke-direct {p1, p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$3;-><init>(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)V
 
-    .line 612
+    .line 4
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v3, "setExitListener"
 
     new-array v4, v1, [Ljava/lang/Object;
 
@@ -2247,7 +2114,7 @@
 .method public setIsolatedCenterPoint(Landroid/graphics/Point;)V
     .locals 4
 
-    .line 744
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2268,10 +2135,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 745
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "setIsolatedCenterPoint"
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -2288,7 +2153,7 @@
 .method public setMinimizeIcon(Landroid/graphics/drawable/Drawable;)Z
     .locals 5
 
-    .line 628
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2311,10 +2176,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 629
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v3, "setMinimizeIcon"
 
     new-array v4, v1, [Ljava/lang/Object;
 
@@ -2331,7 +2194,7 @@
 .method public setMinimizeView(Landroid/view/View;)Z
     .locals 5
 
-    .line 643
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2354,10 +2217,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 644
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v3, "setMinimizeView"
 
     new-array v4, v1, [Ljava/lang/Object;
 
@@ -2374,7 +2235,7 @@
 .method public setStateChangeListener(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;)Z
     .locals 5
 
-    .line 542
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2397,39 +2258,32 @@
 
     if-eqz v0, :cond_1
 
-    .line 543
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mStateChangeListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
-
-    .line 544
-    iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mStateChangeListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
 
     if-nez p1, :cond_0
 
-    .line 545
+    .line 3
     iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v0, "setStateChangeListener"
-
-    new-array v3, v1, [Ljava/lang/Object;
+    new-array v0, v1, [Ljava/lang/Object;
 
     const/4 v4, 0x0
 
-    aput-object v4, v3, v2
+    aput-object v4, v0, v2
 
-    invoke-virtual {p1, v0, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v3, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 547
+    .line 4
     :cond_0
     new-instance p1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$1;
 
     invoke-direct {p1, p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$1;-><init>(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)V
 
-    .line 560
+    .line 5
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v3, "setStateChangeListener"
 
     new-array v4, v1, [Ljava/lang/Object;
 
@@ -2447,7 +2301,7 @@
 .method public setStateChangeListener2(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener2;)Z
     .locals 5
 
-    .line 577
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2470,39 +2324,32 @@
 
     if-eqz v0, :cond_1
 
-    .line 578
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mStateChangeListener2:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener2;
-
-    .line 579
-    iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mStateChangeListener2:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener2;
 
     if-nez p1, :cond_0
 
-    .line 580
+    .line 3
     iget-object p1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
 
-    const-string v0, "setStateChangeListener2"
-
-    new-array v3, v1, [Ljava/lang/Object;
+    new-array v0, v1, [Ljava/lang/Object;
 
     const/4 v4, 0x0
 
-    aput-object v4, v3, v2
+    aput-object v4, v0, v2
 
-    invoke-virtual {p1, v0, v3}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v3, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 582
+    .line 4
     :cond_0
     new-instance p1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$2;
 
     invoke-direct {p1, p0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$2;-><init>(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)V
 
-    .line 588
+    .line 5
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v3, "setStateChangeListener2"
 
     new-array v4, v1, [Ljava/lang/Object;
 
@@ -2520,7 +2367,7 @@
 .method public updateMultiWindowSetting(Ljava/lang/StringBuilder;Z)V
     .locals 5
 
-    .line 726
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
     const/4 v1, 0x1
@@ -2541,10 +2388,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 727
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v2, "updateMultiWindowSetting"
 
     const/4 v3, 0x2
 
@@ -2571,7 +2416,7 @@
 
     const/4 v0, 0x0
 
-    .line 736
+    .line 3
     invoke-virtual {p0, v0, p1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->updateMultiWindowSetting(Ljava/lang/StringBuilder;Z)V
 
     return-void

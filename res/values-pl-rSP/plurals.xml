@@ -12,61 +12,9 @@
         <item quantity="other">Utwory</item>
         <item quantity="one">Kōnsek</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">Kōnski przidane do Nŏjradszych: %d. Kōnski, kere już sōm w Nŏjrŏdszych, niy sōm przidane.</item>
-        <item quantity="one">Śpiywek dodanych do Nŏjrŏdszych: %d. Śpiywka, kerŏ już je w Nŏjrŏdszych niy ôstała dodanŏ.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">Tytuły: %d</item>
         <item quantity="one">Kōnsek %d</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">Śpiywek wyciepniyntych z Nŏjrŏdszych: %d.</item>
-        <item quantity="one">Śpiywek wyciepniyntych z Nŏjrŏdszych: %d.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d kōnskōw je przidanych do nŏjradszych.</item>
-        <item quantity="one">Śpiywka %d dodano do nŏjrŏdszych.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Z porad poradzisz wyciepać ino maksimum %d śpiywek. Pokŏż wyciepane śpiywki, ôbier niykere do danio nazŏd, a potym wybadej drugi rŏz.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Z porad poradzisz wyciepać ino maksimum %d śpiywka. Pokŏż wyciepane śpiywki, ôbier niykere do danio nazŏd, a potym wybadej drugi rŏz.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Z porad poradzisz wyciepać ino maksimum %d śpiywki. Pokŏż wyciepane śpiywki, ôbier niykere do danio nazŏd, a potym wybadej drugi rŏz.</item>
-        <item quantity="many">Z porad poradzisz wyciepać ino maksimum %d śpiywek. Pokŏż wyciepane śpiywki, ôbier niykere do danio nazŏd, a potym wybadej drugi rŏz.</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Tyknij knefel Załōncz radio, coby kŏżdy miesiōnc radować sie %d darmowymi śpiywkami.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Tyknij knefel Załōncz radio, coby kŏżdy miesiōnc radować sie %d śpiywkōm bez płatōw.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Tyknij knefel Załōncz radio, coby kŏżdy miesiōnc radować sie %d darmowymi śpiywkami.</item>
-        <item quantity="many">Tyknij knefel Załōncz radio, coby kŏżdy miesiōnc radować sie %d darmowymi śpiywkami.</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Niy idzie ôbrać wiyncyj co %d artystōw.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Niy idzie ôbrać wiyncyj co %d artysty.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Niy idzie ôbrać wiyncyj co %d artystōw.</item>
-        <item quantity="many">Niy idzie ôbrać wiyncyj co %d artystōw.</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Niy idzie ôbrać wiyncyj co %d zortōw.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Niy idzie ôbrać wiyncyj co %d zorty.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Niy idzie ôbrać wiyncyj co %d zortōw.</item>
-        <item quantity="many">Niy idzie ôbrać wiyncyj co %d zortōw.</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Niy idzie ôbrać wiyncyj co %d śpiywek.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Niy idzie ôbrać wiyncyj co %d śpiywki.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Niy idzie ôbrać wiyncyj co %d śpiywek.</item>
-        <item quantity="many">Niy idzie ôbrać wiyncyj co %d śpiywek.</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d sekund</item>
@@ -76,25 +24,41 @@
         <item quantity="few">%d sekundy</item>
         <item quantity="many">%d sekund</item>
     </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Niy pokazuj bez %d dni</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy pokazuj bez %d dziyń</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy pokazuj bez %d dni</item>
+        <item quantity="many">Niy pokazuj bez %d dni</item>
+    </plurals>
     <plurals name="drm_can_use_n_times">
         <item quantity="other">Idzie użyć %1$s %2$d razy.</item>
         <item quantity="one">Idzie użyć %s rŏz.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Niy idzie kupić %d śpiywek bez użycie biletōw premium skuli praw autorskich. Idzie ône kupić ôsobno.</item>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d przedŏwniōnych śpiywkōw ôstanie wyciepniyntych. Możesz badnōńć historyjŏ zebiyraniŏ w menu Info ô usudze Melon > Historyjŏ sprŏwōnkōw.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Niy idzie kupić %d śpiywki bez użycie biletōw premium skuli praw autorskich. Idzie ône kupić ôsobno.</item>
+        <item quantity="one">%d przedŏwniōnŏ śpiywka ôstanie wyciepniyntŏ. Możesz badnōńć na historyjŏ zebiyraniŏ w menu Info ô usudze Melon > Historyjŏ sprŏwōnkōw.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">Niy idzie kupić %d śpiywek bez użycie biletōw premium skuli praw autorskich. Idzie ône kupić ôsobno.</item>
-        <item quantity="many">Niy idzie kupić %d śpiywek bez użycie biletōw premium skuli praw autorskich. Idzie ône kupić ôsobno.</item>
+        <item quantity="few">%d przedŏwniōne śpiywki ôstanōm wyciepniynte. Możesz badnōńć na historyjŏ zebiyraniŏ w menu Info ô usudze Melon > Historyjŏ sprŏwōnkōw.</item>
+        <item quantity="many">%d przedŏwniōnych śpiywkōw ôstanie wyciepniyntych. Możesz badnōńć na historyjŏ zebiyraniŏ w menu Info ô usudze Melon > Historyjŏ sprŏwōnkōw.</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d śpiywek bydzie użytych z Twoich dostympnych śpiywek.</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Niy idzie wydugszyć czasu przetwŏrzaniŏ formatu DCF dlŏ %d śpiywek. Możesz sprōbować jeszcze rŏz abo wyciepnōńć pliki z listy niżyj, podwiela zaś je zebieresz.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d śpiywka bydzie użyto z Twoich dostympnych śpiywek.</item>
+        <item quantity="one">Niy idzie wydugszyć czasu przetwŏrzaniŏ formatu DCF dlŏ %d śpiywki. Możesz sprōbować jeszcze rŏz abo wyciepnōńć pliki z listy niżyj, podwiela zaś je zebieresz.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">%d śpiywki bydōm użyte z Twoich dostympnych śpiywek.</item>
-        <item quantity="many">%d śpiywek bydzie użytych z Twoich dostympnych śpiywek.</item>
+        <item quantity="few">Niy idzie wydugszyć czasu przetwŏrzaniŏ formatu DCF dlŏ %d śpiywek. Możesz sprōbować jeszcze rŏz abo wyciepnōńć pliki z listy niżyj, podwiela zaś je zebieresz.</item>
+        <item quantity="many">Niy idzie wydugszyć czasu przetwŏrzaniŏ formatu DCF dlŏ %d śpiywek. Możesz sprōbować jeszcze rŏz abo wyciepnōńć pliki z listy niżyj, podwiela zaś je zebieresz.</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Idzie zaimportować maksymalnie %d elymyntōw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Idzie zaimportować maksymalnie %d elymynt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Idzie zaimportować maksymalnie %d elymynta.</item>
+        <item quantity="many">Idzie zaimportować maksymalnie %d elymyntōw.</item>
     </plurals>
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Czekanie na zebiyranie śpiywkōw: %d…</item>
@@ -111,54 +75,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Wyciepać wszyjske śpiywki tych kōmpozytorōw?</item>
         <item quantity="one">Wyciepać wszyjske śpiywki tego kōmpozytora?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Wyciepać ôbrane śpiywki?</item>
-        <item quantity="one">Wyciepać ôbrano śpiywka?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Bydzie kupionych %d śpiywek. Eli niy mosz za tele wiela dostympnych śpiywek, kupiynie tych śpiywek bydzie niymożebne.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Bydzie kupiono %d śpiywka. Eli niy mosz za tele wiela dostympnych śpiywek, kupiynie tych śpiywek bydzie niymożebne.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Bydōm kupione %d śpiywki. Eli niy mosz za tele wiela dostympnych śpiywek, kupiynie tych śpiywek bydzie niymożebne.</item>
-        <item quantity="many">Bydzie kupionych %d śpiywek. Eli niy mosz za tele wiela dostympnych śpiywek, kupiynie tych śpiywek bydzie niymożebne.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Kupić ôbrane śpiywki?</item>
-        <item quantity="one">Kupić ôbrano śpiywka?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Ta śpiywki ôstały już kupiōne. Kupiōne śpiywki możesz zebrać kej ino chcesz.</item>
-        <item quantity="one">Ta śpiywka ôstała już kupiōnŏ. Kupiōne śpiywki możesz zebrać kej ino chcesz.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Śpiywki już kupiōne</item>
-        <item quantity="one">Śpiywka już kupiōno</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Poradzisz przidać ino %d podanych list puszczanio za nojrŏdsze. Wyciep niykere podane listy puszczanio z karty Nojrŏdsze.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Poradzisz przidać ino %d podano lista puszczanio za nojrŏdszo. Wyciep niykere podane listy puszczanio z karty Nojrŏdsze.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Poradzisz przidać ino %d podane listy puszczanio za nojrŏdsze. Wyciep niykere podane listy puszczanio z karty Nojrŏdsze.</item>
-        <item quantity="many">Poradzisz przidać ino %d podanych list puszczanio za nojrŏdsze. Wyciep niykere podane listy puszczanio z karty Nojrŏdsze.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Poradzisz przidać ino %d śpiywek strumiyniowoch za Nojrŏdsze śpiywki. Wyciep niykere śpiywki strumiyniowe z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Poradzisz przidać ino %d śpiywka strumiyniowo za Nojrŏdszo śpiywka. Wyciep niykere śpiywki strumiyniowe z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Poradzisz przidać ino %d śpiywki strumiyniowe za Nojrŏdsze śpiywki. Wyciep niykere śpiywki strumiyniowe z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
-        <item quantity="many">Poradzisz przidać ino %d śpiywek strumiyniowoch za Nojrŏdsze śpiywki. Wyciep niykere śpiywki strumiyniowe z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Poradzisz przidać ino %d śpiywek za Nojrŏdsze śpiywki. Wyciep niykere śpiywki z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Poradzisz przidać ino %d śpiywka za Nojrŏdszo śpiywka. Wyciep niykere śpiywki z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Poradzisz przidać ino %d śpiywki za Nojrŏdsze śpiywki. Wyciep niykere śpiywki z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
-        <item quantity="many">Poradzisz przidać ino %d śpiywek za Nojrŏdsze śpiywki. Wyciep niykere śpiywki z Nojrŏdszych śpiywek, a potym wybadej drugi rŏz.</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">Katalogōw: %d</item>
@@ -180,25 +96,73 @@
         <item quantity="few">Bydōm tyż wyciepane %d skryte katalogi.</item>
         <item quantity="many">Bydzie tyż wyciepanych %d skrytych katalogōw.</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">Dano nazŏd %d śpiywek.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Dano nazŏd %d śpiywka.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Dano nazŏd %d śpiywki.</item>
-        <item quantity="many">Dano nazŏd %d śpiywek.</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Wyciepać %d dingsōw?</item>
         <item quantity="one">Wyciepać 1 dings?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Idzie podać co nojwyżyj %d znakōw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Idzie podać co nojwyżyj %d znak.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Idzie podać co nojwyżyj %d znaki.</item>
+        <item quantity="many">Idzie podać co nojwyżyj %d znakōw.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Idzie dodać maksymalnie %d albōmōw. Dodej mynij albōmōw abo wyciep pŏra albōmōw z Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Idzie dodać maksymalnie %d albōm. Dodej mynij albōmōw abo wyciep pŏra albōmōw z Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Idzie dodać maksymalnie %d albōmy. Dodej mynij albōmōw abo wyciep pŏra albōmōw z Nojrŏdszych.</item>
+        <item quantity="many">Idzie dodać maksymalnie %d albōmōw. Dodej mynij albōmōw abo wyciep pŏra albōmōw z Nojrŏdszych.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Idzie dodać maksymalnie %d artystōw. Dodej mynij artystōw abo wyciep pŏru artystōw z Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Idzie dodać maksymalnie %d artysty. Dodej mynij artystōw abo wyciep pŏru artystōw z Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Idzie dodać maksymalnie %d artystōw. Dodej mynij artystōw abo wyciep pŏru artystōw z Nojrŏdszych.</item>
+        <item quantity="many">Idzie dodać maksymalnie %d artystōw. Dodej mynij artystōw abo wyciep pŏru artystōw z Nojrŏdszych.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Możesz dodać ino co nojwyżyj %d list puszczaniŏ. Wyciep niykere podobne listy puszczaniŏ z karty Nojrŏdsze.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Możesz dodać ino co nojwyżyj %d lista puszczaniŏ. Wyciep niykere podobne listy puszczaniŏ z karty Nojrŏdsze.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Możesz dodać ino co nojwyżyj %d listy puszczaniŏ. Wyciep niykere podobne listy puszczaniŏ z karty Nojrŏdsze.</item>
+        <item quantity="many">Możesz dodać ino co nojwyżyj %d list puszczaniŏ. Wyciep niykere podobne listy puszczaniŏ z karty Nojrŏdsze.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Idzie dodać maksymalnie %d śpiywek streamingowych. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Idzie dodać maksymalnie %d śpiywka streamingowŏ. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Idzie dodać maksymalnie %d śpiywki streamingowe. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+        <item quantity="many">Idzie dodać maksymalnie %d śpiywek streamingowych. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Idzie dodać maksymalnie %d śpiywek. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Idzie dodać maksymalnie %d śpiywka. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Idzie dodać maksymalnie %d śpiywki. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+        <item quantity="many">Idzie dodać maksymalnie %d śpiywek. Dodej mynij śpiywek abo wyciep pŏra śpiywek z Nojrŏdszych.</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Wyeksportowanych %d list puszczaniŏ.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Wyeksportowanŏ %d lista puszczaniŏ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyeksportowane %d listy puszczaniŏ.</item>
+        <item quantity="many">Wyeksportowanych %d list puszczaniŏ.</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Zaimportowanych %d list puszczaniŏ.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Zaimportowanŏ %d lista puszczaniŏ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Zaimportowane %d listy puszczaniŏ.</item>
+        <item quantity="many">Zaimportowanych %d list puszczaniŏ.</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Niy idzie ôbrać wiyncyj co %d list puszczanio.</item>
@@ -216,12 +180,48 @@
         <item quantity="other">Tytuły: %d</item>
         <item quantity="one">1 kōnsek</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Do Nojrŏdszych dodanych ôstało ino %d śpiywek. Ôstałe śpiywki już sōm w Nojrŏdszych.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Do Nojrŏdszych dodanŏ ôstała ino %d śpiywka. Ôstałe śpiywki już sōm w Nojrŏdszych.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Do Nojrŏdszych dodane ôstały ino %d śpiywki. Ôstałe śpiywki już sōm w Nojrŏdszych.</item>
+        <item quantity="many">Do Nojrŏdszych dodanych ôstało ino %d śpiywek. Ôstałe śpiywki już sōm w Nojrŏdszych.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d kōnskōw je przidanych do nŏjradszych.</item>
+        <item quantity="one">1 kōnsek przidany do nŏjrŏdszych.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">Kōnski przidane do listy puszczaniŏ: %d.</item>
+        <item quantity="one">1 kōnsek przidany na lista puszczaniŏ.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">Śpiywek, kere ôstały dodane do raji: %d.</item>
         <item quantity="one">%d śpiywka dodano do raji.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">Wyciepać śpiywek: %d?</item>
-        <item quantity="one">Wyciepać 1 śpiywka?</item>
+        <item quantity="other">Wyciepnōńć %d śpiywkōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d śpiywka?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d śpiywki?</item>
+        <item quantity="many">Wyciepnōńć %d śpiywkōw?</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Czŏs spaniŏ: %d godziny</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Czŏs spaniŏ: %d godzina</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Czŏs spaniŏ: %d godziny</item>
+        <item quantity="many">Czŏs spaniŏ: %d godzin</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Czŏs spaniŏ: %d minuty</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Czŏs spaniŏ: %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Czŏs spaniŏ: %d minuty</item>
+        <item quantity="many">Czŏs spaniŏ: %d minut</item>
     </plurals>
 </resources>

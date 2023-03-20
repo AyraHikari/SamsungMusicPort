@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/stream/DocumentReader$Start;
 .super Lorg/simpleframework/xml/stream/EventElement;
-.source "SourceFile"
+.source "DocumentReader.java"
 
 
 # annotations
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "Start"
 .end annotation
 
@@ -22,10 +22,10 @@
 .method public constructor <init>(Lorg/w3c/dom/Node;)V
     .locals 0
 
-    .line 393
+    .line 1
     invoke-direct {p0}, Lorg/simpleframework/xml/stream/EventElement;-><init>()V
 
-    .line 394
+    .line 2
     check-cast p1, Lorg/w3c/dom/Element;
 
     iput-object p1, p0, Lorg/simpleframework/xml/stream/DocumentReader$Start;->element:Lorg/w3c/dom/Element;
@@ -38,7 +38,6 @@
 .method public getAttributes()Lorg/w3c/dom/NamedNodeMap;
     .locals 1
 
-    .line 440
     iget-object v0, p0, Lorg/simpleframework/xml/stream/DocumentReader$Start;->element:Lorg/w3c/dom/Element;
 
     invoke-interface {v0}, Lorg/w3c/dom/Element;->getAttributes()Lorg/w3c/dom/NamedNodeMap;
@@ -51,7 +50,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 405
     iget-object v0, p0, Lorg/simpleframework/xml/stream/DocumentReader$Start;->element:Lorg/w3c/dom/Element;
 
     invoke-interface {v0}, Lorg/w3c/dom/Element;->getLocalName()Ljava/lang/String;
@@ -64,7 +62,6 @@
 .method public getPrefix()Ljava/lang/String;
     .locals 1
 
-    .line 417
     iget-object v0, p0, Lorg/simpleframework/xml/stream/DocumentReader$Start;->element:Lorg/w3c/dom/Element;
 
     invoke-interface {v0}, Lorg/w3c/dom/Element;->getPrefix()Ljava/lang/String;
@@ -77,7 +74,6 @@
 .method public getReference()Ljava/lang/String;
     .locals 1
 
-    .line 429
     iget-object v0, p0, Lorg/simpleframework/xml/stream/DocumentReader$Start;->element:Lorg/w3c/dom/Element;
 
     invoke-interface {v0}, Lorg/w3c/dom/Element;->getNamespaceURI()Ljava/lang/String;
@@ -90,7 +86,6 @@
 .method public getSource()Ljava/lang/Object;
     .locals 1
 
-    .line 451
     iget-object v0, p0, Lorg/simpleframework/xml/stream/DocumentReader$Start;->element:Lorg/w3c/dom/Element;
 
     return-object v0

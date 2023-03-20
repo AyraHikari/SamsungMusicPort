@@ -10,63 +10,11 @@
     </plurals>
     <plurals name="NNNartist_track">
         <item quantity="other">Тректер</item>
-        <item quantity="one">Трэк</item>
-    </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d трек Сүйүктүүлөргө кошулду. Эчак Сүйүктүүлөрдө бар тректер кошулган жок.</item>
-        <item quantity="one">%d Сүйүктүүлөргө кошулду. Байкоо эчак Сүйүктүүлөрдө кошулган эмес.</item>
+        <item quantity="one">Трек</item>
     </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d трек</item>
         <item quantity="one">%d трек</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d трек Сүйүктүүлөрдөн алып салынды.</item>
-        <item quantity="one">%d байкоо Сүйүктүүлөрдөн өчүрүлдү.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d ыр сүйүктүүлөргө кошулду</item>
-        <item quantity="one">%d ыр Cүйүктүүлөргө кошулду.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Сиз сунуштоолордон %d чейинки тректерди өчүрө аласыз. Өчүрүлгөн тректерди көрүп, калыбына келтирүү үчүн айрымдарын тандап, андан соң дагы аракеттениңиз.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Сиз сунуштоолордон %d чейинки тректерди өчүрө аласыз. Өчүрүлгөн тректерди көрүп, калыбына келтирүү үчүн айрымдарын тандап, андан соң дагы аракеттениңиз.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Ойнотуу радиосунун баскычын басып, %d бекер тректи ар ай сайын алыңыз.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ойнотуу радиосунун баскычын басып, %d бекер тректи ар ай сайын алыңыз.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">%d көп аткаруучуну тандоого болбойт.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d көп аткаруучуну тандоого болбойт.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">%d көп жанрды тандоого болбойт.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d көп жанрды тандоого болбойт.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">%d көп тректи тандоого болбойт.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d көп тректи тандоого болбойт.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d секунд</item>
@@ -76,22 +24,38 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">Сиз %1$d жолу %2$s колдоно аласыз</item>
-        <item quantity="one">Сиз 1 жолу %s колдоно аласыз</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Автордук укук көйгөйүнөн улам, %d трек премиум билеттери менен сатып алынбайт. Сиз аларды жеке түрдө сатып ала аласыз.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">%d күн бою көрсөтүлбөсүн</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Автордук укук көйгөйүнөн улам, %d трек премиум билеттери менен сатып алынбайт. Сиз аларды жеке түрдө сатып ала аласыз.</item>
+        <item quantity="one">%d күн бою көрсөтүлбөсүн</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d трек жеткиликтүү тректериңизден колдонулат.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Сиз %1$d жолу %2$s колдоно аласыз</item>
+        <item quantity="one">Сиз 1 жолу %s колдоно аласыз</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d мөөнөтү бүткөн трек өчүрүлөт. Melon маалыматы > Сатып алуу тарыхында жүктөө тарыхыңызды текшере аласыз.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d трек жеткиликтүү тректериңизден колдонулат.</item>
+        <item quantity="one">%d мөөнөтү бүткөн трек өчүрүлөт. Melon маалыматы > Сатып алуу тарыхында жүктөө тарыхыңызды текшере аласыз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">%d тректин DCF мөөнөтү узартылбай койду. Кайталап көрүңүз же аларды кайра жүктөп алуудан мурун тизмеден файлдарды өчүрүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d тректин DCF мөөнөтү узартылбай койду. Кайталап көрүңүз же аларды кайра жүктөп алуудан мурун тизмеден файлдарды өчүрүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">%d көп нерсени импорттосо болбойт.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d көп нерсени импорттосо болбойт.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -111,54 +75,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Бул композиторлордун бардык тректери өчүрүлсүнбү?</item>
         <item quantity="one">Бул композитордун бардык тректери өчүрүлсүнбү?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Тандалган тректер өчүрүлсүнбү?</item>
-        <item quantity="one">Тандалган трек өчүрүлсүнбү?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d трек сатып алынат. Эгер сизде жеткиликтүү тректер болбосо, анда бул тректер сатып алынбайт.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d трек сатып алынат. Эгер сизде жеткиликтүү тректер болбосо, анда бул тректер сатып алынбайт.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Тандалган тректер сатып алынсынбы?</item>
-        <item quantity="one">Тандалган тректи сатып аласызбы?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Бул ырларды эчак сатып алгансыз. Сиз каалаган убакта сатып алынган ырларды кайра жүктөй аласыз.</item>
-        <item quantity="one">Бул ырды эчак сатып алгансыз. Сиз каалаган убакта сатып алынган ырларды кайра жүктөй аласыз.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Тректер эчак сатып алынган</item>
-        <item quantity="one">Трек эчак сатып алынды</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Сиз %d сүйүктүү катары камсыз кылган ойнотуу тизмектерин гана кошо аласыз. Айрым камсыз кылынган ойнотуу тизмектерин Сүйүктүүлөр тизмесинен өчүрүңүз.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Сиз %d сүйүктүү катары камсыз кылган ойнотуу тизмектерин гана кошо аласыз. Айрым камсыз кылынган ойнотуу тизмектерин Сүйүктүүлөр тизмесинен өчүрүңүз.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Сиз Сүйүктүү тректер катары %d агым жүргүзүлгөн тректи кошо аласыз. Кээ бир агым жүргүзүлгөн тректерди Сүйүктүү тректерден өчүрүп, дагы аракеттениңиз.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Сиз Сүйүктүү трек катары %d агым жүргүзүлгөн тректи кошо аласыз. Кээ бир агым жүргүзүлгөн тректерди Сүйүктүү тректерден өчүрүп, дагы аракеттениңиз.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Сиз Сүйүктүү тректер катары %d тректи кошо аласыз. Кээ бир тректерди Сүйүктүү тректерден өчүрүп, дагы аракеттениңиз.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Сиз Сүйүктүү трек катары %d тректи кошо аласыз. Кээ бир тректерди Сүйүктүү тректерден өчүрүп, дагы аракеттениңиз.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d папка</item>
@@ -180,30 +96,78 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d трек калыбына келтирилди.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d трек калыбына келтирилди.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">%d нерселерди өчүрүүбү?</item>
         <item quantity="one">1 нерсе өчүрүлсүнбү?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">%d ашуун белги киргизүүгө болбойт.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ашуун белги киргизүүгө болбойт.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">%d ашуун альбом кошууга болбойт. Азыраак альбом кошуңуз же Сүйүктүүлөрдөн айрымдарын өчүрүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ашуун альбом кошууга болбойт. Азыраак альбом кошуңуз же Сүйүктүүлөрдөн айрымдарын өчүрүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">%d ашуун аткаруучу кошууга болбойт. Азыраак аткаруучу кошуңуз же Сүйүктүүлөрдөн айрымдарын өчүрүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ашуун аткаруучу кошууга болбойт. Азыраак аткаруучу кошуңуз же Сүйүктүүлөрдөн айрымдарын өчүрүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">%d чейин ойнотуу тизмесин кошо аласыз. Айрым ойнотуу тизмелерди Сүйүктүүлөр кыстырмасынан өчүрүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d чейин ойнотуу тизмесин кошо аласыз. Айрым ойнотуу тизмелерди Сүйүктүүлөр кыстырмасынан өчүрүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">%d ашуун ойнотулчу трек кошууга болбойт. Азыраак трек кошуңуз же Сүйүктүү тректердин айрымдарын өчүрүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ашуун ойнотулчу трек кошууга болбойт. Азыраак трек кошуңуз же Сүйүктүү тректердин айрымдарын өчүрүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">%d ашуун трек кошууга болбойт. Азыраак трек кошуңуз же Сүйүктүү тректердин айрымдарын өчүрүңүз.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ашуун трек кошууга болбойт. Азыраак трек кошуңуз же Сүйүктүү тректердин айрымдарын өчүрүңүз.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">%d ойнотуу тизмеги экспорттолду.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d ойнотуу тизмеги экспорттолду.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">%d ойнотуу тизмеги импорттолду.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d ойнотуу тизмеги импорттолду.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">%d көп ойнотуу тизмек тандалбайт.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d ойнотуу тизмесинен көптү тандай албайсыз.</item>
+        <item quantity="one">%d көп ойнотуу тизмек тандалбайт.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d трек</item>
         <item quantity="one">1 нук</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">%d трек гана Сүйүктүүлөргө кошулду. Башка файлдар мурун эле Сүйүктүүлөрдө сакталган.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d трек гана Сүйүктүүлөргө кошулду. Башка файлдар мурун эле Сүйүктүүлөрдө сакталган.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d ыр сүйүктүүлөргө кошулду</item>
+        <item quantity="one">1 ыр сүйүктүүлөргө кошулду</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d нуктар ойномо тизмесине кошулду</item>
+        <item quantity="one">Ойномо тизмекке 1 нук кошулду</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">Кезекке %d трек кошулду.</item>
         <item quantity="one">%d ыр кезекке кошулду.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">%d тректери өчүрүлсүнбү?</item>
-        <item quantity="one">1 трек өчүрүлсүнбү?</item>
+        <item quantity="other">%d трек өчүрүлсүнбү?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d трек өчүрүлсүнбү?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Уйку убактысы: %d саат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Уйку убактысы: %d саат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Уйку убактысы: %d мүнөт</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Уйку убактысы: %d мүнөт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

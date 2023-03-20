@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/DlnaDeviceSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "DlnaDeviceSdlCompat.java"
 
 
 # static fields
@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

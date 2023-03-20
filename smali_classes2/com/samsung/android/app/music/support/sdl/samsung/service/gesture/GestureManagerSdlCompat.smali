@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "GestureManagerSdlCompat.java"
 
 
 # annotations
@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 0
 
     return-void
@@ -45,73 +45,68 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 30
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 24
+    .line 2
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsConnected:Z
 
-    .line 26
+    .line 3
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mNeedToRegister:Z
 
-    .line 28
+    .line 4
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsSupportLandscape:Z
 
-    .line 82
+    .line 5
     new-instance v0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$2;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$2;-><init>(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;)V
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureListener:Lcom/samsung/android/service/gesture/GestureListener;
 
-    .line 31
+    .line 6
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mContext:Landroid/content/Context;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;)Lcom/samsung/android/service/gesture/GestureManager;
+.method public static synthetic access$000(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;)Lcom/samsung/android/service/gesture/GestureManager;
     .locals 0
 
-    .line 10
     iget-object p0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureManager:Lcom/samsung/android/service/gesture/GestureManager;
 
     return-object p0
 .end method
 
-.method static synthetic access$102(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;Z)Z
+.method public static synthetic access$102(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;Z)Z
     .locals 0
 
-    .line 10
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsConnected:Z
 
     return p1
 .end method
 
-.method static synthetic access$202(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;Z)Z
+.method public static synthetic access$202(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;Z)Z
     .locals 0
 
-    .line 10
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mNeedToRegister:Z
 
     return p1
 .end method
 
-.method static synthetic access$300(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;)V
+.method public static synthetic access$300(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;)V
     .locals 0
 
-    .line 10
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->registerGestureListener()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;)Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$OnGestureEventChangedListener;
+.method public static synthetic access$400(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;)Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$OnGestureEventChangedListener;
     .locals 0
 
-    .line 10
     iget-object p0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mOnGestureEventChangedListener:Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$OnGestureEventChangedListener;
 
     return-object p0
@@ -120,19 +115,19 @@
 .method private registerGestureListener()V
     .locals 5
 
-    .line 71
+    .line 9
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureManager:Lcom/samsung/android/service/gesture/GestureManager;
 
     iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureListener:Lcom/samsung/android/service/gesture/GestureListener;
 
-    const-string v2, "ir_provider"
+    iget-boolean v2, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsSupportLandscape:Z
 
-    const-string v3, "air_motion_turn"
+    const-string v3, "ir_provider"
 
-    iget-boolean v4, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsSupportLandscape:Z
+    const-string v4, "air_motion_turn"
 
-    .line 72
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/samsung/android/service/gesture/GestureManager;->registerListener(Lcom/samsung/android/service/gesture/GestureListener;Ljava/lang/String;Ljava/lang/String;Z)V
+    .line 10
+    invoke-virtual {v0, v1, v3, v4, v2}, Lcom/samsung/android/service/gesture/GestureManager;->registerListener(Lcom/samsung/android/service/gesture/GestureListener;Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-void
 .end method
@@ -142,7 +137,6 @@
 .method public registerGestureEventChangedListener(Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$OnGestureEventChangedListener;)V
     .locals 0
 
-    .line 35
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mOnGestureEventChangedListener:Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat$OnGestureEventChangedListener;
 
     return-void
@@ -151,15 +145,15 @@
 .method public registerGestureListener(Z)V
     .locals 2
 
-    .line 39
+    .line 1
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsSupportLandscape:Z
 
-    .line 40
+    .line 2
     iget-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureManager:Lcom/samsung/android/service/gesture/GestureManager;
 
     if-nez p1, :cond_0
 
-    .line 41
+    .line 3
     new-instance p1, Lcom/samsung/android/service/gesture/GestureManager;
 
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mContext:Landroid/content/Context;
@@ -172,7 +166,7 @@
 
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureManager:Lcom/samsung/android/service/gesture/GestureManager;
 
-    .line 61
+    .line 4
     iget-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsConnected:Z
 
     if-eqz p1, :cond_1
@@ -181,23 +175,23 @@
 
     if-eqz p1, :cond_1
 
-    .line 62
+    .line 5
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->registerGestureListener()V
 
     const/4 p1, 0x0
 
-    .line 63
+    .line 6
     iput-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mNeedToRegister:Z
 
     goto :goto_0
 
-    .line 65
+    .line 7
     :cond_0
     iget-boolean p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsConnected:Z
 
     if-eqz p1, :cond_1
 
-    .line 66
+    .line 8
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->registerGestureListener()V
 
     :cond_1
@@ -208,7 +202,7 @@
 .method public unregisterGestureListener()V
     .locals 3
 
-    .line 77
+    .line 1
     iget-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mIsConnected:Z
 
     if-eqz v0, :cond_0
@@ -217,9 +211,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 78
-    iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureManager:Lcom/samsung/android/service/gesture/GestureManager;
-
+    .line 2
     iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/service/gesture/GestureManagerSdlCompat;->mGestureListener:Lcom/samsung/android/service/gesture/GestureListener;
 
     const-string v2, "ir_provider"

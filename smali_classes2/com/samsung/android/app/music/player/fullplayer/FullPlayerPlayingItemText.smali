@@ -1,406 +1,179 @@
 .class public final Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FullPlayerPlayingItemText.kt"
 
 # interfaces
-.implements Landroid/arch/lifecycle/LifecycleObserver;
-.implements Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-.implements Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-.implements Lcom/samsung/android/app/musiclibrary/ui/player/StatePublisher$StateObserver;
+.implements Landroidx/lifecycle/r;
+.implements Lcom/samsung/android/app/musiclibrary/ui/player/c$a;
+.implements Lcom/samsung/android/app/music/player/vi/h;
 
 
 # instance fields
-.field private final a:Landroid/support/constraint/ConstraintLayout;
+.field public final a:Lkotlin/g;
 
-.field private final b:Landroid/view/View;
+.field public final b:Landroid/widget/TextView;
 
-.field private final c:Landroid/widget/TextView;
+.field public final c:Landroid/widget/TextView;
 
-.field private final d:Landroid/widget/TextView;
+.field public final d:Landroid/view/View;
 
-.field private final e:Landroid/view/View;
+.field public e:Z
 
-.field private f:Z
+.field public f:Z
 
-.field private g:Z
-
-.field private h:Z
-
-.field private final i:Landroid/content/Context;
+.field public g:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
-    .locals 1
+.method public constructor <init>(Lcom/samsung/android/app/musiclibrary/ui/i;Landroid/view/View;)V
+    .locals 4
 
-    const-string v0, "context"
+    const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "view"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 35
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->i:Landroid/content/Context;
+    .line 2
+    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$a;
 
-    const p1, 0x7f130284
+    invoke-direct {v0, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$a;-><init>(Landroidx/activity/ComponentActivity;)V
 
-    .line 37
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 3
+    new-instance v1, Landroidx/lifecycle/k0;
 
-    move-result-object p1
+    const-class v2, Lcom/samsung/android/app/music/viewmodel/d;
 
-    if-eqz p1, :cond_1
+    invoke-static {v2}, Lkotlin/jvm/internal/z;->a(Ljava/lang/Class;)Lkotlin/reflect/b;
 
-    check-cast p1, Landroid/support/constraint/ConstraintLayout;
+    move-result-object v2
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a:Landroid/support/constraint/ConstraintLayout;
+    new-instance v3, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$b;
 
-    const p1, 0x7f130298
+    invoke-direct {v3, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$b;-><init>(Landroidx/activity/ComponentActivity;)V
 
-    .line 38
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-direct {v1, v2, v3, v0}, Landroidx/lifecycle/k0;-><init>(Lkotlin/reflect/b;Lkotlin/jvm/functions/a;Lkotlin/jvm/functions/a;)V
 
-    move-result-object p1
+    .line 4
+    iput-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a:Lkotlin/g;
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b:Landroid/view/View;
+    const v0, 0x7f0b0581
 
-    const p1, 0x7f130070
-
-    .line 39
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    const-string v0, "view.findViewById<MusicTextView>(R.id.title)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p1, Landroid/widget/TextView;
-
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    const p1, 0x7f13019a
-
-    .line 40
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    const-string v0, "view.findViewById<MusicTextView>(R.id.artist)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p1, Landroid/widget/TextView;
-
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/widget/TextView;
-
-    const p1, 0x7f130297
-
-    .line 41
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    const-string p2, "view.findViewById(R.id.explicit)"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->e:Landroid/view/View;
-
-    const/4 p1, 0x1
-
-    .line 43
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->g:Z
-
-    .line 44
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->h:Z
-
-    .line 53
-    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 p2, 0x1b
-
-    if-lt p1, p2, :cond_0
-
-    .line 54
-    new-instance p1, Lcom/samsung/android/app/musiclibrary/ui/util/MarqueeAccessibilityDelegate;
-
-    invoke-direct {p1}, Lcom/samsung/android/app/musiclibrary/ui/util/MarqueeAccessibilityDelegate;-><init>()V
-
-    .line 55
-    iget-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    check-cast p1, Landroid/view/View$AccessibilityDelegate;
-
-    invoke-virtual {p2, p1}, Landroid/widget/TextView;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
-
-    .line 56
-    iget-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/widget/TextView;
-
-    invoke-virtual {p2, p1}, Landroid/widget/TextView;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
-
-    :cond_0
-    return-void
-
-    .line 37
-    :cond_1
-    new-instance p1, Lkotlin/TypeCastException;
-
-    const-string p2, "null cannot be cast to non-null type android.support.constraint.ConstraintLayout"
-
-    invoke-direct {p1, p2}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public static final synthetic a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;)Landroid/support/constraint/ConstraintLayout;
-    .locals 0
-
-    .line 35
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a:Landroid/support/constraint/ConstraintLayout;
-
-    return-object p0
-.end method
-
-.method private final a(Ljava/lang/String;Ljava/lang/String;Z)V
-    .locals 4
-
-    const/4 v0, 0x0
-
-    .line 61
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a(Z)V
-
-    .line 62
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a:Landroid/support/constraint/ConstraintLayout;
-
-    check-cast v0, Landroid/view/ViewGroup;
-
-    .line 164
-    :try_start_0
-    instance-of v1, v0, Landroid/support/constraint/ConstraintLayout;
-
-    if-eqz v1, :cond_0
-
-    .line 165
-    new-instance v1, Landroid/support/constraint/ConstraintSet;
-
-    invoke-direct {v1}, Landroid/support/constraint/ConstraintSet;-><init>()V
-
-    .line 166
-    move-object v2, v0
-
-    check-cast v2, Landroid/support/constraint/ConstraintLayout;
-
-    invoke-virtual {v1, v2}, Landroid/support/constraint/ConstraintSet;->clone(Landroid/support/constraint/ConstraintLayout;)V
-
-    const v2, 0x7f130070
-
-    const/4 v3, -0x2
-
-    .line 63
-    invoke-virtual {v1, v2, v3}, Landroid/support/constraint/ConstraintSet;->constrainWidth(II)V
-
-    const v2, 0x7f13019a
-
-    .line 64
-    invoke-virtual {v1, v2, v3}, Landroid/support/constraint/ConstraintSet;->constrainWidth(II)V
-
-    .line 168
-    check-cast v0, Landroid/support/constraint/ConstraintLayout;
-
-    invoke-virtual {v1, v0}, Landroid/support/constraint/ConstraintSet;->applyTo(Landroid/support/constraint/ConstraintLayout;)V
-
-    goto :goto_0
-
-    .line 171
-    :cond_0
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/util/LogExtensionKt;->a()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const-string v1, "Ui"
-
-    .line 170
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Constraints not applied to view : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 5
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    check-cast v0, Landroid/widget/TextView;
 
-    goto :goto_0
+    iput-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b:Landroid/widget/TextView;
 
-    :catch_0
-    move-exception v0
+    const v1, 0x7f0b009c
 
-    .line 187
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/util/LogExtensionKt;->a()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const-string v1, "Ui"
-
-    .line 186
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Exceptional case with constraints function "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 66
-    :goto_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    check-cast p1, Ljava/lang/CharSequence;
-
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 67
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/widget/TextView;
-
-    check-cast p2, Ljava/lang/CharSequence;
-
-    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 68
-    iput-boolean p3, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->f:Z
-
-    .line 69
-    invoke-direct {p0, p3}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c(Z)V
-
-    .line 70
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b()V
-
-    return-void
-.end method
-
-.method public static final synthetic b(Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;)Landroid/widget/TextView;
-    .locals 0
-
-    .line 35
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    return-object p0
-.end method
-
-.method private final b()V
-    .locals 3
-
-    .line 83
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    check-cast v0, Landroid/view/View;
-
-    .line 202
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    .line 6
+    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 203
-    new-instance v2, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$setTextViewFixedWidth$$inlined$doOnPreDraw$1;
+    check-cast v1, Landroid/widget/TextView;
 
-    invoke-direct {v2, v0, v1, p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$setTextViewFixedWidth$$inlined$doOnPreDraw$1;-><init>(Landroid/view/View;Landroid/view/ViewTreeObserver;Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;)V
+    iput-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
 
-    check-cast v2, Landroid/view/ViewTreeObserver$OnPreDrawListener;
+    const v2, 0x7f0b0069
 
-    invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+    .line 7
+    invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/view/View;
+
+    const/4 p2, 0x1
+
+    .line 8
+    iput-boolean p2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->f:Z
+
+    .line 9
+    iput-boolean p2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->g:Z
+
+    .line 10
+    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x1b
+
+    if-lt p2, v2, :cond_0
+
+    .line 11
+    new-instance p2, Lcom/samsung/android/app/musiclibrary/ui/util/i;
+
+    invoke-direct {p2}, Lcom/samsung/android/app/musiclibrary/ui/util/i;-><init>()V
+
+    .line 12
+    invoke-virtual {v0, p2}, Landroid/widget/TextView;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
+
+    .line 13
+    invoke-virtual {v1, p2}, Landroid/widget/TextView;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
+
+    .line 14
+    :cond_0
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->g()Lcom/samsung/android/app/music/viewmodel/d;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/samsung/android/app/music/viewmodel/d;->X()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/l;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/fullplayer/l;-><init>(Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;)V
+
+    invoke-virtual {p2, p1, v0}, Landroidx/lifecycle/LiveData;->i(Landroidx/lifecycle/s;Landroidx/lifecycle/a0;)V
 
     return-void
 .end method
 
-.method public static final synthetic c(Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;)Landroid/widget/TextView;
+.method public static synthetic a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 35
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/widget/TextView;
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d(Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;Ljava/lang/Boolean;)V
 
-    return-object p0
-.end method
-
-.method private final c(Z)V
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    .line 75
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->e:Landroid/view/View;
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->getState()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x4
-
-    :goto_0
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    goto :goto_1
-
-    .line 77
-    :cond_1
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->e:Landroid/view/View;
-
-    const/16 v0, 0x8
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    :goto_1
     return-void
 .end method
 
-.method private final d(Z)V
-    .locals 4
+.method public static final d(Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;Ljava/lang/Boolean;)V
+    .locals 1
 
-    if-eqz p1, :cond_1
+    const-string v0, "this$0"
 
-    .line 139
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->getState()Z
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->i(Z)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final e()J
+    .locals 2
+
+    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->f:Z
+
+    if-eqz v0, :cond_0
 
     const-wide/16 v0, 0x190
 
@@ -409,357 +182,311 @@
     :cond_0
     const-wide/16 v0, 0x0
 
-    .line 140
     :goto_0
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    check-cast p1, Landroid/view/View;
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->getState()Z
-
-    move-result v2
-
-    sget-object v3, Lcom/samsung/android/app/musiclibrary/ui/info/InterpolatorSet;->b:Landroid/view/animation/Interpolator;
-
-    invoke-static {p1, v2, v0, v1, v3}, Lcom/samsung/android/app/music/util/UiUtils;->a(Landroid/view/View;ZJLandroid/view/animation/Interpolator;)V
-
-    .line 141
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/widget/TextView;
-
-    check-cast p1, Landroid/view/View;
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->getState()Z
-
-    move-result v2
-
-    sget-object v3, Lcom/samsung/android/app/musiclibrary/ui/info/InterpolatorSet;->b:Landroid/view/animation/Interpolator;
-
-    invoke-static {p1, v2, v0, v1, v3}, Lcom/samsung/android/app/music/util/UiUtils;->a(Landroid/view/View;ZJLandroid/view/animation/Interpolator;)V
-
-    .line 143
-    :cond_1
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b:Landroid/view/View;
-
-    if-eqz p1, :cond_3
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->getState()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, 0x4
-
-    :goto_1
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    :cond_3
-    return-void
+    return-wide v0
 .end method
 
-
-# virtual methods
-.method public final a()V
-    .locals 4
-
-    const-string v0, "FullPlayerPlayingItemText"
-
-    const-string v1, "MultiWindow onMultiWindowSizeChanged"
-
-    .line 147
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v0, 0x0
-
-    .line 148
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a(Z)V
-
-    .line 149
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a:Landroid/support/constraint/ConstraintLayout;
-
-    check-cast v0, Landroid/view/ViewGroup;
-
-    .line 215
-    :try_start_0
-    instance-of v1, v0, Landroid/support/constraint/ConstraintLayout;
-
-    if-eqz v1, :cond_0
-
-    .line 216
-    new-instance v1, Landroid/support/constraint/ConstraintSet;
-
-    invoke-direct {v1}, Landroid/support/constraint/ConstraintSet;-><init>()V
-
-    .line 217
-    move-object v2, v0
-
-    check-cast v2, Landroid/support/constraint/ConstraintLayout;
-
-    invoke-virtual {v1, v2}, Landroid/support/constraint/ConstraintSet;->clone(Landroid/support/constraint/ConstraintLayout;)V
-
-    const v2, 0x7f130070
-
-    const/4 v3, -0x2
-
-    .line 150
-    invoke-virtual {v1, v2, v3}, Landroid/support/constraint/ConstraintSet;->constrainWidth(II)V
-
-    const v2, 0x7f13019a
-
-    .line 151
-    invoke-virtual {v1, v2, v3}, Landroid/support/constraint/ConstraintSet;->constrainWidth(II)V
-
-    .line 219
-    check-cast v0, Landroid/support/constraint/ConstraintLayout;
-
-    invoke-virtual {v1, v0}, Landroid/support/constraint/ConstraintSet;->applyTo(Landroid/support/constraint/ConstraintLayout;)V
-
-    goto :goto_0
-
-    .line 222
-    :cond_0
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/util/LogExtensionKt;->a()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const-string v1, "Ui"
-
-    .line 221
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Constraints not applied to view : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    .line 238
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/util/LogExtensionKt;->a()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const-string v1, "Ui"
-
-    .line 237
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Exceptional case with constraints function "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 153
-    :goto_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    check-cast v0, Landroid/view/View;
-
-    .line 253
-    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object v1
-
-    .line 254
-    new-instance v2, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$onMultiWindowSizeChanged$$inlined$doOnPreDraw$1;
-
-    invoke-direct {v2, v0, v1, p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$onMultiWindowSizeChanged$$inlined$doOnPreDraw$1;-><init>(Landroid/view/View;Landroid/view/ViewTreeObserver;Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;)V
-
-    check-cast v2, Landroid/view/ViewTreeObserver$OnPreDrawListener;
-
-    invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
-
-    return-void
-.end method
-
-.method public a(Z)V
-    .locals 1
-
-    .line 95
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
-
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setSelected(Z)V
-
-    .line 96
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/widget/TextView;
-
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setSelected(Z)V
-
-    return-void
-.end method
-
-.method public final b(Z)V
+.method public f(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
     .locals 0
 
-    .line 133
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->g:Z
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/player/vi/h$a;->b(Lcom/samsung/android/app/music/player/vi/h;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
 
     return-void
 .end method
 
-.method public getState()Z
+.method public final g()Lcom/samsung/android/app/music/viewmodel/d;
     .locals 1
 
-    .line 44
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->h:Z
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a:Lkotlin/g;
 
-    return v0
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/samsung/android/app/music/viewmodel/d;
+
+    return-object v0
 .end method
 
-.method public onExtrasChanged(Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 1
+.method public final i(Z)V
+    .locals 0
 
-    const-string v0, "action"
+    .line 1
+    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->f:Z
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "data"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->s(Z)V
 
     return-void
 .end method
 
-.method public onMetadataChanged(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;)V
+.method public j(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/music/player/vi/h$a;->c(Lcom/samsung/android/app/music/player/vi/h;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
+
+    return-void
+.end method
+
+.method public l(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
     .locals 2
 
     const-string v0, "m"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 109
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;->getTitle()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->I()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;->getArtist()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->f()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;->isExplicit()Z
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->J()Z
 
     move-result p1
 
-    invoke-direct {p0, v0, v1, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a(Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-virtual {p0, v0, v1, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->p(Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-void
 .end method
 
-.method public onPlaybackStateChanged(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;)V
+.method public m(Z)V
     .locals 1
 
-    const-string v0, "s"
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b:Landroid/widget/TextView;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setSelected(Z)V
+
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
+
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setSelected(Z)V
 
     return-void
 .end method
 
-.method public onQueueChanged(Ljava/util/List;Landroid/os/Bundle;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Landroid/media/session/MediaSession$QueueItem;",
-            ">;",
-            "Landroid/os/Bundle;",
-            ")V"
-        }
-    .end annotation
+.method public final o(Z)V
+    .locals 7
+
+    .line 1
+    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->e:Z
+
+    if-eqz p1, :cond_1
+
+    .line 2
+    iget-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->f:Z
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x4
+
+    goto :goto_0
+
+    :cond_1
+    const/16 p1, 0x8
+
+    :goto_0
+    move v1, p1
+
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/view/View;
+
+    const-string p1, "adultView"
+
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-wide/16 v2, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v0 .. v6}, Lcom/samsung/android/app/musiclibrary/ktx/view/c;->v(Landroid/view/View;IJLandroid/view/animation/Interpolator;ILjava/lang/Object;)V
 
     return-void
 .end method
 
 .method public final onStartCalled()V
     .locals 1
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_START:Landroid/arch/lifecycle/Lifecycle$Event;
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_START:Landroidx/lifecycle/k$b;
     .end annotation
 
     const/4 v0, 0x1
 
-    .line 124
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a(Z)V
+    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->m(Z)V
 
     return-void
 .end method
 
 .method public final onStopCalled()V
     .locals 1
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_STOP:Landroid/arch/lifecycle/Lifecycle$Event;
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_STOP:Landroidx/lifecycle/k$b;
     .end annotation
 
     const/4 v0, 0x0
 
-    .line 129
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->a(Z)V
+    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->m(Z)V
 
     return-void
 .end method
 
-.method public setState(Z)V
-    .locals 0
+.method public final p(Ljava/lang/String;Ljava/lang/String;Z)V
+    .locals 2
 
-    .line 46
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->h:Z
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b:Landroid/widget/TextView;
 
-    .line 47
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b:Landroid/view/View;
+    const/4 v1, 0x0
 
     if-nez p1, :cond_0
 
-    return-void
+    move-object p1, v1
 
-    .line 48
+    goto :goto_0
+
     :cond_0
-    iget-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->g:Z
+    invoke-static {p1}, Lkotlin/text/p;->N0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d(Z)V
+    move-result-object p1
 
-    .line 49
-    iget-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->f:Z
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c(Z)V
+    move-result-object p1
+
+    :goto_0
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 2
+    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
+
+    if-nez p2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    invoke-static {p2}, Lkotlin/text/p;->N0(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    :goto_1
+    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 3
+    invoke-virtual {p0, p3}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->o(Z)V
+
+    return-void
+.end method
+
+.method public final s(Z)V
+    .locals 5
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x4
+
+    .line 1
+    :goto_0
+    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->g:Z
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->e()J
+
+    move-result-wide v0
+
+    goto :goto_1
+
+    :cond_1
+    const-wide/16 v0, 0x0
+
+    .line 2
+    :goto_1
+    iget-object v2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->b:Landroid/widget/TextView;
+
+    const-string v3, "titleView"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    new-instance v3, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$c;
+
+    invoke-direct {v3, v2, p1, v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$c;-><init>(Landroid/view/View;IJ)V
+
+    invoke-static {v2, v3}, Landroidx/core/view/w;->a(Landroid/view/View;Ljava/lang/Runnable;)Landroidx/core/view/w;
+
+    move-result-object v2
+
+    const-string v3, "OneShotPreDrawListener.add(this) { action(this) }"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/j;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    iget-object v2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->c:Landroid/widget/TextView;
+
+    const-string v4, "artistView"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 5
+    new-instance v4, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$d;
+
+    invoke-direct {v4, v2, p1, v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$d;-><init>(Landroid/view/View;IJ)V
+
+    invoke-static {v2, v4}, Landroidx/core/view/w;->a(Landroid/view/View;Ljava/lang/Runnable;)Landroidx/core/view/w;
+
+    move-result-object v2
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/j;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    iget-boolean v2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->e:Z
+
+    if-eqz v2, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    const/16 p1, 0x8
+
+    .line 7
+    :goto_2
+    iget-object v2, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText;->d:Landroid/view/View;
+
+    const-string v4, "adultView"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    new-instance v4, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$e;
+
+    invoke-direct {v4, v2, p1, v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayerPlayingItemText$e;-><init>(Landroid/view/View;IJ)V
+
+    invoke-static {v2, v4}, Landroidx/core/view/w;->a(Landroid/view/View;Ljava/lang/Runnable;)Landroidx/core/view/w;
+
+    move-result-object p1
+
+    invoke-static {p1, v3}, Lkotlin/jvm/internal/j;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

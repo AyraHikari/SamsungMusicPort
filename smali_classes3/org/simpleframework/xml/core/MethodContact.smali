@@ -1,27 +1,27 @@
 .class Lorg/simpleframework/xml/core/MethodContact;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "MethodContact.java"
 
 # interfaces
 .implements Lorg/simpleframework/xml/core/Contact;
 
 
 # instance fields
-.field private a:Ljava/lang/annotation/Annotation;
+.field private get:Lorg/simpleframework/xml/core/MethodPart;
 
-.field private b:Lorg/simpleframework/xml/core/MethodPart;
+.field private item:Ljava/lang/Class;
 
-.field private c:Lorg/simpleframework/xml/core/MethodPart;
+.field private items:[Ljava/lang/Class;
 
-.field private d:[Ljava/lang/Class;
+.field private label:Ljava/lang/annotation/Annotation;
 
-.field private e:Ljava/lang/Class;
+.field private name:Ljava/lang/String;
 
-.field private f:Ljava/lang/Class;
+.field private owner:Ljava/lang/Class;
 
-.field private g:Ljava/lang/Class;
+.field private set:Lorg/simpleframework/xml/core/MethodPart;
 
-.field private h:Ljava/lang/String;
+.field private type:Ljava/lang/Class;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     const/4 v0, 0x0
 
-    .line 85
+    .line 1
     invoke-direct {p0, p1, v0}, Lorg/simpleframework/xml/core/MethodContact;-><init>(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodPart;)V
 
     return-void
@@ -39,72 +39,92 @@
 .method public constructor <init>(Lorg/simpleframework/xml/core/MethodPart;Lorg/simpleframework/xml/core/MethodPart;)V
     .locals 1
 
-    .line 97
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 98
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->e()Ljava/lang/Class;
+    .line 3
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->e:Ljava/lang/Class;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->owner:Ljava/lang/Class;
 
-    .line 99
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->f()Ljava/lang/annotation/Annotation;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->a:Ljava/lang/annotation/Annotation;
-
-    .line 100
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->d()[Ljava/lang/Class;
+    .line 4
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getAnnotation()Ljava/lang/annotation/Annotation;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->d:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->label:Ljava/lang/annotation/Annotation;
 
-    .line 101
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->c()Ljava/lang/Class;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->f:Ljava/lang/Class;
-
-    .line 102
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->b()Ljava/lang/Class;
+    .line 5
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getDependents()[Ljava/lang/Class;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->g:Ljava/lang/Class;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->items:[Ljava/lang/Class;
 
-    .line 103
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->a()Ljava/lang/String;
+    .line 6
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getDependent()Ljava/lang/Class;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->h:Ljava/lang/String;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->item:Ljava/lang/Class;
 
-    .line 104
-    iput-object p2, p0, Lorg/simpleframework/xml/core/MethodContact;->b:Lorg/simpleframework/xml/core/MethodPart;
+    .line 7
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getType()Ljava/lang/Class;
 
-    .line 105
-    iput-object p1, p0, Lorg/simpleframework/xml/core/MethodContact;->c:Lorg/simpleframework/xml/core/MethodPart;
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->type:Ljava/lang/Class;
+
+    .line 8
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/MethodPart;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->name:Ljava/lang/String;
+
+    .line 9
+    iput-object p2, p0, Lorg/simpleframework/xml/core/MethodContact;->set:Lorg/simpleframework/xml/core/MethodPart;
+
+    .line 10
+    iput-object p1, p0, Lorg/simpleframework/xml/core/MethodContact;->get:Lorg/simpleframework/xml/core/MethodPart;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/annotation/Annotation;
+.method public get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->get:Lorg/simpleframework/xml/core/MethodPart;
+
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/MethodPart;->getMethod()Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getAnnotation()Ljava/lang/annotation/Annotation;
     .locals 1
 
-    .line 150
-    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->a:Ljava/lang/annotation/Annotation;
+    .line 1
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->label:Ljava/lang/annotation/Annotation;
 
     return-object v0
 .end method
 
-.method public a(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+.method public getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -116,15 +136,15 @@
         }
     .end annotation
 
-    .line 163
-    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->c:Lorg/simpleframework/xml/core/MethodPart;
+    .line 2
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->get:Lorg/simpleframework/xml/core/MethodPart;
 
-    invoke-interface {v0, p1}, Lorg/simpleframework/xml/core/MethodPart;->a(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+    invoke-interface {v0, p1}, Lorg/simpleframework/xml/core/MethodPart;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
     move-result-object v0
 
-    .line 165
-    iget-object v1, p0, Lorg/simpleframework/xml/core/MethodContact;->a:Ljava/lang/annotation/Annotation;
+    .line 3
+    iget-object v1, p0, Lorg/simpleframework/xml/core/MethodContact;->label:Ljava/lang/annotation/Annotation;
 
     invoke-interface {v1}, Ljava/lang/annotation/Annotation;->annotationType()Ljava/lang/Class;
 
@@ -132,23 +152,21 @@
 
     if-ne p1, v1, :cond_0
 
-    .line 166
-    iget-object p1, p0, Lorg/simpleframework/xml/core/MethodContact;->a:Ljava/lang/annotation/Annotation;
+    .line 4
+    iget-object p1, p0, Lorg/simpleframework/xml/core/MethodContact;->label:Ljava/lang/annotation/Annotation;
 
     return-object p1
 
     :cond_0
     if-nez v0, :cond_1
 
-    .line 168
-    iget-object v1, p0, Lorg/simpleframework/xml/core/MethodContact;->b:Lorg/simpleframework/xml/core/MethodPart;
+    .line 5
+    iget-object v1, p0, Lorg/simpleframework/xml/core/MethodContact;->set:Lorg/simpleframework/xml/core/MethodPart;
 
     if-eqz v1, :cond_1
 
-    .line 169
-    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->b:Lorg/simpleframework/xml/core/MethodPart;
-
-    invoke-interface {v0, p1}, Lorg/simpleframework/xml/core/MethodPart;->a(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+    .line 6
+    invoke-interface {v1, p1}, Lorg/simpleframework/xml/core/MethodPart;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
 
     move-result-object p1
 
@@ -158,50 +176,154 @@
     return-object v0
 .end method
 
-.method public b()Ljava/lang/Class;
+.method public getDeclaringClass()Ljava/lang/Class;
     .locals 1
 
-    .line 182
-    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->g:Ljava/lang/Class;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->owner:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public c()Lorg/simpleframework/xml/core/MethodPart;
+.method public getDependent()Ljava/lang/Class;
     .locals 1
 
-    .line 128
-    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->c:Lorg/simpleframework/xml/core/MethodPart;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->item:Ljava/lang/Class;
 
     return-object v0
 .end method
 
-.method public d()Lorg/simpleframework/xml/core/MethodPart;
+.method public getDependents()[Ljava/lang/Class;
     .locals 1
 
-    .line 139
-    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->b:Lorg/simpleframework/xml/core/MethodPart;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->items:[Ljava/lang/Class;
 
     return-object v0
+.end method
+
+.method public getName()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->name:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getRead()Lorg/simpleframework/xml/core/MethodPart;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->get:Lorg/simpleframework/xml/core/MethodPart;
+
+    return-object v0
+.end method
+
+.method public getType()Ljava/lang/Class;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->type:Ljava/lang/Class;
+
+    return-object v0
+.end method
+
+.method public getWrite()Lorg/simpleframework/xml/core/MethodPart;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->set:Lorg/simpleframework/xml/core/MethodPart;
+
+    return-object v0
+.end method
+
+.method public isReadOnly()Z
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->set:Lorg/simpleframework/xml/core/MethodPart;
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public set(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lorg/simpleframework/xml/core/MethodContact;->get:Lorg/simpleframework/xml/core/MethodPart;
+
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/MethodPart;->getMethod()Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/reflect/Method;->getDeclaringClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v1, p0, Lorg/simpleframework/xml/core/MethodContact;->set:Lorg/simpleframework/xml/core/MethodPart;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    if-eqz v1, :cond_0
+
+    .line 4
+    invoke-interface {v1}, Lorg/simpleframework/xml/core/MethodPart;->getMethod()Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    new-array v1, v3, [Ljava/lang/Object;
+
+    aput-object p2, v1, v2
+
+    invoke-virtual {v0, p1, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    .line 5
+    :cond_0
+    new-instance p1, Lorg/simpleframework/xml/core/MethodException;
+
+    const/4 p2, 0x2
+
+    new-array p2, p2, [Ljava/lang/Object;
+
+    iget-object v1, p0, Lorg/simpleframework/xml/core/MethodContact;->name:Ljava/lang/String;
+
+    aput-object v1, p2, v2
+
+    aput-object v0, p2, v3
+
+    const-string v0, "Property \'%s\' is read only in %s"
+
+    invoke-direct {p1, v0, p2}, Lorg/simpleframework/xml/core/MethodException;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    throw p1
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 4
+    .locals 3
 
-    const-string v0, "method \'%s\'"
+    const/4 v0, 0x1
 
-    const/4 v1, 0x1
+    new-array v0, v0, [Ljava/lang/Object;
 
-    .line 274
-    new-array v1, v1, [Ljava/lang/Object;
+    iget-object v1, p0, Lorg/simpleframework/xml/core/MethodContact;->name:Ljava/lang/String;
 
-    iget-object v2, p0, Lorg/simpleframework/xml/core/MethodContact;->h:Ljava/lang/String;
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    const-string v1, "method \'%s\'"
 
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 

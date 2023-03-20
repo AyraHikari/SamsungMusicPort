@@ -1,6 +1,6 @@
 .class public final Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailSubWindow;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlookCocktailSubWindow.java"
 
 
 # annotations
@@ -13,10 +13,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 36
     new-instance v0, Lcom/samsung/android/sdk/look/Slook;
 
     invoke-direct {v0}, Lcom/samsung/android/sdk/look/Slook;-><init>()V
@@ -29,16 +28,15 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static getSubWindow(Landroid/app/Activity;)Landroid/view/Window;
-    .locals 3
+    .locals 4
 
-    .line 95
+    .line 1
     sget-object v0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailSubWindow;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
     const/4 v1, 0x6
@@ -49,41 +47,39 @@
 
     if-eqz v0, :cond_3
 
-    .line 96
+    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-ge v0, v1, :cond_0
 
-    .line 97
-    new-instance v0, Ljava/lang/RuntimeException;
+    .line 3
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    .line 98
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 4
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "getSubWindow deprecated from N OS: "
+    const-string v3, "getSubWindow deprecated from N OS: "
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    .line 5
+    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 97
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    .line 98
-    invoke-virtual {v0}, Ljava/lang/RuntimeException;->printStackTrace()V
+    .line 6
+    invoke-virtual {v1}, Ljava/lang/RuntimeException;->printStackTrace()V
 
     :cond_0
     if-eqz p0, :cond_2
 
-    .line 103
+    .line 7
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;
 
     move-result-object v0
@@ -96,7 +92,7 @@
 
     return-object p0
 
-    .line 105
+    .line 8
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -106,7 +102,7 @@
 
     throw p0
 
-    .line 101
+    .line 9
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -123,9 +119,9 @@
 .end method
 
 .method public static setSubContentView(Landroid/app/Activity;I)V
-    .locals 3
+    .locals 4
 
-    .line 47
+    .line 1
     sget-object v0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailSubWindow;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
     const/4 v1, 0x6
@@ -136,41 +132,39 @@
 
     if-eqz v0, :cond_3
 
-    .line 48
+    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-ge v0, v1, :cond_0
 
-    .line 49
-    new-instance v0, Ljava/lang/RuntimeException;
+    .line 3
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    .line 50
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 4
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "setSubContentView deprecated from N OS: "
+    const-string v3, "setSubContentView deprecated from N OS: "
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    .line 5
+    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 49
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    .line 50
-    invoke-virtual {v0}, Ljava/lang/RuntimeException;->printStackTrace()V
+    .line 6
+    invoke-virtual {v1}, Ljava/lang/RuntimeException;->printStackTrace()V
 
     :cond_0
     if-eqz p0, :cond_2
 
-    .line 55
+    .line 7
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;
 
     move-result-object v0
@@ -181,7 +175,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 58
+    .line 8
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;
 
     move-result-object v0
@@ -190,7 +184,7 @@
 
     goto :goto_0
 
-    .line 56
+    .line 9
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -200,7 +194,7 @@
 
     throw p0
 
-    .line 53
+    .line 10
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -216,9 +210,9 @@
 .end method
 
 .method public static setSubContentView(Landroid/app/Activity;Landroid/view/View;)V
-    .locals 3
+    .locals 4
 
-    .line 71
+    .line 11
     sget-object v0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailSubWindow;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
     const/4 v1, 0x6
@@ -229,41 +223,39 @@
 
     if-eqz v0, :cond_3
 
-    .line 72
+    .line 12
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-ge v0, v1, :cond_0
 
-    .line 73
-    new-instance v0, Ljava/lang/RuntimeException;
+    .line 13
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    .line 74
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 14
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "setSubContentView deprecated from N OS: "
+    const-string v3, "setSubContentView deprecated from N OS: "
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    .line 15
+    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 73
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    .line 74
-    invoke-virtual {v0}, Ljava/lang/RuntimeException;->printStackTrace()V
+    .line 16
+    invoke-virtual {v1}, Ljava/lang/RuntimeException;->printStackTrace()V
 
     :cond_0
     if-eqz p0, :cond_2
 
-    .line 79
+    .line 17
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;
 
     move-result-object v0
@@ -274,7 +266,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 82
+    .line 18
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefActivity;
 
     move-result-object v0
@@ -283,7 +275,7 @@
 
     goto :goto_0
 
-    .line 80
+    .line 19
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -293,7 +285,7 @@
 
     throw p0
 
-    .line 77
+    .line 20
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

@@ -12,61 +12,9 @@
         <item quantity="other">Posnetki</item>
         <item quantity="one">Skladba</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">Število skladb, dodanih med priljubljene: %d. Skladbe, ki so že med priljubljenimi, niso bile dodane.</item>
-        <item quantity="one">%d skladba je bila dodana med priljubljene. Skladba, ki je že med priljubljenimi, ni bila dodana.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d skladb</item>
         <item quantity="one">%d skladb</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">Število skladb, odstranjenih iz priljubljenih: %d.</item>
-        <item quantity="one">%d skladba je bila odstranjena iz priljubljenih.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">Število skladb, dodanih med priljubljene: %d.</item>
-        <item quantity="one">%d skladba je bila dodana med priljubljene.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Iz priporočil lahko odstranite največ %d skladb. Oglejte si odstranjene skladbe, izberite nekaj skladb za obnovitev in poskusite znova.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Iz priporočil lahko odstranite največ %d skladbo. Oglejte si odstranjene skladbe, izberite nekaj skladb za obnovitev in poskusite znova.</item>
-        <item quantity="two">Iz priporočil lahko odstranite največ %d skladbi. Oglejte si odstranjene skladbe, izberite nekaj skladb za obnovitev in poskusite znova.</item>
-        <item quantity="few">Iz priporočil lahko odstranite največ %d skladbe. Oglejte si odstranjene skladbe, izberite nekaj skladb za obnovitev in poskusite znova.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Pritisnite gumb Predvajaj radio, da boste vsak mesec uživali v %d brezplačnih skladbah.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Pritisnite gumb Predvajaj radio, da boste vsak mesec uživali v %d brezplačni skladbi.</item>
-        <item quantity="two">Pritisnite gumb Predvajaj radio, da boste vsak mesec uživali v %d brezplačnih skladbah.</item>
-        <item quantity="few">Pritisnite gumb Predvajaj radio, da boste vsak mesec uživali v %d brezplačnih skladbah.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Izberete lahko največ %d izvajalcev.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Izberete lahko največ %d izvajalca.</item>
-        <item quantity="two">Izberete lahko največ %d izvajalca.</item>
-        <item quantity="few">Izberete lahko največ %d izvajalce.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Izberete lahko največ %d zvrsti.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Izberete lahko največ %d zvrst.</item>
-        <item quantity="two">Izberete lahko največ %d zvrsti.</item>
-        <item quantity="few">Izberete lahko največ %d zvrsti.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Izberete lahko največ %d skladb.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Izberete lahko največ %d skladbo.</item>
-        <item quantity="two">Izberete lahko največ %d skladbi.</item>
-        <item quantity="few">Izberete lahko največ %d skladbe.</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d sekund</item>
@@ -76,29 +24,63 @@
         <item quantity="few">%d sekunde</item>
         <item quantity="many">N/A</item>
     </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Ne pokaži %d dni</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ne pokaži %d dan</item>
+        <item quantity="two">Ne pokaži %d dneva</item>
+        <item quantity="few">Ne pokaži %d dni</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="drm_can_use_n_times">
         <item quantity="other">%1$s lahko uporabite %2$d-krat.</item>
         <item quantity="one">%s lahko uporabite enkrat.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">%d skladb ni mogoče kupiti z vstopnicami premium zaradi težave z avtorskimi pravicami. Kupite jih lahko posamično.</item>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Premik naprej za %d sekund</item>
+        <item quantity="one">Premik naprej za %d sekundo</item>
+        <item quantity="two">Premik naprej za %d sekundi</item>
+        <item quantity="few">Premik naprej za %d sekunde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Premik nazaj za %d sekund</item>
+        <item quantity="one">Premik nazaj za %d sekundo</item>
+        <item quantity="two">Premik nazaj za %d sekundi</item>
+        <item quantity="few">Premik nazaj za %d sekunde</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d poteklih skladb bo izbrisanih. Zgodovino prenosov lahko preverite v meniju Podatki o storitvi Melon > Zgodovina nakupov.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d skladbe ni mogoče kupiti z vstopnicami premium zaradi težave z avtorskimi pravicami. Kupite jih lahko posamično.</item>
-        <item quantity="two">%d skladb ni mogoče kupiti z vstopnicami premium zaradi težave z avtorskimi pravicami. Kupite jih lahko posamično.</item>
-        <item quantity="few">%d skladb ni mogoče kupiti z vstopnicami premium zaradi težave z avtorskimi pravicami. Kupite jih lahko posamično.</item>
+        <item quantity="one">%d potekla skladba bo izbrisana. Zgodovino prenosov lahko preverite v meniju Podatki o storitvi Melon > Zgodovina nakupov.</item>
+        <item quantity="two">%d potekli skladbi bosta izbrisani. Zgodovino prenosov lahko preverite v meniju Podatki o storitvi Melon > Zgodovina nakupov.</item>
+        <item quantity="few">%d potekle skladbe bodo izbrisane. Zgodovino prenosov lahko preverite v meniju Podatki o storitvi Melon > Zgodovina nakupov.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Uporabljenih bo %d skladb iz razpoložljivih skladb.</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Obdobja DCF za %d skladb ni bilo mogoče podaljšati. Poskusite lahko znova ali pa izbrišite datoteke s spodnjega seznama, preden jih znova prenesete.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Uporabljena bo %d skladba iz razpoložljivih skladb.</item>
-        <item quantity="two">Uporabljeni bosta %d skladbi iz razpoložljivih skladb.</item>
-        <item quantity="few">Uporabljene bodo %d skladbe iz razpoložljivih skladb.</item>
+        <item quantity="one">Obdobja DCF za %d skladbo ni bilo mogoče podaljšati. Poskusite lahko znova ali pa izbrišite datoteke s spodnjega seznama, preden jih znova prenesete.</item>
+        <item quantity="two">Obdobja DCF za %d skladbi ni bilo mogoče podaljšati. Poskusite lahko znova ali pa izbrišite datoteke s spodnjega seznama, preden jih znova prenesete.</item>
+        <item quantity="few">Obdobja DCF za %d skladbe ni bilo mogoče podaljšati. Poskusite lahko znova ali pa izbrišite datoteke s spodnjega seznama, preden jih znova prenesete.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Uvozite lahko največ %d elementov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uvozite lahko največ %d element.</item>
+        <item quantity="two">Uvozite lahko največ %d elementa.</item>
+        <item quantity="few">Uvozite lahko največ %d elemente.</item>
         <item quantity="many">N/A</item>
     </plurals>
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Čakanje na prenos več (%d) skladb …</item>
         <item quantity="one">Čakanje na prenos 1 skladbe …</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novih obvestil</item>
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Želite iz telefona izbrisati nekaj (%d) albumov in vse skladbe v njih?</item>
@@ -111,54 +93,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Želite izbrisati vse skladbe teh skladateljev?</item>
         <item quantity="one">Želite izbrisati vse skladbe tega skladatelja?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Želite izbrisati izbrane skladbe?</item>
-        <item quantity="one">Želite izbrisati izbrano skladbo?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d skladb bo kupljenih. Če nimate dovolj razpoložljivih skladb, teh skladb ni mogoče kupiti.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d skladba bo kupljena. Če nimate dovolj razpoložljivih skladb, teh skladb ni mogoče kupiti.</item>
-        <item quantity="two">%d skladbi bosta kupljeni. Če nimate dovolj razpoložljivih skladb, teh skladb ni mogoče kupiti.</item>
-        <item quantity="few">%d skladbe bodo kupljene. Če nimate dovolj razpoložljivih skladb, teh skladb ni mogoče kupiti.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Želite kupiti izbrane skladbe?</item>
-        <item quantity="one">Želite kupiti izbrano skladbo?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Te skladbe ste že kupili. Kupljene skladbe lahko kadar koli znova prenesete.</item>
-        <item quantity="one">To skladbo ste že kupili. Kupljene skladbe lahko kadar koli znova prenesete.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Skladbe so že kupljene</item>
-        <item quantity="one">Skladba je že kupljena</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Samo %d navedenih seznamov predvajanja lahko dodate kot priljubljene. Z zavihka Priljubljeno odstranite nekaj navedenih seznamov predvajanja.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Samo %d naveden seznam predvajanja lahko dodate kot priljubljen. Z zavihka Priljubljeno odstranite nekaj navedenih seznamov predvajanja.</item>
-        <item quantity="two">Samo %d navedena seznama predvajanja lahko dodate kot priljubljena. Z zavihka Priljubljeno odstranite nekaj navedenih seznamov predvajanja.</item>
-        <item quantity="few">Samo %d navedene sezname predvajanja lahko dodate kot priljubljene. Z zavihka Priljubljeno odstranite nekaj navedenih seznamov predvajanja.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Kot priljubljene skladbe lahko dodate samo %d skladb za pretočno predvajanje. Iz priljubljenih skladb odstranite nekaj skladb za pretočno predvajanje in poskusite znova.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Kot priljubljeno skladbo lahko dodate samo %d skladbo za pretočno predvajanje. Iz priljubljenih skladb odstranite nekaj skladb za pretočno predvajanje in poskusite znova.</item>
-        <item quantity="two">Kot priljubljeni skladbi lahko dodate samo %d skladbi za pretočno predvajanje. Iz priljubljenih skladb odstranite nekaj skladb za pretočno predvajanje in poskusite znova.</item>
-        <item quantity="few">Kot priljubljene skladbe lahko dodate samo %d skladbe za pretočno predvajanje. Iz priljubljenih skladb odstranite nekaj skladb za pretočno predvajanje in poskusite znova.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Kot priljubljene skladbe lahko dodate samo %d skladb. Iz priljubljenih skladb odstranite nekaj skladb in poskusite znova.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Kot priljubljeno skladbo lahko dodate samo %d skladbo. Iz priljubljenih skladb odstranite nekaj skladb in poskusite znova.</item>
-        <item quantity="two">Kot priljubljeni skladbi lahko dodate samo %d skladbi. Iz priljubljenih skladb odstranite nekaj skladb in poskusite znova.</item>
-        <item quantity="few">Kot priljubljene skladbe lahko dodate samo %d skladbe. Iz priljubljenih skladb odstranite nekaj skladb in poskusite znova.</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d map</item>
@@ -180,25 +114,73 @@
         <item quantity="few">Izbrisane bodo %d skrite mape.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d skladb je obnovljenih.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d skladba je obnovljena.</item>
-        <item quantity="two">%d skladbi sta obnovljeni.</item>
-        <item quantity="few">%d skladbe so obnovljene.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Želite izbrisati nekaj (%d) elementov?</item>
         <item quantity="one">Želite izbrisati 1 element?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Vnesete lahko največ %d znakov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vnesete lahko največ %d znak.</item>
+        <item quantity="two">Vnesete lahko največ %d znaka.</item>
+        <item quantity="few">Vnesete lahko največ %d znake.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Dodate lahko največ %d albumov. Dodajte manj albumov ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d album. Dodajte manj albumov ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="two">Dodate lahko največ %d albuma. Dodajte manj albumov ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="few">Dodate lahko največ %d albume. Dodajte manj albumov ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Dodate lahko največ %d izvajalcev. Dodajte manj izvajalcev ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d izvajalca. Dodajte manj izvajalcev ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="two">Dodate lahko največ %d izvajalca. Dodajte manj izvajalcev ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="few">Dodate lahko največ %d izvajalce. Dodajte manj izvajalcev ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Dodate lahko največ %d seznamov predvajanja. Z zavihka Priljubljeno odstranite nekaj seznamov predvajanja.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d seznam predvajanja. Z zavihka Priljubljeno odstranite nekaj seznamov predvajanja.</item>
+        <item quantity="two">Dodate lahko največ %d seznama predvajanja. Z zavihka Priljubljeno odstranite nekaj seznamov predvajanja.</item>
+        <item quantity="few">Dodate lahko največ %d sezname predvajanja. Z zavihka Priljubljeno odstranite nekaj seznamov predvajanja.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Dodate lahko največ %d skladb za pretočno predvajanje. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d skladbo za pretočno predvajanje. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="two">Dodate lahko največ %d skladbi za pretočno predvajanje. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="few">Dodate lahko največ %d skladbe za pretočno predvajanje. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Dodate lahko največ %d skladb. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d skladbo. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="two">Dodate lahko največ %d skladbi. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="few">Dodate lahko največ %d skladbe. Dodajte manj skladb ali pa jih nekaj odstranite iz priljubljenih.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Izvoženih je %d seznamov predvajanja.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Izvožen je %d seznam predvajanja.</item>
+        <item quantity="two">Izvožena sta %d seznama predvajanja.</item>
+        <item quantity="few">Izvoženi so %d seznami predvajanja.</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Uvoženih je %d seznamov predvajanja.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Uvožen je %d seznam predvajanja.</item>
+        <item quantity="two">Uvožena sta %d seznama predvajanja.</item>
+        <item quantity="few">Uvoženi so %d seznami predvajanja.</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Izberete lahko največ %d seznamov predvajanja.</item>
@@ -216,12 +198,48 @@
         <item quantity="other">%d skladb</item>
         <item quantity="one">1 skladba</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Med priljubljene je bilo dodanih samo %d skladb. Preostale so že med priljubljenimi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Med priljubljene je bila dodana samo %d skladba. Preostale so že med priljubljenimi.</item>
+        <item quantity="two">Med priljubljene sta bili dodani samo %d skladbi. Preostale so že med priljubljenimi.</item>
+        <item quantity="few">Med priljubljene so bile dodane samo %d skladbe. Preostale so že med priljubljenimi.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">Število skladb, dodanih med priljubljene: %d.</item>
+        <item quantity="one">1 skladba je dodana med priljubljene.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d skladb dodanih na seznam predvajanja.</item>
+        <item quantity="one">1 skladba dodana na seznam predvajanja.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">V čakalno vrsto je dodanih toliko skladb: %d.</item>
         <item quantity="one">%d skladba je bila dodana v čakalno vrsto.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">Želite izbrisati nekaj (%d) skladb?</item>
-        <item quantity="one">Želite izbrisati 1 skladbo?</item>
+        <item quantity="other">Želite izbrisati %d skladb?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Želite izbrisati %d skladbo?</item>
+        <item quantity="two">Želite izbrisati %d skladbi?</item>
+        <item quantity="few">Želite izbrisati %d skladbe?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Čas spanja: %d ur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Čas spanja: %d ura</item>
+        <item quantity="two">Čas spanja: %d uri</item>
+        <item quantity="few">Čas spanja: %d ure</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Čas spanja: %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Čas spanja: %d minuta</item>
+        <item quantity="two">Čas spanja: %d minuti</item>
+        <item quantity="few">Čas spanja: %d minute</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SemScreenSharingConstantsCompat.java"
 
 
 # static fields
@@ -20,77 +20,77 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 27
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, -0x1
 
-    .line 28
+    .line 2
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->NOT_SUPPORT:I
 
     const/4 v0, 0x0
 
-    .line 29
+    .line 3
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->SUPPORT_ALL:I
 
     const/4 v1, 0x2
 
-    .line 30
+    .line 4
     sput v1, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->SUPPORT_DLNA:I
 
     const/4 v2, 0x1
 
-    .line 31
+    .line 5
     sput v2, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->SUPPORT_MIRRORING:I
 
-    .line 32
+    .line 6
     sput v2, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->TYPE_IMAGE:I
 
-    .line 33
+    .line 7
     sput v1, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->TYPE_MUSIC:I
 
-    .line 34
+    .line 8
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->TYPE_VIDEO:I
 
     goto :goto_0
 
-    .line 36
+    .line 9
     :cond_0
     sget v0, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/ScreenSharingFieldSdlCompat;->SCREEN_SHARING_NOT_SUPPORT:I
 
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->NOT_SUPPORT:I
 
-    .line 37
+    .line 10
     sget v0, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/ScreenSharingFieldSdlCompat;->SCREEN_SHARING_SUPPORT_ALL:I
 
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->SUPPORT_ALL:I
 
-    .line 38
+    .line 11
     sget v0, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/ScreenSharingFieldSdlCompat;->SCREEN_SHARING_SUPPORT_DLNA:I
 
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->SUPPORT_DLNA:I
 
-    .line 39
+    .line 12
     sget v0, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/ScreenSharingFieldSdlCompat;->SCREEN_SHARING_SUPPORT_MIRRORING:I
 
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->SUPPORT_MIRRORING:I
 
-    .line 40
+    .line 13
     sget v0, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/ScreenSharingFieldSdlCompat;->SCREEN_SHARING_TYPE_IMAGE:I
 
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->TYPE_IMAGE:I
 
-    .line 41
+    .line 14
     sget v0, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/ScreenSharingFieldSdlCompat;->SCREEN_SHARING_TYPE_MUSIC:I
 
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->TYPE_MUSIC:I
 
-    .line 42
+    .line 15
     sget v0, Lcom/samsung/android/app/music/support/sdl/android/hardware/diplay/ScreenSharingFieldSdlCompat;->SCREEN_SHARING_TYPE_VIDEO:I
 
     sput v0, Lcom/samsung/android/app/music/support/android/hardware/display/SemScreenSharingConstantsCompat;->TYPE_VIDEO:I
@@ -102,7 +102,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

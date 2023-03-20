@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false">
         <set>
-            <objectAnimator android:duration="@integer/sesl_dialog_disabled_anim_duration" android:valueTo="?android:disabledAlpha" android:valueType="floatType" android:propertyName="alpha" />
+            <objectAnimator android:duration="@integer/sesl_dialog_disabled_anim_duration" android:valueTo="@dimen/sesl_disabled_color_alpha" android:valueType="floatType" android:propertyName="alpha" />
         </set>
     </item>
     <item>

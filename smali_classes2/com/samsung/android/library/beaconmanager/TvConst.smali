@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/library/beaconmanager/TvConst;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "TvConst.java"
 
 
 # static fields
@@ -113,7 +113,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

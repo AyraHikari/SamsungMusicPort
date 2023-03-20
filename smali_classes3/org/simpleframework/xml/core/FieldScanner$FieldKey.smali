@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/core/FieldScanner$FieldKey;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FieldScanner.java"
 
 
 # annotations
@@ -9,48 +9,48 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "FieldKey"
 .end annotation
 
 
 # instance fields
-.field private final a:Ljava/lang/Class;
+.field private final name:Ljava/lang/String;
 
-.field private final b:Ljava/lang/String;
+.field private final type:Ljava/lang/Class;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/reflect/Field;)V
     .locals 1
 
-    .line 377
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 378
+    .line 2
     invoke-virtual {p1}, Ljava/lang/reflect/Field;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->a:Ljava/lang/Class;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->type:Ljava/lang/Class;
 
-    .line 379
+    .line 3
     invoke-virtual {p1}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->b:Ljava/lang/String;
+    iput-object p1, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->name:Ljava/lang/String;
 
     return-void
 .end method
 
-.method private a(Lorg/simpleframework/xml/core/FieldScanner$FieldKey;)Z
+.method private equals(Lorg/simpleframework/xml/core/FieldScanner$FieldKey;)Z
     .locals 2
 
-    .line 419
-    iget-object v0, p1, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->a:Ljava/lang/Class;
+    .line 3
+    iget-object v0, p1, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->type:Ljava/lang/Class;
 
-    iget-object v1, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->a:Ljava/lang/Class;
+    iget-object v1, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->type:Ljava/lang/Class;
 
     if-eq v0, v1, :cond_0
 
@@ -58,11 +58,11 @@
 
     return p1
 
-    .line 422
+    .line 4
     :cond_0
-    iget-object p1, p1, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->b:Ljava/lang/String;
+    iget-object p1, p1, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->name:Ljava/lang/String;
 
-    iget-object v0, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->b:Ljava/lang/String;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->name:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -76,15 +76,15 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 403
+    .line 1
     instance-of v0, p1, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;
 
     if-eqz v0, :cond_0
 
-    .line 404
+    .line 2
     check-cast p1, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;
 
-    invoke-direct {p0, p1}, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->a(Lorg/simpleframework/xml/core/FieldScanner$FieldKey;)Z
+    invoke-direct {p0, p1}, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->equals(Lorg/simpleframework/xml/core/FieldScanner$FieldKey;)Z
 
     move-result p1
 
@@ -99,8 +99,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 390
-    iget-object v0, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->b:Ljava/lang/String;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/FieldScanner$FieldKey;->name:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 

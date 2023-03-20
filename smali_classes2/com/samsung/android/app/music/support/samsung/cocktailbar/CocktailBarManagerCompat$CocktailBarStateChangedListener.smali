@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "CocktailBarManagerCompat.java"
 
 
 # annotations

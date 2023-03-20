@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyArtist;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SpotifyArtist.java"
 
 
 # instance fields
@@ -23,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +33,6 @@
 .method public getId()Ljava/lang/String;
     .locals 1
 
-    .line 20
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyArtist;->id:Ljava/lang/String;
 
     return-object v0
@@ -43,7 +41,6 @@
 .method public getImages()[Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyImage;
     .locals 1
 
-    .line 32
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyArtist;->images:[Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyImage;
 
     return-object v0
@@ -52,7 +49,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 24
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyArtist;->name:Ljava/lang/String;
 
     return-object v0
@@ -61,7 +57,6 @@
 .method public getUri()Ljava/lang/String;
     .locals 1
 
-    .line 28
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyArtist;->uri:Ljava/lang/String;
 
     return-object v0

@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/ReflectionUtils$ClassNames;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ReflectionUtils.java"
 
 
 # annotations
@@ -17,10 +17,6 @@
 # static fields
 .field public static final CLASS_AUDIO_MANAGER:Ljava/lang/String; = "android.media.AudioManager"
 
-.field public static final CLASS_DECOR_VIEW:Ljava/lang/String; = "com.android.internal.policy.DecorView"
-
-.field public static final CLASS_DISPLAY_MANAGER:Ljava/lang/String; = "android.hardware.display.DisplayManager"
-
 .field public static final CLASS_INTENT:Ljava/lang/String; = "android.content.Intent"
 
 .field public static final CLASS_PRIVATE_MODE_MANAGER:Ljava/lang/String; = "com.samsung.android.privatemode.PrivateModeManager"
@@ -28,6 +24,8 @@
 .field public static final CLASS_SAMSUNG_AUDIO_MANAGER:Ljava/lang/String; = "android.media.SamsungAudioManager"
 
 .field public static final CLASS_SCREEN_SHARING_FIELD:Ljava/lang/String; = "android.hardware.display.ScreenSharingField"
+
+.field public static final CLASS_SEM_DESKTOP_MODE_MANAGER:Ljava/lang/String; = "com.samsung.android.desktopmode.SemDesktopModeManager"
 
 .field public static final CLASS_SEM_SCREEN_SHARING_CONSTANTS:Ljava/lang/String; = "android.hardware.display.SemScreenSharingConstants"
 
@@ -48,7 +46,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

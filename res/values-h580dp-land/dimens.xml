@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="dimen" name="sesl_abl_height_proportion">0.3</item>
+    <dimen name="sesl_action_bar_default_height">64.0dip</dimen>
+    <dimen name="sesl_action_bar_height_with_padding">80.0dip</dimen>
+    <dimen name="sesl_action_bar_top_padding">16.0dip</dimen>
+    <item type="dimen" name="sesl_appbar_height_proportion">0.44</item>
+    <dimen name="sesl_toolbar_title_text_size">21.0sp</dimen>
+    <dimen name="sesl_toolbar_title_text_size_with_subtitle">20.0sp</dimen>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:clickableId="delete_all_history_text"
+<com.samsung.android.app.musiclibrary.ui.widget.OneUiConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:clickableId="delete_all_history_text"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.samsung.android.app.musiclibrary.ui.widget.MusicTextView android:id="@id/delete_all_history_text" android:layout_height="@dimen/milk_search_view_more_height" android:text="@string/milk_search_delete_history" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Dialog.ActionButton" />
-</com.samsung.android.app.musiclibrary.ui.widget.MusicConstraintLayout>
+    <View android:id="@id/divider" android:background="@drawable/basics_list_divider" android:layout_width="0.0dip" android:layout_height="2.0px" android:layout_marginStart="@dimen/mu_list_divider_inset_winset" android:layout_marginEnd="@dimen/mu_list_divider_inset_winset" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ListItem.Divider" />
+    <com.samsung.android.app.musiclibrary.ui.widget.OneUiTextView android:id="@id/delete_all_history_text" android:layout_height="@dimen/milk_search_view_more_height" android:text="@string/clear_all" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider" style="@style/Dialog.ActionButton" />
+</com.samsung.android.app.musiclibrary.ui.widget.OneUiConstraintLayout>

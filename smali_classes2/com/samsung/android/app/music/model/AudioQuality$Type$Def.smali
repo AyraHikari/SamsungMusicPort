@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lcom/samsung/android/app/music/model/AudioQuality$Type$Def;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AudioQuality.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

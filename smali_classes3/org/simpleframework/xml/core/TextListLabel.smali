@@ -1,264 +1,265 @@
 .class Lorg/simpleframework/xml/core/TextListLabel;
 .super Lorg/simpleframework/xml/core/TemplateLabel;
-.source "SourceFile"
+.source "TextListLabel.java"
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final empty:Ljava/lang/String;
 
-.field private final b:Lorg/simpleframework/xml/core/Label;
+.field private final label:Lorg/simpleframework/xml/core/Label;
 
-.field private final c:Lorg/simpleframework/xml/Text;
+.field private final text:Lorg/simpleframework/xml/Text;
 
 
 # direct methods
 .method public constructor <init>(Lorg/simpleframework/xml/core/Label;Lorg/simpleframework/xml/Text;)V
     .locals 1
 
-    .line 64
+    .line 1
     invoke-direct {p0}, Lorg/simpleframework/xml/core/TemplateLabel;-><init>()V
 
-    .line 65
-    invoke-interface {p2}, Lorg/simpleframework/xml/Text;->a()Ljava/lang/String;
+    .line 2
+    invoke-interface {p2}, Lorg/simpleframework/xml/Text;->empty()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->a:Ljava/lang/String;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->empty:Ljava/lang/String;
 
-    .line 66
-    iput-object p1, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    .line 3
+    iput-object p1, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    .line 67
-    iput-object p2, p0, Lorg/simpleframework/xml/core/TextListLabel;->c:Lorg/simpleframework/xml/Text;
+    .line 4
+    iput-object p2, p0, Lorg/simpleframework/xml/core/TextListLabel;->text:Lorg/simpleframework/xml/Text;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()[Ljava/lang/String;
+.method public getAnnotation()Ljava/lang/annotation/Annotation;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 92
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->a()[Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getAnnotation()Ljava/lang/annotation/Annotation;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public b()[Ljava/lang/String;
+.method public getContact()Lorg/simpleframework/xml/core/Contact;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 105
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->b()[Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getContact()Lorg/simpleframework/xml/core/Contact;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public c()Ljava/lang/annotation/Annotation;
-    .locals 1
+.method public getConverter(Lorg/simpleframework/xml/core/Context;)Lorg/simpleframework/xml/core/Converter;
+    .locals 3
 
-    .line 221
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
-
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->c()Ljava/lang/annotation/Annotation;
+    .line 1
+    invoke-virtual {p0}, Lorg/simpleframework/xml/core/TextListLabel;->getContact()Lorg/simpleframework/xml/core/Contact;
 
     move-result-object v0
 
-    return-object v0
+    .line 2
+    iget-object v1, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
+
+    invoke-interface {v1}, Lorg/simpleframework/xml/core/Label;->isCollection()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    new-instance v1, Lorg/simpleframework/xml/core/TextList;
+
+    iget-object v2, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
+
+    invoke-direct {v1, p1, v0, v2}, Lorg/simpleframework/xml/core/TextList;-><init>(Lorg/simpleframework/xml/core/Context;Lorg/simpleframework/xml/strategy/Type;Lorg/simpleframework/xml/core/Label;)V
+
+    return-object v1
+
+    .line 4
+    :cond_0
+    new-instance p1, Lorg/simpleframework/xml/core/TextException;
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    aput-object v0, v1, v2
+
+    const/4 v0, 0x1
+
+    iget-object v2, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
+
+    aput-object v2, v1, v0
+
+    const-string v0, "Cannot use %s to represent %s"
+
+    invoke-direct {p1, v0, v1}, Lorg/simpleframework/xml/core/TextException;-><init>(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    throw p1
 .end method
 
-.method public d()Lorg/simpleframework/xml/core/Contact;
+.method public getDecorator()Lorg/simpleframework/xml/core/Decorator;
     .locals 1
-
-    .line 234
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
-
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->d()Lorg/simpleframework/xml/core/Contact;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public e()Lorg/simpleframework/xml/core/Decorator;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
     const/4 v0, 0x0
 
     return-object v0
 .end method
 
-.method public f()Lorg/simpleframework/xml/strategy/Type;
+.method public getDependent()Lorg/simpleframework/xml/strategy/Type;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 186
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->f()Lorg/simpleframework/xml/strategy/Type;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getDependent()Lorg/simpleframework/xml/strategy/Type;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public g()Ljava/lang/Object;
+.method public bridge synthetic getEmpty(Lorg/simpleframework/xml/core/Context;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/TextListLabel;->getEmpty(Lorg/simpleframework/xml/core/Context;)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getEmpty(Lorg/simpleframework/xml/core/Context;)Ljava/lang/String;
+    .locals 0
+
+    .line 2
+    iget-object p1, p0, Lorg/simpleframework/xml/core/TextListLabel;->empty:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method public getEntry()Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 209
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->g()Ljava/lang/Object;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getEntry()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public h()Ljava/lang/String;
+.method public getExpression()Lorg/simpleframework/xml/core/Expression;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 198
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->h()Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getExpression()Lorg/simpleframework/xml/core/Expression;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public i()Ljava/lang/String;
+.method public getKey()Ljava/lang/Object;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 151
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->i()Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public j()Ljava/lang/String;
+.method public getName()Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 163
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->j()Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public k()Lorg/simpleframework/xml/core/Expression;
+.method public getNames()[Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 175
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->k()Lorg/simpleframework/xml/core/Expression;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getNames()[Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public l()Ljava/lang/String;
+.method public getOverride()Ljava/lang/String;
     .locals 1
 
-    .line 261
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->l()Ljava/lang/String;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getOverride()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public m()Ljava/lang/Class;
+.method public getPath()Ljava/lang/String;
     .locals 1
 
-    .line 248
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->m()Ljava/lang/Class;
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getPath()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public n()Z
+.method public getPaths()[Ljava/lang/String;
     .locals 1
 
-    .line 273
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->n()Z
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getPaths()[Ljava/lang/String;
 
-    move-result v0
+    move-result-object v0
 
-    return v0
+    return-object v0
 .end method
 
-.method public p()Z
+.method public getType()Ljava/lang/Class;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
+
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public isCollection()Z
     .locals 1
 
     const/4 v0, 0x1
@@ -266,63 +267,72 @@
     return v0
 .end method
 
-.method public q()Z
+.method public isData()Z
     .locals 1
 
-    .line 312
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->q()Z
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->isData()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method public s()Z
+.method public isInline()Z
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
+
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->isInline()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public isRequired()Z
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
+
+    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->isRequired()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public isTextList()Z
     .locals 1
 
     const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public t()Z
-    .locals 1
-
-    .line 286
-    iget-object v0, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
-
-    invoke-interface {v0}, Lorg/simpleframework/xml/core/Label;->t()Z
-
-    move-result v0
 
     return v0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 4
+    .locals 3
 
-    const-string v0, "%s %s"
+    const/4 v0, 0x2
 
-    const/4 v1, 0x2
+    new-array v0, v0, [Ljava/lang/Object;
 
-    .line 335
-    new-array v1, v1, [Ljava/lang/Object;
+    iget-object v1, p0, Lorg/simpleframework/xml/core/TextListLabel;->text:Lorg/simpleframework/xml/Text;
 
-    iget-object v2, p0, Lorg/simpleframework/xml/core/TextListLabel;->c:Lorg/simpleframework/xml/Text;
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    iget-object v1, p0, Lorg/simpleframework/xml/core/TextListLabel;->label:Lorg/simpleframework/xml/core/Label;
 
-    iget-object v2, p0, Lorg/simpleframework/xml/core/TextListLabel;->b:Lorg/simpleframework/xml/core/Label;
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    aput-object v1, v0, v2
 
-    aput-object v2, v1, v3
+    const-string v1, "%s %s"
 
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 

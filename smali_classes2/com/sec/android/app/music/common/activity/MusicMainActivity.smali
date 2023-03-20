@@ -1,6 +1,6 @@
 .class public final Lcom/sec/android/app/music/common/activity/MusicMainActivity;
-.super Lcom/samsung/android/app/music/main/MainActivity;
-.source "SourceFile"
+.super Lcom/samsung/android/app/music/main/v;
+.source "MusicMainActivity.kt"
 
 
 # annotations
@@ -14,20 +14,18 @@
 # static fields
 .field public static final Companion:Lcom/sec/android/app/music/common/activity/MusicMainActivity$Companion;
 
-.field public static final MAIN_ACTIVITY_NAME:Ljava/lang/String; = "MAIN_ACTIVITY_NAME"
-
 .field private static final VERIFICATION_LOG_TAG:Ljava/lang/String; = "VerificationLog"
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lcom/sec/android/app/music/common/activity/MusicMainActivity$Companion;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/sec/android/app/music/common/activity/MusicMainActivity$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct {v0, v1}, Lcom/sec/android/app/music/common/activity/MusicMainActivity$Companion;-><init>(Lkotlin/jvm/internal/g;)V
 
     sput-object v0, Lcom/sec/android/app/music/common/activity/MusicMainActivity;->Companion:Lcom/sec/android/app/music/common/activity/MusicMainActivity$Companion;
 
@@ -37,35 +35,32 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 20
-    invoke-direct {p0}, Lcom/samsung/android/app/music/main/MainActivity;-><init>()V
+    invoke-direct {p0}, Lcom/samsung/android/app/music/main/v;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected onCreate(Landroid/os/Bundle;)V
+.method public onCreate(Landroid/os/Bundle;)V
     .locals 4
 
     const-string v0, "VerificationLog"
 
     const-string v1, "onCreate"
 
-    .line 23
+    .line 1
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 25
-    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/MainActivity;->onCreate(Landroid/os/Bundle;)V
+    .line 2
+    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/v;->onCreate(Landroid/os/Bundle;)V
 
-    .line 27
-    invoke-virtual {p0}, Lcom/sec/android/app/music/common/activity/MusicMainActivity;->getContentResolver()Landroid/content/ContentResolver;
+    .line 3
+    invoke-virtual {p0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p1
 
-    const-string v0, "VerificationLog"
-
-    .line 30
+    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -90,57 +85,32 @@
 
     const-string v2, "easy_mode_music"
 
-    .line 31
+    .line 5
     invoke-static {p1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result p1
 
+    .line 6
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 28
+    .line 7
     invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 36
-    sget-boolean p1, Lcom/samsung/android/app/music/info/features/AppFeatures;->q_:Z
+    .line 8
+    sget-boolean p1, Lcom/samsung/android/app/musiclibrary/ui/feature/h;->R:Z
 
-    if-nez p1, :cond_0
-
-    const-string p1, "VerificationLog"
-
-    const-string v0, "c slide"
-
-    .line 38
-    invoke-static {p1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 39
-    new-instance p1, Lkr/co/cashslide/Cashslide;
-
-    move-object v0, p0
-
-    check-cast v0, Landroid/content/Context;
-
-    const-string v1, "g40e5484"
-
-    invoke-direct {p1, v0, v1}, Lkr/co/cashslide/Cashslide;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Lkr/co/cashslide/Cashslide;->appFirstLaunched()V
-
-    .line 42
-    :cond_0
-    sget-boolean p1, Lcom/samsung/android/app/music/info/features/AppFeatures;->B_:Z
-
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_0
 
     const-string p1, "MUSICPLAYER_OPENED"
 
-    .line 43
-    invoke-static {p1}, Lcom/samsung/android/app/musiclibrary/ui/regional/usa/GateMessageUtils;->a(Ljava/lang/String;)V
+    .line 9
+    invoke-static {p1}, Lcom/samsung/android/app/musiclibrary/ui/regional/usa/a;->a(Ljava/lang/String;)V
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 
@@ -149,32 +119,31 @@
 
     const-string v0, "menu"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 68
-    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/MainActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/v;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method protected onDestroy()V
+.method public onDestroy()V
     .locals 1
 
-    .line 58
-    sget-boolean v0, Lcom/samsung/android/app/music/info/features/AppFeatures;->B_:Z
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/musiclibrary/ui/feature/h;->R:Z
 
     if-eqz v0, :cond_0
 
     const-string v0, "EXIT_MUSICPLAYER"
 
-    .line 59
-    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ui/regional/usa/GateMessageUtils;->a(Ljava/lang/String;)V
+    .line 2
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ui/regional/usa/a;->a(Ljava/lang/String;)V
 
-    .line 62
+    .line 3
     :cond_0
-    invoke-super {p0}, Lcom/samsung/android/app/music/main/MainActivity;->onDestroy()V
+    invoke-super {p0}, Lcom/samsung/android/app/music/main/v;->onDestroy()V
 
     return-void
 .end method
@@ -184,37 +153,35 @@
 
     const-string v0, "menu"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 76
-    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/MainActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/v;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method protected onResume()V
+.method public onResume()V
     .locals 2
 
     const-string v0, "VerificationLog"
 
     const-string v1, "onResume"
 
-    .line 52
+    .line 1
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 54
-    invoke-super {p0}, Lcom/samsung/android/app/music/main/MainActivity;->onResume()V
+    .line 2
+    invoke-super {p0}, Lcom/samsung/android/app/music/main/v;->onResume()V
 
     return-void
 .end method
 
-.method protected onStart()V
+.method public onStart()V
     .locals 0
 
-    .line 48
-    invoke-super {p0}, Lcom/samsung/android/app/music/main/MainActivity;->onStart()V
+    invoke-super {p0}, Lcom/samsung/android/app/music/main/v;->onStart()V
 
     return-void
 .end method
@@ -228,12 +195,12 @@
 
     const-string v1, "Executed"
 
-    .line 82
+    .line 1
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 85
+    .line 2
     :cond_0
-    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/MainActivity;->onWindowFocusChanged(Z)V
+    invoke-super {p0, p1}, Lcom/samsung/android/app/music/main/v;->onWindowFocusChanged(Z)V
 
     return-void
 .end method

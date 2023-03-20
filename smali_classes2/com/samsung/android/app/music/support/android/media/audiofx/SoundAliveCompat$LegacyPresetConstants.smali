@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SoundAliveCompat.java"
 
 
 # annotations
@@ -35,10 +35,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 10
 
-    .line 59
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/16 v1, 0xc
@@ -61,61 +61,61 @@
 
     if-eqz v0, :cond_0
 
-    .line 61
+    .line 2
     sput v9, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_DANCE:I
 
-    .line 62
+    .line 3
     sput v8, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_SAMSUNG_TUBE_SOUND:I
 
-    .line 63
+    .line 4
     sput v7, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_VOCAL:I
 
-    .line 64
+    .line 5
     sput v6, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_BASS_BOOST:I
 
-    .line 65
+    .line 6
     sput v5, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_TREBLE_BOOST:I
 
-    .line 66
+    .line 7
     sput v4, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_MTHEATER:I
 
-    .line 67
+    .line 8
     sput v3, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_EXTERNALIZATION:I
 
-    .line 68
+    .line 9
     sput v2, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_CAFE:I
 
-    .line 69
+    .line 10
     sput v1, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_CONCERT_HALL:I
 
     goto :goto_0
 
-    .line 71
+    .line 11
     :cond_0
     sput v9, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_DANCE:I
 
-    .line 72
+    .line 12
     sput v8, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_SAMSUNG_TUBE_SOUND:I
 
-    .line 74
+    .line 13
     sput v7, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_VOCAL:I
 
-    .line 75
+    .line 14
     sput v6, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_BASS_BOOST:I
 
-    .line 76
+    .line 15
     sput v5, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_TREBLE_BOOST:I
 
-    .line 77
+    .line 16
     sput v4, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_MTHEATER:I
 
-    .line 78
+    .line 17
     sput v3, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_EXTERNALIZATION:I
 
-    .line 80
+    .line 18
     sput v2, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_CAFE:I
 
-    .line 81
+    .line 19
     sput v1, Lcom/samsung/android/app/music/support/android/media/audiofx/SoundAliveCompat$LegacyPresetConstants;->PRESET_CONCERT_HALL:I
 
     :goto_0
@@ -125,7 +125,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="ActivityTheme.Login" parent="@style/ActivityTheme.LoginBase.OreoMr1" />
     <style name="Theme.OneUi" parent="@style/BaseAppTheme.OreoMr1" />
+    <style name="ActivityTheme.LoginBase.OreoMr1" parent="@style/ActivityTheme.LoginBase.Nougat">
+        <item name="android:windowLightNavigationBar">@bool/windowLightNavigationBar</item>
+    </style>
     <style name="BaseAppTheme.OreoMr1" parent="@style/BaseAppTheme.Nougat">
         <item name="android:windowLightNavigationBar">@bool/windowLightNavigationBar</item>
     </style>

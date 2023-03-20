@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SdlCocktailBarManager.java"
 
 # interfaces
 .implements Lcom/samsung/android/sdk/look/cocktailbar/CocktailBarManagerInterface;
@@ -18,12 +18,12 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 16
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "CocktailBarService"
 
-    .line 17
+    .line 2
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -38,7 +38,6 @@
 .method public closeCocktail(II)V
     .locals 2
 
-    .line 75
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -53,7 +52,6 @@
 .method public disableCocktail(Landroid/content/ComponentName;)V
     .locals 2
 
-    .line 80
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -68,7 +66,6 @@
 .method public getCocktailBarWindowType()I
     .locals 2
 
-    .line 90
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -85,7 +82,6 @@
 .method public getCocktailIds(Landroid/content/ComponentName;)[I
     .locals 2
 
-    .line 47
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -102,7 +98,6 @@
 .method public isEnabledCocktail(Landroid/content/ComponentName;)Z
     .locals 2
 
-    .line 85
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -119,7 +114,6 @@
 .method public notifyCocktailViewDataChanged(II)V
     .locals 2
 
-    .line 42
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -134,7 +128,6 @@
 .method public partiallyUpdateCocktail(ILandroid/widget/RemoteViews;)V
     .locals 2
 
-    .line 65
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -149,7 +142,6 @@
 .method public registerListener(Ljava/lang/Object;)V
     .locals 2
 
-    .line 105
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -164,7 +156,6 @@
 .method public setCocktailBarStatus(ZZ)V
     .locals 2
 
-    .line 100
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -179,19 +170,19 @@
 .method public setOnLongClickPendingIntent(Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;)V
     .locals 2
 
-    .line 125
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 126
+    .line 2
     invoke-virtual {p1, p2, p3}, Landroid/widget/RemoteViews;->semSetOnLongClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     goto :goto_0
 
-    .line 128
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -208,19 +199,19 @@
 .method public setOnLongClickPendingIntentTemplate(Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;)V
     .locals 2
 
-    .line 135
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 136
+    .line 2
     invoke-virtual {p1, p2, p3}, Landroid/widget/RemoteViews;->semSetOnLongClickPendingIntentTemplate(ILandroid/app/PendingIntent;)V
 
     goto :goto_0
 
-    .line 138
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -237,14 +228,14 @@
 .method public setOnPullPendingIntent(IILandroid/app/PendingIntent;)V
     .locals 2
 
-    .line 115
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 116
+    .line 2
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -255,7 +246,7 @@
 
     goto :goto_0
 
-    .line 118
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -265,9 +256,7 @@
 
     invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -284,7 +273,6 @@
 .method public showCocktail(I)V
     .locals 2
 
-    .line 70
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -299,7 +287,6 @@
 .method public unregisterListener(Ljava/lang/Object;)V
     .locals 2
 
-    .line 110
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -312,84 +299,54 @@
 .end method
 
 .method public updateCocktail(IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;Landroid/content/ComponentName;)V
-    .locals 12
+    .locals 10
 
-    move-object v0, p0
-
-    .line 54
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x17
-
-    if-lt v1, v2, :cond_0
-
-    .line 55
+    .line 9
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
-    move-result-object v3
+    move-result-object v0
 
-    iget-object v4, v0, Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;->mCocktailBarManager:Ljava/lang/Object;
+    move-object v9, p0
 
-    move v5, p1
+    iget-object v1, v9, Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;->mCocktailBarManager:Ljava/lang/Object;
 
-    move v6, p2
+    move v2, p1
 
-    move v7, p3
+    move v3, p2
 
-    move-object/from16 v8, p4
+    move v4, p3
 
-    move-object/from16 v9, p5
+    move-object v5, p4
 
-    move-object/from16 v10, p6
+    move-object v6, p5
 
-    move-object/from16 v11, p7
+    move-object/from16 v7, p6
 
-    invoke-virtual/range {v3 .. v11}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->updateCocktail(Ljava/lang/Object;IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;Landroid/content/ComponentName;)V
+    move-object/from16 v8, p7
 
-    goto :goto_0
+    invoke-virtual/range {v0 .. v8}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->updateCocktail(Ljava/lang/Object;IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;Landroid/content/ComponentName;)V
 
-    .line 58
-    :cond_0
-    invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
-
-    move-result-object v5
-
-    iget-object v6, v0, Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;->mCocktailBarManager:Ljava/lang/Object;
-
-    move v7, p1
-
-    move v8, p2
-
-    move v9, p3
-
-    move-object/from16 v10, p4
-
-    move-object/from16 v11, p6
-
-    invoke-virtual/range {v5 .. v11}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->updateCocktail(Ljava/lang/Object;IIILandroid/widget/RemoteViews;Landroid/os/Bundle;)V
-
-    :goto_0
     return-void
 .end method
 
 .method public updateCocktail(ILandroid/widget/RemoteViews;)V
     .locals 7
 
-    .line 22
+    .line 1
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;->mCocktailBarManager:Ljava/lang/Object;
 
-    .line 23
+    .line 2
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v2
 
     iget v3, v2, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->COCKTAIL_DISPLAY_POLICY_GENERAL:I
 
-    .line 24
+    .line 3
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v2
@@ -402,97 +359,53 @@
 
     move-object v5, p2
 
-    .line 22
+    .line 4
     invoke-virtual/range {v0 .. v6}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->updateCocktail(Ljava/lang/Object;IIILandroid/widget/RemoteViews;Landroid/os/Bundle;)V
 
     return-void
 .end method
 
 .method public updateCocktail(ILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
-    .locals 18
+    .locals 8
 
-    move-object/from16 v0, p0
-
-    .line 29
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x17
-
-    if-lt v1, v2, :cond_0
-
-    .line 30
+    .line 5
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
-    move-result-object v3
+    move-result-object v0
 
-    iget-object v4, v0, Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;->mCocktailBarManager:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;->mCocktailBarManager:Ljava/lang/Object;
 
-    .line 31
+    .line 6
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
-    move-result-object v1
+    move-result-object v2
 
-    iget v6, v1, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->COCKTAIL_DISPLAY_POLICY_GENERAL:I
+    iget v3, v2, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->COCKTAIL_DISPLAY_POLICY_GENERAL:I
 
-    .line 32
+    .line 7
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
-    move-result-object v1
+    move-result-object v2
 
-    iget v7, v1, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->COCKTAIL_CATEGORY_GLOBAL:I
+    iget v4, v2, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->COCKTAIL_CATEGORY_GLOBAL:I
 
-    const/4 v10, 0x0
+    const/4 v7, 0x0
 
-    move/from16 v5, p1
+    move v2, p1
 
-    move-object/from16 v8, p2
+    move-object v5, p2
 
-    move-object/from16 v9, p3
+    move-object v6, p3
 
-    .line 30
-    invoke-virtual/range {v3 .. v10}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->updateCocktail(Ljava/lang/Object;IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;)V
+    .line 8
+    invoke-virtual/range {v0 .. v7}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->updateCocktail(Ljava/lang/Object;IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;)V
 
-    goto :goto_0
-
-    .line 34
-    :cond_0
-    invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
-
-    move-result-object v11
-
-    iget-object v12, v0, Lcom/samsung/android/sdk/look/cocktailbar/SdlCocktailBarManager;->mCocktailBarManager:Ljava/lang/Object;
-
-    .line 35
-    invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
-
-    move-result-object v1
-
-    iget v14, v1, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->COCKTAIL_DISPLAY_POLICY_GENERAL:I
-
-    .line 36
-    invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
-
-    move-result-object v1
-
-    iget v15, v1, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->COCKTAIL_CATEGORY_GLOBAL:I
-
-    const/16 v17, 0x0
-
-    move/from16 v13, p1
-
-    move-object/from16 v16, p2
-
-    .line 34
-    invoke-virtual/range {v11 .. v17}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->updateCocktail(Ljava/lang/Object;IIILandroid/widget/RemoteViews;Landroid/os/Bundle;)V
-
-    :goto_0
     return-void
 .end method
 
 .method public updateLongpressGesture(Z)V
     .locals 2
 
-    .line 95
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0

@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlookSmartClipCroppedArea.java"
 
 
 # virtual methods

@@ -1,632 +1,889 @@
 .class public final Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;
-.super Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObserverAdapter;
-.source "SourceFile"
+.super Ljava/lang/Object;
+.source "ActionBarMenuController.kt"
 
 # interfaces
-.implements Lcom/samsung/android/app/musiclibrary/core/player/ActiveMediaChangePublisher$MediaChangeObservableObserver;
-.implements Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/Releasable;
-.implements Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-.implements Lcom/samsung/android/app/musiclibrary/ui/player/StatePublisher$StateObserver;
+.implements Lcom/samsung/android/app/musiclibrary/ui/player/c$a;
+.implements Landroidx/lifecycle/r;
+.implements Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$InvalidateHandler;,
-        Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$Companion;
+        Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$a;
     }
 .end annotation
 
 
-# static fields
-.field static final synthetic a:[Lkotlin/reflect/KProperty;
-
-.field public static final b:Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$Companion;
-
-
 # instance fields
-.field private c:Ljava/lang/Integer;
+.field public final a:Lcom/samsung/android/app/music/activity/h;
 
-.field private d:Ljava/lang/Integer;
+.field public final b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-.field private final e:Lkotlin/Lazy;
+.field public final c:Lkotlin/g;
 
-.field private final f:Lkotlin/Lazy;
+.field public final d:Lkotlin/g;
 
-.field private final g:Lkotlin/Lazy;
+.field public final e:Lkotlin/g;
 
-.field private h:Z
+.field public f:Ljava/lang/Integer;
 
-.field private i:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+.field public g:Ljava/lang/Integer;
 
-.field private final j:Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+.field public h:Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;
 
-.field private final k:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+.field public final o:Lkotlin/g;
+
+.field public final p:Lkotlin/g;
+
+.field public q:Z
+
+.field public final r:Lkotlin/g;
+
+.field public s:Z
+
+.field public final t:Lkotlin/g;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Lkotlin/reflect/KProperty;
-
-    new-instance v1, Lkotlin/jvm/internal/PropertyReference1Impl;
-
-    const-class v2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Reflection;->a(Ljava/lang/Class;)Lkotlin/reflect/KClass;
-
-    move-result-object v2
-
-    const-string v3, "actionBar"
-
-    const-string v4, "getActionBar()Landroid/support/v7/widget/Toolbar;"
-
-    invoke-direct {v1, v2, v3, v4}, Lkotlin/jvm/internal/PropertyReference1Impl;-><init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Reflection;->a(Lkotlin/jvm/internal/PropertyReference1;)Lkotlin/reflect/KProperty1;
-
-    move-result-object v1
-
-    check-cast v1, Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    new-instance v1, Lkotlin/jvm/internal/PropertyReference1Impl;
-
-    const-class v2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Reflection;->a(Ljava/lang/Class;)Lkotlin/reflect/KClass;
-
-    move-result-object v2
-
-    const-string v3, "playerMenu"
-
-    const-string v4, "getPlayerMenu()Lcom/samsung/android/app/music/menu/PlayerMenuGroup;"
-
-    invoke-direct {v1, v2, v3, v4}, Lkotlin/jvm/internal/PropertyReference1Impl;-><init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Reflection;->a(Lkotlin/jvm/internal/PropertyReference1;)Lkotlin/reflect/KProperty1;
-
-    move-result-object v1
-
-    check-cast v1, Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    new-instance v1, Lkotlin/jvm/internal/PropertyReference1Impl;
-
-    const-class v2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Reflection;->a(Ljava/lang/Class;)Lkotlin/reflect/KClass;
-
-    move-result-object v2
-
-    const-string v3, "invalidateHandler"
-
-    const-string v4, "getInvalidateHandler()Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$InvalidateHandler;"
-
-    invoke-direct {v1, v2, v3, v4}, Lkotlin/jvm/internal/PropertyReference1Impl;-><init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Reflection;->a(Lkotlin/jvm/internal/PropertyReference1;)Lkotlin/reflect/KProperty1;
-
-    move-result-object v1
-
-    check-cast v1, Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    sput-object v0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:[Lkotlin/reflect/KProperty;
-
-    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$Companion;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    sput-object v0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->b:Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$Companion;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/samsung/android/app/music/activity/BaseServiceActivity;Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)V
-    .locals 1
+.method public constructor <init>(Lcom/samsung/android/app/music/activity/h;Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)V
+    .locals 4
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "fullPlayer"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 29
-    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObserverAdapter;-><init>()V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->j:Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+    .line 2
+    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:Lcom/samsung/android/app/music/activity/h;
 
-    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->k:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    .line 3
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    .line 36
-    sget-object p1, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    .line 4
+    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$b;
 
-    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$actionBar$2;
+    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$b;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
 
-    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$actionBar$2;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+    invoke-static {p2}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
-    check-cast p2, Lkotlin/jvm/functions/Function0;
+    move-result-object p2
 
-    invoke-static {p1, p2}, Lkotlin/LazyKt;->a(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c:Lkotlin/g;
 
-    move-result-object p1
+    .line 5
+    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$g;
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->e:Lkotlin/Lazy;
+    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$g;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
 
-    .line 39
-    sget-object p1, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    invoke-static {p2}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
-    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$playerMenu$2;
+    move-result-object p2
 
-    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$playerMenu$2;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->d:Lkotlin/g;
 
-    check-cast p2, Lkotlin/jvm/functions/Function0;
+    .line 6
+    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$c;
 
-    invoke-static {p1, p2}, Lkotlin/LazyKt;->a(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$c;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
 
-    move-result-object p1
+    invoke-static {p2}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->f:Lkotlin/Lazy;
+    move-result-object p2
 
-    .line 42
-    sget-object p1, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->e:Lkotlin/g;
 
-    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$invalidateHandler$2;
+    .line 7
+    sget-object p2, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->b:Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata$d;
 
-    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$invalidateHandler$2;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+    invoke-virtual {p2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata$d;->c()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;
 
-    check-cast p2, Lkotlin/jvm/functions/Function0;
+    move-result-object p2
 
-    invoke-static {p1, p2}, Lkotlin/LazyKt;->a(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->h:Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;
 
-    move-result-object p1
+    .line 8
+    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$e;
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->g:Lkotlin/Lazy;
+    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$e;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
 
-    const/4 p1, 0x1
+    invoke-static {p2}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
-    .line 46
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->h:Z
+    move-result-object p2
 
-    .line 55
-    sget-object p1, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;->EmptyMediaChangeObservable:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->o:Lkotlin/g;
 
-    const-string p2, "MediaChangeObservable.EmptyMediaChangeObservable"
+    .line 9
+    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$f;
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$f;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->i:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+    invoke-static {p2}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
-    .line 58
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->e()V
+    move-result-object p2
+
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->p:Lkotlin/g;
+
+    const/4 p2, 0x1
+
+    .line 10
+    iput-boolean p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->q:Z
+
+    .line 11
+    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$h;
+
+    invoke-direct {v0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$h;-><init>(Landroidx/activity/ComponentActivity;)V
+
+    .line 12
+    new-instance v1, Landroidx/lifecycle/k0;
+
+    const-class v2, Lcom/samsung/android/app/music/viewmodel/d;
+
+    invoke-static {v2}, Lkotlin/jvm/internal/z;->a(Ljava/lang/Class;)Lkotlin/reflect/b;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$i;
+
+    invoke-direct {v3, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$i;-><init>(Landroidx/activity/ComponentActivity;)V
+
+    invoke-direct {v1, v2, v3, v0}, Landroidx/lifecycle/k0;-><init>(Lkotlin/reflect/b;Lkotlin/jvm/functions/a;Lkotlin/jvm/functions/a;)V
+
+    .line 13
+    iput-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->r:Lkotlin/g;
+
+    .line 14
+    iput-boolean p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->s:Z
+
+    .line 15
+    new-instance p2, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$d;
+
+    invoke-direct {p2, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$d;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+
+    invoke-static {p2}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->t:Lkotlin/g;
+
+    .line 16
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->z()V
+
+    .line 17
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->u()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/c;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/fullplayer/c;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+
+    invoke-virtual {p2, p1, v0}, Landroidx/lifecycle/LiveData;->i(Landroidx/lifecycle/s;Landroidx/lifecycle/a0;)V
 
     return-void
 .end method
 
-.method public static final synthetic a(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Landroid/support/v7/widget/Toolbar;
-    .locals 0
+.method public static final A(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Landroid/view/MenuItem;)Z
+    .locals 2
 
-    .line 26
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->b()Landroid/support/v7/widget/Toolbar;
+    const-string v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/music/util/m;->a:Lcom/samsung/android/app/music/util/m;
+
+    sget-object v1, Lcom/samsung/android/app/music/util/m$a;->a:Lcom/samsung/android/app/music/util/m$a;
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/util/m;->f(Lcom/samsung/android/app/music/util/m$a;)V
+
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->x()Lcom/samsung/android/app/music/menu/n;
 
     move-result-object p0
 
-    return-object p0
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/menu/n;->d(Landroid/view/MenuItem;)Z
+
+    move-result p0
+
+    return p0
 .end method
 
-.method private final a(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;)V
+.method public static final B(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Landroid/view/View;)V
+    .locals 0
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:Lcom/samsung/android/app/music/activity/h;
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/ui/i;->onBackPressed()V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Ljava/lang/Boolean;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->f(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Ljava/lang/Boolean;)V
+
+    return-void
+.end method
+
+.method public static synthetic d(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Landroid/view/MenuItem;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->A(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Landroid/view/MenuItem;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic e(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->B(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static final f(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Ljava/lang/Boolean;)V
     .locals 1
 
-    .line 98
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;->getPlayerType()I
+    const-string v0, "this$0"
 
-    move-result v0
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string v0, "it"
 
-    move-result-object v0
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c:Ljava/lang/Integer;
-
-    .line 99
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;->getSoundPath()I
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->d:Ljava/lang/Integer;
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->D(Z)V
 
     return-void
 .end method
 
-.method private final b()Landroid/support/v7/widget/Toolbar;
-    .locals 3
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->e:Lkotlin/Lazy;
-
-    sget-object v1, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:[Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/support/v7/widget/Toolbar;
-
-    return-object v0
-.end method
-
-.method public static final synthetic b(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
+.method public static final synthetic g(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Landroidx/appcompat/widget/Toolbar;
     .locals 0
 
-    .line 26
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c()Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->s()Landroidx/appcompat/widget/Toolbar;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final synthetic c(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+.method public static final synthetic i(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Lcom/samsung/android/app/music/activity/h;
     .locals 0
 
-    .line 26
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->j:Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:Lcom/samsung/android/app/music/activity/h;
 
     return-object p0
 .end method
 
-.method private final c()Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
-    .locals 3
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->f:Lkotlin/Lazy;
-
-    sget-object v1, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:[Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
-
-    return-object v0
-.end method
-
-.method private final d()Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$InvalidateHandler;
-    .locals 3
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->g:Lkotlin/Lazy;
-
-    sget-object v1, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:[Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x2
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$InvalidateHandler;
-
-    return-object v0
-.end method
-
-.method public static final synthetic d(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+.method public static final synthetic j(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Z
     .locals 0
 
-    .line 26
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->k:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    iget-boolean p0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->s:Z
+
+    return p0
+.end method
+
+.method public static final synthetic l(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
     return-object p0
 .end method
 
-.method private final e()V
-    .locals 5
+.method public static final synthetic m(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Lcom/samsung/android/app/music/menu/n;
+    .locals 0
 
-    .line 67
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->b()Landroid/support/v7/widget/Toolbar;
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->x()Lcom/samsung/android/app/music/menu/n;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic o(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)Lcom/samsung/android/app/music/viewmodel/d;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->y()Lcom/samsung/android/app/music/viewmodel/d;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic p(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;Z)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->F(Z)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final C()V
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->t()Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$a;
 
     move-result-object v0
 
-    if-eqz v0, :cond_1
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$a;->a()V
 
-    .line 68
-    invoke-virtual {v0}, Landroid/support/v7/widget/Toolbar;->getMenu()Landroid/view/Menu;
+    return-void
+.end method
 
-    move-result-object v1
+.method public final D(Z)V
+    .locals 0
 
-    invoke-interface {v1}, Landroid/view/Menu;->clear()V
+    .line 1
+    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->s:Z
 
-    .line 69
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c()Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
+    if-eqz p1, :cond_0
 
-    move-result-object v1
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->z()V
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/Toolbar;->getMenu()Landroid/view/Menu;
+    goto :goto_0
 
-    move-result-object v2
+    :cond_0
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->s()Landroidx/appcompat/widget/Toolbar;
 
-    const-string v3, "menu"
+    move-result-object p1
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    if-nez p1, :cond_1
 
-    new-instance v3, Landroid/support/v7/view/SupportMenuInflater;
+    goto :goto_0
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/Toolbar;->getContext()Landroid/content/Context;
+    :cond_1
+    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getMenu()Landroid/view/Menu;
 
-    move-result-object v4
+    move-result-object p1
 
-    invoke-direct {v3, v4}, Landroid/support/v7/view/SupportMenuInflater;-><init>(Landroid/content/Context;)V
+    if-nez p1, :cond_2
 
-    check-cast v3, Landroid/view/MenuInflater;
+    goto :goto_0
 
-    invoke-virtual {v1, v2, v3}, Lcom/samsung/android/app/music/menu/PlayerMenuGroup;->a(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    :cond_2
+    invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    .line 70
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c()Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
+    :goto_0
+    return-void
+.end method
 
-    move-result-object v1
+.method public final E(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
+    .locals 1
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/Toolbar;->getMenu()Landroid/view/Menu;
+    const-string v0, "m"
 
-    move-result-object v2
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v3, "menu"
+    .line 1
+    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->h:Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->x()Lcom/samsung/android/app/music/menu/n;
 
-    invoke-virtual {v1, v2}, Lcom/samsung/android/app/music/menu/PlayerMenuGroup;->a(Landroid/view/Menu;)V
+    move-result-object v0
 
-    .line 71
-    new-instance v1, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$initializeMenu$$inlined$apply$lambda$1;
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/menu/n;->n(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$initializeMenu$$inlined$apply$lambda$1;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+    .line 3
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->C()V
 
-    check-cast v1, Landroid/support/v7/widget/Toolbar$OnMenuItemClickListener;
+    return-void
+.end method
 
-    invoke-virtual {v0, v1}, Landroid/support/v7/widget/Toolbar;->setOnMenuItemClickListener(Landroid/support/v7/widget/Toolbar$OnMenuItemClickListener;)V
+.method public final F(Z)V
+    .locals 2
 
-    const v1, 0x7f020137
+    .line 1
+    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->q:Z
 
-    .line 72
-    invoke-virtual {v0, v1}, Landroid/support/v7/widget/Toolbar;->setNavigationIcon(I)V
+    if-eq v0, p1, :cond_0
 
-    .line 73
-    new-instance v1, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$initializeMenu$$inlined$apply$lambda$2;
+    .line 2
+    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->q:Z
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$initializeMenu$$inlined$apply$lambda$2;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+    .line 3
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->x()Lcom/samsung/android/app/music/menu/n;
 
-    check-cast v1, Landroid/view/View$OnClickListener;
+    move-result-object p1
 
-    invoke-virtual {v0, v1}, Landroid/support/v7/widget/Toolbar;->setNavigationOnClickListener(Landroid/view/View$OnClickListener;)V
+    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->q:Z
 
-    const v1, 0x7f0b03fc
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/music/menu/n;->o(Z)V
 
-    .line 76
-    invoke-virtual {v0, v1}, Landroid/support/v7/widget/Toolbar;->setNavigationContentDescription(I)V
+    .line 4
+    iget-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->h:Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;
 
-    .line 77
-    sget-object v0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->b:Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$Companion;
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->l()J
 
-    .line 157
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/util/LogExtensionKt;->a()Z
+    move-result-wide v0
 
-    move-result v0
+    long-to-int p1, v0
+
+    const v0, 0x40002
+
+    if-ne p1, v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->C()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final G(II)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->f:Ljava/lang/Integer;
+
+    const/4 v1, 0x1
 
     if-nez v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const-string v0, "SMUSIC-ActionBarMenuController"
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
-    const-string v1, "Initialize player menu"
+    move-result v0
 
-    .line 77
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-eq v0, p1, :cond_1
 
-    :cond_1
+    .line 2
     :goto_0
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()V
-    .locals 1
-
-    .line 111
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->d()Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$InvalidateHandler;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$InvalidateHandler;->a()V
-
-    return-void
-.end method
-
-.method public final a(Lcom/samsung/android/app/musiclibrary/ui/menu/IMusicMenu;)V
-    .locals 1
-
-    const-string v0, "menu"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 103
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c()Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/menu/PlayerMenuGroup;->a(Lcom/samsung/android/app/musiclibrary/ui/menu/IMusicMenu;)V
-
-    return-void
-.end method
-
-.method public getMediaChangeObservable()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
-    .locals 1
-
-    .line 54
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->i:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
-
-    return-object v0
-.end method
-
-.method public getState()Z
-    .locals 1
-
-    .line 46
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->h:Z
-
-    return v0
-.end method
-
-.method public onMetadataChanged(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicMetadata;)V
-    .locals 1
-
-    const-string v0, "m"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 86
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->getMediaChangeObservable()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;->getPlaybackState()Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;
+    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->f:Ljava/lang/Integer;
 
-    move-result-object p1
+    move p1, v1
 
-    const-string v0, "mediaChangeObservable.playbackState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;)V
-
-    .line 87
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a()V
-
-    return-void
-.end method
-
-.method public onPlaybackStateChanged(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;)V
-    .locals 2
-
-    const-string v0, "s"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 91
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;->getPlayerType()I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c:Ljava/lang/Integer;
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-
-    if-ne v0, v1, :cond_2
-
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;->getSoundPath()I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->d:Ljava/lang/Integer;
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
+    goto :goto_1
 
     :cond_1
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+    const/4 p1, 0x0
 
-    move-result v1
+    .line 3
+    :goto_1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->g:Ljava/lang/Integer;
 
-    if-eq v0, v1, :cond_3
+    if-nez v0, :cond_2
 
-    .line 92
+    goto :goto_2
+
     :cond_2
-    :goto_0
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a(Lcom/samsung/android/app/musiclibrary/core/service/metadata/MusicPlaybackState;)V
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
-    .line 93
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a()V
+    move-result v0
+
+    if-eq v0, p2, :cond_3
+
+    .line 4
+    :goto_2
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->g:Ljava/lang/Integer;
+
+    goto :goto_3
 
     :cond_3
+    move v1, p1
+
+    :goto_3
+    if-eqz v1, :cond_4
+
+    .line 5
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->C()V
+
+    :cond_4
+    return-void
+.end method
+
+.method public final onStartCalled()V
+    .locals 3
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_START:Landroidx/lifecycle/k$b;
+    .end annotation
+
+    sget-boolean v0, Lcom/samsung/android/app/music/info/features/a;->Z:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->v()Lcom/samsung/android/app/musiclibrary/ui/network/b;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:Lcom/samsung/android/app/music/activity/h;
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->w()Landroidx/lifecycle/a0;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Landroidx/lifecycle/LiveData;->i(Landroidx/lifecycle/s;Landroidx/lifecycle/a0;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onStopCalled()V
+    .locals 2
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_STOP:Landroidx/lifecycle/k$b;
+    .end annotation
+
+    sget-boolean v0, Lcom/samsung/android/app/music/info/features/a;->Z:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->v()Lcom/samsung/android/app/musiclibrary/ui/network/b;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->w()Landroidx/lifecycle/a0;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/LiveData;->n(Landroidx/lifecycle/a0;)V
+
+    :cond_0
     return-void
 .end method
 
 .method public release()V
     .locals 1
 
-    .line 82
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c()Lcom/samsung/android/app/music/menu/PlayerMenuGroup;
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->x()Lcom/samsung/android/app/music/menu/n;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/menu/PlayerMenuGroup;->release()V
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/menu/n;->release()V
 
     return-void
 .end method
 
-.method public setMediaChangeObservable(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;)V
+.method public final s()Landroidx/appcompat/widget/Toolbar;
     .locals 1
 
-    const-string v0, "<set-?>"
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->c:Lkotlin/g;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
 
-    .line 54
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->i:Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+    move-result-object v0
 
-    return-void
+    check-cast v0, Landroidx/appcompat/widget/Toolbar;
+
+    return-object v0
 .end method
 
-.method public setState(Z)V
-    .locals 0
+.method public final t()Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$a;
+    .locals 1
 
-    .line 48
-    iput-boolean p1, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->h:Z
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->e:Lkotlin/g;
 
-    if-eqz p1, :cond_0
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
 
-    .line 50
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->e()V
+    move-result-object v0
 
+    check-cast v0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController$a;
+
+    return-object v0
+.end method
+
+.method public final u()Landroidx/lifecycle/LiveData;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->t:Lkotlin/g;
+
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/lifecycle/LiveData;
+
+    return-object v0
+.end method
+
+.method public final v()Lcom/samsung/android/app/musiclibrary/ui/network/b;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->o:Lkotlin/g;
+
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/network/b;
+
+    return-object v0
+.end method
+
+.method public final w()Landroidx/lifecycle/a0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/a0<",
+            "Lcom/samsung/android/app/musiclibrary/ui/network/a;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->p:Lkotlin/g;
+
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/lifecycle/a0;
+
+    return-object v0
+.end method
+
+.method public final x()Lcom/samsung/android/app/music/menu/n;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->d:Lkotlin/g;
+
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/samsung/android/app/music/menu/n;
+
+    return-object v0
+.end method
+
+.method public final y()Lcom/samsung/android/app/music/viewmodel/d;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->r:Lkotlin/g;
+
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/samsung/android/app/music/viewmodel/d;
+
+    return-object v0
+.end method
+
+.method public final z()V
+    .locals 6
+
+    .line 1
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->s()Landroidx/appcompat/widget/Toolbar;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    goto/16 :goto_1
+
+    .line 2
     :cond_0
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->getMenu()Landroid/view/Menu;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Landroid/view/Menu;->clear()V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->x()Lcom/samsung/android/app/music/menu/n;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->getMenu()Landroid/view/Menu;
+
+    move-result-object v2
+
+    const-string v3, "menu"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v4, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:Lcom/samsung/android/app/music/activity/h;
+
+    invoke-virtual {v4}, Landroidx/appcompat/app/f;->getMenuInflater()Landroid/view/MenuInflater;
+
+    move-result-object v4
+
+    const-string v5, "activity.menuInflater"
+
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2, v4}, Lcom/samsung/android/app/music/menu/n;->e(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+
+    .line 4
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->x()Lcom/samsung/android/app/music/menu/n;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->getMenu()Landroid/view/Menu;
+
+    move-result-object v2
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/app/music/menu/n;->b(Landroid/view/Menu;)V
+
+    .line 5
+    new-instance v1, Lcom/samsung/android/app/music/player/fullplayer/b;
+
+    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/fullplayer/b;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setOnMenuItemClickListener(Landroidx/appcompat/widget/Toolbar$g;)V
+
+    .line 6
+    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->getOverflowIcon()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    if-nez v1, :cond_2
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f060122
+
+    invoke-static {v3, v4, v2}, Lcom/samsung/android/app/musiclibrary/ui/support/content/res/a;->a(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
+
+    move-result v3
+
+    invoke-virtual {v1, v3}, Landroid/graphics/drawable/Drawable;->setTint(I)V
+
+    .line 8
+    :goto_0
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v3, 0x7f080181
+
+    invoke-virtual {v1, v3, v2}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    .line 9
+    iget-object v3, p0, Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;->a:Lcom/samsung/android/app/music/activity/h;
+
+    invoke-virtual {v3}, Landroidx/appcompat/app/f;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f060045
+
+    invoke-static {v3, v4, v2}, Lcom/samsung/android/app/musiclibrary/ui/support/content/res/a;->a(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Landroid/graphics/drawable/Drawable;->setTint(I)V
+
+    .line 10
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationIcon(Landroid/graphics/drawable/Drawable;)V
+
+    .line 11
+    new-instance v1, Lcom/samsung/android/app/music/player/fullplayer/a;
+
+    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/fullplayer/a;-><init>(Lcom/samsung/android/app/music/player/fullplayer/ActionBarMenuController;)V
+
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    const v1, 0x7f130452
+
+    .line 12
+    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationContentDescription(I)V
+
+    .line 13
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->h:Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;
+
+    const/4 v1, 0x0
+
+    .line 14
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->a()I
+
+    move-result v2
+
+    const/4 v3, 0x3
+
+    if-le v2, v3, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    const-string v2, "UiPlayer"
+
+    .line 15
+    invoke-virtual {v0, v2}, Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v2, "ActionBarMenuController> Initialize player menu"
+
+    .line 16
+    invoke-static {v2, v1}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_1
     return-void
 .end method

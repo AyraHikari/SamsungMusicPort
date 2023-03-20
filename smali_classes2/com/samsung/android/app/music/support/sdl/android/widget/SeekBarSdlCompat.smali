@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SeekBarSdlCompat.java"
 
 
 # annotations
@@ -15,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +23,6 @@
 .method public static setOnSeekBarHoverListener(Landroid/widget/SeekBar;Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;)V
     .locals 1
 
-    .line 9
     new-instance v0, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;
 
     invoke-direct {v0, p1}, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;-><init>(Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;)V

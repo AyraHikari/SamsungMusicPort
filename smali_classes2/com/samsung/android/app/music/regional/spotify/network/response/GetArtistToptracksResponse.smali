@@ -1,10 +1,10 @@
 .class public Lcom/samsung/android/app/music/regional/spotify/network/response/GetArtistToptracksResponse;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "GetArtistToptracksResponse.java"
 
 
 # instance fields
-.field tracks:Ljava/util/List;
+.field public tracks:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -19,10 +19,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 16
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -45,7 +45,6 @@
         }
     .end annotation
 
-    .line 21
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/GetArtistToptracksResponse;->tracks:Ljava/util/List;
 
     return-object v0
@@ -54,10 +53,9 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 26
-    sget-object v0, Lorg/apache/commons/lang3/builder/ToStringStyle;->MULTI_LINE_STYLE:Lorg/apache/commons/lang3/builder/ToStringStyle;
+    sget-object v0, Lorg/apache/commons/lang3/builder/e;->B:Lorg/apache/commons/lang3/builder/e;
 
-    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/ToStringBuilder;->b(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/ToStringStyle;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/d;->f(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/e;)Ljava/lang/String;
 
     move-result-object v0
 

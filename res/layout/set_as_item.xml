@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:music="http://schemas.android.com/apk/res-auto">
     <RadioButton android:layout_gravity="center" android:id="@id/set_as_radio" android:background="@null" android:focusable="false" android:clickable="false" android:saveEnabled="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/set_as_item_radio_margin_horizontal" android:layout_alignParentStart="true" />
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/set_as_radio">
-        <TextView android:textColor="@color/mu_main_text_winset" android:id="@id/set_as_text1" android:focusable="false" android:clickable="false" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular.ListItem.Line1" />
-        <TextView android:textColor="@color/mu_sub_text_winset" android:id="@id/set_as_text2" android:focusable="false" android:visibility="gone" android:clickable="false" android:singleLine="false" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular.ListItem.Line2" />
+        <TextView android:textColor="@color/basics_text_main" android:id="@id/set_as_text1" android:focusable="false" android:clickable="false" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular.ListItem.Line1" />
+        <TextView android:textColor="@color/basics_text_sub" android:id="@id/set_as_text2" android:focusable="false" android:visibility="gone" android:clickable="false" android:singleLine="false" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular.ListItem.Line2" />
     </LinearLayout>
 </com.samsung.android.app.music.player.setas.widget.SetAsItemLayout>

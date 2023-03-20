@@ -1,5 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/prev_icon" android:background="@drawable/unbounded_ripple_light_full_player_button" android:duplicateParentState="true" android:layout_width="@dimen/full_player_button_image_size" android:layout_height="@dimen/full_player_button_image_size" android:src="@drawable/full_player_prev_back" android:scaleType="fitXY" android:tint="@color/full_player_control_icon_theme" android:contentDescription="@string/tts_previous" android:stateListAnimator="@animator/full_player_button_bounce_effect" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.45" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+<com.samsung.android.app.musiclibrary.ui.widget.MusicImageButton android:src="@drawable/music_player_ic_control_prev" android:contentDescription="@string/tts_previous" android:accessibilityTraversalBefore="@id/play_pause_btn" style="@style/Player.ImageButton"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

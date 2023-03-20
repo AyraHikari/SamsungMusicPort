@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/library/beaconmanager/IBleProxyService;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "IBleProxyService.java"
 
 # interfaces
 .implements Landroid/os/IInterface;
@@ -16,41 +16,16 @@
 
 # virtual methods
 .method public abstract getBeaconManagerVersion()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 .end method
 
 .method public abstract registerScanCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyCallback;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 .end method
 
 .method public abstract registerTvCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;I)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 .end method
 
 .method public abstract unregisterScanCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyCallback;)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 .end method
 
 .method public abstract unregisterTvCallback(Lcom/samsung/android/library/beaconmanager/IBleProxyTvCallback;)Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 .end method

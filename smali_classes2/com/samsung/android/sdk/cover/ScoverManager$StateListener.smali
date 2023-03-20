@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/cover/ScoverManager$StateListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ScoverManager.java"
 
 
 # annotations
@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 821
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

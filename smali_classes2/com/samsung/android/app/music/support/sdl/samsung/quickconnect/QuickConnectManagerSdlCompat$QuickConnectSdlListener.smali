@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/sdl/samsung/quickconnect/QuickConnectManagerSdlCompat$QuickConnectSdlListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "QuickConnectManagerSdlCompat.java"
 
 
 # annotations

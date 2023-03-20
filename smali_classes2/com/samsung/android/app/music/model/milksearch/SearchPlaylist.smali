@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchPlaylist.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 32
     new-instance v0, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist$1;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist$1;-><init>()V
@@ -43,24 +42,24 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 14
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist;->playlistId:Ljava/lang/String;
 
-    .line 16
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist;->playlistName:Ljava/lang/String;
 
-    .line 17
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -70,10 +69,10 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist$1;)V
+.method public synthetic constructor <init>(Landroid/os/Parcel;Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist$1;)V
     .locals 0
 
-    .line 6
+    .line 1
     invoke-direct {p0, p1}, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -92,17 +91,17 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 27
+    .line 1
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist;->playlistId:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 28
+    .line 2
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist;->playlistName:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 29
+    .line 3
     iget-object p2, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPlaylist;->imageUrl:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

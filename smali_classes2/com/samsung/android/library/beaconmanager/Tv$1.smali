@@ -1,6 +1,6 @@
 .class final Lcom/samsung/android/library/beaconmanager/Tv$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Tv.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = null
 .end annotation
 
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,143 +40,143 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/library/beaconmanager/Tv;
     .locals 2
 
-    .line 15
+    .line 2
     new-instance v0, Lcom/samsung/android/library/beaconmanager/Tv;
 
     invoke-direct {v0}, Lcom/samsung/android/library/beaconmanager/Tv;-><init>()V
 
-    .line 16
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->setDevType(I)Z
 
-    .line 17
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$002(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 18
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$102(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 19
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$202(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 20
+    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$302(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 21
+    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$402(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 22
+    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$502(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 23
+    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$602(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 24
+    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$702(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 25
+    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$802(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 26
+    .line 13
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$902(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 27
+    .line 14
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$1002(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 28
+    .line 15
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$1102(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 29
+    .line 16
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$1202(Lcom/samsung/android/library/beaconmanager/Tv;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 30
+    .line 17
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$1302(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 31
+    .line 18
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$1402(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 32
+    .line 19
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$1502(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 33
+    .line 20
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/samsung/android/library/beaconmanager/Tv;->access$1602(Lcom/samsung/android/library/beaconmanager/Tv;I)I
 
-    .line 34
+    .line 21
     sget-boolean v1, Lcom/samsung/android/library/beaconmanager/Tv;->mUseVersion1Data:Z
 
     if-nez v1, :cond_0
 
-    .line 35
+    .line 22
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
     move-result p1
@@ -191,7 +190,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 12
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/library/beaconmanager/Tv$1;->createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/library/beaconmanager/Tv;
 
     move-result-object p1
@@ -202,7 +201,7 @@
 .method public newArray(I)[Lcom/samsung/android/library/beaconmanager/Tv;
     .locals 0
 
-    .line 42
+    .line 2
     new-array p1, p1, [Lcom/samsung/android/library/beaconmanager/Tv;
 
     return-object p1
@@ -211,7 +210,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 12
+    .line 1
     invoke-virtual {p0, p1}, Lcom/samsung/android/library/beaconmanager/Tv$1;->newArray(I)[Lcom/samsung/android/library/beaconmanager/Tv;
 
     move-result-object p1

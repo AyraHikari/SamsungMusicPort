@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lorg/simpleframework/xml/Text;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Text.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -9,7 +9,9 @@
 # annotations
 .annotation system Ldalvik/annotation/AnnotationDefault;
     value = .subannotation Lorg/simpleframework/xml/Text;
-        a = ""
+        data = false
+        empty = ""
+        required = true
     .end subannotation
 .end annotation
 
@@ -19,5 +21,11 @@
 
 
 # virtual methods
-.method public abstract a()Ljava/lang/String;
+.method public abstract data()Z
+.end method
+
+.method public abstract empty()Ljava/lang/String;
+.end method
+
+.method public abstract required()Z
 .end method

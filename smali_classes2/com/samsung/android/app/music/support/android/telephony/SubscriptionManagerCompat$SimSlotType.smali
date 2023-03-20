@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lcom/samsung/android/app/music/support/android/telephony/SubscriptionManagerCompat$SimSlotType;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SubscriptionManagerCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

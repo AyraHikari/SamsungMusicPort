@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/artist/Artist;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Artist.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -23,32 +23,32 @@
     .end annotation
 .end field
 
-.field protected static final TAG:Ljava/lang/String; = "Artist"
+.field public static final TAG:Ljava/lang/String; = "Artist"
 
 .field private static final VARIOUS_ARTIST_ID:Ljava/lang/String; = "va"
 
 
 # instance fields
 .field private imageUrl:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        a = "imageUrl"
-        b = {
+    .annotation runtime Lcom/google/gson/annotations/c;
+        alternate = {
             "artistImageUrl",
             "thumbImgUrl",
             "artistImgUrl"
         }
+        value = "imageUrl"
     .end annotation
 .end field
 
 .field public mArtistId:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        a = "artistId"
+    .annotation runtime Lcom/google/gson/annotations/c;
+        value = "artistId"
     .end annotation
 .end field
 
 .field public mArtistName:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        a = "artistName"
+    .annotation runtime Lcom/google/gson/annotations/c;
+        value = "artistName"
     .end annotation
 .end field
 
@@ -56,10 +56,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 27
     new-instance v0, Lcom/samsung/android/app/music/model/artist/Artist$1;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/artist/Artist$1;-><init>()V
@@ -72,16 +71,16 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 63
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 85
+    .line 14
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
@@ -92,14 +91,14 @@
 
     invoke-direct {p0, v0, v1}, Lcom/samsung/android/app/music/model/artist/Artist;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 86
+    .line 15
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/artist/Artist;->imageUrl:Ljava/lang/String;
 
-    .line 87
+    .line 16
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -112,13 +111,13 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 66
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 67
+    .line 3
     iput-object p1, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistId:Ljava/lang/String;
 
-    .line 68
+    .line 4
     iput-object p2, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistName:Ljava/lang/String;
 
     return-void
@@ -127,16 +126,16 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 71
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 72
+    .line 6
     iput-object p1, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistId:Ljava/lang/String;
 
-    .line 73
+    .line 7
     iput-object p2, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistName:Ljava/lang/String;
 
-    .line 74
+    .line 8
     iput-object p3, p0, Lcom/samsung/android/app/music/model/artist/Artist;->imageUrl:Ljava/lang/String;
 
     return-void
@@ -145,19 +144,19 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 77
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 78
+    .line 10
     iput-object p1, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistId:Ljava/lang/String;
 
-    .line 79
+    .line 11
     iput-object p2, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistName:Ljava/lang/String;
 
-    .line 80
+    .line 12
     iput-object p3, p0, Lcom/samsung/android/app/music/model/artist/Artist;->imageUrl:Ljava/lang/String;
 
-    .line 81
+    .line 13
     iput-object p4, p0, Lcom/samsung/android/app/music/model/artist/Artist;->seedUsable:Ljava/lang/String;
 
     return-void
@@ -168,12 +167,12 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 92
+    .line 1
     new-instance v0, Lcom/samsung/android/app/music/model/artist/Artist;
 
     invoke-direct {v0, p0, p1}, Lcom/samsung/android/app/music/model/artist/Artist;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 93
+    .line 2
     iput-object p2, v0, Lcom/samsung/android/app/music/model/artist/Artist;->imageUrl:Ljava/lang/String;
 
     return-object v0
@@ -200,12 +199,12 @@
 
     const-string v1, "createArtists json is null"
 
-    .line 132
-    invoke-static {p0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->e(Ljava/lang/String;Ljava/lang/String;)V
+    .line 1
+    invoke-static {p0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
 
-    .line 135
+    .line 2
     :cond_0
     new-instance v1, Landroid/util/JsonReader;
 
@@ -215,7 +214,7 @@
 
     invoke-direct {v1, v2}, Landroid/util/JsonReader;-><init>(Ljava/io/Reader;)V
 
-    .line 137
+    .line 3
     :try_start_0
     new-instance p0, Ljava/util/ArrayList;
 
@@ -228,7 +227,7 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 142
+    .line 4
     :try_start_1
     invoke-virtual {v1}, Landroid/util/JsonReader;->close()V
     :try_end_1
@@ -239,7 +238,7 @@
     :catch_0
     move-exception v0
 
-    .line 144
+    .line 5
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_0
@@ -253,13 +252,13 @@
     :catch_1
     move-exception p0
 
-    .line 139
+    .line 6
     :try_start_2
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 142
+    .line 7
     :try_start_3
     invoke-virtual {v1}, Landroid/util/JsonReader;->close()V
     :try_end_3
@@ -270,13 +269,13 @@
     :catch_2
     move-exception p0
 
-    .line 144
+    .line 8
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_1
     return-object v0
 
-    .line 142
+    .line 9
     :goto_2
     :try_start_4
     invoke-virtual {v1}, Landroid/util/JsonReader;->close()V
@@ -288,16 +287,16 @@
     :catch_3
     move-exception v0
 
-    .line 144
+    .line 10
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 145
+    .line 11
     :goto_3
     throw p0
 .end method
 
 .method public static createArtists(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -312,10 +311,8 @@
 
     const-string v0, ","
 
-    const-string v1, ","
-
-    .line 187
-    invoke-static {p0, v0, p1, v1}, Lcom/samsung/android/app/music/model/artist/Artist;->createArtists(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    .line 12
+    invoke-static {p0, v0, p1, v0}, Lcom/samsung/android/app/music/model/artist/Artist;->createArtists(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object p0
 
@@ -338,7 +335,7 @@
         }
     .end annotation
 
-    .line 192
+    .line 13
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -349,18 +346,18 @@
 
     goto :goto_1
 
-    .line 198
+    .line 14
     :cond_0
     new-instance v1, Ljava/util/StringTokenizer;
 
     invoke-direct {v1, p0, p1}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 199
+    .line 15
     new-instance p0, Ljava/util/StringTokenizer;
 
     invoke-direct {p0, p2, p3}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 201
+    .line 16
     :goto_0
     invoke-virtual {v1}, Ljava/util/StringTokenizer;->hasMoreTokens()Z
 
@@ -374,17 +371,17 @@
 
     if-eqz p1, :cond_1
 
-    .line 202
+    .line 17
     invoke-virtual {v1}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 203
+    .line 18
     invoke-virtual {p0}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 204
+    .line 19
     new-instance p3, Lcom/samsung/android/app/music/model/artist/Artist;
 
     invoke-direct {p3, p1, p2}, Lcom/samsung/android/app/music/model/artist/Artist;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -415,21 +412,21 @@
         }
     .end annotation
 
-    .line 98
+    .line 1
     new-instance v0, Ljava/io/StringWriter;
 
     invoke-direct {v0}, Ljava/io/StringWriter;-><init>()V
 
-    .line 99
+    .line 2
     new-instance v1, Landroid/util/JsonWriter;
 
     invoke-direct {v1, v0}, Landroid/util/JsonWriter;-><init>(Ljava/io/Writer;)V
 
-    .line 102
+    .line 3
     :try_start_0
     invoke-static {v1, p0}, Lcom/samsung/android/app/music/model/artist/Artist;->toJson(Landroid/util/JsonWriter;Ljava/util/ArrayList;)V
 
-    .line 103
+    .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -437,7 +434,7 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 108
+    .line 5
     :try_start_1
     invoke-virtual {v1}, Landroid/util/JsonWriter;->close()V
     :try_end_1
@@ -448,10 +445,10 @@
     :catch_0
     move-exception v1
 
-    .line 110
+    .line 6
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 113
+    .line 7
     :goto_0
     :try_start_2
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
@@ -463,7 +460,7 @@
     :catch_1
     move-exception v0
 
-    .line 115
+    .line 8
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_3
@@ -476,13 +473,13 @@
     :catch_2
     move-exception p0
 
-    .line 105
+    .line 9
     :try_start_3
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 108
+    .line 10
     :try_start_4
     invoke-virtual {v1}, Landroid/util/JsonWriter;->close()V
     :try_end_4
@@ -493,10 +490,10 @@
     :catch_3
     move-exception p0
 
-    .line 110
+    .line 11
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 113
+    .line 12
     :goto_1
     :try_start_5
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
@@ -508,7 +505,7 @@
     :catch_4
     move-exception p0
 
-    .line 115
+    .line 13
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_2
@@ -517,7 +514,7 @@
     :goto_3
     return-object p0
 
-    .line 108
+    .line 14
     :goto_4
     :try_start_6
     invoke-virtual {v1}, Landroid/util/JsonWriter;->close()V
@@ -529,10 +526,10 @@
     :catch_5
     move-exception v1
 
-    .line 110
+    .line 15
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 113
+    .line 16
     :goto_5
     :try_start_7
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
@@ -544,10 +541,10 @@
     :catch_6
     move-exception v0
 
-    .line 115
+    .line 17
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 116
+    .line 18
     :goto_6
     throw p0
 .end method
@@ -555,16 +552,16 @@
 .method public static parseArtistJson(Landroid/util/JsonReader;)Lcom/samsung/android/app/music/model/artist/Artist;
     .locals 3
 
-    .line 165
+    .line 1
     new-instance v0, Lcom/samsung/android/app/music/model/artist/Artist;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/model/artist/Artist;-><init>()V
 
-    .line 167
+    .line 2
     :try_start_0
     invoke-virtual {p0}, Landroid/util/JsonReader;->beginObject()V
 
-    .line 168
+    .line 3
     :goto_0
     invoke-virtual {p0}, Landroid/util/JsonReader;->hasNext()Z
 
@@ -572,21 +569,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 169
+    .line 4
     invoke-virtual {p0}, Landroid/util/JsonReader;->nextName()Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "artistId"
 
-    .line 170
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 5
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 171
+    .line 6
     invoke-virtual {p0}, Landroid/util/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object v1
@@ -598,14 +595,14 @@
     :cond_0
     const-string v2, "artistName"
 
-    .line 172
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 7
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 173
+    .line 8
     invoke-virtual {p0}, Landroid/util/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object v1
@@ -614,13 +611,13 @@
 
     goto :goto_0
 
-    .line 175
+    .line 9
     :cond_1
     invoke-virtual {p0}, Landroid/util/JsonReader;->skipValue()V
 
     goto :goto_0
 
-    .line 178
+    .line 10
     :cond_2
     invoke-virtual {p0}, Landroid/util/JsonReader;->endObject()V
     :try_end_0
@@ -631,7 +628,7 @@
     :catch_0
     move-exception p0
 
-    .line 181
+    .line 11
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     const/4 p0, 0x0
@@ -655,27 +652,21 @@
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
     if-nez p0, :cond_0
 
-    .line 153
+    .line 1
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 155
+    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
-    .line 156
+    .line 3
     invoke-virtual {p1}, Landroid/util/JsonReader;->beginArray()V
 
-    .line 157
+    .line 4
     :goto_0
     invoke-virtual {p1}, Landroid/util/JsonReader;->hasNext()Z
 
@@ -683,7 +674,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 158
+    .line 5
     invoke-static {p1}, Lcom/samsung/android/app/music/model/artist/Artist;->parseArtistJson(Landroid/util/JsonReader;)Lcom/samsung/android/app/music/model/artist/Artist;
 
     move-result-object v0
@@ -692,7 +683,7 @@
 
     goto :goto_0
 
-    .line 160
+    .line 6
     :cond_1
     invoke-virtual {p1}, Landroid/util/JsonReader;->endArray()V
 
@@ -711,16 +702,10 @@
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 123
+    .line 1
     invoke-virtual {p0}, Landroid/util/JsonWriter;->beginArray()Landroid/util/JsonWriter;
 
-    .line 124
+    .line 2
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -738,12 +723,12 @@
 
     check-cast v0, Lcom/samsung/android/app/music/model/artist/Artist;
 
-    .line 125
+    .line 3
     invoke-virtual {v0, p0}, Lcom/samsung/android/app/music/model/artist/Artist;->toJson(Landroid/util/JsonWriter;)V
 
     goto :goto_0
 
-    .line 127
+    .line 4
     :cond_0
     invoke-virtual {p0}, Landroid/util/JsonWriter;->endArray()Landroid/util/JsonWriter;
 
@@ -763,7 +748,6 @@
 .method public getArtistID()Ljava/lang/String;
     .locals 1
 
-    .line 239
     iget-object v0, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistId:Ljava/lang/String;
 
     return-object v0
@@ -772,7 +756,6 @@
 .method public getArtistName()Ljava/lang/String;
     .locals 1
 
-    .line 243
     iget-object v0, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistName:Ljava/lang/String;
 
     return-object v0
@@ -781,7 +764,6 @@
 .method public getImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 247
     iget-object v0, p0, Lcom/samsung/android/app/music/model/artist/Artist;->imageUrl:Ljava/lang/String;
 
     return-object v0
@@ -806,12 +788,11 @@
 .method public isSeedUsable()Z
     .locals 2
 
-    const-string v0, "1"
+    iget-object v0, p0, Lcom/samsung/android/app/music/model/artist/Artist;->seedUsable:Ljava/lang/String;
 
-    .line 259
-    iget-object v1, p0, Lcom/samsung/android/app/music/model/artist/Artist;->seedUsable:Ljava/lang/String;
+    const-string v1, "1"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -821,14 +802,13 @@
 .method public isVariousArtist()Z
     .locals 2
 
-    const-string v0, "va"
-
-    .line 211
     invoke-virtual {p0}, Lcom/samsung/android/app/music/model/artist/Artist;->getArtistID()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    const-string v1, "va"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -838,7 +818,6 @@
 .method public setImageUrl(Ljava/lang/String;)V
     .locals 0
 
-    .line 251
     iput-object p1, p0, Lcom/samsung/android/app/music/model/artist/Artist;->imageUrl:Ljava/lang/String;
 
     return-void
@@ -846,18 +825,13 @@
 
 .method public toJson(Landroid/util/JsonWriter;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    .line 228
+    .line 5
     invoke-virtual {p1}, Landroid/util/JsonWriter;->beginObject()Landroid/util/JsonWriter;
 
     const-string v0, "artistId"
 
-    .line 229
+    .line 6
     invoke-virtual {p1, v0}, Landroid/util/JsonWriter;->name(Ljava/lang/String;)Landroid/util/JsonWriter;
 
     move-result-object v0
@@ -868,7 +842,7 @@
 
     const-string v0, "artistName"
 
-    .line 230
+    .line 7
     invoke-virtual {p1, v0}, Landroid/util/JsonWriter;->name(Ljava/lang/String;)Landroid/util/JsonWriter;
 
     move-result-object v0
@@ -877,7 +851,7 @@
 
     invoke-virtual {v0, v1}, Landroid/util/JsonWriter;->value(Ljava/lang/String;)Landroid/util/JsonWriter;
 
-    .line 231
+    .line 8
     invoke-virtual {p1}, Landroid/util/JsonWriter;->endObject()Landroid/util/JsonWriter;
 
     return-void
@@ -886,7 +860,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 263
     iget-object v0, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistName:Ljava/lang/String;
 
     return-object v0
@@ -895,22 +868,22 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 221
+    .line 1
     iget-object p2, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistId:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 222
+    .line 2
     iget-object p2, p0, Lcom/samsung/android/app/music/model/artist/Artist;->mArtistName:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 223
+    .line 3
     iget-object p2, p0, Lcom/samsung/android/app/music/model/artist/Artist;->imageUrl:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 224
+    .line 4
     iget-object p2, p0, Lcom/samsung/android/app/music/model/artist/Artist;->seedUsable:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

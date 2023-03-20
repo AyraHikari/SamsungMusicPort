@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/os/UserHandleCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "UserHandleCompat.java"
 
 
 # static fields
@@ -12,28 +12,24 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
 
-    .line 10
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
-    const/4 v0, -0x2
+    const/4 v1, -0x2
 
-    sput v0, Lcom/samsung/android/app/music/support/android/os/UserHandleCompat;->USER_CURRENT:I
+    sput v1, Lcom/samsung/android/app/music/support/android/os/UserHandleCompat;->USER_CURRENT:I
 
-    .line 13
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    const/4 v1, 0x0
 
-    const/4 v0, 0x0
-
-    sput v0, Lcom/samsung/android/app/music/support/android/os/UserHandleCompat;->USER_OWNER:I
-
-    .line 16
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    .line 2
+    sput v1, Lcom/samsung/android/app/music/support/android/os/UserHandleCompat;->USER_OWNER:I
 
     if-eqz v0, :cond_0
 
+    .line 3
     sget-object v0, Landroid/os/UserHandle;->SEM_OWNER:Landroid/os/UserHandle;
 
     goto :goto_0
@@ -50,7 +46,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,19 +54,19 @@
 .method public static final myUserId()I
     .locals 1
 
-    .line 20
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
-    .line 21
+    .line 2
     invoke-static {}, Landroid/os/UserHandle;->semGetMyUserId()I
 
     move-result v0
 
     return v0
 
-    .line 23
+    .line 3
     :cond_0
     invoke-static {}, Lcom/samsung/android/app/music/support/sdl/android/os/UserHandleSdlCompat;->myUserId()I
 

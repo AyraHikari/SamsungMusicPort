@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyPagingItem;
 .super Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyPaging;
-.source "SourceFile"
+.source "SpotifyPagingItem.java"
 
 
 # annotations
@@ -29,7 +29,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 10
     invoke-direct {p0}, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyPaging;-><init>()V
 
     return-void
@@ -47,7 +46,6 @@
         }
     .end annotation
 
-    .line 14
     iget-object v0, p0, Lcom/samsung/android/app/music/regional/spotify/network/response/SpotifyPagingItem;->items:Ljava/util/List;
 
     return-object v0

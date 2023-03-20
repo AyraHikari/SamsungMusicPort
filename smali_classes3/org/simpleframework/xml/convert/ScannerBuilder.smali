@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/convert/ScannerBuilder;
 .super Lorg/simpleframework/xml/util/ConcurrentCache;
-.source "SourceFile"
+.source "ScannerBuilder.java"
 
 
 # annotations
@@ -23,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 45
     invoke-direct {p0}, Lorg/simpleframework/xml/util/ConcurrentCache;-><init>()V
 
     return-void
@@ -42,8 +41,8 @@
         }
     .end annotation
 
-    .line 59
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/convert/ScannerBuilder;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -51,13 +50,13 @@
 
     if-nez v0, :cond_0
 
-    .line 62
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/convert/ScannerBuilder$Entry;
 
     invoke-direct {v0, p1}, Lorg/simpleframework/xml/convert/ScannerBuilder$Entry;-><init>(Ljava/lang/Class;)V
 
-    .line 63
-    invoke-virtual {p0, p1, v0}, Lorg/simpleframework/xml/convert/ScannerBuilder;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 3
+    invoke-virtual {p0, p1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-object v0

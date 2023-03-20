@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple android:color="@color/ripple_button"
+<ripple android:color="@color/legacy_ripple_button"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/mask">
         <shape android:shape="rectangle" android:thickness="@dimen/button_background_stroke">

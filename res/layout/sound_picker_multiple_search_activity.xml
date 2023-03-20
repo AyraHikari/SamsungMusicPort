@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.v7.widget.SearchView android:id="@id/search" android:layout_width="fill_parent" android:layout_height="wrap_content" app:iconifiedByDefault="false" />
-    <include android:layout_height="67.0dip" layout="@layout/mu_select_all_checkbox" />
+    <androidx.appcompat.widget.SearchView android:id="@id/search" android:layout_width="fill_parent" android:layout_height="wrap_content" app:iconifiedByDefault="false" />
+    <include android:layout_height="67.0dip" layout="@layout/basics_select_all_checkbox" />
     <FrameLayout android:id="@id/music_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
 </LinearLayout>

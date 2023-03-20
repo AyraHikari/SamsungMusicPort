@@ -1,6 +1,6 @@
 .class public final Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ReflectionUtils.java"
 
 
 # annotations
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 0
 
     return-void
@@ -25,13 +25,12 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method private static getField(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+.method public static getField(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -45,7 +44,7 @@
         }
     .end annotation
 
-    .line 71
+    .line 1
     :try_start_0
     invoke-virtual {p0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -53,10 +52,10 @@
 
     const/4 v0, 0x1
 
-    .line 72
+    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 73
+    .line 3
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
 
     move-result-object v0
@@ -65,7 +64,7 @@
 
     move-result-object p0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object p0
@@ -73,7 +72,13 @@
     :catch_0
     move-exception p0
 
-    .line 75
+    goto :goto_0
+
+    :catch_1
+    move-exception p0
+
+    .line 4
+    :goto_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -104,26 +109,32 @@
 .method public static getField(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    .line 83
+    .line 5
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 84
+    .line 6
     invoke-static {v0, p1, p2}, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->getField(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object v0
+    return-object p0
 
     :catch_0
     move-exception v0
 
-    .line 86
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 7
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -157,7 +168,7 @@
     return-object p2
 .end method
 
-.method private static varargs getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+.method public static varargs getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -172,7 +183,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 1
     :try_start_0
     invoke-virtual {p0, p1, p2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
@@ -180,10 +191,10 @@
 
     const/4 p2, 0x1
 
-    .line 100
+    .line 2
     invoke-virtual {p0, p2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object p0
@@ -191,7 +202,13 @@
     :catch_0
     move-exception p0
 
-    .line 103
+    goto :goto_0
+
+    :catch_1
+    move-exception p0
+
+    .line 3
+    :goto_0
     sget-object p2, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->TAG:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -235,26 +252,32 @@
         }
     .end annotation
 
-    .line 111
+    .line 4
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 112
+    .line 5
     invoke-static {v0, p1, p2}, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    move-result-object p2
+    move-result-object p0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p2
+    return-object p0
 
     :catch_0
     move-exception p2
 
-    .line 114
+    goto :goto_0
+
+    :catch_1
+    move-exception p2
+
+    .line 6
+    :goto_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -293,11 +316,11 @@
 .method public static hasClass(Ljava/lang/String;)Z
     .locals 4
 
-    .line 55
+    .line 1
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
     const/4 p0, 0x1
@@ -307,7 +330,13 @@
     :catch_0
     move-exception v0
 
-    .line 58
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    .line 2
+    :goto_0
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -344,7 +373,7 @@
 
     if-nez p0, :cond_0
 
-    .line 122
+    .line 1
     sget-object p0, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->TAG:Ljava/lang/String;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -365,22 +394,28 @@
 
     return-object v0
 
-    .line 126
+    .line 2
     :cond_0
     :try_start_0
     invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object p0
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object p1
+    return-object p0
 
     :catch_0
     move-exception p1
 
-    .line 128
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 3
+    :goto_0
     sget-object p2, Lcom/samsung/android/app/music/support/sdl/ReflectionUtils;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -391,7 +426,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 129
     invoke-virtual {p0}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -408,7 +442,6 @@
 
     move-result-object p0
 
-    .line 128
     invoke-static {p2, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return-object v0

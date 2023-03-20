@@ -2,8 +2,8 @@
 <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/media_info_item_layout" android:paddingTop="@dimen/deprecated_list_item_multi_line_padding_vertical_winset" android:paddingBottom="@dimen/deprecated_list_item_multi_line_padding_vertical_winset" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/deprecated_list_item_two_line_min_height_winset" android:layout_centerVertical="true" android:layoutDirection="locale" android:paddingStart="@dimen/mu_list_item_space_outer_default" android:paddingEnd="@dimen/mu_list_item_space_outer_default">
-        <TextView android:textSize="@dimen/media_info_default_text1" android:textColor="@color/mu_sub_text_winset" android:id="@id/item_text1" style="@style/Font.Roboto.Regular" />
-        <TextView android:textSize="@dimen/media_info_default_text2" android:textColor="@color/mu_main_text_winset" android:id="@id/item_text2" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular" />
+        <TextView android:textSize="@dimen/media_info_default_text1" android:textColor="@color/basics_text_sub" android:id="@id/item_text1" style="@style/Font.Roboto.Regular" />
+        <TextView android:textSize="@dimen/media_info_default_text2" android:textColor="@color/basics_text_main" android:id="@id/item_text2" android:textAlignment="viewStart" style="@style/Font.Roboto.Regular" />
     </LinearLayout>
     <View android:id="@id/divider" android:background="@drawable/list_divider_blur" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/mu_list_divider_inset_winset" android:layout_marginEnd="@dimen/mu_list_divider_inset_winset" />
 </RelativeLayout>

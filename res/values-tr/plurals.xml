@@ -12,61 +12,9 @@
         <item quantity="other">Parçalar</item>
         <item quantity="one">Parça</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d parça Favorilere eklendi. Favorilerde zaten mevcut olan parçalar eklenmedi.</item>
-        <item quantity="one">"%d parça Favoriler'e eklendi. Favoriler'de zaten mevcut olan parça eklenmedi."</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d parça</item>
         <item quantity="one">%d parça</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d parça Favorilerden kaldırıldı.</item>
-        <item quantity="one">%d parça favorilerden kaldırıldı.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d parça favorilere eklendi</item>
-        <item quantity="one">%d parça favorilere eklendi.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Önerilerden en fazla %d parça kaldırabilirsiniz. Kaldırılan parçaları görüntüleyin, geri yüklemek istediklerinizi seçin ve tekrar deneyin.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Önerilerden en fazla %d parça kaldırabilirsiniz. Kaldırılan parçaları görüntüleyin, geri yüklemek istediklerinizi seçin ve tekrar deneyin.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Her ay %d ücretsiz parçanın tadını çıkarmak için Radyo çal tuşuna dokunun.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Her ay %d ücretsiz parçanın tadını çıkarmak için Radyo çal tuşuna dokunun.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">En fazla %d sanatçı seçilebilir.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">En fazla %d sanatçı seçilebilir.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">En fazla %d tarz seçilebilir.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">En fazla %d tarz seçilebilir.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">En fazla %d parça seçilebilir.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">En fazla %d parça seçilebilir.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d saniye</item>
@@ -76,22 +24,46 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">%1$s %2$d kez kullanılabilir.</item>
-        <item quantity="one">%s 1 kez kullanılabilir.</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">%d parça, telif hakkı sorunu nedeniyle premium biletlerle satın alınamaz. Bunları ayrı olarak satın alabilirsiniz.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">%d gün boyunca gösterme</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d parça, telif hakkı sorunu nedeniyle premium biletlerle satın alınamaz. Bunları ayrı olarak satın alabilirsiniz.</item>
+        <item quantity="one">%d gün boyunca gösterme</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d parça, mevcut parçalarınızdan kullanılacak.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">%1$s %2$d kez kullanılabilir.</item>
+        <item quantity="one">%s 1 kez kullanılabilir.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d saniye ileri sar</item>
+        <item quantity="one">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d saniye geri sar</item>
+        <item quantity="one">%d saniye geri sar</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d süresi dolmuş parça silinecek. Melon bilgileri > Satın alma geçmişi bölümünden indirme geçmişinizi kontrol edebilirsiniz.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d parça, mevcut parçalarınızdan kullanılacak.</item>
+        <item quantity="one">%d süresi dolmuş parça silinecek. Melon bilgileri > Satın alma geçmişi bölümünden indirme geçmişinizi kontrol edebilirsiniz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">%d parça için DCF süresi uzatılamadı. Tekrar deneyebilir veya dosyaları yeniden indirmeden önce aşağıdaki listeden silebilirsiniz.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d parça için DCF süresi uzatılamadı. Tekrar deneyebilir veya dosyaları yeniden indirmeden önce aşağıdaki listeden silebilirsiniz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">En fazla %d öge içe aktarılabilir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d öge içe aktarılabilir.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -99,6 +71,10 @@
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">%d şarkının indirilmesi bekleniyor…</item>
         <item quantity="one">1 şarkının indirilmesi bekleniyor…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d yeni bildirim</item>
+        <item quantity="one">%d yeni bildirim</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">%d albüm ve içindeki tüm parçalar telefonunuzdan silinsin mi?</item>
@@ -111,54 +87,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Bu bestekarların tüm parçaları silinsin mi?</item>
         <item quantity="one">Bu bestekarın tüm parçaları silinsin mi?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Seçilen parçalar silinsin mi?</item>
-        <item quantity="one">Seçilen parça silinsin mi?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d parça satın alınacak. Yeterli mevcut parçanız yoksa bu parçalar satın alınmaz.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d parça satın alınacak. Yeterli mevcut parçanız yoksa bu parçalar satın alınmaz.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Seçilen parçalar satın alınsın mı?</item>
-        <item quantity="one">Seçilen parça satın alınsın mı?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Bu şarkıları zaten satın aldınız. Satın alınan şarkıları istediğiniz zaman tekrar indirebilirsiniz.</item>
-        <item quantity="one">Bu şarkıyı zaten satın aldınız. Satın alınan şarkıları istediğiniz zaman tekrar indirebilirsiniz.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Parçalar zaten satın alındı</item>
-        <item quantity="one">Parça zaten satın alındı</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Favori olarak en fazla %d sağlanan çalma listesi ekleyebilirsiniz. Sağlanan çalma listelerinden bazılarını Favoriler sekmesinden kaldırın.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Favori olarak en fazla %d sağlanan çalma listesi ekleyebilirsiniz. Sağlanan çalma listelerinden bazılarını Favoriler sekmesinden kaldırın.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Favori parça olarak en fazla %d akış parçası ekleyebilirsiniz. Bazı akış parçalarını Favori parçalardan çıkarıp tekrar deneyin.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Favori parça olarak en fazla %d akış parçası ekleyebilirsiniz. Bazı akış parçalarını Favori parçalardan çıkarıp tekrar deneyin.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Favori parça olarak en fazla %d parça ekleyebilirsiniz. Bazı parçaları Favori parçalardan çıkarıp tekrar deneyin.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Favori parça olarak en fazla %d parça ekleyebilirsiniz. Bazı parçaları Favori parçalardan çıkarıp tekrar deneyin.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d klasörleri</item>
@@ -180,25 +108,73 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d parça geri yüklendi.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d parça geri yüklendi.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">%d öge silinsin mi?</item>
         <item quantity="one">1 öge silinsin mi?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">En fazla %d karakter girilebilir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d karakter girilebilir.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">"En fazla %d albüm eklenebilir. Daha az albüm ekleyin veya bazı albümleri Favoriler'den kaldırın."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"En fazla %d albüm eklenebilir. Daha az albüm ekleyin veya bazı albümleri Favoriler'den kaldırın."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">"En fazla %d sanatçı eklenebilir. Daha az sanatçı ekleyin veya bazı sanatçıları Favoriler'den kaldırın."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"En fazla %d sanatçı eklenebilir. Daha az sanatçı ekleyin veya bazı sanatçıları Favoriler'den kaldırın."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">En fazla %d çalma listesi ekleyebilirsiniz. Çalma listelerinden bazılarını Favoriler sekmesinden kaldırın.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d çalma listesi ekleyebilirsiniz. Çalma listelerinden bazılarını Favoriler sekmesinden kaldırın.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">"En fazla %d akış parçası eklenebilir. Daha az akış parçası ekleyin veya bazı akış parçalarını Favoriler'den kaldırın."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"En fazla %d akış parçası eklenebilir. Daha az akış parçası ekleyin veya bazı akış parçalarını Favoriler'den kaldırın."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">"En fazla %d parça eklenebilir. Daha az parça ekleyin veya bazı parçaları Favoriler'den kaldırın."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"En fazla %d parça eklenebilir. Daha az parça ekleyin veya bazı parçaları Favoriler'den kaldırın."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">%d çalma listesi dışa aktarıldı.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d çalma listesi dışa aktarıldı.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">%d çalma listesi içe aktarıldı.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d çalma listesi içe aktarıldı.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">En fazla %d çalma listesi seçilebilir.</item>
@@ -216,12 +192,72 @@
         <item quantity="other">%d parça</item>
         <item quantity="one">1 parça</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">"Yalnızca %d parça Favoriler'e eklendi. Kalanlar zaten Favoriler'de bulunuyordu."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Yalnızca %d parça Favoriler'e eklendi. Kalanlar zaten Favoriler'de bulunuyordu."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d parça favorilere eklendi</item>
+        <item quantity="one">1 parça favorilere eklendi</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">Çalma listesine %d parça eklendi.</item>
+        <item quantity="one">Çalma listesine 1 parça eklendi</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">%d parça listeye eklendi.</item>
         <item quantity="one">%d parça listeye eklendi.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">%d parça silinsin mi?</item>
-        <item quantity="one">1 parça silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d parça silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Uyku süresi: %d saat</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uyku süresi: %d saat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Uyku süresi: %d dakika</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uyku süresi: %d dakika</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="time_difference_short_days">
+        <item quantity="other">%d g.</item>
+        <item quantity="one">%d g.</item>
+    </plurals>
+    <plurals name="time_difference_short_hours">
+        <item quantity="other">%d sa.</item>
+        <item quantity="one">%d sa.</item>
+    </plurals>
+    <plurals name="time_difference_short_minutes">
+        <item quantity="other">%d dk.</item>
+        <item quantity="one">%d dk.</item>
+    </plurals>
+    <plurals name="time_difference_words_days">
+        <item quantity="other">%d gün</item>
+        <item quantity="one">%d gün</item>
+    </plurals>
+    <plurals name="time_difference_words_hours">
+        <item quantity="other">%d saat</item>
+        <item quantity="one">%d saat</item>
+    </plurals>
+    <plurals name="time_difference_words_minutes">
+        <item quantity="other">%d dk.</item>
+        <item quantity="one">%d dk.</item>
     </plurals>
 </resources>

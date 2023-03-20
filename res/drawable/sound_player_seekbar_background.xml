@@ -3,20 +3,20 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background">
         <shape>
-            <solid android:color="@color/seekbar_background_winset" />
+            <solid android:color="@color/legacy_sound_player_seekbar_background_winset" />
         </shape>
     </item>
     <item android:id="@android:id/secondaryProgress">
         <clip>
             <shape>
-                <solid android:color="@color/seekbar_secondary_progress_winset" />
+                <solid android:color="@color/legacy_sound_player_seekbar_progress_winset" />
             </shape>
         </clip>
     </item>
     <item android:id="@android:id/progress">
         <clip>
             <shape>
-                <solid android:color="@color/seekbar_progress_winset" />
+                <solid android:color="@color/legacy_sound_player_seekbar_progress_winset" />
             </shape>
         </clip>
     </item>

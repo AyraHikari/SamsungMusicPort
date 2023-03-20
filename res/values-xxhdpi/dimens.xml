@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="full_player_explicit_icon_background_stroke_width">6.0px</dimen>
-    <dimen name="divider_action_bar_width">3.0px</dimen>
-    <dimen name="sesl_action_bar_background_divider_height">3.0px</dimen>
-    <dimen name="sesl_edit_textfield_cursor_width">5.0px</dimen>
+    <dimen name="mu_list_divider_height_winset">3.0px</dimen>
     <dimen name="sesl_list_divider_height">3.0px</dimen>
     <dimen name="sesl_switch_divider_height">2.0px</dimen>
-    <dimen name="dialog_sub_header_divider_height_winset">3.0px</dimen>
-    <dimen name="mu_album_cover_stroke">2.0px</dimen>
-    <dimen name="mu_list_divider_height_winset">3.0px</dimen>
-    <dimen name="mu_list_item_thumbnail_stroke">2.0px</dimen>
-    <dimen name="permission_notice_with_tnc_diver_height">3.0px</dimen>
 </resources>

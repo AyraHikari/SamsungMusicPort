@@ -1,697 +1,1131 @@
 .class public final Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;
-.super Lcom/samsung/android/app/musiclibrary/core/service/v3/PlayerService;
-.source "SourceFile"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$NotificationUpdaterDelegate;
-    }
-.end annotation
+.super Lcom/samsung/android/app/musiclibrary/core/service/v3/j;
+.source "PlayerServiceV3.kt"
 
 
 # instance fields
-.field private final a:Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
+.field public A:Ljava/lang/Integer;
 
-.field private b:Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;
+.field public final B:Lcom/samsung/android/app/music/provider/melonauth/l;
 
-.field private final c:Lcom/samsung/android/app/music/service/v3/legacy/LegacyServiceFacade;
+.field public final s:Lkotlin/g;
+
+.field public final t:Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
+
+.field public u:Lcom/samsung/android/app/music/service/v3/session/f;
+
+.field public v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+.field public w:Lcom/samsung/android/app/music/service/v3/observers/c;
+
+.field public x:Lcom/samsung/android/app/music/service/v3/observers/g;
+
+.field public y:Lcom/samsung/android/app/music/service/v3/e;
+
+.field public z:Lcom/samsung/android/app/music/service/v3/observers/e;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 25
+    .locals 1
 
-    move-object/from16 v0, p0
+    .line 1
+    invoke-direct {p0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/j;-><init>()V
 
-    .line 61
-    invoke-direct/range {p0 .. p0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/PlayerService;-><init>()V
+    .line 2
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$a;
 
-    .line 62
-    new-instance v8, Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$a;-><init>(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;)V
 
-    .line 63
-    invoke-static {}, Lcom/samsung/android/app/music/service/metadata/LocalMusicContents;->a()Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
-    move-result-object v2
+    move-result-object v0
 
-    const-string v1, "LocalMusicContents.getInstance()"
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->s:Lkotlin/g;
 
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 3
+    sget-object v0, Lcom/samsung/android/app/music/service/v3/a;->j:Lcom/samsung/android/app/music/service/v3/a;
 
-    const-string v9, "title"
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->t:Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
 
-    const-string v10, "album"
+    .line 4
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/b;
 
-    const-string v11, "artist"
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/service/v3/b;-><init>(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;)V
 
-    const-string v12, "album_id"
-
-    const-string v13, "artist_id"
-
-    const-string v14, "duration"
-
-    const-string v15, "_data"
-
-    const-string v16, "mime_type"
-
-    const-string v17, "genre"
-
-    const-string v18, "bit_depth"
-
-    const-string v19, "sampling_rate"
-
-    const-string v20, "is_secretbox"
-
-    const-string v21, "cp_attrs"
-
-    const-string v22, "source_id"
-
-    const-string v23, "explicit"
-
-    const-string v24, "is_celeb"
-
-    filled-new-array/range {v9 .. v24}, [Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v9, "_id"
-
-    const-string v10, "title"
-
-    const-string v11, "album"
-
-    const-string v12, "artist"
-
-    const-string v13, "album_id"
-
-    const-string v14, "duration"
-
-    const-string v15, "mime_type"
-
-    const-string v16, "genre"
-
-    const-string v17, "bit_depth"
-
-    const-string v18, "sampling_rate"
-
-    const-string v19, "is_secretbox"
-
-    const-string v20, "cp_attrs"
-
-    const-string v21, "explicit"
-
-    const-string v22, "is_celeb"
-
-    .line 76
-    filled-new-array/range {v9 .. v22}, [Ljava/lang/String;
-
-    move-result-object v4
-
-    const/4 v5, 0x0
-
-    const/16 v6, 0x8
-
-    const/4 v7, 0x0
-
-    move-object v1, v8
-
-    .line 62
-    invoke-direct/range {v1 .. v7}, Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;-><init>(Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;[Ljava/lang/String;[Ljava/lang/String;Landroid/util/SparseArray;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    iput-object v8, v0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a:Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
-
-    .line 89
-    new-instance v1, Lcom/samsung/android/app/music/service/v3/legacy/LegacyServiceFacade;
-
-    invoke-direct {v1}, Lcom/samsung/android/app/music/service/v3/legacy/LegacyServiceFacade;-><init>()V
-
-    iput-object v1, v0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->c:Lcom/samsung/android/app/music/service/v3/legacy/LegacyServiceFacade;
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->B:Lcom/samsung/android/app/music/provider/melonauth/l;
 
     return-void
 .end method
 
-.method private final a(Landroid/content/Context;)Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/ServiceMediaChangeCenter;
-    .locals 13
+.method public static synthetic H(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;I)V
+    .locals 0
 
-    .line 124
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/ServiceCallbackUpdater;
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->Q(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;I)V
 
-    invoke-direct {v0}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/ServiceCallbackUpdater;-><init>()V
+    return-void
+.end method
 
-    .line 125
-    new-instance v1, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/ServiceMediaChangeCenter;
+.method public static final synthetic I(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;)Lcom/samsung/android/app/music/service/v3/e;
+    .locals 0
 
-    .line 126
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->getServiceOptions()Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
+    iget-object p0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->y:Lcom/samsung/android/app/music/service/v3/e;
 
-    move-result-object v2
+    return-object p0
+.end method
 
-    invoke-virtual {v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;->getContents()Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;
+.method public static final synthetic J(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
+    .locals 0
 
-    move-result-object v2
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->N(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
 
-    const v3, 0x7f1000b7
+    return-void
+.end method
 
-    .line 125
-    invoke-direct {v1, p1, v0, v2, v3}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/ServiceMediaChangeCenter;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/ServiceCallbackUpdater;Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;I)V
+.method public static final synthetic K(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;Landroid/os/Bundle;)V
+    .locals 0
 
-    .line 131
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/mediasession/MediaSessionUpdater;
+    invoke-virtual {p0, p1, p2}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->O(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;Landroid/os/Bundle;)V
 
-    .line 132
-    move-object v12, v1
+    return-void
+.end method
 
-    check-cast v12, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;
+.method public static final synthetic L(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
+    .locals 0
 
-    invoke-static {}, Lcom/samsung/android/app/music/service/observer/abstraction/ObserversAbstractionFactory;->a()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->P(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
 
-    move-result-object v7
+    return-void
+.end method
 
-    .line 133
-    const-class v8, Lcom/samsung/android/app/music/service/receiver/MediaButtonReceiver;
+.method public static final Q(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;I)V
+    .locals 1
 
-    iget-object v2, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->c:Lcom/samsung/android/app/music/service/v3/legacy/LegacyServiceFacade;
+    const-string v0, "this$0"
 
-    move-object v9, v2
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v9, Lcom/samsung/android/app/musiclibrary/core/service/ICorePlayerServiceFacade;
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->A:Ljava/lang/Integer;
 
-    .line 134
-    new-instance v2, Lcom/samsung/android/app/music/service/observer/artwork/MediaSessionArtworkConverter;
+    if-nez v0, :cond_0
 
-    invoke-direct {v2}, Lcom/samsung/android/app/music/service/observer/artwork/MediaSessionArtworkConverter;-><init>()V
+    goto :goto_0
 
-    move-object v10, v2
-
-    check-cast v10, Lcom/samsung/android/app/musiclibrary/core/utils/graphics/BitmapConverter;
-
-    new-instance v2, Lcom/samsung/android/app/music/MusicLegalPermissionRequester;
-
-    invoke-direct {v2}, Lcom/samsung/android/app/music/MusicLegalPermissionRequester;-><init>()V
-
-    move-object v11, v2
-
-    check-cast v11, Lcom/samsung/android/app/musiclibrary/ui/permission/LegalPermissionRequester;
-
-    move-object v4, v0
-
-    move-object v5, p1
-
-    move-object v6, v12
-
-    .line 131
-    invoke-direct/range {v4 .. v11}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/mediasession/MediaSessionUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;Ljava/lang/Class;Lcom/samsung/android/app/musiclibrary/core/service/ICorePlayerServiceFacade;Lcom/samsung/android/app/musiclibrary/core/utils/graphics/BitmapConverter;Lcom/samsung/android/app/musiclibrary/ui/permission/LegalPermissionRequester;)V
-
-    .line 136
-    move-object v2, v0
-
-    check-cast v2, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    invoke-direct {p0, v12, v2}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 137
-    new-instance v2, Lcom/samsung/android/app/music/lyrics/LocalLyricLoader;
-
-    invoke-direct {v2, p1}, Lcom/samsung/android/app/music/lyrics/LocalLyricLoader;-><init>(Landroid/content/Context;)V
-
-    check-cast v2, Lcom/samsung/android/app/musiclibrary/core/meta/lyric/ILyricLoader;
-
-    invoke-virtual {v0, v2}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/mediasession/MediaSessionUpdater;->setLyricLoader(Lcom/samsung/android/app/musiclibrary/core/meta/lyric/ILyricLoader;)V
-
-    .line 138
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->getServiceOptions()Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;->getLogger()Landroid/util/SparseArray;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/mediasession/MediaSessionUpdater;->setPlayerLoggers(Landroid/util/SparseArray;)V
-
-    .line 141
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/NotificationUpdater;
-
-    .line 142
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->getServiceOptions()Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;->getContents()Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;
-
-    move-result-object v4
-
-    .line 143
-    invoke-static {}, Lcom/samsung/android/app/music/service/observer/abstraction/ObserversAbstractionFactory;->a()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;
-
-    move-result-object v6
-
-    .line 144
-    new-instance v2, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$NotificationUpdaterDelegate;
-
-    invoke-direct {v2, p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$NotificationUpdaterDelegate;-><init>(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;)V
-
-    move-object v7, v2
-
-    check-cast v7, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/NotificationUpdateHelper$INotificationUpdaterDelegate;
-
-    .line 145
-    new-instance v2, Lcom/samsung/android/app/music/service/observer/artwork/NotificationArtworkConverter;
-
-    invoke-direct {v2, v12}, Lcom/samsung/android/app/music/service/observer/artwork/NotificationArtworkConverter;-><init>(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;)V
-
-    move-object v8, v2
-
-    check-cast v8, Lcom/samsung/android/app/musiclibrary/core/utils/graphics/BitmapConverter;
-
-    move-object v2, v0
-
-    move-object v3, p1
-
-    move-object v5, v12
-
-    .line 141
-    invoke-direct/range {v2 .. v8}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/NotificationUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/NotificationUpdateHelper$INotificationUpdaterDelegate;Lcom/samsung/android/app/musiclibrary/core/utils/graphics/BitmapConverter;)V
-
-    .line 147
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 150
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/EdgePanelUpdater;
-
-    .line 151
-    sget-object v2, Lcom/sec/android/app/music/edgepanel/MusicEdgePanelProvider;->Companion:Lcom/sec/android/app/music/edgepanel/MusicEdgePanelProvider$Companion;
-
-    invoke-virtual {v2}, Lcom/sec/android/app/music/edgepanel/MusicEdgePanelProvider$Companion;->getInstance()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IEdgePanelUpdateHelper;
-
-    move-result-object v2
-
-    .line 152
-    new-instance v3, Lcom/samsung/android/app/music/service/observer/artwork/EdgePanelArtworkConverter;
-
-    invoke-direct {v3}, Lcom/samsung/android/app/music/service/observer/artwork/EdgePanelArtworkConverter;-><init>()V
-
-    check-cast v3, Lcom/samsung/android/app/musiclibrary/core/utils/graphics/BitmapConverter;
-
-    .line 150
-    invoke-direct {v0, p1, v12, v2, v3}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/EdgePanelUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IEdgePanelUpdateHelper;Lcom/samsung/android/app/musiclibrary/core/utils/graphics/BitmapConverter;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 148
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 157
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/HomeScreenWidgetUpdater;
-
-    sget-object v2, Lcom/samsung/android/app/music/appwidget/HomeScreenWidgetProvider;->Companion:Lcom/samsung/android/app/music/appwidget/HomeScreenWidgetProvider$Companion;
-
-    invoke-virtual {v2}, Lcom/samsung/android/app/music/appwidget/HomeScreenWidgetProvider$Companion;->a()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IHomeScreenWidgetUpdateHelper;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    invoke-direct {v0, p1, v12, v2, v3}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/HomeScreenWidgetUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IHomeScreenWidgetUpdateHelper;Lcom/samsung/android/app/musiclibrary/core/utils/graphics/BitmapConverter;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 155
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 159
-    invoke-static {p1}, Lcom/samsung/android/app/musiclibrary/core/library/hardware/ViewCoverManager;->isSupportCoverSView(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 162
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/ViewCoverUpdater;
-
-    .line 163
-    invoke-static {}, Lcom/samsung/android/app/music/service/observer/abstraction/ObserversAbstractionFactory;->a()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;
-
-    move-result-object v2
-
-    .line 164
-    sget-boolean v4, Lcom/samsung/android/app/music/info/features/AppFeatures;->i:Z
-
-    .line 162
-    invoke-direct {v0, p1, v12, v2, v4}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/ViewCoverUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;Z)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 160
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 168
     :cond_0
-    invoke-static {}, Lcom/samsung/android/app/musiclibrary/core/service/CorePlayerService$ScheduledExecutorFactory;->getInstance()Lcom/samsung/android/app/musiclibrary/core/service/CorePlayerService$ScheduledExecutorFactory;
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
-    move-result-object v0
+    move-result v0
 
-    .line 169
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/CorePlayerService$ScheduledExecutorFactory;->obtainScheduleExecutorService()Ljava/util/concurrent/ScheduledExecutorService;
+    if-ne v0, p1, :cond_1
 
-    move-result-object v0
+    return-void
 
-    .line 170
-    sget-boolean v2, Lcom/samsung/android/app/music/info/features/AppFeatures;->j:Z
-
-    if-eqz v2, :cond_1
-
-    .line 177
-    new-instance v2, Lcom/samsung/android/app/music/service/observer/history/LocalPlayLogger;
-
-    invoke-direct {v2, p1}, Lcom/samsung/android/app/music/service/observer/history/LocalPlayLogger;-><init>(Landroid/content/Context;)V
-
-    check-cast v2, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    invoke-direct {p0, v12, v2}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 181
+    .line 2
     :cond_1
-    new-instance v2, Lcom/samsung/android/app/music/service/observer/TimeBasedLogger;
-
-    invoke-direct {v2, p1, v3, v0}, Lcom/samsung/android/app/music/service/observer/TimeBasedLogger;-><init>(Landroid/content/Context;Lcom/samsung/android/app/music/service/observer/PlayerTimeLogger;Ljava/util/concurrent/ScheduledExecutorService;)V
-
-    check-cast v2, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 179
-    invoke-direct {p0, v12, v2}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 191
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/legacy/LegacyGoogleIntentSender;
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->getServiceOptions()Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;->getContents()Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;
-
-    move-result-object v2
-
-    invoke-direct {v0, p1, v2}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/legacy/LegacyGoogleIntentSender;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/queue/IMusicContents;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 189
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 195
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/legacy/LegacyMusicInfoUpdater;
-
-    .line 196
-    invoke-static {}, Lcom/samsung/android/app/music/service/observer/abstraction/ObserversAbstractionFactory;->a()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;
-
-    move-result-object v2
-
-    .line 197
-    new-instance v4, Lcom/samsung/android/app/music/service/observer/MusicInfoUpdateHelper;
-
-    invoke-direct {v4, p1}, Lcom/samsung/android/app/music/service/observer/MusicInfoUpdateHelper;-><init>(Landroid/content/Context;)V
-
-    check-cast v4, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/legacy/LegacyMusicInfoUpdater$IIntentExtras;
-
-    .line 195
-    invoke-direct {v0, p1, v2, v4}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/legacy/LegacyMusicInfoUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/legacy/LegacyMusicInfoUpdater$IIntentExtras;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 193
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 200
-    invoke-static {}, Lcom/samsung/android/app/music/legacy/gesture/LegacyGestureFeatures;->a()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 203
-    new-instance v0, Lcom/samsung/android/app/music/service/observer/LegacyAirBrowseUpdater;
-
-    iget-object v2, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->c:Lcom/samsung/android/app/music/service/v3/legacy/LegacyServiceFacade;
-
-    check-cast v2, Lcom/samsung/android/app/musiclibrary/core/service/ICorePlayerServiceFacade;
-
-    invoke-direct {v0, p1, v2}, Lcom/samsung/android/app/music/service/observer/LegacyAirBrowseUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/ICorePlayerServiceFacade;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 201
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 207
-    :cond_2
-    invoke-static {p1}, Lcom/samsung/android/app/musiclibrary/core/library/framework/security/KnoxUtils;->isKnoxModeOn(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    .line 210
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/LockPlayerUpdater;
-
-    .line 211
-    invoke-static {}, Lcom/samsung/android/app/music/service/observer/abstraction/ObserversAbstractionFactory;->a()Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;
-
-    move-result-object v2
-
-    .line 214
-    invoke-static {p1}, Lcom/samsung/android/app/music/service/queue/PlayerSettingManager;->a(Landroid/content/Context;)Lcom/samsung/android/app/musiclibrary/core/service/IPlayerSettingManager;
-
-    move-result-object v4
-
-    .line 210
-    invoke-direct {v0, p1, v2, v4}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/LockPlayerUpdater;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/abstraction/IObserversAbstractionFactory;Lcom/samsung/android/app/musiclibrary/core/service/IPlayerSettingManager;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 208
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 217
-    sget-boolean v0, Lcom/samsung/android/app/music/info/features/AppFeatures;->d:Z
-
-    if-eqz v0, :cond_3
-
-    .line 220
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/ScreenOffMusicUpdater;
-
-    const-class v2, Lcom/samsung/android/app/music/som/HeadsetPlugReceiver;
-
-    invoke-direct {v0, p1, v2}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/observer/ScreenOffMusicUpdater;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 218
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 223
-    :cond_3
-    sget-boolean v0, Lcom/samsung/android/app/music/info/features/AppFeatures;->f:Z
-
-    if-eqz v0, :cond_4
-
-    .line 225
-    new-instance v0, Lcom/samsung/android/app/music/service/controller/legacy/LegacyAdaptSoundController;
-
-    .line 228
-    sget-object v2, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$setUpCenter$1;->a:Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$setUpCenter$1;
-
-    check-cast v2, Lcom/samsung/android/app/music/service/controller/legacy/LegacyAdaptSoundController$onErrorListener;
-
-    .line 225
-    invoke-direct {v0, p1, v3, v2}, Lcom/samsung/android/app/music/service/controller/legacy/LegacyAdaptSoundController;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/player/MultiPlayer;Lcom/samsung/android/app/music/service/controller/legacy/LegacyAdaptSoundController$onErrorListener;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 224
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 249
-    :cond_4
-    new-instance v0, Lcom/samsung/android/app/music/service/observer/MusicLoggingUpdater$Builder;
-
-    invoke-direct {v0, p1}, Lcom/samsung/android/app/music/service/observer/MusicLoggingUpdater$Builder;-><init>(Landroid/content/Context;)V
-
-    .line 250
-    sget-boolean v2, Lcom/samsung/android/app/music/info/features/AppFeatures;->j:Z
-
-    invoke-virtual {v0, v2}, Lcom/samsung/android/app/music/service/observer/MusicLoggingUpdater$Builder;->a(Z)Lcom/samsung/android/app/music/service/observer/MusicLoggingUpdater$Builder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/observer/MusicLoggingUpdater$Builder;->a()Lcom/samsung/android/app/music/service/observer/MusicLoggingUpdater;
-
-    move-result-object v0
-
-    const-string v2, "MusicLoggingUpdater.Buil\u2026res.SUPPORT_MILK).build()"
-
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
-
-    .line 248
-    invoke-direct {p0, v12, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    .line 253
-    invoke-static {p1}, Lcom/samsung/android/app/music/bixby/appcard/BixbyAppCardManager;->b(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    .line 254
-    invoke-static {p1}, Lcom/samsung/android/app/music/bixby/appcard/BixbyAppCardManager;->a(Landroid/content/Context;)Lcom/samsung/android/app/music/bixby/appcard/BixbyAppCardManager;
+    :goto_0
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    const-string v0, "BixbyAppCardManager.getInstance(context)"
+    iput-object p1, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->A:Ljava/lang/Integer;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 3
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/core/service/v3/l;->b()Lcom/samsung/android/app/musiclibrary/core/service/v3/c;
 
-    check-cast p1, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
+    move-result-object p0
 
-    invoke-direct {p0, v12, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
+    if-nez p0, :cond_2
 
-    :cond_5
-    return-object v1
-.end method
+    goto :goto_1
 
-.method private final a(ILandroid/app/Notification;)V
-    .locals 0
+    .line 4
+    :cond_2
+    invoke-virtual {p0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->f()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;
 
-    .line 271
-    invoke-virtual {p0, p1, p2}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->startForeground(ILandroid/app/Notification;)V
+    move-result-object p1
 
-    return-void
-.end method
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;->J()Z
 
-.method public static final synthetic a(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;ILandroid/app/Notification;)V
-    .locals 0
+    move-result p1
 
-    .line 61
-    invoke-direct {p0, p1, p2}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(ILandroid/app/Notification;)V
+    invoke-static {p0, p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/extension/a;->v(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;Z)V
 
-    return-void
-.end method
-
-.method public static final synthetic a(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;Z)V
-    .locals 0
-
-    .line 61
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Z)V
-
-    return-void
-.end method
-
-.method private final a(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-    .locals 0
-
-    .line 263
-    invoke-interface {p1, p2}, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/MediaChangeObservable;->registerMediaChangeObserver(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
-
-    return-void
-.end method
-
-.method private final a(Z)V
-    .locals 0
-
-    .line 267
-    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->stopForeground(Z)V
-
+    :goto_1
     return-void
 .end method
 
 
 # virtual methods
-.method public changeToLegacyObservable(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/Player;)V
-    .locals 2
+.method public F(Lcom/samsung/android/app/musiclibrary/core/service/v3/c;)V
+    .locals 5
 
-    const-string v0, "p"
+    const-string v0, "activePlayer"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 120
-    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->b:Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;
+    .line 1
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/e;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "applicationContext"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v1, p1}, Lcom/samsung/android/app/music/service/v3/observers/e;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->z:Lcom/samsung/android/app/music/service/v3/observers/e;
+
+    .line 2
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 3
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->M()Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
+
+    move-result-object v1
+
+    invoke-direct {v0, p0, v1}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;-><init>(Lcom/samsung/android/app/musiclibrary/core/service/v3/j;Lcom/samsung/android/app/musiclibrary/core/service/v3/p;)V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    .line 4
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 5
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/edge/f;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->M()Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
+
+    move-result-object v3
+
+    invoke-direct {v0, v1, v3}, Lcom/samsung/android/app/music/service/v3/observers/edge/f;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/v3/p;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 6
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/widget/a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/service/v3/observers/widget/a;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 7
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/session/f;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->M()Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
+
+    move-result-object v3
+
+    invoke-direct {v0, v1, v3, p1}, Lcom/samsung/android/app/music/service/v3/session/f;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/v3/p;Lcom/samsung/android/app/musiclibrary/core/service/v3/c;)V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->u:Lcom/samsung/android/app/music/service/v3/session/f;
+
+    .line 8
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 9
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    const-string v1, "notificationUpdater"
+
+    const/4 v3, 0x0
 
     if-nez v0, :cond_0
 
-    const-string v1, "legacyObservable"
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v0, v3
 
     :cond_0
-    invoke-virtual {v0, p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;->changePlayer(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/Player;)Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter$LegacyObserverGroup;
+    iget-object v4, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->u:Lcom/samsung/android/app/music/service/v3/session/f;
+
+    if-nez v4, :cond_1
+
+    const-string v4, "mediaSessionUpdater"
+
+    invoke-static {v4}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v4, v3
+
+    :cond_1
+    invoke-virtual {v0, v4}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->o0(Lcom/samsung/android/app/musiclibrary/core/service/v3/h;)V
+
+    .line 10
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/logging/l;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v4}, Lcom/samsung/android/app/music/service/v3/observers/logging/l;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 11
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/core/library/framework/security/a;->a:Lcom/samsung/android/app/musiclibrary/core/library/framework/security/a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v4}, Lcom/samsung/android/app/musiclibrary/core/library/framework/security/a;->g(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 12
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/c;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v4}, Lcom/samsung/android/app/music/service/v3/observers/c;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->w:Lcom/samsung/android/app/music/service/v3/observers/c;
+
+    .line 13
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 14
+    sget-boolean v0, Lcom/samsung/android/app/musiclibrary/core/utils/features/a;->d:Z
+
+    if-eqz v0, :cond_3
+
+    .line 15
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/som/g;
+
+    invoke-direct {v0}, Lcom/samsung/android/app/music/service/v3/observers/som/g;-><init>()V
+
+    .line 16
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 17
+    iget-object v4, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    if-nez v4, :cond_2
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v4, v3
+
+    :cond_2
+    invoke-virtual {v4, v0}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->o0(Lcom/samsung/android/app/musiclibrary/core/service/v3/h;)V
+
+    .line 18
+    :cond_3
+    sget-boolean v0, Lcom/samsung/android/app/music/info/features/a;->W:Z
+
+    if-eqz v0, :cond_4
+
+    .line 19
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/b;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v4}, Lcom/samsung/android/app/music/service/v3/observers/b;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 20
+    :cond_4
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/core/library/hardware/a;->g:Lcom/samsung/android/app/musiclibrary/core/library/hardware/a$a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v4}, Lcom/samsung/android/app/musiclibrary/core/library/hardware/a$a;->b(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    .line 21
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/g;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v4, p1}, Lcom/samsung/android/app/music/service/v3/observers/g;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
+
+    .line 22
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 23
+    iget-object v4, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    if-nez v4, :cond_5
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v4, v3
+
+    :cond_5
+    invoke-virtual {v4, v0}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->o0(Lcom/samsung/android/app/musiclibrary/core/service/v3/h;)V
+
+    .line 24
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->x:Lcom/samsung/android/app/music/service/v3/observers/g;
+
+    .line 25
+    :cond_6
+    sget-object v0, Lcom/samsung/android/app/music/service/v3/observers/bixbyappcard/a;->f:Lcom/samsung/android/app/music/service/v3/observers/bixbyappcard/a$a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v4}, Lcom/samsung/android/app/music/service/v3/observers/bixbyappcard/a$a;->a(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    .line 26
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/bixbyappcard/c;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v4}, Lcom/samsung/android/app/music/service/v3/observers/bixbyappcard/c;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 27
+    :cond_7
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    if-nez v0, :cond_8
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_8
+    move-object v3, v0
+
+    :goto_0
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$b;
+
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$b;-><init>(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;Lcom/samsung/android/app/musiclibrary/core/service/v3/c;)V
+
+    invoke-virtual {v3, v0}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->o0(Lcom/samsung/android/app/musiclibrary/core/service/v3/h;)V
+
+    .line 28
+    invoke-static {}, Lcom/samsung/android/app/music/service/v3/observers/gesture/c;->a()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_9
+
+    .line 29
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v1, p1}, Lcom/samsung/android/app/music/service/v3/observers/a;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 30
+    :cond_9
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/leagcy/a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->M()Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/samsung/android/app/musiclibrary/core/service/v3/p;->b()Lcom/samsung/android/app/musiclibrary/core/service/queue/a;
+
+    move-result-object v3
+
+    invoke-direct {v0, v1, v3}, Lcom/samsung/android/app/music/service/v3/observers/leagcy/a;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/queue/a;)V
+
+    .line 31
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 32
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/observers/leagcy/b;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->M()Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/p;->b()Lcom/samsung/android/app/musiclibrary/core/service/queue/a;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Lcom/samsung/android/app/music/service/v3/observers/leagcy/b;-><init>(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/queue/a;)V
+
+    .line 33
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 34
+    new-instance v0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$c;
+
+    invoke-direct {v0, p0, p1}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$c;-><init>(Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;Lcom/samsung/android/app/musiclibrary/core/service/v3/c;)V
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/c;->a(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
 
     return-void
 .end method
 
-.method public getServiceOptions()Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
+.method public M()Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
     .locals 1
 
-    .line 62
-    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a:Lcom/samsung/android/app/musiclibrary/core/service/v3/ServiceOptions;
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->t:Lcom/samsung/android/app/musiclibrary/core/service/v3/p;
 
     return-object v0
 .end method
 
-.method public onCreate()V
+.method public final N(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
     .locals 4
 
-    .line 92
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->getApplicationContext()Landroid/content/Context;
+    .line 1
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    const-string v1, "applicationContext"
+    .line 2
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/core/utils/d;->c(Landroid/content/Context;)Z
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result v0
 
-    invoke-direct {p0, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->a(Landroid/content/Context;)Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/ServiceMediaChangeCenter;
+    if-nez v0, :cond_1
 
-    move-result-object v0
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
 
-    .line 94
-    new-instance v1, Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;
+    if-nez v0, :cond_0
 
-    new-instance v2, Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter$LegacyObserverGroup;
+    const-string v0, "notificationUpdater"
 
-    const-string v3, "Service"
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-direct {v2, v3}, Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter$LegacyObserverGroup;-><init>(Ljava/lang/String;)V
-
-    invoke-direct {v1, v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;-><init>(Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter$LegacyObserverGroup;)V
-
-    iput-object v1, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->b:Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;
-
-    .line 95
-    iget-object v1, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->b:Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;
-
-    if-nez v1, :cond_0
-
-    const-string v2, "legacyObservable"
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    const/4 v0, 0x0
 
     :cond_0
-    new-instance v2, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$onCreate$1;
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->k0()Z
 
-    invoke-direct {v2, v0}, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3$onCreate$1;-><init>(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/ServiceMediaChangeCenter;)V
+    move-result v0
 
-    check-cast v2, Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;
+    if-nez v0, :cond_1
 
-    invoke-virtual {v1, v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/legacy/LegacyPlayerMediaCenter;->registerMediaChangeObserver(Lcom/samsung/android/app/musiclibrary/core/service/mediacenter/OnMediaChangeObserver;)V
+    .line 3
+    invoke-interface {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j;->f()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;
 
-    .line 115
-    invoke-super {p0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/PlayerService;->onCreate()V
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;->J()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    :cond_1
+    const/4 p1, 0x1
+
+    new-array v0, p1, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    .line 4
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const/16 v3, 0x5b
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v3, ""
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v3, 0x5d
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
+
+    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string v0, "%-20s"
+
+    invoke-static {v0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "format(this, *args)"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "batteryChanged to low stop to playing and show low battery popup"
+
+    .line 5
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "SMUSIC-SV"
+
+    .line 6
+    invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 7
+    sget-object p1, Lcom/samsung/android/app/musiclibrary/core/service/v3/a;->q:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/impl/f;->d1()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/impl/c;->A(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;)V
+
+    .line 8
+    sget-object p1, Lcom/samsung/android/app/music/dialog/LowBatteryPopup;->c:Lcom/samsung/android/app/music/dialog/LowBatteryPopup$a;
+
+    invoke-virtual {p1, p0}, Lcom/samsung/android/app/music/dialog/LowBatteryPopup$a;->a(Landroid/content/Context;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method public final O(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;Landroid/os/Bundle;)V
+    .locals 5
+
+    const-string v0, "reason"
+
+    const/4 v1, 0x0
+
+    .line 1
+    invoke-virtual {p2, v0, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    .line 2
+    sget v2, Lcom/samsung/android/app/music/support/samsung/emergencymode/EmergencyConstantsCompat;->MODE_ENABLED:I
+
+    if-eq v0, v2, :cond_0
+
+    sget v2, Lcom/samsung/android/app/music/support/samsung/emergencymode/EmergencyConstantsCompat;->MODE_ENABLING:I
+
+    if-ne v0, v2, :cond_1
+
+    .line 3
+    :cond_0
+    invoke-interface {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j;->f()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;->J()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x1
+
+    new-array v2, v0, [Ljava/lang/Object;
+
+    .line 4
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const/16 v4, 0x5b
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v4, ""
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v4, 0x5d
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v2, v1
+
+    invoke-static {v2, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, "%-20s"
+
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "format(this, *args)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "The emergency mode is entering. The play back is terminated. And notify MusicInfo."
+
+    .line 5
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "SMUSIC-SV"
+
+    .line 6
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 7
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/core/service/v3/a;->q:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/impl/f;->d1()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/impl/c;->A(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;)V
+
+    .line 8
+    :cond_1
+    invoke-interface {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;->d1()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;
+
+    move-result-object p1
+
+    .line 9
+    sget-object v0, Lcom/samsung/android/app/music/support/samsung/emergencymode/EmergencyConstantsCompat;->EMERGENCY_STATE_CHANGED:Ljava/lang/String;
+
+    const-string v1, "EMERGENCY_STATE_CHANGED"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {p1, v0, p2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;->E(Ljava/lang/String;Landroid/os/Bundle;)V
 
     return-void
+.end method
+
+.method public final P(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;)V
+    .locals 1
+
+    invoke-interface {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;->d1()Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;
+
+    move-result-object p1
+
+    const-string v0, "com.samsung.android.intent.action.PRIVATE_MODE_OFF"
+
+    invoke-interface {p1, v0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/f;->L(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1, p2, p3}, Lcom/samsung/android/app/musiclibrary/core/service/v3/j;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+
+    const/4 p1, 0x1
+
+    new-array p3, p1, [Lcom/samsung/android/app/musiclibrary/core/service/a;
+
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->z:Lcom/samsung/android/app/music/service/v3/observers/e;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "errorController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_0
+    const/4 v2, 0x0
+
+    aput-object v0, p3, v2
+
+    invoke-virtual {p0, p2, p3}, Lcom/samsung/android/app/musiclibrary/core/service/v3/j;->q(Ljava/io/PrintWriter;[Lcom/samsung/android/app/musiclibrary/core/service/a;)V
+
+    new-array p1, p1, [Lcom/samsung/android/app/musiclibrary/core/service/a;
+
+    .line 3
+    iget-object p3, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->y:Lcom/samsung/android/app/music/service/v3/e;
+
+    if-nez p3, :cond_1
+
+    const-string p3, "settingsImpl"
+
+    invoke-static {p3}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_1
+    move-object v1, p3
+
+    :goto_0
+    aput-object v1, p1, v2
+
+    invoke-virtual {p0, p2, p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/j;->q(Ljava/io/PrintWriter;[Lcom/samsung/android/app/musiclibrary/core/service/a;)V
+
+    return-void
+.end method
+
+.method public m(Z)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    if-nez v0, :cond_0
+
+    const-string v0, "notificationUpdater"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->V(Z)V
+
+    return-void
+.end method
+
+.method public n()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    if-nez v0, :cond_0
+
+    const-string v0, "notificationUpdater"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->W()V
+
+    return-void
+.end method
+
+.method public o()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    if-nez v0, :cond_0
+
+    const-string v0, "notificationUpdater"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->X()V
+
+    return-void
+.end method
+
+.method public onCreate()V
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/music/service/v3/e;->f:Lcom/samsung/android/app/music/service/v3/e$a;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "applicationContext"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/service/v3/e$a;->a(Landroid/content/Context;)Lcom/samsung/android/app/music/service/v3/e;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->y:Lcom/samsung/android/app/music/service/v3/e;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "settingsImpl"
+
+    .line 2
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/v3/e;->L()V
+
+    .line 3
+    invoke-super {p0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/j;->onCreate()V
+
+    .line 4
+    invoke-static {}, Lcom/samsung/android/app/music/service/v3/c;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 5
+    sget-object v0, Lcom/samsung/android/app/music/provider/melonauth/n;->o:Lcom/samsung/android/app/music/provider/melonauth/n$b;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-static {v3, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v3}, Lcom/samsung/android/app/music/provider/melonauth/n$b;->a(Landroid/content/Context;)Lcom/samsung/android/app/music/provider/melonauth/n;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/samsung/android/app/music/provider/melonauth/n;->u()Z
+
+    move-result v3
+
+    const/4 v4, 0x2
+
+    if-eqz v3, :cond_1
+
+    const/4 v3, 0x1
+
+    .line 6
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    .line 8
+    :goto_0
+    iput-object v3, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->A:Ljava/lang/Integer;
+
+    .line 9
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-static {v3, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v3}, Lcom/samsung/android/app/music/provider/melonauth/n$b;->a(Landroid/content/Context;)Lcom/samsung/android/app/music/provider/melonauth/n;
+
+    move-result-object v0
+
+    .line 10
+    iget-object v2, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->B:Lcom/samsung/android/app/music/provider/melonauth/l;
+
+    const/4 v3, 0x0
+
+    invoke-static {v0, v2, v3, v4, v1}, Lcom/samsung/android/app/music/provider/melonauth/n;->D(Lcom/samsung/android/app/music/provider/melonauth/n;Lcom/samsung/android/app/music/provider/melonauth/l;ZILjava/lang/Object;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method public onDestroy()V
+    .locals 3
+
+    .line 1
+    invoke-static {}, Lcom/samsung/android/app/music/service/v3/c;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    sget-object v0, Lcom/samsung/android/app/music/provider/melonauth/n;->o:Lcom/samsung/android/app/music/provider/melonauth/n$b;
+
+    invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "applicationContext"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/provider/melonauth/n$b;->a(Landroid/content/Context;)Lcom/samsung/android/app/music/provider/melonauth/n;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v1, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->B:Lcom/samsung/android/app/music/provider/melonauth/l;
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/provider/melonauth/n;->H(Lcom/samsung/android/app/music/provider/melonauth/l;)V
+
+    .line 4
+    invoke-static {}, Lcom/iloen/melon/mcache/MelonStreamCacheManager;->getInstance()Lcom/iloen/melon/mcache/MelonStreamCacheManager;
+
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/iloen/melon/mcache/MelonStreamCacheManager;->isRunning()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v0}, Lcom/iloen/melon/mcache/MelonStreamCacheManager;->stopCaching()V
+
+    .line 6
+    :cond_0
+    sget-object v0, Lcom/samsung/android/app/music/service/drm/c;->d:Lcom/samsung/android/app/music/service/drm/c$a;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/drm/c$a;->b()V
+
+    .line 7
+    :cond_1
+    invoke-super {p0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/j;->onDestroy()V
+
+    .line 8
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->y:Lcom/samsung/android/app/music/service/v3/e;
+
+    if-nez v0, :cond_2
+
+    const-string v0, "settingsImpl"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    :cond_2
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/v3/e;->release()V
+
+    return-void
+.end method
+
+.method public p()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->v:Lcom/samsung/android/app/music/service/v3/observers/notification/b;
+
+    if-nez v0, :cond_0
+
+    const-string v0, "notificationUpdater"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/service/v3/observers/notification/b;->Y()V
+
+    return-void
+.end method
+
+.method public w()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList<",
+            "+",
+            "Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/i;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/service/v3/PlayerServiceV3;->s:Lkotlin/g;
+
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/ArrayList;
+
+    return-object v0
 .end method

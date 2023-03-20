@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/library/beaconmanager/BleScanManager$IServiceStateCallback;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "BleScanManager.java"
 
 
 # annotations

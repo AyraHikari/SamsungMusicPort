@@ -1,10 +1,10 @@
-.class final Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;
+.class public final Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "FullPlayer.kt"
 
 # interfaces
-.implements Landroid/arch/lifecycle/LifecycleObserver;
-.implements Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+.implements Landroidx/lifecycle/r;
+.implements Lcom/samsung/android/app/musiclibrary/ui/player/c$a;
 
 
 # annotations
@@ -13,37 +13,31 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x12
+    accessFlags = 0x11
     name = "LifeCycleListener"
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-.field private final b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$audioStateChangedListener$1;
+.field public final synthetic a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
 
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 760
+    const-string v0, "this$0"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
     iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 761
-    new-instance p1, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$audioStateChangedListener$1;
-
-    invoke-direct {p1, p0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$audioStateChangedListener$1;-><init>(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;)V
-
-    iput-object p1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$audioStateChangedListener$1;
 
     return-void
 .end method
@@ -51,358 +45,469 @@
 
 # virtual methods
 .method public final onCreated()V
-    .locals 2
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_CREATE:Landroid/arch/lifecycle/Lifecycle$Event;
+    .locals 3
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_CREATE:Landroidx/lifecycle/k$b;
     .end annotation
 
-    .line 777
-    sget-object v0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->h:Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;
 
-    const-string v1, "FullPlayer onCreated"
+    .line 2
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;Ljava/lang/String;)V
+    move-result v1
 
-    .line 778
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    if-nez v1, :cond_0
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/PlayerSceneStatePublisher;
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->a()I
+
+    :cond_0
+    const-string v1, "FullPlayer"
+
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    const-string v1, "onCreated"
+
+    const/4 v2, 0x0
+
+    .line 4
+    invoke-static {v1, v2}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 5
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->c()Landroid/view/View;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    check-cast v1, Lcom/samsung/android/app/music/player/PlayerSceneStateListener;
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->M(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Landroid/view/View$OnLayoutChangeListener;
 
-    invoke-interface {v0, v1}, Lcom/samsung/android/app/music/player/PlayerSceneStatePublisher;->addPlayerSceneStateListener(Lcom/samsung/android/app/music/player/PlayerSceneStateListener;)V
+    move-result-object v1
 
-    :cond_0
+    invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
     return-void
 .end method
 
 .method public final onDestroyed()V
-    .locals 2
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroid/arch/lifecycle/Lifecycle$Event;
+    .locals 3
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_DESTROY:Landroidx/lifecycle/k$b;
     .end annotation
 
-    .line 830
-    sget-object v0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->h:Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;
 
-    const-string v1, "FullPlayer onDestroyed"
+    .line 2
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;Ljava/lang/String;)V
+    move-result v1
 
-    .line 831
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    if-nez v1, :cond_0
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/PlayerSceneStatePublisher;
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->a()I
+
+    :cond_0
+    const-string v1, "FullPlayer"
+
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    const-string v1, "onDestroyed"
+
+    const/4 v2, 0x0
+
+    .line 4
+    invoke-static {v1, v2}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 5
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->G(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/v3/fullplayer/albumview/AlbumViewController;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->P(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$i;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/player/v3/fullplayer/albumview/AlbumViewController;->F0(Landroidx/viewpager2/widget/ViewPager2$i;)V
+
+    .line 6
+    :goto_0
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->c()Landroid/view/View;
+
+    move-result-object v0
 
     iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    check-cast v1, Lcom/samsung/android/app/music/player/PlayerSceneStateListener;
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->M(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Landroid/view/View$OnLayoutChangeListener;
 
-    invoke-interface {v0, v1}, Lcom/samsung/android/app/music/player/PlayerSceneStatePublisher;->removePlayerSceneStateListener(Lcom/samsung/android/app/music/player/PlayerSceneStateListener;)V
+    move-result-object v1
 
-    :cond_0
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
     return-void
 .end method
 
 .method public final onPaused()V
-    .locals 2
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_PAUSE:Landroid/arch/lifecycle/Lifecycle$Event;
+    .locals 3
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_PAUSE:Landroidx/lifecycle/k$b;
     .end annotation
 
-    .line 804
-    sget-object v0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->h:Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;
 
-    const-string v1, "FullPlayer onPaused"
+    .line 2
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;Ljava/lang/String;)V
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->a()I
+
+    :cond_0
+    const-string v1, "FullPlayer"
+
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "onPaused"
+
+    const/4 v2, 0x0
+
+    .line 4
+    invoke-static {v1, v2}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
 
 .method public final onResumed()V
     .locals 3
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_RESUME:Landroid/arch/lifecycle/Lifecycle$Event;
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_RESUME:Landroidx/lifecycle/k$b;
     .end annotation
 
-    .line 797
-    sget-object v0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->h:Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;
 
-    const-string v1, "FullPlayer onResumed"
+    .line 2
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;Ljava/lang/String;)V
+    move-result v1
 
-    .line 798
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    if-nez v1, :cond_0
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->g(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Landroid/content/Context;
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->a()I
+
+    :cond_0
+    const-string v1, "FullPlayer"
+
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ui/analytics/GoogleFireBaseAnalyticsManager;->a(Landroid/content/Context;)Lcom/samsung/android/app/musiclibrary/ui/analytics/GoogleFireBaseAnalyticsManager;
+    const-string v1, "onResumed"
 
-    move-result-object v0
+    const/4 v2, 0x0
 
-    .line 799
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-virtual {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->m()Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+    .line 4
+    invoke-static {v1, v2}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
-    check-cast v1, Landroid/app/Activity;
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 5
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->I(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ui/analytics/a;->a(Landroid/content/Context;)Lcom/samsung/android/app/musiclibrary/ui/analytics/a;
+
+    move-result-object v0
+
+    .line 6
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->D(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/activity/h;
+
+    move-result-object v1
 
     const-string v2, "full_player"
 
-    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/analytics/GoogleFireBaseAnalyticsManager;->a(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/app/musiclibrary/ui/analytics/a;->g(Landroid/app/Activity;Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method public final onStarted()V
     .locals 4
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_START:Landroid/arch/lifecycle/Lifecycle$Event;
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_START:Landroidx/lifecycle/k$b;
     .end annotation
 
-    .line 783
-    sget-object v0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->h:Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;
 
-    const-string v1, "FullPlayer onStarted"
+    .line 2
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;Ljava/lang/String;)V
+    move-result v1
 
-    .line 784
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    if-nez v1, :cond_0
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->b(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)V
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->a()I
 
-    .line 785
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    :cond_0
+    const-string v1, "FullPlayer"
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->c(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->d(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 786
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->e(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager;
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    const-string v1, "onStarted"
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    const/4 v2, 0x0
 
-    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->f(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$multiWindowStateListener$1;
+    .line 4
+    invoke-static {v1, v2}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
-    check-cast v1, Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager$OnMultiWindowModeChangedListener;
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager;->addOnMultiWindowModeListener(Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager$OnMultiWindowModeChangedListener;)V
-
-    .line 787
-    :cond_0
+    .line 5
     iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    const/4 v1, 0x1
-
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;Z)V
-
-    .line 789
-    :cond_1
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->m()Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->B(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$audioStateChangedListener$1;
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    check-cast v1, Landroid/content/BroadcastReceiver;
+    .line 6
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->I(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Landroid/content/Context;
 
-    new-instance v2, Landroid/content/IntentFilter;
+    move-result-object v2
 
-    invoke-direct {v2}, Landroid/content/IntentFilter;-><init>()V
+    const-string v3, "applicationContext"
 
-    .line 790
-    sget-object v3, Lcom/samsung/android/app/musiclibrary/core/library/audio/SecAudioManager;->VOLUME_CHANGED_ACTION:Ljava/lang/String;
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    new-instance v3, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$a;
 
-    const-string v3, "com.samsung.android.app.music.core.action.AUDIO_PATH_CHANGED"
+    invoke-direct {v3, v1, v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$a;-><init>(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;Lcom/samsung/android/app/musiclibrary/core/service/v3/a;)V
 
-    .line 791
-    invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1, v3}, Lcom/samsung/android/app/musiclibrary/core/service/v3/a;->X(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;Lkotlin/jvm/functions/a;)V
 
-    .line 789
-    invoke-virtual {v0, v1, v2}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    .line 7
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->t(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)V
+
+    .line 8
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->N(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/n;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->O(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/MelonTrackDetailGetter;
+
+    move-result-object v1
+
+    if-nez v1, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/fullplayer/MelonTrackDetailGetter;->i(Lcom/samsung/android/app/music/player/fullplayer/n;)V
+
+    .line 9
+    :goto_0
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->S(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/viewmodel/d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/viewmodel/d;->I()V
 
     return-void
 .end method
 
 .method public final onStopped()V
-    .locals 2
-    .annotation runtime Landroid/arch/lifecycle/OnLifecycleEvent;
-        a = .enum Landroid/arch/lifecycle/Lifecycle$Event;->ON_STOP:Landroid/arch/lifecycle/Lifecycle$Event;
+    .locals 3
+    .annotation runtime Landroidx/lifecycle/b0;
+        value = .enum Landroidx/lifecycle/k$b;->ON_STOP:Landroidx/lifecycle/k$b;
     .end annotation
 
-    .line 809
-    sget-object v0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->h:Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;
 
-    const-string v1, "FullPlayer onStopped"
+    .line 2
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$Companion;Ljava/lang/String;)V
+    move-result v1
 
-    .line 811
-    :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    if-nez v1, :cond_0
 
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->m()Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->a()I
 
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->b:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener$audioStateChangedListener$1;
-
-    check-cast v1, Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 815
-    :catch_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->c(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 816
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->e(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->f(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$multiWindowStateListener$1;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager$OnMultiWindowModeChangedListener;
-
-    invoke-interface {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager;->removeOnMultiWindowModeListener(Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager$OnMultiWindowModeChangedListener;)V
-
-    .line 817
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    const-string v1, "FullPlayer"
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->e(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager;
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_1
+    const-string v1, "onStopped"
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    const/4 v2, 0x0
 
-    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->f(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$multiWindowStateListener$1;
+    .line 4
+    invoke-static {v1, v2}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
-    check-cast v1, Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager$OnMultiWindowSizeChangedListener;
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-interface {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager;->removeOnMultiWindowSizeChangedListener(Lcom/samsung/android/app/musiclibrary/ui/MultiWindowManager$OnMultiWindowSizeChangedListener;)V
+    .line 5
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    .line 818
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->N(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/n;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
     :cond_1
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    const/4 v1, 0x0
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->O(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/player/fullplayer/MelonTrackDetailGetter;
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->a(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;Z)V
+    move-result-object v1
 
-    .line 820
+    if-nez v1, :cond_2
+
+    goto :goto_0
+
     :cond_2
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/fullplayer/MelonTrackDetailGetter;->p(Lcom/samsung/android/app/music/player/fullplayer/n;)V
+
+    .line 6
+    :goto_0
     iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->m()Lcom/samsung/android/app/music/activity/BaseServiceActivity;
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->B(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/impl/f;->b(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 7
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->D(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/activity/h;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-interface {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/v;->removeOnKeyListener(Lcom/samsung/android/app/musiclibrary/ui/v$a;)V
+
+    .line 8
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
+
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->J(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/h;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/OnKeyObservable;
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    check-cast v1, Lcom/samsung/android/app/musiclibrary/ui/OnKeyObservable$OnKeyListener;
-
-    invoke-interface {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/OnKeyObservable;->removeOnKeyListener(Lcom/samsung/android/app/musiclibrary/ui/OnKeyObservable$OnKeyListener;)V
-
-    .line 821
+    .line 9
     iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->i(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/OnBackPressedListener;
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->K(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/b;
 
     move-result-object v0
 
-    if-eqz v0, :cond_3
-
-    .line 822
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
-
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->h(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/OnBackPressedListener;
-
-    move-result-object v0
-
-    .line 823
     iget-object v1, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->j(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/BackPressedObservable;
+    invoke-static {v1}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->J(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/musiclibrary/h;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lcom/samsung/android/app/musiclibrary/BackPressedObservable;->removeOnBackPressedListener(Lcom/samsung/android/app/musiclibrary/OnBackPressedListener;)V
+    if-nez v1, :cond_3
+
+    const-string v1, "backPressedListener"
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v1, 0x0
 
     :cond_3
-    return-void
+    invoke-interface {v0, v1}, Lcom/samsung/android/app/musiclibrary/b;->removeOnBackPressedListener(Lcom/samsung/android/app/musiclibrary/h;)V
 
-    .line 820
+    .line 10
     :cond_4
-    new-instance v0, Lkotlin/TypeCastException;
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer$LifeCycleListener;->a:Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;
 
-    const-string v1, "null cannot be cast to non-null type com.samsung.android.app.musiclibrary.ui.OnKeyObservable"
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;->S(Lcom/samsung/android/app/music/player/fullplayer/FullPlayer;)Lcom/samsung/android/app/music/viewmodel/d;
 
-    invoke-direct {v0, v1}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+    move-result-object v0
 
-    throw v0
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/viewmodel/d;->d0()V
+
+    return-void
 .end method

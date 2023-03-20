@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener2;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowActivity.java"
 
 
 # annotations

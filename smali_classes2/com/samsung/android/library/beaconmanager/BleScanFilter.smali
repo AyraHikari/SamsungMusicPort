@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/library/beaconmanager/BleScanFilter;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "BleScanFilter.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -43,10 +43,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 20
+    .line 1
     new-instance v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter$1;
 
     invoke-direct {v0}, Lcom/samsung/android/library/beaconmanager/BleScanFilter$1;-><init>()V
@@ -55,36 +55,36 @@
 
     const/16 v0, -0x3e7
 
-    .line 31
+    .line 2
     sput v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
 
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 64
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
+    .line 23
     sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->SCAN_INTERVAL_NORMAL:I
 
     iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
 
-    .line 36
+    .line 24
     sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
 
     iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
 
-    .line 65
+    .line 25
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mName:Ljava/lang/String;
 
-    .line 67
+    .line 26
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -93,7 +93,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 69
+    .line 27
     sget-object v1, Landroid/bluetooth/le/ScanFilter;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v1, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -109,7 +109,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 72
+    .line 28
     sget-object v0, Landroid/bluetooth/le/ScanFilter;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v0, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -120,7 +120,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
-    .line 74
+    .line 29
     :cond_1
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -128,7 +128,7 @@
 
     iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
 
-    .line 75
+    .line 30
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -139,39 +139,31 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;Landroid/bluetooth/le/ScanFilter;Landroid/bluetooth/le/ScanFilter;)V
-    .locals 1
+    .locals 2
 
-    .line 56
+    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
+    .line 15
     sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->SCAN_INTERVAL_NORMAL:I
 
-    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
+    .line 16
+    sget v1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
 
-    .line 36
-    sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
-
-    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
-
-    .line 57
+    .line 17
     iput-object p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mName:Ljava/lang/String;
 
-    .line 58
+    .line 18
     iput-object p2, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
-    .line 59
+    .line 19
     iput-object p3, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
-    .line 60
-    sget p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->SCAN_INTERVAL_NORMAL:I
+    .line 20
+    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
 
-    iput p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
-
-    .line 61
-    sget p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
-
-    iput p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
+    .line 21
+    iput v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
 
     return-void
 .end method
@@ -179,68 +171,49 @@
 .method public constructor <init>(Ljava/lang/String;Landroid/bluetooth/le/ScanFilter;Landroid/bluetooth/le/ScanFilter;I)V
     .locals 1
 
-    .line 48
+    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
-    sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->SCAN_INTERVAL_NORMAL:I
-
-    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
-
-    .line 36
+    .line 8
     sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
 
-    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
-
-    .line 49
+    .line 9
     iput-object p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mName:Ljava/lang/String;
 
-    .line 50
+    .line 10
     iput-object p2, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
-    .line 51
+    .line 11
     iput-object p3, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
-    .line 52
+    .line 12
     iput p4, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
 
-    .line 53
-    sget p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
-
-    iput p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
+    .line 13
+    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
 
     return-void
 .end method
 
 .method public constructor <init>(Ljava/lang/String;Landroid/bluetooth/le/ScanFilter;Landroid/bluetooth/le/ScanFilter;II)V
-    .locals 1
+    .locals 0
 
-    .line 39
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 35
-    sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->SCAN_INTERVAL_NORMAL:I
-
-    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
-
-    .line 36
-    sget v0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->RSSI_THRESHOLD_NONE:I
-
-    iput v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
-
-    .line 40
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mName:Ljava/lang/String;
 
-    .line 41
+    .line 3
     iput-object p2, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
-    .line 42
+    .line 4
     iput-object p3, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
-    .line 43
+    .line 5
     iput p4, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
 
-    .line 44
+    .line 6
     iput p5, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
 
     return-void
@@ -259,7 +232,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 115
+    .line 1
     instance-of v0, p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;
 
     const/4 v1, 0x0
@@ -268,26 +241,24 @@
 
     return v1
 
-    .line 118
+    .line 2
     :cond_0
     check-cast p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;
 
-    .line 120
+    .line 3
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-nez v0, :cond_1
 
-    .line 121
+    .line 4
     iget-object v0, p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-eqz v0, :cond_2
 
     return v1
 
-    .line 125
+    .line 5
     :cond_1
-    iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
-
     iget-object v2, p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     invoke-virtual {v0, v2}, Landroid/bluetooth/le/ScanFilter;->equals(Ljava/lang/Object;)Z
@@ -298,23 +269,21 @@
 
     return v1
 
-    .line 130
+    .line 6
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-nez v0, :cond_3
 
-    .line 131
+    .line 7
     iget-object p1, p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-eqz p1, :cond_4
 
     return v1
 
-    .line 135
+    .line 8
     :cond_3
-    iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
-
     iget-object p1, p1, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/le/ScanFilter;->equals(Ljava/lang/Object;)Z
@@ -334,7 +303,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 79
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mName:Ljava/lang/String;
 
     return-object v0
@@ -343,7 +311,6 @@
 .method public getRssiThreshold()I
     .locals 1
 
-    .line 110
     iget v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
 
     return v0
@@ -352,7 +319,6 @@
 .method public getScanInterval()I
     .locals 1
 
-    .line 106
     iget v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
 
     return v0
@@ -361,7 +327,6 @@
 .method public getScreenOffFilter()Landroid/bluetooth/le/ScanFilter;
     .locals 1
 
-    .line 87
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     return-object v0
@@ -370,7 +335,6 @@
 .method public getScreenOnFilter()Landroid/bluetooth/le/ScanFilter;
     .locals 1
 
-    .line 83
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     return-object v0
@@ -383,13 +347,11 @@
 
     if-eqz p1, :cond_0
 
-    .line 93
+    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-eqz p1, :cond_1
-
-    iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     invoke-virtual {p1, p2}, Landroid/bluetooth/le/ScanFilter;->matches(Landroid/bluetooth/le/ScanResult;)Z
 
@@ -399,18 +361,11 @@
 
     return v0
 
-    :catch_0
-    move-exception p1
-
-    goto :goto_0
-
-    .line 96
+    .line 2
     :cond_0
     iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-eqz p1, :cond_1
-
-    iget-object p1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     invoke-virtual {p1, p2}, Landroid/bluetooth/le/ScanFilter;->matches(Landroid/bluetooth/le/ScanResult;)Z
 
@@ -422,8 +377,10 @@
 
     return v0
 
-    .line 100
-    :goto_0
+    :catch_0
+    move-exception p1
+
+    .line 3
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_1
@@ -433,16 +390,16 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
-    .line 145
+    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
     const-string v1, "Name:"
 
-    .line 146
+    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     iget-object v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mName:Ljava/lang/String;
@@ -451,25 +408,23 @@
 
     const-string v1, ",ScreenOnFilter:"
 
-    .line 147
+    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 148
+    .line 4
     iget-object v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
+
+    const-string v2, "Null"
 
     if-nez v1, :cond_0
 
-    const-string v1, "Null"
-
-    .line 149
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+    .line 5
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     goto :goto_0
 
-    .line 151
+    .line 6
     :cond_0
-    iget-object v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
-
     invoke-virtual {v1}, Landroid/bluetooth/le/ScanFilter;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -479,25 +434,21 @@
     :goto_0
     const-string v1, ",ScreenOffFilter:"
 
-    .line 153
+    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 154
+    .line 8
     iget-object v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-nez v1, :cond_1
 
-    const-string v1, "Null"
-
-    .line 155
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+    .line 9
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     goto :goto_1
 
-    .line 157
+    .line 10
     :cond_1
-    iget-object v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
-
     invoke-virtual {v1}, Landroid/bluetooth/le/ScanFilter;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -507,7 +458,7 @@
     :goto_1
     const-string v1, ",ScanInterval:"
 
-    .line 159
+    .line 11
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     iget v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
@@ -516,14 +467,14 @@
 
     const-string v1, ",Threshold:"
 
-    .line 160
+    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     iget v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
-    .line 162
+    .line 13
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -534,12 +485,12 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 172
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mName:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 175
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     if-eqz v0, :cond_0
@@ -551,7 +502,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 178
+    .line 3
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
@@ -559,7 +510,7 @@
 
     or-int/lit8 v0, v0, 0x2
 
-    .line 181
+    .line 4
     :cond_1
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -567,7 +518,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 183
+    .line 5
     iget-object v1, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOnFilter:Landroid/bluetooth/le/ScanFilter;
 
     invoke-virtual {v1, p1, p2}, Landroid/bluetooth/le/ScanFilter;->writeToParcel(Landroid/os/Parcel;I)V
@@ -577,18 +528,18 @@
 
     if-eqz v0, :cond_3
 
-    .line 186
+    .line 6
     iget-object v0, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScreenOffFilter:Landroid/bluetooth/le/ScanFilter;
 
     invoke-virtual {v0, p1, p2}, Landroid/bluetooth/le/ScanFilter;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 188
+    .line 7
     :cond_3
     iget p2, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mScanInterval:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 189
+    .line 8
     iget p2, p0, Lcom/samsung/android/library/beaconmanager/BleScanFilter;->mRssiThreshold:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

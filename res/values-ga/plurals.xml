@@ -12,61 +12,9 @@
         <item quantity="other">Rianta</item>
         <item quantity="one">Rian</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">Cuireadh %d rian le Ceanáin. Níor cuireadh rianta atá sna Ceanáin cheana leo.</item>
-        <item quantity="one">%d rian curtha le Ceanáin. Níor cuireadh leo an rian atá i gCeanáin cheana.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d rian</item>
         <item quantity="one">%d rian</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">Baineadh %d rian ó Cheanáin.</item>
-        <item quantity="one">%d rian bainte ó Cheanáin.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d rian curtha le ceanáin.</item>
-        <item quantity="one">%d rian curtha le Ceanáin.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Ní féidir leat ach suas le %d rian a bhaint ó na moltaí. Amharc ar na rianta a baineadh, roghnaigh roinnt acu lena n-aischur, ansin triail arís.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir leat ach suas le %d rian a bhaint ó na moltaí. Amharc ar na rianta a baineadh, roghnaigh roinnt acu lena n-aischur, ansin triail arís.</item>
-        <item quantity="two">Ní féidir leat ach suas le %d rian a bhaint ó na moltaí. Amharc ar na rianta a baineadh, roghnaigh roinnt acu lena n-aischur, ansin triail arís.</item>
-        <item quantity="few">Ní féidir leat ach suas le %d rian a bhaint ó na moltaí. Amharc ar na rianta a baineadh, roghnaigh roinnt acu lena n-aischur, ansin triail arís.</item>
-        <item quantity="many">Ní féidir leat ach suas le %d rian a bhaint ó na moltaí. Amharc ar na rianta a baineadh, roghnaigh roinnt acu lena n-aischur, ansin triail arís.</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Tapáil an cnaipe Seinn raidió le taitneamh a bhaint as %d rian saor in aisce gach mí.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Tapáil an cnaipe Seinn raidió le taitneamh a bhaint as %d rian saor in aisce gach mí.</item>
-        <item quantity="two">Tapáil an cnaipe Seinn raidió le taitneamh a bhaint as %d rian saor in aisce gach mí.</item>
-        <item quantity="few">Tapáil an cnaipe Seinn raidió le taitneamh a bhaint as %d rian saor in aisce gach mí.</item>
-        <item quantity="many">Tapáil an cnaipe Seinn raidió le taitneamh a bhaint as %d rian saor in aisce gach mí.</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Ní féidir níos mó ná %d ceoltóir a roghnú.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir níos mó ná %d cheoltóir a roghnú.</item>
-        <item quantity="two">Ní féidir níos mó ná %d cheoltóir a roghnú.</item>
-        <item quantity="few">Ní féidir níos mó ná %d cheoltóir a roghnú.</item>
-        <item quantity="many">Ní féidir níos mó ná %d gceoltóir a roghnú.</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Ní féidir níos mó ná %d seánra a roghnú.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir níos mó ná %d seánra a roghnú.</item>
-        <item quantity="two">Ní féidir níos mó ná %d sheánra a roghnú.</item>
-        <item quantity="few">Ní féidir níos mó ná %d sheánra a roghnú.</item>
-        <item quantity="many">Ní féidir níos mó ná %d seánra a roghnú.</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Ní féidir níos mó ná %d rian a roghnú.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir níos mó ná %d rian a roghnú.</item>
-        <item quantity="two">Ní féidir níos mó ná %d rian a roghnú.</item>
-        <item quantity="few">Ní féidir níos mó ná %d rian a roghnú.</item>
-        <item quantity="many">Ní féidir níos mó ná %d rian a roghnú.</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d soicind</item>
@@ -76,25 +24,41 @@
         <item quantity="few">%d shoicind</item>
         <item quantity="many">%d soicind</item>
     </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Ná taispeáin go ceann %d lá</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ná taispeáin go ceann %d lae</item>
+        <item quantity="two">Ná taispeáin go ceann %d lá</item>
+        <item quantity="few">Ná taispeáin go ceann %d lá</item>
+        <item quantity="many">Ná taispeáin go ceann %d lá</item>
+    </plurals>
     <plurals name="drm_can_use_n_times">
         <item quantity="other">Is féidir leat %1$s a úsáid %2$d uair</item>
         <item quantity="one">Is féidir leat %s a úsáid uair amháin</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Ní féidir %d rian a cheannach le ticéid íocshíntiúis de dheasca ceist chóipchirt. Is féidir leat iad a cheannach astu féin.</item>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">"Scriosfar %d rian atá imithe as feidhm. Is féidir leat stair d'íoslódálacha a sheiceáil i bhFaisnéis Melon > Stair cheannaigh."</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir %d rian a cheannach le ticéid íocshíntiúis de dheasca ceist chóipchirt. Is féidir leat é a cheannach as féin.</item>
-        <item quantity="two">Ní féidir %d rian a cheannach le ticéid íocshíntiúis de dheasca ceist chóipchirt. Is féidir leat iad a cheannach astu féin.</item>
-        <item quantity="few">Ní féidir %d rian a cheannach le ticéid íocshíntiúis de dheasca ceist chóipchirt. Is féidir leat iad a cheannach astu féin.</item>
-        <item quantity="many">Ní féidir %d rian a cheannach le ticéid íocshíntiúis de dheasca ceist chóipchirt. Is féidir leat iad a cheannach astu féin.</item>
+        <item quantity="one">"Scriosfar %d rian atá imithe as feidhm. Is féidir leat stair d'íoslódálacha a sheiceáil i bhFaisnéis Melon > Stair cheannaigh."</item>
+        <item quantity="two">"Scriosfar %d rian atá imithe as feidhm. Is féidir leat stair d'íoslódálacha a sheiceáil i bhFaisnéis Melon > Stair cheannaigh."</item>
+        <item quantity="few">"Scriosfar %d rian atá imithe as feidhm. Is féidir leat stair d'íoslódálacha a sheiceáil i bhFaisnéis Melon > Stair cheannaigh."</item>
+        <item quantity="many">"Scriosfar %d rian atá imithe as feidhm. Is féidir leat stair d'íoslódálacha a sheiceáil i bhFaisnéis Melon > Stair cheannaigh."</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Úsáidfear %d rian ó na rianta atá ar fáil duit.</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Níorbh fhéidir an tréimhse DCF a shíneadh do %d rian. Is féidir leat é a thriail arís, nó comhaid a scriosadh ón liosta thíos roimh a n-íoslódáil arís.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Úsáidfear %d rian ó na rianta atá ar fáil duit.</item>
-        <item quantity="two">Úsáidfear %d rian ó na rianta atá ar fáil duit.</item>
-        <item quantity="few">Úsáidfear %d rian ó na rianta atá ar fáil duit.</item>
-        <item quantity="many">Úsáidfear %d rian ó na rianta atá ar fáil duit.</item>
+        <item quantity="one">Níorbh fhéidir an tréimhse DCF a shíneadh do %d rian. Is féidir leat é a thriail arís, nó comhaid a scriosadh ón liosta thíos roimh a n-íoslódáil arís.</item>
+        <item quantity="two">Níorbh fhéidir an tréimhse DCF a shíneadh do %d rian. Is féidir leat é a thriail arís, nó comhaid a scriosadh ón liosta thíos roimh a n-íoslódáil arís.</item>
+        <item quantity="few">Níorbh fhéidir an tréimhse DCF a shíneadh do %d rian. Is féidir leat é a thriail arís, nó comhaid a scriosadh ón liosta thíos roimh a n-íoslódáil arís.</item>
+        <item quantity="many">Níorbh fhéidir an tréimhse DCF a shíneadh do %d rian. Is féidir leat é a thriail arís, nó comhaid a scriosadh ón liosta thíos roimh a n-íoslódáil arís.</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Ní féidir níos mó ná %d mír a iompórtáil.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d mhír a iompórtáil.</item>
+        <item quantity="two">Ní féidir níos mó ná %d mhír a iompórtáil.</item>
+        <item quantity="few">Ní féidir níos mó ná %d mhír a iompórtáil.</item>
+        <item quantity="many">Ní féidir níos mó ná %d mír a iompórtáil.</item>
     </plurals>
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Feitheamh le %d amhrán a íoslódáil…</item>
@@ -111,54 +75,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Scrios gach rian leis na cumadóirí seo?</item>
         <item quantity="one">Scrios gach rian leis an gcumadóir seo?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Scrios na rianta roghnaithe?</item>
-        <item quantity="one">Scrios an rian roghnaithe?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Ceannófar %d rian. Mura bhfuil go leor rianta ar fáil duit, ní bheifear in ann na rianta sin a cheannach.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ceannófar %d rian. Mura bhfuil go leor rianta ar fáil duit, ní bheifear in ann an rian sin a cheannach.</item>
-        <item quantity="two">Ceannófar %d rian. Mura bhfuil go leor rianta ar fáil duit, ní bheifear in ann na rianta sin a cheannach.</item>
-        <item quantity="few">Ceannófar %d rian. Mura bhfuil go leor rianta ar fáil duit, ní bheifear in ann na rianta sin a cheannach.</item>
-        <item quantity="many">Ceannófar %d rian. Mura bhfuil go leor rianta ar fáil duit, ní bheifear in ann na rianta sin a cheannach.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Ceannaigh na rianta roghnaithe?</item>
-        <item quantity="one">Ceannaigh an rian roghnaithe?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Tá na hamhráin seo ceannaithe agat cheana féin. Is féidir leat amhráin cheannaithe a íoslódáil arís ag am ar bith.</item>
-        <item quantity="one">Tá an t-amhrán seo ceannaithe agat cheana féin. Is féidir leat amhráin cheannaithe a íoslódáil arís ag am ar bith.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Rianta ceannaithe cheana</item>
-        <item quantity="one">Rian ceannaithe cheana</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Ní féidir leat ach %d seinnliosta soláthartha a chur leis mar cheanáin. Bain roinnt seinnliostaí soláthartha ón táb Ceanáin.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir leat ach %d seinnliosta soláthartha a chur leis mar cheanán. Bain roinnt seinnliostaí soláthartha ón táb Ceanáin.</item>
-        <item quantity="two">Ní féidir leat ach %d sheinnliosta soláthartha a chur leis mar cheanáin. Bain roinnt seinnliostaí soláthartha ón táb Ceanáin.</item>
-        <item quantity="few">Ní féidir leat ach %d sheinnliosta soláthartha a chur leis mar cheanáin. Bain roinnt seinnliostaí soláthartha ón táb Ceanáin.</item>
-        <item quantity="many">Ní féidir leat ach %d seinnliosta soláthartha a chur leis mar cheanáin. Bain roinnt seinnliostaí soláthartha ón táb Ceanáin.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Ní féidir leat ach %d rian sruthaithe a chur leis mar Rian ceanáin. Bain roinnt rianta sruthaithe ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir leat ach %d rian sruthaithe a chur leis mar Rian ceanáin. Bain roinnt rianta sruthaithe ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="two">Ní féidir leat ach %d rian sruthaithe a chur leis mar Rian ceanáin. Bain roinnt rianta sruthaithe ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="few">Ní féidir leat ach %d rian sruthaithe a chur leis mar Rian ceanáin. Bain roinnt rianta sruthaithe ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="many">Ní féidir leat ach %d rian sruthaithe a chur leis mar Rian ceanáin. Bain roinnt rianta sruthaithe ó na Rianta ceanáin, ansin triail arís.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Ní féidir leat ach %d rian a chur leis mar Rian ceanáin. Bain roinnt rianta ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ní féidir leat ach %d rian a chur leis mar Rian ceanáin. Bain roinnt rianta ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="two">Ní féidir leat ach %d rian a chur leis mar Rian ceanáin. Bain roinnt rianta ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="few">Ní féidir leat ach %d rian a chur leis mar Rian ceanáin. Bain roinnt rianta ó na Rianta ceanáin, ansin triail arís.</item>
-        <item quantity="many">Ní féidir leat ach %d rian a chur leis mar Rian ceanáin. Bain roinnt rianta ó na Rianta ceanáin, ansin triail arís.</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d fillteán</item>
@@ -180,25 +96,73 @@
         <item quantity="few">Scriosfar %d fhillteán fholaithe freisin.</item>
         <item quantity="many">Scriosfar %d bhfillteán fholaithe freisin.</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d rian aischurtha.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d rian aischurtha.</item>
-        <item quantity="two">%d rian aischurtha.</item>
-        <item quantity="few">%d rian aischurtha.</item>
-        <item quantity="many">%d rian aischurtha.</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Scrios %d mír?</item>
         <item quantity="one">Scrios 1 mhír?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Ní féidir níos mó ná %d carachtar a iontráil.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d charachtar a iontráil.</item>
+        <item quantity="two">Ní féidir níos mó ná %d charachtar a iontráil.</item>
+        <item quantity="few">Ní féidir níos mó ná %d charachtar a iontráil.</item>
+        <item quantity="many">Ní féidir níos mó ná %d gcarachtar a iontráil.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Ní féidir níos mó ná %d albam a chur leis. Cuir níos lú albam leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d albam a chur leis. Cuir níos lú albam leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="two">Ní féidir níos mó ná %d albam a chur leis. Cuir níos lú albam leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="few">Ní féidir níos mó ná %d albam a chur leis. Cuir níos lú albam leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="many">Ní féidir níos mó ná %d n-albam a chur leis. Cuir níos lú albam leis nó bain roinnt acu ó Cheanáin.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Ní féidir níos mó ná %d ceoltóir a chur leis. Cuir níos lú ceoltóirí leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d cheoltóir a chur leis. Cuir níos lú ceoltóirí leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="two">Ní féidir níos mó ná %d cheoltóir a chur leis. Cuir níos lú ceoltóirí leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="few">Ní féidir níos mó ná %d cheoltóir a chur leis. Cuir níos lú ceoltóirí leis nó bain roinnt acu ó Cheanáin.</item>
+        <item quantity="many">Ní féidir níos mó ná %d gceoltóir a chur leis. Cuir níos lú ceoltóirí leis nó bain roinnt acu ó Cheanáin.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Ní féidir leat ach suas le %d seinnliosta a chur leis. Bain roinnt seinnliostaí ón táb Ceanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir leat ach suas le %d seinnliosta a chur leis. Bain roinnt seinnliostaí ón táb Ceanáin.</item>
+        <item quantity="two">Ní féidir leat ach suas le %d sheinnliosta a chur leis. Bain roinnt seinnliostaí ón táb Ceanáin.</item>
+        <item quantity="few">Ní féidir leat ach suas le %d sheinnliosta a chur leis. Bain roinnt seinnliostaí ón táb Ceanáin.</item>
+        <item quantity="many">Ní féidir leat ach suas le %d seinnliosta a chur leis. Bain roinnt seinnliostaí ón táb Ceanáin.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Ní féidir níos mó ná %d rian sruthaithe a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d rian sruthaithe a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="two">Ní féidir níos mó ná %d rian sruthaithe a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="few">Ní féidir níos mó ná %d rian sruthaithe a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="many">Ní féidir níos mó ná %d rian sruthaithe a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Ní féidir níos mó ná %d rian a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d rian a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="two">Ní féidir níos mó ná %d rian a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="few">Ní féidir níos mó ná %d rian a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+        <item quantity="many">Ní féidir níos mó ná %d rian a chur leis. Cuir níos lú rianta leis nó bain roinnt acu ó Rianta ceanáin.</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">%d seinnliosta easpórtáilte.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d seinnliosta easpórtáilte.</item>
+        <item quantity="two">%d sheinnliosta easpórtáilte.</item>
+        <item quantity="few">%d sheinnliosta easpórtáilte.</item>
+        <item quantity="many">%d seinnliosta easpórtáilte.</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">%d seinnliosta iompórtáilte.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d seinnliosta iompórtáilte.</item>
+        <item quantity="two">%d sheinnliosta iompórtáilte.</item>
+        <item quantity="few">%d sheinnliosta iompórtáilte.</item>
+        <item quantity="many">%d seinnliosta iompórtáilte.</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Ní féidir níos mó ná %d seinnliosta a roghnú.</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d rian</item>
         <item quantity="one">1 rian</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Níor cuireadh ach %d rian le Ceanáin. Bhí an chuid eile i gCeanáin cheana.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Níor cuireadh ach %d rian le Ceanáin. Bhí an chuid eile i gCeanáin cheana.</item>
+        <item quantity="two">Níor cuireadh ach %d rian le Ceanáin. Bhí an chuid eile i gCeanáin cheana.</item>
+        <item quantity="few">Níor cuireadh ach %d rian le Ceanáin. Bhí an chuid eile i gCeanáin cheana.</item>
+        <item quantity="many">Níor cuireadh ach %d rian le Ceanáin. Bhí an chuid eile i gCeanáin cheana.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d rian curtha le ceanáin.</item>
+        <item quantity="one">1 rian curtha le ceanáin.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d rian curtha leis an seinnliosta.</item>
+        <item quantity="one">1 rian curtha leis an seinnliosta.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">%d rian curtha leis an scuaine.</item>
         <item quantity="one">%d rian curtha leis an scuaine.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">Scrios %d rian?</item>
-        <item quantity="one">Scrios 1 rian?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d rian?</item>
+        <item quantity="two">Scrios %d rian?</item>
+        <item quantity="few">Scrios %d rian?</item>
+        <item quantity="many">Scrios %d rian?</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Am codlata: %d uair an chloig</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Am codlata: %d uair an chloig</item>
+        <item quantity="two">Am codlata: %d uair an chloig</item>
+        <item quantity="few">Am codlata: %d uair an chloig</item>
+        <item quantity="many">Am codlata: %d n-uair an chloig</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Am codlata: %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Am codlata: %d nóiméad</item>
+        <item quantity="two">Am codlata: %d nóiméad</item>
+        <item quantity="few">Am codlata: %d nóiméad</item>
+        <item quantity="many">Am codlata: %d nóiméad</item>
     </plurals>
 </resources>

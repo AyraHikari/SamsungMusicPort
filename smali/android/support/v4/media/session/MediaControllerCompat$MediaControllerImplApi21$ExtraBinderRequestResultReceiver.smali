@@ -1,6 +1,6 @@
 .class Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver;
 .super Landroid/os/ResultReceiver;
-.source "SourceFile"
+.source "MediaControllerCompat.java"
 
 
 # annotations
@@ -9,13 +9,13 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "ExtraBinderRequestResultReceiver"
 .end annotation
 
 
 # instance fields
-.field private mMediaControllerImpl:Ljava/lang/ref/WeakReference;
+.field public a:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -27,31 +27,31 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;)V
+.method public constructor <init>(Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;)V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 2225
+    .line 1
     invoke-direct {p0, v0}, Landroid/os/ResultReceiver;-><init>(Landroid/os/Handler;)V
 
-    .line 2226
+    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver;->mMediaControllerImpl:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver;->a:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected onReceiveResult(ILandroid/os/Bundle;)V
+.method public onReceiveResult(ILandroid/os/Bundle;)V
     .locals 3
 
-    .line 2231
-    iget-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver;->mMediaControllerImpl:Ljava/lang/ref/WeakReference;
+    .line 1
+    iget-object p1, p0, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -65,48 +65,48 @@
 
     goto :goto_0
 
-    .line 2235
+    .line 2
     :cond_0
-    iget-object v0, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->mLock:Ljava/lang/Object;
+    iget-object v0, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->b:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2236
+    .line 3
     :try_start_0
-    iget-object v1, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->mSessionToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
+    iget-object v1, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->e:Landroid/support/v4/media/session/MediaSessionCompat$Token;
 
     const-string v2, "android.support.v4.media.session.EXTRA_BINDER"
 
-    .line 2238
-    invoke-static {p2, v2}, Landroid/support/v4/app/BundleCompat;->getBinder(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
+    .line 4
+    invoke-static {p2, v2}, Landroidx/core/app/f;->a(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v2
 
-    .line 2237
-    invoke-static {v2}, Landroid/support/v4/media/session/IMediaSession$Stub;->asInterface(Landroid/os/IBinder;)Landroid/support/v4/media/session/IMediaSession;
+    .line 5
+    invoke-static {v2}, Landroid/support/v4/media/session/b$a;->M0(Landroid/os/IBinder;)Landroid/support/v4/media/session/b;
 
     move-result-object v2
 
-    .line 2236
-    invoke-virtual {v1, v2}, Landroid/support/v4/media/session/MediaSessionCompat$Token;->setExtraBinder(Landroid/support/v4/media/session/IMediaSession;)V
+    .line 6
+    invoke-virtual {v1, v2}, Landroid/support/v4/media/session/MediaSessionCompat$Token;->c(Landroid/support/v4/media/session/b;)V
 
-    .line 2240
-    iget-object v1, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->mSessionToken:Landroid/support/v4/media/session/MediaSessionCompat$Token;
+    .line 7
+    iget-object v1, p1, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->e:Landroid/support/v4/media/session/MediaSessionCompat$Token;
 
-    const-string v2, "android.support.v4.media.session.SESSION_TOKEN2_BUNDLE"
+    const-string v2, "android.support.v4.media.session.SESSION_TOKEN2"
 
-    .line 2241
-    invoke-virtual {p2, v2}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
+    .line 8
+    invoke-static {p2, v2}, Landroidx/versionedparcelable/a;->b(Landroid/os/Bundle;Ljava/lang/String;)Landroidx/versionedparcelable/d;
 
     move-result-object p2
 
-    .line 2240
-    invoke-virtual {v1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Token;->setSessionToken2Bundle(Landroid/os/Bundle;)V
+    .line 9
+    invoke-virtual {v1, p2}, Landroid/support/v4/media/session/MediaSessionCompat$Token;->d(Landroidx/versionedparcelable/d;)V
 
-    .line 2242
-    invoke-virtual {p1}, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->processPendingCallbacksLocked()V
+    .line 10
+    invoke-virtual {p1}, Landroid/support/v4/media/session/MediaControllerCompat$MediaControllerImplApi21;->a()V
 
-    .line 2243
+    .line 11
     monitor-exit v0
 
     return-void

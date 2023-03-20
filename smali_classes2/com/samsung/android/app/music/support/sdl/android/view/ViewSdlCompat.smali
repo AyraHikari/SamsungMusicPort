@@ -1,13 +1,12 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/view/ViewSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ViewSdlCompat.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,20 +15,13 @@
 .method public static twsetDrawDuringWindowsAnimating(Landroid/view/View;Z)V
     .locals 2
 
-    .line 10
+    .line 1
     sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
     const/16 v1, 0x837
 
-    if-ge v0, v1, :cond_0
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/view/View;->twSetDrawDuringWindowsAnimating(Z)V
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x16
-
-    if-lt v0, v1, :cond_0
-
-    .line 11
-    :cond_0
     return-void
 .end method

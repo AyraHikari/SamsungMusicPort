@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="78.0" android:viewportHeight="78.0"
+<vector android:height="@dimen/sesl_rounded_corner_radius" android:width="@dimen/sesl_rounded_corner_radius" android:viewportWidth="108.0" android:viewportHeight="108.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@color/sesl_round_and_bgcolor_dark" android:pathData="M0,0c43.078,0 78,34.922 78,78V0H0z" />
+    <group android:rotation="270.0" android:translateX="0.0" android:translateY="108.0">
+        <group android:translateX="8.008477" android:translateY="8.008477">
+            <path android:fillColor="?roundedCornerColor" android:pathData="M99.9915228,99.9915228 L-9.09494702e-13,99.9915228 C34.7692309,99.9915228 47.3773941,96.371324 60.0885052,89.5733473 C72.7996163,82.7753707 82.7753707,72.7996163 89.5733473,60.0885052 C96.371324,47.3773941 99.9915228,34.7692309 99.9915228,-1.47792889e-12 L99.9915228,-1.47792889e-12 L99.9915228,99.9915228 Z" />
+        </group>
+    </group>
 </vector>

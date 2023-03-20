@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/sdk/look/SlookPointerIcon$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SlookPointerIcon.java"
 
 # interfaces
 .implements Landroid/view/View$OnHoverListener;
@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/samsung/android/sdk/look/SlookPointerIcon;
+.field public final synthetic this$0:Lcom/samsung/android/sdk/look/SlookPointerIcon;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/sdk/look/SlookPointerIcon;)V
+.method public constructor <init>(Lcom/samsung/android/sdk/look/SlookPointerIcon;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lcom/samsung/android/sdk/look/SlookPointerIcon$1;->this$0:Lcom/samsung/android/sdk/look/SlookPointerIcon;
 
-    .line 70
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,17 +39,23 @@
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 74
+    .line 1
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result p1
 
-    packed-switch p1, :pswitch_data_0
+    const/16 p2, 0x9
+
+    if-eq p1, p2, :cond_1
+
+    const/16 p2, 0xa
+
+    if-eq p1, p2, :cond_0
 
     goto :goto_0
 
-    .line 80
-    :pswitch_0
+    .line 2
+    :cond_0
     invoke-static {}, Lcom/samsung/android/sdk/look/RefPointerIcon;->get()Lcom/samsung/android/sdk/look/RefPointerIcon;
 
     move-result-object p1
@@ -66,8 +72,8 @@
 
     goto :goto_0
 
-    .line 76
-    :pswitch_1
+    .line 3
+    :cond_1
     invoke-static {}, Lcom/samsung/android/sdk/look/RefPointerIcon;->get()Lcom/samsung/android/sdk/look/RefPointerIcon;
 
     move-result-object p1
@@ -90,10 +96,4 @@
     const/4 p1, 0x0
 
     return p1
-
-    :pswitch_data_0
-    .packed-switch 0x9
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

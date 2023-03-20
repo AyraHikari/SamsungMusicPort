@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "DesktopModeManagerCompat.java"
 
 
 # annotations
@@ -12,6 +12,12 @@
 
 
 # static fields
+.field private static final ENTER_KNOX_DESKTOP_MODE:Ljava/lang/String; = "android.app.action.ENTER_KNOX_DESKTOP_MODE"
+
+.field private static final EXIT_KNOX_DESKTOP_MODE:Ljava/lang/String; = "android.app.action.EXIT_KNOX_DESKTOP_MODE"
+
+.field private static final IS_DESKTOP_MODE:Ljava/lang/String; = "isDesktopMode"
+
 .field private static final PERSIST_SERVICE_DEX_HDMI:Ljava/lang/String; = "persist.service.dex.hdmi"
 
 .field private static final SUPPORT_SAMSUNG_DEX:Z
@@ -29,27 +35,44 @@
     .end annotation
 .end field
 
-.field private static sDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
-
 .field private static sDesktopModeListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;
+
+.field private static sDesktopModeReceiver:Landroid/content/BroadcastReceiver;
+
+.field private static final sIsDesktopMode:Ljava/lang/reflect/Method;
 
 .field private static sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 3
 
     const-string v0, "SEC_FLOATING_FEATURE_COMMON_SUPPORT_KNOX_DESKTOP"
 
-    .line 24
+    .line 1
     invoke-static {v0}, Lcom/samsung/android/app/music/support/samsung/feature/FloatingFeatureCompat;->getEnableStatus(Ljava/lang/String;)Z
 
     move-result v0
 
     sput-boolean v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->SUPPORT_SAMSUNG_DEX:Z
 
-    .line 34
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Ljava/lang/Class;
+
+    const-string v1, "com.samsung.android.desktopmode.SemDesktopModeManager"
+
+    const-string v2, "isDesktopMode"
+
+    .line 2
+    invoke-static {v1, v2, v0}, Lcom/samsung/android/app/music/support/samsung/ReflectionExtension;->getReflectionMethod(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sIsDesktopMode:Ljava/lang/reflect/Method;
+
+    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -62,25 +85,22 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic access$000(Z)V
+.method public static synthetic access$000(Z)V
     .locals 0
 
-    .line 19
     invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->notifyDesktopModeChanged(Z)V
 
     return-void
 .end method
 
-.method static synthetic access$100()Ljava/lang/String;
+.method public static synthetic access$100()Ljava/lang/String;
     .locals 1
 
-    .line 19
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->TAG:Ljava/lang/String;
 
     return-object v0
@@ -89,14 +109,8 @@
 .method private static ensureDesktopModeManager(Landroid/content/Context;)V
     .locals 1
 
-    .line 38
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
-
-    if-nez v0, :cond_0
-
     const-string v0, "desktopmode"
 
-    .line 40
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -105,21 +119,20 @@
 
     sput-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
-    :cond_0
     return-void
 .end method
 
 .method private static hasItem(Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$DesktopModeEventListener;)Z
     .locals 2
 
-    .line 205
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->mObservers:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 206
+    .line 2
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -128,14 +141,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 207
+    .line 3
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/ref/WeakReference;
 
-    .line 208
+    .line 4
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v1
@@ -144,12 +157,12 @@
 
     if-nez v1, :cond_1
 
-    .line 210
+    .line 5
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 211
+    .line 6
     :cond_1
     invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -170,42 +183,42 @@
 .method public static isDesktopDualMode(Landroid/content/Context;)Z
     .locals 3
 
-    .line 63
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->SUPPORT_SAMSUNG_DEX:Z
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    .line 64
+    .line 2
     sget v0, Lcom/samsung/android/app/music/support/SamsungSdk;->VERSION:I
 
     const v2, 0x317cd
 
-    if-lt v0, v2, :cond_1
+    if-lt v0, v2, :cond_0
 
-    .line 65
+    .line 3
     invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->ensureDesktopModeManager(Landroid/content/Context;)V
 
-    .line 66
+    .line 4
     sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
     invoke-virtual {p0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->getDesktopModeState()Lcom/samsung/android/desktopmode/SemDesktopModeState;
 
     move-result-object p0
 
-    .line 67
+    .line 5
     invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopMode(Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 68
+    .line 6
     invoke-virtual {p0}, Lcom/samsung/android/desktopmode/SemDesktopModeState;->getDisplayType()I
 
     move-result p0
@@ -218,31 +231,28 @@
 
     :cond_0
     return v1
-
-    :cond_1
-    return v1
 .end method
 
 .method public static isDesktopHdmi()Z
     .locals 3
 
-    .line 94
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->SUPPORT_SAMSUNG_DEX:Z
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    const-string v0, "persist.service.dex.hdmi"
+    const/4 v0, -0x1
 
-    const/4 v2, -0x1
+    const-string v2, "persist.service.dex.hdmi"
 
-    .line 95
-    invoke-static {v0, v2}, Lcom/samsung/android/app/music/support/android/os/SystemPropertiesCompat;->getInt(Ljava/lang/String;I)I
+    .line 2
+    invoke-static {v2, v0}, Lcom/samsung/android/app/music/support/android/os/SystemPropertiesCompat;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -252,15 +262,12 @@
 
     :cond_0
     return v1
-
-    :cond_1
-    return v1
 .end method
 
 .method public static isDesktopMode(Landroid/content/Context;)Z
     .locals 4
 
-    .line 45
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->SUPPORT_SAMSUNG_DEX:Z
 
     const/4 v1, 0x0
@@ -271,38 +278,35 @@
 
     if-eqz v0, :cond_3
 
-    .line 46
+    .line 2
     sget v0, Lcom/samsung/android/app/music/support/SamsungSdk;->VERSION:I
 
     const v2, 0x31705
 
     if-lt v0, v2, :cond_2
 
-    .line 47
+    .line 3
     invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->ensureDesktopModeManager(Landroid/content/Context;)V
 
-    .line 48
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    .line 4
+    sget-object v2, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
-    invoke-virtual {v0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->getDesktopModeState()Lcom/samsung/android/desktopmode/SemDesktopModeState;
+    invoke-virtual {v2}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->getDesktopModeState()Lcom/samsung/android/desktopmode/SemDesktopModeState;
 
-    move-result-object v0
-
-    .line 49
-    sget v2, Lcom/samsung/android/app/music/support/SamsungSdk;->VERSION:I
+    move-result-object v2
 
     const v3, 0x317cd
 
-    if-lt v2, v3, :cond_1
+    if-lt v0, v3, :cond_1
 
-    .line 50
-    invoke-static {v0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopMode(Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
+    .line 5
+    invoke-static {v2}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopMode(Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
 
-    move-result v2
+    move-result v0
 
-    if-eqz v2, :cond_0
+    if-eqz v0, :cond_0
 
-    invoke-static {p0, v0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isMatchedDesktopModeDisplay(Landroid/content/Context;Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
+    invoke-static {p0, v2}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isMatchedDesktopModeDisplay(Landroid/content/Context;Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
 
     move-result p0
 
@@ -313,17 +317,38 @@
     :cond_0
     return v1
 
-    .line 52
+    .line 6
     :cond_1
-    invoke-static {v0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopMode(Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
+    invoke-static {v2}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopMode(Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
 
     move-result p0
 
     return p0
 
-    .line 55
+    .line 7
     :cond_2
-    invoke-static {}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->isDesktopMode()Z
+    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sIsDesktopMode:Ljava/lang/reflect/Method;
+
+    if-eqz p0, :cond_3
+
+    const/4 v0, 0x0
+
+    new-array v2, v1, [Ljava/lang/Object;
+
+    .line 8
+    invoke-static {p0, v0, v2}, Lcom/samsung/android/app/music/support/samsung/ReflectionExtension;->invokeMethod(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    .line 9
+    instance-of v0, p0, Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_3
+
+    .line 10
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
@@ -336,7 +361,7 @@
 .method private static isDesktopMode(Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
     .locals 1
 
-    .line 75
+    .line 11
     iget p0, p0, Lcom/samsung/android/desktopmode/SemDesktopModeState;->enabled:I
 
     const/4 v0, 0x4
@@ -354,10 +379,93 @@
     return p0
 .end method
 
+.method public static isDesktopModeOrHdmi(Landroid/content/Context;)Z
+    .locals 0
+
+    invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopMode(Landroid/content/Context;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    invoke-static {}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopHdmi()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
+.method public static isDesktopStandaloneMode(Landroid/content/Context;)Z
+    .locals 3
+
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->SUPPORT_SAMSUNG_DEX:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    sget v0, Lcom/samsung/android/app/music/support/SamsungSdk;->VERSION:I
+
+    const v2, 0x317cd
+
+    if-lt v0, v2, :cond_0
+
+    .line 3
+    invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->ensureDesktopModeManager(Landroid/content/Context;)V
+
+    .line 4
+    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+
+    invoke-virtual {p0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->getDesktopModeState()Lcom/samsung/android/desktopmode/SemDesktopModeState;
+
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->isDesktopMode(Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 6
+    invoke-virtual {p0}, Lcom/samsung/android/desktopmode/SemDesktopModeState;->getDisplayType()I
+
+    move-result p0
+
+    const/16 v0, 0x65
+
+    if-ne p0, v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    return v1
+.end method
+
 .method private static isMatchedDesktopModeDisplay(Landroid/content/Context;Lcom/samsung/android/desktopmode/SemDesktopModeState;)Z
     .locals 2
 
-    .line 79
+    .line 1
     invoke-virtual {p1}, Lcom/samsung/android/desktopmode/SemDesktopModeState;->getDisplayType()I
 
     move-result p1
@@ -372,7 +480,7 @@
 
     if-ne p1, v1, :cond_0
 
-    .line 82
+    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -398,14 +506,14 @@
 .method private static notifyDesktopModeChanged(Z)V
     .locals 2
 
-    .line 145
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->mObservers:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 146
+    .line 2
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -413,14 +521,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 147
+    .line 3
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/ref/WeakReference;
 
-    .line 148
+    .line 4
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v1
@@ -429,12 +537,12 @@
 
     if-nez v1, :cond_0
 
-    .line 150
+    .line 5
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 152
+    .line 6
     :cond_0
     invoke-interface {v1, p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$DesktopModeEventListener;->onDesktopModeChanged(Z)V
 
@@ -447,67 +555,82 @@
 .method private static registerListener(Landroid/app/Activity;)V
     .locals 2
 
-    .line 102
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->TAG:Ljava/lang/String;
 
     const-string v1, "registerListener."
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 103
+    .line 2
     invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->ensureDesktopModeManager(Landroid/content/Context;)V
 
-    .line 104
-    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    .line 3
+    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
-    if-nez p0, :cond_0
+    if-nez v0, :cond_0
 
     return-void
 
-    .line 107
+    .line 4
     :cond_0
-    sget p0, Lcom/samsung/android/app/music/support/SamsungSdk;->VERSION:I
+    sget v0, Lcom/samsung/android/app/music/support/SamsungSdk;->VERSION:I
 
-    const v0, 0x31705
+    const v1, 0x31705
 
-    if-lt p0, v0, :cond_1
+    if-lt v0, v1, :cond_1
 
-    .line 109
+    .line 5
     new-instance p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$1;
 
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$1;-><init>()V
 
     sput-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;
 
-    .line 124
-    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    .line 6
+    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;
-
-    invoke-virtual {p0, v0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->registerListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;)V
+    invoke-virtual {v0, p0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->registerListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;)V
 
     goto :goto_0
 
-    .line 126
+    .line 7
     :cond_1
-    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
+    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeReceiver:Landroid/content/BroadcastReceiver;
 
-    if-nez p0, :cond_2
+    if-nez v0, :cond_2
 
-    .line 127
-    new-instance p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$2;
+    .line 8
+    new-instance v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$2;
 
-    invoke-direct {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$2;-><init>()V
+    invoke-direct {v0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$2;-><init>()V
 
-    sput-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
+    sput-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 140
+    .line 9
     :cond_2
-    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    new-instance v0, Landroid/content/IntentFilter;
 
-    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    invoke-static {p0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->registerListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;)V
+    const-string v1, "android.app.action.ENTER_KNOX_DESKTOP_MODE"
+
+    .line 10
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    const-string v1, "android.app.action.EXIT_KNOX_DESKTOP_MODE"
+
+    .line 11
+    invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 12
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    sget-object v1, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeReceiver:Landroid/content/BroadcastReceiver;
+
+    invoke-virtual {p0, v1, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     :goto_0
     return-void
@@ -516,7 +639,7 @@
 .method public static registerObserver(Landroid/app/Activity;Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$DesktopModeEventListener;)V
     .locals 2
 
-    .line 174
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->SUPPORT_SAMSUNG_DEX:Z
 
     if-eqz v0, :cond_2
@@ -525,14 +648,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 175
+    .line 2
     invoke-static {p1}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->hasItem(Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$DesktopModeEventListener;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 176
+    .line 3
     sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->TAG:Ljava/lang/String;
 
     const-string p1, "registerObserver. but it was already registered."
@@ -541,7 +664,7 @@
 
     return-void
 
-    .line 179
+    .line 4
     :cond_0
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->TAG:Ljava/lang/String;
 
@@ -549,57 +672,53 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 180
+    .line 5
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->mObservers:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 181
+    .line 6
     invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->registerListener(Landroid/app/Activity;)V
 
-    .line 183
+    .line 7
     :cond_1
-    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->mObservers:Ljava/util/List;
+    new-instance p0, Ljava/lang/ref/WeakReference;
 
-    new-instance v0, Ljava/lang/ref/WeakReference;
+    invoke-direct {p0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    invoke-interface {p0, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_2
     return-void
 .end method
 
-.method private static unregisterListener()V
+.method private static unregisterListener(Landroid/app/Activity;)V
     .locals 2
 
-    .line 158
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->TAG:Ljava/lang/String;
 
     const-string v1, "unregisterListener."
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 159
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    .line 2
+    sget-object v1, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
-    if-nez v0, :cond_0
+    if-nez v1, :cond_0
 
-    .line 160
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->TAG:Ljava/lang/String;
+    const-string p0, "unregisterListener. but sSemDesktopModeManager is null."
 
-    const-string v1, "unregisterListener. but sSemDesktopModeManager is null."
-
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    .line 3
+    invoke-static {v0, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 163
+    .line 4
     :cond_0
     sget v0, Lcom/samsung/android/app/music/support/SamsungSdk;->VERSION:I
 
@@ -607,44 +726,50 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 165
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    .line 5
+    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
 
-    sget-object v1, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;
+    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;
 
-    invoke-virtual {v0, v1}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->unregisterListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;)V
+    invoke-virtual {p0, v0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->unregisterListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$DesktopModeListener;)V
 
     goto :goto_0
 
-    .line 167
+    .line 6
     :cond_1
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
+    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_2
 
-    .line 168
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sSemDesktopModeManager:Lcom/samsung/android/desktopmode/SemDesktopModeManager;
+    .line 7
+    :try_start_0
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
-    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeEventListener:Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;
+    move-result-object p0
 
-    invoke-static {v0}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->unregisterListener(Lcom/samsung/android/desktopmode/SemDesktopModeManager$EventListener;)V
+    sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->sDesktopModeReceiver:Landroid/content/BroadcastReceiver;
 
+    invoke-virtual {p0, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
     :cond_2
     :goto_0
     return-void
 .end method
 
-.method public static unregisterObserver(Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$DesktopModeEventListener;)V
+.method public static unregisterObserver(Landroid/app/Activity;Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat$DesktopModeEventListener;)V
     .locals 2
 
-    .line 188
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->TAG:Ljava/lang/String;
 
     const-string v1, "unregisterObserver."
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 189
+    .line 2
     sget-boolean v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->SUPPORT_SAMSUNG_DEX:Z
 
     if-eqz v0, :cond_3
@@ -653,14 +778,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 190
+    .line 3
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->mObservers:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 191
+    .line 4
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -669,14 +794,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 192
+    .line 5
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/ref/WeakReference;
 
-    .line 193
+    .line 6
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v1
@@ -685,31 +810,31 @@
 
     if-eqz v1, :cond_1
 
-    .line 194
-    invoke-virtual {v1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    .line 7
+    invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 195
+    .line 8
     :cond_1
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 198
+    .line 9
     :cond_2
-    sget-object p0, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->mObservers:Ljava/util/List;
+    sget-object p1, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->mObservers:Ljava/util/List;
 
-    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
-    move-result p0
+    move-result p1
 
-    if-eqz p0, :cond_3
+    if-eqz p1, :cond_3
 
-    .line 199
-    invoke-static {}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->unregisterListener()V
+    .line 10
+    invoke-static {p0}, Lcom/samsung/android/app/music/support/samsung/desktopmode/DesktopModeManagerCompat;->unregisterListener(Landroid/app/Activity;)V
 
     :cond_3
     return-void

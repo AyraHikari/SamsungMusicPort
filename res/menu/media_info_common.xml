@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/menu_edit" android:id="@id/meta_edit" android:title="@string/menu_edit" app:showAsAction="always" />
-    <item android:icon="@drawable/menu_search_online" android:id="@id/search_online" android:title="@string/search_online" app:showAsAction="always" />
+    <item android:icon="@drawable/music_ic_ab_edit" android:id="@id/meta_edit" android:title="@string/menu_edit" app:showAsAction="always" />
+    <item android:icon="@drawable/music_ic_ab_web_search" android:id="@id/search_online" android:title="@string/search_online" app:showAsAction="always" />
 </menu>

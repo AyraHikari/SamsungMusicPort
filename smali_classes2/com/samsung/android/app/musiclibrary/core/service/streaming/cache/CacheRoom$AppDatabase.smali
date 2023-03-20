@@ -1,6 +1,6 @@
 .class public abstract Lcom/samsung/android/app/musiclibrary/core/service/streaming/cache/CacheRoom$AppDatabase;
-.super Landroid/arch/persistence/room/RoomDatabase;
-.source "SourceFile"
+.super Landroidx/room/j;
+.source "CacheRoom.java"
 
 
 # annotations
@@ -18,13 +18,12 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 54
-    invoke-direct {p0}, Landroid/arch/persistence/room/RoomDatabase;-><init>()V
+    invoke-direct {p0}, Landroidx/room/j;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract streamingCacheDao()Lcom/samsung/android/app/musiclibrary/core/service/streaming/cache/CacheRoom$StreamingCacheDao;
+.method public abstract b()Lcom/samsung/android/app/musiclibrary/core/service/streaming/cache/CacheRoom$b;
 .end method

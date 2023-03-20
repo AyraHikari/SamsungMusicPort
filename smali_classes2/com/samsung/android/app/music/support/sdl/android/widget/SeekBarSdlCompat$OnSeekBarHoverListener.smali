@@ -1,6 +1,6 @@
 .class public interface abstract Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SeekBarSdlCompat.java"
 
 
 # annotations

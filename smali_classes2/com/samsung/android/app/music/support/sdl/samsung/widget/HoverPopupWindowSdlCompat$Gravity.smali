@@ -1,6 +1,6 @@
 .class public final Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat$Gravity;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "HoverPopupWindowSdlCompat.java"
 
 
 # annotations
@@ -56,7 +56,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

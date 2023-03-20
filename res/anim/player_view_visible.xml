@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <alpha android:duration="400" android:fromAlpha="0.0" android:toAlpha="1.0" />
+    <alpha android:interpolator="@anim/interpolator_sine_in_out_60" android:duration="400" android:fromAlpha="0.0" android:toAlpha="1.0" />
 </set>

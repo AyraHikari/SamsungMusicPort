@@ -1,26 +1,31 @@
 .class public Lcom/samsung/android/app/music/recommend/PlaylistSeed;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "PlaylistSeed.java"
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final audioId:J
 
-.field public final b:J
+.field public final playlistId:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;J)V
+.method public constructor <init>(Ljava/lang/String;J)V
     .locals 0
 
-    .line 11
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
-    iput-object p1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->a:Ljava/lang/String;
+    .line 2
+    iput-object p1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->playlistId:Ljava/lang/String;
 
-    .line 13
-    iput-wide p2, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->b:J
+    .line 3
+    iput-wide p2, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->audioId:J
 
     return-void
 .end method
@@ -30,7 +35,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
 
-    .line 18
+    .line 1
     instance-of v0, p1, Lcom/samsung/android/app/music/recommend/PlaylistSeed;
 
     if-nez v0, :cond_0
@@ -46,33 +51,33 @@
 
     return p1
 
-    .line 26
+    .line 2
     :cond_1
     check-cast p1, Lcom/samsung/android/app/music/recommend/PlaylistSeed;
 
-    .line 28
-    new-instance v0, Lorg/apache/commons/lang3/builder/EqualsBuilder;
+    .line 3
+    new-instance v0, Lorg/apache/commons/lang3/builder/a;
 
-    invoke-direct {v0}, Lorg/apache/commons/lang3/builder/EqualsBuilder;-><init>()V
+    invoke-direct {v0}, Lorg/apache/commons/lang3/builder/a;-><init>()V
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->playlistId:Ljava/lang/String;
 
-    iget-object v2, p1, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->a:Ljava/lang/String;
+    iget-object v2, p1, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->playlistId:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lorg/apache/commons/lang3/builder/EqualsBuilder;->e(Ljava/lang/Object;Ljava/lang/Object;)Lorg/apache/commons/lang3/builder/EqualsBuilder;
+    invoke-virtual {v0, v1, v2}, Lorg/apache/commons/lang3/builder/a;->g(Ljava/lang/Object;Ljava/lang/Object;)Lorg/apache/commons/lang3/builder/a;
 
     move-result-object v0
 
-    iget-wide v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->b:J
+    iget-wide v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->audioId:J
 
-    iget-wide v3, p1, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->b:J
+    iget-wide v3, p1, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->audioId:J
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lorg/apache/commons/lang3/builder/EqualsBuilder;->a(JJ)Lorg/apache/commons/lang3/builder/EqualsBuilder;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lorg/apache/commons/lang3/builder/a;->f(JJ)Lorg/apache/commons/lang3/builder/a;
 
     move-result-object p1
 
-    .line 29
-    invoke-virtual {p1}, Lorg/apache/commons/lang3/builder/EqualsBuilder;->b()Z
+    .line 4
+    invoke-virtual {p1}, Lorg/apache/commons/lang3/builder/a;->s()Z
 
     move-result p1
 
@@ -82,28 +87,27 @@
 .method public hashCode()I
     .locals 3
 
-    .line 34
-    new-instance v0, Lorg/apache/commons/lang3/builder/HashCodeBuilder;
+    new-instance v0, Lorg/apache/commons/lang3/builder/b;
 
     const/16 v1, 0x11
 
     const/16 v2, 0x1f
 
-    invoke-direct {v0, v1, v2}, Lorg/apache/commons/lang3/builder/HashCodeBuilder;-><init>(II)V
+    invoke-direct {v0, v1, v2}, Lorg/apache/commons/lang3/builder/b;-><init>(II)V
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->playlistId:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lorg/apache/commons/lang3/builder/HashCodeBuilder;->d(Ljava/lang/Object;)Lorg/apache/commons/lang3/builder/HashCodeBuilder;
-
-    move-result-object v0
-
-    iget-wide v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->b:J
-
-    invoke-virtual {v0, v1, v2}, Lorg/apache/commons/lang3/builder/HashCodeBuilder;->a(J)Lorg/apache/commons/lang3/builder/HashCodeBuilder;
+    invoke-virtual {v0, v1}, Lorg/apache/commons/lang3/builder/b;->g(Ljava/lang/Object;)Lorg/apache/commons/lang3/builder/b;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/apache/commons/lang3/builder/HashCodeBuilder;->b()I
+    iget-wide v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->audioId:J
+
+    invoke-virtual {v0, v1, v2}, Lorg/apache/commons/lang3/builder/b;->f(J)Lorg/apache/commons/lang3/builder/b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/apache/commons/lang3/builder/b;->s()I
 
     move-result v0
 
@@ -113,7 +117,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 39
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -122,7 +125,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->a:Ljava/lang/String;
+    iget-object v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->playlistId:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -130,7 +133,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->b:J
+    iget-wide v1, p0, Lcom/samsung/android/app/music/recommend/PlaylistSeed;->audioId:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

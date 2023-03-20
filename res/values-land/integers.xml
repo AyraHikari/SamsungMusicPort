@@ -5,4 +5,6 @@
     <integer name="milk_store_main_pick_column">2</integer>
     <integer name="milk_store_main_recommend_radio_column">5</integer>
     <integer name="milk_store_main_top_chart_column">2</integer>
+    <integer name="mtrl_calendar_header_orientation">0</integer>
+    <integer name="mtrl_calendar_selection_text_lines">6</integer>
 </resources>

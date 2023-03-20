@@ -1,6 +1,6 @@
 .class public interface abstract Lorg/simpleframework/xml/util/Cache;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Cache.java"
 
 
 # annotations
@@ -25,6 +25,9 @@
     .end annotation
 .end method
 
+.method public abstract contains(Ljava/lang/Object;)Z
+.end method
+
 .method public abstract fetch(Ljava/lang/Object;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -36,4 +39,14 @@
 .end method
 
 .method public abstract isEmpty()Z
+.end method
+
+.method public abstract take(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")TT;"
+        }
+    .end annotation
 .end method

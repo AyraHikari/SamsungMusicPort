@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowReflator.java"
 
 
 # annotations
@@ -15,7 +15,7 @@
 
 
 # static fields
-.field static FIELD_NAMES:[Ljava/lang/String;
+.field public static FIELD_NAMES:[Ljava/lang/String;
 
 .field public static WINDOW_MODE_FREESTYLE:I
 
@@ -49,7 +49,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 15
 
     const-string v0, "WINDOW_MODE_MASK"
@@ -82,16 +82,14 @@
 
     const-string v14, "WINDOW_MODE_OPTION_COMMON_UNIQUEOP_MASK"
 
-    .line 165
+    .line 1
     filled-new-array/range {v0 .. v14}, [Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->FIELD_NAMES:[Ljava/lang/String;
 
-    .line 184
-    sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->FIELD_NAMES:[Ljava/lang/String;
-
+    .line 2
     array-length v0, v0
 
     const/4 v1, 0x0
@@ -99,7 +97,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 187
+    .line 3
     :try_start_0
     const-class v2, Landroid/view/WindowManagerPolicy;
 
@@ -111,7 +109,7 @@
 
     move-result-object v2
 
-    .line 189
+    .line 4
     const-class v3, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;
 
     sget-object v4, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$WindowManagerPolicy;->FIELD_NAMES:[Ljava/lang/String;
@@ -122,7 +120,7 @@
 
     move-result-object v3
 
-    .line 190
+    .line 5
     invoke-virtual {v2, v2}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result v2
@@ -145,7 +143,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 148
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

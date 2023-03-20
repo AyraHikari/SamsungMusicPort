@@ -12,61 +12,9 @@
         <item quantity="other">Skladby</item>
         <item quantity="one">Skladba</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">Do Oblíbených bylo přidáno %d skladeb. Skladby, které již jsou v Oblíbených, nebyly přidány.</item>
-        <item quantity="one">Do Oblíbených byla přidána %d skladba. Skladba, která již je v Oblíbených, nebyla přidána.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d skladeb</item>
         <item quantity="one">%d skladeb</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">Z Oblíbených bylo odebráno %d skladeb.</item>
-        <item quantity="one">Z Oblíbených byla odebrána %d skladba.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d skladeb bylo přidáno do oblíbených.</item>
-        <item quantity="one">Do oblíbených byla přidána %d skladba.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Z doporučení můžete odebrat maximálně %d skladeb. Zobrazte odebrané skladby, vyberte některé pro obnovení a opakujte akci.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Z doporučení můžete odebrat maximálně %d skladbu. Zobrazte odebrané skladby, vyberte některé pro obnovení a opakujte akci.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Z doporučení můžete odebrat maximálně %d skladby. Zobrazte odebrané skladby, vyberte některé pro obnovení a opakujte akci.</item>
-        <item quantity="many">Z doporučení můžete odebrat maximálně %d skladeb. Zobrazte odebrané skladby, vyberte některé pro obnovení a opakujte akci.</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Klepněte na tlačítko Přehrát rádio a užijte si každý měsíc %d skladeb zdarma.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Klepněte na tlačítko Přehrát rádio a užijte si každý měsíc %d skladbu zdarma.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Klepněte na tlačítko Přehrát rádio a užijte si každý měsíc %d skladby zdarma.</item>
-        <item quantity="many">Klepněte na tlačítko Přehrát rádio a užijte si každý měsíc %d skladeb zdarma.</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Maximálně lze vybrat %d interpretů.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Maximálně lze vybrat %d interpreta.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Maximálně lze vybrat %d interprety.</item>
-        <item quantity="many">Maximálně lze vybrat %d interpretů.</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Maximálně lze vybrat %d žánrů.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Maximálně lze vybrat %d žánr.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Maximálně lze vybrat %d žánry.</item>
-        <item quantity="many">Maximálně lze vybrat %d žánrů.</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Maximálně lze vybrat %d skladeb.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Maximálně lze vybrat %d skladbu.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Maximálně lze vybrat %d skladby.</item>
-        <item quantity="many">Maximálně lze vybrat %d skladeb.</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d sekund</item>
@@ -76,29 +24,63 @@
         <item quantity="few">%d sekundy</item>
         <item quantity="many">%d sekund</item>
     </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Nezobrazovat %d dnů</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nezobrazovat %d den</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nezobrazovat %d dny</item>
+        <item quantity="many">Nezobrazovat %d dnů</item>
+    </plurals>
     <plurals name="drm_can_use_n_times">
         <item quantity="other">%1$s můžete použít %2$dkrát.</item>
         <item quantity="one">%s můžete použít jednou.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">%d skladeb nelze zakoupit pomocí prémiových lístků z důvodu problémů s autorskými právy. Můžete je zakoupit jednotlivě.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d skladbu nelze zakoupit pomocí prémiových lístků z důvodu problémů s autorskými právy. Můžete je zakoupit jednotlivě.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">%d skladby nelze zakoupit pomocí prémiových lístků z důvodu problémů s autorskými právy. Můžete je zakoupit jednotlivě.</item>
-        <item quantity="many">%d skladeb nelze zakoupit pomocí prémiových lístků z důvodu problémů s autorskými právy. Můžete je zakoupit jednotlivě.</item>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Posunout vpřed o %d sekund</item>
+        <item quantity="one">Posunout vpřed o %d sekundu</item>
+        <item quantity="few">Posunout vpřed o %d sekundy</item>
+        <item quantity="many">Posunout vpřed o %d sekundy</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Bude použito %d skladeb z dostupných skladeb.</item>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Přetočit zpět o %d sekund</item>
+        <item quantity="one">Přetočit zpět o %d sekundu</item>
+        <item quantity="few">Přetočit zpět o %d sekundy</item>
+        <item quantity="many">Přetočit zpět o %d sekundy</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">Bude odstraněno %d skladeb, jejichž platnost vypršela. Historii stahování můžete zkontrolovat v menu Informace o Melon > Historie nákupů.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Bude použita %d skladba z dostupných skladeb.</item>
+        <item quantity="one">Bude odstraněna %d skladba, jejíž platnost vypršela. Historii stahování můžete zkontrolovat v menu Informace o Melon > Historie nákupů.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">Budou použity %d skladby z dostupných skladeb.</item>
-        <item quantity="many">Bude použito %d skladeb z dostupných skladeb.</item>
+        <item quantity="few">Budou odstraněny %d skladby, jejichž platnost vypršela. Historii stahování můžete zkontrolovat v menu Informace o Melon > Historie nákupů.</item>
+        <item quantity="many">Bude odstraněno %d skladeb, jejichž platnost vypršela. Historii stahování můžete zkontrolovat v menu Informace o Melon > Historie nákupů.</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Nepodařilo se prodloužit období DCF pro %d skladeb. Můžete opakovat akci, nebo odstranit soubory v následujícím seznamu předtím, než je znovu stáhnete.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nepodařilo se prodloužit období DCF pro %d skladbu. Můžete opakovat akci, nebo odstranit soubory v následujícím seznamu předtím, než je znovu stáhnete.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nepodařilo se prodloužit období DCF pro %d skladby. Můžete opakovat akci, nebo odstranit soubory v následujícím seznamu předtím, než je znovu stáhnete.</item>
+        <item quantity="many">Nepodařilo se prodloužit období DCF pro %d skladeb. Můžete opakovat akci, nebo odstranit soubory v následujícím seznamu předtím, než je znovu stáhnete.</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Nelze importovat více než %d položek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze importovat více než %d položku.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze importovat více než %d položky.</item>
+        <item quantity="many">Nelze importovat více než %d položek.</item>
     </plurals>
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Čeká se na stažení %d skladeb…</item>
         <item quantity="one">Čeká se na stažení 1 skladby…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nových oznámení</item>
+        <item quantity="one">%d nové oznámení</item>
+        <item quantity="few">%d nová oznámení</item>
+        <item quantity="many">%d nového oznámení</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Odstranit %d alb a všechny jejich skladby z telefonu?</item>
@@ -111,54 +93,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Odstranit všechny skladby těchto skladatelů?</item>
         <item quantity="one">Odstranit všechny skladby tohoto skladatele?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Odstranit vybrané skladby?</item>
-        <item quantity="one">Odstranit vybranou skladbu?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Bude zakoupeno %d skladeb. Pokud nemáte dostatek dostupných skladeb, tyto skladby nelze zakoupit.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Bude zakoupena %d skladba. Pokud nemáte dostatek dostupných skladeb, tyto skladby nelze zakoupit.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Budou zakoupeny %d skladby. Pokud nemáte dostatek dostupných skladeb, tyto skladby nelze zakoupit.</item>
-        <item quantity="many">Bude zakoupeno %d skladeb. Pokud nemáte dostatek dostupných skladeb, tyto skladby nelze zakoupit.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Koupit vybrané skladby?</item>
-        <item quantity="one">Zakoupit vybranou skladbu?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Tyto skladby jste již zakoupili. Zakoupené skladby můžete kdykoli znovu stáhnout.</item>
-        <item quantity="one">Tuto skladbu jste již zakoupili. Zakoupené skladby můžete kdykoli znovu stáhnout.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Skladby již byly zakoupeny</item>
-        <item quantity="one">Skladba již byla zakoupena</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Jako oblíbené můžete přidat maximálně %d poskytnutých seznamů skladeb. Odeberte některé poskytnuté seznamy skladeb z karty Oblíbené.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Jako oblíbený můžete přidat maximálně %d poskytnutý seznam skladeb. Odeberte některé poskytnuté seznamy skladeb z karty Oblíbené.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Jako oblíbené můžete přidat maximálně %d poskytnuté seznamy skladeb. Odeberte některé poskytnuté seznamy skladeb z karty Oblíbené.</item>
-        <item quantity="many">Jako oblíbené můžete přidat maximálně %d poskytnutých seznamů skladeb. Odeberte některé poskytnuté seznamy skladeb z karty Oblíbené.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Do Oblíbených skladeb můžete přidat maximálně %d streamovaných skladeb. Odeberte některé streamované skladby z Oblíbených skladeb a opakujte akci.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Do Oblíbených skladeb můžete přidat maximálně %d streamovanou skladbu. Odeberte některé streamované skladby z Oblíbených skladeb a opakujte akci.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Do Oblíbených skladeb můžete přidat maximálně %d streamované skladby. Odeberte některé streamované skladby z Oblíbených skladeb a opakujte akci.</item>
-        <item quantity="many">Do Oblíbených skladeb můžete přidat maximálně %d streamovaných skladeb. Odeberte některé streamované skladby z Oblíbených skladeb a opakujte akci.</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Do Oblíbených skladeb můžete přidat maximálně %d skladeb. Odeberte některé skladby z Oblíbených skladeb a opakujte akci.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Do Oblíbených skladeb můžete přidat maximálně %d skladbu. Odeberte některé skladby z Oblíbených skladeb a opakujte akci.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Do Oblíbených skladeb můžete přidat maximálně %d skladby. Odeberte některé skladby z Oblíbených skladeb a opakujte akci.</item>
-        <item quantity="many">Do Oblíbených skladeb můžete přidat maximálně %d skladeb. Odeberte některé skladby z Oblíbených skladeb a opakujte akci.</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">Počet složek: %d</item>
@@ -180,25 +114,73 @@
         <item quantity="few">%d skryté složky budou rovněž odstraněny.</item>
         <item quantity="many">%d skrytých složek bude rovněž odstraněno.</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">Bylo obnoveno %d skladeb.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Byla obnovena %d skladba.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Byly obnoveny %d skladby.</item>
-        <item quantity="many">Bylo obnoveno %d skladeb.</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Odstranit %d položek?</item>
         <item quantity="one">Odstranit 1 položku?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Nelze zadat více než %d znaků.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze zadat více než %d znak.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze zadat více než %d znaky.</item>
+        <item quantity="many">Nelze zadat více než %d znaků.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Nelze přidat více než %d alb. Přidejte méně alb, nebo nějaká odeberte z Oblíbených.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze přidat více než %d album. Přidejte méně alb, nebo nějaká odeberte z Oblíbených.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze přidat více než %d alba. Přidejte méně alb, nebo nějaká odeberte z Oblíbených.</item>
+        <item quantity="many">Nelze přidat více než %d alb. Přidejte méně alb, nebo nějaká odeberte z Oblíbených.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Nelze přidat více než %d umělců. Přidejte méně umělců, nebo nějaké odeberte z Oblíbených.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze přidat více než %d umělce. Přidejte méně umělců, nebo nějaké odeberte z Oblíbených.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze přidat více než %d umělce. Přidejte méně umělců, nebo nějaké odeberte z Oblíbených.</item>
+        <item quantity="many">Nelze přidat více než %d umělců. Přidejte méně umělců, nebo nějaké odeberte z Oblíbených.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Můžete přidat maximálně %d seznamů skladeb. Odeberte některé seznamy skladeb z karty Oblíbené.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Můžete přidat maximálně %d seznam skladeb. Odeberte některé seznamy skladeb z karty Oblíbené.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Můžete přidat maximálně %d seznamy skladeb. Odeberte některé seznamy skladeb z karty Oblíbené.</item>
+        <item quantity="many">Můžete přidat maximálně %d seznamů skladeb. Odeberte některé seznamy skladeb z karty Oblíbené.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Nelze přidat více než %d streamovaných skladeb. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze přidat více než %d streamovanou skladbu. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze přidat více než %d streamované skladby. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+        <item quantity="many">Nelze přidat více než %d streamovaných skladeb. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Nelze přidat více než %d skladeb. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nelze přidat více než %d skladbu. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nelze přidat více než %d skladby. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+        <item quantity="many">Nelze přidat více než %d skladeb. Přidejte méně skladeb, nebo nějaké odeberte z Oblíbených skladeb.</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Bylo exportováno %d seznamů skladeb.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Byl exportován %d seznam skladeb.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Byly exportovány %d seznamy skladeb.</item>
+        <item quantity="many">Bylo exportováno %d seznamů skladeb.</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Bylo importováno %d seznamů skladeb.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Byl importován %d seznam skladeb.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Byly importovány %d seznamy skladeb.</item>
+        <item quantity="many">Bylo importováno %d seznamů skladeb.</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Nelze vybrat více než %d seznamů skladeb.</item>
@@ -216,12 +198,84 @@
         <item quantity="other">%d skladeb</item>
         <item quantity="one">1 skladba</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Do Oblíbených bylo přidáno pouze %d skladeb. Zbývající skladby už v Oblíbených byly.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Do Oblíbených byla přidána pouze %d skladba. Zbývající skladby už v Oblíbených byly.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Do Oblíbených byly přidány pouze %d skladby. Zbývající skladby už v Oblíbených byly.</item>
+        <item quantity="many">Do Oblíbených bylo přidáno pouze %d skladeb. Zbývající skladby už v Oblíbených byly.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d skladeb bylo přidáno do oblíbených.</item>
+        <item quantity="one">1 skladba byla přidána do oblíbených.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">Do seznamu skladeb bylo přidáno %d skladeb.</item>
+        <item quantity="one">Do seznamu skladeb byla přidána 1 skladba.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">Do fronty bylo přidáno %d skladeb.</item>
         <item quantity="one">Do fronty byla přidána %d skladba.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">Odstranit %d skladeb?</item>
-        <item quantity="one">Odstranit 1 skladbu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Odstranit %d skladbu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Odstranit %d skladby?</item>
+        <item quantity="many">Odstranit %d skladeb?</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Doba spánku: %d hodin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Doba spánku: %d hodina</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Doba spánku: %d hodiny</item>
+        <item quantity="many">Doba spánku: %d hodin</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Doba spánku: %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Doba spánku: %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Doba spánku: %d minuty</item>
+        <item quantity="many">Doba spánku: %d minut</item>
+    </plurals>
+    <plurals name="time_difference_short_days">
+        <item quantity="other">%d d</item>
+        <item quantity="one">%d d</item>
+        <item quantity="few">%d d</item>
+        <item quantity="many">%d d</item>
+    </plurals>
+    <plurals name="time_difference_short_hours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">%d h</item>
+        <item quantity="few">%d h</item>
+        <item quantity="many">%d h</item>
+    </plurals>
+    <plurals name="time_difference_short_minutes">
+        <item quantity="other">%d min</item>
+        <item quantity="one">%d min</item>
+        <item quantity="few">%d min</item>
+        <item quantity="many">%d min</item>
+    </plurals>
+    <plurals name="time_difference_words_days">
+        <item quantity="other">%d dnů</item>
+        <item quantity="one">%d den</item>
+        <item quantity="few">%d dny</item>
+        <item quantity="many">%d dne</item>
+    </plurals>
+    <plurals name="time_difference_words_hours">
+        <item quantity="other">%d hodin</item>
+        <item quantity="one">%d hodina</item>
+        <item quantity="few">%d hodiny</item>
+        <item quantity="many">%d hodiny</item>
+    </plurals>
+    <plurals name="time_difference_words_minutes">
+        <item quantity="other">%d minut</item>
+        <item quantity="one">%d minuta</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minuty</item>
     </plurals>
 </resources>

@@ -12,61 +12,9 @@
         <item quantity="other">Pistak</item>
         <item quantity="one">Pista</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d abesti gehitu dira Gogokoetan. Gogokoetan dauden abestiak ez dira gehitu.</item>
-        <item quantity="one">%d abesti gehitu dira Gogokoetan. Gogokoetan dagoen abestia ez da gehitu.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d pista</item>
         <item quantity="one">%d. abestia</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d abesti kendu dira Gogokoetatik.</item>
-        <item quantity="one">%d abesti kendu dira Gogokoetatik.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d abesti gogokoetan gehitu dira.</item>
-        <item quantity="one">%d abesti gogokoetan gehitu da.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Gehienez ere %d pista ken ditzakezu gomendioetatik. Ikusi kendutako pistak, hautatu leheneratu nahi dituzunak, eta ondoren, saiatu berriz.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Gehienez ere %d pista ken dezakezu gomendioetatik. Ikusi kendutako pistak, hautatu leheneratu nahi dituzunak, eta ondoren, saiatu berriz.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Ukitu Erreproduzitu irratia botoia hilero %d pista doan izateko.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Ukitu Erreproduzitu irratia botoia hilero %d pista doan izateko.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Gehienez ere %d artista hauta daitezke.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Gehienez ere %d artista hauta daiteke.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Gehienez ere %d genero hauta daitezke.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Gehienez ere %d genero hauta daiteke.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Gehienez ere %d pista hauta daitezke.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Gehienez ere %d pista hauta daiteke.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d segundo</item>
@@ -76,22 +24,38 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">%1$s %2$d aldiz erabil dezakezu</item>
-        <item quantity="one">%s behin erabil dezakezu</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Ezin dira erosi %d abesti premium txartelekin copyright arazo bat dela eta. Dena dela, bereizita eros ditzakezu.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Ez erakutsi %d egunez</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Ezin da erosi %d abesti premium txartelekin copyright arazo bat dela eta. Dena dela, bereizita eros ditzakezu.</item>
+        <item quantity="one">Ez erakutsi %d egunez</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Eskuragarri dituzun abestietako %d erabiliko dira.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">%1$s %2$d aldiz erabil dezakezu</item>
+        <item quantity="one">%s behin erabil dezakezu</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">Iraungitako %d pista ezabatuko dira. Deskargen historia ikusteko, joan Melon-i buruzko informazioa > Erosketa historia atalera.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Eskuragarri dituzun abestietako %d erabiliko da.</item>
+        <item quantity="one">Iraungitako %d pista ezabatuko da. Deskargen historia ikusteko, joan Melon-i buruzko informazioa > Erosketa historia atalera.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Ezin izan da luzatu %d pistaren DCF aldia. Berriz saia zaitezke, edo beheko zerrendako fitxategiak ezabatu eta berriz deskargatu.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ezin izan da luzatu %d pistaren DCF aldia. Berriz saia zaitezke, edo beheko zerrendako fitxategiak ezabatu eta berriz deskargatu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Gehienez ere %d elementu inporta daitezke.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d elementu inporta daiteke.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -111,54 +75,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Egile hauen pista guztiak ezabatu?</item>
         <item quantity="one">Egile honen abesti guztiak ezabatu?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Hautatutako abestiak ezabatu?</item>
-        <item quantity="one">Hautatutako abestia ezabatu?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d abesti erosiko dira. Ez baduzu behar adina abesti eskuragarri, abesti horiek ezin dira erosi.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d abesti erosiko da. Ez baduzu behar adina abesti eskuragarri, abesti horiek ezin dira erosi.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Hautatutako abestiak erosi?</item>
-        <item quantity="one">Hautatutako abestia erosi?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Dagoeneko erosi dituzu abesti horiek. Erositako abestiak berriro deskargatu ditzakezu edonoiz.</item>
-        <item quantity="one">Dagoeneko erosi duzu abesti hori. Erositako abestiak berriro deskargatu ditzakezu edonoiz.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Abestiak jada erosi dira</item>
-        <item quantity="one">Abestia erosi da jada</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Gehienez ere emandako %d erreprodukzio zerrenda gehi ditzakezu gogoko gisa. Kendu emandako erreprodukzio zerrenda batzuk Gogokoak fitxatik.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Gehienez ere emandako %d erreprodukzio zerrenda gehi dezakezu gogoko gisa. Kendu emandako erreprodukzio zerrenda batzuk Gogokoak fitxatik.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Gehienez ere zuzeneko %d pista gehi ditzakezu Gogoko pista gisa. Kendu zuzeneko pista batzuk Gogoko pistetatik, eta ondoren, saiatu berriz.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Gehienez ere zuzeneko %d pista gehi dezakezu Gogoko pista gisa. Kendu zuzeneko pista batzuk Gogoko pistetatik, eta ondoren, saiatu berriz.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Gehienez ere %d pista gehi ditzakezu Gogoko pista gisa. Kendu pista batzuk Gogoko pistetatik, eta ondoren, saiatu berriz.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Gehienez ere %d pista gehi dezakezu Gogoko pista gisa. Kendu pista batzuk Gogoko pistetatik, eta ondoren, saiatu berriz.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d karpeta</item>
@@ -180,25 +96,73 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d pista leheneratu dira.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d pista leheneratu da.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">%d elementu ezabatu?</item>
         <item quantity="one">1 elementu ezabatu?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Gehienez ere %d karaktere idatz daitezke.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d karaktere idatz daiteke.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Gehienez ere %d album gehi daitezke. Gehitu album gutxiago edo kendu batzuk Gogokoak ataletik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d album gehi daiteke. Gehitu album gutxiago edo kendu batzuk Gogokoak ataletik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Gehienez ere %d artista gehi daitezke. Gehitu artista gutxiago edo kendu batzuk Gogokoak ataletik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d artista gehi daiteke. Gehitu artista gutxiago edo kendu batzuk Gogokoak ataletik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Gehienez ere %d erreprodukzio zerrenda gehi ditzakezu. Kendu erreprodukzio zerrenda batzuk Gogokoak fitxatik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d erreprodukzio zerrenda gehi dezakezu. Kendu erreprodukzio zerrenda batzuk Gogokoak fitxatik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Gehienez ere %d igorpen pista gehi daitezke. Gehitu pista gutxiago edo kendu batzuk Gogoko pistak ataletik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d igorpen pista gehi daiteke. Gehitu pista gutxiago edo kendu batzuk Gogoko pistak ataletik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Gehienez ere %d pista gehi daitezke. Gehitu pista gutxiago edo kendu batzuk Gogoko pistak ataletik.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d pista gehi daiteke. Gehitu pista gutxiago edo kendu batzuk Gogoko pistak ataletik.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">%d erreprodukzio zerrenda esportatu dira.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d erreprodukzio zerrenda esportatu da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">%d erreprodukzio zerrenda inportatu dira.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d erreprodukzio zerrenda inportatu da.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Gehienez ere %d erreprodukzio zerrenda hauta daitezke.</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d pista</item>
         <item quantity="one">Pista 1</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">%d pista soilik gehitu dira Gogokoak atalean. Gainerakoak Gogokoak atalean zeuden jada.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d pista soilik gehitu da Gogokoak atalean. Gainerakoak Gogokoak atalean zeuden jada.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d abesti gogokoetan gehitu dira.</item>
+        <item quantity="one">Abesti 1 gogokoetara gehitu da.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d pista gehitu dira erreprodukzio zerrendara</item>
+        <item quantity="one">Abesti 1 gehitu da erreprodukzio zerrendara.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">%d pista gehitu dira ilaran.</item>
         <item quantity="one">%d abesti ilaran gehitu da.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">%d pista ezabatu?</item>
-        <item quantity="one">1 pista ezabatu?</item>
+        <item quantity="other">%d pista ezabatu nahi dituzu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d pista ezabatu nahi duzu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Lo egindako denbora: %d ordu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lo egindako denbora: %d ordu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Lo egindako denbora: %d minutu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lo egindako denbora: %d minutu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

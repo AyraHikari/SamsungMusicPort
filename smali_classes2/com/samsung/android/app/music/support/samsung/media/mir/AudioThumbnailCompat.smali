@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AudioThumbnailCompat.java"
 
 
 # annotations
@@ -36,40 +36,33 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 3
 
-    .line 19
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x0
+    move v2, v1
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x5
+    const/4 v2, 0x5
 
     :goto_0
-    sput v0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->RESULT_EXTRACT:I
+    sput v2, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->RESULT_EXTRACT:I
 
-    .line 22
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
-
+    .line 2
     sput v1, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->OPEN_SUCCESS:I
 
-    .line 25
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    const/4 v2, -0x3
 
-    const/4 v0, -0x3
-
-    sput v0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->OPEN_ERR_UNSUPPORT_FILE_TYPE:I
-
-    .line 29
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+    .line 3
+    sput v2, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->OPEN_ERR_UNSUPPORT_FILE_TYPE:I
 
     if-eqz v0, :cond_1
 
@@ -78,14 +71,13 @@
     :cond_1
     const/4 v1, -0x2
 
+    .line 4
     :goto_1
     sput v1, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->OPEN_ERR_NOT_ENOUGH_MEMORY:I
 
-    .line 32
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
-
     const/4 v0, -0x7
 
+    .line 5
     sput v0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->OPEN_ERR_NOT_OPEN_FILE:I
 
     return-void
@@ -94,15 +86,17 @@
 .method public constructor <init>()V
     .locals 4
 
-    .line 48
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 49
+    .line 2
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 51
+    .line 3
     :try_start_0
     new-instance v0, Lcom/samsung/android/media/mir/SemAudioThumbnail;
 
@@ -110,10 +104,8 @@
 
     iput-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mSemAudioThumbnail:Lcom/samsung/android/media/mir/SemAudioThumbnail;
 
-    const/4 v0, 0x0
-
-    .line 52
-    iput-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mRingtoneRecommenderSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
+    .line 4
+    iput-object v1, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mRingtoneRecommenderSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
     :try_end_0
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/NoClassDefFoundError; {:try_start_0 .. :try_end_0} :catch_1
@@ -124,7 +116,7 @@
     :catch_0
     move-exception v0
 
-    .line 58
+    .line 5
     sget-object v1, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -148,7 +140,7 @@
     :catch_1
     move-exception v0
 
-    .line 56
+    .line 6
     sget-object v1, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -172,7 +164,7 @@
     :catch_2
     move-exception v0
 
-    .line 54
+    .line 7
     sget-object v1, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -193,8 +185,11 @@
 
     goto :goto_0
 
-    .line 61
+    .line 8
     :cond_0
+    iput-object v1, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mSemAudioThumbnail:Lcom/samsung/android/media/mir/SemAudioThumbnail;
+
+    .line 9
     new-instance v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     invoke-direct {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;-><init>()V
@@ -205,10 +200,9 @@
     return-void
 .end method
 
-.method static synthetic access$000()Ljava/lang/String;
+.method public static synthetic access$000()Ljava/lang/String;
     .locals 1
 
-    .line 11
     sget-object v0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->TAG:Ljava/lang/String;
 
     return-object v0
@@ -217,7 +211,7 @@
 .method public static getResultIntent(Landroid/net/Uri;I)Landroid/content/Intent;
     .locals 2
 
-    .line 123
+    .line 1
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
@@ -226,27 +220,27 @@
 
     if-lez p1, :cond_0
 
-    .line 126
+    .line 2
     invoke-virtual {p0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
     move-result-object p0
-
-    const-string v1, "highlight_offset"
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object p1
 
+    const-string v1, "highlight_offset"
+
     invoke-virtual {p0, v1, p1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object p0
 
-    .line 127
+    .line 3
     invoke-virtual {p0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
     move-result-object p0
 
-    .line 129
+    .line 4
     :cond_0
     invoke-virtual {v0, p0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
@@ -259,14 +253,19 @@
 .method public close()V
     .locals 1
 
-    .line 115
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mSemAudioThumbnail:Lcom/samsung/android/media/mir/SemAudioThumbnail;
+
     goto :goto_0
 
-    .line 118
+    .line 3
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mRingtoneRecommenderSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
@@ -279,14 +278,14 @@
 .method public extractHighlight(Landroid/net/Uri;Ljava/lang/String;Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;)V
     .locals 2
 
-    .line 66
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_1
 
-    .line 67
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mSemAudioThumbnail:Lcom/samsung/android/media/mir/SemAudioThumbnail;
 
     invoke-virtual {v0, p2}, Lcom/samsung/android/media/mir/SemAudioThumbnail;->checkFile(Ljava/lang/String;)Z
@@ -295,10 +294,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 68
+    .line 3
     invoke-interface {p3, v1}, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;->onExtractStarted(Z)V
 
-    .line 69
+    .line 4
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mSemAudioThumbnail:Lcom/samsung/android/media/mir/SemAudioThumbnail;
 
     new-instance v1, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$1;
@@ -309,7 +308,7 @@
 
     goto :goto_0
 
-    .line 86
+    .line 5
     :cond_0
     sget p1, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->OPEN_ERR_UNSUPPORT_FILE_TYPE:I
 
@@ -317,7 +316,7 @@
 
     goto :goto_0
 
-    .line 89
+    .line 6
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mRingtoneRecommenderSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
@@ -327,7 +326,7 @@
 
     if-nez v0, :cond_3
 
-    .line 90
+    .line 7
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mRingtoneRecommenderSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     invoke-virtual {v0, p2}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->open(Ljava/lang/String;)I
@@ -338,19 +337,19 @@
 
     const/4 p1, 0x0
 
-    .line 106
+    .line 8
     invoke-interface {p3, p1}, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;->onExtractStarted(Z)V
 
-    .line 107
+    .line 9
     invoke-interface {p3, p2}, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;->onExtractError(I)V
 
     goto :goto_0
 
-    .line 93
+    .line 10
     :cond_2
     invoke-interface {p3, v1}, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$OnHighlightExtractListener;->onExtractStarted(Z)V
 
-    .line 94
+    .line 11
     iget-object p2, p0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat;->mRingtoneRecommenderSdlCompat:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     new-instance v0, Lcom/samsung/android/app/music/support/samsung/media/mir/AudioThumbnailCompat$2;

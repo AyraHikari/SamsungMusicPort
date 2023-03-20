@@ -1,13 +1,13 @@
 .class public Lorg/simpleframework/xml/core/PersistenceException;
 .super Ljava/lang/Exception;
-.source "SourceFile"
+.source "PersistenceException.java"
 
 
 # direct methods
 .method public varargs constructor <init>(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 41
+    .line 1
     invoke-static {p1, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -20,7 +20,7 @@
 .method public varargs constructor <init>(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 54
+    .line 2
     invoke-static {p2, p3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2

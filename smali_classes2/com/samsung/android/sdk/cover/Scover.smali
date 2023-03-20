@@ -1,6 +1,6 @@
 .class public final Lcom/samsung/android/sdk/cover/Scover;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Scover.java"
 
 
 # instance fields
@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,40 +27,35 @@
 .end method
 
 .method public getVersionName()Ljava/lang/String;
-    .locals 5
+    .locals 4
 
-    const-string v0, "%d.%d.%d"
+    const/4 v0, 0x3
 
-    const/4 v1, 0x3
+    new-array v0, v0, [Ljava/lang/Object;
 
-    .line 62
-    new-array v1, v1, [Ljava/lang/Object;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    aput-object v3, v1, v4
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    aput-object v3, v1, v2
-
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    const/4 v3, 0x2
+    const/4 v3, 0x0
 
-    aput-object v2, v1, v3
+    aput-object v2, v0, v3
 
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    aput-object v2, v0, v1
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    const-string v1, "%d.%d.%d"
+
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -70,33 +64,27 @@
 
 .method public initialize(Landroid/content/Context;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/samsung/android/sdk/SsdkUnsupportedException;,
-            Ljava/lang/IllegalArgumentException;
-        }
-    .end annotation
 
-    .line 75
+    .line 1
     iput-object p1, p0, Lcom/samsung/android/sdk/cover/Scover;->mContext:Landroid/content/Context;
 
     if-eqz p1, :cond_2
 
-    .line 81
-    invoke-static {}, Lcom/samsung/android/sdk/SsdkVendorCheck;->a()Z
+    .line 2
+    invoke-static {}, Lcom/samsung/android/sdk/b;->a()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 86
+    .line 3
     new-instance p1, Lcom/samsung/android/sdk/cover/ScoverManager;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/cover/Scover;->mContext:Landroid/content/Context;
 
     invoke-direct {p1, v0}, Lcom/samsung/android/sdk/cover/ScoverManager;-><init>(Landroid/content/Context;)V
 
-    .line 88
+    .line 4
     invoke-virtual {p1}, Lcom/samsung/android/sdk/cover/ScoverManager;->isSupportCover()Z
 
     move-result p1
@@ -105,31 +93,31 @@
 
     return-void
 
-    .line 89
+    .line 5
     :cond_0
-    new-instance p1, Lcom/samsung/android/sdk/SsdkUnsupportedException;
+    new-instance p1, Lcom/samsung/android/sdk/a;
 
     const/4 v0, 0x1
 
     const-string v1, "This device is not supported Scover!!!"
 
-    invoke-direct {p1, v1, v0}, Lcom/samsung/android/sdk/SsdkUnsupportedException;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p1, v1, v0}, Lcom/samsung/android/sdk/a;-><init>(Ljava/lang/String;I)V
 
     throw p1
 
-    .line 82
+    .line 6
     :cond_1
-    new-instance p1, Lcom/samsung/android/sdk/SsdkUnsupportedException;
+    new-instance p1, Lcom/samsung/android/sdk/a;
 
     const/4 v0, 0x0
 
     const-string v1, "This is not Samsung device!!!"
 
-    invoke-direct {p1, v1, v0}, Lcom/samsung/android/sdk/SsdkUnsupportedException;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p1, v1, v0}, Lcom/samsung/android/sdk/a;-><init>(Ljava/lang/String;I)V
 
     throw p1
 
-    .line 78
+    .line 7
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -143,14 +131,14 @@
 .method public isFeatureEnabled(I)Z
     .locals 2
 
-    .line 105
+    .line 1
     new-instance v0, Lcom/samsung/android/sdk/cover/ScoverManager;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/cover/Scover;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/samsung/android/sdk/cover/ScoverManager;-><init>(Landroid/content/Context;)V
 
-    .line 106
+    .line 2
     invoke-virtual {v0, p1}, Lcom/samsung/android/sdk/cover/ScoverManager;->isSupportTypeOfCover(I)Z
 
     move-result p1

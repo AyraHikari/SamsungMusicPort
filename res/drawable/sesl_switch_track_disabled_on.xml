@@ -4,7 +4,7 @@
     <item android:gravity="center">
         <shape android:shape="rectangle">
             <corners android:radius="9.25dip" />
-            <size android:height="20.5dip" android:width="37.0dip" />
+            <size android:height="18.5dip" android:width="37.0dip" />
             <solid android:color="@color/sesl_switch_track_on_disabled_color" />
         </shape>
     </item>

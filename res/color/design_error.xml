@@ -2,5 +2,5 @@
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false" android:color="?android:textColorTertiary" />
-    <item android:color="?textColorError" />
+    <item android:color="@color/sesl_error_color" />
 </selector>

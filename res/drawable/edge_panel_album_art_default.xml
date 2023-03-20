@@ -4,11 +4,8 @@
     <item>
         <shape android:shape="rectangle">
             <size android:height="@dimen/edge_panel_album_art_size" android:width="@dimen/edge_panel_album_art_size" />
-            <corners android:radius="@dimen/edge_panel_album_art_radius" />
-            <solid android:color="@color/mu_no_album_background" />
+            <solid android:color="#4facacac" />
         </shape>
     </item>
-    <item>
-        <bitmap android:gravity="center" android:src="@drawable/music_widget_ic_noitem" />
-    </item>
+    <item android:drawable="@drawable/$edge_panel_album_art_default__0" android:left="@dimen/edge_panel_album_art_default_icon_padding" android:top="@dimen/edge_panel_album_art_default_icon_padding" android:right="@dimen/edge_panel_album_art_default_icon_padding" android:bottom="@dimen/edge_panel_album_art_default_icon_padding" xmlns:aapt="http://schemas.android.com/aapt" />
 </layer-list>

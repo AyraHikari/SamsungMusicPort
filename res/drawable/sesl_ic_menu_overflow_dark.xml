@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:tint="?actionMenuTextColor" android:height="@dimen/sesl_action_button_src_size" android:width="@dimen/sesl_action_button_src_size" android:autoMirrored="true" android:viewportWidth="72.0" android:viewportHeight="72.0"
+<vector android:tint="?actionMenuTextColor" android:height="@dimen/sesl_action_button_icon_size" android:width="@dimen/sesl_action_button_icon_size" android:autoMirrored="true" android:viewportWidth="72.0" android:viewportHeight="72.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@android:color/white" android:pathData="M30.6,17.75a5.4,5.32 0,1 0,10.8 0a5.4,5.32 0,1 0,-10.8 0z" />
-    <path android:fillColor="@android:color/white" android:pathData="M30.6,36a5.4,5.32 0,1 0,10.8 0a5.4,5.32 0,1 0,-10.8 0z" />
-    <path android:fillColor="@android:color/white" android:pathData="M30.6,54.25a5.4,5.32 0,1 0,10.8 0a5.4,5.32 0,1 0,-10.8 0z" />
+    <path android:fillColor="@android:color/white" android:pathData="M34.8,50.25C37.4053,50.25 39.3,52.1447 39.3,54.75C39.3,57.3553 37.4053,59.25 34.8,59.25C32.4316,59.25 30.3,57.3553 30.3,54.75C30.3,52.1447 32.1947,50.25 34.8,50.25ZM34.8,31.5C37.4053,31.5 39.3,33.3947 39.3,36C39.3,38.6053 37.4053,40.5 34.8,40.5C32.4316,40.5 30.3,38.6053 30.3,36C30.3,33.3947 32.1947,31.5 34.8,31.5ZM34.8,12.75C37.1684,12.75 39.3,14.6447 39.3,17.25C39.3,19.8553 37.4053,21.75 34.8,21.75C32.4316,21.75 30.3,19.8553 30.3,17.25C30.3,14.6447 32.1947,12.75 34.8,12.75Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
 </vector>

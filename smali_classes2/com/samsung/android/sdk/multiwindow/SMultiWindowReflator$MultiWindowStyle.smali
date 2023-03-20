@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SMultiWindowReflator.java"
 
 
 # annotations
@@ -15,7 +15,7 @@
 
 
 # static fields
-.field static FIELD_NAMES:[Ljava/lang/String;
+.field public static FIELD_NAMES:[Ljava/lang/String;
 
 .field public static NOTIFY_STATE_HIDDEN:I
 
@@ -47,7 +47,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 14
 
     const-string v0, "TYPE_NORMAL"
@@ -78,34 +78,28 @@
 
     const-string v13, "NOTIFY_STATE_SHOWN"
 
-    .line 215
+    .line 1
     filled-new-array/range {v0 .. v13}, [Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->FIELD_NAMES:[Ljava/lang/String;
 
-    .line 233
-    sget-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->FIELD_NAMES:[Ljava/lang/String;
-
+    .line 2
     array-length v0, v0
 
     :try_start_0
     const-string v1, "com.samsung.android.multiwindow.MultiWindowStyle"
 
-    .line 235
+    .line 3
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
 
     const/4 v1, 0x0
 
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 238
+    .line 4
     const-class v2, Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     sget-object v3, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->FIELD_NAMES:[Ljava/lang/String;
@@ -116,7 +110,7 @@
 
     move-result-object v2
 
-    .line 240
+    .line 5
     const-class v3, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;
 
     sget-object v4, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$MultiWindowStyle;->FIELD_NAMES:[Ljava/lang/String;
@@ -127,7 +121,7 @@
 
     move-result-object v3
 
-    .line 241
+    .line 6
     invoke-virtual {v2, v2}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result v2
@@ -151,7 +145,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 199
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

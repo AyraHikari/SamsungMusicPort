@@ -12,61 +12,9 @@
         <item quantity="other">Numre</item>
         <item quantity="one">Nummer</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d numre føjet til Favoritter. Numre, der allerede findes i Favoritter, blev ikke tilføjet.</item>
-        <item quantity="one">%d nummer føjet til Favoritter. Numre, der allerede findes i Favoritter, blev ikke tilføjet.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d numre</item>
         <item quantity="one">%d nummer</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d numre fjernet fra Favoritter.</item>
-        <item quantity="one">%d nummer fjernet fra Favoritter.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d numre føjet til favoritter.</item>
-        <item quantity="one">Nummeret %d er blevet føjet til Favoritter.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Du kan kun fjerne op til %d numre fra anbefalinger. Se fjernede numre, vælg nogle til gendannelse, og prøv igen.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Du kan kun fjerne op til %d nummer fra anbefalinger. Se fjernede numre, vælg nogle til gendannelse, og prøv igen.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Tryk på Afspil radio-knappen for at få glæde af %d gratis numre hver måned.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Tryk på Afspil radio-knappen for at få glæde af %d gratis nummer hver måned.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Der kan ikke vælges mere end %d kunstnere.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Der kan ikke vælges mere end %d kunstner.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Der kan ikke vælges mere end %d genrer.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Der kan ikke vælges mere end %d genre.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Der kan ikke vælges mere end %d numre.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Der kan ikke vælges mere end %d nummer.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d sekunder</item>
@@ -76,22 +24,46 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">Du kan bruge %1$s %2$d gange.</item>
-        <item quantity="one">Du kan bruge %s 1 gang.</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">%d numre kan ikke købes med Premium-billetter på grund af et problem med ophavsret. Du kan købe dem individuelt.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Vis ikke i %d dage</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d nummer kan ikke købes med Premium-billetter på grund af et problem med ophavsret. Du kan købe dem individuelt.</item>
+        <item quantity="one">Vis ikke i %d dag</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d numre vil blive brugt fra dine tilgængelige numre.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">Du kan bruge %1$s %2$d gange.</item>
+        <item quantity="one">Du kan bruge %s 1 gang.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Spol %d sekunder frem</item>
+        <item quantity="one">Spol %d sekund frem</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Spol %d sekunder tilbage</item>
+        <item quantity="one">Spol %d sekund tilbage</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d udløbne numre vil blive slettet. Du kan kontrollere din downloadoversigt i Melonoplysninger > Købsoversigt.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d nummer vil blive brugt fra dine tilgængelige numre.</item>
+        <item quantity="one">%d udløbet nummer vil blive slettet. Du kan kontrollere din downloadoversigt i Melonoplysninger > Købsoversigt.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">DCF-perioden for %d numre kunne ikke forlænges. Du kan prøve igen eller slette filer fra listen nedenfor, før du downloader dem igen.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">DCF-perioden for %d nummer kunne ikke forlænges. Du kan prøve igen eller slette filer fra listen nedenfor, før du downloader dem igen.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Der kan ikke importeres mere end %d elementer.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der kan ikke importeres mere end %d element.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -99,6 +71,10 @@
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Venter på at downloade %d sange …</item>
         <item quantity="one">Venter på at downloade 1 sang …</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nye notifikationer</item>
+        <item quantity="one">%d ny notifikation</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Vil du slette %d album og alle numrene i dem fra din telefon?</item>
@@ -111,54 +87,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Vil du slette alle numre af disse komponister?</item>
         <item quantity="one">Vil du slette alle numre af denne komponist?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Vil du slette de valgte numre?</item>
-        <item quantity="one">Vil du slette det valgte nummer?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Der vil blive købt %d numre. Hvis du ikke har nok tilgængelige numre, kan disse numre ikke købes.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Der vil blive købt %d nummer. Hvis du ikke har nok tilgængelige numre, kan disse numre ikke købes.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Vil du købe de valgte numre?</item>
-        <item quantity="one">Vil du købe det valgte nummer?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Du har allerede købt disse sange. Du kan når som helst downloade købte sange igen.</item>
-        <item quantity="one">Du har allerede købt denne sang. Du kan når som helst downloade købte sange igen.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Numrene er allerede købt</item>
-        <item quantity="one">Nummeret er allerede købt</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Du kan kun tilføje %d leverede afspilningslister som favoritter. Fjern nogle leverede afspilningslister fra fanen Favoritter.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Du kan kun tilføje %d leveret afspilningsliste som favorit. Fjern nogle leverede afspilningslister fra fanen Favoritter.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Du kan kun tilføje %d streamingnumre som favoritnumre. Fjern nogle streamingnumre fra Favoritnumre, og prøv igen.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Du kan kun tilføje %d streamingnummer som favoritnummer. Fjern nogle streamingnumre fra Favoritnumre, og prøv igen.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Du kan kun tilføje %d numre som favoritnumre. Fjern nogle numre fra Favoritnumre, og prøv igen.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Du kan kun tilføje %d nummer som favoritnummer. Fjern nogle numre fra Favoritnumre, og prøv igen.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d mapper</item>
@@ -180,30 +108,78 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">Der er blevet gendannet %d numre.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Der er blevet gendannet %d nummer.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Vil du slette %d elementer?</item>
         <item quantity="one">Vil du slette 1 element?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Der kan ikke indtastes mere end %d tegn.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der kan ikke indtastes mere end %d tegn.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Der kan ikke tilføjes mere end %d album. Tilføj færre album, eller fjern nogle fra Favoritter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der kan ikke tilføjes mere end %d album. Tilføj færre album, eller fjern nogle fra Favoritter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Der kan ikke tilføjes mere end %d kunstnere. Tilføj færre kunstnere, eller fjern nogle fra Favoritter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der kan ikke tilføjes mere end %d kunstner. Tilføj færre kunstnere, eller fjern nogle fra Favoritter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Du kan kun tilføje op til %d afspilningslister. Fjern nogle afspilningslister fra fanen Favoritter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Du kan kun tilføje %d afspilningsliste. Fjern nogle afspilningslister fra fanen Favoritter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Der kan ikke tilføjes mere end %d streamingnumre. Tilføj færre streamingnumre, eller fjern nogle fra Favoritter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der kan ikke tilføjes mere end %d streamingnummer. Tilføj færre streamingnumre, eller fjern nogle fra Favoritter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Der kan ikke tilføjes mere end %d numre. Tilføj færre numre, eller fjern nogle fra Favoritter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der kan ikke tilføjes mere end %d nummer. Tilføj færre numre, eller fjern nogle fra Favoritter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Eksporterede %d afspilningslister.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Eksporterede %d afspilningsliste.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Importerede %d afspilningslister.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Importerede %d afspilningsliste.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Der kan ikke vælges mere end %d afspilningslister.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Der kan ikke vælges mere end %d afspilningslister.</item>
+        <item quantity="one">Der kan ikke vælges mere end %d afspilningsliste.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -216,12 +192,72 @@
         <item quantity="other">%d numre</item>
         <item quantity="one">1 nummer</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Der blev kun føjet %d numre til Favoritter. Resten var allerede i Favoritter.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der blev kun føjet %d nummer til Favoritter. Resten var allerede i Favoritter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d numre føjet til favoritter.</item>
+        <item quantity="one">1 nummer føjet til favoritter.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d numre er føjet til afspilningslisten.</item>
+        <item quantity="one">1 nummer føjet til afspilningslisten.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">%d numre er føjet til køen.</item>
         <item quantity="one">Der er føjet %d nummer til køen.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">Vil du slette %d numre?</item>
-        <item quantity="one">Vil du slette 1 nummer?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vil du slette %d nummer?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Søvnperiode: %d timer</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Søvnperiode: %d time</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Søvnperiode: %d minutter</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Søvnperiode: %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="time_difference_short_days">
+        <item quantity="other">%d dage</item>
+        <item quantity="one">%d dag</item>
+    </plurals>
+    <plurals name="time_difference_short_hours">
+        <item quantity="other">%d t.</item>
+        <item quantity="one">%d t.</item>
+    </plurals>
+    <plurals name="time_difference_short_minutes">
+        <item quantity="other">%d min.</item>
+        <item quantity="one">%d min.</item>
+    </plurals>
+    <plurals name="time_difference_words_days">
+        <item quantity="other">%d dage</item>
+        <item quantity="one">%d dag</item>
+    </plurals>
+    <plurals name="time_difference_words_hours">
+        <item quantity="other">%d timer</item>
+        <item quantity="one">%d time</item>
+    </plurals>
+    <plurals name="time_difference_words_minutes">
+        <item quantity="other">%d min.</item>
+        <item quantity="one">%d min.</item>
     </plurals>
 </resources>

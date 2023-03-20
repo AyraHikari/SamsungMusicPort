@@ -1,9 +1,9 @@
 .class public final Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "BaseFragment.kt"
 
 # interfaces
-.implements Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;
+.implements Landroidx/lifecycle/f;
 
 
 # annotations
@@ -18,24 +18,23 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;
+.field public final synthetic a:Lcom/samsung/android/app/musiclibrary/ui/k;
 
-.field final synthetic b:Lcom/samsung/android/app/music/main/MyMusicTabFragment;
+.field public final synthetic b:Lcom/samsung/android/app/music/main/MyMusicTabFragment;
 
-.field final synthetic c:I
+.field public final synthetic c:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;Lcom/samsung/android/app/music/main/MyMusicTabFragment;I)V
+.method public constructor <init>(Lcom/samsung/android/app/musiclibrary/ui/k;Lcom/samsung/android/app/music/main/MyMusicTabFragment;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->a:Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;
+    iput-object p1, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->a:Lcom/samsung/android/app/musiclibrary/ui/k;
 
     iput-object p2, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->b:Lcom/samsung/android/app/music/main/MyMusicTabFragment;
 
     iput p3, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->c:I
 
-    .line 404
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,150 +42,104 @@
 
 
 # virtual methods
-.method public onFragmentActivityCreated(Landroid/support/v4/app/Fragment;Landroid/os/Bundle;)V
-    .locals 1
+.method public synthetic b(Landroidx/lifecycle/s;)V
+    .locals 0
 
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
-    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->b(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;Landroid/os/Bundle;)V
+    invoke-static {p0, p1}, Landroidx/lifecycle/e;->a(Landroidx/lifecycle/f;Landroidx/lifecycle/s;)V
 
     return-void
 .end method
 
-.method public onFragmentCreated(Landroid/support/v4/app/Fragment;Landroid/os/Bundle;)V
-    .locals 1
+.method public h(Landroidx/lifecycle/s;)V
+    .locals 2
 
-    const-string v0, "fragment"
+    const-string v0, "owner"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 404
-    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->a(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;Landroid/os/Bundle;)V
+    .line 1
+    iget-object p1, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->a:Lcom/samsung/android/app/musiclibrary/ui/k;
 
-    return-void
-.end method
-
-.method public onFragmentDestroyed(Landroid/support/v4/app/Fragment;)V
-    .locals 1
-
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
-    invoke-static {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->e(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;)V
-
-    return-void
-.end method
-
-.method public onFragmentPaused(Landroid/support/v4/app/Fragment;)V
-    .locals 1
-
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
-    invoke-static {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->c(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;)V
-
-    return-void
-.end method
-
-.method public onFragmentResumed(Landroid/support/v4/app/Fragment;)V
-    .locals 1
-
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 406
-    iget-object p1, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->a:Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;
-
-    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;->getView()Landroid/view/View;
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getLifecycle()Landroidx/lifecycle/k;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    invoke-virtual {p1, p0}, Landroidx/lifecycle/k;->e(Landroidx/lifecycle/r;)V
 
-    new-instance v0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1$1;
+    .line 2
+    iget-object p1, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->b:Lcom/samsung/android/app/music/main/MyMusicTabFragment;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1$1;-><init>(Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;)V
+    invoke-virtual {p1}, Lcom/samsung/android/app/music/main/MyMusicTabFragment;->V0()Lcom/samsung/android/app/music/main/MyMusicTabFragment$c;
 
-    check-cast v0, Ljava/lang/Runnable;
+    move-result-object p1
 
-    invoke-virtual {p1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    iget v0, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->c:I
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/music/main/MyMusicTabFragment$c;->B(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    if-nez p1, :cond_0
 
     goto :goto_0
 
-    .line 411
     :cond_0
-    iget-object p1, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->a:Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
-    move-object v0, p0
+    move-result p1
 
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/music/main/MyMusicTabFragment$selectTab$$inlined$doOnResume$1;->b:Lcom/samsung/android/app/music/main/MyMusicTabFragment;
 
-    invoke-virtual {p1, v0}, Lcom/samsung/android/app/musiclibrary/ui/BaseFragment;->removeOnResumeLifeCycleCallback(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;)V
+    invoke-static {v0}, Lcom/samsung/android/app/music/main/MyMusicTabFragment;->T0(Lcom/samsung/android/app/music/main/MyMusicTabFragment;)Lcom/samsung/android/app/musiclibrary/ui/widget/MusicViewPager;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, "viewPager"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    :cond_1
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p1, v1}, Landroidx/viewpager/widget/ViewPager;->T(IZ)V
 
     :goto_0
     return-void
 .end method
 
-.method public onFragmentSaveInstanceState(Landroid/support/v4/app/Fragment;Landroid/os/Bundle;)V
-    .locals 1
+.method public synthetic k(Landroidx/lifecycle/s;)V
+    .locals 0
 
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "outState"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
-    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->c(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;Landroid/os/Bundle;)V
+    invoke-static {p0, p1}, Landroidx/lifecycle/e;->c(Landroidx/lifecycle/f;Landroidx/lifecycle/s;)V
 
     return-void
 .end method
 
-.method public onFragmentStarted(Landroid/support/v4/app/Fragment;)V
-    .locals 1
+.method public synthetic n(Landroidx/lifecycle/s;)V
+    .locals 0
 
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
-    invoke-static {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->a(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;)V
+    invoke-static {p0, p1}, Landroidx/lifecycle/e;->f(Landroidx/lifecycle/f;Landroidx/lifecycle/s;)V
 
     return-void
 .end method
 
-.method public onFragmentStopped(Landroid/support/v4/app/Fragment;)V
-    .locals 1
+.method public synthetic q(Landroidx/lifecycle/s;)V
+    .locals 0
 
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
-    invoke-static {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->d(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;)V
+    invoke-static {p0, p1}, Landroidx/lifecycle/e;->b(Landroidx/lifecycle/f;Landroidx/lifecycle/s;)V
 
     return-void
 .end method
 
-.method public setFragmentUserVisibleHint(Landroid/support/v4/app/Fragment;Z)V
-    .locals 1
+.method public synthetic r(Landroidx/lifecycle/s;)V
+    .locals 0
 
-    const-string v0, "fragment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
-    invoke-static {p0, p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks$DefaultImpls;->a(Lcom/samsung/android/app/musiclibrary/ui/FragmentLifeCycleCallbacks;Landroid/support/v4/app/Fragment;Z)V
+    invoke-static {p0, p1}, Landroidx/lifecycle/e;->e(Landroidx/lifecycle/f;Landroidx/lifecycle/s;)V
 
     return-void
 .end method

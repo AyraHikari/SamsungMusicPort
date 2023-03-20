@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;
 .super Lcom/samsung/audio/Smat;
-.source "SourceFile"
+.source "RingtoneRecommenderSdlCompat.java"
 
 
 # annotations
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "RingtoneRecommender"
 .end annotation
 
@@ -26,16 +26,16 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 74
+    .line 1
     invoke-direct {p0}, Lcom/samsung/audio/Smat;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;)V
+.method public synthetic constructor <init>(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;)V
     .locals 0
 
-    .line 74
+    .line 2
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;-><init>()V
 
     return-void
@@ -44,9 +44,9 @@
 
 # virtual methods
 .method public getInfo()J
-    .locals 4
+    .locals 3
 
-    .line 104
+    .line 1
     :try_start_0
     invoke-super {p0}, Lcom/samsung/audio/Smat;->getInfo()J
 
@@ -56,7 +56,7 @@
 
     goto :goto_0
 
-    .line 107
+    .line 2
     :catch_0
     :try_start_1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sGetInfoMethod:Ljava/lang/reflect/Method;
@@ -65,26 +65,20 @@
 
     if-nez v0, :cond_0
 
-    .line 108
+    .line 3
     const-class v0, Lcom/samsung/audio/Smat;
 
     const-string v2, "get_info"
 
-    move-object v3, v1
-
-    check-cast v3, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v2, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v0, v2, v1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sGetInfoMethod:Ljava/lang/reflect/Method;
 
-    .line 110
+    .line 4
     :cond_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sGetInfoMethod:Ljava/lang/reflect/Method;
-
-    check-cast v1, [Ljava/lang/Object;
 
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -110,9 +104,9 @@
 .end method
 
 .method public getState()I
-    .locals 4
+    .locals 3
 
-    .line 86
+    .line 1
     :try_start_0
     invoke-super {p0}, Lcom/samsung/audio/Smat;->getState()I
 
@@ -122,7 +116,7 @@
 
     goto :goto_0
 
-    .line 89
+    .line 2
     :catch_0
     :try_start_1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sGetStatMethod:Ljava/lang/reflect/Method;
@@ -131,26 +125,20 @@
 
     if-nez v0, :cond_0
 
-    .line 90
+    .line 3
     const-class v0, Lcom/samsung/audio/Smat;
 
     const-string v2, "get_stat"
 
-    move-object v3, v1
-
-    check-cast v3, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v2, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v0, v2, v1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sGetStatMethod:Ljava/lang/reflect/Method;
 
-    .line 92
+    .line 4
     :cond_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sGetStatMethod:Ljava/lang/reflect/Method;
-
-    check-cast v1, [Ljava/lang/Object;
 
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -176,9 +164,9 @@
 .end method
 
 .method public isExtractable()Z
-    .locals 4
+    .locals 3
 
-    .line 122
+    .line 1
     :try_start_0
     invoke-super {p0}, Lcom/samsung/audio/Smat;->isExtractable()Z
 
@@ -188,7 +176,7 @@
 
     goto :goto_0
 
-    .line 125
+    .line 2
     :catch_0
     :try_start_1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sIsExtractableMethod:Ljava/lang/reflect/Method;
@@ -197,27 +185,21 @@
 
     if-nez v0, :cond_0
 
-    .line 126
+    .line 3
     const-class v0, Lcom/samsung/audio/Smat;
 
     const-string v2, "is_extractable"
 
-    move-object v3, v1
-
-    check-cast v3, [Ljava/lang/Class;
-
-    .line 127
-    invoke-virtual {v0, v2, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    .line 4
+    invoke-virtual {v0, v2, v1}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     sput-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sIsExtractableMethod:Ljava/lang/reflect/Method;
 
-    .line 129
+    .line 5
     :cond_0
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;->sGetInfoMethod:Ljava/lang/reflect/Method;
-
-    check-cast v1, [Ljava/lang/Object;
 
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 

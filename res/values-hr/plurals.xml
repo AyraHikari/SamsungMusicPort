@@ -12,61 +12,9 @@
         <item quantity="other">Pjesme</item>
         <item quantity="one">Pjesma</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d pjesama dodano u Favorite. Pjesme koje se već nalaze u Favoritima nisu dodane.</item>
-        <item quantity="one">%d pjesma dodana u Favorite. Pjesma koja se već nalazi u Favoritima nije dodana.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d pjesama</item>
         <item quantity="one">%d pjesma</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d pjesama uklonjeno iz Favorita.</item>
-        <item quantity="one">%d pjesma uklonjena iz Favorita.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d pjesmi dodano u favorite.</item>
-        <item quantity="one">%d pjesma dodana u favorite.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Možete ukloniti najviše %d pjesama iz preporuka. Prikažite uklonjene pjesme, odaberite neke za vraćanje, a zatim pokušajte ponovno.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Možete ukloniti najviše %d pjesmu iz preporuka. Prikažite uklonjene pjesme, odaberite neke za vraćanje, a zatim pokušajte ponovno.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Možete ukloniti najviše %d pjesme iz preporuka. Prikažite uklonjene pjesme, odaberite neke za vraćanje, a zatim pokušajte ponovno.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Dodirnite gumb Reproduciraj radio da biste uživali u %d besplatnih pjesama svaki mjesec.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Dodirnite gumb Reproduciraj radio da biste uživali u %d besplatnoj pjesmi svaki mjesec.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Dodirnite gumb Reproduciraj radio da biste uživali u %d besplatne pjesme svaki mjesec.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Nije moguće odabrati više od %d izvođača.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Nije moguće odabrati više od %d izvođača.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Nije moguće odabrati više od %d izvođača.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Nije moguće odabrati više od %d žanrova.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Nije moguće odabrati više od %d žanra.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Nije moguće odabrati više od %d žanra.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Nije moguće odabrati više od %d pjesama.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Nije moguće odabrati više od %d pjesme.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Nije moguće odabrati više od %d pjesme.</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d sekundi</item>
@@ -76,29 +24,60 @@
         <item quantity="few">%d sekunde</item>
         <item quantity="many">N/A</item>
     </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Ne prikazuj %d dana</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ne prikazuj %d dan</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ne prikazuj %d dana</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="drm_can_use_n_times">
         <item quantity="other">Možete koristiti %1$s %2$d puta.</item>
         <item quantity="one">Možete koristiti %s jednom.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Nije moguće kupiti %d pjesama s pomoću premium karata zbog problema s autorskim pravom. Možete ih kupiti pojedinačno.</item>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Premotavanje unaprijed za %d sekundi</item>
+        <item quantity="one">Premotavanje unaprijed za %d sekundu</item>
+        <item quantity="few">Premotavanje unaprijed za %d sekunde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Premotavanje unatrag za %d sekundi</item>
+        <item quantity="one">Premotavanje unatrag za %d sekundu</item>
+        <item quantity="few">Premotavanje unatrag za %d sekunde</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">Izbrisat će se %d isteklih pjesama. Povijest preuzimanja možete provjeriti pod Informacije o Melonu > Povijest kupnje.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Nije moguće kupiti %d pjesmu s pomoću premium karata zbog problema s autorskim pravom. Možete ih kupiti pojedinačno.</item>
+        <item quantity="one">Izbrisat će se %d istekla pjesma. Povijest preuzimanja možete provjeriti pod Informacije o Melonu > Povijest kupnje.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">Nije moguće kupiti %d pjesme s pomoću premium karata zbog problema s autorskim pravom. Možete ih kupiti pojedinačno.</item>
+        <item quantity="few">Izbrisat će se %d istekle pjesme. Povijest preuzimanja možete provjeriti pod Informacije o Melonu > Povijest kupnje.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">Od dostupnih pjesama upotrijebit će se %d pjesama.</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Nije moguće produljiti razdoblje DCF za %d pjesama. Možete pokušati ponovno ili izbrisati datoteke s popisa u nastavku prije nego što ih ponovno preuzmete.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">Od dostupnih pjesama upotrijebit će se %d pjesma.</item>
+        <item quantity="one">Nije moguće produljiti razdoblje DCF za %d pjesmu. Možete pokušati ponovno ili izbrisati datoteke s popisa u nastavku prije nego što ih ponovno preuzmete.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">Od dostupnih pjesama upotrijebit će se %d pjesme.</item>
+        <item quantity="few">Nije moguće produljiti razdoblje DCF za %d pjesme. Možete pokušati ponovno ili izbrisati datoteke s popisa u nastavku prije nego što ih ponovno preuzmete.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Nije moguće uvesti više od %d stavki.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nije moguće uvesti više od %d stavke.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nije moguće uvesti više od %d stavke.</item>
         <item quantity="many">N/A</item>
     </plurals>
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Čeka se preuzimanje više pjesama (njih %d)…</item>
         <item quantity="one">Čeka se preuzimanje 1 pjesme…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novih obavijesti</item>
+        <item quantity="one">%d nova obavijest</item>
+        <item quantity="few">%d nove obavijesti</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Izbrisati više albuma (njih %d) i sve pjesme u njima s telefona?</item>
@@ -111,54 +90,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Izbrisati sve pjesme ovih skladatelja?</item>
         <item quantity="one">Izbrisati sve pjesme ovog skladatelja?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Izbrisati odabrane pjesme?</item>
-        <item quantity="one">Izbrisati odabranu pjesmu?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">Kupit će se %d pjesama. Ako nemate dovoljno dostupnih pjesama, ove pjesme nije moguće kupiti.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Kupit će se %d pjesma. Ako nemate dovoljno dostupnih pjesama, nije moguće kupiti ove pjesme.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Kupit će se %d pjesme. Ako nemate dovoljno dostupnih pjesama, ove pjesme nije moguće kupiti.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Kupiti odabrane pjesme?</item>
-        <item quantity="one">Kupiti odabranu pjesmu?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Već ste kupili ove pjesme. Možete ponovno preuzeti kupljene pjesme u bilo kojem trenutku.</item>
-        <item quantity="one">Već ste kupili ovu pjesmu. Možete ponovno preuzeti kupljene pjesme u bilo kojem trenutku.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Pjesme već kupljene</item>
-        <item quantity="one">Pjesma već kupljena</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Možete dodati samo %d pruženih popisa pjesama kao favorite. Uklonite neke pružene popise pjesama iz kartice Favoriti.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Možete dodati samo %d pruženi popis pjesama kao favorit. Uklonite neke pružene popise pjesama iz kartice Favoriti.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Možete dodati samo %d pružena popisa pjesama kao favorite. Uklonite neke pružene popise pjesama iz kartice Favoriti.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Možete dodati samo %d pjesama za prijenos kao Omiljene pjesme. Uklonite neke pjesme za prijenos iz Omiljenih pjesama, a zatim pokušajte ponovno.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Možete dodati samo %d pjesmu za prijenos kao Omiljenu pjesmu. Uklonite neke pjesme za prijenos iz Omiljenih pjesama, a zatim pokušajte ponovno.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Možete dodati samo %d pjesme za prijenos kao Omiljene pjesme. Uklonite neke pjesme za prijenos iz Omiljenih pjesama, a zatim pokušajte ponovno.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Možete dodati samo %d pjesama kao Omiljene pjesme. Uklonite neke pjesme iz Omiljenih pjesama, a zatim pokušajte ponovno.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Možete dodati samo %d pjesmu kao Omiljenu pjesmu. Uklonite neke pjesme iz Omiljenih pjesama, a zatim pokušajte ponovno.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Možete dodati samo %d pjesme kao Omiljene pjesme. Uklonite neke pjesme iz Omiljenih pjesama, a zatim pokušajte ponovno.</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d mapa</item>
@@ -180,25 +111,73 @@
         <item quantity="few">Također će se izbrisati %d skrivene mape.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">Vraćeno je %d pjesama.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Vraćena je %d pjesma.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Vraćene su %d pjesme.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Izbrisati više stavki (njih %d)?</item>
         <item quantity="one">Izbrisati 1 stavku?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Nije moguće unijeti više od %d znakova.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nije moguće unijeti više od %d znaka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nije moguće unijeti više od %d znaka.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Nije moguće dodati više od %d albuma. Dodajte manji broj albuma ili uklonite neke albume iz Favorita.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nije moguće dodati više od %d albuma. Dodajte manji broj albuma ili uklonite neke albume iz Favorita.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nije moguće dodati više od %d albuma. Dodajte manji broj albuma ili uklonite neke albume iz Favorita.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Nije moguće dodati više od %d izvođača. Dodajte manji broj izvođača ili uklonite neke izvođače iz Favorita.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nije moguće dodati više od %d izvođača. Dodajte manji broj izvođača ili uklonite neke izvođače iz Favorita.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nije moguće dodati više od %d izvođača. Dodajte manji broj izvođača ili uklonite neke izvođače iz Favorita.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Možete dodati najviše %d popisa pjesama. Uklonite neke popise pjesama iz kartice Favoriti.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Možete dodati najviše %d popis pjesama. Uklonite neke popise pjesama iz kartice Favoriti.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Možete dodati najviše %d popisa pjesama. Uklonite neke popise pjesama iz kartice Favoriti.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Nije moguće dodati više od %d pjesama za prijenos. Dodajte manji broj pjesama ili uklonite neke pjesme iz Omiljenih pjesama.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nije moguće dodati više od %d pjesme za prijenos. Dodajte manji broj pjesama ili uklonite neke pjesme iz Omiljenih pjesama.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nije moguće dodati više od %d pjesme za prijenos. Dodajte manji broj pjesama ili uklonite neke pjesme iz Omiljenih pjesama.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Nije moguće dodati više od %d pjesama. Dodajte manji broj pjesama ili uklonite neke pjesme iz Omiljenih pjesama.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nije moguće dodati više od %d pjesme. Dodajte manji broj pjesama ili uklonite neke pjesme iz Omiljenih pjesama.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nije moguće dodati više od %d pjesme. Dodajte manji broj pjesama ili uklonite neke pjesme iz Omiljenih pjesama.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Izvezeno je %d popisa pjesama.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Izvezen je %d popis pjesama.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izvezena su %d popisa pjesama.</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Uvezeno je %d popisa pjesama.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">Uvezen je %d popis pjesama.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Uvezena su %d popisa pjesama.</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Nije moguće odabrati više od %d popisa pjesama.</item>
@@ -216,12 +195,48 @@
         <item quantity="other">%d pjesama</item>
         <item quantity="one">1 pjesma</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">U Favorite je dodano samo %d pjesama. Ostale se pjesme već nalaze u Favoritima.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">U Favorite je dodana samo %d pjesma. Ostale se pjesme već nalaze u Favoritima.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">U Favorite su dodane samo %d pjesme. Ostale se pjesme već nalaze u Favoritima.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d pjesmi dodano u favorite.</item>
+        <item quantity="one">1 pjesma dodana u favorite.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d pjesama dodano na popis.</item>
+        <item quantity="one">1 pjesma dodana na popis pjesama.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">Nekoliko pjesama (%d) dodano u red čekanja.</item>
         <item quantity="one">%d pjesma dodana u red čekanja.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">Izbrisati %d pjesama?</item>
-        <item quantity="one">Izbrisati 1 pjesmu?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrisati %d pjesmu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Izbrisati %d pjesme?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Vrijeme spavanja: %d sati</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vrijeme spavanja: %d sat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vrijeme spavanja: %d sata</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Vrijeme spavanja: %d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vrijeme spavanja: %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vrijeme spavanja: %d minute</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

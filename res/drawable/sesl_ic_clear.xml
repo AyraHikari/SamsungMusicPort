@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:tint="?searchViewIconColor" android:height="@dimen/sesl_action_button_src_size" android:width="@dimen/sesl_action_button_src_size" android:viewportWidth="72.0" android:viewportHeight="72.0"
+<vector android:height="16.0dip" android:width="16.0dip" android:viewportWidth="16.0" android:viewportHeight="16.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@android:color/white" android:pathData="M54,21.626l-3.625,-3.626l-14.375,14.374l-14.374,-14.374l-3.626,3.626l14.374,14.374l-14.374,14.375l3.626,3.625l14.374,-14.374l14.375,14.374l3.625,-3.625l-14.375,-14.375z" />
+    <path android:fillColor="#ff404040" android:pathData="M9.06,7.9994L15.031,2.0304C15.324,1.7374 15.324,1.2634 15.031,0.9704C14.738,0.6774 14.262,0.6774 13.97,0.9704L7.999,6.9384L2.03,0.9704C1.737,0.6774 1.262,0.6774 0.969,0.9704C0.676,1.2634 0.676,1.7374 0.969,2.0304L6.939,7.9994L0.969,13.9704C0.676,14.2634 0.676,14.7374 0.969,15.0304C1.116,15.1774 1.307,15.2494 1.499,15.2494C1.692,15.2494 1.883,15.1774 2.03,15.0304L7.999,9.0614L13.97,15.0304C14.116,15.1774 14.308,15.2494 14.5,15.2494C14.692,15.2494 14.884,15.1774 15.031,15.0304C15.324,14.7374 15.324,14.2634 15.031,13.9704L9.06,7.9994Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
 </vector>

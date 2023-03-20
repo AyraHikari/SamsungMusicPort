@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "HoverPopupWindowCompat.java"
 
 
 # annotations
@@ -23,35 +23,30 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 14
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x0
 
+    .line 2
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat;->TYPE_NONE:I
-
-    .line 17
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x1
 
+    .line 3
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat;->TYPE_TOOLTIP:I
-
-    .line 21
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x3
 
+    .line 4
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat;->TYPE_USER_CUSTOM:I
-
-    .line 25
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const/4 v0, 0x2
 
+    .line 5
     sput v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat;->TYPE_WIDGET_DEFAULT:I
 
     return-void
@@ -60,7 +55,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -69,26 +63,26 @@
 .method public static dismiss(Landroid/view/View;)V
     .locals 1
 
-    .line 175
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 176
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 178
+    .line 3
     invoke-virtual {p0}, Lcom/samsung/android/widget/SemHoverPopupWindow;->dismiss()V
 
     goto :goto_0
 
-    .line 181
+    .line 4
     :cond_0
     invoke-static {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->dismiss(Landroid/view/View;)V
 
@@ -102,14 +96,14 @@
 
     if-eqz p0, :cond_0
 
-    .line 220
+    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 222
+    .line 2
     sget-object v0, Lcom/samsung/android/app/music/support/android/content/pm/PackageManagerCompat;->FEATURE_HOVERING_UI:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
@@ -127,21 +121,21 @@
 .method public static isShowing(Landroid/view/View;)Z
     .locals 1
 
-    .line 186
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_1
 
     const/4 v0, 0x1
 
-    .line 187
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 189
+    .line 3
     invoke-virtual {p0}, Lcom/samsung/android/widget/SemHoverPopupWindow;->isShowing()Z
 
     move-result p0
@@ -153,7 +147,7 @@
 
     return p0
 
-    .line 193
+    .line 4
     :cond_1
     invoke-static {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->isShowing(Landroid/view/View;)Z
 
@@ -165,26 +159,26 @@
 .method public static setContent(Landroid/view/View;Landroid/view/View;)V
     .locals 1
 
-    .line 142
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 143
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 145
+    .line 3
     invoke-virtual {p0, p1}, Lcom/samsung/android/widget/SemHoverPopupWindow;->setContent(Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 148
+    .line 4
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->setContent(Landroid/view/View;Landroid/view/View;)V
 
@@ -196,26 +190,26 @@
 .method public static setContent(Landroid/view/View;Ljava/lang/CharSequence;)V
     .locals 1
 
-    .line 153
-    const v0, 0x0
+    .line 5
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 154
+    .line 6
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 156
+    .line 7
     invoke-virtual {p0, p1}, Lcom/samsung/android/widget/SemHoverPopupWindow;->setContent(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
-    .line 159
+    .line 8
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->setContent(Landroid/view/View;Ljava/lang/CharSequence;)V
 
@@ -227,26 +221,26 @@
 .method public static setHoverDetectTime(Landroid/view/View;I)V
     .locals 1
 
-    .line 131
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 132
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 134
+    .line 3
     invoke-virtual {p0, p1}, Lcom/samsung/android/widget/SemHoverPopupWindow;->setHoverDetectTime(I)V
 
     goto :goto_0
 
-    .line 137
+    .line 4
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->setHoverDetectTime(Landroid/view/View;I)V
 
@@ -258,19 +252,19 @@
 .method public static setHoverPopupListener(Landroid/view/View;Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$HoverPopupListener;)V
     .locals 1
 
-    .line 198
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 199
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
-    .line 200
+    .line 3
     new-instance v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$1;
 
     invoke-direct {v0, p1}, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$1;-><init>(Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$HoverPopupListener;)V
@@ -279,7 +273,7 @@
 
     goto :goto_0
 
-    .line 208
+    .line 4
     :cond_0
     new-instance v0, Lcom/samsung/android/app/music/support/samsung/widget/HoverPopupWindowCompat$2;
 
@@ -294,15 +288,17 @@
 .method public static setHoverPopupType(Landroid/view/View;I)V
     .locals 1
 
-    .line 101
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
-    .line 102
+    .line 2
+    invoke-virtual {p0, p1}, Landroid/view/View;->semSetHoverPopupType(I)V
+
     goto :goto_0
 
-    .line 104
+    .line 3
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->setHoverPopupType(Landroid/view/View;I)V
 
@@ -313,26 +309,26 @@
 .method public static setPopupGravity(Landroid/view/View;I)V
     .locals 1
 
-    .line 109
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 110
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 112
+    .line 3
     invoke-virtual {p0, p1}, Lcom/samsung/android/widget/SemHoverPopupWindow;->setGravity(I)V
 
     goto :goto_0
 
-    .line 115
+    .line 4
     :cond_0
     invoke-static {p0, p1}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->setPopupGravity(Landroid/view/View;I)V
 
@@ -344,26 +340,26 @@
 .method public static setPopupOffset(Landroid/view/View;II)V
     .locals 1
 
-    .line 120
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 121
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 123
+    .line 3
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/widget/SemHoverPopupWindow;->setOffset(II)V
 
     goto :goto_0
 
-    .line 126
+    .line 4
     :cond_0
     invoke-static {p0, p1, p2}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->setPopupOffset(Landroid/view/View;II)V
 
@@ -375,26 +371,26 @@
 .method public static show(Landroid/view/View;)V
     .locals 1
 
-    .line 164
-    const v0, 0x0
+    .line 1
+    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 165
+    .line 2
     invoke-virtual {p0, v0}, Landroid/view/View;->semGetHoverPopup(Z)Lcom/samsung/android/widget/SemHoverPopupWindow;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 167
+    .line 3
     invoke-virtual {p0}, Lcom/samsung/android/widget/SemHoverPopupWindow;->show()V
 
     goto :goto_0
 
-    .line 170
+    .line 4
     :cond_0
     invoke-static {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/widget/HoverPopupWindowSdlCompat;->show(Landroid/view/View;)V
 

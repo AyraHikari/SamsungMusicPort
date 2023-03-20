@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/os/BuildCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "BuildCompat.java"
 
 
 # static fields
@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,12 +21,12 @@
 .method public static getProductName()Ljava/lang/String;
     .locals 1
 
-    .line 22
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
 
-    .line 23
+    .line 2
     sget-object v0, Landroid/os/Build;->PRODUCT:Ljava/lang/String;
 
     return-object v0
@@ -35,7 +34,7 @@
     :cond_0
     const-string v0, "ro.product.name"
 
-    .line 25
+    .line 3
     invoke-static {v0}, Lcom/samsung/android/app/music/support/sdl/android/os/SystemPropertiesSdlCompat;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -46,7 +45,7 @@
 .method public static getUxVersion()Ljava/lang/String;
     .locals 1
 
-    .line 14
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     if-eqz v0, :cond_0
@@ -58,7 +57,7 @@
     :cond_0
     const-string v0, "ro.build.scafe.version"
 
-    .line 17
+    .line 2
     invoke-static {v0}, Lcom/samsung/android/app/music/support/android/os/SystemPropertiesCompat;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0

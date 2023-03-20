@@ -1,13 +1,13 @@
 .class Lorg/simpleframework/xml/core/SetPart;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SetPart.java"
 
 # interfaces
 .implements Lorg/simpleframework/xml/core/MethodPart;
 
 
 # instance fields
-.field private final a:Lorg/simpleframework/xml/util/Cache;
+.field private final cache:Lorg/simpleframework/xml/util/Cache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lorg/simpleframework/xml/util/Cache<",
@@ -17,73 +17,73 @@
     .end annotation
 .end field
 
-.field private final b:[Ljava/lang/annotation/Annotation;
+.field private final label:Ljava/lang/annotation/Annotation;
 
-.field private final c:Ljava/lang/annotation/Annotation;
+.field private final list:[Ljava/lang/annotation/Annotation;
 
-.field private final d:Lorg/simpleframework/xml/core/MethodType;
+.field private final method:Ljava/lang/reflect/Method;
 
-.field private final e:Ljava/lang/reflect/Method;
+.field private final name:Ljava/lang/String;
 
-.field private final f:Ljava/lang/String;
+.field private final type:Lorg/simpleframework/xml/core/MethodType;
 
 
 # direct methods
 .method public constructor <init>(Lorg/simpleframework/xml/core/MethodName;Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;)V
     .locals 1
 
-    .line 79
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 80
+    .line 2
     new-instance v0, Lorg/simpleframework/xml/util/ConcurrentCache;
 
     invoke-direct {v0}, Lorg/simpleframework/xml/util/ConcurrentCache;-><init>()V
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->a:Lorg/simpleframework/xml/util/Cache;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->cache:Lorg/simpleframework/xml/util/Cache;
 
-    .line 81
-    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodName;->c()Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
-
-    .line 82
-    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodName;->a()Ljava/lang/String;
+    .line 3
+    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodName;->getMethod()Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->f:Ljava/lang/String;
+    iput-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
 
-    .line 83
-    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodName;->b()Lorg/simpleframework/xml/core/MethodType;
+    .line 4
+    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodName;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->name:Ljava/lang/String;
+
+    .line 5
+    invoke-virtual {p1}, Lorg/simpleframework/xml/core/MethodName;->getType()Lorg/simpleframework/xml/core/MethodType;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/simpleframework/xml/core/SetPart;->d:Lorg/simpleframework/xml/core/MethodType;
+    iput-object p1, p0, Lorg/simpleframework/xml/core/SetPart;->type:Lorg/simpleframework/xml/core/MethodType;
 
-    .line 84
-    iput-object p2, p0, Lorg/simpleframework/xml/core/SetPart;->c:Ljava/lang/annotation/Annotation;
+    .line 6
+    iput-object p2, p0, Lorg/simpleframework/xml/core/SetPart;->label:Ljava/lang/annotation/Annotation;
 
-    .line 85
-    iput-object p3, p0, Lorg/simpleframework/xml/core/SetPart;->b:[Ljava/lang/annotation/Annotation;
+    .line 7
+    iput-object p3, p0, Lorg/simpleframework/xml/core/SetPart;->list:[Ljava/lang/annotation/Annotation;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/String;
+.method public getAnnotation()Ljava/lang/annotation/Annotation;
     .locals 1
 
-    .line 96
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->f:Ljava/lang/String;
+    .line 1
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->label:Ljava/lang/annotation/Annotation;
 
     return-object v0
 .end method
 
-.method public a(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+.method public getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -95,8 +95,8 @@
         }
     .end annotation
 
-    .line 168
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->a:Lorg/simpleframework/xml/util/Cache;
+    .line 2
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->cache:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {v0}, Lorg/simpleframework/xml/util/Cache;->isEmpty()Z
 
@@ -104,8 +104,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 169
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->b:[Ljava/lang/annotation/Annotation;
+    .line 3
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->list:[Ljava/lang/annotation/Annotation;
 
     array-length v1, v0
 
@@ -116,13 +116,13 @@
 
     aget-object v3, v0, v2
 
-    .line 170
+    .line 4
     invoke-interface {v3}, Ljava/lang/annotation/Annotation;->annotationType()Ljava/lang/Class;
 
     move-result-object v4
 
-    .line 171
-    iget-object v5, p0, Lorg/simpleframework/xml/core/SetPart;->a:Lorg/simpleframework/xml/util/Cache;
+    .line 5
+    iget-object v5, p0, Lorg/simpleframework/xml/core/SetPart;->cache:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {v5, v4, v3}, Lorg/simpleframework/xml/util/Cache;->cache(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -130,9 +130,9 @@
 
     goto :goto_0
 
-    .line 174
+    .line 6
     :cond_0
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->a:Lorg/simpleframework/xml/util/Cache;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->cache:Lorg/simpleframework/xml/util/Cache;
 
     invoke-interface {v0, p1}, Lorg/simpleframework/xml/util/Cache;->fetch(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -143,11 +143,92 @@
     return-object p1
 .end method
 
-.method public b()Ljava/lang/Class;
+.method public getDeclaringClass()Ljava/lang/Class;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
+
+    invoke-virtual {v0}, Ljava/lang/reflect/Method;->getDeclaringClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDependent()Ljava/lang/Class;
     .locals 2
 
-    .line 107
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lorg/simpleframework/xml/core/Reflector;->getParameterDependent(Ljava/lang/reflect/Method;I)Ljava/lang/Class;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDependents()[Ljava/lang/Class;
+    .locals 2
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lorg/simpleframework/xml/core/Reflector;->getParameterDependents(Ljava/lang/reflect/Method;I)[Ljava/lang/Class;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getMethod()Ljava/lang/reflect/Method;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
+
+    invoke-virtual {v0}, Ljava/lang/reflect/Method;->isAccessible()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
+
+    return-object v0
+.end method
+
+.method public getMethodType()Lorg/simpleframework/xml/core/MethodType;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->type:Lorg/simpleframework/xml/core/MethodType;
+
+    return-object v0
+.end method
+
+.method public getName()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->name:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getType()Ljava/lang/Class;
+    .locals 2
+
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
@@ -160,98 +241,10 @@
     return-object v0
 .end method
 
-.method public c()Ljava/lang/Class;
-    .locals 2
-
-    .line 120
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lorg/simpleframework/xml/core/Reflector;->a(Ljava/lang/reflect/Method;I)Ljava/lang/Class;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public d()[Ljava/lang/Class;
-    .locals 2
-
-    .line 133
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lorg/simpleframework/xml/core/Reflector;->b(Ljava/lang/reflect/Method;I)[Ljava/lang/Class;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public e()Ljava/lang/Class;
-    .locals 1
-
-    .line 144
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
-
-    invoke-virtual {v0}, Ljava/lang/reflect/Method;->getDeclaringClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public f()Ljava/lang/annotation/Annotation;
-    .locals 1
-
-    .line 155
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->c:Ljava/lang/annotation/Annotation;
-
-    return-object v0
-.end method
-
-.method public g()Lorg/simpleframework/xml/core/MethodType;
-    .locals 1
-
-    .line 186
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->d:Lorg/simpleframework/xml/core/MethodType;
-
-    return-object v0
-.end method
-
-.method public h()Ljava/lang/reflect/Method;
-    .locals 2
-
-    .line 197
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
-
-    invoke-virtual {v0}, Ljava/lang/reflect/Method;->isAccessible()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 198
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
-
-    .line 200
-    :cond_0
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
-
-    return-object v0
-.end method
-
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 212
-    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->e:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lorg/simpleframework/xml/core/SetPart;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->toGenericString()Ljava/lang/String;
 

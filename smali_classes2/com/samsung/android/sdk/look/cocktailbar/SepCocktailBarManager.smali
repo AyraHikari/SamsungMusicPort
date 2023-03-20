@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SepCocktailBarManager.java"
 
 # interfaces
 .implements Lcom/samsung/android/sdk/look/cocktailbar/CocktailBarManagerInterface;
@@ -20,17 +20,17 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 20
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
+    .line 2
     invoke-static {p1}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
-    .line 22
+    .line 3
     iput-object p1, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mContext:Landroid/content/Context;
 
     return-void
@@ -41,7 +41,6 @@
 .method public closeCocktail(II)V
     .locals 0
 
-    .line 70
     iget-object p2, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {p2, p1}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->closeCocktail(I)V
@@ -52,7 +51,6 @@
 .method public disableCocktail(Landroid/content/ComponentName;)V
     .locals 1
 
-    .line 75
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->disableCocktail(Landroid/content/ComponentName;)V
@@ -63,7 +61,6 @@
 .method public getCocktailBarWindowType()I
     .locals 1
 
-    .line 85
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {v0}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->getCocktailBarWindowType()I
@@ -76,7 +73,6 @@
 .method public getCocktailIds(Landroid/content/ComponentName;)[I
     .locals 1
 
-    .line 46
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->getCocktailIds(Landroid/content/ComponentName;)[I
@@ -89,7 +85,6 @@
 .method public isEnabledCocktail(Landroid/content/ComponentName;)Z
     .locals 1
 
-    .line 80
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->isCocktailEnabled(Landroid/content/ComponentName;)Z
@@ -102,7 +97,6 @@
 .method public notifyCocktailViewDataChanged(II)V
     .locals 1
 
-    .line 41
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {v0, p1, p2}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->notifyCocktailViewDataChanged(II)V
@@ -113,7 +107,6 @@
 .method public partiallyUpdateCocktail(ILandroid/widget/RemoteViews;)V
     .locals 1
 
-    .line 60
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {v0, p1, p2}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->updateCocktailView(ILandroid/widget/RemoteViews;)V
@@ -124,7 +117,6 @@
 .method public registerListener(Ljava/lang/Object;)V
     .locals 3
 
-    .line 100
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -145,7 +137,6 @@
 .method public setCocktailBarStatus(ZZ)V
     .locals 3
 
-    .line 95
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -166,41 +157,39 @@
 .method public setOnLongClickPendingIntent(Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;)V
     .locals 2
 
-    .line 123
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 124
+    .line 2
     invoke-virtual {p1, p2, p3}, Landroid/widget/RemoteViews;->semSetOnLongClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     goto :goto_0
 
-    .line 126
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
-    .line 127
+    .line 4
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string p3, "setOnLongClickPendingIntent works from N OS: "
 
     invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 126
+    .line 5
     invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 127
+    .line 6
     invoke-virtual {p1}, Ljava/lang/RuntimeException;->printStackTrace()V
 
     :goto_0
@@ -210,41 +199,39 @@
 .method public setOnLongClickPendingIntentTemplate(Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;)V
     .locals 2
 
-    .line 134
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 135
+    .line 2
     invoke-virtual {p1, p2, p3}, Landroid/widget/RemoteViews;->semSetOnLongClickPendingIntentTemplate(ILandroid/app/PendingIntent;)V
 
     goto :goto_0
 
-    .line 137
+    .line 3
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
-    .line 138
+    .line 4
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string p3, "setOnLongClickPendingIntent works from N OS: "
 
     invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 137
+    .line 5
     invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 138
+    .line 6
     invoke-virtual {p1}, Ljava/lang/RuntimeException;->printStackTrace()V
 
     :goto_0
@@ -254,19 +241,19 @@
 .method public setOnPullPendingIntent(IILandroid/app/PendingIntent;)V
     .locals 3
 
-    .line 110
+    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_0
 
-    .line 111
+    .line 2
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
 
-    .line 112
+    .line 3
     iget-object v1, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mContext:Landroid/content/Context;
 
     const-string v2, "CocktailBarService"
@@ -275,34 +262,32 @@
 
     move-result-object v1
 
-    .line 111
+    .line 4
     invoke-virtual {v0, v1, p1, p2, p3}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->setOnPullPendingIntent(Ljava/lang/Object;IILandroid/app/PendingIntent;)V
 
     goto :goto_0
 
-    .line 115
+    .line 5
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
-    .line 116
+    .line 6
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string p3, "setOnPullPendingIntent works from N OS: "
 
     invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 115
+    .line 7
     invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 116
+    .line 8
     invoke-virtual {p1}, Ljava/lang/RuntimeException;->printStackTrace()V
 
     :goto_0
@@ -312,7 +297,6 @@
 .method public showCocktail(I)V
     .locals 1
 
-    .line 65
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/cocktailbar/SemCocktailBarManager;->showCocktail(I)V
@@ -323,7 +307,6 @@
 .method public unregisterListener(Ljava/lang/Object;)V
     .locals 3
 
-    .line 105
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -344,7 +327,7 @@
 .method public updateCocktail(IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;Landroid/content/ComponentName;)V
     .locals 10
 
-    .line 53
+    .line 3
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0
@@ -381,7 +364,7 @@
 .method public updateCocktail(ILandroid/widget/RemoteViews;)V
     .locals 6
 
-    .line 27
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     const/4 v2, 0x1
@@ -402,7 +385,7 @@
 .method public updateCocktail(ILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 6
 
-    .line 34
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SepCocktailBarManager;->mSemCocktailBarManager:Lcom/samsung/android/cocktailbar/SemCocktailBarManager;
 
     const/4 v2, 0x1
@@ -423,7 +406,6 @@
 .method public updateLongpressGesture(Z)V
     .locals 3
 
-    .line 90
     invoke-static {}, Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;->get()Lcom/samsung/android/sdk/look/cocktailbar/RefCocktailBarManager;
 
     move-result-object v0

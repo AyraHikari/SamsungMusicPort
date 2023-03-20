@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/android/drm/DrmStore/ConstraintsColumnsCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ConstraintsColumnsCompat.java"
 
 
 # static fields
@@ -10,21 +10,20 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 10
+    .line 1
     sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const-string v0, "license_original_interval"
 
+    .line 2
     sput-object v0, Lcom/samsung/android/app/music/support/android/drm/DrmStore/ConstraintsColumnsCompat;->LICENSE_ORIGINAL_INTERVAL:Ljava/lang/String;
-
-    .line 14
-    sget-boolean v0, Lcom/samsung/android/app/music/support/SamsungSdk;->SUPPORT_SEP:Z
 
     const-string v0, "license_category"
 
+    .line 3
     sput-object v0, Lcom/samsung/android/app/music/support/android/drm/DrmStore/ConstraintsColumnsCompat;->LICENSE_CATEGORY:Ljava/lang/String;
 
     return-void
@@ -33,7 +32,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

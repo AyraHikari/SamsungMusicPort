@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lorg/simpleframework/xml/Default;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "Default.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/AnnotationDefault;
     value = .subannotation Lorg/simpleframework/xml/Default;
-        a = .enum Lorg/simpleframework/xml/DefaultType;->FIELD:Lorg/simpleframework/xml/DefaultType;
-        b = true
+        required = true
+        value = .enum Lorg/simpleframework/xml/DefaultType;->FIELD:Lorg/simpleframework/xml/DefaultType;
     .end subannotation
 .end annotation
 
@@ -20,8 +20,8 @@
 
 
 # virtual methods
-.method public abstract a()Lorg/simpleframework/xml/DefaultType;
+.method public abstract required()Z
 .end method
 
-.method public abstract b()Z
+.method public abstract value()Lorg/simpleframework/xml/DefaultType;
 .end method

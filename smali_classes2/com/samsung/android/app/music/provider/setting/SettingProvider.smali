@@ -1,250 +1,772 @@
 .class public final Lcom/samsung/android/app/music/provider/setting/SettingProvider;
 .super Landroid/content/ContentProvider;
-.source "SourceFile"
+.source "SettingProvider.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/samsung/android/app/music/provider/setting/SettingProvider$Companion;
+        Lcom/samsung/android/app/music/provider/setting/SettingProvider$a;
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lcom/samsung/android/app/music/provider/setting/SettingProvider$Companion;
+.field public static final c:Lcom/samsung/android/app/music/provider/setting/SettingProvider$a;
+
+.field public static final d:Landroid/net/Uri;
 
 
 # instance fields
-.field private final b:Z
+.field public final a:Lkotlin/g;
 
-.field private c:Landroid/database/sqlite/SQLiteDatabase;
-
-.field private final d:Landroid/content/UriMatcher;
+.field public b:Landroid/content/SharedPreferences;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider$Companion;
+    new-instance v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider$a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/provider/setting/SettingProvider$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/provider/setting/SettingProvider$a;-><init>(Lkotlin/jvm/internal/g;)V
 
-    sput-object v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a:Lcom/samsung/android/app/music/provider/setting/SettingProvider$Companion;
+    sput-object v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->c:Lcom/samsung/android/app/music/provider/setting/SettingProvider$a;
+
+    const-string v0, "content://com.sec.android.app.music.setting/setting"
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->c(Ljava/lang/Object;)V
+
+    sput-object v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d:Landroid/net/Uri;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
-    .line 18
+    .line 1
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
-    .line 24
-    new-instance v0, Landroid/content/UriMatcher;
+    .line 2
+    new-instance v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider$b;
 
-    const/4 v1, -0x1
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider$b;-><init>(Lcom/samsung/android/app/music/provider/setting/SettingProvider;)V
 
-    invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
+    invoke-static {v0}, Lkotlin/h;->b(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d:Landroid/content/UriMatcher;
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a:Lkotlin/g;
 
     return-void
 .end method
 
-.method private final a(Landroid/net/Uri;)Ljava/lang/String;
-    .locals 3
+.method public static final synthetic a()Landroid/net/Uri;
+    .locals 1
 
-    .line 102
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    sget-object v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d:Landroid/net/Uri;
 
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_2
-
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    if-le v1, v2, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    move-object p1, v0
-
-    :goto_1
-    if-eqz p1, :cond_2
-
-    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    move-object v0, p1
-
-    check-cast v0, Ljava/lang/String;
-
-    :cond_2
     return-object v0
-.end method
-
-.method private final a(Ljava/util/List;[Ljava/lang/String;)[Ljava/lang/String;
-    .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;[",
-            "Ljava/lang/String;",
-            ")[",
-            "Ljava/lang/String;"
-        }
-    .end annotation
-
-    .line 106
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return-object p2
-
-    :cond_0
-    const/4 v1, 0x0
-
-    if-eqz p2, :cond_1
-
-    .line 109
-    array-length v2, p2
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v2, 0x0
-
-    :goto_0
-    add-int v3, v0, v2
-
-    .line 110
-    new-array v3, v3, [Ljava/lang/String;
-
-    .line 112
-    invoke-static {v1, v0}, Lkotlin/ranges/RangesKt;->b(II)Lkotlin/ranges/IntRange;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/Iterable;
-
-    .line 191
-    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :goto_1
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    move-object v5, v4
-
-    check-cast v5, Lkotlin/collections/IntIterator;
-
-    invoke-virtual {v5}, Lkotlin/collections/IntIterator;->b()I
-
-    move-result v5
-
-    .line 112
-    invoke-interface {p1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/String;
-
-    aput-object v6, v3, v5
-
-    goto :goto_1
-
-    :cond_2
-    if-eqz p2, :cond_3
-
-    .line 113
-    invoke-static {p2, v1, v3, v0, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    :cond_3
-    return-object v3
 .end method
 
 
 # virtual methods
-.method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 1
+.method public final b(Ljava/io/PrintWriter;)V
+    .locals 4
 
-    const-string p2, "uri"
+    if-nez p1, :cond_0
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    return-void
 
-    .line 82
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
+    .line 1
+    :cond_0
+    :try_start_0
+    const-class v0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;
 
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    if-eqz p1, :cond_0
+    move-result-object v0
 
-    iget-boolean p2, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Z
+    const-string v1, "javaClass.simpleName"
 
-    if-eqz p2, :cond_0
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string p2, "SettingProvider"
+    invoke-static {p1, v0}, Lcom/samsung/android/app/musiclibrary/ktx/io/a;->a(Ljava/io/PrintWriter;Ljava/lang/String;)V
 
-    new-instance p3, Ljava/lang/StringBuilder;
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Landroid/content/SharedPreferences;
 
-    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+    if-nez v0, :cond_1
 
-    const-string v0, "remove cache from delete | key: "
+    const-string v0, "preferences"
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v0, 0x0
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_1
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-static {p2, p1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    if-nez v0, :cond_2
+
+    goto :goto_1
+
+    .line 3
+    :cond_2
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .line 4
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v3, 0x3a
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    const-string v1, "There is an exception during dump : "
+
+    invoke-static {v1, v0}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    :cond_3
+    :goto_1
+    return-void
+.end method
+
+.method public final c(Ljava/lang/String;)Landroid/os/Bundle;
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Landroid/content/SharedPreferences;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "preferences"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
 
     :cond_0
-    const-string p1, "SettingProvider"
+    invoke-interface {v0, p1, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    const-string p2, "This function is not supported. So do not call this."
+    move-result-object v0
 
-    .line 83
-    invoke-static {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->d(Ljava/lang/String;Ljava/lang/String;)V
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d()Lcom/samsung/android/app/musiclibrary/ui/debug/b;
 
-    const/4 p1, 0x0
+    move-result-object v1
 
-    return p1
+    .line 3
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->a()Z
+
+    move-result v2
+
+    .line 4
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
+
+    move-result v3
+
+    const/4 v4, 0x0
+
+    if-nez v3, :cond_1
+
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->b()I
+
+    move-result v3
+
+    const/4 v5, 0x3
+
+    if-le v3, v5, :cond_1
+
+    if-eqz v2, :cond_2
+
+    .line 5
+    :cond_1
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->f()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->d()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 6
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "get() key="
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", value="
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1, v4}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v2, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Lkotlin/l;
+
+    const-string v1, "value"
+
+    .line 7
+    invoke-static {v1, v0}, Lkotlin/r;->a(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/l;
+
+    move-result-object v0
+
+    aput-object v0, p1, v4
+
+    invoke-static {p1}, Landroidx/core/os/b;->a([Lkotlin/l;)Landroid/os/Bundle;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public call(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+    .locals 3
+
+    const-string v0, "method"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    const v1, 0x18f56
+
+    const/4 v2, 0x0
+
+    if-eq v0, v1, :cond_6
+
+    const v1, 0x1b30f
+
+    if-eq v0, v1, :cond_2
+
+    const p2, 0x316510
+
+    if-eq v0, p2, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const-string p2, "init"
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    goto :goto_1
+
+    .line 2
+    :cond_1
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->e()V
+
+    goto :goto_1
+
+    :cond_2
+    const-string v0, "put"
+
+    .line 3
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    if-eqz p2, :cond_5
+
+    if-nez p3, :cond_4
+
+    move-object p1, v2
+
+    goto :goto_0
+
+    :cond_4
+    const-string p1, "value"
+
+    .line 4
+    invoke-virtual {p3, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 5
+    :goto_0
+    invoke-virtual {p0, p2, p1}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->f(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 6
+    :cond_5
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "put() key is null"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_6
+    const-string p3, "get"
+
+    .line 7
+    invoke-virtual {p1, p3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_7
+
+    :goto_1
+    return-object v2
+
+    :cond_7
+    if-eqz p2, :cond_8
+
+    .line 8
+    invoke-virtual {p0, p2}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->c(Ljava/lang/String;)Landroid/os/Bundle;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 9
+    :cond_8
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "get() key is null"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final d()Lcom/samsung/android/app/musiclibrary/ui/debug/b;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a:Lkotlin/g;
+
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/debug/b;
+
+    return-object v0
+.end method
+
+.method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+    .locals 3
+
+    const-string v0, "uri"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "delete() uri="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", selection="
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", selectionArgs="
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p0, p2}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b(Ljava/io/PrintWriter;)V
+
+    return-void
+.end method
+
+.method public final e()V
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/music/provider/setting/b;->b:Lcom/samsung/android/app/music/provider/setting/b$a;
+
+    invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->c(Ljava/lang/Object;)V
+
+    const-string v2, "context!!"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/provider/setting/b$a;->a(Landroid/content/Context;)Lcom/samsung/android/app/music/provider/setting/b;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/provider/setting/b;->d()Ljava/util/Map;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v2, 0x1
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    return-void
+
+    .line 3
+    :cond_2
+    iget-object v2, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Landroid/content/SharedPreferences;
+
+    if-nez v2, :cond_3
+
+    const-string v2, "preferences"
+
+    invoke-static {v2}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v2, 0x0
+
+    .line 4
+    :cond_3
+    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v2
+
+    const-string v3, "editor"
+
+    .line 5
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_4
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
+
+    .line 7
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-interface {v2, v4, v3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    goto :goto_2
+
+    .line 8
+    :cond_4
+    invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 9
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d()Lcom/samsung/android/app/musiclibrary/ui/debug/b;
+
+    move-result-object v0
+
+    .line 10
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->a()Z
+
+    move-result v2
+
+    .line 11
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
+
+    move-result v3
+
+    if-nez v3, :cond_5
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->b()I
+
+    move-result v3
+
+    const/4 v4, 0x4
+
+    if-le v3, v4, :cond_5
+
+    if-eqz v2, :cond_6
+
+    .line 12
+    :cond_5
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->f()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v3, "init()"
+
+    .line 13
+    invoke-static {v3, v1}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_6
+    return-void
+.end method
+
+.method public final f(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Landroid/content/SharedPreferences;
+
+    if-nez v0, :cond_0
+
+    const-string v0, "preferences"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 2
+    :cond_0
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v1, "editor"
+
+    .line 3
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 5
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 6
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d()Lcom/samsung/android/app/musiclibrary/ui/debug/b;
+
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->a()Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    .line 8
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->b()I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    if-le v3, v4, :cond_1
+
+    if-eqz v1, :cond_2
+
+    .line 9
+    :cond_1
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->f()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 10
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "put() key="
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", value="
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1, v2}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    return-void
 .end method
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
@@ -252,7 +774,7 @@
 
     const-string v0, "uri"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "vnd.com.sec.android.app.music.setting.dir/setting"
 
@@ -260,176 +782,113 @@
 .end method
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-    .locals 5
+    .locals 3
 
     const-string v0, "uri"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 65
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    if-nez p2, :cond_0
-
-    .line 66
-    invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->a()V
-
-    :cond_0
-    const-string v1, "value"
-
-    invoke-virtual {p2, v1}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 67
-    iget-boolean v2, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Z
-
-    if-eqz v2, :cond_1
-
-    const-string v2, "SettingProvider"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "make cache from insert | key: "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, " | value: "
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v2, v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
-    const-string v0, "SettingProvider"
-
-    .line 69
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "insert uri : "
+    const-string v2, "insert() uri="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    const-string p1, ", values="
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    .line 71
-    iget-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d:Landroid/content/UriMatcher;
-
-    invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
-
-    move-result v0
-
-    const/16 v1, 0x3e8
-
-    if-eq v0, v1, :cond_2
-
-    goto :goto_0
-
-    .line 74
-    :cond_2
-    iget-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->c:Landroid/database/sqlite/SQLiteDatabase;
-
-    if-nez v0, :cond_3
-
-    const-string v1, "database"
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_3
-    const-string v1, "setting"
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2, p2}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
-
-    move-result-wide v0
-
-    const-wide/16 v3, 0x0
-
-    cmp-long p2, v0, v3
-
-    if-lez p2, :cond_4
-
-    .line 75
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->getContext()Landroid/content/Context;
-
-    move-result-object p2
-
-    const-string v0, "context"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
-
-    :cond_4
-    :goto_0
-    return-object p1
+    throw v0
 .end method
 
 .method public onCreate()Z
-    .locals 4
+    .locals 5
 
-    .line 27
-    sget-object v0, Lcom/samsung/android/app/music/provider/setting/SettingDBHelper;->a:Lcom/samsung/android/app/music/provider/setting/SettingDBHelper$Companion;
+    .line 1
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d()Lcom/samsung/android/app/musiclibrary/ui/debug/b;
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->getContext()Landroid/content/Context;
+    move-result-object v0
+
+    .line 2
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->a()Z
+
+    move-result v1
+
+    .line 3
+    invoke-static {}, Lcom/samsung/android/app/musiclibrary/ui/debug/c;->b()Z
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    if-nez v2, :cond_0
+
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->b()I
+
+    move-result v2
+
+    const/4 v4, 0x4
+
+    if-le v2, v4, :cond_0
+
+    if-eqz v1, :cond_1
+
+    .line 4
+    :cond_0
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->f()Ljava/lang/String;
 
     move-result-object v1
 
-    const-string v2, "context"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/provider/setting/SettingDBHelper$Companion;->a(Landroid/content/Context;)Lcom/samsung/android/app/music/provider/setting/SettingDBHelper;
+    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/debug/b;->d()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/provider/setting/SettingDBHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    const-string v2, "onCreate()"
+
+    .line 5
+    invoke-static {v2, v3}, Lcom/samsung/android/app/musiclibrary/ktx/b;->c(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v1, "SettingDBHelper.getInsta\u2026context).writableDatabase"
+    invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 6
+    :cond_1
+    invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->c:Landroid/database/sqlite/SQLiteDatabase;
+    move-result-object v0
 
-    .line 28
-    iget-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d:Landroid/content/UriMatcher;
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->c(Ljava/lang/Object;)V
 
-    const-string v1, "com.sec.android.app.music.setting"
+    const-string v1, "music_setting_pref"
 
-    const-string v2, "setting/*"
+    invoke-virtual {v0, v1, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    const/16 v3, 0x3e8
+    move-result-object v0
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
+    const-string v1, "context!!.getSharedPrefe\u2026NG, Context.MODE_PRIVATE)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Landroid/content/SharedPreferences;
 
     const/4 v0, 0x1
 
@@ -437,177 +896,93 @@
 .end method
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-    .locals 10
+    .locals 2
+
+    const-string p5, "uri"
+
+    invoke-static {p1, p5}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p5, Ljava/lang/UnsupportedOperationException;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "query() uri="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", projection="
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", selection="
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", selectionArgs="
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p5, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p5
+.end method
+
+.method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+    .locals 3
 
     const-string v0, "uri"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "SettingProvider"
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    .line 36
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "query uri : "
+    const-string v2, "update() uri="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    const-string p1, ", values="
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", selection="
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string p1, ", selectionArgs="
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 38
-    new-instance v2, Landroid/database/sqlite/SQLiteQueryBuilder;
-
-    invoke-direct {v2}, Landroid/database/sqlite/SQLiteQueryBuilder;-><init>()V
-
-    const-string v0, "setting"
-
-    invoke-virtual {v2, v0}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
-
-    .line 39
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 40
-    iget-object v1, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->d:Landroid/content/UriMatcher;
-
-    invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
-
-    move-result v1
-
-    const/16 v3, 0x3e8
-
-    if-eq v1, v3, :cond_0
-
-    goto :goto_0
-
-    .line 43
-    :cond_0
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
-
     move-result-object p1
 
-    if-eqz p1, :cond_1
+    invoke-direct {v0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    const-string v1, "name=?"
-
-    .line 44
-    check-cast v1, Ljava/lang/CharSequence;
-
-    invoke-virtual {v2, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->appendWhere(Ljava/lang/CharSequence;)V
-
-    .line 45
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 50
-    :cond_1
-    :goto_0
-    iget-object v3, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->c:Landroid/database/sqlite/SQLiteDatabase;
-
-    if-nez v3, :cond_2
-
-    const-string p1, "database"
-
-    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 53
-    :cond_2
-    check-cast v0, Ljava/util/List;
-
-    invoke-direct {p0, v0, p4}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a(Ljava/util/List;[Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    move-object v4, p2
-
-    move-object v5, p3
-
-    move-object v9, p5
-
-    .line 49
-    invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteQueryBuilder;->query(Landroid/database/sqlite/SQLiteDatabase;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 1
-
-    const-string p3, "uri"
-
-    invoke-static {p1, p3}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 93
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->a(Landroid/net/Uri;)Ljava/lang/String;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    if-nez p2, :cond_0
-
-    .line 94
-    invoke-static {}, Lkotlin/jvm/internal/Intrinsics;->a()V
-
-    :cond_0
-    const-string p3, "value"
-
-    invoke-virtual {p2, p3}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    .line 95
-    iget-boolean p3, p0, Lcom/samsung/android/app/music/provider/setting/SettingProvider;->b:Z
-
-    if-eqz p3, :cond_1
-
-    const-string p3, "SettingProvider"
-
-    new-instance p4, Ljava/lang/StringBuilder;
-
-    invoke-direct {p4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v0, "make cache from insert | key: "
-
-    invoke-virtual {p4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, " | value: "
-
-    invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p3, p1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
-    const-string p1, "SettingProvider"
-
-    const-string p2, "This function is not supported. So do not call this."
-
-    .line 97
-    invoke-static {p1, p2}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    return p1
+    throw v0
 .end method

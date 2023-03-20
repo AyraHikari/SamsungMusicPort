@@ -1,87 +1,70 @@
 .class public Lcom/google/android/flexbox/FlexboxLayout;
 .super Landroid/view/ViewGroup;
-.source "SourceFile"
+.source "FlexboxLayout.java"
 
 # interfaces
-.implements Lcom/google/android/flexbox/FlexContainer;
+.implements Lcom/google/android/flexbox/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+        Lcom/google/android/flexbox/FlexboxLayout$a;
     }
 .end annotation
 
 
 # instance fields
-.field private a:I
+.field public a:I
 
-.field private b:I
+.field public b:I
 
-.field private c:I
+.field public c:I
 
-.field private d:I
+.field public d:I
 
-.field private e:I
+.field public e:I
 
-.field private f:I
+.field public f:I
 
-.field private g:Landroid/graphics/drawable/Drawable;
-    .annotation build Landroid/support/annotation/Nullable;
-    .end annotation
-.end field
+.field public g:Landroid/graphics/drawable/Drawable;
 
-.field private h:Landroid/graphics/drawable/Drawable;
-    .annotation build Landroid/support/annotation/Nullable;
-    .end annotation
-.end field
+.field public h:Landroid/graphics/drawable/Drawable;
 
-.field private i:I
+.field public o:I
 
-.field private j:I
+.field public p:I
 
-.field private k:I
+.field public q:I
 
-.field private l:I
+.field public r:I
 
-.field private m:[I
+.field public s:[I
 
-.field private n:Landroid/util/SparseIntArray;
+.field public t:Landroid/util/SparseIntArray;
 
-.field private o:Lcom/google/android/flexbox/FlexboxHelper;
+.field public u:Lcom/google/android/flexbox/d;
 
-.field private p:Ljava/util/List;
+.field public v:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/google/android/flexbox/FlexLine;",
+            "Lcom/google/android/flexbox/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
+.field public w:Lcom/google/android/flexbox/d$b;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 208
-    invoke-direct {p0, p1, v0}, Lcom/google/android/flexbox/FlexboxLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 212
+    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/flexbox/FlexboxLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -90,37 +73,37 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
 
-    .line 216
+    .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 v0, -0x1
 
-    .line 121
+    .line 3
     iput v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->f:I
 
-    .line 197
-    new-instance v1, Lcom/google/android/flexbox/FlexboxHelper;
+    .line 4
+    new-instance v1, Lcom/google/android/flexbox/d;
 
-    invoke-direct {v1, p0}, Lcom/google/android/flexbox/FlexboxHelper;-><init>(Lcom/google/android/flexbox/FlexContainer;)V
+    invoke-direct {v1, p0}, Lcom/google/android/flexbox/d;-><init>(Lcom/google/android/flexbox/a;)V
 
-    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
+    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
 
-    .line 199
+    .line 5
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
-    .line 205
-    new-instance v1, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
+    .line 6
+    new-instance v1, Lcom/google/android/flexbox/d$b;
 
-    invoke-direct {v1}, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;-><init>()V
+    invoke-direct {v1}, Lcom/google/android/flexbox/d$b;-><init>()V
 
-    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
+    iput-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
 
-    .line 218
-    sget-object v1, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout:[I
+    .line 7
+    sget-object v1, Lcom/google/android/flexbox/e;->b:[I
 
     const/4 v2, 0x0
 
@@ -128,18 +111,18 @@
 
     move-result-object p1
 
-    .line 220
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_flexDirection:I
+    .line 8
+    sget p2, Lcom/google/android/flexbox/e;->h:I
 
-    .line 221
+    .line 9
     invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
 
-    .line 222
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_flexWrap:I
+    .line 10
+    sget p2, Lcom/google/android/flexbox/e;->i:I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -147,40 +130,36 @@
 
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
-    .line 223
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_justifyContent:I
+    .line 11
+    sget p2, Lcom/google/android/flexbox/e;->j:I
 
-    .line 224
+    .line 12
     invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
 
-    .line 225
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_alignItems:I
+    .line 13
+    sget p2, Lcom/google/android/flexbox/e;->d:I
 
-    const/4 p3, 0x4
-
-    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->d:I
 
-    .line 226
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_alignContent:I
+    .line 14
+    sget p2, Lcom/google/android/flexbox/e;->c:I
 
-    const/4 p3, 0x5
-
-    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->e:I
 
-    .line 227
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_maxLine:I
+    .line 15
+    sget p2, Lcom/google/android/flexbox/e;->k:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -188,8 +167,8 @@
 
     iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->f:I
 
-    .line 228
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_dividerDrawable:I
+    .line 16
+    sget p2, Lcom/google/android/flexbox/e;->e:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -197,43 +176,43 @@
 
     if-eqz p2, :cond_0
 
-    .line 230
+    .line 17
     invoke-virtual {p0, p2}, Lcom/google/android/flexbox/FlexboxLayout;->setDividerDrawableHorizontal(Landroid/graphics/drawable/Drawable;)V
 
-    .line 231
+    .line 18
     invoke-virtual {p0, p2}, Lcom/google/android/flexbox/FlexboxLayout;->setDividerDrawableVertical(Landroid/graphics/drawable/Drawable;)V
 
-    .line 233
+    .line 19
     :cond_0
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_dividerDrawableHorizontal:I
+    sget p2, Lcom/google/android/flexbox/e;->f:I
 
-    .line 234
+    .line 20
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     if-eqz p2, :cond_1
 
-    .line 236
+    .line 21
     invoke-virtual {p0, p2}, Lcom/google/android/flexbox/FlexboxLayout;->setDividerDrawableHorizontal(Landroid/graphics/drawable/Drawable;)V
 
-    .line 238
+    .line 22
     :cond_1
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_dividerDrawableVertical:I
+    sget p2, Lcom/google/android/flexbox/e;->g:I
 
-    .line 239
+    .line 23
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     if-eqz p2, :cond_2
 
-    .line 241
+    .line 24
     invoke-virtual {p0, p2}, Lcom/google/android/flexbox/FlexboxLayout;->setDividerDrawableVertical(Landroid/graphics/drawable/Drawable;)V
 
-    .line 243
+    .line 25
     :cond_2
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_showDivider:I
+    sget p2, Lcom/google/android/flexbox/e;->l:I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -241,2830 +220,248 @@
 
     if-eqz p2, :cond_3
 
-    .line 245
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    .line 26
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
 
-    .line 246
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
+    .line 27
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
 
-    .line 248
+    .line 28
     :cond_3
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_showDividerVertical:I
+    sget p2, Lcom/google/android/flexbox/e;->n:I
 
-    .line 249
+    .line 29
     invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
     if-eqz p2, :cond_4
 
-    .line 251
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    .line 30
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
 
-    .line 253
+    .line 31
     :cond_4
-    sget p2, Lcom/google/android/flexbox/R$styleable;->FlexboxLayout_showDividerHorizontal:I
+    sget p2, Lcom/google/android/flexbox/e;->m:I
 
-    .line 254
+    .line 32
     invoke-virtual {p1, p2, v2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
     if-eqz p2, :cond_5
 
-    .line 256
-    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
+    .line 33
+    iput p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
 
-    .line 258
+    .line 34
     :cond_5
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
 .end method
 
-.method private a(II)V
-    .locals 8
 
-    .line 345
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+# virtual methods
+.method public final A()V
+    .locals 1
 
-    invoke-interface {v0}, Ljava/util/List;->clear()V
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
 
-    .line 347
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
+    if-nez v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;->a()V
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
 
-    .line 348
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
+    if-nez v0, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
+    const/4 v0, 0x1
 
-    .line 349
-    invoke-virtual {v0, v1, p1, p2}, Lcom/google/android/flexbox/FlexboxHelper;->a(Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;II)V
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setWillNotDraw(Z)V
 
-    .line 351
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
+    goto :goto_0
 
-    iget-object v0, v0, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;->a:Ljava/util/List;
+    :cond_0
+    const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setWillNotDraw(Z)V
 
-    .line 353
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
+    :goto_0
+    return-void
+.end method
 
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/flexbox/FlexboxHelper;->a(II)V
+.method public final a(I)Z
+    .locals 3
 
-    .line 356
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d:I
+    const/4 v0, 0x0
 
-    const/4 v1, 0x3
+    move v1, v0
 
-    if-ne v0, v1, :cond_4
+    :goto_0
+    if-ge v1, p1, :cond_1
 
-    .line 357
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/flexbox/c;
+
+    invoke-virtual {v2}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v2
+
+    if-lez v2, :cond_0
+
+    return v0
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:Landroid/util/SparseIntArray;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    new-instance v0, Landroid/util/SparseIntArray;
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v1
+
+    invoke-direct {v0, v1}, Landroid/util/SparseIntArray;-><init>(I)V
+
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:Landroid/util/SparseIntArray;
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:Landroid/util/SparseIntArray;
+
+    .line 4
+    invoke-virtual {v0, p1, p2, p3, v1}, Lcom/google/android/flexbox/d;->n(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;Landroid/util/SparseIntArray;)[I
 
     move-result-object v0
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->s:[I
 
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/flexbox/FlexLine;
-
-    const/high16 v2, -0x80000000
-
-    const/4 v3, 0x0
-
-    .line 360
-    :goto_1
-    iget v4, v1, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    if-ge v3, v4, :cond_3
-
-    .line 361
-    iget v4, v1, Lcom/google/android/flexbox/FlexLine;->o:I
-
-    add-int/2addr v4, v3
-
-    .line 362
-    invoke-virtual {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->c(I)Landroid/view/View;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_2
-
-    .line 363
-    invoke-virtual {v4}, Landroid/view/View;->getVisibility()I
-
-    move-result v5
-
-    const/16 v6, 0x8
-
-    if-ne v5, v6, :cond_0
-
-    goto :goto_2
-
-    .line 366
-    :cond_0
-    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    .line 367
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
-
-    const/4 v7, 0x2
-
-    if-eq v6, v7, :cond_1
-
-    .line 368
-    iget v6, v1, Lcom/google/android/flexbox/FlexLine;->l:I
-
-    invoke-virtual {v4}, Landroid/view/View;->getBaseline()I
-
-    move-result v7
-
-    sub-int/2addr v6, v7
-
-    .line 369
-    iget v7, v5, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->topMargin:I
-
-    invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
-
-    move-result v6
-
-    .line 371
-    invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v4
-
-    add-int/2addr v4, v6
-
-    iget v5, v5, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->bottomMargin:I
-
-    add-int/2addr v4, v5
-
-    .line 370
-    invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    goto :goto_2
-
-    .line 373
-    :cond_1
-    iget v6, v1, Lcom/google/android/flexbox/FlexLine;->l:I
-
-    invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v7
-
-    sub-int/2addr v6, v7
-
-    .line 374
-    invoke-virtual {v4}, Landroid/view/View;->getBaseline()I
-
-    move-result v7
-
-    add-int/2addr v6, v7
-
-    .line 375
-    iget v7, v5, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->bottomMargin:I
-
-    invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
-
-    move-result v6
-
-    .line 377
-    invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v4
-
-    iget v5, v5, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->topMargin:I
-
-    add-int/2addr v4, v5
-
-    add-int/2addr v4, v6
-
-    .line 376
-    invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    :cond_2
-    :goto_2
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    .line 380
-    :cond_3
-    iput v2, v1, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    goto :goto_0
-
-    .line 384
-    :cond_4
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    .line 385
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingTop()I
-
-    move-result v1
-
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingBottom()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    .line 384
-    invoke-virtual {v0, p1, p2, v1}, Lcom/google/android/flexbox/FlexboxHelper;->b(III)V
-
-    .line 388
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    invoke-virtual {v0}, Lcom/google/android/flexbox/FlexboxHelper;->a()V
-
-    .line 389
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
-
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
-
-    iget v1, v1, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;->b:I
-
-    invoke-direct {p0, v0, p1, p2, v1}, Lcom/google/android/flexbox/FlexboxLayout;->a(IIII)V
+    .line 5
+    invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
     return-void
 .end method
 
-.method private a(IIII)V
-    .locals 8
-
-    .line 435
-    invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
-
-    move-result v0
-
-    .line 436
-    invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
-
-    move-result v1
-
-    .line 437
-    invoke-static {p3}, Landroid/view/View$MeasureSpec;->getMode(I)I
-
-    move-result v2
-
-    .line 438
-    invoke-static {p3}, Landroid/view/View$MeasureSpec;->getSize(I)I
-
-    move-result v3
-
-    packed-switch p1, :pswitch_data_0
-
-    .line 454
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string p4, "Invalid flex direction: "
-
-    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p2
-
-    .line 450
-    :pswitch_0
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getLargestMainSize()I
-
-    move-result p1
-
-    .line 451
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getSumOfCrossSize()I
-
-    move-result v4
-
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingLeft()I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingRight()I
-
-    move-result v5
-
-    add-int/2addr v4, v5
-
-    goto :goto_0
-
-    .line 444
-    :pswitch_1
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getSumOfCrossSize()I
-
-    move-result p1
-
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingTop()I
-
-    move-result v4
-
-    add-int/2addr p1, v4
-
-    .line 445
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingBottom()I
-
-    move-result v4
-
-    add-int/2addr p1, v4
-
-    .line 446
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getLargestMainSize()I
-
-    move-result v4
-
-    :goto_0
-    const/high16 v5, 0x1000000
-
-    const/high16 v6, 0x40000000    # 2.0f
-
-    const/high16 v7, -0x80000000
-
-    if-eq v0, v7, :cond_3
-
-    if-eqz v0, :cond_2
-
-    if-ne v0, v6, :cond_1
-
-    if-ge v1, v4, :cond_0
-
-    .line 462
-    invoke-static {p4, v5}, Landroid/view/View;->combineMeasuredStates(II)I
-
-    move-result p4
-
-    .line 464
-    :cond_0
-    invoke-static {v1, p2, p4}, Landroid/view/View;->resolveSizeAndState(III)I
-
-    move-result p2
-
-    goto :goto_2
-
-    .line 484
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string p3, "Unknown width mode is set: "
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 480
-    :cond_2
-    invoke-static {v4, p2, p4}, Landroid/view/View;->resolveSizeAndState(III)I
-
-    move-result p2
-
-    goto :goto_2
-
-    :cond_3
-    if-ge v1, v4, :cond_4
-
-    .line 470
-    invoke-static {p4, v5}, Landroid/view/View;->combineMeasuredStates(II)I
-
-    move-result p4
-
-    goto :goto_1
-
-    :cond_4
-    move v1, v4
-
-    .line 474
-    :goto_1
-    invoke-static {v1, p2, p4}, Landroid/view/View;->resolveSizeAndState(III)I
-
-    move-result p2
-
-    :goto_2
-    const/16 v0, 0x100
-
-    if-eq v2, v7, :cond_8
-
-    if-eqz v2, :cond_7
-
-    if-ne v2, v6, :cond_6
-
-    if-ge v3, p1, :cond_5
-
-    .line 490
-    invoke-static {p4, v0}, Landroid/view/View;->combineMeasuredStates(II)I
-
-    move-result p4
-
-    .line 494
-    :cond_5
-    invoke-static {v3, p3, p4}, Landroid/view/View;->resolveSizeAndState(III)I
-
-    move-result p1
-
-    goto :goto_3
-
-    .line 515
-    :cond_6
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string p3, "Unknown height mode is set: "
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 510
-    :cond_7
-    invoke-static {p1, p3, p4}, Landroid/view/View;->resolveSizeAndState(III)I
-
-    move-result p1
-
-    goto :goto_3
-
-    :cond_8
-    if-ge v3, p1, :cond_9
-
-    .line 499
-    invoke-static {p4, v0}, Landroid/view/View;->combineMeasuredStates(II)I
-
-    move-result p4
-
-    move p1, v3
-
-    .line 505
-    :cond_9
-    invoke-static {p1, p3, p4}, Landroid/view/View;->resolveSizeAndState(III)I
-
-    move-result p1
-
-    .line 517
-    :goto_3
-    invoke-virtual {p0, p2, p1}, Lcom/google/android/flexbox/FlexboxLayout;->setMeasuredDimension(II)V
-
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_1
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method private a(Landroid/graphics/Canvas;III)V
-    .locals 2
-
-    .line 1109
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 1112
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
-
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr v1, p2
-
-    add-int/2addr p4, p3
-
-    invoke-virtual {v0, p2, p3, v1, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 1113
-    iget-object p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    return-void
-.end method
-
-.method private a(Landroid/graphics/Canvas;ZZ)V
-    .locals 12
-
-    .line 959
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingLeft()I
-
-    move-result v0
-
-    .line 960
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingRight()I
-
-    move-result v1
-
-    .line 961
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getWidth()I
-
-    move-result v2
-
-    sub-int/2addr v2, v1
-
-    sub-int/2addr v2, v0
-
-    const/4 v1, 0x0
-
-    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    .line 962
-    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v3
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v4, v3, :cond_a
-
-    .line 963
-    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/google/android/flexbox/FlexLine;
-
-    const/4 v6, 0x0
-
-    .line 964
-    :goto_1
-    iget v7, v5, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    if-ge v6, v7, :cond_5
-
-    .line 965
-    iget v7, v5, Lcom/google/android/flexbox/FlexLine;->o:I
-
-    add-int/2addr v7, v6
-
-    .line 966
-    invoke-virtual {p0, v7}, Lcom/google/android/flexbox/FlexboxLayout;->c(I)Landroid/view/View;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_4
-
-    .line 967
-    invoke-virtual {v8}, Landroid/view/View;->getVisibility()I
-
-    move-result v9
-
-    const/16 v10, 0x8
-
-    if-ne v9, v10, :cond_0
-
-    goto :goto_4
-
-    .line 970
-    :cond_0
-    invoke-virtual {v8}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v9
-
-    check-cast v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    .line 973
-    invoke-direct {p0, v7, v6}, Lcom/google/android/flexbox/FlexboxLayout;->c(II)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    if-eqz p2, :cond_1
-
-    .line 976
-    invoke-virtual {v8}, Landroid/view/View;->getRight()I
-
-    move-result v7
-
-    iget v10, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->rightMargin:I
-
-    add-int/2addr v7, v10
-
-    goto :goto_2
-
-    .line 978
-    :cond_1
-    invoke-virtual {v8}, Landroid/view/View;->getLeft()I
-
-    move-result v7
-
-    iget v10, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->leftMargin:I
-
-    sub-int/2addr v7, v10
-
-    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    sub-int/2addr v7, v10
-
-    .line 981
-    :goto_2
-    iget v10, v5, Lcom/google/android/flexbox/FlexLine;->b:I
-
-    iget v11, v5, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    invoke-direct {p0, p1, v7, v10, v11}, Lcom/google/android/flexbox/FlexboxLayout;->a(Landroid/graphics/Canvas;III)V
-
-    .line 985
-    :cond_2
-    iget v7, v5, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    add-int/lit8 v7, v7, -0x1
-
-    if-ne v6, v7, :cond_4
-
-    .line 986
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
-
-    and-int/lit8 v7, v7, 0x4
-
-    if-lez v7, :cond_4
-
-    if-eqz p2, :cond_3
-
-    .line 989
-    invoke-virtual {v8}, Landroid/view/View;->getLeft()I
-
-    move-result v7
-
-    iget v8, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->leftMargin:I
-
-    sub-int/2addr v7, v8
-
-    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    sub-int/2addr v7, v8
-
-    goto :goto_3
-
-    .line 991
-    :cond_3
-    invoke-virtual {v8}, Landroid/view/View;->getRight()I
-
-    move-result v7
-
-    iget v8, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->rightMargin:I
-
-    add-int/2addr v7, v8
-
-    .line 994
-    :goto_3
-    iget v8, v5, Lcom/google/android/flexbox/FlexLine;->b:I
-
-    iget v9, v5, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    invoke-direct {p0, p1, v7, v8, v9}, Lcom/google/android/flexbox/FlexboxLayout;->a(Landroid/graphics/Canvas;III)V
-
-    :cond_4
-    :goto_4
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1
-
-    .line 1001
-    :cond_5
-    invoke-direct {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->d(I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_7
-
-    if-eqz p3, :cond_6
-
-    .line 1004
-    iget v6, v5, Lcom/google/android/flexbox/FlexLine;->d:I
-
-    goto :goto_5
-
-    .line 1006
-    :cond_6
-    iget v6, v5, Lcom/google/android/flexbox/FlexLine;->b:I
-
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    sub-int/2addr v6, v7
-
-    .line 1008
-    :goto_5
-    invoke-direct {p0, p1, v0, v6, v2}, Lcom/google/android/flexbox/FlexboxLayout;->b(Landroid/graphics/Canvas;III)V
-
-    .line 1012
-    :cond_7
-    invoke-direct {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->f(I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_9
-
-    .line 1013
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 v6, v6, 0x4
-
-    if-lez v6, :cond_9
-
-    if-eqz p3, :cond_8
-
-    .line 1016
-    iget v5, v5, Lcom/google/android/flexbox/FlexLine;->b:I
-
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    sub-int/2addr v5, v6
-
-    goto :goto_6
-
-    .line 1018
-    :cond_8
-    iget v5, v5, Lcom/google/android/flexbox/FlexLine;->d:I
-
-    .line 1020
-    :goto_6
-    invoke-direct {p0, p1, v0, v5, v2}, Lcom/google/android/flexbox/FlexboxLayout;->b(Landroid/graphics/Canvas;III)V
-
-    :cond_9
-    add-int/lit8 v4, v4, 0x1
-
-    goto/16 :goto_0
-
-    :cond_a
-    return-void
-.end method
-
-.method private a(ZIIII)V
-    .locals 27
-
-    move-object/from16 v0, p0
-
-    .line 614
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingLeft()I
-
-    move-result v2
-
-    .line 615
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingRight()I
-
-    move-result v3
-
-    sub-int v4, p5, p3
-
-    sub-int v5, p4, p2
-
-    .line 624
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingBottom()I
-
-    move-result v6
-
-    sub-int/2addr v4, v6
-
-    .line 625
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingTop()I
-
-    move-result v6
-
-    .line 631
-    iget-object v7, v0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v7}, Ljava/util/List;->size()I
-
-    move-result v7
-
-    move v9, v6
-
-    move v6, v4
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v4, v7, :cond_d
-
-    .line 632
-    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v10, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v10
-
-    check-cast v10, Lcom/google/android/flexbox/FlexLine;
-
-    .line 633
-    invoke-direct {v0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->d(I)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_0
-
-    .line 634
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    sub-int/2addr v6, v11
-
-    .line 635
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v9, v11
-
-    .line 638
-    :cond_0
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
-
-    const/4 v12, 0x0
-
-    const/high16 v13, 0x40000000    # 2.0f
-
-    const/4 v15, 0x1
-
-    packed-switch v11, :pswitch_data_0
-
-    .line 680
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Invalid justifyContent is set: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 670
-    :pswitch_0
-    invoke-virtual {v10}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v11
-
-    if-eqz v11, :cond_1
-
-    .line 672
-    iget v13, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v13, v5, v13
-
-    int-to-float v13, v13
-
-    add-int/lit8 v11, v11, 0x1
-
-    int-to-float v11, v11
-
-    div-float v11, v13, v11
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v11, 0x0
-
-    :goto_1
-    int-to-float v13, v2
-
-    add-float/2addr v13, v11
-
-    sub-int v14, v5, v3
-
-    int-to-float v14, v14
-
-    sub-float/2addr v14, v11
-
-    goto :goto_5
-
-    .line 652
-    :pswitch_1
-    invoke-virtual {v10}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v11
-
-    if-eqz v11, :cond_2
-
-    .line 654
-    iget v14, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v14, v5, v14
-
-    int-to-float v14, v14
-
-    int-to-float v11, v11
-
-    div-float v11, v14, v11
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v11, 0x0
-
-    :goto_2
-    int-to-float v14, v2
-
-    div-float v13, v11, v13
-
-    add-float/2addr v14, v13
-
-    sub-int v8, v5, v3
-
-    int-to-float v8, v8
-
-    sub-float/2addr v8, v13
-
-    move v13, v14
-
-    move v14, v8
-
-    goto :goto_5
-
-    :pswitch_2
-    int-to-float v13, v2
-
-    .line 663
-    invoke-virtual {v10}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v8
-
-    if-eq v8, v15, :cond_3
-
-    add-int/lit8 v8, v8, -0x1
-
-    int-to-float v8, v8
-
-    goto :goto_3
-
-    :cond_3
-    const/high16 v8, 0x3f800000    # 1.0f
-
-    .line 665
-    :goto_3
-    iget v11, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v11, v5, v11
-
-    int-to-float v11, v11
-
-    div-float v8, v11, v8
-
-    sub-int v11, v5, v3
-
-    int-to-float v14, v11
-
-    move v11, v8
-
-    goto :goto_5
-
-    :pswitch_3
-    int-to-float v8, v2
-
-    .line 648
-    iget v11, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v11, v5, v11
-
-    int-to-float v11, v11
-
-    div-float/2addr v11, v13
-
-    add-float/2addr v8, v11
-
-    sub-int v11, v5, v3
-
-    int-to-float v11, v11
-
-    .line 649
-    iget v14, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v14, v5, v14
-
-    int-to-float v14, v14
-
-    div-float/2addr v14, v13
-
-    sub-float v14, v11, v14
-
-    move v13, v8
-
-    goto :goto_4
-
-    .line 644
-    :pswitch_4
-    iget v8, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v8, v5, v8
-
-    add-int/2addr v8, v3
-
-    int-to-float v13, v8
-
-    .line 645
-    iget v8, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int/2addr v8, v2
-
-    int-to-float v14, v8
-
-    goto :goto_4
-
-    :pswitch_5
-    int-to-float v13, v2
-
-    sub-int v8, v5, v3
-
-    int-to-float v14, v8
-
-    :goto_4
-    const/4 v11, 0x0
-
-    .line 683
-    :goto_5
-    invoke-static {v11, v12}, Ljava/lang/Math;->max(FF)F
-
-    move-result v8
-
-    move v11, v14
-
-    const/4 v14, 0x0
-
-    .line 685
-    :goto_6
-    iget v12, v10, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    if-ge v14, v12, :cond_c
-
-    .line 686
-    iget v12, v10, Lcom/google/android/flexbox/FlexLine;->o:I
-
-    add-int/2addr v12, v14
-
-    .line 687
-    invoke-virtual {v0, v12}, Lcom/google/android/flexbox/FlexboxLayout;->c(I)Landroid/view/View;
-
-    move-result-object v18
-
-    if-eqz v18, :cond_b
-
-    .line 688
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getVisibility()I
-
-    move-result v15
-
-    move/from16 v20, v2
-
-    const/16 v2, 0x8
-
-    if-ne v15, v2, :cond_4
-
-    goto/16 :goto_b
-
-    .line 691
-    :cond_4
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    .line 692
-    iget v15, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->leftMargin:I
-
-    int-to-float v15, v15
-
-    add-float/2addr v13, v15
-
-    .line 693
-    iget v15, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->rightMargin:I
-
-    int-to-float v15, v15
-
-    sub-float/2addr v11, v15
-
-    .line 696
-    invoke-direct {v0, v12, v14}, Lcom/google/android/flexbox/FlexboxLayout;->c(II)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_5
-
-    .line 697
-    iget v12, v0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    int-to-float v15, v12
-
-    add-float/2addr v13, v15
-
-    sub-float/2addr v11, v15
-
-    move/from16 v21, v11
-
-    move/from16 v23, v12
-
-    move/from16 v22, v13
-
-    goto :goto_7
-
-    :cond_5
-    move/from16 v21, v11
-
-    move/from16 v22, v13
-
-    const/16 v23, 0x0
-
-    .line 701
-    :goto_7
-    iget v11, v10, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    const/4 v15, 0x1
-
-    sub-int/2addr v11, v15
-
-    if-ne v14, v11, :cond_6
-
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
-
-    and-int/lit8 v11, v11, 0x4
-
-    if-lez v11, :cond_6
-
-    .line 702
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    move/from16 v19, v11
-
-    goto :goto_8
-
-    :cond_6
-    const/16 v19, 0x0
-
-    .line 705
-    :goto_8
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
-
-    const/4 v12, 0x2
-
-    if-ne v11, v12, :cond_8
-
-    if-eqz p1, :cond_7
-
-    .line 707
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    .line 708
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v13
-
-    sub-int v16, v12, v13
-
-    .line 709
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v12
-
-    sub-int v17, v6, v12
-
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v24
-
-    move-object/from16 v12, v18
-
-    move-object v13, v10
-
-    move/from16 v25, v14
-
-    move/from16 v14, v16
-
-    const/16 v26, 0x1
-
-    move/from16 v15, v17
-
-    move/from16 v16, v24
-
-    move/from16 v17, v6
-
-    .line 707
-    invoke-virtual/range {v11 .. v17}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;IIII)V
-
-    goto :goto_9
-
-    :cond_7
-    move/from16 v25, v14
-
-    const/16 v26, 0x1
-
-    .line 712
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    .line 713
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v14
-
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v12
-
-    sub-int v15, v6, v12
-
-    .line 714
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v13
-
-    add-int v16, v12, v13
-
-    move-object/from16 v12, v18
-
-    move-object v13, v10
-
-    move/from16 v17, v6
-
-    .line 712
-    invoke-virtual/range {v11 .. v17}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;IIII)V
-
-    goto :goto_9
-
-    :cond_8
-    move/from16 v25, v14
-
-    const/16 v26, 0x1
-
-    if-eqz p1, :cond_9
-
-    .line 718
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    .line 719
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v13
-
-    sub-int v14, v12, v13
-
-    .line 720
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v16
-
-    .line 721
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v12
-
-    add-int v17, v9, v12
-
-    move-object/from16 v12, v18
-
-    move-object v13, v10
-
-    move v15, v9
-
-    .line 718
-    invoke-virtual/range {v11 .. v17}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;IIII)V
-
-    goto :goto_9
-
-    .line 723
-    :cond_9
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    .line 724
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v14
-
-    .line 725
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v13
-
-    add-int v16, v12, v13
-
-    .line 726
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v12
-
-    add-int v17, v9, v12
-
-    move-object/from16 v12, v18
-
-    move-object v13, v10
-
-    move v15, v9
-
-    .line 723
-    invoke-virtual/range {v11 .. v17}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;IIII)V
-
-    .line 729
-    :goto_9
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v11
-
-    int-to-float v11, v11
-
-    add-float/2addr v11, v8
-
-    iget v12, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->rightMargin:I
-
-    int-to-float v12, v12
-
-    add-float/2addr v11, v12
-
-    add-float v22, v22, v11
-
-    .line 730
-    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v11
-
-    int-to-float v11, v11
-
-    add-float/2addr v11, v8
-
-    iget v2, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->leftMargin:I
-
-    int-to-float v2, v2
-
-    add-float/2addr v11, v2
-
-    sub-float v21, v21, v11
-
-    if-eqz p1, :cond_a
-
-    const/4 v14, 0x0
-
-    const/16 v16, 0x0
-
-    move-object v11, v10
-
-    move-object/from16 v12, v18
-
-    move/from16 v13, v19
-
-    move/from16 v15, v23
-
-    .line 733
-    invoke-virtual/range {v11 .. v16}, Lcom/google/android/flexbox/FlexLine;->a(Landroid/view/View;IIII)V
-
-    goto :goto_a
-
-    :cond_a
-    const/4 v14, 0x0
-
-    const/16 v16, 0x0
-
-    move-object v11, v10
-
-    move-object/from16 v12, v18
-
-    move/from16 v13, v23
-
-    move/from16 v15, v19
-
-    .line 736
-    invoke-virtual/range {v11 .. v16}, Lcom/google/android/flexbox/FlexLine;->a(Landroid/view/View;IIII)V
-
-    :goto_a
-    move/from16 v11, v21
-
-    move/from16 v13, v22
-
-    goto :goto_c
-
-    :cond_b
-    move/from16 v20, v2
-
-    :goto_b
-    move/from16 v25, v14
-
-    const/16 v26, 0x1
-
-    :goto_c
-    add-int/lit8 v14, v25, 0x1
-
-    move/from16 v2, v20
-
-    const/4 v15, 0x1
-
-    goto/16 :goto_6
-
-    :cond_c
-    move/from16 v20, v2
-
-    .line 740
-    iget v2, v10, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    add-int/2addr v9, v2
-
-    .line 741
-    iget v2, v10, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    sub-int/2addr v6, v2
-
-    add-int/lit8 v4, v4, 0x1
-
-    move/from16 v2, v20
-
-    goto/16 :goto_0
-
-    :cond_d
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method private a(ZZIIII)V
-    .locals 28
-
-    move-object/from16 v0, p0
-
-    .line 769
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingTop()I
-
-    move-result v2
-
-    .line 770
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingBottom()I
-
-    move-result v3
-
-    .line 772
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingRight()I
-
-    move-result v4
-
-    .line 773
-    invoke-virtual/range {p0 .. p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingLeft()I
-
-    move-result v5
-
-    sub-int v6, p5, p3
-
-    sub-int v7, p6, p4
-
-    sub-int/2addr v6, v4
-
-    .line 788
-    iget-object v4, v0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v4}, Ljava/util/List;->size()I
-
-    move-result v4
-
-    move v9, v6
-
-    move v6, v5
-
-    const/4 v5, 0x0
-
-    :goto_0
-    if-ge v5, v4, :cond_d
-
-    .line 789
-    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v10, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v10
-
-    check-cast v10, Lcom/google/android/flexbox/FlexLine;
-
-    .line 790
-    invoke-direct {v0, v5}, Lcom/google/android/flexbox/FlexboxLayout;->d(I)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_0
-
-    .line 791
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr v6, v11
-
-    .line 792
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    sub-int/2addr v9, v11
-
-    .line 795
-    :cond_0
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
-
-    const/4 v12, 0x0
-
-    const/high16 v13, 0x40000000    # 2.0f
-
-    const/4 v15, 0x1
-
-    packed-switch v11, :pswitch_data_0
-
-    .line 837
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Invalid justifyContent is set: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 827
-    :pswitch_0
-    invoke-virtual {v10}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v11
-
-    if-eqz v11, :cond_1
-
-    .line 829
-    iget v13, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v13, v7, v13
-
-    int-to-float v13, v13
-
-    add-int/lit8 v11, v11, 0x1
-
-    int-to-float v11, v11
-
-    div-float v11, v13, v11
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v11, 0x0
-
-    :goto_1
-    int-to-float v13, v2
-
-    add-float/2addr v13, v11
-
-    sub-int v14, v7, v3
-
-    int-to-float v14, v14
-
-    sub-float/2addr v14, v11
-
-    goto :goto_5
-
-    .line 809
-    :pswitch_1
-    invoke-virtual {v10}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v11
-
-    if-eqz v11, :cond_2
-
-    .line 811
-    iget v14, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v14, v7, v14
-
-    int-to-float v14, v14
-
-    int-to-float v11, v11
-
-    div-float v11, v14, v11
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v11, 0x0
-
-    :goto_2
-    int-to-float v14, v2
-
-    div-float v13, v11, v13
-
-    add-float/2addr v14, v13
-
-    sub-int v8, v7, v3
-
-    int-to-float v8, v8
-
-    sub-float/2addr v8, v13
-
-    move v13, v14
-
-    move v14, v8
-
-    goto :goto_5
-
-    :pswitch_2
-    int-to-float v13, v2
-
-    .line 820
-    invoke-virtual {v10}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v8
-
-    if-eq v8, v15, :cond_3
-
-    add-int/lit8 v8, v8, -0x1
-
-    int-to-float v8, v8
-
-    goto :goto_3
-
-    :cond_3
-    const/high16 v8, 0x3f800000    # 1.0f
-
-    .line 822
-    :goto_3
-    iget v11, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v11, v7, v11
-
-    int-to-float v11, v11
-
-    div-float v8, v11, v8
-
-    sub-int v11, v7, v3
-
-    int-to-float v14, v11
-
-    move v11, v8
-
-    goto :goto_5
-
-    :pswitch_3
-    int-to-float v8, v2
-
-    .line 805
-    iget v11, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v11, v7, v11
-
-    int-to-float v11, v11
-
-    div-float/2addr v11, v13
-
-    add-float/2addr v8, v11
-
-    sub-int v11, v7, v3
-
-    int-to-float v11, v11
-
-    .line 806
-    iget v14, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v14, v7, v14
-
-    int-to-float v14, v14
-
-    div-float/2addr v14, v13
-
-    sub-float v14, v11, v14
-
-    move v13, v8
-
-    goto :goto_4
-
-    .line 801
-    :pswitch_4
-    iget v8, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int v8, v7, v8
-
-    add-int/2addr v8, v3
-
-    int-to-float v13, v8
-
-    .line 802
-    iget v8, v10, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    sub-int/2addr v8, v2
-
-    int-to-float v14, v8
-
-    goto :goto_4
-
-    :pswitch_5
-    int-to-float v13, v2
-
-    sub-int v8, v7, v3
-
-    int-to-float v14, v8
-
-    :goto_4
-    const/4 v11, 0x0
-
-    .line 840
-    :goto_5
-    invoke-static {v11, v12}, Ljava/lang/Math;->max(FF)F
-
-    move-result v8
-
-    move v11, v14
-
-    const/4 v14, 0x0
-
-    .line 842
-    :goto_6
-    iget v12, v10, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    if-ge v14, v12, :cond_c
-
-    .line 843
-    iget v12, v10, Lcom/google/android/flexbox/FlexLine;->o:I
-
-    add-int/2addr v12, v14
-
-    .line 844
-    invoke-virtual {v0, v12}, Lcom/google/android/flexbox/FlexboxLayout;->c(I)Landroid/view/View;
-
-    move-result-object v19
-
-    if-eqz v19, :cond_b
-
-    .line 845
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getVisibility()I
-
-    move-result v15
-
-    move/from16 v20, v2
-
-    const/16 v2, 0x8
-
-    if-ne v15, v2, :cond_4
-
-    goto/16 :goto_b
-
-    .line 848
-    :cond_4
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    .line 849
-    iget v15, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->topMargin:I
-
-    int-to-float v15, v15
-
-    add-float/2addr v13, v15
-
-    .line 850
-    iget v15, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->bottomMargin:I
-
-    int-to-float v15, v15
-
-    sub-float/2addr v11, v15
-
-    .line 853
-    invoke-direct {v0, v12, v14}, Lcom/google/android/flexbox/FlexboxLayout;->c(II)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_5
-
-    .line 854
-    iget v12, v0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    int-to-float v15, v12
-
-    add-float/2addr v13, v15
-
-    sub-float/2addr v11, v15
-
-    move/from16 v21, v11
-
-    move/from16 v23, v12
-
-    move/from16 v22, v13
-
-    goto :goto_7
-
-    :cond_5
-    move/from16 v21, v11
-
-    move/from16 v22, v13
-
-    const/16 v23, 0x0
-
-    .line 858
-    :goto_7
-    iget v11, v10, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    const/4 v15, 0x1
-
-    sub-int/2addr v11, v15
-
-    if-ne v14, v11, :cond_6
-
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 v11, v11, 0x4
-
-    if-lez v11, :cond_6
-
-    .line 860
-    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    move/from16 v24, v11
-
-    goto :goto_8
-
-    :cond_6
-    const/16 v24, 0x0
-
-    :goto_8
-    if-eqz p1, :cond_8
-
-    if-eqz p2, :cond_7
-
-    .line 864
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    const/16 v16, 0x1
-
-    .line 865
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v12
-
-    sub-int v17, v9, v12
-
-    .line 866
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v13
-
-    sub-int v18, v12, v13
-
-    .line 867
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v25
-
-    move-object/from16 v12, v19
-
-    move-object v13, v10
-
-    move/from16 v26, v14
-
-    move/from16 v14, v16
-
-    const/16 v27, 0x1
-
-    move/from16 v15, v17
-
-    move/from16 v16, v18
-
-    move/from16 v17, v9
-
-    move/from16 v18, v25
-
-    .line 864
-    invoke-virtual/range {v11 .. v18}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;ZIIII)V
-
-    goto :goto_9
-
-    :cond_7
-    move/from16 v26, v14
-
-    const/16 v27, 0x1
-
-    .line 869
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    const/4 v14, 0x1
-
-    .line 870
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v12
-
-    sub-int v15, v9, v12
-
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v16
-
-    .line 871
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v13
-
-    add-int v18, v12, v13
-
-    move-object/from16 v12, v19
-
-    move-object v13, v10
-
-    move/from16 v17, v9
-
-    .line 869
-    invoke-virtual/range {v11 .. v18}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;ZIIII)V
-
-    goto :goto_9
-
-    :cond_8
-    move/from16 v26, v14
-
-    const/16 v27, 0x1
-
-    if-eqz p2, :cond_9
-
-    .line 875
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    const/4 v14, 0x0
-
-    .line 876
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v13
-
-    sub-int v16, v12, v13
-
-    .line 877
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v12
-
-    add-int v17, v6, v12
-
-    invoke-static/range {v21 .. v21}, Ljava/lang/Math;->round(F)I
-
-    move-result v18
-
-    move-object/from16 v12, v19
-
-    move-object v13, v10
-
-    move v15, v6
-
-    .line 875
-    invoke-virtual/range {v11 .. v18}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;ZIIII)V
-
-    goto :goto_9
-
-    .line 879
-    :cond_9
-    iget-object v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    const/4 v14, 0x0
-
-    .line 880
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v16
-
-    .line 881
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredWidth()I
-
-    move-result v12
-
-    add-int v17, v6, v12
-
-    .line 882
-    invoke-static/range {v22 .. v22}, Ljava/lang/Math;->round(F)I
-
-    move-result v12
-
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v13
-
-    add-int v18, v12, v13
-
-    move-object/from16 v12, v19
-
-    move-object v13, v10
-
-    move v15, v6
-
-    .line 879
-    invoke-virtual/range {v11 .. v18}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;Lcom/google/android/flexbox/FlexLine;ZIIII)V
-
-    .line 885
-    :goto_9
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v11
-
-    int-to-float v11, v11
-
-    add-float/2addr v11, v8
-
-    iget v12, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->bottomMargin:I
-
-    int-to-float v12, v12
-
-    add-float/2addr v11, v12
-
-    add-float v22, v22, v11
-
-    .line 886
-    invoke-virtual/range {v19 .. v19}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v11
-
-    int-to-float v11, v11
-
-    add-float/2addr v11, v8
-
-    iget v2, v2, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->topMargin:I
-
-    int-to-float v2, v2
-
-    add-float/2addr v11, v2
-
-    sub-float v21, v21, v11
-
-    if-eqz p2, :cond_a
-
-    const/4 v13, 0x0
-
-    const/4 v15, 0x0
-
-    move-object v11, v10
-
-    move-object/from16 v12, v19
-
-    move/from16 v14, v24
-
-    move/from16 v16, v23
-
-    .line 889
-    invoke-virtual/range {v11 .. v16}, Lcom/google/android/flexbox/FlexLine;->a(Landroid/view/View;IIII)V
-
-    goto :goto_a
-
-    :cond_a
-    const/4 v13, 0x0
-
-    const/4 v15, 0x0
-
-    move-object v11, v10
-
-    move-object/from16 v12, v19
-
-    move/from16 v14, v23
-
-    move/from16 v16, v24
-
-    .line 892
-    invoke-virtual/range {v11 .. v16}, Lcom/google/android/flexbox/FlexLine;->a(Landroid/view/View;IIII)V
-
-    :goto_a
-    move/from16 v11, v21
-
-    move/from16 v13, v22
-
-    goto :goto_c
-
-    :cond_b
-    move/from16 v20, v2
-
-    :goto_b
-    move/from16 v26, v14
-
-    const/16 v27, 0x1
-
-    :goto_c
-    add-int/lit8 v14, v26, 0x1
-
-    move/from16 v2, v20
-
-    const/4 v15, 0x1
-
-    goto/16 :goto_6
-
-    :cond_c
-    move/from16 v20, v2
-
-    .line 896
-    iget v2, v10, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    add-int/2addr v6, v2
-
-    .line 897
-    iget v2, v10, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    sub-int/2addr v9, v2
-
-    add-int/lit8 v5, v5, 0x1
-
-    move/from16 v2, v20
-
-    goto/16 :goto_0
-
-    :cond_d
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method private b()V
-    .locals 1
-
-    .line 1464
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 1465
-    invoke-virtual {p0, v0}, Lcom/google/android/flexbox/FlexboxLayout;->setWillNotDraw(Z)V
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 1467
-    invoke-virtual {p0, v0}, Lcom/google/android/flexbox/FlexboxLayout;->setWillNotDraw(Z)V
-
-    :goto_0
-    return-void
-.end method
-
-.method private b(II)V
-    .locals 3
-
-    .line 406
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->clear()V
-
-    .line 407
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
-
-    invoke-virtual {v0}, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;->a()V
-
-    .line 408
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
-
-    invoke-virtual {v0, v1, p1, p2}, Lcom/google/android/flexbox/FlexboxHelper;->b(Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;II)V
-
-    .line 410
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
-
-    iget-object v0, v0, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;->a:Ljava/util/List;
-
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    .line 412
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/flexbox/FlexboxHelper;->a(II)V
-
-    .line 413
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    .line 414
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingLeft()I
-
-    move-result v1
-
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingRight()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    .line 413
-    invoke-virtual {v0, p1, p2, v1}, Lcom/google/android/flexbox/FlexboxHelper;->b(III)V
-
-    .line 417
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    invoke-virtual {v0}, Lcom/google/android/flexbox/FlexboxHelper;->a()V
-
-    .line 418
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
-
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;
-
-    iget v1, v1, Lcom/google/android/flexbox/FlexboxHelper$FlexLinesResult;->b:I
-
-    invoke-direct {p0, v0, p1, p2, v1}, Lcom/google/android/flexbox/FlexboxLayout;->a(IIII)V
-
-    return-void
-.end method
-
-.method private b(Landroid/graphics/Canvas;III)V
-    .locals 2
-
-    .line 1117
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 1120
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
-
-    add-int/2addr p4, p2
-
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v1, p3
-
-    .line 1121
-    invoke-virtual {v0, p2, p3, p4, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 1122
-    iget-object p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-
-    return-void
-.end method
-
-.method private b(Landroid/graphics/Canvas;ZZ)V
-    .locals 12
-
-    .line 1039
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingTop()I
-
-    move-result v0
-
-    .line 1040
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getPaddingBottom()I
-
-    move-result v1
-
-    .line 1041
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getHeight()I
-
-    move-result v2
-
-    sub-int/2addr v2, v1
-
-    sub-int/2addr v2, v0
-
-    const/4 v1, 0x0
-
-    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    .line 1042
-    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v3
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v4, v3, :cond_a
-
-    .line 1043
-    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Lcom/google/android/flexbox/FlexLine;
-
-    const/4 v6, 0x0
-
-    .line 1046
-    :goto_1
-    iget v7, v5, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    if-ge v6, v7, :cond_5
-
-    .line 1047
-    iget v7, v5, Lcom/google/android/flexbox/FlexLine;->o:I
-
-    add-int/2addr v7, v6
-
-    .line 1048
-    invoke-virtual {p0, v7}, Lcom/google/android/flexbox/FlexboxLayout;->c(I)Landroid/view/View;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_4
-
-    .line 1049
-    invoke-virtual {v8}, Landroid/view/View;->getVisibility()I
-
-    move-result v9
-
-    const/16 v10, 0x8
-
-    if-ne v9, v10, :cond_0
-
-    goto :goto_4
-
-    .line 1052
-    :cond_0
-    invoke-virtual {v8}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v9
-
-    check-cast v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    .line 1055
-    invoke-direct {p0, v7, v6}, Lcom/google/android/flexbox/FlexboxLayout;->c(II)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    if-eqz p3, :cond_1
-
-    .line 1058
-    invoke-virtual {v8}, Landroid/view/View;->getBottom()I
-
-    move-result v7
-
-    iget v10, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->bottomMargin:I
-
-    add-int/2addr v7, v10
-
-    goto :goto_2
-
-    .line 1060
-    :cond_1
-    invoke-virtual {v8}, Landroid/view/View;->getTop()I
-
-    move-result v7
-
-    iget v10, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->topMargin:I
-
-    sub-int/2addr v7, v10
-
-    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    sub-int/2addr v7, v10
-
-    .line 1063
-    :goto_2
-    iget v10, v5, Lcom/google/android/flexbox/FlexLine;->a:I
-
-    iget v11, v5, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    invoke-direct {p0, p1, v10, v7, v11}, Lcom/google/android/flexbox/FlexboxLayout;->b(Landroid/graphics/Canvas;III)V
-
-    .line 1067
-    :cond_2
-    iget v7, v5, Lcom/google/android/flexbox/FlexLine;->h:I
-
-    add-int/lit8 v7, v7, -0x1
-
-    if-ne v6, v7, :cond_4
-
-    .line 1068
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 v7, v7, 0x4
-
-    if-lez v7, :cond_4
-
-    if-eqz p3, :cond_3
-
-    .line 1071
-    invoke-virtual {v8}, Landroid/view/View;->getTop()I
-
-    move-result v7
-
-    iget v8, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->topMargin:I
-
-    sub-int/2addr v7, v8
-
-    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    sub-int/2addr v7, v8
-
-    goto :goto_3
-
-    .line 1073
-    :cond_3
-    invoke-virtual {v8}, Landroid/view/View;->getBottom()I
-
-    move-result v7
-
-    iget v8, v9, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;->bottomMargin:I
-
-    add-int/2addr v7, v8
-
-    .line 1076
-    :goto_3
-    iget v8, v5, Lcom/google/android/flexbox/FlexLine;->a:I
-
-    iget v9, v5, Lcom/google/android/flexbox/FlexLine;->g:I
-
-    invoke-direct {p0, p1, v8, v7, v9}, Lcom/google/android/flexbox/FlexboxLayout;->b(Landroid/graphics/Canvas;III)V
-
-    :cond_4
-    :goto_4
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1
-
-    .line 1083
-    :cond_5
-    invoke-direct {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->d(I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_7
-
-    if-eqz p2, :cond_6
-
-    .line 1086
-    iget v6, v5, Lcom/google/android/flexbox/FlexLine;->c:I
-
-    goto :goto_5
-
-    .line 1088
-    :cond_6
-    iget v6, v5, Lcom/google/android/flexbox/FlexLine;->a:I
-
-    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    sub-int/2addr v6, v7
-
-    .line 1090
-    :goto_5
-    invoke-direct {p0, p1, v6, v0, v2}, Lcom/google/android/flexbox/FlexboxLayout;->a(Landroid/graphics/Canvas;III)V
-
-    .line 1093
-    :cond_7
-    invoke-direct {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->f(I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_9
-
-    .line 1094
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
-
-    and-int/lit8 v6, v6, 0x4
-
-    if-lez v6, :cond_9
-
-    if-eqz p2, :cond_8
-
-    .line 1097
-    iget v5, v5, Lcom/google/android/flexbox/FlexLine;->a:I
-
-    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    sub-int/2addr v5, v6
-
-    goto :goto_6
-
-    .line 1099
-    :cond_8
-    iget v5, v5, Lcom/google/android/flexbox/FlexLine;->c:I
-
-    .line 1101
-    :goto_6
-    invoke-direct {p0, p1, v5, v0, v2}, Lcom/google/android/flexbox/FlexboxLayout;->a(Landroid/graphics/Canvas;III)V
-
-    :cond_9
-    add-int/lit8 v4, v4, 0x1
-
-    goto/16 :goto_0
-
-    :cond_a
-    return-void
-.end method
-
-.method private c(II)Z
-    .locals 1
-
-    .line 1480
-    invoke-direct {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->d(II)Z
-
-    move-result p1
-
-    const/4 p2, 0x0
-
-    const/4 v0, 0x1
-
-    if-eqz p1, :cond_3
-
-    .line 1481
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
+.method public b(Landroid/view/View;IILcom/google/android/flexbox/c;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->s(II)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 1482
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
-    and-int/2addr p1, v0
+    move-result p1
 
     if-eqz p1, :cond_0
 
-    const/4 p2, 0x1
+    .line 3
+    iget p1, p4, Lcom/google/android/flexbox/c;->e:I
 
-    :cond_0
-    return p2
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
 
-    .line 1484
-    :cond_1
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
+    add-int/2addr p1, p2
 
-    and-int/2addr p1, v0
+    iput p1, p4, Lcom/google/android/flexbox/c;->e:I
 
-    if-eqz p1, :cond_2
+    .line 4
+    iget p1, p4, Lcom/google/android/flexbox/c;->f:I
 
-    const/4 p2, 0x1
+    add-int/2addr p1, p2
 
-    :cond_2
-    return p2
-
-    .line 1487
-    :cond_3
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_5
-
-    .line 1488
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
-
-    and-int/lit8 p1, p1, 0x2
-
-    if-eqz p1, :cond_4
-
-    const/4 p2, 0x1
-
-    :cond_4
-    return p2
-
-    .line 1490
-    :cond_5
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 p1, p1, 0x2
-
-    if-eqz p1, :cond_6
-
-    const/4 p2, 0x1
-
-    :cond_6
-    return p2
-.end method
-
-.method private d(I)Z
-    .locals 2
-
-    const/4 v0, 0x0
-
-    if-ltz p1, :cond_8
-
-    .line 1512
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    if-lt p1, v1, :cond_0
+    iput p1, p4, Lcom/google/android/flexbox/c;->f:I
 
     goto :goto_0
 
-    .line 1515
+    .line 5
     :cond_0
-    invoke-direct {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->e(I)Z
+    iget p1, p4, Lcom/google/android/flexbox/c;->e:I
 
-    move-result p1
+    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
 
-    const/4 v1, 0x1
+    add-int/2addr p1, p2
 
-    if-eqz p1, :cond_4
+    iput p1, p4, Lcom/google/android/flexbox/c;->e:I
 
-    .line 1516
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
+    .line 6
+    iget p1, p4, Lcom/google/android/flexbox/c;->f:I
 
-    move-result p1
+    add-int/2addr p1, p2
 
-    if-eqz p1, :cond_2
-
-    .line 1517
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/2addr p1, v1
-
-    if-eqz p1, :cond_1
-
-    const/4 v0, 0x1
+    iput p1, p4, Lcom/google/android/flexbox/c;->f:I
 
     :cond_1
-    return v0
+    :goto_0
+    return-void
+.end method
 
-    .line 1519
-    :cond_2
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+.method public c(III)I
+    .locals 0
 
-    and-int/2addr p1, v1
-
-    if-eqz p1, :cond_3
-
-    const/4 v0, 0x1
-
-    :cond_3
-    return v0
-
-    .line 1522
-    :cond_4
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
+    invoke-static {p1, p2, p3}, Landroid/view/ViewGroup;->getChildMeasureSpec(III)I
 
     move-result p1
 
-    if-eqz p1, :cond_6
-
-    .line 1523
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 p1, p1, 0x2
-
-    if-eqz p1, :cond_5
-
-    const/4 v0, 0x1
-
-    :cond_5
-    return v0
-
-    .line 1525
-    :cond_6
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
-
-    and-int/lit8 p1, p1, 0x2
-
-    if-eqz p1, :cond_7
-
-    const/4 v0, 0x1
-
-    :cond_7
-    return v0
-
-    :cond_8
-    :goto_0
-    return v0
+    return p1
 .end method
 
-.method private d(II)Z
+.method public checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
+    .locals 0
+
+    instance-of p1, p1, Lcom/google/android/flexbox/FlexboxLayout$a;
+
+    return p1
+.end method
+
+.method public final d(II)Z
     .locals 4
 
     const/4 v0, 0x1
 
-    const/4 v1, 0x1
+    move v1, v0
 
     :goto_0
     if-gt v1, p2, :cond_1
 
     sub-int v2, p1, v1
 
-    .line 1497
-    invoke-virtual {p0, v2}, Lcom/google/android/flexbox/FlexboxLayout;->c(I)Landroid/view/View;
+    .line 1
+    invoke-virtual {p0, v2}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    .line 1498
+    .line 2
     invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
 
     move-result v2
@@ -3086,151 +483,27 @@
     return v0
 .end method
 
-.method private e(I)Z
-    .locals 3
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, p1, :cond_1
-
-    .line 1532
-    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/flexbox/FlexLine;
-
-    invoke-virtual {v2}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v2
-
-    if-lez v2, :cond_0
-
-    return v0
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method private f(I)Z
-    .locals 3
-
-    const/4 v0, 0x0
-
-    if-ltz p1, :cond_6
-
-    .line 1546
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    if-lt p1, v1, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    const/4 v1, 0x1
-
-    add-int/2addr p1, v1
-
-    .line 1550
-    :goto_0
-    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    if-ge p1, v2, :cond_2
-
-    .line 1551
-    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
-
-    invoke-interface {v2, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/flexbox/FlexLine;
-
-    invoke-virtual {v2}, Lcom/google/android/flexbox/FlexLine;->c()I
-
-    move-result v2
-
-    if-lez v2, :cond_1
-
-    return v0
-
-    :cond_1
-    add-int/lit8 p1, p1, 0x1
-
-    goto :goto_0
-
-    .line 1555
-    :cond_2
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_4
-
-    .line 1556
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 p1, p1, 0x4
-
-    if-eqz p1, :cond_3
-
-    const/4 v0, 0x1
-
-    :cond_3
-    return v0
-
-    .line 1558
-    :cond_4
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
-
-    and-int/lit8 p1, p1, 0x4
-
-    if-eqz p1, :cond_5
-
-    const/4 v0, 0x1
-
-    :cond_5
-    return v0
-
-    :cond_6
-    :goto_1
-    return v0
-.end method
-
-
-# virtual methods
-.method public a(III)I
+.method public e(I)Landroid/view/View;
     .locals 0
 
-    .line 1293
-    invoke-static {p1, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->getChildMeasureSpec(III)I
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public f(III)I
+    .locals 0
+
+    invoke-static {p1, p2, p3}, Landroid/view/ViewGroup;->getChildMeasureSpec(III)I
 
     move-result p1
 
     return p1
 .end method
 
-.method public a(Landroid/view/View;)I
+.method public g(Landroid/view/View;)I
     .locals 0
 
     const/4 p1, 0x0
@@ -3238,411 +511,54 @@
     return p1
 .end method
 
-.method public a(Landroid/view/View;II)I
-    .locals 1
-
-    .line 1249
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
-
-    move-result p1
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    .line 1250
-    invoke-direct {p0, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->c(II)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    .line 1251
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr v0, p1
-
-    .line 1253
-    :cond_0
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
-
-    and-int/lit8 p1, p1, 0x4
-
-    if-lez p1, :cond_3
-
-    .line 1254
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr v0, p1
-
-    goto :goto_0
-
-    .line 1257
-    :cond_1
-    invoke-direct {p0, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->c(II)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    .line 1258
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v0, p1
-
-    .line 1260
-    :cond_2
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 p1, p1, 0x4
-
-    if-lez p1, :cond_3
-
-    .line 1261
-    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v0, p1
-
-    :cond_3
-    :goto_0
-    return v0
-.end method
-
-.method public a(I)Landroid/view/View;
+.method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
 
-    .line 294
-    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->getChildAt(I)Landroid/view/View;
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->q(Landroid/util/AttributeSet;)Lcom/google/android/flexbox/FlexboxLayout$a;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public a(Landroid/util/AttributeSet;)Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-    .locals 2
+.method public generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+    .locals 1
 
-    .line 1132
-    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1, p1}, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    return-object v0
-.end method
-
-.method public a(ILandroid/view/View;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public a(Landroid/view/View;IILcom/google/android/flexbox/FlexLine;)V
-    .locals 0
-
-    .line 1304
-    invoke-direct {p0, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->c(II)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    .line 1305
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    .line 1306
-    iget p1, p4, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr p1, p2
-
-    iput p1, p4, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    .line 1307
-    iget p1, p4, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr p1, p2
-
-    iput p1, p4, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    goto :goto_0
-
-    .line 1309
-    :cond_0
-    iget p1, p4, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr p1, p2
-
-    iput p1, p4, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    .line 1310
-    iget p1, p4, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    iget p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr p1, p2
-
-    iput p1, p4, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method public a(Lcom/google/android/flexbox/FlexLine;)V
-    .locals 2
-
-    .line 1278
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
-
-    move-result v0
+    .line 2
+    instance-of v0, p1, Lcom/google/android/flexbox/FlexboxLayout$a;
 
     if-eqz v0, :cond_0
 
-    .line 1279
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    .line 3
+    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$a;
 
-    and-int/lit8 v0, v0, 0x4
+    check-cast p1, Lcom/google/android/flexbox/FlexboxLayout$a;
 
-    if-lez v0, :cond_1
-
-    .line 1280
-    iget v0, p1, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr v0, v1
-
-    iput v0, p1, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    .line 1281
-    iget v0, p1, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
-
-    add-int/2addr v0, v1
-
-    iput v0, p1, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    goto :goto_0
-
-    .line 1284
-    :cond_0
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
-
-    and-int/lit8 v0, v0, 0x4
-
-    if-lez v0, :cond_1
-
-    .line 1285
-    iget v0, p1, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v0, v1
-
-    iput v0, p1, Lcom/google/android/flexbox/FlexLine;->e:I
-
-    .line 1286
-    iget v0, p1, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v0, v1
-
-    iput v0, p1, Lcom/google/android/flexbox/FlexLine;->f:I
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method public a()Z
-    .locals 2
-
-    .line 559
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
-
-    const/4 v1, 0x1
-
-    if-eqz v0, :cond_1
-
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
-
-    if-ne v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :cond_1
-    :goto_0
-    return v1
-.end method
-
-.method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
-    .locals 2
-
-    .line 320
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n:Landroid/util/SparseIntArray;
-
-    if-nez v0, :cond_0
-
-    .line 321
-    new-instance v0, Landroid/util/SparseIntArray;
-
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getChildCount()I
-
-    move-result v1
-
-    invoke-direct {v0, v1}, Landroid/util/SparseIntArray;-><init>(I)V
-
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n:Landroid/util/SparseIntArray;
-
-    .line 327
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
-
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->n:Landroid/util/SparseIntArray;
-
-    .line 328
-    invoke-virtual {v0, p1, p2, p3, v1}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;Landroid/util/SparseIntArray;)[I
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m:[I
-
-    .line 329
-    invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
-
-    return-void
-.end method
-
-.method public b(III)I
-    .locals 0
-
-    .line 1298
-    invoke-static {p1, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->getChildMeasureSpec(III)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public b(I)Landroid/view/View;
-    .locals 0
-
-    .line 315
-    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->c(I)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public c(I)Landroid/view/View;
-    .locals 1
-
-    if-ltz p1, :cond_1
-
-    .line 307
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m:[I
-
-    array-length v0, v0
-
-    if-lt p1, v0, :cond_0
-
-    goto :goto_0
-
-    .line 310
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m:[I
-
-    aget p1, v0, p1
-
-    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->getChildAt(I)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
-    .locals 0
-
-    .line 1127
-    instance-of p1, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    return p1
-.end method
-
-.method public synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
-    .locals 0
-
-    .line 77
-    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->a(Landroid/util/AttributeSet;)Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
-    .locals 1
-
-    .line 1137
-    instance-of v0, p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    if-eqz v0, :cond_0
-
-    .line 1138
-    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    check-cast p1, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
-
-    invoke-direct {v0, p1}, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;-><init>(Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;)V
+    invoke-direct {v0, p1}, Lcom/google/android/flexbox/FlexboxLayout$a;-><init>(Lcom/google/android/flexbox/FlexboxLayout$a;)V
 
     return-object v0
 
-    .line 1139
+    .line 4
     :cond_0
     instance-of v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;
 
     if-eqz v0, :cond_1
 
-    .line 1140
-    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+    .line 5
+    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$a;
 
     check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    invoke-direct {v0, p1}, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    invoke-direct {v0, p1}, Lcom/google/android/flexbox/FlexboxLayout$a;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     return-object v0
 
-    .line 1142
+    .line 6
     :cond_1
-    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;
+    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$a;
 
-    invoke-direct {v0, p1}, Lcom/google/android/flexbox/FlexboxLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {v0, p1}, Lcom/google/android/flexbox/FlexboxLayout$a;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-object v0
 .end method
@@ -3650,7 +566,6 @@
 .method public getAlignContent()I
     .locals 1
 
-    .line 1204
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->e:I
 
     return v0
@@ -3659,7 +574,6 @@
 .method public getAlignItems()I
     .locals 1
 
-    .line 1190
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d:I
 
     return v0
@@ -3667,10 +581,7 @@
 
 .method public getDividerDrawableHorizontal()Landroid/graphics/drawable/Drawable;
     .locals 1
-    .annotation build Landroid/support/annotation/Nullable;
-    .end annotation
 
-    .line 1338
     iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -3678,10 +589,7 @@
 
 .method public getDividerDrawableVertical()Landroid/graphics/drawable/Drawable;
     .locals 1
-    .annotation build Landroid/support/annotation/Nullable;
-    .end annotation
 
-    .line 1349
     iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -3690,7 +598,6 @@
 .method public getFlexDirection()I
     .locals 1
 
-    .line 1148
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
 
     return v0
@@ -3699,8 +606,7 @@
 .method public getFlexItemCount()I
     .locals 1
 
-    .line 289
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
@@ -3713,15 +619,15 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lcom/google/android/flexbox/FlexLine;",
+            "Lcom/google/android/flexbox/c;",
             ">;"
         }
     .end annotation
 
-    .line 1236
+    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -3729,8 +635,8 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1237
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    .line 2
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3747,10 +653,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/google/android/flexbox/FlexLine;
+    check-cast v2, Lcom/google/android/flexbox/c;
 
-    .line 1238
-    invoke-virtual {v2}, Lcom/google/android/flexbox/FlexLine;->c()I
+    .line 3
+    invoke-virtual {v2}, Lcom/google/android/flexbox/c;->c()I
 
     move-result v3
 
@@ -3758,7 +664,7 @@
 
     goto :goto_0
 
-    .line 1241
+    .line 4
     :cond_0
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -3774,13 +680,12 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lcom/google/android/flexbox/FlexLine;",
+            "Lcom/google/android/flexbox/c;",
             ">;"
         }
     .end annotation
 
-    .line 1322
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
     return-object v0
 .end method
@@ -3788,7 +693,6 @@
 .method public getFlexWrap()I
     .locals 1
 
-    .line 1162
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
     return v0
@@ -3797,7 +701,6 @@
 .method public getJustifyContent()I
     .locals 1
 
-    .line 1176
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
 
     return v0
@@ -3806,8 +709,8 @@
 .method public getLargestMainSize()I
     .locals 3
 
-    .line 523
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3826,10 +729,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/google/android/flexbox/FlexLine;
+    check-cast v2, Lcom/google/android/flexbox/c;
 
-    .line 524
-    iget v2, v2, Lcom/google/android/flexbox/FlexLine;->e:I
+    .line 2
+    iget v2, v2, Lcom/google/android/flexbox/c;->e:I
 
     invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
 
@@ -3844,7 +747,6 @@
 .method public getMaxLine()I
     .locals 1
 
-    .line 1217
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->f:I
 
     return v0
@@ -3853,8 +755,7 @@
 .method public getShowDividerHorizontal()I
     .locals 1
 
-    .line 1415
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
 
     return v0
 .end method
@@ -3862,8 +763,7 @@
 .method public getShowDividerVertical()I
     .locals 1
 
-    .line 1410
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
 
     return v0
 .end method
@@ -3871,8 +771,8 @@
 .method public getSumOfCrossSize()I
     .locals 5
 
-    .line 532
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -3880,80 +780,76 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     :goto_0
     if-ge v1, v0, :cond_4
 
-    .line 533
-    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    .line 2
+    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    check-cast v3, Lcom/google/android/flexbox/FlexLine;
+    check-cast v3, Lcom/google/android/flexbox/c;
 
-    .line 536
-    invoke-direct {p0, v1}, Lcom/google/android/flexbox/FlexboxLayout;->d(I)Z
+    .line 3
+    invoke-virtual {p0, v1}, Lcom/google/android/flexbox/FlexboxLayout;->t(I)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 537
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
+    .line 4
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 538
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v2, v4
+    .line 5
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
 
     goto :goto_1
 
-    .line 540
+    .line 6
     :cond_0
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
 
+    :goto_1
     add-int/2addr v2, v4
 
-    .line 545
+    .line 7
     :cond_1
-    :goto_1
-    invoke-direct {p0, v1}, Lcom/google/android/flexbox/FlexboxLayout;->f(I)Z
+    invoke-virtual {p0, v1}, Lcom/google/android/flexbox/FlexboxLayout;->u(I)Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
-    .line 546
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->a()Z
+    .line 8
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 547
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
-
-    add-int/2addr v2, v4
+    .line 9
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
 
     goto :goto_2
 
-    .line 549
+    .line 10
     :cond_2
-    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
+    iget v4, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
 
+    :goto_2
     add-int/2addr v2, v4
 
-    .line 552
+    .line 11
     :cond_3
-    :goto_2
-    iget v3, v3, Lcom/google/android/flexbox/FlexLine;->g:I
+    iget v3, v3, Lcom/google/android/flexbox/c;->g:I
 
     add-int/2addr v2, v3
 
@@ -3965,10 +861,720 @@
     return v2
 .end method
 
-.method protected onDraw(Landroid/graphics/Canvas;)V
-    .locals 5
+.method public h(Lcom/google/android/flexbox/c;)V
+    .locals 2
 
-    .line 904
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/lit8 v0, v0, 0x4
+
+    if-lez v0, :cond_1
+
+    .line 3
+    iget v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    add-int/2addr v0, v1
+
+    iput v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    .line 4
+    iget v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    add-int/2addr v0, v1
+
+    iput v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/lit8 v0, v0, 0x4
+
+    if-lez v0, :cond_1
+
+    .line 6
+    iget v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    add-int/2addr v0, v1
+
+    iput v0, p1, Lcom/google/android/flexbox/c;->e:I
+
+    .line 7
+    iget v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    add-int/2addr v0, v1
+
+    iput v0, p1, Lcom/google/android/flexbox/c;->f:I
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public i(I)Landroid/view/View;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public j(ILandroid/view/View;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public k(Landroid/view/View;II)I
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    .line 2
+    invoke-virtual {p0, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->s(II)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    add-int/2addr v0, p1
+
+    .line 4
+    :cond_0
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/lit8 p1, p1, 0x4
+
+    if-lez p1, :cond_3
+
+    .line 5
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-virtual {p0, p2, p3}, Lcom/google/android/flexbox/FlexboxLayout;->s(II)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    .line 7
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    add-int/2addr v0, p1
+
+    .line 8
+    :cond_2
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/lit8 p1, p1, 0x4
+
+    if-lez p1, :cond_3
+
+    .line 9
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    :goto_0
+    add-int/2addr v0, p1
+
+    :cond_3
+    return v0
+.end method
+
+.method public l()Z
+    .locals 2
+
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_1
+
+    if-ne v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :cond_1
+    :goto_0
+    return v1
+.end method
+
+.method public final m(Landroid/graphics/Canvas;ZZ)V
+    .locals 12
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
+
+    move-result v0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingRight()I
+
+    move-result v1
+
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getWidth()I
+
+    move-result v2
+
+    sub-int/2addr v2, v1
+
+    sub-int/2addr v2, v0
+
+    const/4 v1, 0x0
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result v2
+
+    .line 4
+    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    move v4, v1
+
+    :goto_0
+    if-ge v4, v3, :cond_a
+
+    .line 5
+    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/google/android/flexbox/c;
+
+    move v6, v1
+
+    .line 6
+    :goto_1
+    iget v7, v5, Lcom/google/android/flexbox/c;->h:I
+
+    if-ge v6, v7, :cond_5
+
+    .line 7
+    iget v7, v5, Lcom/google/android/flexbox/c;->o:I
+
+    add-int/2addr v7, v6
+
+    .line 8
+    invoke-virtual {p0, v7}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_4
+
+    .line 9
+    invoke-virtual {v8}, Landroid/view/View;->getVisibility()I
+
+    move-result v9
+
+    const/16 v10, 0x8
+
+    if-ne v9, v10, :cond_0
+
+    goto :goto_4
+
+    .line 10
+    :cond_0
+    invoke-virtual {v8}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v9
+
+    check-cast v9, Lcom/google/android/flexbox/FlexboxLayout$a;
+
+    .line 11
+    invoke-virtual {p0, v7, v6}, Lcom/google/android/flexbox/FlexboxLayout;->s(II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    if-eqz p2, :cond_1
+
+    .line 12
+    invoke-virtual {v8}, Landroid/view/View;->getRight()I
+
+    move-result v7
+
+    iget v10, v9, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    add-int/2addr v7, v10
+
+    goto :goto_2
+
+    .line 13
+    :cond_1
+    invoke-virtual {v8}, Landroid/view/View;->getLeft()I
+
+    move-result v7
+
+    iget v10, v9, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    sub-int/2addr v7, v10
+
+    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    sub-int/2addr v7, v10
+
+    .line 14
+    :goto_2
+    iget v10, v5, Lcom/google/android/flexbox/c;->b:I
+
+    iget v11, v5, Lcom/google/android/flexbox/c;->g:I
+
+    invoke-virtual {p0, p1, v7, v10, v11}, Lcom/google/android/flexbox/FlexboxLayout;->p(Landroid/graphics/Canvas;III)V
+
+    .line 15
+    :cond_2
+    iget v7, v5, Lcom/google/android/flexbox/c;->h:I
+
+    add-int/lit8 v7, v7, -0x1
+
+    if-ne v6, v7, :cond_4
+
+    .line 16
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/lit8 v7, v7, 0x4
+
+    if-lez v7, :cond_4
+
+    if-eqz p2, :cond_3
+
+    .line 17
+    invoke-virtual {v8}, Landroid/view/View;->getLeft()I
+
+    move-result v7
+
+    iget v8, v9, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    sub-int/2addr v7, v8
+
+    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    sub-int/2addr v7, v8
+
+    goto :goto_3
+
+    .line 18
+    :cond_3
+    invoke-virtual {v8}, Landroid/view/View;->getRight()I
+
+    move-result v7
+
+    iget v8, v9, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    add-int/2addr v7, v8
+
+    .line 19
+    :goto_3
+    iget v8, v5, Lcom/google/android/flexbox/c;->b:I
+
+    iget v9, v5, Lcom/google/android/flexbox/c;->g:I
+
+    invoke-virtual {p0, p1, v7, v8, v9}, Lcom/google/android/flexbox/FlexboxLayout;->p(Landroid/graphics/Canvas;III)V
+
+    :cond_4
+    :goto_4
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_1
+
+    .line 20
+    :cond_5
+    invoke-virtual {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->t(I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    if-eqz p3, :cond_6
+
+    .line 21
+    iget v6, v5, Lcom/google/android/flexbox/c;->d:I
+
+    goto :goto_5
+
+    .line 22
+    :cond_6
+    iget v6, v5, Lcom/google/android/flexbox/c;->b:I
+
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    sub-int/2addr v6, v7
+
+    .line 23
+    :goto_5
+    invoke-virtual {p0, p1, v0, v6, v2}, Lcom/google/android/flexbox/FlexboxLayout;->o(Landroid/graphics/Canvas;III)V
+
+    .line 24
+    :cond_7
+    invoke-virtual {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->u(I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_9
+
+    .line 25
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/lit8 v6, v6, 0x4
+
+    if-lez v6, :cond_9
+
+    if-eqz p3, :cond_8
+
+    .line 26
+    iget v5, v5, Lcom/google/android/flexbox/c;->b:I
+
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    sub-int/2addr v5, v6
+
+    goto :goto_6
+
+    .line 27
+    :cond_8
+    iget v5, v5, Lcom/google/android/flexbox/c;->d:I
+
+    .line 28
+    :goto_6
+    invoke-virtual {p0, p1, v0, v5, v2}, Lcom/google/android/flexbox/FlexboxLayout;->o(Landroid/graphics/Canvas;III)V
+
+    :cond_9
+    add-int/lit8 v4, v4, 0x1
+
+    goto/16 :goto_0
+
+    :cond_a
+    return-void
+.end method
+
+.method public final n(Landroid/graphics/Canvas;ZZ)V
+    .locals 12
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
+
+    move-result v0
+
+    .line 2
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingBottom()I
+
+    move-result v1
+
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getHeight()I
+
+    move-result v2
+
+    sub-int/2addr v2, v1
+
+    sub-int/2addr v2, v0
+
+    const/4 v1, 0x0
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result v2
+
+    .line 4
+    iget-object v3, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    move v4, v1
+
+    :goto_0
+    if-ge v4, v3, :cond_a
+
+    .line 5
+    iget-object v5, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v5, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/google/android/flexbox/c;
+
+    move v6, v1
+
+    .line 6
+    :goto_1
+    iget v7, v5, Lcom/google/android/flexbox/c;->h:I
+
+    if-ge v6, v7, :cond_5
+
+    .line 7
+    iget v7, v5, Lcom/google/android/flexbox/c;->o:I
+
+    add-int/2addr v7, v6
+
+    .line 8
+    invoke-virtual {p0, v7}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_4
+
+    .line 9
+    invoke-virtual {v8}, Landroid/view/View;->getVisibility()I
+
+    move-result v9
+
+    const/16 v10, 0x8
+
+    if-ne v9, v10, :cond_0
+
+    goto :goto_4
+
+    .line 10
+    :cond_0
+    invoke-virtual {v8}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v9
+
+    check-cast v9, Lcom/google/android/flexbox/FlexboxLayout$a;
+
+    .line 11
+    invoke-virtual {p0, v7, v6}, Lcom/google/android/flexbox/FlexboxLayout;->s(II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    if-eqz p3, :cond_1
+
+    .line 12
+    invoke-virtual {v8}, Landroid/view/View;->getBottom()I
+
+    move-result v7
+
+    iget v10, v9, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    add-int/2addr v7, v10
+
+    goto :goto_2
+
+    .line 13
+    :cond_1
+    invoke-virtual {v8}, Landroid/view/View;->getTop()I
+
+    move-result v7
+
+    iget v10, v9, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    sub-int/2addr v7, v10
+
+    iget v10, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    sub-int/2addr v7, v10
+
+    .line 14
+    :goto_2
+    iget v10, v5, Lcom/google/android/flexbox/c;->a:I
+
+    iget v11, v5, Lcom/google/android/flexbox/c;->g:I
+
+    invoke-virtual {p0, p1, v10, v7, v11}, Lcom/google/android/flexbox/FlexboxLayout;->o(Landroid/graphics/Canvas;III)V
+
+    .line 15
+    :cond_2
+    iget v7, v5, Lcom/google/android/flexbox/c;->h:I
+
+    add-int/lit8 v7, v7, -0x1
+
+    if-ne v6, v7, :cond_4
+
+    .line 16
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/lit8 v7, v7, 0x4
+
+    if-lez v7, :cond_4
+
+    if-eqz p3, :cond_3
+
+    .line 17
+    invoke-virtual {v8}, Landroid/view/View;->getTop()I
+
+    move-result v7
+
+    iget v8, v9, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    sub-int/2addr v7, v8
+
+    iget v8, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    sub-int/2addr v7, v8
+
+    goto :goto_3
+
+    .line 18
+    :cond_3
+    invoke-virtual {v8}, Landroid/view/View;->getBottom()I
+
+    move-result v7
+
+    iget v8, v9, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    add-int/2addr v7, v8
+
+    .line 19
+    :goto_3
+    iget v8, v5, Lcom/google/android/flexbox/c;->a:I
+
+    iget v9, v5, Lcom/google/android/flexbox/c;->g:I
+
+    invoke-virtual {p0, p1, v8, v7, v9}, Lcom/google/android/flexbox/FlexboxLayout;->o(Landroid/graphics/Canvas;III)V
+
+    :cond_4
+    :goto_4
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_1
+
+    .line 20
+    :cond_5
+    invoke-virtual {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->t(I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    if-eqz p2, :cond_6
+
+    .line 21
+    iget v6, v5, Lcom/google/android/flexbox/c;->c:I
+
+    goto :goto_5
+
+    .line 22
+    :cond_6
+    iget v6, v5, Lcom/google/android/flexbox/c;->a:I
+
+    iget v7, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    sub-int/2addr v6, v7
+
+    .line 23
+    :goto_5
+    invoke-virtual {p0, p1, v6, v0, v2}, Lcom/google/android/flexbox/FlexboxLayout;->p(Landroid/graphics/Canvas;III)V
+
+    .line 24
+    :cond_7
+    invoke-virtual {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->u(I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_9
+
+    .line 25
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/lit8 v6, v6, 0x4
+
+    if-lez v6, :cond_9
+
+    if-eqz p2, :cond_8
+
+    .line 26
+    iget v5, v5, Lcom/google/android/flexbox/c;->a:I
+
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    sub-int/2addr v5, v6
+
+    goto :goto_6
+
+    .line 27
+    :cond_8
+    iget v5, v5, Lcom/google/android/flexbox/c;->c:I
+
+    .line 28
+    :goto_6
+    invoke-virtual {p0, p1, v5, v0, v2}, Lcom/google/android/flexbox/FlexboxLayout;->p(Landroid/graphics/Canvas;III)V
+
+    :cond_9
+    add-int/lit8 v4, v4, 0x1
+
+    goto/16 :goto_0
+
+    :cond_a
+    return-void
+.end method
+
+.method public final o(Landroid/graphics/Canvas;III)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    add-int/2addr p4, p2
+
+    .line 2
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    add-int/2addr v1, p3
+
+    .line 3
+    invoke-virtual {v0, p2, p3, p4, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 4
+    iget-object p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    return-void
+.end method
+
+.method public onDraw(Landroid/graphics/Canvas;)V
+    .locals 6
+
+    .line 1
     iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
@@ -3979,25 +1585,25 @@
 
     return-void
 
-    .line 907
+    .line 2
     :cond_0
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
 
     if-nez v0, :cond_1
 
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
 
     if-nez v0, :cond_1
 
     return-void
 
-    .line 912
+    .line 3
     :cond_1
-    invoke-static {p0}, Landroid/support/v4/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
+    invoke-static {p0}, Landroidx/core/view/d0;->C(Landroid/view/View;)I
 
     move-result v0
 
-    .line 915
+    .line 4
     iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
 
     const/4 v2, 0x2
@@ -4006,129 +1612,175 @@
 
     const/4 v4, 0x1
 
-    packed-switch v1, :pswitch_data_0
+    if-eqz v1, :cond_b
+
+    if-eq v1, v4, :cond_8
+
+    if-eq v1, v2, :cond_5
+
+    const/4 v5, 0x3
+
+    if-eq v1, v5, :cond_2
 
     goto :goto_3
 
-    :pswitch_0
-    if-ne v0, v4, :cond_2
-
-    const/4 v3, 0x1
-
-    .line 939
     :cond_2
+    if-ne v0, v4, :cond_3
+
+    move v3, v4
+
+    .line 5
+    :cond_3
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
-    if-ne v0, v2, :cond_3
+    if-ne v0, v2, :cond_4
 
     xor-int/lit8 v3, v3, 0x1
 
-    .line 942
-    :cond_3
-    invoke-direct {p0, p1, v3, v4}, Lcom/google/android/flexbox/FlexboxLayout;->b(Landroid/graphics/Canvas;ZZ)V
+    .line 6
+    :cond_4
+    invoke-virtual {p0, p1, v3, v4}, Lcom/google/android/flexbox/FlexboxLayout;->n(Landroid/graphics/Canvas;ZZ)V
 
     goto :goto_3
 
-    :pswitch_1
-    if-ne v0, v4, :cond_4
+    :cond_5
+    if-ne v0, v4, :cond_6
 
     goto :goto_0
 
-    :cond_4
-    const/4 v4, 0x0
+    :cond_6
+    move v4, v3
 
-    .line 932
+    .line 7
     :goto_0
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
-    if-ne v0, v2, :cond_5
+    if-ne v0, v2, :cond_7
 
     xor-int/lit8 v4, v4, 0x1
 
-    .line 935
-    :cond_5
-    invoke-direct {p0, p1, v4, v3}, Lcom/google/android/flexbox/FlexboxLayout;->b(Landroid/graphics/Canvas;ZZ)V
+    .line 8
+    :cond_7
+    invoke-virtual {p0, p1, v4, v3}, Lcom/google/android/flexbox/FlexboxLayout;->n(Landroid/graphics/Canvas;ZZ)V
 
     goto :goto_3
 
-    :pswitch_2
-    if-eq v0, v4, :cond_6
+    :cond_8
+    if-eq v0, v4, :cond_9
 
-    const/4 v0, 0x1
+    move v0, v4
 
     goto :goto_1
 
-    :cond_6
-    const/4 v0, 0x0
+    :cond_9
+    move v0, v3
 
-    .line 925
+    .line 9
     :goto_1
     iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
-    if-ne v1, v2, :cond_7
+    if-ne v1, v2, :cond_a
 
-    const/4 v3, 0x1
+    move v3, v4
 
-    .line 928
-    :cond_7
-    invoke-direct {p0, p1, v0, v3}, Lcom/google/android/flexbox/FlexboxLayout;->a(Landroid/graphics/Canvas;ZZ)V
+    .line 10
+    :cond_a
+    invoke-virtual {p0, p1, v0, v3}, Lcom/google/android/flexbox/FlexboxLayout;->m(Landroid/graphics/Canvas;ZZ)V
 
     goto :goto_3
 
-    :pswitch_3
-    if-ne v0, v4, :cond_8
+    :cond_b
+    if-ne v0, v4, :cond_c
 
-    const/4 v0, 0x1
+    move v0, v4
 
     goto :goto_2
 
-    :cond_8
-    const/4 v0, 0x0
+    :cond_c
+    move v0, v3
 
-    .line 918
+    .line 11
     :goto_2
     iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
-    if-ne v1, v2, :cond_9
+    if-ne v1, v2, :cond_d
 
-    const/4 v3, 0x1
+    move v3, v4
 
-    .line 921
-    :cond_9
-    invoke-direct {p0, p1, v0, v3}, Lcom/google/android/flexbox/FlexboxLayout;->a(Landroid/graphics/Canvas;ZZ)V
+    .line 12
+    :cond_d
+    invoke-virtual {p0, p1, v0, v3}, Lcom/google/android/flexbox/FlexboxLayout;->m(Landroid/graphics/Canvas;ZZ)V
 
     :goto_3
     return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method protected onLayout(ZIIII)V
+.method public onLayout(ZIIII)V
     .locals 7
 
-    .line 564
-    invoke-static {p0}, Landroid/support/v4/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
+    .line 1
+    invoke-static {p0}, Landroidx/core/view/d0;->C(Landroid/view/View;)I
 
     move-result v0
 
-    .line 566
+    .line 2
     iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
 
-    const/4 v2, 0x2
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
-    const/4 v4, 0x1
+    if-eqz v1, :cond_8
 
-    packed-switch v1, :pswitch_data_0
+    if-eq v1, v3, :cond_6
 
-    .line 590
+    const/4 v4, 0x2
+
+    if-eq v1, v4, :cond_3
+
+    const/4 v5, 0x3
+
+    if-ne v1, v5, :cond_2
+
+    if-ne v0, v3, :cond_0
+
+    move v2, v3
+
+    .line 3
+    :cond_0
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
+
+    if-ne v0, v4, :cond_1
+
+    xor-int/lit8 v0, v2, 0x1
+
+    move v1, v0
+
+    goto :goto_0
+
+    :cond_1
+    move v1, v2
+
+    :goto_0
+    const/4 v2, 0x1
+
+    move-object v0, p0
+
+    move v3, p2
+
+    move v4, p3
+
+    move v5, p4
+
+    move v6, p5
+
+    .line 4
+    invoke-virtual/range {v0 .. v6}, Lcom/google/android/flexbox/FlexboxLayout;->w(ZZIIII)V
+
+    goto/16 :goto_4
+
+    .line 5
+    :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4151,63 +1803,25 @@
 
     throw v0
 
-    :pswitch_0
-    if-ne v0, v4, :cond_0
+    :cond_3
+    if-ne v0, v3, :cond_4
 
-    const/4 v3, 0x1
+    move v2, v3
 
-    .line 584
-    :cond_0
+    .line 6
+    :cond_4
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
-    if-ne v0, v2, :cond_1
+    if-ne v0, v4, :cond_5
 
-    xor-int/lit8 v0, v3, 0x1
-
-    move v1, v0
-
-    goto :goto_0
-
-    :cond_1
-    move v1, v3
-
-    :goto_0
-    const/4 v2, 0x1
-
-    move-object v0, p0
-
-    move v3, p2
-
-    move v4, p3
-
-    move v5, p4
-
-    move v6, p5
-
-    .line 587
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/flexbox/FlexboxLayout;->a(ZZIIII)V
-
-    goto :goto_4
-
-    :pswitch_1
-    if-ne v0, v4, :cond_2
-
-    const/4 v3, 0x1
-
-    .line 577
-    :cond_2
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
-
-    if-ne v0, v2, :cond_3
-
-    xor-int/lit8 v0, v3, 0x1
+    xor-int/lit8 v0, v2, 0x1
 
     move v1, v0
 
     goto :goto_1
 
-    :cond_3
-    move v1, v3
+    :cond_5
+    move v1, v2
 
     :goto_1
     const/4 v2, 0x0
@@ -4222,20 +1836,20 @@
 
     move v6, p5
 
-    .line 580
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/flexbox/FlexboxLayout;->a(ZZIIII)V
+    .line 7
+    invoke-virtual/range {v0 .. v6}, Lcom/google/android/flexbox/FlexboxLayout;->w(ZZIIII)V
 
     goto :goto_4
 
-    :pswitch_2
-    if-eq v0, v4, :cond_4
+    :cond_6
+    if-eq v0, v3, :cond_7
 
-    const/4 v1, 0x1
+    move v1, v3
 
     goto :goto_2
 
-    :cond_4
-    const/4 v1, 0x0
+    :cond_7
+    move v1, v2
 
     :goto_2
     move-object v0, p0
@@ -4248,20 +1862,20 @@
 
     move v5, p5
 
-    .line 573
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/flexbox/FlexboxLayout;->a(ZIIII)V
+    .line 8
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/flexbox/FlexboxLayout;->v(ZIIII)V
 
     goto :goto_4
 
-    :pswitch_3
-    if-ne v0, v4, :cond_5
+    :cond_8
+    if-ne v0, v3, :cond_9
 
-    const/4 v1, 0x1
+    move v1, v3
 
     goto :goto_3
 
-    :cond_5
-    const/4 v1, 0x0
+    :cond_9
+    move v1, v2
 
     :goto_3
     move-object v0, p0
@@ -4274,72 +1888,77 @@
 
     move v5, p5
 
-    .line 569
-    invoke-direct/range {v0 .. v5}, Lcom/google/android/flexbox/FlexboxLayout;->a(ZIIII)V
+    .line 9
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/flexbox/FlexboxLayout;->v(ZIIII)V
 
     :goto_4
     return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method protected onMeasure(II)V
+.method public onMeasure(II)V
     .locals 2
 
-    .line 263
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n:Landroid/util/SparseIntArray;
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:Landroid/util/SparseIntArray;
 
     if-nez v0, :cond_0
 
-    .line 264
+    .line 2
     new-instance v0, Landroid/util/SparseIntArray;
 
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getChildCount()I
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v1
 
     invoke-direct {v0, v1}, Landroid/util/SparseIntArray;-><init>(I)V
 
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->n:Landroid/util/SparseIntArray;
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:Landroid/util/SparseIntArray;
 
-    .line 266
+    .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
 
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->n:Landroid/util/SparseIntArray;
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v0, v1}, Lcom/google/android/flexbox/FlexboxHelper;->b(Landroid/util/SparseIntArray;)Z
+    invoke-virtual {v0, v1}, Lcom/google/android/flexbox/d;->O(Landroid/util/SparseIntArray;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 267
-    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:Lcom/google/android/flexbox/FlexboxHelper;
+    .line 4
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
 
-    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->n:Landroid/util/SparseIntArray;
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->t:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v0, v1}, Lcom/google/android/flexbox/FlexboxHelper;->a(Landroid/util/SparseIntArray;)[I
+    invoke-virtual {v0, v1}, Lcom/google/android/flexbox/d;->m(Landroid/util/SparseIntArray;)[I
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->m:[I
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->s:[I
 
-    .line 272
+    .line 5
     :cond_1
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
 
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_4
 
-    .line 282
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_4
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_3
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_2
+
+    goto :goto_0
+
+    .line 6
+    :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -4362,43 +1981,187 @@
 
     throw p1
 
-    .line 279
-    :pswitch_0
-    invoke-direct {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->b(II)V
+    .line 7
+    :cond_3
+    :goto_0
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->y(II)V
+
+    goto :goto_1
+
+    .line 8
+    :cond_4
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->x(II)V
+
+    :goto_1
+    return-void
+.end method
+
+.method public final p(Landroid/graphics/Canvas;III)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    iget v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    add-int/2addr v1, p2
+
+    add-int/2addr p4, p3
+
+    invoke-virtual {v0, p2, p3, v1, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 3
+    iget-object p2, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    return-void
+.end method
+
+.method public q(Landroid/util/AttributeSet;)Lcom/google/android/flexbox/FlexboxLayout$a;
+    .locals 2
+
+    new-instance v0, Lcom/google/android/flexbox/FlexboxLayout$a;
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1, p1}, Lcom/google/android/flexbox/FlexboxLayout$a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-object v0
+.end method
+
+.method public r(I)Landroid/view/View;
+    .locals 2
+
+    if-ltz p1, :cond_1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->s:[I
+
+    array-length v1, v0
+
+    if-lt p1, v1, :cond_0
 
     goto :goto_0
 
-    .line 275
-    :pswitch_1
-    invoke-direct {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->a(II)V
+    .line 2
+    :cond_0
+    aget p1, v0, p1
 
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_1
     :goto_0
-    return-void
+    const/4 p1, 0x0
 
-    nop
+    return-object p1
+.end method
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_1
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
+.method public final s(II)Z
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/flexbox/FlexboxLayout;->d(II)Z
+
+    move-result p1
+
+    const/4 p2, 0x0
+
+    const/4 v0, 0x1
+
+    if-eqz p1, :cond_3
+
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 3
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/2addr p1, v0
+
+    if-eqz p1, :cond_0
+
+    move p2, v0
+
+    :cond_0
+    return p2
+
+    .line 4
+    :cond_1
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/2addr p1, v0
+
+    if-eqz p1, :cond_2
+
+    move p2, v0
+
+    :cond_2
+    return p2
+
+    .line 5
+    :cond_3
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_5
+
+    .line 6
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/lit8 p1, p1, 0x2
+
+    if-eqz p1, :cond_4
+
+    move p2, v0
+
+    :cond_4
+    return p2
+
+    .line 7
+    :cond_5
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/lit8 p1, p1, 0x2
+
+    if-eqz p1, :cond_6
+
+    move p2, v0
+
+    :cond_6
+    return p2
 .end method
 
 .method public setAlignContent(I)V
     .locals 1
 
-    .line 1209
+    .line 1
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->e:I
 
     if-eq v0, p1, :cond_0
 
-    .line 1210
+    .line 2
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->e:I
 
-    .line 1211
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
     return-void
@@ -4407,16 +2170,16 @@
 .method public setAlignItems(I)V
     .locals 1
 
-    .line 1195
+    .line 1
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d:I
 
     if-eq v0, p1, :cond_0
 
-    .line 1196
+    .line 2
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->d:I
 
-    .line 1197
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
     return-void
@@ -4425,10 +2188,10 @@
 .method public setDividerDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1360
+    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->setDividerDrawableHorizontal(Landroid/graphics/drawable/Drawable;)V
 
-    .line 1361
+    .line 2
     invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->setDividerDrawableVertical(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -4436,90 +2199,82 @@
 
 .method public setDividerDrawableHorizontal(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-        .annotation build Landroid/support/annotation/Nullable;
-        .end annotation
-    .end param
 
-    .line 1373
+    .line 1
     iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_0
 
     return-void
 
-    .line 1376
+    .line 2
     :cond_0
     iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_1
 
-    .line 1378
+    .line 3
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
 
     goto :goto_0
 
     :cond_1
     const/4 p1, 0x0
 
-    .line 1380
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->k:I
+    .line 4
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
 
-    .line 1382
+    .line 5
     :goto_0
-    invoke-direct {p0}, Lcom/google/android/flexbox/FlexboxLayout;->b()V
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->A()V
 
-    .line 1383
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 6
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     return-void
 .end method
 
 .method public setDividerDrawableVertical(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-        .annotation build Landroid/support/annotation/Nullable;
-        .end annotation
-    .end param
 
-    .line 1395
+    .line 1
     iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_0
 
     return-void
 
-    .line 1398
+    .line 2
     :cond_0
     iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->h:Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_1
 
-    .line 1400
+    .line 3
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
 
     goto :goto_0
 
     :cond_1
     const/4 p1, 0x0
 
-    .line 1402
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->l:I
+    .line 4
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
 
-    .line 1404
+    .line 5
     :goto_0
-    invoke-direct {p0}, Lcom/google/android/flexbox/FlexboxLayout;->b()V
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->A()V
 
-    .line 1405
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 6
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     return-void
 .end method
@@ -4527,16 +2282,16 @@
 .method public setFlexDirection(I)V
     .locals 1
 
-    .line 1153
+    .line 1
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
 
     if-eq v0, p1, :cond_0
 
-    .line 1154
+    .line 2
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
 
-    .line 1155
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
     return-void
@@ -4548,13 +2303,12 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcom/google/android/flexbox/FlexLine;",
+            "Lcom/google/android/flexbox/c;",
             ">;)V"
         }
     .end annotation
 
-    .line 1317
-    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
 
     return-void
 .end method
@@ -4562,16 +2316,16 @@
 .method public setFlexWrap(I)V
     .locals 1
 
-    .line 1167
+    .line 1
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
     if-eq v0, p1, :cond_0
 
-    .line 1168
+    .line 2
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
 
-    .line 1169
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
     return-void
@@ -4580,16 +2334,16 @@
 .method public setJustifyContent(I)V
     .locals 1
 
-    .line 1181
+    .line 1
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
 
     if-eq v0, p1, :cond_0
 
-    .line 1182
+    .line 2
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
 
-    .line 1183
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
     return-void
@@ -4598,16 +2352,16 @@
 .method public setMaxLine(I)V
     .locals 1
 
-    .line 1222
+    .line 1
     iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->f:I
 
     if-eq v0, p1, :cond_0
 
-    .line 1223
+    .line 2
     iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->f:I
 
-    .line 1224
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
     return-void
@@ -4616,10 +2370,10 @@
 .method public setShowDivider(I)V
     .locals 0
 
-    .line 1429
+    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->setShowDividerVertical(I)V
 
-    .line 1430
+    .line 2
     invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->setShowDividerHorizontal(I)V
 
     return-void
@@ -4628,16 +2382,16 @@
 .method public setShowDividerHorizontal(I)V
     .locals 1
 
-    .line 1457
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
+    .line 1
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
 
     if-eq p1, v0, :cond_0
 
-    .line 1458
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->i:I
+    .line 2
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
 
-    .line 1459
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
     return-void
@@ -4646,17 +2400,2217 @@
 .method public setShowDividerVertical(I)V
     .locals 1
 
-    .line 1442
-    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    .line 1
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
 
     if-eq p1, v0, :cond_0
 
-    .line 1443
-    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->j:I
+    .line 2
+    iput p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
 
-    .line 1444
-    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->requestLayout()V
+    .line 3
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     :cond_0
+    return-void
+.end method
+
+.method public final t(I)Z
+    .locals 2
+
+    const/4 v0, 0x0
+
+    if-ltz p1, :cond_7
+
+    .line 1
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-lt p1, v1, :cond_0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    invoke-virtual {p0, p1}, Lcom/google/android/flexbox/FlexboxLayout;->a(I)Z
+
+    move-result p1
+
+    const/4 v1, 0x1
+
+    if-eqz p1, :cond_4
+
+    .line 3
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    .line 4
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/2addr p1, v1
+
+    if-eqz p1, :cond_1
+
+    move v0, v1
+
+    :cond_1
+    return v0
+
+    .line 5
+    :cond_2
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/2addr p1, v1
+
+    if-eqz p1, :cond_3
+
+    move v0, v1
+
+    :cond_3
+    return v0
+
+    .line 6
+    :cond_4
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    .line 7
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/lit8 p1, p1, 0x2
+
+    if-eqz p1, :cond_5
+
+    move v0, v1
+
+    :cond_5
+    return v0
+
+    .line 8
+    :cond_6
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/lit8 p1, p1, 0x2
+
+    if-eqz p1, :cond_7
+
+    move v0, v1
+
+    :cond_7
+    :goto_0
+    return v0
+.end method
+
+.method public final u(I)Z
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-ltz p1, :cond_5
+
+    .line 1
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-lt p1, v1, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v1, 0x1
+
+    add-int/2addr p1, v1
+
+    .line 2
+    :goto_0
+    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    if-ge p1, v2, :cond_2
+
+    .line 3
+    iget-object v2, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v2, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/flexbox/c;
+
+    invoke-virtual {v2}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v2
+
+    if-lez v2, :cond_1
+
+    return v0
+
+    :cond_1
+    add-int/lit8 p1, p1, 0x1
+
+    goto :goto_0
+
+    .line 4
+    :cond_2
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->l()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    .line 5
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    and-int/lit8 p1, p1, 0x4
+
+    if-eqz p1, :cond_3
+
+    move v0, v1
+
+    :cond_3
+    return v0
+
+    .line 6
+    :cond_4
+    iget p1, p0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    and-int/lit8 p1, p1, 0x4
+
+    if-eqz p1, :cond_5
+
+    move v0, v1
+
+    :cond_5
+    :goto_1
+    return v0
+.end method
+
+.method public final v(ZIIII)V
+    .locals 28
+
+    move-object/from16 v0, p0
+
+    .line 1
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
+
+    move-result v1
+
+    .line 2
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingRight()I
+
+    move-result v2
+
+    sub-int v3, p5, p3
+
+    sub-int v4, p4, p2
+
+    .line 3
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingBottom()I
+
+    move-result v5
+
+    sub-int/2addr v3, v5
+
+    .line 4
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingTop()I
+
+    move-result v5
+
+    .line 5
+    iget-object v6, v0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v6}, Ljava/util/List;->size()I
+
+    move-result v6
+
+    const/4 v8, 0x0
+
+    :goto_0
+    if-ge v8, v6, :cond_14
+
+    .line 6
+    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Lcom/google/android/flexbox/c;
+
+    .line 7
+    invoke-virtual {v0, v8}, Lcom/google/android/flexbox/FlexboxLayout;->t(I)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_0
+
+    .line 8
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    sub-int/2addr v3, v10
+
+    add-int/2addr v5, v10
+
+    .line 9
+    :cond_0
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
+
+    const/4 v15, 0x4
+
+    const/4 v14, 0x2
+
+    const/4 v11, 0x0
+
+    const/4 v13, 0x1
+
+    if-eqz v10, :cond_9
+
+    if-eq v10, v13, :cond_8
+
+    const/high16 v12, 0x40000000    # 2.0f
+
+    if-eq v10, v14, :cond_7
+
+    const/4 v7, 0x3
+
+    if-eq v10, v7, :cond_5
+
+    if-eq v10, v15, :cond_3
+
+    const/4 v7, 0x5
+
+    if-ne v10, v7, :cond_2
+
+    .line 10
+    invoke-virtual {v9}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v7
+
+    if-eqz v7, :cond_1
+
+    .line 11
+    iget v10, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v10, v4, v10
+
+    int-to-float v10, v10
+
+    add-int/lit8 v7, v7, 0x1
+
+    int-to-float v7, v7
+
+    div-float/2addr v10, v7
+
+    goto :goto_1
+
+    :cond_1
+    move v10, v11
+
+    :goto_1
+    int-to-float v7, v1
+
+    add-float/2addr v7, v10
+
+    sub-int v12, v4, v2
+
+    int-to-float v12, v12
+
+    sub-float/2addr v12, v10
+
+    goto/16 :goto_5
+
+    .line 12
+    :cond_2
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Invalid justifyContent is set: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 13
+    :cond_3
+    invoke-virtual {v9}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    .line 14
+    iget v10, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v10, v4, v10
+
+    int-to-float v10, v10
+
+    int-to-float v7, v7
+
+    div-float/2addr v10, v7
+
+    goto :goto_2
+
+    :cond_4
+    move v10, v11
+
+    :goto_2
+    int-to-float v7, v1
+
+    div-float v12, v10, v12
+
+    add-float/2addr v7, v12
+
+    sub-int v14, v4, v2
+
+    int-to-float v14, v14
+
+    sub-float v12, v14, v12
+
+    goto :goto_5
+
+    :cond_5
+    int-to-float v7, v1
+
+    .line 15
+    invoke-virtual {v9}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v10
+
+    if-eq v10, v13, :cond_6
+
+    add-int/lit8 v10, v10, -0x1
+
+    int-to-float v10, v10
+
+    goto :goto_3
+
+    :cond_6
+    const/high16 v10, 0x3f800000    # 1.0f
+
+    .line 16
+    :goto_3
+    iget v12, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v12, v4, v12
+
+    int-to-float v12, v12
+
+    div-float v10, v12, v10
+
+    sub-int v12, v4, v2
+
+    int-to-float v12, v12
+
+    goto :goto_5
+
+    :cond_7
+    int-to-float v7, v1
+
+    .line 17
+    iget v10, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v14, v4, v10
+
+    int-to-float v14, v14
+
+    div-float/2addr v14, v12
+
+    add-float/2addr v7, v14
+
+    sub-int v14, v4, v2
+
+    int-to-float v14, v14
+
+    sub-int v10, v4, v10
+
+    int-to-float v10, v10
+
+    div-float/2addr v10, v12
+
+    sub-float v12, v14, v10
+
+    goto :goto_4
+
+    .line 18
+    :cond_8
+    iget v7, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v10, v4, v7
+
+    add-int/2addr v10, v2
+
+    int-to-float v10, v10
+
+    sub-int/2addr v7, v1
+
+    int-to-float v12, v7
+
+    move v7, v10
+
+    goto :goto_4
+
+    :cond_9
+    int-to-float v7, v1
+
+    sub-int v10, v4, v2
+
+    int-to-float v12, v10
+
+    :goto_4
+    move v10, v11
+
+    .line 19
+    :goto_5
+    invoke-static {v10, v11}, Ljava/lang/Math;->max(FF)F
+
+    move-result v17
+
+    const/4 v14, 0x0
+
+    .line 20
+    :goto_6
+    iget v10, v9, Lcom/google/android/flexbox/c;->h:I
+
+    if-ge v14, v10, :cond_13
+
+    .line 21
+    iget v10, v9, Lcom/google/android/flexbox/c;->o:I
+
+    add-int/2addr v10, v14
+
+    .line 22
+    invoke-virtual {v0, v10}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
+
+    move-result-object v18
+
+    if-eqz v18, :cond_12
+
+    .line 23
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getVisibility()I
+
+    move-result v11
+
+    const/16 v15, 0x8
+
+    if-ne v11, v15, :cond_a
+
+    move/from16 v23, v1
+
+    move/from16 v26, v13
+
+    move/from16 v22, v14
+
+    const/16 v25, 0x2
+
+    const/16 v27, 0x4
+
+    goto/16 :goto_b
+
+    .line 24
+    :cond_a
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v11
+
+    move-object v15, v11
+
+    check-cast v15, Lcom/google/android/flexbox/FlexboxLayout$a;
+
+    .line 25
+    iget v11, v15, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    int-to-float v11, v11
+
+    add-float/2addr v7, v11
+
+    .line 26
+    iget v11, v15, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    int-to-float v11, v11
+
+    sub-float/2addr v12, v11
+
+    .line 27
+    invoke-virtual {v0, v10, v14}, Lcom/google/android/flexbox/FlexboxLayout;->s(II)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_b
+
+    .line 28
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    int-to-float v11, v10
+
+    add-float/2addr v7, v11
+
+    sub-float/2addr v12, v11
+
+    move/from16 v20, v10
+
+    move/from16 v19, v12
+
+    goto :goto_7
+
+    :cond_b
+    move/from16 v19, v12
+
+    const/16 v20, 0x0
+
+    .line 29
+    :goto_7
+    iget v10, v9, Lcom/google/android/flexbox/c;->h:I
+
+    sub-int/2addr v10, v13
+
+    if-ne v14, v10, :cond_c
+
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->p:I
+
+    const/16 v16, 0x4
+
+    and-int/lit8 v10, v10, 0x4
+
+    if-lez v10, :cond_d
+
+    .line 30
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    move/from16 v21, v10
+
+    goto :goto_8
+
+    :cond_c
+    const/16 v16, 0x4
+
+    :cond_d
+    const/16 v21, 0x0
+
+    .line 31
+    :goto_8
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
+
+    const/4 v12, 0x2
+
+    if-ne v10, v12, :cond_f
+
+    if-eqz p1, :cond_e
+
+    .line 32
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    .line 33
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v22
+
+    sub-int v22, v11, v22
+
+    .line 34
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v11
+
+    sub-int v23, v3, v11
+
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v24
+
+    move-object/from16 v11, v18
+
+    move/from16 v25, v12
+
+    move-object v12, v9
+
+    move/from16 v26, v13
+
+    move/from16 v13, v22
+
+    move/from16 v22, v14
+
+    move/from16 v14, v23
+
+    move/from16 v23, v1
+
+    move-object v1, v15
+
+    move/from16 v27, v16
+
+    move/from16 v15, v24
+
+    move/from16 v16, v3
+
+    .line 35
+    invoke-virtual/range {v10 .. v16}, Lcom/google/android/flexbox/d;->Q(Landroid/view/View;Lcom/google/android/flexbox/c;IIII)V
+
+    goto/16 :goto_9
+
+    :cond_e
+    move/from16 v23, v1
+
+    move/from16 v25, v12
+
+    move/from16 v26, v13
+
+    move/from16 v22, v14
+
+    move-object v1, v15
+
+    move/from16 v27, v16
+
+    .line 36
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    .line 37
+    invoke-static {v7}, Ljava/lang/Math;->round(F)I
+
+    move-result v13
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v11
+
+    sub-int v14, v3, v11
+
+    .line 38
+    invoke-static {v7}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v12
+
+    add-int v15, v11, v12
+
+    move-object/from16 v11, v18
+
+    move-object v12, v9
+
+    move/from16 v16, v3
+
+    .line 39
+    invoke-virtual/range {v10 .. v16}, Lcom/google/android/flexbox/d;->Q(Landroid/view/View;Lcom/google/android/flexbox/c;IIII)V
+
+    goto :goto_9
+
+    :cond_f
+    move/from16 v23, v1
+
+    move/from16 v25, v12
+
+    move/from16 v26, v13
+
+    move/from16 v22, v14
+
+    move-object v1, v15
+
+    move/from16 v27, v16
+
+    if-eqz p1, :cond_10
+
+    .line 40
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    .line 41
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v12
+
+    sub-int v13, v11, v12
+
+    .line 42
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v15
+
+    .line 43
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v11
+
+    add-int v16, v5, v11
+
+    move-object/from16 v11, v18
+
+    move-object v12, v9
+
+    move v14, v5
+
+    .line 44
+    invoke-virtual/range {v10 .. v16}, Lcom/google/android/flexbox/d;->Q(Landroid/view/View;Lcom/google/android/flexbox/c;IIII)V
+
+    goto :goto_9
+
+    .line 45
+    :cond_10
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    .line 46
+    invoke-static {v7}, Ljava/lang/Math;->round(F)I
+
+    move-result v13
+
+    .line 47
+    invoke-static {v7}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v12
+
+    add-int v15, v11, v12
+
+    .line 48
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v11
+
+    add-int v16, v5, v11
+
+    move-object/from16 v11, v18
+
+    move-object v12, v9
+
+    move v14, v5
+
+    .line 49
+    invoke-virtual/range {v10 .. v16}, Lcom/google/android/flexbox/d;->Q(Landroid/view/View;Lcom/google/android/flexbox/c;IIII)V
+
+    .line 50
+    :goto_9
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v10
+
+    int-to-float v10, v10
+
+    add-float v10, v10, v17
+
+    iget v11, v1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
+
+    int-to-float v11, v11
+
+    add-float/2addr v10, v11
+
+    add-float/2addr v7, v10
+
+    .line 51
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v10
+
+    int-to-float v10, v10
+
+    add-float v10, v10, v17
+
+    iget v1, v1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
+
+    int-to-float v1, v1
+
+    add-float/2addr v10, v1
+
+    sub-float v19, v19, v10
+
+    if-eqz p1, :cond_11
+
+    const/4 v13, 0x0
+
+    const/4 v15, 0x0
+
+    move-object v10, v9
+
+    move-object/from16 v11, v18
+
+    move/from16 v12, v21
+
+    move/from16 v14, v20
+
+    .line 52
+    invoke-virtual/range {v10 .. v15}, Lcom/google/android/flexbox/c;->d(Landroid/view/View;IIII)V
+
+    goto :goto_a
+
+    :cond_11
+    const/4 v13, 0x0
+
+    const/4 v15, 0x0
+
+    move-object v10, v9
+
+    move-object/from16 v11, v18
+
+    move/from16 v12, v20
+
+    move/from16 v14, v21
+
+    .line 53
+    invoke-virtual/range {v10 .. v15}, Lcom/google/android/flexbox/c;->d(Landroid/view/View;IIII)V
+
+    :goto_a
+    move/from16 v12, v19
+
+    goto :goto_b
+
+    :cond_12
+    move/from16 v23, v1
+
+    move/from16 v26, v13
+
+    move/from16 v22, v14
+
+    move/from16 v27, v15
+
+    const/16 v25, 0x2
+
+    :goto_b
+    add-int/lit8 v14, v22, 0x1
+
+    move/from16 v1, v23
+
+    move/from16 v13, v26
+
+    move/from16 v15, v27
+
+    goto/16 :goto_6
+
+    :cond_13
+    move/from16 v23, v1
+
+    .line 54
+    iget v1, v9, Lcom/google/android/flexbox/c;->g:I
+
+    add-int/2addr v5, v1
+
+    sub-int/2addr v3, v1
+
+    add-int/lit8 v8, v8, 0x1
+
+    move/from16 v1, v23
+
+    goto/16 :goto_0
+
+    :cond_14
+    return-void
+.end method
+
+.method public final w(ZZIIII)V
+    .locals 29
+
+    move-object/from16 v0, p0
+
+    .line 1
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingTop()I
+
+    move-result v1
+
+    .line 2
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingBottom()I
+
+    move-result v2
+
+    .line 3
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingRight()I
+
+    move-result v3
+
+    .line 4
+    invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
+
+    move-result v4
+
+    sub-int v5, p5, p3
+
+    sub-int v6, p6, p4
+
+    sub-int/2addr v5, v3
+
+    .line 5
+    iget-object v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    const/4 v8, 0x0
+
+    :goto_0
+    if-ge v8, v3, :cond_14
+
+    .line 6
+    iget-object v9, v0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Lcom/google/android/flexbox/c;
+
+    .line 7
+    invoke-virtual {v0, v8}, Lcom/google/android/flexbox/FlexboxLayout;->t(I)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_0
+
+    .line 8
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->r:I
+
+    add-int/2addr v4, v10
+
+    sub-int/2addr v5, v10
+
+    .line 9
+    :cond_0
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
+
+    const/4 v15, 0x4
+
+    const/4 v11, 0x0
+
+    const/4 v14, 0x1
+
+    if-eqz v10, :cond_9
+
+    if-eq v10, v14, :cond_8
+
+    const/4 v12, 0x2
+
+    const/high16 v13, 0x40000000    # 2.0f
+
+    if-eq v10, v12, :cond_7
+
+    const/4 v12, 0x3
+
+    if-eq v10, v12, :cond_5
+
+    if-eq v10, v15, :cond_3
+
+    const/4 v12, 0x5
+
+    if-ne v10, v12, :cond_2
+
+    .line 10
+    invoke-virtual {v9}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v10
+
+    if-eqz v10, :cond_1
+
+    .line 11
+    iget v12, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v12, v6, v12
+
+    int-to-float v12, v12
+
+    add-int/lit8 v10, v10, 0x1
+
+    int-to-float v10, v10
+
+    div-float/2addr v12, v10
+
+    goto :goto_1
+
+    :cond_1
+    move v12, v11
+
+    :goto_1
+    int-to-float v10, v1
+
+    add-float/2addr v10, v12
+
+    sub-int v13, v6, v2
+
+    int-to-float v13, v13
+
+    sub-float/2addr v13, v12
+
+    goto/16 :goto_6
+
+    .line 12
+    :cond_2
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Invalid justifyContent is set: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v3, v0, Lcom/google/android/flexbox/FlexboxLayout;->c:I
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 13
+    :cond_3
+    invoke-virtual {v9}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v10
+
+    if-eqz v10, :cond_4
+
+    .line 14
+    iget v12, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v12, v6, v12
+
+    int-to-float v12, v12
+
+    int-to-float v10, v10
+
+    div-float/2addr v12, v10
+
+    goto :goto_2
+
+    :cond_4
+    move v12, v11
+
+    :goto_2
+    int-to-float v10, v1
+
+    div-float v13, v12, v13
+
+    add-float/2addr v10, v13
+
+    sub-int v7, v6, v2
+
+    int-to-float v7, v7
+
+    sub-float v13, v7, v13
+
+    goto :goto_6
+
+    :cond_5
+    int-to-float v10, v1
+
+    .line 15
+    invoke-virtual {v9}, Lcom/google/android/flexbox/c;->c()I
+
+    move-result v7
+
+    if-eq v7, v14, :cond_6
+
+    add-int/lit8 v7, v7, -0x1
+
+    int-to-float v7, v7
+
+    goto :goto_3
+
+    :cond_6
+    const/high16 v7, 0x3f800000    # 1.0f
+
+    .line 16
+    :goto_3
+    iget v12, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v12, v6, v12
+
+    int-to-float v12, v12
+
+    div-float/2addr v12, v7
+
+    sub-int v7, v6, v2
+
+    int-to-float v13, v7
+
+    goto :goto_6
+
+    :cond_7
+    int-to-float v7, v1
+
+    .line 17
+    iget v10, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v12, v6, v10
+
+    int-to-float v12, v12
+
+    div-float/2addr v12, v13
+
+    add-float/2addr v7, v12
+
+    sub-int v12, v6, v2
+
+    int-to-float v12, v12
+
+    sub-int v10, v6, v10
+
+    int-to-float v10, v10
+
+    div-float/2addr v10, v13
+
+    sub-float v13, v12, v10
+
+    move v10, v7
+
+    goto :goto_5
+
+    .line 18
+    :cond_8
+    iget v7, v9, Lcom/google/android/flexbox/c;->e:I
+
+    sub-int v10, v6, v7
+
+    add-int/2addr v10, v2
+
+    int-to-float v10, v10
+
+    sub-int/2addr v7, v1
+
+    goto :goto_4
+
+    :cond_9
+    int-to-float v10, v1
+
+    sub-int v7, v6, v2
+
+    :goto_4
+    int-to-float v13, v7
+
+    :goto_5
+    move v12, v11
+
+    .line 19
+    :goto_6
+    invoke-static {v12, v11}, Ljava/lang/Math;->max(FF)F
+
+    move-result v7
+
+    const/4 v12, 0x0
+
+    .line 20
+    :goto_7
+    iget v11, v9, Lcom/google/android/flexbox/c;->h:I
+
+    if-ge v12, v11, :cond_13
+
+    .line 21
+    iget v11, v9, Lcom/google/android/flexbox/c;->o:I
+
+    add-int/2addr v11, v12
+
+    .line 22
+    invoke-virtual {v0, v11}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
+
+    move-result-object v18
+
+    if-eqz v18, :cond_12
+
+    .line 23
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getVisibility()I
+
+    move-result v15
+
+    const/16 v14, 0x8
+
+    if-ne v15, v14, :cond_a
+
+    move/from16 v25, v12
+
+    const/16 v26, 0x1
+
+    const/16 v28, 0x4
+
+    goto/16 :goto_c
+
+    .line 24
+    :cond_a
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v14
+
+    move-object v15, v14
+
+    check-cast v15, Lcom/google/android/flexbox/FlexboxLayout$a;
+
+    .line 25
+    iget v14, v15, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    int-to-float v14, v14
+
+    add-float/2addr v10, v14
+
+    .line 26
+    iget v14, v15, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    int-to-float v14, v14
+
+    sub-float/2addr v13, v14
+
+    .line 27
+    invoke-virtual {v0, v11, v12}, Lcom/google/android/flexbox/FlexboxLayout;->s(II)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_b
+
+    .line 28
+    iget v11, v0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    int-to-float v14, v11
+
+    add-float/2addr v10, v14
+
+    sub-float/2addr v13, v14
+
+    move/from16 v19, v10
+
+    move/from16 v21, v11
+
+    move/from16 v20, v13
+
+    goto :goto_8
+
+    :cond_b
+    move/from16 v19, v10
+
+    move/from16 v20, v13
+
+    const/16 v21, 0x0
+
+    .line 29
+    :goto_8
+    iget v10, v9, Lcom/google/android/flexbox/c;->h:I
+
+    const/4 v14, 0x1
+
+    sub-int/2addr v10, v14
+
+    if-ne v12, v10, :cond_c
+
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->o:I
+
+    const/16 v16, 0x4
+
+    and-int/lit8 v10, v10, 0x4
+
+    if-lez v10, :cond_d
+
+    .line 30
+    iget v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->q:I
+
+    move/from16 v22, v10
+
+    goto :goto_9
+
+    :cond_c
+    const/16 v16, 0x4
+
+    :cond_d
+    const/16 v22, 0x0
+
+    :goto_9
+    if-eqz p1, :cond_f
+
+    if-eqz p2, :cond_e
+
+    .line 31
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    const/4 v13, 0x1
+
+    .line 32
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v11
+
+    sub-int v17, v5, v11
+
+    .line 33
+    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v23
+
+    sub-int v23, v11, v23
+
+    .line 34
+    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->round(F)I
+
+    move-result v24
+
+    move-object/from16 v11, v18
+
+    move/from16 v25, v12
+
+    move-object v12, v9
+
+    move/from16 v26, v14
+
+    move/from16 v14, v17
+
+    move-object/from16 v27, v15
+
+    move/from16 v28, v16
+
+    move/from16 v15, v23
+
+    move/from16 v16, v5
+
+    move/from16 v17, v24
+
+    .line 35
+    invoke-virtual/range {v10 .. v17}, Lcom/google/android/flexbox/d;->R(Landroid/view/View;Lcom/google/android/flexbox/c;ZIIII)V
+
+    goto/16 :goto_a
+
+    :cond_e
+    move/from16 v25, v12
+
+    move/from16 v26, v14
+
+    move-object/from16 v27, v15
+
+    move/from16 v28, v16
+
+    .line 36
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    const/4 v13, 0x1
+
+    .line 37
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v11
+
+    sub-int v14, v5, v11
+
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v15
+
+    .line 38
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v12
+
+    add-int v17, v11, v12
+
+    move-object/from16 v11, v18
+
+    move-object v12, v9
+
+    move/from16 v16, v5
+
+    .line 39
+    invoke-virtual/range {v10 .. v17}, Lcom/google/android/flexbox/d;->R(Landroid/view/View;Lcom/google/android/flexbox/c;ZIIII)V
+
+    goto :goto_a
+
+    :cond_f
+    move/from16 v25, v12
+
+    move/from16 v26, v14
+
+    move-object/from16 v27, v15
+
+    move/from16 v28, v16
+
+    if-eqz p2, :cond_10
+
+    .line 40
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    const/4 v13, 0x0
+
+    .line 41
+    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v12
+
+    sub-int v15, v11, v12
+
+    .line 42
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v11
+
+    add-int v16, v4, v11
+
+    invoke-static/range {v20 .. v20}, Ljava/lang/Math;->round(F)I
+
+    move-result v17
+
+    move-object/from16 v11, v18
+
+    move-object v12, v9
+
+    move v14, v4
+
+    .line 43
+    invoke-virtual/range {v10 .. v17}, Lcom/google/android/flexbox/d;->R(Landroid/view/View;Lcom/google/android/flexbox/c;ZIIII)V
+
+    goto :goto_a
+
+    .line 44
+    :cond_10
+    iget-object v10, v0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    const/4 v13, 0x0
+
+    .line 45
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v15
+
+    .line 46
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v11
+
+    add-int v16, v4, v11
+
+    .line 47
+    invoke-static/range {v19 .. v19}, Ljava/lang/Math;->round(F)I
+
+    move-result v11
+
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v12
+
+    add-int v17, v11, v12
+
+    move-object/from16 v11, v18
+
+    move-object v12, v9
+
+    move v14, v4
+
+    .line 48
+    invoke-virtual/range {v10 .. v17}, Lcom/google/android/flexbox/d;->R(Landroid/view/View;Lcom/google/android/flexbox/c;ZIIII)V
+
+    .line 49
+    :goto_a
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v10
+
+    int-to-float v10, v10
+
+    add-float/2addr v10, v7
+
+    move-object/from16 v14, v27
+
+    iget v11, v14, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    int-to-float v11, v11
+
+    add-float/2addr v10, v11
+
+    add-float v19, v19, v10
+
+    .line 50
+    invoke-virtual/range {v18 .. v18}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v10
+
+    int-to-float v10, v10
+
+    add-float/2addr v10, v7
+
+    iget v11, v14, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    int-to-float v11, v11
+
+    add-float/2addr v10, v11
+
+    sub-float v20, v20, v10
+
+    if-eqz p2, :cond_11
+
+    const/4 v12, 0x0
+
+    const/4 v14, 0x0
+
+    move-object v10, v9
+
+    move-object/from16 v11, v18
+
+    move/from16 v13, v22
+
+    move/from16 v15, v21
+
+    .line 51
+    invoke-virtual/range {v10 .. v15}, Lcom/google/android/flexbox/c;->d(Landroid/view/View;IIII)V
+
+    goto :goto_b
+
+    :cond_11
+    const/4 v12, 0x0
+
+    const/4 v14, 0x0
+
+    move-object v10, v9
+
+    move-object/from16 v11, v18
+
+    move/from16 v13, v21
+
+    move/from16 v15, v22
+
+    .line 52
+    invoke-virtual/range {v10 .. v15}, Lcom/google/android/flexbox/c;->d(Landroid/view/View;IIII)V
+
+    :goto_b
+    move/from16 v10, v19
+
+    move/from16 v13, v20
+
+    goto :goto_c
+
+    :cond_12
+    move/from16 v25, v12
+
+    move/from16 v26, v14
+
+    move/from16 v28, v15
+
+    :goto_c
+    add-int/lit8 v12, v25, 0x1
+
+    move/from16 v14, v26
+
+    move/from16 v15, v28
+
+    goto/16 :goto_7
+
+    .line 53
+    :cond_13
+    iget v7, v9, Lcom/google/android/flexbox/c;->g:I
+
+    add-int/2addr v4, v7
+
+    sub-int/2addr v5, v7
+
+    add-int/lit8 v8, v8, 0x1
+
+    goto/16 :goto_0
+
+    :cond_14
+    return-void
+.end method
+
+.method public final x(II)V
+    .locals 8
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->clear()V
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    invoke-virtual {v0}, Lcom/google/android/flexbox/d$b;->a()V
+
+    .line 3
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    .line 4
+    invoke-virtual {v0, v1, p1, p2}, Lcom/google/android/flexbox/d;->c(Lcom/google/android/flexbox/d$b;II)V
+
+    .line 5
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    iget-object v0, v0, Lcom/google/android/flexbox/d$b;->a:Ljava/util/List;
+
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    .line 6
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    invoke-virtual {v0, p1, p2}, Lcom/google/android/flexbox/d;->p(II)V
+
+    .line 7
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->d:I
+
+    const/4 v1, 0x3
+
+    if-ne v0, v1, :cond_4
+
+    .line 8
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/flexbox/c;
+
+    const/high16 v2, -0x80000000
+
+    const/4 v3, 0x0
+
+    .line 9
+    :goto_1
+    iget v4, v1, Lcom/google/android/flexbox/c;->h:I
+
+    if-ge v3, v4, :cond_3
+
+    .line 10
+    iget v4, v1, Lcom/google/android/flexbox/c;->o:I
+
+    add-int/2addr v4, v3
+
+    .line 11
+    invoke-virtual {p0, v4}, Lcom/google/android/flexbox/FlexboxLayout;->r(I)Landroid/view/View;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_2
+
+    .line 12
+    invoke-virtual {v4}, Landroid/view/View;->getVisibility()I
+
+    move-result v5
+
+    const/16 v6, 0x8
+
+    if-ne v5, v6, :cond_0
+
+    goto :goto_2
+
+    .line 13
+    :cond_0
+    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/google/android/flexbox/FlexboxLayout$a;
+
+    .line 14
+    iget v6, p0, Lcom/google/android/flexbox/FlexboxLayout;->b:I
+
+    const/4 v7, 0x2
+
+    if-eq v6, v7, :cond_1
+
+    .line 15
+    iget v6, v1, Lcom/google/android/flexbox/c;->l:I
+
+    invoke-virtual {v4}, Landroid/view/View;->getBaseline()I
+
+    move-result v7
+
+    sub-int/2addr v6, v7
+
+    .line 16
+    iget v7, v5, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
+
+    move-result v6
+
+    .line 17
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v4
+
+    add-int/2addr v4, v6
+
+    iget v5, v5, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    add-int/2addr v4, v5
+
+    .line 18
+    invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
+
+    move-result v2
+
+    goto :goto_2
+
+    .line 19
+    :cond_1
+    iget v6, v1, Lcom/google/android/flexbox/c;->l:I
+
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v7
+
+    sub-int/2addr v6, v7
+
+    .line 20
+    invoke-virtual {v4}, Landroid/view/View;->getBaseline()I
+
+    move-result v7
+
+    add-int/2addr v6, v7
+
+    .line 21
+    iget v7, v5, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
+
+    move-result v6
+
+    .line 22
+    invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v4
+
+    iget v5, v5, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    add-int/2addr v4, v5
+
+    add-int/2addr v4, v6
+
+    .line 23
+    invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
+
+    move-result v2
+
+    :cond_2
+    :goto_2
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    .line 24
+    :cond_3
+    iput v2, v1, Lcom/google/android/flexbox/c;->g:I
+
+    goto :goto_0
+
+    .line 25
+    :cond_4
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    .line 26
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
+
+    move-result v1
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingBottom()I
+
+    move-result v2
+
+    add-int/2addr v1, v2
+
+    .line 27
+    invoke-virtual {v0, p1, p2, v1}, Lcom/google/android/flexbox/d;->o(III)V
+
+    .line 28
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    invoke-virtual {v0}, Lcom/google/android/flexbox/d;->X()V
+
+    .line 29
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
+
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    iget v1, v1, Lcom/google/android/flexbox/d$b;->b:I
+
+    invoke-virtual {p0, v0, p1, p2, v1}, Lcom/google/android/flexbox/FlexboxLayout;->z(IIII)V
+
+    return-void
+.end method
+
+.method public final y(II)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->clear()V
+
+    .line 2
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    invoke-virtual {v0}, Lcom/google/android/flexbox/d$b;->a()V
+
+    .line 3
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    invoke-virtual {v0, v1, p1, p2}, Lcom/google/android/flexbox/d;->f(Lcom/google/android/flexbox/d$b;II)V
+
+    .line 4
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    iget-object v0, v0, Lcom/google/android/flexbox/d$b;->a:Ljava/util/List;
+
+    iput-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->v:Ljava/util/List;
+
+    .line 5
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    invoke-virtual {v0, p1, p2}, Lcom/google/android/flexbox/d;->p(II)V
+
+    .line 6
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    .line 7
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
+
+    move-result v1
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingRight()I
+
+    move-result v2
+
+    add-int/2addr v1, v2
+
+    .line 8
+    invoke-virtual {v0, p1, p2, v1}, Lcom/google/android/flexbox/d;->o(III)V
+
+    .line 9
+    iget-object v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->u:Lcom/google/android/flexbox/d;
+
+    invoke-virtual {v0}, Lcom/google/android/flexbox/d;->X()V
+
+    .line 10
+    iget v0, p0, Lcom/google/android/flexbox/FlexboxLayout;->a:I
+
+    iget-object v1, p0, Lcom/google/android/flexbox/FlexboxLayout;->w:Lcom/google/android/flexbox/d$b;
+
+    iget v1, v1, Lcom/google/android/flexbox/d$b;->b:I
+
+    invoke-virtual {p0, v0, p1, p2, v1}, Lcom/google/android/flexbox/FlexboxLayout;->z(IIII)V
+
+    return-void
+.end method
+
+.method public final z(IIII)V
+    .locals 8
+
+    .line 1
+    invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
+
+    move-result v0
+
+    .line 2
+    invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
+
+    move-result v1
+
+    .line 3
+    invoke-static {p3}, Landroid/view/View$MeasureSpec;->getMode(I)I
+
+    move-result v2
+
+    .line 4
+    invoke-static {p3}, Landroid/view/View$MeasureSpec;->getSize(I)I
+
+    move-result v3
+
+    if-eqz p1, :cond_2
+
+    const/4 v4, 0x1
+
+    if-eq p1, v4, :cond_2
+
+    const/4 v4, 0x2
+
+    if-eq p1, v4, :cond_1
+
+    const/4 v4, 0x3
+
+    if-ne p1, v4, :cond_0
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p4, "Invalid flex direction: "
+
+    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    .line 6
+    :cond_1
+    :goto_0
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getLargestMainSize()I
+
+    move-result p1
+
+    .line 7
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getSumOfCrossSize()I
+
+    move-result v4
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingRight()I
+
+    move-result v5
+
+    add-int/2addr v4, v5
+
+    goto :goto_1
+
+    .line 8
+    :cond_2
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getSumOfCrossSize()I
+
+    move-result p1
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
+
+    move-result v4
+
+    add-int/2addr p1, v4
+
+    .line 9
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingBottom()I
+
+    move-result v4
+
+    add-int/2addr p1, v4
+
+    .line 10
+    invoke-virtual {p0}, Lcom/google/android/flexbox/FlexboxLayout;->getLargestMainSize()I
+
+    move-result v4
+
+    :goto_1
+    const/high16 v5, 0x1000000
+
+    const/high16 v6, 0x40000000    # 2.0f
+
+    const/high16 v7, -0x80000000
+
+    if-eq v0, v7, :cond_6
+
+    if-eqz v0, :cond_5
+
+    if-ne v0, v6, :cond_4
+
+    if-ge v1, v4, :cond_3
+
+    .line 11
+    invoke-static {p4, v5}, Landroid/view/View;->combineMeasuredStates(II)I
+
+    move-result p4
+
+    .line 12
+    :cond_3
+    invoke-static {v1, p2, p4}, Landroid/view/View;->resolveSizeAndState(III)I
+
+    move-result p2
+
+    goto :goto_3
+
+    .line 13
+    :cond_4
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p3, "Unknown width mode is set: "
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 14
+    :cond_5
+    invoke-static {v4, p2, p4}, Landroid/view/View;->resolveSizeAndState(III)I
+
+    move-result p2
+
+    goto :goto_3
+
+    :cond_6
+    if-ge v1, v4, :cond_7
+
+    .line 15
+    invoke-static {p4, v5}, Landroid/view/View;->combineMeasuredStates(II)I
+
+    move-result p4
+
+    goto :goto_2
+
+    :cond_7
+    move v1, v4
+
+    .line 16
+    :goto_2
+    invoke-static {v1, p2, p4}, Landroid/view/View;->resolveSizeAndState(III)I
+
+    move-result p2
+
+    :goto_3
+    const/16 v0, 0x100
+
+    if-eq v2, v7, :cond_b
+
+    if-eqz v2, :cond_a
+
+    if-ne v2, v6, :cond_9
+
+    if-ge v3, p1, :cond_8
+
+    .line 17
+    invoke-static {p4, v0}, Landroid/view/View;->combineMeasuredStates(II)I
+
+    move-result p4
+
+    .line 18
+    :cond_8
+    invoke-static {v3, p3, p4}, Landroid/view/View;->resolveSizeAndState(III)I
+
+    move-result p1
+
+    goto :goto_5
+
+    .line 19
+    :cond_9
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p3, "Unknown height mode is set: "
+
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 20
+    :cond_a
+    invoke-static {p1, p3, p4}, Landroid/view/View;->resolveSizeAndState(III)I
+
+    move-result p1
+
+    goto :goto_5
+
+    :cond_b
+    if-ge v3, p1, :cond_c
+
+    .line 21
+    invoke-static {p4, v0}, Landroid/view/View;->combineMeasuredStates(II)I
+
+    move-result p4
+
+    goto :goto_4
+
+    :cond_c
+    move v3, p1
+
+    .line 22
+    :goto_4
+    invoke-static {v3, p3, p4}, Landroid/view/View;->resolveSizeAndState(III)I
+
+    move-result p1
+
+    .line 23
+    :goto_5
+    invoke-virtual {p0, p2, p1}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
+
     return-void
 .end method

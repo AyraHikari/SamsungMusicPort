@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.samsung.android.app.music.settings.preference.AppUpdatePreference android:title="App update" android:key="app_update_ticket" />
-    <android.support.v7.preference.PreferenceCategory android:title="@string/playback" android:textAllCaps="true" />
-    <android.support.v7.preference.Preference android:title="@string/sleep_timer" android:key="music_auto_off" />
-    <com.samsung.android.app.music.settings.preference.PlaySpeedPreference android:title="@string/play_speed" android:key="play_speed" />
-    <com.samsung.android.app.music.settings.preference.CrossfadePreference android:title="@string/cross_fade" android:key="cross_fade" />
-    <SwitchPreferenceCompat android:title="@string/smart_volume" android:key="smart_volume" android:summary="@string/smart_volume_summary" />
-    <SwitchPreferenceCompat android:title="@string/skip_silences" android:key="skip_silences" android:summary="@string/skip_silences_summary" />
-    <SwitchPreferenceCompat android:title="@string/settings_lock_screen" android:key="lock_screen" android:summary="@string/settings_lock_screen_summary" />
-    <SwitchPreferenceCompat android:title="@string/screen_off_music" android:key="screen_off_music" android:summary="@string/screen_off_music_summary" />
-    <SwitchPreferenceCompat android:title="@string/edge_lighting" android:key="edge_lighting" android:summary="@string/edge_lighting_summary" />
-    <android.support.v7.preference.Preference android:title="@string/adapt_sound" android:key="adapt_sound" />
-    <android.support.v7.preference.PreferenceCategory android:title="@string/playlists" android:key="category_playlists" android:textAllCaps="true" />
-    <android.support.v7.preference.Preference android:title="@string/current_playlist_settings" android:key="current_playlist" />
-    <SwitchPreferenceCompat android:title="@string/duplicate_option" android:key="duplicate_option" android:summary="@string/duplicate_option_summary" />
-    <android.support.v7.preference.Preference android:title="@string/import_playlists_kt" android:key="import_playlists" android:summary="@string/import_playlists_settings_summary_kt" />
-    <android.support.v7.preference.Preference android:title="@string/export_playlists_kt" android:key="export_playlists" android:summary="@string/export_playlists_settings_summary_kt" />
-    <android.support.v7.preference.PreferenceCategory android:title="@string/my_info_streaming" android:key="category_streaming" android:textAllCaps="true" />
-    <android.support.v7.preference.Preference android:title="@string/streaming_audio_quality" android:key="streaming_audio_quality" />
-    <android.support.v7.preference.Preference android:title="@string/download_audio_quality" android:key="download_audio_quality" />
-    <com.samsung.android.app.music.settings.preference.ExplicitPreference android:title="@string/explicit_setting" android:key="explicit_option" />
-    <android.support.v7.preference.Preference android:title="@string/device_management_setting" android:key="device_management" />
-    <android.support.v7.preference.Preference android:title="@string/milk_setting_drm_license" android:key="drm_license" />
-    <android.support.v7.preference.PreferenceCategory android:title="@string/general" android:textAllCaps="true" />
-    <com.samsung.android.app.music.settings.preference.MobileDataPreference android:title="@string/mobile_data" android:key="mobile_data" />
-    <com.samsung.android.app.music.settings.preference.MusicCustomPreference android:title="@string/manage_tabs" android:key="manage_tabs" />
-    <com.samsung.android.app.music.settings.preference.CacheSizePreference android:title="@string/cache_size_setting" android:key="cache_size" />
-    <com.samsung.android.app.music.settings.preference.ReceiveMarketingPreference android:title="@string/marketing" android:key="push_notification" />
-    <SwitchPreferenceCompat android:title="@string/my_music_mode" android:key="my_music_mode_option" android:summary="@string/my_music_mode_off_summary" android:summaryOn="@string/my_music_mode_on_summary" android:summaryOff="@string/my_music_mode_off_summary" />
-    <SwitchPreferenceCompat android:title="@string/dark_theme" android:key="dark_theme" />
-    <SwitchPreferenceCompat android:title="@string/voice_control" android:key="barge_in" android:summary="@string/voice_control_summary" />
-    <com.samsung.android.app.music.settings.preference.AboutPreference android:key="about" />
-    <SwitchPreferenceCompat android:title="@string/play_similar_station_setting" android:key="similar_station" android:summary="@string/play_similar_station_summary" />
-    <android.support.v7.preference.Preference android:title="@string/drm_expired_test_menu" android:key="drm_license_test_menu" />
-    <android.support.v7.preference.Preference android:title="@string/hidden_menu_backup_db_files" android:key="hidden_menu_backup_db_files" />
-    <android.support.v7.preference.PreferenceCategory android:title="@string/dev" android:textAllCaps="true" />
-    <Preference android:title="Ayra Hikari" android:summary="This app Ported for All Roms">
-        <intent android:action="android.intent.action.VIEW" android:data="https://telegram.me/AyraHikari" />
-    </Preference>
-    <Preference android:title="Ayra Project Channel" android:summary="Follow my Telegram Channel to get updates">
-        <intent android:action="android.intent.action.VIEW" android:data="https://t.me/AyraProject" />
-    </Preference>
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.app.music.settings.preference.FolderTipCardPreference android:layout="@layout/basics_inline_cue" android:title="Folder tip" android:key="folder_tip_card" app:isPreferenceVisible="false" />
+    <com.samsung.android.app.music.settings.preference.AppUpdatePreference android:layout="@layout/basics_inline_cue" android:title="App update" android:key="app_update_ticket" />
+    <androidx.preference.PreferenceCategory android:title="@string/music_core_player_service_notification_channel_name" android:key="category_playback" android:textAllCaps="true">
+        <androidx.preference.Preference android:title="@string/sleep_timer" android:key="music_auto_off" />
+        <com.samsung.android.app.music.settings.preference.PlaySpeedPreference android:layout="@layout/seek_bar_preference" android:title="@string/play_speed" android:key="play_speed" />
+        <com.samsung.android.app.music.settings.preference.CrossFadePreference android:layout="@layout/seek_bar_preference" android:title="@string/cross_fade" android:key="cross_fade" />
+        <SwitchPreferenceCompat android:title="@string/smart_volume" android:key="smart_volume" android:summary="@string/smart_volume_summary" />
+        <SwitchPreferenceCompat android:title="@string/skip_silences" android:key="skip_silences" />
+        <SwitchPreferenceCompat android:title="@string/settings_lock_screen" android:key="lock_screen" />
+        <SwitchPreferenceCompat android:title="@string/screen_off_music" android:key="screen_off_music" android:summary="@string/screen_off_music_summary" />
+        <androidx.preference.Preference android:title="@string/adapt_sound" android:key="adapt_sound" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/playlists" android:key="category_playlists" android:textAllCaps="true">
+        <androidx.preference.Preference android:title="@string/current_playlist_settings" android:key="current_playlist" />
+        <SwitchPreferenceCompat android:title="@string/duplicate_option" android:key="duplicate_option" android:summary="@string/duplicate_option_summary" />
+        <androidx.preference.Preference android:title="@string/setting_manage_playlists_menu" android:key="manage_playlists" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/general" android:key="category_general" android:textAllCaps="true">
+        <com.samsung.android.app.music.settings.preference.MobileDataPreference android:title="@string/mobile_data" android:key="mobile_data" />
+        <androidx.preference.Preference android:title="@string/manage_tabs" android:key="manage_tabs" />
+        <SwitchPreferenceCompat android:title="@string/setting_dark_mode" android:key="dark_theme" />
+        <androidx.preference.DropDownPreference android:entries="@array/dark_mode_entries" android:title="@string/setting_dark_mode" android:key="dark_theme_option" android:entryValues="@array/dark_mode_entry_values" />
+        <SwitchPreferenceCompat android:title="@string/voice_control" android:key="barge_in" android:summary="@string/voice_control_summary" />
+        <SwitchPreferenceCompat android:title="@string/auto_play_in_bg_title" android:key="auto_play_in_background" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/melon_settings" android:key="category_streaming" android:textAllCaps="true">
+        <SwitchPreferenceCompat android:title="@string/setting_use_melon" android:key="using_online_service" />
+        <androidx.preference.Preference android:title="@string/streaming_audio_quality" android:key="streaming_audio_quality" />
+        <androidx.preference.Preference android:title="@string/streaming_video_quality" android:key="streaming_video_quality" />
+        <androidx.preference.Preference android:title="@string/download_audio_quality" android:key="download_audio_quality" />
+        <androidx.preference.Preference android:title="@string/device_management_setting" android:key="device_management" />
+        <androidx.preference.Preference android:title="@string/download_manager" android:key="download_manager" />
+        <androidx.preference.Preference android:title="@string/setting_dcf_download_folder" android:key="dcf_download_folder" />
+        <androidx.preference.Preference android:title="@string/setting_extend_dcf_period" android:key="drm_license" />
+        <androidx.preference.Preference android:title="@string/manage_cache_and_storage" android:key="cache_size" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="@string/setting_privacy" android:key="category_privacy" android:textAllCaps="true">
+        <androidx.preference.Preference android:title="@string/setting_permissions" android:key="permissions" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:key="category_information">
+        <androidx.preference.Preference android:key="about" />
+        <androidx.preference.Preference android:title="@string/contact_us" android:key="contact_us" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="TEST" android:key="category_test">
+        <androidx.preference.Preference android:title="@string/drm_expired_test_menu" android:key="drm_license_test_menu" />
+        <androidx.preference.Preference android:title="@string/reset_device_registration_limit" android:key="reset_device_registration_limit" />
+        <androidx.preference.Preference android:title="@string/hidden_menu_backup_db_files" android:key="hidden_menu_backup_db_files" />
+        <androidx.preference.Preference android:title="@string/hidden_menu_backup_smart_switch" android:key="hidden_menu_backup_smart_switch" />
+        <androidx.preference.Preference android:title="@string/hidden_menu_restore_smart_switch" android:key="hidden_menu_restore_smart_switch" />
+        <androidx.preference.Preference android:title="@string/hidden_menu_make_playlist_max" android:key="hidden_menu_make_playlist_max" />
+        <androidx.preference.Preference android:title="@string/hidden_menu_make_playlist_max_with_favorite" android:key="hidden_menu_make_playlist_max_with_favorite" />
+        <androidx.preference.Preference android:title="@string/hidden_menu_temp_test_playlist" android:key="hidden_menu_temp_test_playlist" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="" />
 </PreferenceScreen>

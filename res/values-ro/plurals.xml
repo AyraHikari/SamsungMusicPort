@@ -12,61 +12,9 @@
         <item quantity="other">Piese muzicale</item>
         <item quantity="one">Piesă</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d melodii au fost adăugate la Preferate. Melodiile care sunt deja incluse în Preferate nu au fost adăugate.</item>
-        <item quantity="one">%d piesă a fost adăugată la Preferate. Melodia care este deja inclusă în Preferate nu a fost adăugată.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d piese</item>
         <item quantity="one">Melodia %d</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d melodii au fost eliminate din Preferințe.</item>
-        <item quantity="one">%d piesă a fost eliminată din Preferate.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d melodii au fost adăugate la preferate.</item>
-        <item quantity="one">%d piese au fost adăugate la preferate.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Puteți elimina doar până la %d piese din recomandări. Vizualizați piesele eliminate, selectați câteva pe care doriți să le restabiliți, apoi încercați din nou.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Puteți elimina doar până la %d piesă din recomandări. Vizualizați piesele eliminate, selectați câteva pe care doriți să le restabiliți, apoi încercați din nou.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Puteți elimina doar până la %d piese din recomandări. Vizualizați piesele eliminate, selectați câteva pe care doriți să le restabiliți, apoi încercați din nou.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Atingeți butonul Redare radio pentru a vă bucura de %d piese gratuite în fiecare lună.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Atingeți butonul Redare radio pentru a vă bucura de %d piesă gratuită în fiecare lună.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Atingeți butonul Redare radio pentru a vă bucura de %d piese gratuite în fiecare lună.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Nu se pot selecta mai mult de %d artiști.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Nu se poate selecta mai mult de %d artist.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Nu se pot selecta mai mult de %d artiști.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Nu se pot selecta mai mult de %d genuri.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Nu se poate selecta mai mult de %d gen.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Nu se pot selecta mai mult de %d genuri.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Nu se pot selecta mai mult de %d piese.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Nu se poate selecta mai mult de %d piesă.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Nu se pot selecta mai mult de %d piese.</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d secunde</item>
@@ -76,29 +24,60 @@
         <item quantity="few">%d secunde</item>
         <item quantity="many">N/A</item>
     </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Nu se afișează timp de %d zile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se afișează timp de %d zi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se afișează timp de %d zile</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="drm_can_use_n_times">
         <item quantity="other">Puteți utiliza %1$s de %2$d ori.</item>
         <item quantity="one">Puteți utiliza %s 1 dată.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">%d piese nu pot fi achiziționate cu bilete premium, din cauza unei probleme privind drepturile de autor. Le puteți achiziționa individual.</item>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Derulează rapid înainte cu %d de secunde</item>
+        <item quantity="one">Derulează rapid înainte cu %d secundă</item>
+        <item quantity="few">Derulează rapid înainte cu %d secunde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Derulează înapoi cu %d de secunde</item>
+        <item quantity="one">Derulează înapoi cu %d secundă</item>
+        <item quantity="few">Derulează înapoi cu %d secunde</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d piese expirate vor fi șterse. Puteți consulta istoricul descărcărilor în meniul Informații Melon > Istoric achiziții.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d piesă nu poate fi achiziționată cu bilete premium, din cauza unei probleme privind drepturile de autor. O puteți achiziționa individual.</item>
+        <item quantity="one">%d piesă expirată va fi ștearsă. Puteți consulta istoricul descărcărilor în meniul Informații Melon > Istoric achiziții.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">%d piese nu pot fi achiziționate cu bilete premium, din cauza unei probleme privind drepturile de autor. Le puteți achiziționa individual.</item>
+        <item quantity="few">%d piese expirate vor fi șterse. Puteți consulta istoricul descărcărilor în meniul Informații Melon > Istoric achiziții.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d piese vor fi utilizate din piesele dvs. disponibile.</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Nu s-a putut extinde perioada DCF pentru %d piese. Puteți să încercați din nou sau să ștergeți fișierele din listă înainte de a le reîncărca.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d piesă va fi utilizată din piesele dvs. disponibile.</item>
+        <item quantity="one">Nu s-a putut extinde perioada DCF pentru %d piesă. Puteți să încercați din nou sau să ștergeți fișierele din listă înainte de a le reîncărca.</item>
         <item quantity="two">N/A</item>
-        <item quantity="few">%d piese vor fi utilizate din piesele dvs. disponibile.</item>
+        <item quantity="few">Nu s-a putut extinde perioada DCF pentru %d piese. Puteți să încercați din nou sau să ștergeți fișierele din listă înainte de a le reîncărca.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Nu se pot importa mai mult de %d elemente.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate importa mai mult de %d element.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot importa mai mult de %d elemente.</item>
         <item quantity="many">N/A</item>
     </plurals>
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Se așteaptă descărcarea pentru %d melodii…</item>
         <item quantity="one">Se așteaptă descărcarea pentru 1 melodie…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d de notificări noi</item>
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Ștergeți din telefon %d albume și toate piesele din acesta?</item>
@@ -111,54 +90,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Ștergeți toate piesele acestor compozitori?</item>
         <item quantity="one">Ștergeți toate piesele acestui compozitor?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Ștergeți piese selectate?</item>
-        <item quantity="one">Ștergeți piesa selectată?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d piese vor fi achiziționate. Dacă nu aveți suficiente piese disponibile, aceste piese nu pot fi achiziționate.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d piesă va fi achiziționată. Dacă nu aveți suficiente piese disponibile, această piesă nu poate fi achiziționată.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">%d piese vor fi achiziționate. Dacă nu aveți suficiente piese disponibile, aceste piese nu pot fi achiziționate.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Achiziționați piesele selectate?</item>
-        <item quantity="one">Achiziționați piesa selectată?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Ați achiziționat deja aceste melodii. Puteți descărca din nou melodiile achiziționate în orice moment.</item>
-        <item quantity="one">Ați achiziționat deja această melodie. Puteți descărca din nou melodiile achiziționate în orice moment.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Piesele achiziționate deja</item>
-        <item quantity="one">Piesă achiziționată deja</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Puteți adăuga drept preferate doar %d liste de redare furnizate. Eliminați din fila Preferate câteva liste de redare furnizate.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Puteți adăuga drept preferată doar %d listă de redare furnizată. Eliminați din fila Preferate câteva liste de redare furnizate.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Puteți adăuga drept preferate doar %d liste de redare furnizate. Eliminați din fila Preferate câteva liste de redare furnizate.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Puteți adăuga doar %d piese redate în flux ca Piese preferate. Eliminați câteva piese redate în flux din Piese preferate, apoi încercați din nou.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Puteți adăuga doar %d piesă redată în flux ca Piesă preferată. Eliminați câteva piese redate în flux din Piese preferate, apoi încercați din nou.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Puteți adăuga doar %d piese redate în flux ca Piese preferate. Eliminați câteva piese redate în flux din Piese preferate, apoi încercați din nou.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Puteți adăuga doar %d piese ca Piese preferate. Eliminați câteva piese din Piese preferate, apoi încercați din nou.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">Puteți adăuga doar %d piesă ca Piesă preferată. Eliminați câteva piese din Piese preferate, apoi încercați din nou.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">Puteți adăuga doar %d piese ca Piese preferate. Eliminați câteva piese din Piese preferate, apoi încercați din nou.</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d directoare</item>
@@ -180,25 +111,73 @@
         <item quantity="few">%d foldere ascunse vor fi, de asemenea, șterse.</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d piese restabilite.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d piesă restabilită.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">%d piese restabilite.</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">Ștergeți %d elemente?</item>
         <item quantity="one">Ștergeți 1 element?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Nu se pot introduce mai mult de %d caractere.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate introduce mai mult de %d caracter.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot introduce mai mult de %d caractere.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Nu puteți adăuga mai mult de %d albume. Adăugați mai puține albume sau eliminați câteva din Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu puteți adăuga mai mult de %d album. Adăugați mai puține albume sau eliminați câteva din Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu puteți adăuga mai mult de %d albume. Adăugați mai puține albume sau eliminați câteva din Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Nu puteți adăuga mai mult de %d artiști. Adăugați mai puțini artiști sau eliminați câțiva din Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu puteți adăuga mai mult de %d artist. Adăugați mai puțini artiști sau eliminați câțiva din Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu puteți adăuga mai mult de %d artiști. Adăugați mai puțini artiști sau eliminați câțiva din Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Puteți adăuga până la %d liste de redare. Eliminați din fila Preferate câteva liste de redare.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Puteți adăuga până la %d listă de redare. Eliminați din fila Preferate câteva liste de redare.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Puteți adăuga până la %d liste de redare. Eliminați din fila Preferate câteva liste de redare.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Nu puteți adăuga mai mult de %d piese cu redare în flux. Adăugați mai puține piese sau eliminați câteva din Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu puteți adăuga mai mult de %d piesă cu redare în flux. Adăugați mai puține piese sau eliminați câteva din Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu puteți adăuga mai mult de %d piese cu redare în flux. Adăugați mai puține piese sau eliminați câteva din Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Nu puteți adăuga mai mult de %d piese. Adăugați mai puține piese sau eliminați câteva din Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu puteți adăuga mai mult de %d piesă. Adăugați mai puține piese sau eliminați câteva din Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu puteți adăuga mai mult de %d piese. Adăugați mai puține piese sau eliminați câteva din Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">%d liste de redare exportate.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d listă de redare exportată.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d liste de redare exportate.</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">%d liste de redare importate.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d listă de redare importată.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d liste de redare importate.</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Nu se poate selecta mai mult de %d liste de redare.</item>
@@ -216,12 +195,48 @@
         <item quantity="other">%d piese</item>
         <item quantity="one">1 piesă</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Doar %d piese au fost adăugate la Preferate. Restul erau deja în Preferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Doar %d piesă a fost adăugată la Preferate. Restul erau deja în Preferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Doar %d piese au fost adăugate la Preferate. Restul erau deja în Preferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d melodii au fost adăugate la preferate.</item>
+        <item quantity="one">1 melodie a fost adăugată la preferate.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">Au fost adăugate %d melodii în lista de redare.</item>
+        <item quantity="one">1 melodie a fost adăugată în lista de redare.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">Au fost adăugate %d piese în coadă.</item>
         <item quantity="one">%d piesă a fost adăugată în coadă.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">Ștergeți %d piese?</item>
-        <item quantity="one">Ștergeți 1 piesă?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d piesă?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d piese?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Durată somn: %d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Durată somn: %d oră</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Durată somn: %d ore</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Durată somn: %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Durată somn: %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Durată somn: %d minute</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

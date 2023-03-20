@@ -12,64 +12,20 @@
         <item quantity="other">Bài hát</item>
         <item quantity="one">Bài hát</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d bài hát đã được thêm vào Mục yêu thích. Các bài hát đã có trong Mục yêu thích không được thêm.</item>
-        <item quantity="one">Đã thêm %d bài hát vào Yêu thích. Bài hát đã có trong Yêu thích không được thêm.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d bài hát</item>
         <item quantity="one">%d bài hát</item>
     </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">Đã xóa %d bài hát khỏi Mục yêu thích.</item>
-        <item quantity="one">Đã xóa %d bài hát khỏi yêu thích.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d bài hát đã được thêm vào mục yêu thích</item>
-        <item quantity="one">Đã thêm %d bài hát vào Yêu thích.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">Bạn chỉ có thể xóa tối đa %d bài hát từ đề xuất. Hãy xem các bài hát đã xóa, chọn một số bài hát để khôi phục, sau đó hãy thử lại.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">Hãy chạm phím Phát radio để tận hưởng %d bài hát miễn phí mỗi tháng.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">Không thể chọn nhiều hơn %d nghệ sĩ.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">Không thể chọn nhiều hơn %d thể loại.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">Không thể chọn nhiều hơn %d bài hát.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d giây</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">Không hiển thị trong %d ngày</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
@@ -80,16 +36,32 @@
         <item quantity="other">Bạn có thể dùng %1$s %2$d lần.</item>
         <item quantity="one">Bạn có thể dùng %s một lần.</item>
     </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">Không thể mua %d bài hát bằng vé premium do vấn đề bản quyền. Bạn có thể mua riêng từng bài hát.</item>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Tua nhanh %d giây</item>
+        <item quantity="one">Tua nhanh %d giây</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Tua lại %d giây</item>
+        <item quantity="one">Tua lại %d giây</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d bài hát hết hạn sẽ bị xóa. Bạn có thể kiểm tra nhật ký tải về của mình trong thông tin Melon > Nhật ký mua.</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">%d bài hát sẽ được sử dụng từ các bài hát hiện có của bạn.</item>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">Không thể kéo dài thời hạn DCF cho %d bài hát. Bạn có thể thử lại hoặc xóa các file trong danh sách bên dưới trước khi tải về lại.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">Không thể nhập nhiều hơn %d mục.</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
@@ -99,6 +71,10 @@
     <plurals name="milk_download_queue_songs_downloading">
         <item quantity="other">Đang chờ tải về %d bài hát…</item>
         <item quantity="one">Đang chờ tải về 1 bài hát…</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d thông báo mới</item>
+        <item quantity="one">%d thông báo mới</item>
     </plurals>
     <plurals name="n_albums_deleted_msg">
         <item quantity="other">Xóa %d album và tất cả bài hát trong đó khỏi điện thoại của bạn?</item>
@@ -111,54 +87,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">Xóa tất cả bài hát của các tác giả này?</item>
         <item quantity="one">Xóa tất cả bài hát của tác giả này?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">Xóa các bài hát đã chọn?</item>
-        <item quantity="one">Xóa bài hát đã chọn?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d bài hát sẽ được mua. Nếu bạn không có đủ các bài hát hiện có thì những bài hát này không thể mua được.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">Mua bài hát đã chọn?</item>
-        <item quantity="one">Mua bài hát đã chọn?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">Bạn đã mua những bài hát này. Bạn có thể tải về lại các bài hát đã mua bất kỳ lúc nào.</item>
-        <item quantity="one">Bạn đã mua bài hát này. Bạn có thể tải về lại các bài hát đã mua bất kỳ lúc nào.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">Các bài hát đã được mua</item>
-        <item quantity="one">Bài hát đã được mua</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">Bạn chỉ có thể thêm %d danh sách phát được cung cấp làm yêu thích. Hãy xóa một số danh sách phát được cung cấp từ tab Yêu thích.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">Bạn chỉ có thể thêm %d bài hát phát online làm Bài hát yêu thích. Hãy xóa một số bài hát phát online từ Bài hát yêu thích sau đó thử lại.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">Bạn chỉ có thể thêm %d bài hát làm Bài hát yêu thích. Hãy xóa một số bài hát từ Bài hát yêu thích sau đó thử lại.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">N/A</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d thư mục</item>
@@ -180,25 +108,73 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d bài hát đã được khôi phục.</item>
+    <plurals name="n_items_deleted_msg">
+        <item quantity="other">Xóa %d mục?</item>
+        <item quantity="one">Xóa 1 mục?</item>
+    </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">Không thể nhập nhiều hơn %d ký tự.</item>
         <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_items_deleted_msg">
-        <item quantity="other">Xóa %d mục?</item>
-        <item quantity="one">Xóa 1 mục?</item>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">Không thể thêm nhiều hơn %d album. Giảm bớt album cần thêm hoặc xóa một vài album khỏi mục Yêu thích.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">Không thể thêm nhiều hơn %d nghệ sĩ. Giảm bớt nghệ sĩ cần thêm hoặc xóa một vài nghệ sĩ khỏi mục Yêu thích.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">Bạn chỉ có thể thêm tối đa %d danh sách phát. Hãy xóa một số danh sách phát khỏi tab Yêu thích.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">Không thể thêm nhiều hơn %d bài hát phát trực tuyến. Giảm bớt bài hát cần thêm hoặc xóa một vài bài hát khỏi mục Bài hát yêu thích.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">Không thể thêm nhiều hơn %d bài hát. Giảm bớt bài hát cần thêm hoặc xóa một vài bài hát khỏi mục Bài hát yêu thích.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">Đã xuất %d danh sách phát.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">Đã nhập %d danh sách phát.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">Không thể chọn nhiều hơn %d danh sách phát.</item>
@@ -216,12 +192,72 @@
         <item quantity="other">%d bài hát</item>
         <item quantity="one">1 bài hát</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">Chỉ %d bài hát được thêm vào mục Yêu thích. Các bài hát còn lại đã có sẵn trong mục Yêu thích.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d bài hát đã được thêm vào mục yêu thích</item>
+        <item quantity="one">Đã thêm 1 bài hát vào mục yêu thích</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d bài hát đã được thêm vào danh sách phát.</item>
+        <item quantity="one">Đã thêm 1 bài hát vào danh sách phát</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">%d bài hát đã được thêm vào danh sách chờ.</item>
         <item quantity="one">Đã thêm %d bài hát vào hàng chờ.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
         <item quantity="other">Xóa %d bài hát?</item>
-        <item quantity="one">Xóa 1 bài hát?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">Thời gian ngủ: %d giờ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">Thời gian ngủ: %d phút</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="time_difference_short_days">
+        <item quantity="other">%d ngày</item>
+        <item quantity="one">%d ngày</item>
+    </plurals>
+    <plurals name="time_difference_short_hours">
+        <item quantity="other">%d giờ</item>
+        <item quantity="one">%d giờ</item>
+    </plurals>
+    <plurals name="time_difference_short_minutes">
+        <item quantity="other">%d phút</item>
+        <item quantity="one">%d phút</item>
+    </plurals>
+    <plurals name="time_difference_words_days">
+        <item quantity="other">%d ngày</item>
+        <item quantity="one">%d ngày</item>
+    </plurals>
+    <plurals name="time_difference_words_hours">
+        <item quantity="other">%d giờ</item>
+        <item quantity="one">%d giờ</item>
+    </plurals>
+    <plurals name="time_difference_words_minutes">
+        <item quantity="other">%d phút</item>
+        <item quantity="one">%d phút</item>
     </plurals>
 </resources>

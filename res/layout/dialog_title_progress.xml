@@ -2,5 +2,5 @@
 <RelativeLayout android:id="@id/category_title_main" android:paddingTop="@dimen/winset_dialog_body_padding_vertical" android:paddingBottom="@dimen/winset_dialog_body_padding_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/winset_dialog_title_height" android:paddingStart="@dimen/winset_dialog_body_padding_horizontal" android:paddingEnd="@dimen/winset_dialog_body_padding_horizontal"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:id="@id/category_title" android:text="@string/select_device" android:layout_alignParentStart="true" style="@style/Font.Roboto.Bold.DialogCategoryTitle" />
-    <ProgressBar android:id="@id/refresh_progress_view" android:layout_width="@dimen/dialog_refresh_progress_size" android:layout_height="@dimen/dialog_refresh_progress_size" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="?android:progressBarStyleSmall" />
+    <androidx.appcompat.widget.SeslProgressBar android:id="@id/refresh_progress_view" android:layout_width="@dimen/dialog_refresh_progress_size" android:layout_height="@dimen/dialog_refresh_progress_size" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="?android:progressBarStyleSmall" />
 </RelativeLayout>

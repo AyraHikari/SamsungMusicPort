@@ -2,4 +2,5 @@
 <shape android:shape="rectangle"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <corners android:radius="@dimen/lock_player_album_round" />
+    <stroke android:width="@dimen/mu_album_cover_stroke" android:color="@color/black_opacity_10" />
 </shape>

@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/samsung/feature/GateConfigSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "GateConfigSdlCompat.java"
 
 
 # static fields
@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,14 +25,14 @@
 .method public static isGateEnabled()Z
     .locals 2
 
-    .line 30
+    .line 1
     sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
     const/16 v1, 0x76d
 
     if-lt v0, v1, :cond_0
 
-    .line 31
+    .line 2
     invoke-static {}, Landroid/util/GateConfig;->isGateEnabled()Z
 
     move-result v0
@@ -49,14 +48,14 @@
 .method public static isGateLcdtextEnabled()Z
     .locals 2
 
-    .line 37
+    .line 1
     sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
     const/16 v1, 0x76d
 
     if-lt v0, v1, :cond_0
 
-    .line 38
+    .line 2
     invoke-static {}, Landroid/util/GateConfig;->isGateLcdtextEnabled()Z
 
     move-result v0
@@ -72,14 +71,14 @@
 .method public static setGateEnabled(Z)V
     .locals 2
 
-    .line 18
+    .line 1
     sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
     const/16 v1, 0x76d
 
     if-lt v0, v1, :cond_0
 
-    .line 19
+    .line 2
     invoke-static {p0}, Landroid/util/GateConfig;->setGateEnabled(Z)V
 
     :cond_0
@@ -89,14 +88,14 @@
 .method public static setGateLcdtextEnabled(Z)V
     .locals 2
 
-    .line 24
+    .line 1
     sget v0, Lcom/samsung/android/app/music/support/sdl/Sdl;->VERSION:I
 
     const/16 v1, 0x76d
 
     if-lt v0, v1, :cond_0
 
-    .line 25
+    .line 2
     invoke-static {p0}, Landroid/util/GateConfig;->setGateLcdtextEnabled(Z)V
 
     :cond_0

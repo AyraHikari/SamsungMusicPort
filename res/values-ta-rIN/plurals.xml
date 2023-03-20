@@ -12,61 +12,9 @@
         <item quantity="other">ட்ராக்குகள்</item>
         <item quantity="one">ட்ராக்</item>
     </plurals>
-    <plurals name="NNNsometrackstofavorite">
-        <item quantity="other">%d ட்ராக்குகள் பிடித்தவைகளில் சேர்க்கப்பட்டன. பிடித்தவைகளில் ஏற்கனவே உள்ள ட்ராக் சேர்க்கப்படவில்லை.</item>
-        <item quantity="one">பிடித்தவையில் %d ட்ராக் சேர்க்கப்பட்டது. பிடித்தவையில் ஏற்கனவே உள்ள ட்ராக் சேர்க்கப்படவில்லை.</item>
-    </plurals>
     <plurals name="NNNtrack">
         <item quantity="other">%d ட்ராக்குகள்</item>
         <item quantity="one">%d ட்ராக்</item>
-    </plurals>
-    <plurals name="NNNtracksfromfavorite">
-        <item quantity="other">%d ட்ராக்குகள் பிடித்தவைகளிலிருந்து அகற்றப்பட்டன.</item>
-        <item quantity="one">பிடித்தவையிலிருந்து %d ட்ராக் அகற்றப்பட்டது.</item>
-    </plurals>
-    <plurals name="NNNtrackstofavorite">
-        <item quantity="other">%d பாடல்கள் பிடித்தவையில் சேர்க்கப்பட்டன.</item>
-        <item quantity="one">பிடித்தவையில் %d ட்ராக் சேர்க்கப்பட்டது.</item>
-    </plurals>
-    <plurals name="browse_contextual_menu_ban_exceed_desc">
-        <item quantity="other">பரிந்துரைகளில் இருந்து %d ட்ராக்குகளை மட்டுமே நீங்கள் அகற்றலாம். அகற்றிய ட்ராக்குகளைப் பார்த்து, மீள்சேமிப்பதற்கு மேலும் சிலவற்றை சேமித்து, பிறகு மீண்டும் முயலவும்.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">பரிந்துரைகளில் இருந்து %d ட்ராக்கை மட்டுமே நீங்கள் அகற்றலாம். அகற்றிய ட்ராக்குகளைப் பார்த்து, மீள்சேமிப்பதற்கு மேலும் சிலவற்றை சேமித்து, பிறகு மீண்டும் முயலவும்.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="browse_play_radio_tips">
-        <item quantity="other">ஒவ்வொரு மாதமும் %d இலவச பாடல்களை அனுபவித்து மகிழ, ரேடியோ இயக்குக என்னும் பொத்தானை டேப் செய்யவும்.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">ஒவ்வொரு மாதமும் %d இலவச பாடலை அனுபவித்து மகிழ, ரேடியோ இயக்குக என்னும் பொத்தானை டேப் செய்யவும்.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_artist_more_than">
-        <item quantity="other">%d ஆர்டிஸ்ட்களுக்கு அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d ஆர்டிஸ்ட்டிற்கு அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_genre_more_than">
-        <item quantity="other">%d வகைகளுக்கு அதிகமாகத் தேர்வு செய்ய இயலாது.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d வகைக்கு அதிகமாகத் தேர்வு செய்ய இயலாது.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="cannot_select_track_more_than">
-        <item quantity="other">%d ட்ராக்குகளை விட அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d ட்ராக்கிற்கு அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="cross_fade_sec">
         <item quantity="other">%d வினாடிகள்</item>
@@ -76,22 +24,38 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="drm_can_use_n_times">
-        <item quantity="other">%1$s என்பதை மேலும் %2$d முறைகள் பயன்படுத்தலாம்.</item>
-        <item quantity="one">%s என்பதை 1 முறை பயன்படுத்தலாம்.</item>
-    </plurals>
-    <plurals name="milk_download_basket_alc_popup_message">
-        <item quantity="other">பதிப்புரிமை சிக்கலின் காரணமாக பிரீமியம் டிக்கெட்டுகள் மூலம் %d பாடல்களை வாங்க இயலாது. இவற்றை நீங்கள் தனியே வாங்கலாம்.</item>
+    <plurals name="do_not_show_for_n_days">
+        <item quantity="other">%d நாட்களுக்கு காட்டவேண்டாம்</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">பதிப்புரிமை சிக்கலின் காரணமாக பிரீமியம் டிக்கெட்டுகள் மூலம் %d பாடலை வாங்க இயலாது. இவற்றை நீங்கள் தனியே வாங்கலாம்.</item>
+        <item quantity="one">%d நாளுக்கு காட்டவேண்டாம்</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="milk_download_basket_popup_buy_track_message_desc">
-        <item quantity="other">உங்கள் கிடைக்கக்கூடிய பாடல்களிலிருந்து %d பாடல்கள் பயன்படுத்தப்படும்.</item>
+    <plurals name="drm_can_use_n_times">
+        <item quantity="other">%1$s என்பதை மேலும் %2$d முறைகள் பயன்படுத்தலாம்.</item>
+        <item quantity="one">%s என்பதை 1 முறை பயன்படுத்தலாம்.</item>
+    </plurals>
+    <plurals name="melon_dcf_delete_track">
+        <item quantity="other">%d காலாவதியான பாடல்கள் நீக்கப்படும். உங்கள் பதிவிறக்க வரலாற்றை Melon விவரம் > வாங்குதல் வரலாறு என்பதில் காணலாம்.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">உங்கள் கிடைக்கக்கூடிய பாடல்களிலிருந்து %d பாடல் பயன்படுத்தப்படும்.</item>
+        <item quantity="one">%d காலாவதியான பாடல் நீக்கப்படும். உங்கள் பதிவிறக்க வரலாற்றை Melon விவரம் > வாங்குதல் வரலாறு என்பதில் காணலாம்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_dcf_fail_description">
+        <item quantity="other">%d ட்ராக்குகளுக்கான DCF காலத்தை நீட்டிக்க இயலவில்லை. நீங்கள் மீண்டும் முயலலாம் அல்லது கோப்புகளை மீண்டும் பதிவிறக்குவதற்கு முன் கீழேயுள்ள பட்டியலிலிருந்து அவற்றை நீக்கவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ட்ராக்கிற்கான DCF காலத்தை நீட்டிக்க இயலவில்லை. நீங்கள் மீண்டும் முயலலாம் அல்லது கோப்புகளை மீண்டும் பதிவிறக்குவதற்கு முன் கீழேயுள்ள பட்டியலிலிருந்து அவற்றை நீக்கவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="melon_import_max_message">
+        <item quantity="other">%d உருப்படிகளுக்கு மேல் ஏற்ற இயலாது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d உருப்படிக்கு மேல் ஏற்ற இயலாது.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -111,54 +75,6 @@
     <plurals name="n_composers_deleted_msg">
         <item quantity="other">இந்த இசை அமைப்பாளர்களின் எல்லா ட்ராக்குகளையும் நீக்கவா?</item>
         <item quantity="one">இந்த இசை அமைப்பாளரின் எல்லா ட்ராக்குகளையும் நீக்கவா?</item>
-    </plurals>
-    <plurals name="n_download_basket_delete_tracks_q">
-        <item quantity="other">தேர்வுசெய்த பாடல்களை நீக்கவா?</item>
-        <item quantity="one">தேர்வுசெய்த பாடலை நீக்கவா?</item>
-    </plurals>
-    <plurals name="n_download_basket_not_enough_available_count_message">
-        <item quantity="other">%d பாடல்கள் வாங்கப்படும். உங்களிடம் போதியளவிலான கிடைக்கக்கூடிய பாடல்கள் இல்லையெனில், இந்த பாடல்களை வாங்க இயலாது.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d பாடல் வாங்கப்படும். உங்களிடம் போதியளவிலான கிடைக்கக்கூடிய பாடல்கள் இல்லையெனில், இந்த பாடல்களை வாங்க இயலாது.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_buy_track_title">
-        <item quantity="other">தேர்வுசெய்துள்ள பாடல்களை வாங்கவா?</item>
-        <item quantity="one">தேர்வுசெய்த பாடலை வாங்கவா?</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again">
-        <item quantity="other">நீங்கள் இந்தப் பாடல்களை ஏற்கனவே வாங்கியுள்ளீர்கள். நீங்கள் எந்த நேரத்தில் வேண்டுமானாலும் வாங்கிய பாடல்களை மீண்டும் பதிவிறக்கலாம்.</item>
-        <item quantity="one">நீங்கள் இந்தப் பாடலை ஏற்கனவே வாங்கியுள்ளீர்கள். நீங்கள் எந்த நேரத்தில் வேண்டுமானாலும் வாங்கிய பாடல்களை மீண்டும் பதிவிறக்கலாம்.</item>
-    </plurals>
-    <plurals name="n_download_basket_popup_download_again_title">
-        <item quantity="other">பாடல்கள் ஏற்கனவே வாங்கப்பட்டுள்ளது</item>
-        <item quantity="one">பாடல் ஏற்கனவே வாங்கப்பட்டது</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_playlist_kt">
-        <item quantity="other">நீங்கள் பிடித்தவையாக %d வழங்கப்பட்ட ப்ளேலிஸ்ட்டுகளை மட்டுமே சேர்க்கலாம். பிடித்தவை டேப்புகளில் இருந்து சில வழங்கப்பட்ட ப்ளேலிஸ்ட்டுகளை அகற்றலாம்.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">நீங்கள் பிடித்தவையாக %d வழங்கப்பட்ட ப்ளேலிஸ்ட்டை மட்டுமே சேர்க்கலாம். பிடித்தவை டேப்புகளில் இருந்து சில வழங்கப்பட்ட ப்ளேலிஸ்ட்டுகளை அகற்றலாம்.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_streaming_track_kt">
-        <item quantity="other">நீங்கள் %d ஸ்ட்ரீமிங் ட்ராக்குகளை மட்டுமே உங்கள் பிடித்தமான ட்ராக்காக சேர்க்கலாம். பிடித்தமான ட்ராக்குகளில் இருந்து சில ஸ்ட்ரீமிங் ட்ராக்குகளை அகற்றி, பிறகு மீண்டும் முயலவும்.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">நீங்கள் %d ஸ்ட்ரீமிங் ட்ராக்கை மட்டுமே உங்கள் பிடித்தமான ட்ராக்காக சேர்க்கலாம். பிடித்தமான ட்ராக்குகளில் இருந்து சில ஸ்ட்ரீமிங் ட்ராக்குகளை அகற்றி, பிறகு மீண்டும் முயலவும்.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
-    <plurals name="n_favorite_max_message_track_kt">
-        <item quantity="other">நீங்கள் %d ட்ராக்குகளை மட்டுமே பிடித்தமான ட்ராக்குகளாக சேர்க்கலாம். பிடித்தமான ட்ராக்குகளில் இருந்து சில ட்ராக்குகளை அகற்றி, பிறகு மீண்டும் முயலவும்.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">நீங்கள் %d ட்ராக்கை மட்டுமே பிடித்தமான ட்ராக்காக சேர்க்கலாம். பிடித்தமான ட்ராக்குகளில் இருந்து சில ட்ராக்குகளை அகற்றி, பிறகு மீண்டும் முயலவும்.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_folders">
         <item quantity="other">%d கோப்புறைகள்</item>
@@ -180,30 +96,78 @@
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
     </plurals>
-    <plurals name="n_hidden_tracks_remove">
-        <item quantity="other">%d ட்ராக்குகள் மீள்சேமிக்கப்பட்டுள்ளன.</item>
-        <item quantity="zero">N/A</item>
-        <item quantity="one">%d ட்ராக் மீள்சேமிக்கப்பட்டுள்ளது.</item>
-        <item quantity="two">N/A</item>
-        <item quantity="few">N/A</item>
-        <item quantity="many">N/A</item>
-    </plurals>
     <plurals name="n_items_deleted_msg">
         <item quantity="other">%d உருப்படிகளை நீக்கவா?</item>
         <item quantity="one">1 உருப்படியை நீக்கவா?</item>
     </plurals>
+    <plurals name="n_message_create_playlist_max_characters">
+        <item quantity="other">%d எழுத்துகளுக்கு மேல் உள்ளிட இயலாது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d எழுத்துக்கு மேல் உள்ளிட இயலாது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_albums">
+        <item quantity="other">%d தொகுப்புகளை விட அதிகமாகச் சேர்க்க இயலாது. சில தொகுப்புகளைச் சேர்க்கவும் அல்லது பிடித்தமானவற்றில் இருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d தொகுப்பை விட அதிகமாகச் சேர்க்க இயலாது. சில தொகுப்புகளைச் சேர்க்கவும் அல்லது பிடித்தமானவற்றில் இருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_artists">
+        <item quantity="other">%d ஆர்டிஸ்ட்டுகளை விட அதிகமாகச் சேர்க்க இயலாது. சில ஆர்டிஸ்ட்களைச் சேர்க்கவும் அல்லது பிடித்தமானவற்றில் இருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ஆர்டிஸ்ட்டை விட அதிகமாகச் சேர்க்க இயலாது. சில ஆர்டிஸ்ட்களைச் சேர்க்கவும் அல்லது பிடித்தமானவற்றில் இருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_playlists">
+        <item quantity="other">நீங்கள் %d ப்ளேலிஸ்ட்டுகள் வரை மட்டுமே சேர்க்கலாம். பிடித்தவை டேப்புகளில் இருந்து சில ப்ளேலிஸ்ட்டுகளை அகற்றவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">நீங்கள் %d ப்ளேலிஸ்ட் வரை மட்டுமே சேர்க்கலாம். பிடித்தவை டேப்புகளில் இருந்து சில ப்ளேலிஸ்ட்டுகளை அகற்றவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_streaming">
+        <item quantity="other">%d ஸ்ட்ரீமிங் ட்ராக்குகளை விட அதிகமாகச் சேர்க்க இயலாது. சில ட்ராக்குகளை சேர்க்கவும் அல்லது பிடித்தமான ட்ராக்குகளிலிருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ஸ்ட்ரீமிங் ட்ராக்கை விட அதிகமாகச் சேர்க்க இயலாது. சில ட்ராக்கை சேர்க்கவும் அல்லது பிடித்தமான ட்ராக்குகளிலிருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_message_favorite_max_tracks">
+        <item quantity="other">%d ட்ராக்குகளை விட அதிகமாகச் சேர்க்க இயலாது. சில ட்ராக்குகளைச் சேர்க்கவும் அல்லது பிடித்தமான ட்ராக்குகளிலிருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ட்ராக்கை விட அதிகமாகச் சேர்க்க இயலாது. சில ட்ராக்கை சேர்க்கவும் அல்லது பிடித்தமான ட்ராக்குகளிலிருந்து சிலவற்றை அகற்றவும்.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
     <plurals name="n_playlist_exported_kt">
         <item quantity="other">%d ப்ளேலிஸ்ட்கள் ஏற்றப்பட்டுள்ளன.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d ப்ளேலிஸ்ட் ஏற்றப்படுள்ளது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_kt">
         <item quantity="other">%d ப்ளேலிஸ்ட்கள் இறக்கப்பட்டுள்ளன.</item>
+        <item quantity="zero">N/A</item>
         <item quantity="one">%d ப்ளேலிஸ்ட் இறக்கப்பட்டுள்ளது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
     <plurals name="n_playlist_imported_max_message_kt">
         <item quantity="other">%d ப்ளேலிஸ்ட்டுகளுக்கு அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
         <item quantity="zero">N/A</item>
-        <item quantity="one">%d ப்ளேலிஸ்டுகளுக்கு அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
+        <item quantity="one">%d ப்ளேலிஸ்ட்டிற்கு அதிகமாகத் தேர்வுசெய்ய இயலாது.</item>
         <item quantity="two">N/A</item>
         <item quantity="few">N/A</item>
         <item quantity="many">N/A</item>
@@ -216,12 +180,48 @@
         <item quantity="other">%d ட்ராக்குகள்</item>
         <item quantity="one">1 ட்ராக்</item>
     </plurals>
+    <plurals name="n_tracks_add_to_favorite_already">
+        <item quantity="other">%d ட்ராக்குகள் பிடித்தவையில் சேர்க்கப்பட்டுள்ளன. மற்றவை ஏற்கனவே பிடித்தவையில் உள்ளன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ட்ராக் பிடித்தவையில் சேர்க்கப்பட்டுள்ளது. மற்றவை ஏற்கனவே பிடித்தவையில் உள்ளன.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_favorite">
+        <item quantity="other">%d பாடல்கள் பிடித்தவையில் சேர்க்கப்பட்டன.</item>
+        <item quantity="one">1 பாடல் பிடித்தவையில் சேர்க்கப்பட்டது.</item>
+    </plurals>
+    <plurals name="n_tracks_added_to_playlist">
+        <item quantity="other">%d ட்ராக்குகள் ப்ளேலிஸ்ட்டில் சேர்க்கப்பட்டன.</item>
+        <item quantity="one">1 ட்ராக் ப்ளேலிஸ்டில் சேர்க்கப்பட்டது.</item>
+    </plurals>
     <plurals name="n_tracks_added_to_queue">
         <item quantity="other">%d ட்ராக்குகள் வரிசையில் சேர்க்கப்பட்டன.</item>
         <item quantity="one">வரிசையில் %d ட்ராக் சேர்க்கப்பட்டது.</item>
     </plurals>
     <plurals name="n_tracks_deleted_msg">
-        <item quantity="other">%d ட்ராக்குகளை நீக்கவா?</item>
-        <item quantity="one">1 ட்ராக்கை நீக்கவா?</item>
+        <item quantity="other">%d பாடல்களை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d பாடலை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_hour_plurals">
+        <item quantity="other">உறக்க நேரம்: %d மணிநேரங்கள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உறக்க நேரம்: %d மணிநேரம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sesl_sleep_duration_in_min_plurals">
+        <item quantity="other">உறக்க நேரம்: %d நிமிடங்கள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உறக்க நேரம்: %d நிமிடம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
     </plurals>
 </resources>

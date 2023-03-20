@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;
 .super Ljava/lang/Thread;
-.source "SourceFile"
+.source "RingtoneRecommenderSdlCompat.java"
 
 
 # annotations
@@ -9,20 +9,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
+.field public final synthetic this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;Ljava/lang/String;)V
     .locals 0
 
-    .line 221
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     invoke-direct {p0, p2}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
@@ -37,7 +36,7 @@
 
     const/4 v0, -0x1
 
-    .line 226
+    .line 1
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
@@ -46,13 +45,13 @@
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_4
 
     const-wide/16 v1, 0xc8
 
-    .line 228
+    .line 2
     :try_start_0
-    invoke-static {v1, v2}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->sleep(J)V
+    invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -61,10 +60,10 @@
     :catch_0
     move-exception v1
 
-    .line 230
+    .line 3
     invoke-virtual {v1}, Ljava/lang/InterruptedException;->printStackTrace()V
 
-    .line 232
+    .line 4
     :goto_1
     iget-object v1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
@@ -76,7 +75,7 @@
 
     move-result v1
 
-    .line 233
+    .line 5
     invoke-static {}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->access$300()Ljava/lang/String;
 
     move-result-object v2
@@ -99,23 +98,29 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 237
+    .line 6
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     invoke-static {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->access$400(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
 
     move-result-object v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_3
 
     const-wide/16 v2, 0x0
 
-    packed-switch v1, :pswitch_data_0
+    const/4 v0, 0x5
+
+    if-eq v1, v0, :cond_1
+
+    const/4 v0, 0x6
+
+    if-eq v1, v0, :cond_2
 
     goto :goto_2
 
-    .line 241
-    :pswitch_0
+    .line 7
+    :cond_1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     invoke-static {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->access$200(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Lcom/samsung/audio/Smat;
@@ -126,8 +131,8 @@
 
     move-result-wide v2
 
-    .line 245
-    :pswitch_1
+    .line 8
+    :cond_2
     invoke-static {}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->access$300()Ljava/lang/String;
 
     move-result-object v0
@@ -154,7 +159,7 @@
 
     invoke-static {v0, v4}, Landroid/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 248
+    .line 9
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     invoke-static {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->access$400(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
@@ -165,25 +170,17 @@
 
     invoke-interface {v0, v1, v2}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;->onResult(II)V
 
-    .line 249
+    .line 10
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->this$0:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 
     invoke-virtual {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->close()V
 
-    :cond_1
+    :cond_3
     :goto_2
     move v0, v1
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    :cond_2
+    :cond_4
     return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x5
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
 .end method

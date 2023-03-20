@@ -1,422 +1,631 @@
 .class public final Lcom/samsung/android/app/music/player/lockplayer/LockActivity;
-.super Lcom/samsung/android/app/music/activity/BaseServiceActivity;
-.source "SourceFile"
+.super Lcom/samsung/android/app/music/activity/h;
+.source "LockActivity.kt"
+
+# interfaces
+.implements Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;,
-        Lcom/samsung/android/app/music/player/lockplayer/LockActivity$CloseButtonController;,
-        Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+        Lcom/samsung/android/app/music/player/lockplayer/LockActivity$a;,
+        Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;
     }
 .end annotation
 
 
 # static fields
-.field static final synthetic a:[Lkotlin/reflect/KProperty;
+.field public static final C:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;
 
-.field public static final b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-.field private static final p:Lkotlin/Lazy;
+.field public static final D:Lkotlin/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/g<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
-.field private c:Landroid/view/View;
+.field public final A:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$i;
 
-.field private d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+.field public final B:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$h;
 
-.field private e:Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;
+.field public a:Landroid/view/View;
 
-.field private f:Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;
+.field public b:Lcom/samsung/android/app/music/player/fullplayer/SystemUiController;
 
-.field private g:Lcom/samsung/android/app/music/lyrics/LyricsController;
+.field public c:Lcom/samsung/android/app/music/background/BeyondBackgroundController;
 
-.field private h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+.field public d:Lcom/samsung/android/app/music/player/v3/PlayController;
 
-.field private i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+.field public e:Lcom/samsung/android/app/music/player/lockplayer/e;
 
-.field private j:Z
+.field public f:Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;
 
-.field private k:Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;
+.field public g:Lcom/samsung/android/app/music/player/v3/FavoriteController;
 
-.field private final l:Lkotlin/Lazy;
+.field public h:Lcom/samsung/android/app/music/player/v3/m;
 
-.field private final m:Lkotlin/Lazy;
+.field public o:Lcom/samsung/android/app/music/player/v3/j;
 
-.field private final n:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$keyListener$1;
+.field public p:Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
 
-.field private final o:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$intentReceiver$1;
+.field public q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+.field public r:Lcom/samsung/android/app/music/player/d0;
+
+.field public s:Lcom/samsung/android/app/music/player/lockplayer/k;
+
+.field public t:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
+
+.field public final u:Lkotlin/g;
+
+.field public final v:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+.field public w:Lcom/samsung/android/app/music/n;
+
+.field public final x:Lkotlin/g;
+
+.field public final y:Lkotlin/g;
+
+.field public final z:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public static constructor <clinit>()V
+    .locals 2
 
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Lkotlin/reflect/KProperty;
-
-    new-instance v1, Lkotlin/jvm/internal/PropertyReference1Impl;
-
-    const-class v2, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Reflection;->a(Ljava/lang/Class;)Lkotlin/reflect/KClass;
-
-    move-result-object v2
-
-    const-string v3, "unlockDistance"
-
-    const-string v4, "getUnlockDistance()F"
-
-    invoke-direct {v1, v2, v3, v4}, Lkotlin/jvm/internal/PropertyReference1Impl;-><init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Reflection;->a(Lkotlin/jvm/internal/PropertyReference1;)Lkotlin/reflect/KProperty1;
-
-    move-result-object v1
-
-    check-cast v1, Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    new-instance v1, Lkotlin/jvm/internal/PropertyReference1Impl;
-
-    const-class v2, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Reflection;->a(Ljava/lang/Class;)Lkotlin/reflect/KClass;
-
-    move-result-object v2
-
-    const-string v3, "closer"
-
-    const-string v4, "getCloser()Lcom/samsung/android/app/music/player/lockplayer/LockCloser;"
-
-    invoke-direct {v1, v2, v3, v4}, Lkotlin/jvm/internal/PropertyReference1Impl;-><init>(Lkotlin/reflect/KDeclarationContainer;Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Reflection;->a(Lkotlin/jvm/internal/PropertyReference1;)Lkotlin/reflect/KProperty1;
-
-    move-result-object v1
-
-    check-cast v1, Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sput-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:[Lkotlin/reflect/KProperty;
-
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;-><init>(Lkotlin/jvm/internal/g;)V
 
-    sput-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    sput-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->C:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;
 
-    .line 514
-    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$b;->a:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$b;
 
-    sget-object v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion$LOG_PRINTABLE$2;->INSTANCE:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion$LOG_PRINTABLE$2;
-
-    check-cast v1, Lkotlin/jvm/functions/Function0;
-
-    invoke-static {v0, v1}, Lkotlin/LazyKt;->a(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
     move-result-object v0
 
-    sput-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->p:Lkotlin/Lazy;
+    sput-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->D:Lkotlin/g;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 4
 
-    .line 54
-    invoke-direct {p0}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;-><init>()V
+    .line 1
+    invoke-direct {p0}, Lcom/samsung/android/app/music/activity/h;-><init>()V
 
-    .line 64
-    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    .line 2
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$l;
 
-    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$unlockDistance$2;
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$l;-><init>(Landroidx/activity/ComponentActivity;)V
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$unlockDistance$2;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+    .line 3
+    new-instance v1, Landroidx/lifecycle/k0;
 
-    check-cast v1, Lkotlin/jvm/functions/Function0;
+    const-class v2, Lcom/samsung/android/app/music/viewmodel/e;
 
-    invoke-static {v0, v1}, Lkotlin/LazyKt;->a(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v2}, Lkotlin/jvm/internal/z;->a(Ljava/lang/Class;)Lkotlin/reflect/b;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$m;
+
+    invoke-direct {v3, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$m;-><init>(Landroidx/activity/ComponentActivity;)V
+
+    invoke-direct {v1, v2, v3, v0}, Landroidx/lifecycle/k0;-><init>(Lkotlin/reflect/b;Lkotlin/jvm/functions/a;Lkotlin/jvm/functions/a;)V
+
+    .line 4
+    iput-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->u:Lkotlin/g;
+
+    .line 5
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/core/service/v3/a;->q:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->v:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+    .line 6
+    new-instance v0, Lcom/samsung/android/app/music/n;
+
+    invoke-direct {v0}, Lcom/samsung/android/app/music/n;-><init>()V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->w:Lcom/samsung/android/app/music/n;
+
+    .line 7
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$n;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$n;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->l:Lkotlin/Lazy;
+    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->x:Lkotlin/g;
 
-    .line 65
-    sget-object v0, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    .line 8
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$d;
 
-    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$closer$2;
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$d;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$closer$2;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function0;
-
-    invoke-static {v0, v1}, Lkotlin/LazyKt;->a(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    invoke-static {v0}, Lcom/samsung/android/app/musiclibrary/ktx/util/a;->a(Lkotlin/jvm/functions/a;)Lkotlin/g;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->m:Lkotlin/Lazy;
+    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->y:Lkotlin/g;
 
-    .line 186
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$keyListener$1;
+    .line 9
+    sget-object v0, Lcom/samsung/android/app/musiclibrary/ui/util/m;->a:Lcom/samsung/android/app/musiclibrary/ui/util/m;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$keyListener$1;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+    const/16 v1, 0x1e
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->n:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$keyListener$1;
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/util/m;->b(I)Z
 
-    .line 405
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$intentReceiver$1;
+    move-result v0
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$intentReceiver$1;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+    iput-boolean v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->z:Z
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->o:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$intentReceiver$1;
+    .line 10
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$i;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$i;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->A:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$i;
+
+    .line 11
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$h;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$h;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+
+    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->B:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$h;
 
     return-void
 .end method
 
-.method public static final a(Landroid/content/Context;)Landroid/content/Intent;
-    .locals 1
+.method public static final synthetic A(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/player/lockplayer/i;
+    .locals 0
 
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    invoke-virtual {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Landroid/content/Context;)Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->L()Lcom/samsung/android/app/music/player/lockplayer/i;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private final a(Landroid/view/View;)Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater;
-    .locals 7
+.method public static final synthetic B(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/player/lockplayer/k;
+    .locals 0
 
-    .line 362
-    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater$Builder;
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->s:Lcom/samsung/android/app/music/player/lockplayer/k;
 
-    const v1, 0x7f130294
+    return-object p0
+.end method
 
-    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+.method public static final synthetic C()Lkotlin/g;
+    .locals 1
 
-    move-result-object v1
+    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->D:Lkotlin/g;
 
-    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater$Builder;-><init>(Landroid/view/View;)V
+    return-object v0
+.end method
 
-    const v1, 0x7f1301e6
+.method public static final synthetic E(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
+    .locals 0
 
-    .line 364
-    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->p:Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
 
-    move-result-object v1
+    return-object p0
+.end method
 
-    const/4 v2, 0x1
+.method public static final synthetic F(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Landroid/view/View;
+    .locals 0
 
-    new-array v3, v2, [Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    sget-object v4, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;->PrivateVisibility:Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;
+    return-object p0
+.end method
 
-    check-cast v4, Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
+.method public static final synthetic G(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)F
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->M()F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final synthetic I(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/viewmodel/e;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic J(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/player/d0;
+    .locals 0
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
+
+    return-object p0
+.end method
+
+.method public static final Q(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
+    .locals 1
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    sget-object p1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->C:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;
+
+    const-string v0, "launch Player"
+
+    invoke-static {p1, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->b(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;Ljava/lang/String;)I
+
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->V()V
+
+    .line 3
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->L()Lcom/samsung/android/app/music/player/lockplayer/i;
+
+    move-result-object p1
+
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez p0, :cond_0
+
+    const-string p0, "rootView"
+
+    invoke-static {p0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    :cond_0
+    invoke-virtual {p1, p0}, Lcom/samsung/android/app/music/player/lockplayer/i;->n(Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static final R(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
+    .locals 8
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/music/player/k;->v()Z
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    const-string v1, "viewTypeController"
+
+    if-eqz p1, :cond_1
+
+    .line 2
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
+
+    if-nez p0, :cond_0
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v2, v0
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, p0
+
+    :goto_0
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    aput-object v4, v3, v5
+    const/4 v6, 0x6
 
-    invoke-virtual {v0, v1, v3}, Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater$Builder;->a(Landroid/view/View;[Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;)Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater$Builder;
+    const/4 v7, 0x0
 
-    const v1, 0x7f1304a1
+    invoke-static/range {v2 .. v7}, Lcom/samsung/android/app/music/player/d0;->g(Lcom/samsung/android/app/music/player/d0;IZLjava/lang/String;ILjava/lang/Object;)V
 
-    .line 366
+    goto :goto_2
+
+    .line 3
+    :cond_1
+    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
+
+    if-nez p0, :cond_2
+
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v2, v0
+
+    goto :goto_1
+
+    :cond_2
+    move-object v2, p0
+
+    :goto_1
+    const/16 v3, 0x10
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x6
+
+    const/4 v7, 0x0
+
+    invoke-static/range {v2 .. v7}, Lcom/samsung/android/app/music/player/d0;->g(Lcom/samsung/android/app/music/player/d0;IZLjava/lang/String;ILjava/lang/Object;)V
+
+    :goto_2
+    return-void
+.end method
+
+.method public static synthetic y(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->Q(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static synthetic z(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->R(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public H(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
+    .locals 3
+
+    const-string v0, "s"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Lcom/samsung/android/app/music/background/BeyondBackgroundController;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "beyondBackgroundController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->f(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/music/player/lockplayer/e;
+
+    if-nez v0, :cond_1
+
+    const-string v0, "albumArt"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_1
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;->J()Z
+
+    move-result v2
+
+    invoke-virtual {v0, v2}, Lcom/samsung/android/app/music/player/lockplayer/e;->D(Z)V
+
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->t:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
+
+    if-nez v0, :cond_2
+
+    const-string v0, "albumTagUpdater"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_2
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;->f(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
+
+    .line 4
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->p:Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
+
+    if-nez v0, :cond_3
+
+    const-string v0, "lyricsController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_3
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/lyrics/v3/LyricsController;->F(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
+
+    .line 5
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/music/player/v3/PlayController;
+
+    if-nez v0, :cond_4
+
+    const-string v0, "playController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_4
+    move-object v1, v0
+
+    :goto_0
+    invoke-virtual {v1, p1}, Lcom/samsung/android/app/music/player/v3/PlayController;->f(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/j;)V
+
+    return-void
+.end method
+
+.method public final K(Landroid/view/View;)Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
+    .locals 8
+
+    .line 1
+    new-instance v0, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater$a;
+
+    const v1, 0x7f0b053a
+
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "view.findViewById(R.id.tag_container)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x0
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater$a;-><init>(Landroid/view/View;ZILkotlin/jvm/internal/g;)V
+
+    const v1, 0x7f0b03ee
+
+    .line 2
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v5, "view.findViewById(R.id.private_tag)"
+
+    invoke-static {v1, v5}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v5, 0x1
+
+    new-array v6, v5, [Lcom/samsung/android/app/music/player/v3/fullplayer/tag/p$b;
+
+    sget-object v7, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;->a:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;
+
+    aput-object v7, v6, v2
+
+    invoke-virtual {v0, v1, v6}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater$a;->c(Landroid/view/View;[Lcom/samsung/android/app/music/player/v3/fullplayer/tag/p$b;)Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater$a;
+
+    const v1, 0x7f0b029b
+
+    .line 3
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/TextView;
 
-    .line 368
-    check-cast p1, Landroid/view/View;
+    const-string v1, "leftBottomTagView"
 
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 4
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v1
+    .line 5
+    new-instance v1, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/n;
 
-    .line 369
-    new-instance v3, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters$Separators$PortraitBottomTagSeparator;
+    invoke-direct {v1}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/n;-><init>()V
 
-    invoke-direct {v3}, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters$Separators$PortraitBottomTagSeparator;-><init>()V
+    const/4 v6, 0x4
 
-    check-cast v3, Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$Separator;
+    new-array v6, v6, [Lcom/samsung/android/app/music/player/v3/fullplayer/tag/p$b;
 
-    const/4 v4, 0x5
+    .line 6
+    sget-object v7, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;->b:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;
 
-    new-array v4, v4, [Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
+    aput-object v7, v6, v2
 
-    .line 370
-    sget-object v6, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;->RoundedSongTag:Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;
+    sget-object v2, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;->c:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;
 
-    check-cast v6, Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
+    aput-object v2, v6, v5
 
-    aput-object v6, v4, v5
+    sget-object v2, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;->d:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;
 
-    sget-object v5, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;->Quality:Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;
+    aput-object v2, v6, v3
 
-    check-cast v5, Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
+    sget-object v2, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;->e:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/m;
 
-    aput-object v5, v4, v2
+    const/4 v3, 0x3
 
-    sget-object v2, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;->DRM:Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;
+    aput-object v2, v6, v3
 
-    check-cast v2, Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
+    .line 7
+    invoke-virtual {v0, p1, v1, v6}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater$a;->a(Landroid/view/View;Lcom/samsung/android/app/music/player/v3/fullplayer/tag/p$a;[Lcom/samsung/android/app/music/player/v3/fullplayer/tag/p$b;)Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater$a;
 
-    const/4 v5, 0x2
-
-    aput-object v2, v4, v5
-
-    .line 371
-    sget-object v2, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;->Connection:Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;
-
-    check-cast v2, Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
-
-    const/4 v5, 0x3
-
-    aput-object v2, v4, v5
-
-    sget-object v2, Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;->Lyrics:Lcom/samsung/android/app/music/player/fullplayer/tag/TagUpdaters;
-
-    check-cast v2, Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;
-
-    const/4 v5, 0x4
-
-    aput-object v2, v4, v5
-
-    .line 367
-    invoke-virtual {v0, p1, v1, v3, v4}, Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater$Builder;->a(Landroid/view/View;Ljava/lang/Boolean;Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$Separator;[Lcom/samsung/android/app/music/player/fullplayer/tag/TagWidget$TagPresenter$TagUpdater;)Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater$Builder;
-
-    .line 374
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater$Builder;->a()Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater;
+    .line 8
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater$a;->d()Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
 
     move-result-object p1
 
-    const-string v0, "builder.build()"
+    .line 9
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/music/player/lockplayer/e;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    if-nez v0, :cond_0
+
+    const-string v0, "albumArt"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_0
+    move-object v4, v0
+
+    :goto_0
+    invoke-virtual {v4}, Lcom/samsung/android/app/music/player/lockplayer/e;->p()I
+
+    move-result v0
+
+    invoke-virtual {p1, v0}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;->A(I)V
 
     return-object p1
 .end method
 
-.method public static final synthetic a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+.method public final L()Lcom/samsung/android/app/music/player/lockplayer/i;
     .locals 1
 
-    .line 54
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->y:Lkotlin/g;
 
-    if-nez p0, :cond_0
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
 
-    const-string v0, "viewTypeController"
+    move-result-object v0
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_0
-    return-object p0
-.end method
-
-.method public static final synthetic a()Lkotlin/Lazy;
-    .locals 1
-
-    .line 54
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->p:Lkotlin/Lazy;
+    check-cast v0, Lcom/samsung/android/app/music/player/lockplayer/i;
 
     return-object v0
 .end method
 
-.method private final a(Landroid/content/Context;Landroid/view/View;)V
+.method public final M()F
     .locals 1
 
-    .line 164
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector;
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->x:Lkotlin/g;
 
-    invoke-direct {v0, p1, p2}, Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector;-><init>(Landroid/content/Context;Landroid/view/View;)V
-
-    .line 166
-    new-instance p1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$setOnDecorViewTouchListener$$inlined$apply$lambda$1;
-
-    invoke-direct {p1, p0, p2}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$setOnDecorViewTouchListener$$inlined$apply$lambda$1;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
-
-    check-cast p1, Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector$OnGestureListener;
-
-    .line 165
-    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector;->a(Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector$OnGestureListener;)V
-
-    return-void
-.end method
-
-.method private final a(Landroid/os/Bundle;)V
-    .locals 3
-
-    if-nez p1, :cond_0
-
-    .line 379
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "restoreSaveInstanceState "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;Ljava/lang/String;)V
-
-    return-void
-
-    .line 382
-    :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v0, :cond_1
-
-    const-string v1, "viewTypeController"
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_1
-    const-string v1, "key_view_type"
-
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
-
-    move-result p1
-
-    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(I)V
-
-    return-void
-.end method
-
-.method private final b()F
-    .locals 3
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->l:Lkotlin/Lazy;
-
-    sget-object v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:[Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -429,1756 +638,1537 @@
     return v0
 .end method
 
-.method public static final synthetic b(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)F
-    .locals 0
+.method public final N()Lcom/samsung/android/app/music/viewmodel/e;
+    .locals 1
 
-    .line 54
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b()F
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->u:Lkotlin/g;
 
-    move-result p0
-
-    return p0
-.end method
-
-.method private final c()Lcom/samsung/android/app/music/player/lockplayer/LockCloser;
-    .locals 3
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->m:Lkotlin/Lazy;
-
-    sget-object v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:[Lkotlin/reflect/KProperty;
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lkotlin/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/samsung/android/app/music/player/lockplayer/LockCloser;
+    check-cast v0, Lcom/samsung/android/app/music/viewmodel/e;
 
     return-object v0
 .end method
 
-.method public static final synthetic c(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;
-    .locals 1
+.method public final O()V
+    .locals 3
 
-    .line 54
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->k:Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->v:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
 
-    if-nez p0, :cond_0
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
-    const-string v0, "dragVIManager"
+    move-result-object v1
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    const-string v2, "applicationContext"
 
-    :cond_0
-    return-object p0
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v2, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$e;
+
+    invoke-direct {v2, p0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$e;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Lcom/samsung/android/app/musiclibrary/core/service/v3/a;)V
+
+    invoke-virtual {v0, v1, p0, v2}, Lcom/samsung/android/app/musiclibrary/core/service/v3/a;->X(Landroid/content/Context;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;Lkotlin/jvm/functions/a;)V
+
+    return-void
 .end method
 
-.method public static final synthetic d(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/player/lockplayer/LockCloser;
-    .locals 0
+.method public final P()V
+    .locals 20
 
-    .line 54
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c()Lcom/samsung/android/app/music/player/lockplayer/LockCloser;
+    move-object/from16 v9, p0
 
-    move-result-object p0
+    .line 1
+    sget-object v10, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->C:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;
 
-    return-object p0
-.end method
-
-.method private final d()V
-    .locals 13
-
-    .line 213
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 214
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 585
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    .line 2
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
-    const v1, 0x7f13032e
+    const-string v6, "initView rootView = "
+
+    const-string v1, "findViewById<View>(R.id.lock_player)"
+
+    const v2, 0x7f0b02be
+
+    const-string v11, "uiManager"
+
+    const-string v12, "rootView"
+
+    const/4 v13, 0x0
+
+    if-eqz v0, :cond_2
+
+    .line 3
+    invoke-virtual {v9, v2}, Landroidx/appcompat/app/f;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    .line 4
+    new-instance v7, Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x2
+    const/4 v3, 0x1
 
-    const/4 v4, 0x0
+    const/4 v4, 0x2
 
-    if-eqz v0, :cond_4
+    const/4 v5, 0x0
 
-    .line 215
-    invoke-virtual {p0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->findViewById(I)Landroid/view/View;
+    move-object v0, v7
 
-    move-result-object v0
+    move-object/from16 v1, p0
 
-    const-string v1, "findViewById<View>(R.id.lock_player)"
+    invoke-direct/range {v0 .. v5}, Lcom/samsung/android/app/musiclibrary/ui/player/c;-><init>(Landroidx/fragment/app/h;Ljava/lang/String;ZILkotlin/jvm/internal/g;)V
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    iput-object v7, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    .line 5
+    new-instance v7, Lcom/samsung/android/app/music/player/d0;
 
-    .line 216
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
 
-    move-object v1, p0
+    move-result-object v2
 
-    check-cast v1, Landroid/support/v4/app/FragmentActivity;
+    const/4 v3, 0x0
 
-    const/4 v7, 0x1
+    const/4 v4, 0x4
 
-    const/4 v8, 0x0
+    move-object v0, v7
 
-    const/4 v9, 0x4
+    invoke-direct/range {v0 .. v5}, Lcom/samsung/android/app/music/player/d0;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;ZILkotlin/jvm/internal/g;)V
 
-    const/4 v10, 0x0
+    const/4 v15, 0x1
 
-    move-object v5, v0
+    const/16 v16, 0x0
 
-    move-object v6, v1
+    const/16 v17, 0x0
 
-    invoke-direct/range {v5 .. v10}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;-><init>(Landroid/support/v4/app/FragmentActivity;ZLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/16 v18, 0x4
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    const/16 v19, 0x0
 
-    .line 217
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    move-object v14, v7
 
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    .line 6
+    invoke-static/range {v14 .. v19}, Lcom/samsung/android/app/music/player/d0;->g(Lcom/samsung/android/app/music/player/d0;IZLjava/lang/String;ILjava/lang/Object;)V
 
-    if-nez v5, :cond_0
+    .line 7
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
 
-    const-string v6, "uiManager"
+    .line 8
+    iput-object v7, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    .line 9
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v13
 
     :cond_0
-    invoke-direct {v0, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;)V
-
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    .line 218
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "initView rootView = "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v6, :cond_1
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_1
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v0, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;Ljava/lang/String;)V
-
-    .line 220
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;
-
-    .line 222
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v5, :cond_2
-
-    const-string v6, "rootView"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 220
-    :cond_2
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;-><init>(Landroid/support/v4/app/FragmentActivity;Landroid/view/View;)V
-
-    .line 223
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    if-nez v1, :cond_3
-
-    :goto_0
-    const-string v5, "uiManager"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_3
-    move-object v5, v0
-
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    invoke-static {v1, v5, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
-
-    sget-object v1, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->k:Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;
-
-    .line 224
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    goto :goto_1
-
-    .line 215
-    :cond_4
-    invoke-virtual {p0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->findViewById(I)Landroid/view/View;
+    invoke-static {v6, v0}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v1, "findViewById<View>(R.id.lock_player)"
+    invoke-static {v10, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->b(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;Ljava/lang/String;)I
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 10
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/k;
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    .line 11
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    .line 216
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    if-nez v1, :cond_1
 
-    move-object v1, p0
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    check-cast v1, Landroid/support/v4/app/FragmentActivity;
+    move-object v1, v13
 
-    const/4 v7, 0x1
+    .line 12
+    :cond_1
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/k;-><init>(Landroidx/fragment/app/h;Landroid/view/View;)V
 
-    const/4 v8, 0x0
+    .line 13
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    const/4 v9, 0x4
-
-    const/4 v10, 0x0
-
-    move-object v5, v0
-
-    move-object v6, v1
-
-    invoke-direct/range {v5 .. v10}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;-><init>(Landroid/support/v4/app/FragmentActivity;ZLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    .line 217
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    if-nez v5, :cond_5
-
-    const-string v6, "uiManager"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_5
-    invoke-direct {v0, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;)V
-
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    .line 218
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "initView rootView = "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v6, :cond_6
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_6
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v0, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;Ljava/lang/String;)V
-
-    .line 220
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;
-
-    .line 222
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v5, :cond_7
-
-    const-string v6, "rootView"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 220
-    :cond_7
-    invoke-direct {v0, v1, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;-><init>(Landroid/support/v4/app/FragmentActivity;Landroid/view/View;)V
-
-    .line 223
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    if-nez v1, :cond_3
+    if-nez v1, :cond_5
 
     goto :goto_0
 
-    .line 225
-    :goto_1
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    .line 14
+    :cond_2
+    invoke-virtual {v9, v2}, Landroidx/appcompat/app/f;->findViewById(I)Landroid/view/View;
 
-    .line 599
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    move-result-object v0
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    .line 15
+    new-instance v7, Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x0
+
+    move-object v0, v7
+
+    move-object/from16 v1, p0
+
+    invoke-direct/range {v0 .. v5}, Lcom/samsung/android/app/musiclibrary/ui/player/c;-><init>(Landroidx/fragment/app/h;Ljava/lang/String;ZILkotlin/jvm/internal/g;)V
+
+    iput-object v7, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    .line 16
+    new-instance v7, Lcom/samsung/android/app/music/player/d0;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x4
+
+    move-object v0, v7
+
+    invoke-direct/range {v0 .. v5}, Lcom/samsung/android/app/music/player/d0;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;ZILkotlin/jvm/internal/g;)V
+
+    const/4 v15, 0x1
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x4
+
+    const/16 v19, 0x0
+
+    move-object v14, v7
+
+    .line 17
+    invoke-static/range {v14 .. v19}, Lcom/samsung/android/app/music/player/d0;->g(Lcom/samsung/android/app/music/player/d0;IZLjava/lang/String;ILjava/lang/Object;)V
+
+    .line 18
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 19
+    iput-object v7, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
+
+    .line 20
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v0, :cond_3
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v13
+
+    :cond_3
+    invoke-static {v6, v0}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v10, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->b(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;Ljava/lang/String;)I
+
+    .line 21
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/k;
+
+    .line 22
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v1, :cond_4
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    .line 23
+    :cond_4
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/k;-><init>(Landroidx/fragment/app/h;Landroid/view/View;)V
+
+    .line 24
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v1, :cond_5
+
+    :goto_0
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    :cond_5
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
+
+    .line 25
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->s:Lcom/samsung/android/app/music/player/lockplayer/k;
+
+    .line 26
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    .line 27
+    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/SystemUiController;
+
+    invoke-direct {v0, v9}, Lcom/samsung/android/app/music/player/fullplayer/SystemUiController;-><init>(Landroid/app/Activity;)V
+
+    .line 28
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v1, :cond_7
+
+    goto :goto_1
+
+    .line 29
+    :cond_6
+    new-instance v0, Lcom/samsung/android/app/music/player/fullplayer/SystemUiController;
+
+    invoke-direct {v0, v9}, Lcom/samsung/android/app/music/player/fullplayer/SystemUiController;-><init>(Landroid/app/Activity;)V
+
+    .line 30
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v1, :cond_7
+
+    :goto_1
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    :cond_7
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
+
+    .line 31
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/fullplayer/SystemUiController;->p()V
+
+    .line 32
+    sget-object v1, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 33
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/fullplayer/SystemUiController;
+
+    .line 34
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 226
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerShortcutText;
+    .line 35
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/n;
 
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
     if-nez v1, :cond_8
 
-    const-string v5, "rootView"
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_8
-    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerShortcutText;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/n;-><init>(Landroid/view/View;)V
 
-    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$1;
+    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/a;
 
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$1;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    :goto_2
-    check-cast v1, Landroid/view/View$OnClickListener;
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerShortcutText;->a(Landroid/view/View$OnClickListener;)V
-
-    .line 231
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    goto :goto_3
-
-    .line 226
-    :cond_9
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerShortcutText;
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v1, :cond_a
-
-    const-string v5, "rootView"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_a
-    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerShortcutText;-><init>(Landroid/view/View;)V
-
-    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$2;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$2;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+    invoke-direct {v1, v9}, Lcom/samsung/android/app/music/player/lockplayer/a;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
 
     goto :goto_2
 
-    .line 232
-    :goto_3
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    :cond_9
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/n;
 
-    .line 613
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v1, :cond_a
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    :cond_a
+    invoke-direct {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/n;-><init>(Landroid/view/View;)V
+
+    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/a;
+
+    invoke-direct {v1, v9}, Lcom/samsung/android/app/music/player/lockplayer/a;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+
+    :goto_2
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/n;->a(Landroid/view/View$OnClickListener;)V
+
+    .line 36
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 37
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
-    const v1, 0x7f130144
+    const-string v1, "rootView.findViewById(R.id.background_view)"
 
-    if-eqz v0, :cond_d
+    const v2, 0x7f0b00b4
 
-    .line 233
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    if-eqz v0, :cond_c
 
-    if-nez v0, :cond_b
+    .line 38
+    new-instance v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;
 
-    const-string v5, "uiManager"
+    .line 39
+    iget-object v3, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    if-nez v3, :cond_b
 
-    .line 234
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v3, v13
+
     :cond_b
-    new-instance v5, Lcom/samsung/android/app/music/background/BeyondBackgroundController;
+    invoke-virtual {v3, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    .line 235
-    move-object v6, p0
+    move-result-object v2
 
-    check-cast v6, Landroid/app/Activity;
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v7, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    check-cast v2, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
 
-    if-nez v7, :cond_c
+    .line 40
+    invoke-direct {v0, v9, v2}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;-><init>(Landroid/app/Activity;Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;)V
 
-    const-string v8, "rootView"
+    .line 41
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    if-nez v1, :cond_e
 
+    goto :goto_3
+
+    .line 42
     :cond_c
-    invoke-virtual {v7, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    new-instance v0, Lcom/samsung/android/app/music/background/BeyondBackgroundController;
 
-    move-result-object v1
+    .line 43
+    iget-object v3, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    const-string v7, "rootView.findViewById(R.id.background_view)"
+    if-nez v3, :cond_d
 
-    invoke-static {v1, v7}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    check-cast v1, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
+    move-object v3, v13
 
-    .line 234
-    invoke-direct {v5, v6, v1}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;-><init>(Landroid/app/Activity;Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;)V
-
-    :goto_4
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    .line 233
-    invoke-static {v0, v5, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
-
-    .line 238
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    goto :goto_5
-
-    .line 233
     :cond_d
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    invoke-virtual {v3, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    if-nez v0, :cond_e
+    move-result-object v2
 
-    const-string v5, "uiManager"
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    check-cast v2, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
 
-    .line 234
+    .line 44
+    invoke-direct {v0, v9, v2}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;-><init>(Landroid/app/Activity;Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;)V
+
+    .line 45
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v1, :cond_e
+
+    :goto_3
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
     :cond_e
-    new-instance v5, Lcom/samsung/android/app/music/background/BeyondBackgroundController;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    .line 235
-    move-object v6, p0
+    sget-object v1, Lkotlin/u;->a:Lkotlin/u;
 
-    check-cast v6, Landroid/app/Activity;
+    .line 46
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Lcom/samsung/android/app/music/background/BeyondBackgroundController;
 
-    iget-object v7, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v7, :cond_f
-
-    const-string v8, "rootView"
-
-    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_f
-    invoke-virtual {v7, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    const-string v7, "rootView.findViewById(R.id.background_view)"
-
-    invoke-static {v1, v7}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v1, Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;
-
-    .line 234
-    invoke-direct {v5, v6, v1}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;-><init>(Landroid/app/Activity;Lcom/samsung/android/app/musiclibrary/ui/widget/TransitionView;)V
-
-    goto :goto_4
-
-    .line 239
-    :goto_5
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 627
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    .line 47
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
-    const/4 v1, 0x1
+    const-string v14, "viewTypeController"
 
     if-eqz v0, :cond_14
 
-    .line 240
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;
+    .line 48
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/e;
 
-    move-object v5, p0
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    check-cast v5, Landroid/app/Activity;
+    if-nez v1, :cond_f
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    if-nez v6, :cond_10
+    move-object v1, v13
 
-    const-string v7, "rootView"
+    :cond_f
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/e;-><init>(Lcom/samsung/android/app/music/activity/h;Landroid/view/View;)V
 
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    .line 49
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
+
+    if-nez v1, :cond_10
+
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
 
     :cond_10
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;-><init>(Landroid/app/Activity;Landroid/view/View;)V
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    .line 241
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    .line 50
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    if-nez v5, :cond_11
+    if-nez v1, :cond_11
 
-    const-string v6, "viewTypeController"
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_11
-    move-object v6, v0
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    check-cast v6, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    .line 51
+    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$f;
 
-    new-array v7, v1, [I
+    invoke-direct {v1, v9}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$f;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
 
-    aput v4, v7, v4
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/e;->z(Lcom/samsung/android/app/music/player/lockplayer/m$b;)V
 
-    invoke-virtual {v5, v6, v7}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
+    .line 52
+    sget-object v1, Lkotlin/u;->a:Lkotlin/u;
 
-    .line 242
-    new-instance v5, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$3;
+    .line 53
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/music/player/lockplayer/e;
 
-    invoke-direct {v5, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$3;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    check-cast v5, Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector$OnGestureListener;
-
-    invoke-virtual {v0, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;->a(Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector$OnGestureListener;)V
-
-    .line 262
-    sget-object v5, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 240
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->f:Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;
-
-    .line 264
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    .line 54
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
     if-nez v0, :cond_12
 
-    const-string v5, "rootView"
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v0, v13
 
     :cond_12
-    invoke-direct {p0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a(Landroid/view/View;)Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater;
+    invoke-virtual {v9, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->K(Landroid/view/View;)Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
 
     move-result-object v0
 
-    .line 265
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    .line 55
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    if-nez v5, :cond_13
+    if-nez v1, :cond_13
 
-    const-string v6, "viewTypeController"
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_13
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    new-array v6, v1, [I
+    .line 56
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    aput v4, v6, v4
+    if-nez v1, :cond_1a
 
-    :goto_6
-    invoke-virtual {v5, v0, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
+    goto :goto_4
 
-    .line 266
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    goto :goto_7
-
-    .line 240
+    .line 57
     :cond_14
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/e;
 
-    move-object v5, p0
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    check-cast v5, Landroid/app/Activity;
+    if-nez v1, :cond_15
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    if-nez v6, :cond_15
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_15
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;-><init>(Landroid/app/Activity;Landroid/view/View;)V
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/e;-><init>(Lcom/samsung/android/app/music/activity/h;Landroid/view/View;)V
 
-    .line 241
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    .line 58
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    if-nez v5, :cond_16
+    if-nez v1, :cond_16
 
-    const-string v6, "viewTypeController"
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_16
-    move-object v6, v0
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    check-cast v6, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    .line 59
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    new-array v7, v1, [I
+    if-nez v1, :cond_17
 
-    aput v4, v7, v4
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-virtual {v5, v6, v7}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
-
-    .line 242
-    new-instance v5, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$4;
-
-    invoke-direct {v5, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$4;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    check-cast v5, Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector$OnGestureListener;
-
-    invoke-virtual {v0, v5}, Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;->a(Lcom/samsung/android/app/music/player/lockplayer/LockGestureDetector$OnGestureListener;)V
-
-    .line 262
-    sget-object v5, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 240
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->f:Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;
-
-    .line 264
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v0, :cond_17
-
-    const-string v5, "rootView"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_17
-    invoke-direct {p0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a(Landroid/view/View;)Lcom/samsung/android/app/music/player/fullplayer/tag/AlbumTagUpdater;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
+
+    .line 60
+    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$f;
+
+    invoke-direct {v1, v9}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$f;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/e;->z(Lcom/samsung/android/app/music/player/lockplayer/m$b;)V
+
+    .line 61
+    sget-object v1, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 62
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/music/player/lockplayer/e;
+
+    .line 63
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v0, :cond_18
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v13
+
+    :cond_18
+    invoke-virtual {v9, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->K(Landroid/view/View;)Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
 
     move-result-object v0
 
-    .line 265
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    .line 64
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    if-nez v5, :cond_18
+    if-nez v1, :cond_19
 
-    const-string v6, "viewTypeController"
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
-    :cond_18
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    :cond_19
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    new-array v6, v1, [I
+    .line 65
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    aput v4, v6, v4
+    if-nez v1, :cond_1a
 
-    goto :goto_6
+    :goto_4
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 268
-    :goto_7
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    move-object v1, v13
 
-    .line 641
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    :cond_1a
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
+
+    .line 66
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->t:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
+
+    .line 67
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1d
 
-    .line 269
+    .line 68
     new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getApplicationContext()Landroid/content/Context;
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    move-result-object v5
+    if-nez v1, :cond_1b
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    if-nez v6, :cond_19
+    move-object v1, v13
 
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_19
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;-><init>(Landroid/content/Context;Landroid/view/View;)V
-
-    .line 270
-    invoke-static {p0}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/app/ActivityExtensionKt;->b(Landroid/app/Activity;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1b
-
-    .line 271
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v5, :cond_1a
-
-    const-string v6, "viewTypeController"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_1a
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    new-array v6, v1, [I
-
-    aput v4, v6, v4
-
-    :goto_8
-    invoke-virtual {v5, v0, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
-
-    goto :goto_a
-
-    .line 273
     :cond_1b
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;-><init>(Landroid/app/Activity;Landroid/view/View;)V
 
-    if-nez v5, :cond_1c
+    .line 69
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    const-string v6, "uiManager"
+    if-nez v1, :cond_1c
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
 
     :cond_1c
-    :goto_9
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    invoke-static {v5, v0, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
+    .line 70
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    .line 275
-    :goto_a
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+    if-nez v1, :cond_20
 
-    goto :goto_b
+    goto :goto_5
 
-    .line 269
+    .line 71
     :cond_1d
     new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;
 
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getApplicationContext()Landroid/content/Context;
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    move-result-object v5
+    if-nez v1, :cond_1e
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    if-nez v6, :cond_1e
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_1e
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;-><init>(Landroid/content/Context;Landroid/view/View;)V
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;-><init>(Landroid/app/Activity;Landroid/view/View;)V
 
-    .line 270
-    invoke-static {p0}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/app/ActivityExtensionKt;->b(Landroid/app/Activity;)Z
+    .line 72
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    move-result v5
+    if-nez v1, :cond_1f
 
-    if-eqz v5, :cond_20
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 271
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v5, :cond_1f
-
-    const-string v6, "viewTypeController"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_1f
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    new-array v6, v1, [I
+    .line 73
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    aput v4, v6, v4
+    if-nez v1, :cond_20
 
-    goto :goto_8
+    :goto_5
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 273
+    move-object v1, v13
+
     :cond_20
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    if-nez v5, :cond_1c
+    .line 74
+    sget-object v1, Lkotlin/u;->a:Lkotlin/u;
 
-    const-string v6, "uiManager"
+    .line 75
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->f:Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    goto :goto_9
-
-    .line 277
-    :goto_b
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 655
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    .line 76
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_27
+    const-string v1, "LockPlayer"
 
-    .line 279
-    new-instance v0, Lcom/samsung/android/app/music/ActivePlayerController;
+    if-eqz v0, :cond_22
 
-    invoke-direct {v0}, Lcom/samsung/android/app/music/ActivePlayerController;-><init>()V
+    .line 77
+    new-instance v15, Lcom/samsung/android/app/music/player/v3/PlayController;
 
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    .line 78
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    if-nez v5, :cond_21
+    if-nez v0, :cond_21
 
-    const-string v6, "uiManager"
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v2, v13
+
+    goto :goto_6
 
     :cond_21
-    move-object v6, v0
+    move-object v2, v0
 
-    check-cast v6, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    .line 79
+    :goto_6
+    iget-object v3, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->w:Lcom/samsung/android/app/music/n;
 
-    invoke-static {v5, v6, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
+    .line 80
+    new-instance v4, Lcom/samsung/android/app/musiclibrary/ui/widget/control/c;
 
-    sget-object v5, Lkotlin/Unit;->a:Lkotlin/Unit;
+    invoke-direct {v4, v3, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/control/c;-><init>(Lcom/samsung/android/app/musiclibrary/ui/player/a;Ljava/lang/String;)V
 
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+    const/4 v5, 0x0
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+    const/4 v6, 0x0
 
-    .line 281
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;
+    const/16 v7, 0x30
 
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+    const/4 v8, 0x0
 
-    if-nez v5, :cond_22
+    move-object v0, v15
 
-    const-string v6, "activePlayController"
+    move-object/from16 v1, p0
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    .line 81
+    invoke-direct/range {v0 .. v8}, Lcom/samsung/android/app/music/player/v3/PlayController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Landroid/view/View;Lcom/samsung/android/app/musiclibrary/ui/player/a;Lcom/samsung/android/app/musiclibrary/ui/widget/control/c;ILcom/samsung/android/app/music/player/k;ILkotlin/jvm/internal/g;)V
+
+    goto :goto_8
 
     :cond_22
-    const-string v6, "LockPlayer"
+    new-instance v15, Lcom/samsung/android/app/music/player/v3/PlayController;
 
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;-><init>(Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;Ljava/lang/String;)V
+    .line 82
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    .line 282
-    new-instance v5, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$5;
+    if-nez v0, :cond_23
 
-    invoke-direct {v5, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$5;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener$OnPlayerControlListener;
+    move-object v2, v13
 
-    invoke-virtual {v0, v5}, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;->a(Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener$OnPlayerControlListener;)V
-
-    .line 292
-    sget-object v5, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 281
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;
-
-    .line 293
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/player/common/PlayController;
-
-    .line 294
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v7
-
-    iget-object v8, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v8, :cond_23
-
-    const-string v5, "rootView"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    goto :goto_7
 
     :cond_23
-    iget-object v9, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+    move-object v2, v0
 
-    if-nez v9, :cond_24
+    .line 83
+    :goto_7
+    iget-object v3, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->w:Lcom/samsung/android/app/music/n;
 
-    const-string v5, "activePlayController"
+    .line 84
+    new-instance v4, Lcom/samsung/android/app/musiclibrary/ui/widget/control/c;
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    invoke-direct {v4, v3, v1}, Lcom/samsung/android/app/musiclibrary/ui/widget/control/c;-><init>(Lcom/samsung/android/app/musiclibrary/ui/player/a;Ljava/lang/String;)V
 
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/16 v7, 0x30
+
+    const/4 v8, 0x0
+
+    move-object v0, v15
+
+    move-object/from16 v1, p0
+
+    .line 85
+    invoke-direct/range {v0 .. v8}, Lcom/samsung/android/app/music/player/v3/PlayController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Landroid/view/View;Lcom/samsung/android/app/musiclibrary/ui/player/a;Lcom/samsung/android/app/musiclibrary/ui/widget/control/c;ILcom/samsung/android/app/music/player/k;ILkotlin/jvm/internal/g;)V
+
+    :goto_8
+    iput-object v15, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/music/player/v3/PlayController;
+
+    .line 86
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 87
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
+
+    move-result v0
+
+    const-string v1, "supportFragmentManager"
+
+    if-eqz v0, :cond_28
+
+    .line 88
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/o;
+
+    .line 89
+    iget-object v2, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v2, :cond_24
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v2, v13
+
+    .line 90
     :cond_24
-    iget-object v10, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;
+    new-instance v3, Lcom/samsung/android/app/music/player/lockplayer/b;
 
-    if-nez v10, :cond_25
+    invoke-direct {v3, v9}, Lcom/samsung/android/app/music/player/lockplayer/b;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
 
-    const-string v5, "forwardRewindInputListener"
+    .line 91
+    invoke-direct {v0, v2, v3}, Lcom/samsung/android/app/music/player/lockplayer/o;-><init>(Landroid/view/View;Landroid/view/View$OnClickListener;)V
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    .line 92
+    iget-object v2, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v2, :cond_25
+
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v2, v13
 
     :cond_25
-    const v11, 0x7f02013d
+    invoke-virtual {v2, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    const v12, 0x7f02013b
+    .line 93
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
 
-    move-object v6, v0
+    .line 94
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/p;
 
-    .line 293
-    invoke-direct/range {v6 .. v12}, Lcom/samsung/android/app/musiclibrary/core/player/common/PlayController;-><init>(Landroid/content/Context;Landroid/view/View;Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;II)V
+    .line 95
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/h;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
-    .line 296
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    move-result-object v2
 
-    if-nez v5, :cond_26
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    :goto_c
-    const-string v6, "uiManager"
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    if-nez v1, :cond_26
 
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    .line 96
     :cond_26
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    invoke-direct {v0, v9, v2, v1}, Lcom/samsung/android/app/music/player/lockplayer/p;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Landroidx/fragment/app/FragmentManager;Landroid/view/View;)V
 
-    invoke-static {v5, v0, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
+    .line 97
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+    if-nez v1, :cond_27
 
-    goto :goto_d
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 279
+    move-object v1, v13
+
     :cond_27
-    new-instance v0, Lcom/samsung/android/app/music/ActivePlayerController;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    invoke-direct {v0}, Lcom/samsung/android/app/music/ActivePlayerController;-><init>()V
+    .line 98
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    if-nez v1, :cond_2d
 
-    if-nez v5, :cond_28
+    goto :goto_9
 
-    const-string v6, "uiManager"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
+    .line 99
     :cond_28
-    move-object v6, v0
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/o;
 
-    check-cast v6, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    .line 100
+    iget-object v2, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    invoke-static {v5, v6, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
+    if-nez v2, :cond_29
 
-    sget-object v5, Lkotlin/Unit;->a:Lkotlin/Unit;
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+    move-object v2, v13
 
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
-
-    .line 281
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;
-
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
-
-    if-nez v5, :cond_29
-
-    const-string v6, "activePlayController"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
+    .line 101
     :cond_29
-    const-string v6, "LockPlayer"
+    new-instance v3, Lcom/samsung/android/app/music/player/lockplayer/b;
 
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;-><init>(Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;Ljava/lang/String;)V
+    invoke-direct {v3, v9}, Lcom/samsung/android/app/music/player/lockplayer/b;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
 
-    .line 282
-    new-instance v5, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$6;
+    .line 102
+    invoke-direct {v0, v2, v3}, Lcom/samsung/android/app/music/player/lockplayer/o;-><init>(Landroid/view/View;Landroid/view/View$OnClickListener;)V
 
-    invoke-direct {v5, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$6;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+    .line 103
+    iget-object v2, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener$OnPlayerControlListener;
+    if-nez v2, :cond_2a
 
-    invoke-virtual {v0, v5}, Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;->a(Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener$OnPlayerControlListener;)V
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 292
-    sget-object v5, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 281
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;
-
-    .line 293
-    new-instance v0, Lcom/samsung/android/app/musiclibrary/core/player/common/PlayController;
-
-    .line 294
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v7
-
-    iget-object v8, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v8, :cond_2a
-
-    const-string v5, "rootView"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v2, v13
 
     :cond_2a
-    iget-object v9, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+    invoke-virtual {v2, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    if-nez v9, :cond_2b
+    .line 104
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
 
-    const-string v5, "activePlayController"
+    .line 105
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/p;
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    .line 106
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/h;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
+    move-result-object v2
+
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v1, :cond_2b
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    .line 107
     :cond_2b
-    iget-object v10, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;
+    invoke-direct {v0, v9, v2, v1}, Lcom/samsung/android/app/music/player/lockplayer/p;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Landroidx/fragment/app/FragmentManager;Landroid/view/View;)V
 
-    if-nez v10, :cond_2c
+    .line 108
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    const-string v5, "forwardRewindInputListener"
+    if-nez v1, :cond_2c
 
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
 
     :cond_2c
-    const v11, 0x7f02013d
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    const v12, 0x7f02013b
+    .line 109
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    move-object v6, v0
+    if-nez v1, :cond_2d
 
-    .line 293
-    invoke-direct/range {v6 .. v12}, Lcom/samsung/android/app/musiclibrary/core/player/common/PlayController;-><init>(Landroid/content/Context;Landroid/view/View;Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;Lcom/samsung/android/app/musiclibrary/ui/widget/control/ForwardRewindInputListener;II)V
+    :goto_9
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 296
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    move-object v1, v13
 
-    if-nez v5, :cond_26
+    :cond_2d
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    goto :goto_c
-
-    .line 298
-    :goto_d
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 669
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    .line 110
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2f
 
-    .line 299
-    new-instance v0, Lcom/samsung/android/app/music/player/ShuffleController;
+    .line 111
+    new-instance v0, Lcom/samsung/android/app/music/player/v3/FavoriteController;
 
-    move-object v5, p0
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;
+    if-nez v1, :cond_2e
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    if-nez v6, :cond_2d
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_2d
-    invoke-direct {v0, v5, v6, v4}, Lcom/samsung/android/app/music/player/ShuffleController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/view/View;Z)V
-
-    .line 300
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    if-nez v5, :cond_2e
-
-    :goto_e
-    const-string v6, "uiManager"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_2e
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/v3/FavoriteController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Landroid/view/View;)V
 
-    invoke-static {v5, v0, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
+    .line 112
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    .line 301
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+    if-nez v1, :cond_31
 
-    goto :goto_f
+    goto :goto_a
 
-    .line 299
+    .line 113
     :cond_2f
-    new-instance v0, Lcom/samsung/android/app/music/player/ShuffleController;
+    new-instance v0, Lcom/samsung/android/app/music/player/v3/FavoriteController;
 
-    move-object v5, p0
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;
+    if-nez v1, :cond_30
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    if-nez v6, :cond_30
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_30
-    invoke-direct {v0, v5, v6, v4}, Lcom/samsung/android/app/music/player/ShuffleController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/view/View;Z)V
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/v3/FavoriteController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Landroid/view/View;)V
 
-    .line 300
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    .line 114
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    if-nez v5, :cond_2e
+    if-nez v1, :cond_31
+
+    :goto_a
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    :cond_31
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
+
+    .line 115
+    sget-object v1, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 116
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->g:Lcom/samsung/android/app/music/player/v3/FavoriteController;
+
+    .line 117
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_33
+
+    .line 118
+    new-instance v7, Lcom/samsung/android/app/music/player/v3/m;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
+
+    move-result-object v2
+
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v0, :cond_32
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v3, v13
+
+    goto :goto_b
+
+    :cond_32
+    move-object v3, v0
+
+    :goto_b
+    const/4 v4, 0x0
+
+    const/16 v5, 0x8
+
+    const/4 v6, 0x0
+
+    move-object v0, v7
+
+    move-object/from16 v1, p0
+
+    invoke-direct/range {v0 .. v6}, Lcom/samsung/android/app/music/player/v3/m;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;Landroid/view/View;ZILkotlin/jvm/internal/g;)V
+
+    .line 119
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v0, :cond_35
+
+    goto :goto_d
+
+    .line 120
+    :cond_33
+    new-instance v7, Lcom/samsung/android/app/music/player/v3/m;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
+
+    move-result-object v2
+
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v0, :cond_34
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v3, v13
+
+    goto :goto_c
+
+    :cond_34
+    move-object v3, v0
+
+    :goto_c
+    const/4 v4, 0x0
+
+    const/16 v5, 0x8
+
+    const/4 v6, 0x0
+
+    move-object v0, v7
+
+    move-object/from16 v1, p0
+
+    invoke-direct/range {v0 .. v6}, Lcom/samsung/android/app/music/player/v3/m;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;Landroid/view/View;ZILkotlin/jvm/internal/g;)V
+
+    .line 121
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v0, :cond_35
+
+    :goto_d
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v13
+
+    :cond_35
+    invoke-virtual {v0, v7}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
+
+    .line 122
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 123
+    iput-object v7, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/music/player/v3/m;
+
+    .line 124
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_37
+
+    .line 125
+    new-instance v8, Lcom/samsung/android/app/music/player/v3/j;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
+
+    move-result-object v2
+
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v0, :cond_36
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v3, v13
 
     goto :goto_e
 
-    .line 303
-    :goto_f
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 683
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_35
-
-    .line 304
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockListButtonController;
-
-    .line 305
-    move-object v5, p0
-
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;
-
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v6, :cond_31
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_31
-    new-instance v7, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$7;
-
-    invoke-direct {v7, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$7;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    check-cast v7, Landroid/view/View$OnClickListener;
-
-    .line 304
-    invoke-direct {v0, v5, v6, v7}, Lcom/samsung/android/app/music/player/lockplayer/LockListButtonController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/view/View;Landroid/view/View$OnClickListener;)V
-
-    .line 314
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    if-nez v6, :cond_32
-
-    const-string v7, "uiManager"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_32
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    invoke-static {v6, v0, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
-
-    .line 315
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 316
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockNowPlayingController;
-
-    .line 317
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
-
-    move-result-object v6
-
-    const-string v7, "supportFragmentManager"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object v7, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v7, :cond_33
-
-    const-string v8, "rootView"
-
-    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 316
-    :cond_33
-    invoke-direct {v0, v5, v6, v7}, Lcom/samsung/android/app/music/player/lockplayer/LockNowPlayingController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/support/v4/app/FragmentManager;Landroid/view/View;)V
-
-    .line 319
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v5, :cond_34
-
-    const-string v6, "viewTypeController"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_34
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    new-array v6, v1, [I
-
-    aput v3, v6, v4
-
-    :goto_10
-    invoke-virtual {v5, v0, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
-
-    .line 320
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    goto :goto_11
-
-    .line 304
-    :cond_35
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockListButtonController;
-
-    .line 305
-    move-object v5, p0
-
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;
-
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v6, :cond_36
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
     :cond_36
-    new-instance v7, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$8;
+    move-object v3, v0
 
-    invoke-direct {v7, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$8;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+    :goto_e
+    const/4 v4, 0x0
 
-    check-cast v7, Landroid/view/View$OnClickListener;
+    const/4 v5, 0x0
 
-    .line 304
-    invoke-direct {v0, v5, v6, v7}, Lcom/samsung/android/app/music/player/lockplayer/LockListButtonController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/view/View;Landroid/view/View$OnClickListener;)V
+    const/16 v6, 0x18
 
-    .line 314
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    const/4 v7, 0x0
 
-    if-nez v6, :cond_37
+    move-object v0, v8
 
-    const-string v7, "uiManager"
+    move-object/from16 v1, p0
 
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v7}, Lcom/samsung/android/app/music/player/v3/j;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;Landroid/view/View;ZZILkotlin/jvm/internal/g;)V
 
-    :cond_37
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    .line 126
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    invoke-static {v6, v0, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
-
-    .line 315
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 316
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockNowPlayingController;
-
-    .line 317
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
-
-    move-result-object v6
-
-    const-string v7, "supportFragmentManager"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object v7, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v7, :cond_38
-
-    const-string v8, "rootView"
-
-    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 316
-    :cond_38
-    invoke-direct {v0, v5, v6, v7}, Lcom/samsung/android/app/music/player/lockplayer/LockNowPlayingController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/support/v4/app/FragmentManager;Landroid/view/View;)V
-
-    .line 319
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v5, :cond_39
-
-    const-string v6, "viewTypeController"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_39
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    new-array v6, v1, [I
-
-    aput v3, v6, v4
+    if-nez v0, :cond_39
 
     goto :goto_10
 
-    .line 322
-    :goto_11
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    .line 127
+    :cond_37
+    new-instance v8, Lcom/samsung/android/app/music/player/v3/j;
 
-    .line 697
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
+
+    move-result-object v2
+
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v0, :cond_38
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v3, v13
+
+    goto :goto_f
+
+    :cond_38
+    move-object v3, v0
+
+    :goto_f
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0x18
+
+    const/4 v7, 0x0
+
+    move-object v0, v8
+
+    move-object/from16 v1, p0
+
+    invoke-direct/range {v0 .. v7}, Lcom/samsung/android/app/music/player/v3/j;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;Landroid/view/View;ZZILkotlin/jvm/internal/g;)V
+
+    .line 128
+    iget-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v0, :cond_39
+
+    :goto_10
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v13
+
+    :cond_39
+    invoke-virtual {v0, v8}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
+
+    .line 129
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
+
+    .line 130
+    iput-object v8, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->o:Lcom/samsung/android/app/music/player/v3/j;
+
+    .line 131
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_3c
+    const/4 v1, 0x1
 
-    .line 323
-    new-instance v0, Lcom/samsung/android/app/music/player/FavoriteController;
+    if-eqz v0, :cond_3b
 
-    move-object v5, p0
+    .line 132
+    new-instance v0, Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
 
-    check-cast v5, Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    move-result-object v2
 
-    if-nez v6, :cond_3a
+    invoke-direct {v0, v9, v2, v1}, Lcom/samsung/android/app/music/lyrics/v3/LyricsController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;I)V
 
-    const-string v7, "rootView"
+    .line 133
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    if-nez v1, :cond_3a
+
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
 
     :cond_3a
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/music/player/FavoriteController;-><init>(Landroid/support/v4/app/FragmentActivity;Landroid/view/View;)V
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    .line 324
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    .line 134
+    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$g;
 
-    if-nez v5, :cond_3b
+    invoke-direct {v1, v9}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$g;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
 
-    :goto_12
-    const-string v6, "uiManager"
+    goto :goto_11
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
+    .line 135
     :cond_3b
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    new-instance v0, Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
 
-    invoke-static {v5, v0, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
+    invoke-virtual/range {p0 .. p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
 
-    .line 325
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+    move-result-object v2
 
-    goto :goto_13
+    invoke-direct {v0, v9, v2, v1}, Lcom/samsung/android/app/music/lyrics/v3/LyricsController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/i;Lcom/samsung/android/app/music/player/k;I)V
 
-    .line 323
+    .line 136
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v1, :cond_3c
+
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
     :cond_3c
-    new-instance v0, Lcom/samsung/android/app/music/player/FavoriteController;
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    move-object v5, p0
+    .line 137
+    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$g;
 
-    check-cast v5, Landroid/support/v4/app/FragmentActivity;
+    invoke-direct {v1, v9}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$g;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    :goto_11
+    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/lyrics/v3/LyricsController;->D(Lkotlin/jvm/functions/l;)V
 
-    if-nez v6, :cond_3d
+    .line 138
+    sget-object v1, Lkotlin/u;->a:Lkotlin/u;
 
-    const-string v7, "rootView"
+    .line 139
+    iput-object v0, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->p:Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
 
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    .line 140
+    invoke-static {v10}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3f
+
+    .line 141
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$a;
+
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
+
+    if-nez v1, :cond_3d
+
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
 
     :cond_3d
-    invoke-direct {v0, v5, v6}, Lcom/samsung/android/app/music/player/FavoriteController;-><init>(Landroid/support/v4/app/FragmentActivity;Landroid/view/View;)V
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$a;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
 
-    .line 324
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    .line 142
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    if-nez v5, :cond_3b
+    if-nez v1, :cond_3e
+
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v13
+
+    :cond_3e
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
+
+    .line 143
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez v1, :cond_42
 
     goto :goto_12
 
-    .line 327
-    :goto_13
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 711
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_40
-
-    .line 328
-    new-instance v0, Lcom/samsung/android/app/music/player/RepeatController;
-
-    move-object v5, p0
-
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;
-
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v6, :cond_3e
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_3e
-    invoke-direct {v0, v5, v6, v4, v1}, Lcom/samsung/android/app/music/player/RepeatController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/view/View;ZZ)V
-
-    .line 329
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    if-nez v5, :cond_3f
-
-    :goto_14
-    const-string v6, "uiManager"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
+    .line 144
     :cond_3f
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$a;
 
-    invoke-static {v5, v0, v4, v3, v2}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;ZILjava/lang/Object;)V
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a:Landroid/view/View;
 
-    .line 330
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
+    if-nez v1, :cond_40
 
-    goto :goto_15
+    invoke-static {v12}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 328
+    move-object v1, v13
+
     :cond_40
-    new-instance v0, Lcom/samsung/android/app/music/player/RepeatController;
+    invoke-direct {v0, v9, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$a;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
 
-    move-object v5, p0
+    .line 145
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;
+    if-nez v1, :cond_41
 
-    iget-object v6, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
+    invoke-static {v14}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    if-nez v6, :cond_41
-
-    const-string v7, "rootView"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-object v1, v13
 
     :cond_41
-    invoke-direct {v0, v5, v6, v4, v1}, Lcom/samsung/android/app/music/player/RepeatController;-><init>(Lcom/samsung/android/app/musiclibrary/ui/BaseActivity;Landroid/view/View;ZZ)V
+    invoke-virtual {v1, v0}, Lcom/samsung/android/app/music/player/d0;->e(Lcom/samsung/android/app/music/player/fullplayer/z;)V
 
-    .line 329
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    .line 146
+    iget-object v1, v9, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
-    if-nez v5, :cond_3f
+    if-nez v1, :cond_42
 
-    goto :goto_14
+    :goto_12
+    invoke-static {v11}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    .line 333
-    :goto_15
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    goto :goto_13
 
-    .line 725
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
-
-    move-result v0
-
-    const v2, 0x7f1302a0
-
-    if-eqz v0, :cond_44
-
-    .line 335
-    new-instance v0, Lcom/samsung/android/app/music/lyrics/LyricsController;
-
-    .line 336
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v5, :cond_42
-
-    const-string v6, "rootView"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 338
     :cond_42
-    sget-object v6, Lcom/samsung/android/app/music/lyrics/LyricsViewBuilders;->StyleTitleScrollableHighlightOnly:Lcom/samsung/android/app/music/lyrics/LyricsViewBuilders;
+    move-object v13, v1
 
-    .line 335
-    invoke-direct {v0, v5, v2, v6}, Lcom/samsung/android/app/music/lyrics/LyricsController;-><init>(Landroid/view/View;ILcom/samsung/android/app/music/lyrics/LyricsViewBuilders;)V
+    :goto_13
+    invoke-virtual {v13, v0}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->d(Lcom/samsung/android/app/musiclibrary/ui/player/c$a;)V
 
-    .line 340
-    iget-object v2, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    .line 147
+    sget-object v0, Lkotlin/u;->a:Lkotlin/u;
 
-    if-nez v2, :cond_43
-
-    const-string v5, "viewTypeController"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_43
-    move-object v5, v0
-
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    new-array v6, v1, [I
-
-    aput v1, v6, v4
-
-    invoke-virtual {v2, v5, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
-
-    .line 341
-    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$9;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$9;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    :goto_16
-    check-cast v1, Lcom/samsung/android/app/music/lyrics/LyricsController$LyricConditionChangeListener;
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/app/music/lyrics/LyricsController;->setLyricConditionChangeListener(Lcom/samsung/android/app/music/lyrics/LyricsController$LyricConditionChangeListener;)V
-
-    .line 349
-    sget-object v1, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    .line 339
-    iput-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->g:Lcom/samsung/android/app/music/lyrics/LyricsController;
-
-    .line 350
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    goto :goto_17
-
-    .line 335
-    :cond_44
-    new-instance v0, Lcom/samsung/android/app/music/lyrics/LyricsController;
-
-    .line 336
-    iget-object v5, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v5, :cond_45
-
-    const-string v6, "rootView"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 338
-    :cond_45
-    sget-object v6, Lcom/samsung/android/app/music/lyrics/LyricsViewBuilders;->StyleTitleScrollableHighlightOnly:Lcom/samsung/android/app/music/lyrics/LyricsViewBuilders;
-
-    .line 335
-    invoke-direct {v0, v5, v2, v6}, Lcom/samsung/android/app/music/lyrics/LyricsController;-><init>(Landroid/view/View;ILcom/samsung/android/app/music/lyrics/LyricsViewBuilders;)V
-
-    .line 340
-    iget-object v2, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v2, :cond_46
-
-    const-string v5, "viewTypeController"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_46
-    move-object v5, v0
-
-    check-cast v5, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    new-array v6, v1, [I
-
-    aput v1, v6, v4
-
-    invoke-virtual {v2, v5, v6}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
-
-    .line 341
-    new-instance v1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$10;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$initView$$inlined$tsp$lambda$10;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    goto :goto_16
-
-    .line 351
-    :goto_17
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 739
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4a
-
-    .line 352
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$CloseButtonController;
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v1, :cond_47
-
-    const-string v2, "rootView"
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_47
-    iget-object v2, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v2, :cond_48
-
-    const-string v4, "viewTypeController"
-
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_48
-    invoke-direct {v0, v1, v2}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$CloseButtonController;-><init>(Landroid/view/View;Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;)V
-
-    .line 353
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v1, :cond_49
-
-    :goto_18
-    const-string v2, "viewTypeController"
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    .line 354
-    :cond_49
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;
-
-    new-array v2, v3, [I
-
-    fill-array-data v2, :array_0
-
-    .line 353
-    invoke-virtual {v1, v0, v2}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager$PlayerUi;[I)V
-
-    .line 356
-    sget-object v0, Lkotlin/Unit;->a:Lkotlin/Unit;
-
-    goto :goto_19
-
-    .line 352
-    :cond_4a
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$CloseButtonController;
-
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez v1, :cond_4b
-
-    const-string v2, "rootView"
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_4b
-    iget-object v2, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v2, :cond_4c
-
-    const-string v4, "viewTypeController"
-
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_4c
-    invoke-direct {v0, v1, v2}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$CloseButtonController;-><init>(Landroid/view/View;Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;)V
-
-    .line 353
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v1, :cond_49
-
-    goto :goto_18
-
-    :goto_19
     return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x1
-        0x2
-    .end array-data
 .end method
 
-.method private final e()V
+.method public final S()V
     .locals 3
 
-    .line 386
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->o:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$intentReceiver$1;
-
-    check-cast v0, Landroid/content/BroadcastReceiver;
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->B:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$h;
 
     new-instance v1, Landroid/content/IntentFilter;
 
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    const-string v2, "com.samsung.android.app.music.core.state.FINISHED_HIDE_NOTIFICATION"
+    const-string v2, "com.samsung.android.app.music.core.state.NOTIFICATION_HIDE"
 
-    .line 387
+    .line 2
     invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v2, "android.intent.action.USER_PRESENT"
 
-    .line 388
+    .line 3
     invoke-virtual {v1, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 386
-    invoke-virtual {p0, v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    .line 4
+    sget-object v2, Lkotlin/u;->a:Lkotlin/u;
 
-    const/4 v0, 0x1
-
-    .line 390
-    iput-boolean v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->j:Z
+    .line 5
+    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     return-void
 .end method
 
-.method public static final synthetic e(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-    .locals 0
+.method public final T(Landroid/os/Bundle;)V
+    .locals 7
 
-    .line 54
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->f()V
+    if-nez p1, :cond_0
 
-    return-void
-.end method
-
-.method public static final synthetic f(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Landroid/view/View;
-    .locals 1
-
-    .line 54
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Landroid/view/View;
-
-    if-nez p0, :cond_0
-
-    const-string v0, "rootView"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    goto :goto_0
 
     :cond_0
-    return-object p0
-.end method
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
 
-.method private final f()V
-    .locals 2
+    if-nez v0, :cond_1
 
-    .line 394
-    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->j:Z
+    const-string v0, "viewTypeController"
 
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 395
-    iput-boolean v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->j:Z
+    :cond_1
+    move-object v1, v0
 
-    .line 397
+    const-string v0, "key_view_type"
+
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x0
+
+    invoke-static/range {v1 .. v6}, Lcom/samsung/android/app/music/player/d0;->g(Lcom/samsung/android/app/music/player/d0;IZLjava/lang/String;ILjava/lang/Object;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public final U(Landroid/content/Context;Landroid/view/View;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/m;
+
+    invoke-direct {v0, p1, p2}, Lcom/samsung/android/app/music/player/lockplayer/m;-><init>(Landroid/content/Context;Landroid/view/View;)V
+
+    .line 2
+    new-instance p1, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$k;
+
+    invoke-direct {p1, p0, p2}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$k;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;Landroid/view/View;)V
+
+    .line 3
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/player/lockplayer/m;->k(Lcom/samsung/android/app/music/player/lockplayer/m$b;)V
+
+    return-void
+.end method
+
+.method public final V()V
+    .locals 2
+
+    .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->o:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$intentReceiver$1;
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->B:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$h;
 
-    check-cast v0, Landroid/content/BroadcastReceiver;
-
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2189,270 +2179,418 @@
 
     const-string v1, "unregisterReceiver Already unregistered."
 
-    .line 400
+    .line 2
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
     :goto_0
     return-void
 .end method
 
-.method public static final synthetic g(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/lyrics/LyricsController;
+.method public getUseApplyTheme()Z
     .locals 1
 
-    .line 54
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->g:Lcom/samsung/android/app/music/lyrics/LyricsController;
+    iget-boolean v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->z:Z
 
-    if-nez p0, :cond_0
-
-    const-string v0, "lyricsController"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_0
-    return-object p0
+    return v0
 .end method
 
-.method public static final synthetic h(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
-    .locals 1
+.method public h0(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
+    .locals 3
 
-    .line 54
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/musiclibrary/ui/player/IPlayerController;
+    const-string v0, "options"
 
-    if-nez p0, :cond_0
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "activePlayController"
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/music/player/v3/m;
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "shuffleController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
 
     :cond_0
-    return-object p0
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, p1, v2, v1}, Lcom/samsung/android/app/music/player/vi/h$a;->d(Lcom/samsung/android/app/music/player/vi/h;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;ILjava/lang/Object;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->o:Lcom/samsung/android/app/music/player/v3/j;
+
+    if-nez v0, :cond_1
+
+    const-string v0, "repeatController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_1
+    invoke-static {v0, v1, p1, v2, v1}, Lcom/samsung/android/app/music/player/vi/h$a;->d(Lcom/samsung/android/app/music/player/vi/h;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;ILjava/lang/Object;)V
+
+    return-void
 .end method
 
-.method public static final synthetic i(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;
-    .locals 1
+.method public j1(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
+    .locals 5
 
-    .line 54
-    iget-object p0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->f:Lcom/samsung/android/app/music/player/lockplayer/LockAlbumArt;
+    const-string v0, "m"
 
-    if-nez p0, :cond_0
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->c:Lcom/samsung/android/app/music/background/BeyondBackgroundController;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "beyondBackgroundController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/background/BeyondBackgroundController;->l(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e:Lcom/samsung/android/app/music/player/lockplayer/e;
+
+    if-nez v0, :cond_1
 
     const-string v0, "albumArt"
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
 
-    :cond_0
-    return-object p0
+    move-object v0, v1
+
+    :cond_1
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->l()J
+
+    move-result-wide v2
+
+    long-to-int v2, v2
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->d()J
+
+    move-result-wide v3
+
+    invoke-virtual {v0, v2, v3, v4}, Lcom/samsung/android/app/music/player/lockplayer/e;->B(IJ)V
+
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->t:Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;
+
+    if-nez v0, :cond_2
+
+    const-string v0, "albumTagUpdater"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_2
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/player/v3/fullplayer/tag/AlbumTagUpdater;->l(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
+
+    .line 4
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d:Lcom/samsung/android/app/music/player/v3/PlayController;
+
+    if-nez v0, :cond_3
+
+    const-string v0, "playController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_3
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/player/v3/PlayController;->l(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
+
+    .line 5
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->f:Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;
+
+    if-nez v0, :cond_4
+
+    const-string v0, "playingItemText"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_4
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->I()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->f()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;->J()Z
+
+    move-result v4
+
+    invoke-virtual {v0, v2, v3, v4}, Lcom/samsung/android/app/music/player/lockplayer/LockPlayerPlayingItemText;->l(Ljava/lang/String;Ljava/lang/String;Z)V
+
+    .line 6
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->p:Lcom/samsung/android/app/music/lyrics/v3/LyricsController;
+
+    if-nez v0, :cond_5
+
+    const-string v0, "lyricsController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_5
+    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/lyrics/v3/LyricsController;->E(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
+
+    .line 7
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->g:Lcom/samsung/android/app/music/player/v3/FavoriteController;
+
+    if-nez v0, :cond_6
+
+    const-string v0, "favoriteController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_6
+    move-object v1, v0
+
+    :goto_0
+    invoke-virtual {v1, p1}, Lcom/samsung/android/app/music/player/v3/FavoriteController;->l(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/MusicMetadata;)V
+
+    return-void
 .end method
 
+.method public k1(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
+    .locals 2
 
-# virtual methods
-.method public finish()V
-    .locals 1
+    const-string v0, "queue"
 
-    .line 157
-    invoke-super {p0}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->finish()V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f050006
+    const-string v0, "options"
 
-    .line 160
-    invoke-virtual {p0, v0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->overridePendingTransition(II)V
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/music/player/v3/m;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string v0, "shuffleController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v0, v1
+
+    :cond_0
+    invoke-virtual {v0, p1, p2}, Lcom/samsung/android/app/music/player/v3/m;->j(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->o:Lcom/samsung/android/app/music/player/v3/j;
+
+    if-nez v0, :cond_1
+
+    const-string v0, "repeatController"
+
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_1
+    move-object v1, v0
+
+    :goto_0
+    invoke-virtual {v1, p1, p2}, Lcom/samsung/android/app/music/player/v3/j;->j(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/k;Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/model/p;)V
 
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
-    .locals 3
+    .locals 7
 
-    .line 129
-    invoke-super {p0, p1}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    const-string v0, "newConfig"
 
-    .line 130
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 1
+    invoke-super {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/i;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    .line 2
+    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->C:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;
 
-    const-string v2, "onConfigurationChanged newConfig = "
+    const-string v1, "onConfigurationChanged newConfig = "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/j;->k(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->b(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;Ljava/lang/String;)I
 
-    .line 131
-    iget-object p1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    .line 3
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
 
-    if-nez p1, :cond_0
+    move-result-object p1
 
-    const-string v0, "viewTypeController"
+    invoke-virtual {p1}, Lcom/samsung/android/app/music/player/k;->l()I
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    move-result v2
 
-    :cond_0
-    invoke-virtual {p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a()I
+    .line 4
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
 
     move-result p1
 
-    .line 132
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
-
-    .line 545
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 133
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
-
-    if-nez v0, :cond_1
-
-    :goto_0
     const-string v1, "uiManager"
 
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    const/4 v3, 0x0
+
+    if-eqz p1, :cond_0
+
+    .line 5
+    iget-object p1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez p1, :cond_1
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
+
+    if-nez p1, :cond_1
+
+    :goto_0
+    invoke-static {v1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object p1, v3
 
     :cond_1
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->release()V
+    invoke-virtual {p1}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->release()V
+
+    .line 6
+    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$c;)Z
+
+    move-result p1
+
+    const v0, 0x7f0e00f3
+
+    .line 7
+    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/activity/h;->setContentView(I)V
+
+    .line 8
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->P()V
+
+    .line 9
+    iget-object p1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->r:Lcom/samsung/android/app/music/player/d0;
+
+    if-nez p1, :cond_2
+
+    const-string p1, "viewTypeController"
+
+    invoke-static {p1}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    move-object v1, v3
 
     goto :goto_1
 
     :cond_2
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    move-object v1, p1
 
-    if-nez v0, :cond_1
-
-    goto :goto_0
-
-    .line 135
     :goto_1
-    sget-object v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->b:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;
+    const/4 v3, 0x0
 
-    .line 559
-    invoke-static {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;->a(Lcom/samsung/android/app/music/player/lockplayer/LockActivity$Companion;)Z
+    const/4 v4, 0x0
 
-    move-result v0
+    const/4 v5, 0x4
 
-    const v1, 0x7f040103
+    const/4 v6, 0x0
 
-    .line 136
-    invoke-virtual {p0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->setContentView(I)V
+    invoke-static/range {v1 .. v6}, Lcom/samsung/android/app/music/player/d0;->g(Lcom/samsung/android/app/music/player/d0;IZLjava/lang/String;ILjava/lang/Object;)V
 
-    .line 138
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d()V
-
-    .line 139
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
-
-    if-nez v0, :cond_3
-
-    const-string v1, "viewTypeController"
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
-
-    :cond_3
-    invoke-virtual {v0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a(I)V
+    .line 10
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->O()V
 
     return-void
 .end method
 
-.method protected onCreate(Landroid/os/Bundle;)V
-    .locals 3
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 4
 
-    .line 73
-    move-object v0, p0
+    const/4 v0, 0x1
 
-    check-cast v0, Landroid/app/Activity;
+    .line 1
+    invoke-static {p0, v0}, Lcom/samsung/android/app/musiclibrary/ui/support/app/a;->a(Landroid/app/Activity;Z)V
 
-    const/4 v1, 0x1
+    .line 2
+    invoke-super {p0, p1}, Lcom/samsung/android/app/music/activity/h;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/support/app/ActivityCompat;->a(Landroid/app/Activity;Z)V
+    const v1, 0x7f0e00f3
 
-    .line 74
-    invoke-super {p0, p1}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->onCreate(Landroid/os/Bundle;)V
+    .line 3
+    invoke-virtual {p0, v1}, Lcom/samsung/android/app/music/activity/h;->setContentView(I)V
 
-    const v0, 0x7f040103
-
-    .line 75
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->setContentView(I)V
-
-    .line 76
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    const-string v2, "window"
-
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object v0
-
-    .line 77
-    invoke-virtual {v0}, Landroid/view/View;->getSystemUiVisibility()I
-
-    move-result v2
-
-    or-int/lit16 v2, v2, 0x200
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
-
-    .line 80
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x1b
-
-    if-lt v0, v2, :cond_0
-
-    .line 81
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    const-string v2, "window"
-
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/kotlin/extension/view/WindowExtensionKt;->a(Landroid/view/Window;I)V
-
-    .line 83
-    :cond_0
-    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$onCreate$2;
-
-    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$onCreate$2;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
-
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/OnBackPressedListener;
-
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->addOnBackPressedListener(Lcom/samsung/android/app/musiclibrary/OnBackPressedListener;)V
-
-    .line 100
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->e()V
-
-    .line 103
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "applicationContext"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getWindow()Landroid/view/Window;
+    .line 4
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
     const-string v2, "window"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v1}, Lcom/samsung/android/app/musiclibrary/ktx/view/e;->g(Landroid/view/Window;)V
+
+    .line 5
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v3, 0x1b
+
+    if-lt v1, v3, :cond_0
+
+    .line 6
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v1, v0}, Lcom/samsung/android/app/musiclibrary/ktx/view/e;->a(Landroid/view/Window;I)V
+
+    .line 7
+    :cond_0
+    new-instance v0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$j;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$j;-><init>(Lcom/samsung/android/app/music/player/lockplayer/LockActivity;)V
+
+    invoke-virtual {p0, v0}, Lcom/samsung/android/app/musiclibrary/ui/i;->addOnBackPressedListener(Lcom/samsung/android/app/musiclibrary/h;)V
+
+    .line 8
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->S()V
+
+    .line 9
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "applicationContext"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
 
     invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
@@ -2460,37 +2598,31 @@
 
     const-string v2, "window.decorView"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/j;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a(Landroid/content/Context;Landroid/view/View;)V
+    invoke-virtual {p0, v0, v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->U(Landroid/content/Context;Landroid/view/View;)V
 
-    .line 104
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->n:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$keyListener$1;
+    .line 10
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->A:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$i;
 
-    check-cast v0, Lcom/samsung/android/app/musiclibrary/ui/OnKeyObservable$OnKeyListener;
+    invoke-virtual {p0, v0}, Lcom/samsung/android/app/musiclibrary/ui/i;->addOnKeyListener(Lcom/samsung/android/app/musiclibrary/ui/v$a;)V
 
-    invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->addOnKeyListener(Lcom/samsung/android/app/musiclibrary/ui/OnKeyObservable$OnKeyListener;)V
+    .line 11
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->P()V
 
-    .line 106
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->d()V
-
-    .line 107
-    invoke-direct {p0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->a(Landroid/os/Bundle;)V
+    .line 12
+    invoke-virtual {p0, p1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->T(Landroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method protected onDestroy()V
+.method public onDestroy()V
     .locals 2
 
-    .line 149
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getWindow()Landroid/view/Window;
+    .line 1
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
-
-    const-string v1, "window"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
@@ -2500,78 +2632,83 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 150
-    invoke-direct {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->f()V
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->V()V
 
-    .line 151
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->h:Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->q:Lcom/samsung/android/app/musiclibrary/ui/player/c;
 
     if-nez v0, :cond_0
 
-    const-string v1, "uiManager"
+    const-string v0, "uiManager"
 
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    goto :goto_0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/samsung/android/app/musiclibrary/ui/player/PlayerUiManager;->release()V
+    move-object v1, v0
 
-    .line 152
-    invoke-super {p0}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->onDestroy()V
+    :goto_0
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/player/c;->release()V
+
+    .line 4
+    invoke-super {p0}, Lcom/samsung/android/app/music/activity/h;->onDestroy()V
 
     return-void
 .end method
 
-.method protected onSaveInstanceState(Landroid/os/Bundle;)V
-    .locals 3
+.method public onSaveInstanceState(Landroid/os/Bundle;)V
+    .locals 2
 
     const-string v0, "outState"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "key_view_type"
+    .line 1
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->N()Lcom/samsung/android/app/music/viewmodel/e;
 
-    .line 144
-    iget-object v1, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->i:Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;
+    move-result-object v0
 
-    if-nez v1, :cond_0
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/k;->l()I
 
-    const-string v2, "viewTypeController"
+    move-result v0
 
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    const-string v1, "key_view_type"
 
-    :cond_0
-    invoke-virtual {v1}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity$LockViewTypeController;->a()I
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    move-result v1
-
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 145
-    invoke-super {p0, p1}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
+    .line 2
+    invoke-super {p0, p1}, Lcom/samsung/android/app/musiclibrary/ui/i;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void
 .end method
 
-.method protected onStart()V
+.method public onStart()V
     .locals 2
 
-    .line 114
-    invoke-super {p0}, Lcom/samsung/android/app/music/activity/BaseServiceActivity;->onStart()V
+    .line 1
+    invoke-super {p0}, Lcom/samsung/android/app/music/activity/h;->onStart()V
 
-    .line 115
-    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->k:Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;
+    .line 2
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->O()V
+
+    .line 3
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->s:Lcom/samsung/android/app/music/player/lockplayer/k;
 
     if-nez v0, :cond_0
 
-    const-string v1, "dragVIManager"
+    const-string v0, "dragVIManager"
 
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->b(Ljava/lang/String;)V
+    invoke-static {v0}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
 
     :cond_0
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/lockplayer/LockDragVI;->a()V
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/lockplayer/k;->h()V
 
-    .line 119
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->getApplicationContext()Landroid/content/Context;
+    .line 4
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -2585,21 +2722,57 @@
 
     const-string v1, "onStart isDesktopMode true & finish"
 
-    .line 120
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/iLog;->b(Ljava/lang/String;Ljava/lang/String;)V
+    .line 5
+    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/debug/e;->g(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 121
-    move-object v0, p0
+    .line 6
+    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->L()Lcom/samsung/android/app/music/player/lockplayer/i;
 
-    check-cast v0, Landroid/app/Activity;
+    move-result-object v0
 
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lcom/samsung/android/app/musiclibrary/ui/support/app/ActivityCompat;->a(Landroid/app/Activity;Z)V
-
-    .line 122
-    invoke-virtual {p0}, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->finish()V
+    invoke-virtual {v0}, Lcom/samsung/android/app/music/player/lockplayer/i;->k()V
 
     :cond_1
+    return-void
+.end method
+
+.method public onStop()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->v:Lcom/samsung/android/app/musiclibrary/core/service/v3/a;
+
+    invoke-virtual {v0, p0}, Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/impl/f;->b(Lcom/samsung/android/app/musiclibrary/core/service/v3/aidl/j$a;)V
+
+    .line 2
+    invoke-super {p0}, Lcom/samsung/android/app/music/activity/h;->onStop()V
+
+    return-void
+.end method
+
+.method public r0(Ljava/lang/String;Landroid/os/Bundle;)V
+    .locals 1
+
+    const-string v0, "action"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "data"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p2, p0, Lcom/samsung/android/app/music/player/lockplayer/LockActivity;->g:Lcom/samsung/android/app/music/player/v3/FavoriteController;
+
+    if-nez p2, :cond_0
+
+    const-string p2, "favoriteController"
+
+    invoke-static {p2}, Lkotlin/jvm/internal/j;->q(Ljava/lang/String;)V
+
+    const/4 p2, 0x0
+
+    :cond_0
+    invoke-virtual {p2, p1}, Lcom/samsung/android/app/music/player/v3/FavoriteController;->D(Ljava/lang/String;)V
+
     return-void
 .end method

@@ -4,14 +4,14 @@
     <item android:gravity="center_vertical" android:id="@android:id/background">
         <shape>
             <corners android:radius="7.5dip" />
-            <solid android:color="@color/full_player_seekbar_background_theme" />
+            <solid android:color="@color/full_player_seekbar_background" />
         </shape>
     </item>
     <item android:gravity="center_vertical" android:id="@android:id/secondaryProgress">
         <clip>
             <shape>
                 <corners android:radius="7.5dip" />
-                <solid android:color="@color/full_player_seekbar_secondary_progress_theme" />
+                <solid android:color="@color/full_player_seekbar_secondary_progress" />
             </shape>
         </clip>
     </item>
@@ -19,7 +19,7 @@
         <clip>
             <shape>
                 <corners android:radius="7.5dip" />
-                <solid android:color="@color/full_player_seekbar_progress_theme" />
+                <solid android:color="@color/basics_icon_white" />
             </shape>
         </clip>
     </item>

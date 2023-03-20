@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0dip" android:textColor="@color/dark_gray_opacity_100" android:gravity="center_vertical" android:id="@id/text" android:background="@drawable/pop_bubble_bg_body" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="@dimen/spotify_tip_popup_width" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
-    <ImageView android:id="@id/tip_top_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pop_bubble_top_arrow" />
-</FrameLayout>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/spotify_tip_popup_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/tip_bg_left" android:background="@drawable/tips_bubble_left" android:layout_width="@dimen/spotify_tip_popup_side_bubble_width" android:layout_height="0.0dip" android:backgroundTint="#f2474747" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tip_bg_right" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/tip_bg_right" android:background="@drawable/tips_bubble_right" android:layout_width="0.0dip" android:layout_height="0.0dip" android:backgroundTint="#f2474747" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tip_bg_left" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/white_opacity_100" android:id="@id/text" android:paddingTop="26.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

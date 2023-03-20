@@ -1,6 +1,6 @@
 .class public Lorg/simpleframework/xml/util/Dictionary;
 .super Ljava/util/AbstractSet;
-.source "SourceFile"
+.source "Dictionary.java"
 
 
 # annotations
@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field protected final a:Lorg/simpleframework/xml/util/Dictionary$Table;
+.field public final map:Lorg/simpleframework/xml/util/Dictionary$Table;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lorg/simpleframework/xml/util/Dictionary$Table<",
@@ -32,8 +32,39 @@
 .end field
 
 
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
+
+    .line 2
+    new-instance v0, Lorg/simpleframework/xml/util/Dictionary$Table;
+
+    invoke-direct {v0}, Lorg/simpleframework/xml/util/Dictionary$Table;-><init>()V
+
+    iput-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->map:Lorg/simpleframework/xml/util/Dictionary$Table;
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public a(Lorg/simpleframework/xml/util/Entry;)Z
+.method public bridge synthetic add(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    check-cast p1, Lorg/simpleframework/xml/util/Entry;
+
+    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/Dictionary;->add(Lorg/simpleframework/xml/util/Entry;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public add(Lorg/simpleframework/xml/util/Entry;)Z
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -41,14 +72,14 @@
         }
     .end annotation
 
-    .line 78
-    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->a:Lorg/simpleframework/xml/util/Dictionary$Table;
+    .line 2
+    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->map:Lorg/simpleframework/xml/util/Dictionary$Table;
 
-    invoke-interface {p1}, Lorg/simpleframework/xml/util/Entry;->a()Ljava/lang/String;
+    invoke-interface {p1}, Lorg/simpleframework/xml/util/Entry;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lorg/simpleframework/xml/util/Dictionary$Table;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -65,17 +96,25 @@
     return p1
 .end method
 
-.method public synthetic add(Ljava/lang/Object;)Z
-    .locals 0
+.method public get(Ljava/lang/String;)Lorg/simpleframework/xml/util/Entry;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")TT;"
+        }
+    .end annotation
 
-    .line 53
+    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->map:Lorg/simpleframework/xml/util/Dictionary$Table;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
     check-cast p1, Lorg/simpleframework/xml/util/Entry;
 
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/util/Dictionary;->a(Lorg/simpleframework/xml/util/Entry;)Z
-
-    move-result p1
-
-    return p1
+    return-object p1
 .end method
 
 .method public iterator()Ljava/util/Iterator;
@@ -88,10 +127,9 @@
         }
     .end annotation
 
-    .line 100
-    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->a:Lorg/simpleframework/xml/util/Dictionary$Table;
+    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->map:Lorg/simpleframework/xml/util/Dictionary$Table;
 
-    invoke-virtual {v0}, Lorg/simpleframework/xml/util/Dictionary$Table;->values()Ljava/util/Collection;
+    invoke-virtual {v0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object v0
 
@@ -102,13 +140,33 @@
     return-object v0
 .end method
 
+.method public remove(Ljava/lang/String;)Lorg/simpleframework/xml/util/Entry;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")TT;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->map:Lorg/simpleframework/xml/util/Dictionary$Table;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lorg/simpleframework/xml/util/Entry;
+
+    return-object p1
+.end method
+
 .method public size()I
     .locals 1
 
-    .line 89
-    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->a:Lorg/simpleframework/xml/util/Dictionary$Table;
+    iget-object v0, p0, Lorg/simpleframework/xml/util/Dictionary;->map:Lorg/simpleframework/xml/util/Dictionary$Table;
 
-    invoke-virtual {v0}, Lorg/simpleframework/xml/util/Dictionary$Table;->size()I
+    invoke-virtual {v0}, Ljava/util/HashMap;->size()I
 
     move-result v0
 

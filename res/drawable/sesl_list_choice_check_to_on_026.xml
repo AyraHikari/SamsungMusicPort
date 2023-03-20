@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<vector android:tint="?colorControlActivated" android:height="20.699982dip" android:width="32.0dip" android:viewportWidth="96.0" android:viewportHeight="62.0"
+<vector android:height="20.699982dip" android:width="32.0dip" android:viewportWidth="96.0" android:viewportHeight="62.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="#ffffffff" android:pathData="M47.999,0C30.879,0 17,13.877 17,31c0,17.124 13.879,31 30.999,31C65.122,62 79,48.124 79,31C79,13.877 65.122,0 47.999,0zM41.905,45.359L27.599,31.214l4.046,-4l10.261,10.146l21.704,-21.464l4.048,4.001L41.905,45.359z" />
+    <group android:name="checkbox" android:pivotX="48.0" android:pivotY="31.0">
+        <path android:name="circle_outline" android:pathData="M48,31m-29.5,0a29.5,29.5 0 1,0 59,0a29.5,29.5 0 1,0-59,0" android:strokeColor="?colorControlNormal" android:strokeWidth="3.0" android:strokeAlpha="0.0" />
+        <path android:name="circle_fill" android:fillColor="?colorPrimary" android:pathData="M48,31m-31,0a31,31 0 1,0 62,0a31,31 0 1,0-62,0" android:fillAlpha="0.0" />
+        <path android:name="check_mark" android:fillColor="?colorPrimary" android:pathData="M48.2962,41.2023C47.4616,42.0388 46.3506,42.5 45.1684,42.5C43.9862,42.5 42.8752,42.0388 42.0405,41.2023L31.6256,30.7682C30.5441,29.683 30.5469,27.9278 31.6311,26.8463C32.7153,25.7649 34.4715,25.7676 35.5529,26.8528L45.1684,36.4846L60.4412,21.1755C61.5227,20.0904 63.2779,20.0876 64.3631,21.169C65.4473,22.2505 65.4501,24.0067 64.3686,25.0909L48.2962,41.2023ZM48,0C30.9056,0 17,13.9056 17,31C17,48.0935 30.9056,62 48,62C65.0944,62 79,48.0935 79,31C79,13.9056 65.0944,0 48,0" />
+    </group>
 </vector>

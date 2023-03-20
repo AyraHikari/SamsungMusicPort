@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Type;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchPreset.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

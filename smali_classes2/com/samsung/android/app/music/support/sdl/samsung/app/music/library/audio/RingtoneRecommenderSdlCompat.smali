@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "RingtoneRecommenderSdlCompat.java"
 
 
 # annotations
@@ -43,7 +43,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 0
 
     return-void
@@ -52,15 +52,15 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 138
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 60
+    .line 2
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mIsOpen:Z
 
-    .line 139
+    .line 3
     new-instance v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$RingtoneRecommender;
 
     const/4 v1, 0x0
@@ -72,37 +72,33 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Z
+.method public static synthetic access$100(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Z
     .locals 0
 
-    .line 10
     iget-boolean p0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mIsOpen:Z
 
     return p0
 .end method
 
-.method static synthetic access$200(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Lcom/samsung/audio/Smat;
+.method public static synthetic access$200(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Lcom/samsung/audio/Smat;
     .locals 0
 
-    .line 10
     iget-object p0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mRecommender:Lcom/samsung/audio/Smat;
 
     return-object p0
 .end method
 
-.method static synthetic access$300()Ljava/lang/String;
+.method public static synthetic access$300()Ljava/lang/String;
     .locals 1
 
-    .line 10
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->CLASSNAME:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
+.method public static synthetic access$400(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;)Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
     .locals 0
 
-    .line 10
     iget-object p0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mListener:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
 
     return-object p0
@@ -111,14 +107,14 @@
 .method private extract()V
     .locals 4
 
-    .line 218
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mRecommender:Lcom/samsung/audio/Smat;
 
     invoke-virtual {v0}, Lcom/samsung/audio/Smat;->extract()I
 
     move-result v0
 
-    .line 219
+    .line 2
     sget-object v1, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->CLASSNAME:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -139,15 +135,15 @@
 
     if-nez v0, :cond_0
 
-    .line 221
+    .line 3
     new-instance v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;
 
     const-string v1, "Recommender thread"
 
     invoke-direct {v0, p0, v1}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;-><init>(Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;Ljava/lang/String;)V
 
-    .line 258
-    invoke-virtual {v0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$1;->start()V
+    .line 4
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     :cond_0
     return-void
@@ -158,7 +154,7 @@
 .method public close()V
     .locals 3
 
-    .line 207
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->CLASSNAME:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -179,7 +175,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 208
+    .line 2
     iget-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mIsOpen:Z
 
     if-eqz v0, :cond_0
@@ -194,12 +190,12 @@
 
     const/4 v0, 0x0
 
-    .line 209
+    .line 3
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mIsOpen:Z
 
     const/4 v0, 0x0
 
-    .line 210
+    .line 4
     iput-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mListener:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
 
     :cond_0
@@ -211,13 +207,13 @@
 
     const/4 v0, 0x1
 
-    .line 198
+    .line 1
     iput-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mIsOpen:Z
 
-    .line 199
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mListener:Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat$OnHighlightResultListener;
 
-    .line 200
+    .line 3
     invoke-direct {p0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->extract()V
 
     return-void
@@ -226,7 +222,7 @@
 .method public isOpen()Z
     .locals 3
 
-    .line 148
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->CLASSNAME:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -247,7 +243,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 149
+    .line 2
     iget-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mIsOpen:Z
 
     return v0
@@ -258,7 +254,7 @@
 
     const/4 v0, 0x0
 
-    .line 167
+    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->open(Ljava/lang/String;I)I
 
     move-result p1
@@ -269,14 +265,14 @@
 .method public open(Ljava/lang/String;I)I
     .locals 2
 
-    .line 184
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mRecommender:Lcom/samsung/audio/Smat;
 
     invoke-virtual {v0, p1, p2}, Lcom/samsung/audio/Smat;->init(Ljava/lang/String;I)I
 
     move-result p1
 
-    .line 185
+    .line 3
     sget-object p2, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->CLASSNAME:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -301,7 +297,7 @@
 .method public quit()Z
     .locals 3
 
-    .line 269
+    .line 1
     sget-object v0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->CLASSNAME:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -322,7 +318,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 270
+    .line 2
     iget-boolean v0, p0, Lcom/samsung/android/app/music/support/sdl/samsung/app/music/library/audio/RingtoneRecommenderSdlCompat;->mIsOpen:Z
 
     if-eqz v0, :cond_0

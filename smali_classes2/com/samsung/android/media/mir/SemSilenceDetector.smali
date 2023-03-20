@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/media/mir/SemSilenceDetector;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SemSilenceDetector.java"
 
 
 # annotations
@@ -40,18 +40,18 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     :try_start_0
     const-string v0, "smsd"
 
-    .line 579
+    .line 1
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
-    .line 580
+    .line 2
     sput-boolean v0, Lcom/samsung/android/media/mir/SemSilenceDetector;->SMSD_LOAD_LIBRARY:Z
     :try_end_0
     .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_0 .. :try_end_0} :catch_0
@@ -61,7 +61,7 @@
     :catch_0
     const/4 v0, 0x0
 
-    .line 582
+    .line 3
     sput-boolean v0, Lcom/samsung/android/media/mir/SemSilenceDetector;->SMSD_LOAD_LIBRARY:Z
 
     :goto_0
@@ -71,30 +71,25 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
 
-    .line 33
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const-string v0, ""
-
-    .line 81
-    iput-object v0, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mFilepath:Ljava/lang/String;
 
     const-wide/32 v0, 0x4c4b40
 
-    .line 82
+    .line 2
     iput-wide v0, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mSearchDurationUs:J
 
     const-wide/32 v0, 0x1c9c380
 
-    .line 83
+    .line 3
     iput-wide v0, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mMinDurationUs:J
 
     const-wide/16 v0, 0x1388
 
-    .line 84
+    .line 4
     iput-wide v0, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->kTimeOutUs:J
 
-    .line 34
+    .line 5
     iput-object p1, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mFilepath:Ljava/lang/String;
 
     return-void
@@ -114,12 +109,11 @@
     :cond_0
     int-to-long v0, p4
 
-    .line 551
     div-long/2addr p1, v0
 
     const-wide/32 v0, 0xf4240
 
-    mul-long p1, p1, v0
+    mul-long/2addr p1, v0
 
     int-to-long p3, p3
 
@@ -137,14 +131,13 @@
 
     const-wide/high16 v0, 0x4024000000000000L    # 10.0
 
-    .line 559
     invoke-static {v0, v1, p1, p2}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p1
 
     const-wide/high16 v0, 0x40e0000000000000L    # 32768.0
 
-    mul-double p1, p1, v0
+    mul-double/2addr p1, v0
 
     double-to-int p1, p1
 
@@ -154,1313 +147,1340 @@
 .end method
 
 .method private decodeFrontBack(Ljava/lang/String;ZJD)Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;
-    .locals 43
+    .locals 38
 
     move-object/from16 v1, p0
 
-    move-wide/from16 v4, p5
+    move-wide/from16 v2, p5
 
-    .line 183
+    .line 1
     new-instance v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;
 
-    const/4 v6, 0x0
+    const/4 v4, 0x0
 
-    invoke-direct {v0, v1, v6}, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;-><init>(Lcom/samsung/android/media/mir/SemSilenceDetector;Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;)V
+    invoke-direct {v0, v1, v4}, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;-><init>(Lcom/samsung/android/media/mir/SemSilenceDetector;Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;)V
 
-    .line 188
-    invoke-direct {v1, v4, v5}, Lcom/samsung/android/media/mir/SemSilenceDetector;->dbToShort(D)S
+    .line 2
+    invoke-direct {v1, v2, v3}, Lcom/samsung/android/media/mir/SemSilenceDetector;->dbToShort(D)S
 
-    move-result v7
+    move-result v5
 
-    .line 190
-    new-instance v8, Landroid/media/MediaExtractor;
+    .line 3
+    new-instance v6, Landroid/media/MediaExtractor;
 
-    invoke-direct {v8}, Landroid/media/MediaExtractor;-><init>()V
+    invoke-direct {v6}, Landroid/media/MediaExtractor;-><init>()V
 
-    move-object/from16 v9, p1
+    move-object/from16 v7, p1
 
-    .line 196
+    .line 4
     :try_start_0
-    invoke-virtual {v8, v9}, Landroid/media/MediaExtractor;->setDataSource(Ljava/lang/String;)V
+    invoke-virtual {v6, v7}, Landroid/media/MediaExtractor;->setDataSource(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
-    const/4 v11, 0x0
+    const/4 v9, 0x0
 
-    .line 207
+    .line 5
     :goto_0
-    invoke-virtual {v8}, Landroid/media/MediaExtractor;->getTrackCount()I
-
-    move-result v12
-
-    const/4 v13, 0x1
-
-    if-lt v11, v12, :cond_0
-
-    const/4 v11, 0x0
-
-    const/4 v12, 0x0
-
-    goto :goto_1
-
-    .line 208
-    :cond_0
-    invoke-virtual {v8, v11}, Landroid/media/MediaExtractor;->getTrackFormat(I)Landroid/media/MediaFormat;
-
-    move-result-object v12
-
-    const-string v14, "mime"
-
-    .line 209
-    invoke-virtual {v12, v14}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v12
-
-    const-string v14, "audio/"
-
-    .line 210
-    invoke-virtual {v12, v14}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_32
-
-    move v12, v11
-
-    const/4 v11, 0x1
-
-    :goto_1
-    if-nez v11, :cond_1
-
-    return-object v6
-
-    .line 225
-    :cond_1
-    invoke-virtual {v8, v12}, Landroid/media/MediaExtractor;->getTrackFormat(I)Landroid/media/MediaFormat;
-
-    move-result-object v11
-
-    if-nez v11, :cond_2
-
-    return-object v6
-
-    :cond_2
-    :try_start_1
-    const-string v14, "mime"
-
-    .line 233
-    invoke-virtual {v11, v14}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v14
-
-    iput-object v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->mime:Ljava/lang/String;
-
-    const-string v14, "sample-rate"
-
-    .line 234
-    invoke-virtual {v11, v14}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
-
-    move-result v14
-
-    iput v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
-
-    const-string v14, "channel-count"
-
-    .line 235
-    invoke-virtual {v11, v14}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
-
-    move-result v14
-
-    iput v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
-
-    const-string v14, "durationUs"
-
-    .line 236
-    invoke-virtual {v11, v14}, Landroid/media/MediaFormat;->getLong(Ljava/lang/String;)J
-
-    move-result-wide v14
-
-    iput-wide v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    .line 245
-    iget-wide v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
-
-    move-object/from16 v16, v11
-
-    iget-wide v10, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->mMinDurationUs:J
-
-    cmp-long v10, v14, v10
-
-    if-gtz v10, :cond_3
-
-    return-object v6
-
-    .line 252
-    :cond_3
-    iget-object v10, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->mime:Ljava/lang/String;
-
-    .line 254
-    sget-boolean v11, Lcom/samsung/android/media/mir/SemSilenceDetector;->SMSD_LOAD_LIBRARY:Z
-
-    if-eqz v11, :cond_7
-
-    const-string v11, "audio/x-ms-wma"
-
-    .line 255
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "audio/mpeg"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "audio/aac"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "audio/mp4a-latm"
-
-    .line 256
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "audio/flac"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "audio/raw"
-
-    .line 257
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "audio/x-wav"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "audio/vorbis"
-
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_4
-
-    const-string v11, "application/ogg"
-
-    .line 258
-    invoke-virtual {v10, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6}, Landroid/media/MediaExtractor;->getTrackCount()I
 
     move-result v10
 
-    if-eqz v10, :cond_7
+    const-string v11, "mime"
 
-    .line 259
-    :cond_4
-    invoke-direct/range {p0 .. p1}, Lcom/samsung/android/media/mir/SemSilenceDetector;->init(Ljava/lang/String;)I
+    const/4 v12, 0x1
+
+    if-lt v9, v10, :cond_0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    goto :goto_1
+
+    .line 6
+    :cond_0
+    invoke-virtual {v6, v9}, Landroid/media/MediaExtractor;->getTrackFormat(I)Landroid/media/MediaFormat;
+
+    move-result-object v10
+
+    .line 7
+    invoke-virtual {v10, v11}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    const-string v13, "audio/"
+
+    .line 8
+    invoke-virtual {v10, v13}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_33
+
+    move v10, v12
+
+    :goto_1
+    if-nez v10, :cond_1
+
+    return-object v4
+
+    .line 9
+    :cond_1
+    invoke-virtual {v6, v9}, Landroid/media/MediaExtractor;->getTrackFormat(I)Landroid/media/MediaFormat;
+
+    move-result-object v10
+
+    if-nez v10, :cond_2
+
+    return-object v4
+
+    .line 10
+    :cond_2
+    :try_start_1
+    invoke-virtual {v10, v11}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v11
+
+    iput-object v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->mime:Ljava/lang/String;
+
+    const-string v11, "sample-rate"
+
+    .line 11
+    invoke-virtual {v10, v11}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
+
+    move-result v11
+
+    iput v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
+
+    const-string v11, "channel-count"
+
+    .line 12
+    invoke-virtual {v10, v11}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
+
+    move-result v11
+
+    iput v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+
+    const-string v11, "durationUs"
+
+    .line 13
+    invoke-virtual {v10, v11}, Landroid/media/MediaFormat;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v13
+
+    iput-wide v13, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    move v15, v9
+
+    .line 14
+    iget-wide v8, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->mMinDurationUs:J
+
+    cmp-long v8, v13, v8
+
+    if-gtz v8, :cond_3
+
+    return-object v4
+
+    .line 15
+    :cond_3
+    iget-object v8, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->mime:Ljava/lang/String;
+
+    .line 16
+    sget-boolean v9, Lcom/samsung/android/media/mir/SemSilenceDetector;->SMSD_LOAD_LIBRARY:Z
+
+    if-eqz v9, :cond_7
+
+    const-string v9, "audio/x-ms-wma"
+
+    .line 17
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v9
 
-    if-nez v9, :cond_6
+    if-nez v9, :cond_4
 
-    .line 261
-    invoke-direct {v1, v4, v5}, Lcom/samsung/android/media/mir/SemSilenceDetector;->getSilencePositionNative(D)[J
+    const-string v9, "audio/mpeg"
 
-    move-result-object v4
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    if-eqz v4, :cond_5
+    move-result v9
 
-    const/4 v5, 0x0
+    if-nez v9, :cond_4
 
-    .line 263
-    aget-wide v9, v4, v5
+    const-string v9, "audio/aac"
 
-    iput-wide v9, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    .line 264
-    aget-wide v9, v4, v13
+    move-result v9
 
-    iput-wide v9, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+    if-nez v9, :cond_4
 
-    const/4 v4, 0x0
+    const-string v9, "audio/mp4a-latm"
+
+    .line 18
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_4
+
+    const-string v9, "audio/flac"
+
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_4
+
+    const-string v9, "audio/raw"
+
+    .line 19
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_4
+
+    const-string v9, "audio/x-wav"
+
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_4
+
+    const-string v9, "audio/vorbis"
+
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_4
+
+    const-string v9, "application/ogg"
+
+    .line 20
+    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_7
+
+    .line 21
+    :cond_4
+    invoke-direct/range {p0 .. p1}, Lcom/samsung/android/media/mir/SemSilenceDetector;->init(Ljava/lang/String;)I
+
+    move-result v7
+
+    if-nez v7, :cond_6
+
+    .line 22
+    invoke-direct {v1, v2, v3}, Lcom/samsung/android/media/mir/SemSilenceDetector;->getSilencePositionNative(D)[J
+
+    move-result-object v2
+
+    if-eqz v2, :cond_5
+
+    const/4 v3, 0x0
+
+    .line 23
+    aget-wide v7, v2, v3
+
+    iput-wide v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+
+    .line 24
+    aget-wide v7, v2, v12
+
+    iput-wide v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+
+    const/4 v2, 0x0
 
     goto :goto_2
 
     :cond_5
-    const/4 v4, 0x1
+    move v2, v12
 
-    .line 267
+    .line 25
     :goto_2
     invoke-direct/range {p0 .. p0}, Lcom/samsung/android/media/mir/SemSilenceDetector;->deinit()I
 
     goto :goto_3
 
-    .line 269
+    .line 26
     :cond_6
     invoke-direct/range {p0 .. p0}, Lcom/samsung/android/media/mir/SemSilenceDetector;->deinit()I
 
-    const-wide/16 v4, -0x1
+    const-wide/16 v2, -0x1
 
-    .line 270
-    iput-wide v4, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    .line 27
+    iput-wide v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
-    .line 271
-    iput-wide v4, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+    .line 28
+    iput-wide v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
 
     :cond_7
-    const/4 v4, 0x1
+    move v2, v12
 
     :goto_3
-    if-eqz v4, :cond_30
+    if-eqz v2, :cond_31
 
-    .line 276
-    iget-object v4, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->mime:Ljava/lang/String;
+    .line 29
+    iget-object v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->mime:Ljava/lang/String;
 
-    invoke-static {v4}, Landroid/media/MediaCodec;->createDecoderByType(Ljava/lang/String;)Landroid/media/MediaCodec;
+    invoke-static {v2}, Landroid/media/MediaCodec;->createDecoderByType(Ljava/lang/String;)Landroid/media/MediaCodec;
 
-    move-result-object v4
+    move-result-object v2
 
-    if-nez v4, :cond_8
+    if-nez v2, :cond_8
 
-    .line 279
-    invoke-virtual {v8}, Landroid/media/MediaExtractor;->release()V
+    .line 30
+    invoke-virtual {v6}, Landroid/media/MediaExtractor;->release()V
 
-    return-object v6
+    return-object v4
 
     :cond_8
-    move-object/from16 v5, v16
+    const/4 v3, 0x0
 
-    const/4 v9, 0x0
+    .line 31
+    invoke-virtual {v2, v10, v4, v4, v3}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
 
-    .line 286
-    invoke-virtual {v4, v5, v6, v6, v9}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
+    .line 32
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->start()V
 
-    .line 287
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->start()V
+    .line 33
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
 
-    .line 288
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
+    move-result-object v7
 
-    move-result-object v10
+    .line 34
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
 
-    .line 289
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
-
-    move-result-object v11
+    move-result-object v8
 
     if-eqz p2, :cond_9
 
-    .line 291
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->stop()V
+    .line 35
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->stop()V
 
-    .line 292
-    invoke-virtual {v4, v5, v6, v6, v9}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
+    .line 36
+    invoke-virtual {v2, v10, v4, v4, v3}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
 
-    .line 293
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->start()V
+    .line 37
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->start()V
 
-    .line 294
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
+    .line 38
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
 
-    move-result-object v10
+    move-result-object v7
 
-    .line 295
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
+    .line 39
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
 
-    move-result-object v11
+    move-result-object v8
 
-    .line 297
     :cond_9
-    invoke-virtual {v8, v12}, Landroid/media/MediaExtractor;->selectTrack(I)V
+    move v9, v15
 
-    .line 298
-    new-instance v9, Landroid/media/MediaCodec$BufferInfo;
+    .line 40
+    invoke-virtual {v6, v9}, Landroid/media/MediaExtractor;->selectTrack(I)V
 
-    invoke-direct {v9}, Landroid/media/MediaCodec$BufferInfo;-><init>()V
+    .line 41
+    new-instance v3, Landroid/media/MediaCodec$BufferInfo;
 
-    .line 300
-    iget v12, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
+    invoke-direct {v3}, Landroid/media/MediaCodec$BufferInfo;-><init>()V
 
-    div-int/lit8 v12, v12, 0x64
+    .line 42
+    iget v9, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
 
-    iget v15, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    div-int/lit8 v9, v9, 0x64
 
-    mul-int v12, v12, v15
+    iget v13, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+
+    mul-int/2addr v9, v13
 
     const-wide/16 v13, 0x0
 
     const/4 v15, 0x2
 
-    .line 302
-    invoke-virtual {v8, v13, v14, v15}, Landroid/media/MediaExtractor;->seekTo(JI)V
+    .line 43
+    invoke-virtual {v6, v13, v14, v15}, Landroid/media/MediaExtractor;->seekTo(JI)V
 
-    move/from16 v27, p2
-
-    move-object/from16 v25, v10
-
-    move-object/from16 v26, v11
-
-    const/4 v10, 0x0
+    move-object/from16 v23, v8
 
     const/4 v11, 0x0
 
-    const/16 v16, 0x0
+    const/4 v12, 0x0
 
-    const/16 v17, 0x0
+    const/16 v16, 0x0
 
     const/16 v24, 0x0
 
+    const/16 v25, 0x0
+
+    move-object v8, v7
+
+    move/from16 v7, p2
+
     :goto_4
-    const-wide/32 v29, 0xf4240
+    const-wide/32 v26, 0xf4240
 
-    const/16 v6, 0x32
+    const/16 v4, 0x32
 
-    const/16 v31, 0x4
+    const/16 v28, 0x4
 
-    if-nez v10, :cond_1b
+    if-nez v24, :cond_1b
 
-    if-lt v11, v6, :cond_a
+    if-lt v11, v4, :cond_a
 
     goto/16 :goto_d
 
     :cond_a
-    add-int/lit8 v11, v11, 0x1
+    add-int/lit8 v4, v11, 0x1
 
-    if-nez v17, :cond_e
+    if-nez v16, :cond_e
 
-    .line 310
+    .line 44
     iget-wide v13, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->kTimeOutUs:J
 
-    invoke-virtual {v4, v13, v14}, Landroid/media/MediaCodec;->dequeueInputBuffer(J)I
+    invoke-virtual {v2, v13, v14}, Landroid/media/MediaCodec;->dequeueInputBuffer(J)I
 
-    move-result v18
+    move-result v17
 
-    if-ltz v18, :cond_e
+    if-ltz v17, :cond_e
 
-    .line 312
-    aget-object v6, v25, v18
+    .line 45
+    aget-object v11, v8, v17
 
     const/4 v13, 0x0
 
-    .line 313
-    invoke-virtual {v8, v6, v13}, Landroid/media/MediaExtractor;->readSampleData(Ljava/nio/ByteBuffer;I)I
+    .line 46
+    invoke-virtual {v6, v11, v13}, Landroid/media/MediaExtractor;->readSampleData(Ljava/nio/ByteBuffer;I)I
 
-    move-result v6
+    move-result v14
 
-    if-gez v6, :cond_b
+    if-gez v14, :cond_b
 
-    const/4 v6, 0x1
+    const/4 v13, 0x1
 
-    const/16 v20, 0x0
+    const/16 v19, 0x0
 
-    const-wide/16 v21, 0x0
+    const-wide/16 v20, 0x0
 
     goto :goto_5
 
-    .line 320
+    .line 47
     :cond_b
-    invoke-virtual {v8}, Landroid/media/MediaExtractor;->getSampleTime()J
+    invoke-virtual {v6}, Landroid/media/MediaExtractor;->getSampleTime()J
 
-    move-result-wide v13
+    move-result-wide v18
 
-    move/from16 v20, v6
+    move/from16 v13, v16
 
-    move-wide/from16 v21, v13
+    move-wide/from16 v20, v18
 
-    move/from16 v6, v17
+    move/from16 v19, v14
 
     :goto_5
-    const/16 v19, 0x0
+    const/16 v18, 0x0
 
-    if-eqz v6, :cond_c
+    if-eqz v13, :cond_c
 
-    const/16 v23, 0x4
+    move/from16 v22, v28
 
     goto :goto_6
 
     :cond_c
-    const/16 v23, 0x0
+    const/16 v22, 0x0
 
     :goto_6
-    move-object/from16 v17, v4
+    move-object/from16 v16, v2
 
-    .line 322
-    invoke-virtual/range {v17 .. v23}, Landroid/media/MediaCodec;->queueInputBuffer(IIIJI)V
+    .line 48
+    invoke-virtual/range {v16 .. v22}, Landroid/media/MediaCodec;->queueInputBuffer(IIIJI)V
 
-    if-nez v6, :cond_d
+    if-nez v13, :cond_d
 
-    .line 325
-    invoke-virtual {v8}, Landroid/media/MediaExtractor;->advance()Z
+    .line 49
+    invoke-virtual {v6}, Landroid/media/MediaExtractor;->advance()Z
 
     :cond_d
-    move/from16 v17, v6
+    move/from16 v16, v13
 
-    .line 329
+    .line 50
     :cond_e
     iget-wide v13, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->kTimeOutUs:J
 
-    invoke-virtual {v4, v9, v13, v14}, Landroid/media/MediaCodec;->dequeueOutputBuffer(Landroid/media/MediaCodec$BufferInfo;J)I
+    invoke-virtual {v2, v3, v13, v14}, Landroid/media/MediaCodec;->dequeueOutputBuffer(Landroid/media/MediaCodec$BufferInfo;J)I
 
-    move-result v6
+    move-result v13
 
-    if-ltz v6, :cond_19
+    if-ltz v13, :cond_19
 
-    .line 333
-    iget v13, v9, Landroid/media/MediaCodec$BufferInfo;->size:I
+    .line 51
+    iget v14, v3, Landroid/media/MediaCodec$BufferInfo;->size:I
 
-    if-lez v13, :cond_f
+    if-lez v14, :cond_f
 
-    const/4 v13, 0x0
+    const/16 v17, 0x0
 
     goto :goto_7
 
     :cond_f
-    move v13, v11
+    move/from16 v17, v4
 
-    .line 336
     :goto_7
-    iget v11, v9, Landroid/media/MediaCodec$BufferInfo;->size:I
+    if-lez v14, :cond_10
 
-    if-lez v11, :cond_10
+    if-eqz v7, :cond_10
 
-    if-eqz v27, :cond_10
+    move/from16 p1, v12
 
-    move/from16 v34, v10
+    const-wide/16 v11, 0x0
 
-    const-wide/16 v10, 0x0
+    .line 52
+    invoke-virtual {v6, v11, v12, v15}, Landroid/media/MediaExtractor;->seekTo(JI)V
 
-    .line 340
-    invoke-virtual {v8, v10, v11, v15}, Landroid/media/MediaExtractor;->seekTo(JI)V
+    .line 53
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->stop()V
 
-    .line 342
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->stop()V
+    const/4 v4, 0x0
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
-    const/4 v10, 0x0
+    .line 54
+    invoke-virtual {v2, v10, v4, v4, v7}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
 
-    .line 343
-    invoke-virtual {v4, v5, v10, v10, v6}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
+    .line 55
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->start()V
 
-    .line 344
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->start()V
+    .line 56
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
 
-    .line 345
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
+    move-result-object v8
 
-    move-result-object v25
+    .line 57
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
 
-    .line 346
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
+    move-result-object v23
 
-    move-result-object v26
+    move/from16 v12, p1
 
-    move v11, v13
+    move/from16 v11, v17
 
-    move/from16 v10, v34
+    const/4 v7, 0x0
 
     const-wide/16 v13, 0x0
 
-    const/16 v17, 0x0
-
-    const/16 v27, 0x0
+    const/16 v16, 0x0
 
     goto :goto_4
 
     :cond_10
-    move/from16 v34, v10
+    move/from16 p1, v12
 
-    .line 350
-    aget-object v10, v26, v6
+    .line 58
+    aget-object v4, v23, v13
 
-    .line 351
+    .line 59
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
-    move-result-object v11
+    move-result-object v12
 
-    invoke-virtual {v10, v11}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+    invoke-virtual {v4, v12}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    move-result-object v10
+    move-result-object v4
 
-    invoke-virtual {v10}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
+    invoke-virtual {v4}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
 
-    move-result-object v10
+    move-result-object v12
 
-    .line 354
-    iget v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    .line 60
+    iget v4, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
 
-    if-lt v11, v15, :cond_13
+    if-lt v4, v15, :cond_13
 
-    const/4 v11, 0x0
+    const/4 v4, 0x0
 
-    .line 356
+    .line 61
     :goto_8
-    invoke-virtual {v10}, Ljava/nio/ShortBuffer;->limit()I
+    invoke-virtual {v12}, Ljava/nio/ShortBuffer;->limit()I
 
     move-result v14
 
-    sub-int/2addr v14, v12
+    sub-int/2addr v14, v9
 
-    if-lt v11, v14, :cond_11
+    if-lt v4, v14, :cond_11
 
-    move/from16 v10, v24
+    move/from16 v12, p1
+
+    move v14, v7
+
+    move-object/from16 v18, v8
 
     goto :goto_b
 
-    .line 357
+    .line 62
     :cond_11
-    invoke-virtual {v10, v11}, Ljava/nio/ShortBuffer;->get(I)S
+    invoke-virtual {v12, v4}, Ljava/nio/ShortBuffer;->get(I)S
 
     move-result v14
 
-    add-int/lit8 v15, v11, 0x1
+    add-int/lit8 v11, v4, 0x1
 
-    invoke-virtual {v10, v15}, Ljava/nio/ShortBuffer;->get(I)S
+    invoke-virtual {v12, v11}, Ljava/nio/ShortBuffer;->get(I)S
 
-    move-result v15
+    move-result v11
 
-    add-int/2addr v14, v15
+    add-int/2addr v14, v11
 
-    int-to-short v14, v14
+    int-to-short v11, v14
 
-    const/4 v15, 0x2
+    .line 63
+    div-int/2addr v11, v15
 
-    .line 358
-    div-int/2addr v14, v15
+    invoke-static {v11}, Ljava/lang/Math;->abs(I)I
 
-    invoke-static {v14}, Ljava/lang/Math;->abs(I)I
+    move-result v11
 
-    move-result v14
+    int-to-short v11, v11
 
-    int-to-short v14, v14
+    if-le v11, v5, :cond_12
 
-    if-le v14, v7, :cond_12
+    add-int v12, p1, v4
 
-    move/from16 v14, v24
+    move v14, v7
 
-    add-int v10, v14, v11
+    move-object/from16 v18, v8
 
-    int-to-long v14, v10
+    int-to-long v7, v12
 
-    .line 361
-    iput-wide v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    .line 64
+    iput-wide v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
-    :goto_9
-    const/16 v16, 0x1
-
-    const/16 v34, 0x1
-
-    goto :goto_b
+    goto :goto_a
 
     :cond_12
-    move/from16 v14, v24
+    move v14, v7
 
-    add-int/2addr v11, v12
+    move-object/from16 v18, v8
 
-    const/4 v15, 0x2
+    add-int/2addr v4, v9
 
     goto :goto_8
 
     :cond_13
-    move/from16 v14, v24
+    move v14, v7
 
-    const/4 v11, 0x0
+    move-object/from16 v18, v8
 
-    .line 368
-    :goto_a
-    invoke-virtual {v10}, Ljava/nio/ShortBuffer;->limit()I
+    const/4 v4, 0x0
 
-    move-result v15
+    .line 65
+    :goto_9
+    invoke-virtual {v12}, Ljava/nio/ShortBuffer;->limit()I
 
-    sub-int/2addr v15, v12
+    move-result v7
 
-    if-lt v11, v15, :cond_14
+    sub-int/2addr v7, v9
 
-    move v10, v14
+    if-lt v4, v7, :cond_14
+
+    move/from16 v12, p1
 
     goto :goto_b
 
-    .line 369
+    .line 66
     :cond_14
-    invoke-virtual {v10, v11}, Ljava/nio/ShortBuffer;->get(I)S
+    invoke-virtual {v12, v4}, Ljava/nio/ShortBuffer;->get(I)S
 
-    move-result v15
+    move-result v7
 
-    if-le v15, v7, :cond_18
+    if-le v7, v5, :cond_18
 
-    add-int v10, v14, v11
+    add-int v12, p1, v4
 
-    int-to-long v14, v10
+    int-to-long v7, v12
 
-    .line 371
-    iput-wide v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    .line 67
+    iput-wide v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
-    goto :goto_9
+    :goto_a
+    const/16 v24, 0x1
+
+    const/16 v25, 0x1
 
     :goto_b
-    if-nez v16, :cond_15
+    if-nez v25, :cond_15
 
-    add-int/2addr v10, v11
+    add-int/2addr v12, v4
 
     :cond_15
-    const/4 v11, 0x0
+    const/4 v4, 0x0
 
-    .line 382
-    invoke-virtual {v4, v6, v11}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
+    .line 68
+    invoke-virtual {v2, v13, v4}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
 
-    int-to-long v14, v10
+    int-to-long v7, v12
 
-    mul-long v29, v29, v14
+    mul-long v26, v26, v7
 
-    .line 384
-    iget v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
+    .line 69
+    iget v4, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
 
-    iget v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    iget v13, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
 
-    mul-int v6, v6, v11
+    mul-int/2addr v4, v13
 
-    move/from16 v35, v10
+    move/from16 v19, v12
 
-    int-to-long v10, v6
+    int-to-long v11, v4
 
-    div-long v29, v29, v10
+    div-long v26, v26, v11
 
-    cmp-long v6, v29, p3
+    cmp-long v4, v26, p3
 
-    if-ltz v6, :cond_16
+    if-ltz v4, :cond_16
 
-    .line 386
-    iput-wide v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    .line 70
+    iput-wide v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
-    const/16 v17, 0x1
+    const/16 v16, 0x1
 
-    .line 390
+    .line 71
     :cond_16
-    iget v6, v9, Landroid/media/MediaCodec$BufferInfo;->flags:I
+    iget v4, v3, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
-    and-int/lit8 v6, v6, 0x4
+    and-int/lit8 v4, v4, 0x4
 
-    if-eqz v6, :cond_17
+    if-eqz v4, :cond_17
 
-    .line 392
-    iput-wide v14, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    .line 72
+    iput-wide v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
-    move v11, v13
+    move v7, v14
 
-    move/from16 v24, v35
+    move/from16 v11, v17
 
-    const/4 v10, 0x1
+    move-object/from16 v8, v18
 
-    goto :goto_c
+    move/from16 v12, v19
+
+    const-wide/16 v13, 0x0
+
+    const/16 v24, 0x1
+
+    goto/16 :goto_4
 
     :cond_17
-    move v11, v13
+    move v7, v14
 
-    move/from16 v10, v34
+    move/from16 v11, v17
 
-    move/from16 v24, v35
+    move-object/from16 v8, v18
+
+    move/from16 v12, v19
 
     goto :goto_c
 
     :cond_18
-    add-int/2addr v11, v12
+    add-int/2addr v4, v9
 
-    goto :goto_a
+    goto :goto_9
 
     :cond_19
-    move/from16 v34, v10
+    move v14, v7
 
-    move/from16 v14, v24
+    move-object/from16 v18, v8
 
-    const/4 v15, -0x3
+    move/from16 p1, v12
 
-    if-ne v6, v15, :cond_1a
+    const/4 v7, -0x3
 
-    .line 396
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
+    if-ne v13, v7, :cond_1a
 
-    move-result-object v26
+    .line 73
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
+
+    move-result-object v23
 
     :cond_1a
-    move/from16 v24, v14
+    move/from16 v12, p1
 
-    move/from16 v10, v34
+    move v11, v4
+
+    move v7, v14
+
+    move-object/from16 v8, v18
 
     :goto_c
     const-wide/16 v13, 0x0
-
-    const/4 v15, 0x2
 
     goto/16 :goto_4
 
     :cond_1b
     :goto_d
-    move/from16 v14, v24
+    move v14, v7
 
-    if-nez v16, :cond_1c
+    move-object/from16 v18, v8
 
-    int-to-long v10, v14
+    move/from16 p1, v12
 
-    .line 407
-    iput-wide v10, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    move/from16 v11, p1
 
-    .line 412
+    if-nez v25, :cond_1c
+
+    int-to-long v7, v11
+
+    .line 74
+    iput-wide v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+
+    .line 75
     :cond_1c
-    div-long v2, p3, v29
+    div-long v7, p3, v26
 
-    .line 417
-    iget v10, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
+    .line 76
+    iget v12, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
 
-    mul-int/lit8 v10, v10, 0x14
+    mul-int/lit8 v12, v12, 0x14
 
-    iget v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    iget v13, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
 
-    mul-int v10, v10, v11
+    mul-int/2addr v12, v13
 
-    new-array v10, v10, [S
+    new-array v12, v12, [S
 
-    const-wide/16 v35, 0x1
+    const-wide/16 v29, 0x1
 
-    move-object v15, v10
+    move v13, v11
 
-    move-wide/from16 v10, v35
+    move v11, v14
 
-    const/4 v13, 0x0
+    move-wide/from16 v31, v29
+
+    move-object v14, v12
+
+    const/4 v12, 0x0
 
     :goto_e
-    cmp-long v16, v10, v2
+    cmp-long v16, v31, v7
 
     if-lez v16, :cond_1e
 
-    if-nez v13, :cond_1d
+    if-nez v12, :cond_1d
 
-    int-to-long v2, v14
+    int-to-long v3, v13
 
-    .line 524
-    iput-wide v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+    .line 77
+    iput-wide v3, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
 
-    .line 527
+    .line 78
     :cond_1d
-    iget-wide v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    iget-wide v3, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
     iget v5, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
 
-    iget v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    iget v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
 
-    invoke-direct {v1, v2, v3, v5, v6}, Lcom/samsung/android/media/mir/SemSilenceDetector;->byteOffsetToTimeUs(JII)J
+    invoke-direct {v1, v3, v4, v5, v7}, Lcom/samsung/android/media/mir/SemSilenceDetector;->byteOffsetToTimeUs(JII)J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    iput-wide v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
+    iput-wide v3, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
-    .line 528
-    iget-wide v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+    .line 79
+    iget-wide v3, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
 
     iget v5, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->Hz:I
 
-    iget v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    iget v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
 
-    invoke-direct {v1, v2, v3, v5, v6}, Lcom/samsung/android/media/mir/SemSilenceDetector;->byteOffsetToTimeUs(JII)J
+    invoke-direct {v1, v3, v4, v5, v7}, Lcom/samsung/android/media/mir/SemSilenceDetector;->byteOffsetToTimeUs(JII)J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    iput-wide v2, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+    iput-wide v3, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
 
-    move-object/from16 v28, v4
+    move-object v4, v2
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
-    .line 419
+    .line 80
     :cond_1e
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->flush()V
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->flush()V
 
-    move/from16 v37, v7
+    move v13, v5
 
-    .line 420
-    iget-wide v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
+    .line 81
+    iget-wide v4, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
 
-    mul-long v16, v29, v10
+    mul-long v16, v26, v31
 
-    sub-long v6, v6, v16
+    sub-long v16, v4, v16
 
-    const-wide/16 v32, 0x0
+    const-wide/16 v33, 0x0
 
-    cmp-long v14, v6, v32
+    cmp-long v19, v16, v33
 
-    if-gez v14, :cond_1f
-
-    .line 422
-    iget-wide v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
-
-    :cond_1f
-    const/4 v14, 0x2
-
-    .line 425
-    invoke-virtual {v8, v6, v7, v14}, Landroid/media/MediaExtractor;->seekTo(JI)V
-
-    move-wide/from16 v38, v2
-
-    move-object v3, v15
-
-    const/4 v2, 0x0
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v16, 0x0
-
-    :goto_f
-    if-nez v14, :cond_2a
-
-    move/from16 v40, v13
-
-    const/16 v13, 0x32
-
-    if-lt v15, v13, :cond_20
-
-    move-object/from16 v42, v5
-
-    goto/16 :goto_13
-
-    :cond_20
-    add-int/lit8 v15, v15, 0x1
-
-    if-nez v16, :cond_23
-
-    move/from16 v41, v14
-
-    .line 434
-    iget-wide v13, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->kTimeOutUs:J
-
-    invoke-virtual {v4, v13, v14}, Landroid/media/MediaCodec;->dequeueInputBuffer(J)I
-
-    move-result v18
-
-    if-ltz v18, :cond_24
-
-    .line 436
-    aget-object v13, v25, v18
-
-    const/4 v14, 0x0
-
-    .line 437
-    invoke-virtual {v8, v13, v14}, Landroid/media/MediaExtractor;->readSampleData(Ljava/nio/ByteBuffer;I)I
-
-    move-result v13
-
-    if-gez v13, :cond_21
-
-    move-wide/from16 v21, v32
-
-    const/16 v16, 0x1
-
-    const/16 v20, 0x0
-
-    goto :goto_10
-
-    .line 444
-    :cond_21
-    invoke-virtual {v8}, Landroid/media/MediaExtractor;->getSampleTime()J
-
-    move-result-wide v19
-
-    move-wide/from16 v21, v19
-
-    move/from16 v20, v13
-
-    :goto_10
-    const/16 v19, 0x0
-
-    if-eqz v16, :cond_22
-
-    const/16 v23, 0x4
-
-    goto :goto_11
-
-    :cond_22
-    const/16 v23, 0x0
-
-    :goto_11
-    move-object/from16 v17, v4
-
-    .line 446
-    invoke-virtual/range {v17 .. v23}, Landroid/media/MediaCodec;->queueInputBuffer(IIIJI)V
-
-    if-nez v16, :cond_24
-
-    .line 449
-    invoke-virtual {v8}, Landroid/media/MediaExtractor;->advance()Z
-
-    goto :goto_12
-
-    :cond_23
-    move/from16 v41, v14
-
-    .line 453
-    :cond_24
-    :goto_12
-    iget-wide v13, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->kTimeOutUs:J
-
-    invoke-virtual {v4, v9, v13, v14}, Landroid/media/MediaCodec;->dequeueOutputBuffer(Landroid/media/MediaCodec$BufferInfo;J)I
-
-    move-result v13
-
-    if-ltz v13, :cond_28
-
-    .line 457
-    iget v14, v9, Landroid/media/MediaCodec$BufferInfo;->size:I
-
-    if-lez v14, :cond_25
-
-    const/4 v15, 0x0
-
-    .line 460
-    :cond_25
-    iget v14, v9, Landroid/media/MediaCodec$BufferInfo;->size:I
-
-    if-lez v14, :cond_26
-
-    if-eqz v27, :cond_26
-
-    const/4 v14, 0x2
-
-    .line 464
-    invoke-virtual {v8, v6, v7, v14}, Landroid/media/MediaExtractor;->seekTo(JI)V
-
-    .line 466
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->stop()V
-
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    .line 467
-    invoke-virtual {v4, v5, v14, v14, v13}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
-
-    .line 468
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->start()V
-
-    .line 469
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
-
-    move-result-object v25
-
-    .line 470
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
-
-    move-result-object v26
-
-    move/from16 v13, v40
-
-    move/from16 v14, v41
-
-    const/16 v16, 0x0
-
-    const/16 v27, 0x0
+    if-gez v19, :cond_1f
 
     goto :goto_f
 
-    .line 473
-    :cond_26
-    aget-object v14, v26, v13
+    :cond_1f
+    move-wide/from16 v4, v16
 
-    .line 474
+    .line 82
+    :goto_f
+    invoke-virtual {v6, v4, v5, v15}, Landroid/media/MediaExtractor;->seekTo(JI)V
+
+    move-object/from16 v36, v14
+
+    move-object/from16 v24, v18
+
+    move-object/from16 v25, v23
+
+    const/4 v14, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v35, 0x0
+
+    move/from16 v23, v11
+
+    const/4 v11, 0x0
+
+    :goto_10
+    if-nez v14, :cond_2b
+
+    const/16 v15, 0x32
+
+    if-lt v11, v15, :cond_20
+
+    goto/16 :goto_14
+
+    :cond_20
+    add-int/lit8 v37, v11, 0x1
+
+    move-wide/from16 p3, v7
+
+    if-nez v16, :cond_24
+
+    .line 83
+    iget-wide v7, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->kTimeOutUs:J
+
+    invoke-virtual {v2, v7, v8}, Landroid/media/MediaCodec;->dequeueInputBuffer(J)I
+
+    move-result v17
+
+    if-ltz v17, :cond_24
+
+    .line 84
+    aget-object v7, v24, v17
+
+    const/4 v8, 0x0
+
+    .line 85
+    invoke-virtual {v6, v7, v8}, Landroid/media/MediaExtractor;->readSampleData(Ljava/nio/ByteBuffer;I)I
+
+    move-result v7
+
+    if-gez v7, :cond_21
+
+    move-wide/from16 v20, v33
+
+    const/4 v7, 0x1
+
+    const/16 v19, 0x0
+
+    goto :goto_11
+
+    .line 86
+    :cond_21
+    invoke-virtual {v6}, Landroid/media/MediaExtractor;->getSampleTime()J
+
+    move-result-wide v18
+
+    move-wide/from16 v20, v18
+
+    move/from16 v19, v7
+
+    move/from16 v7, v16
+
+    :goto_11
+    const/16 v18, 0x0
+
+    if-eqz v7, :cond_22
+
+    move/from16 v22, v28
+
+    goto :goto_12
+
+    :cond_22
+    const/16 v22, 0x0
+
+    :goto_12
+    move-object/from16 v16, v2
+
+    .line 87
+    invoke-virtual/range {v16 .. v22}, Landroid/media/MediaCodec;->queueInputBuffer(IIIJI)V
+
+    if-nez v7, :cond_23
+
+    .line 88
+    invoke-virtual {v6}, Landroid/media/MediaExtractor;->advance()Z
+
+    :cond_23
+    move/from16 v16, v7
+
+    .line 89
+    :cond_24
+    iget-wide v7, v1, Lcom/samsung/android/media/mir/SemSilenceDetector;->kTimeOutUs:J
+
+    invoke-virtual {v2, v3, v7, v8}, Landroid/media/MediaCodec;->dequeueOutputBuffer(Landroid/media/MediaCodec$BufferInfo;J)I
+
+    move-result v7
+
+    if-ltz v7, :cond_28
+
+    .line 90
+    iget v8, v3, Landroid/media/MediaCodec$BufferInfo;->size:I
+
+    if-lez v8, :cond_25
+
+    const/16 v37, 0x0
+
+    :cond_25
+    if-lez v8, :cond_26
+
+    if-eqz v23, :cond_26
+
+    const/4 v8, 0x2
+
+    .line 91
+    invoke-virtual {v6, v4, v5, v8}, Landroid/media/MediaExtractor;->seekTo(JI)V
+
+    .line 92
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->stop()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    .line 93
+    invoke-virtual {v2, v10, v7, v7, v8}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
+
+    .line 94
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->start()V
+
+    .line 95
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getInputBuffers()[Ljava/nio/ByteBuffer;
+
+    move-result-object v24
+
+    .line 96
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
+
+    move-result-object v25
+
+    move-wide/from16 v7, p3
+
+    move/from16 v11, v37
+
+    const/4 v15, 0x2
+
+    const/16 v16, 0x0
+
+    const/16 v23, 0x0
+
+    goto :goto_10
+
+    .line 97
+    :cond_26
+    aget-object v8, v25, v7
+
+    .line 98
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
-    move-result-object v1
+    move-result-object v11
 
-    invoke-virtual {v14, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+    invoke-virtual {v8, v11}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    move-result-object v1
+    move-result-object v8
 
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
+    invoke-virtual {v8}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
 
-    move-result-object v1
+    move-result-object v8
 
-    .line 476
-    invoke-virtual {v1}, Ljava/nio/ShortBuffer;->limit()I
+    .line 99
+    invoke-virtual {v8}, Ljava/nio/ShortBuffer;->limit()I
 
-    move-result v14
+    move-result v11
 
-    add-int/2addr v14, v2
+    move/from16 v15, v35
 
-    move-object/from16 v42, v5
+    add-int/2addr v11, v15
 
-    array-length v5, v3
+    move-wide/from16 v18, v4
 
-    if-lt v14, v5, :cond_27
+    move-object/from16 v1, v36
 
-    .line 477
-    invoke-virtual {v1}, Ljava/nio/ShortBuffer;->limit()I
+    array-length v4, v1
 
-    move-result v5
+    if-lt v11, v4, :cond_27
 
-    add-int/2addr v5, v2
+    .line 100
+    invoke-virtual {v8}, Ljava/nio/ShortBuffer;->limit()I
 
-    invoke-static {v3, v5}, Ljava/util/Arrays;->copyOf([SI)[S
+    move-result v4
 
-    move-result-object v3
+    add-int/2addr v4, v15
 
-    .line 479
+    invoke-static {v1, v4}, Ljava/util/Arrays;->copyOf([SI)[S
+
+    move-result-object v36
+
+    move-object/from16 v1, v36
+
+    .line 101
     :cond_27
-    invoke-virtual {v1}, Ljava/nio/ShortBuffer;->limit()I
+    invoke-virtual {v8}, Ljava/nio/ShortBuffer;->limit()I
 
-    move-result v5
+    move-result v4
 
-    invoke-virtual {v1, v3, v2, v5}, Ljava/nio/ShortBuffer;->get([SII)Ljava/nio/ShortBuffer;
+    invoke-virtual {v8, v1, v15, v4}, Ljava/nio/ShortBuffer;->get([SII)Ljava/nio/ShortBuffer;
 
-    .line 480
-    invoke-virtual {v1}, Ljava/nio/ShortBuffer;->limit()I
+    .line 102
+    invoke-virtual {v8}, Ljava/nio/ShortBuffer;->limit()I
 
-    move-result v1
+    move-result v4
 
-    add-int/2addr v2, v1
+    add-int v35, v15, v4
 
-    const/4 v1, 0x0
+    const/4 v4, 0x0
 
-    .line 481
-    invoke-virtual {v4, v13, v1}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
+    .line 103
+    invoke-virtual {v2, v7, v4}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
 
-    .line 483
-    iget v5, v9, Landroid/media/MediaCodec$BufferInfo;->flags:I
+    .line 104
+    iget v5, v3, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
     and-int/lit8 v5, v5, 0x4
 
-    if-eqz v5, :cond_29
+    move-wide/from16 v7, p3
 
-    move/from16 v13, v40
+    move-object/from16 v36, v1
 
-    move-object/from16 v5, v42
+    if-eqz v5, :cond_2a
 
-    move-object/from16 v1, p0
+    move-wide/from16 v4, v18
+
+    move/from16 v11, v37
 
     const/4 v14, 0x1
 
-    goto/16 :goto_f
+    goto :goto_13
 
     :cond_28
-    move-object/from16 v42, v5
+    move-wide/from16 v18, v4
 
-    const/4 v1, 0x0
+    move/from16 v15, v35
+
+    move-object/from16 v1, v36
+
+    const/4 v4, 0x0
 
     const/4 v5, -0x3
 
-    if-ne v13, v5, :cond_29
+    if-ne v7, v5, :cond_29
 
-    .line 488
-    invoke-virtual {v4}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
+    .line 105
+    invoke-virtual {v2}, Landroid/media/MediaCodec;->getOutputBuffers()[Ljava/nio/ByteBuffer;
 
-    move-result-object v26
+    move-result-object v25
 
     :cond_29
-    move/from16 v13, v40
+    move-wide/from16 v7, p3
 
-    move/from16 v14, v41
+    move-object/from16 v36, v1
 
-    move-object/from16 v5, v42
+    move/from16 v35, v15
+
+    :cond_2a
+    move-wide/from16 v4, v18
+
+    move/from16 v11, v37
+
+    :goto_13
+    const/4 v15, 0x2
 
     move-object/from16 v1, p0
 
-    goto/16 :goto_f
+    goto/16 :goto_10
 
-    :cond_2a
-    move-object/from16 v42, v5
+    :cond_2b
+    :goto_14
+    move-wide/from16 p3, v7
 
-    move/from16 v40, v13
+    move/from16 v15, v35
 
-    :goto_13
-    const/4 v1, 0x0
+    move-object/from16 v1, v36
+
+    const/4 v4, 0x0
 
     const/4 v5, -0x3
 
-    .line 499
-    iget v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    .line 106
+    iget v7, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
 
-    const/4 v7, 0x2
+    const/4 v8, 0x2
 
-    if-lt v6, v7, :cond_2d
+    if-lt v7, v8, :cond_2e
 
-    .line 501
-    iget v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
+    sub-int v35, v15, v7
 
-    sub-int v6, v2, v6
-
-    :goto_14
-    if-gt v6, v12, :cond_2b
-
-    move/from16 v14, v37
-
-    const/4 v13, 0x2
-
-    goto :goto_17
-
-    .line 502
-    :cond_2b
-    aget-short v7, v3, v6
-
-    add-int/lit8 v13, v6, 0x1
-
-    aget-short v13, v3, v13
-
-    add-int/2addr v7, v13
-
-    int-to-short v7, v7
-
-    const/4 v13, 0x2
-
-    .line 503
-    div-int/2addr v7, v13
-
-    invoke-static {v7}, Ljava/lang/Math;->abs(I)I
-
-    move-result v7
-
-    int-to-short v7, v7
-
-    move/from16 v14, v37
-
-    if-le v7, v14, :cond_2c
-
-    add-int/lit8 v7, v2, -0x1
-
-    sub-int/2addr v7, v6
-
-    int-to-long v6, v7
-
-    .line 505
-    iput-wide v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+    move/from16 v7, v35
 
     :goto_15
-    const/16 v40, 0x1
+    if-gt v7, v9, :cond_2c
+
+    goto :goto_18
+
+    .line 107
+    :cond_2c
+    aget-short v11, v1, v7
+
+    add-int/lit8 v14, v7, 0x1
+
+    aget-short v14, v1, v14
+
+    add-int/2addr v11, v14
+
+    int-to-short v11, v11
+
+    .line 108
+    div-int/2addr v11, v8
+
+    invoke-static {v11}, Ljava/lang/Math;->abs(I)I
+
+    move-result v11
+
+    int-to-short v11, v11
+
+    if-le v11, v13, :cond_2d
+
+    add-int/lit8 v35, v15, -0x1
+
+    sub-int v7, v35, v7
+
+    int-to-long v11, v7
+
+    .line 109
+    iput-wide v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
 
     goto :goto_17
-
-    :cond_2c
-    sub-int/2addr v6, v12
-
-    move/from16 v37, v14
-
-    goto :goto_14
 
     :cond_2d
-    move/from16 v14, v37
-
-    const/4 v13, 0x2
-
-    .line 512
-    iget v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->nCh:I
-
-    sub-int v6, v2, v6
-
-    :goto_16
-    if-gt v6, v12, :cond_2e
-
-    goto :goto_17
-
-    .line 513
-    :cond_2e
-    aget-short v7, v3, v6
-
-    invoke-static {v7}, Ljava/lang/Math;->abs(I)I
-
-    move-result v7
-
-    if-le v7, v14, :cond_2f
-
-    add-int/lit8 v7, v2, -0x1
-
-    sub-int/2addr v7, v6
-
-    int-to-long v6, v7
-
-    .line 514
-    iput-wide v6, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+    sub-int/2addr v7, v9
 
     goto :goto_15
 
+    :cond_2e
+    sub-int v35, v15, v7
+
+    move/from16 v7, v35
+
+    :goto_16
+    if-gt v7, v9, :cond_2f
+
+    goto :goto_18
+
+    .line 110
+    :cond_2f
+    aget-short v11, v1, v7
+
+    invoke-static {v11}, Ljava/lang/Math;->abs(I)I
+
+    move-result v11
+
+    if-le v11, v13, :cond_30
+
+    add-int/lit8 v35, v15, -0x1
+
+    sub-int v7, v35, v7
+
+    int-to-long v11, v7
+
+    .line 111
+    iput-wide v11, v0, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
+
     :goto_17
-    const/4 v6, 0x0
+    const/4 v12, 0x1
 
-    add-long v10, v10, v35
+    :goto_18
+    add-long v31, v31, v29
 
-    move-object v15, v3
+    move-object v14, v1
 
-    move v7, v14
+    move v5, v13
 
-    move/from16 v13, v40
+    move v13, v15
 
-    move-object/from16 v5, v42
+    move/from16 v11, v23
+
+    move-object/from16 v18, v24
+
+    move-object/from16 v23, v25
+
+    const/16 v4, 0x32
 
     move-object/from16 v1, p0
 
-    const/16 v6, 0x32
+    move v15, v8
 
-    move v14, v2
-
-    move-wide/from16 v2, v38
+    move-wide/from16 v7, p3
 
     goto/16 :goto_e
 
-    :cond_2f
-    sub-int/2addr v6, v12
+    :cond_30
+    sub-int/2addr v7, v9
 
     goto :goto_16
 
-    :cond_30
-    const/16 v28, 0x0
-
-    :goto_18
-    if-eqz v28, :cond_31
-
-    .line 534
-    invoke-virtual/range {v28 .. v28}, Landroid/media/MediaCodec;->stop()V
-
-    .line 535
-    invoke-virtual/range {v28 .. v28}, Landroid/media/MediaCodec;->release()V
-
-    .line 539
     :cond_31
-    invoke-virtual {v8}, Landroid/media/MediaExtractor;->release()V
+    const/4 v4, 0x0
+
+    :goto_19
+    if-eqz v4, :cond_32
+
+    .line 112
+    invoke-virtual {v4}, Landroid/media/MediaCodec;->stop()V
+
+    .line 113
+    invoke-virtual {v4}, Landroid/media/MediaCodec;->release()V
+
+    .line 114
+    :cond_32
+    invoke-virtual {v6}, Landroid/media/MediaExtractor;->release()V
 
     return-object v0
 
     :catch_0
-    return-object v6
+    move-object v1, v4
 
-    :cond_32
-    move v14, v7
+    return-object v1
 
-    const/4 v1, 0x0
+    :cond_33
+    move-object v1, v4
 
-    add-int/lit8 v11, v11, 0x1
+    move v13, v5
+
+    const/4 v4, 0x0
+
+    add-int/lit8 v9, v9, 0x1
+
+    move-object v4, v1
 
     move-object/from16 v1, p0
 
@@ -1469,30 +1489,32 @@
     :catch_1
     move-exception v0
 
-    move-object v1, v0
+    move-object v1, v4
 
-    .line 198
-    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
+    move-object v2, v0
 
-    return-object v6
+    .line 115
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
+
+    return-object v1
 .end method
 
 .method private decodeFrontBackJniOnly(Ljava/lang/String;ZJD)Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;
-    .locals 6
+    .locals 7
 
-    .line 97
+    .line 1
     new-instance p2, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;
 
     const/4 p3, 0x0
 
     invoke-direct {p2, p0, p3}, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;-><init>(Lcom/samsung/android/media/mir/SemSilenceDetector;Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;)V
 
-    .line 98
+    .line 2
     new-instance p4, Landroid/media/MediaExtractor;
 
     invoke-direct {p4}, Landroid/media/MediaExtractor;-><init>()V
 
-    .line 101
+    .line 3
     :try_start_0
     invoke-virtual {p4, p1}, Landroid/media/MediaExtractor;->setDataSource(Ljava/lang/String;)V
     :try_end_0
@@ -1500,58 +1522,56 @@
 
     const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    move v1, v0
 
-    .line 111
+    .line 4
     :goto_0
     invoke-virtual {p4}, Landroid/media/MediaExtractor;->getTrackCount()I
 
     move-result v2
 
-    const/4 v3, 0x1
+    const-string v3, "mime"
+
+    const/4 v4, 0x1
 
     if-lt v1, v2, :cond_0
 
-    const/4 v1, 0x0
+    move v1, v0
 
-    const/4 v2, 0x0
+    move v2, v1
 
     goto :goto_1
 
-    .line 112
+    .line 5
     :cond_0
     invoke-virtual {p4, v1}, Landroid/media/MediaExtractor;->getTrackFormat(I)Landroid/media/MediaFormat;
 
     move-result-object v2
 
-    const-string v4, "mime"
-
-    .line 113
-    invoke-virtual {v2, v4}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
+    .line 6
+    invoke-virtual {v2, v3}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    const-string v4, "audio/"
+    const-string v5, "audio/"
 
-    .line 114
-    invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    .line 7
+    invoke-virtual {v2, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_8
 
-    move v2, v1
-
-    const/4 v1, 0x1
+    move v2, v4
 
     :goto_1
-    if-nez v1, :cond_1
+    if-nez v2, :cond_1
 
     return-object p3
 
-    .line 128
+    .line 8
     :cond_1
-    invoke-virtual {p4, v2}, Landroid/media/MediaExtractor;->getTrackFormat(I)Landroid/media/MediaFormat;
+    invoke-virtual {p4, v1}, Landroid/media/MediaExtractor;->getTrackFormat(I)Landroid/media/MediaFormat;
 
     move-result-object v1
 
@@ -1559,12 +1579,10 @@
 
     return-object p3
 
+    .line 9
     :cond_2
     :try_start_1
-    const-string v2, "mime"
-
-    .line 135
-    invoke-virtual {v1, v2}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v3}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1572,7 +1590,7 @@
 
     const-string v2, "sample-rate"
 
-    .line 136
+    .line 10
     invoke-virtual {v1, v2}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
 
     move-result v2
@@ -1581,7 +1599,7 @@
 
     const-string v2, "channel-count"
 
-    .line 137
+    .line 11
     invoke-virtual {v1, v2}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
 
     move-result v2
@@ -1590,7 +1608,7 @@
 
     const-string v2, "durationUs"
 
-    .line 138
+    .line 12
     invoke-virtual {v1, v2}, Landroid/media/MediaFormat;->getLong(Ljava/lang/String;)J
 
     move-result-wide v1
@@ -1599,29 +1617,27 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 146
-    iget-wide v1, p2, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
+    .line 13
+    iget-wide v5, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mMinDurationUs:J
 
-    iget-wide v4, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mMinDurationUs:J
-
-    cmp-long v1, v1, v4
+    cmp-long v1, v1, v5
 
     if-gtz v1, :cond_3
 
     return-object p3
 
-    .line 152
+    .line 14
     :cond_3
     iget-object v1, p2, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->mime:Ljava/lang/String;
 
-    .line 153
+    .line 15
     sget-boolean v2, Lcom/samsung/android/media/mir/SemSilenceDetector;->SMSD_LOAD_LIBRARY:Z
 
     if-eqz v2, :cond_7
 
     const-string v2, "audio/x-ms-wma"
 
-    .line 154
+    .line 16
     invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -1646,7 +1662,7 @@
 
     const-string v2, "audio/mp4a-latm"
 
-    .line 155
+    .line 17
     invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -1663,7 +1679,7 @@
 
     const-string v2, "audio/raw"
 
-    .line 156
+    .line 18
     invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -1688,14 +1704,14 @@
 
     const-string v2, "application/ogg"
 
-    .line 157
+    .line 19
     invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
-    .line 158
+    .line 20
     :cond_4
     invoke-direct {p0, p1}, Lcom/samsung/android/media/mir/SemSilenceDetector;->init(Ljava/lang/String;)I
 
@@ -1703,41 +1719,41 @@
 
     if-nez p1, :cond_6
 
-    .line 160
+    .line 21
     invoke-direct {p0, p5, p6}, Lcom/samsung/android/media/mir/SemSilenceDetector;->getSilencePositionNative(D)[J
 
     move-result-object p1
 
     if-eqz p1, :cond_5
 
-    .line 162
+    .line 22
     aget-wide p5, p1, v0
 
     iput-wide p5, p2, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
-    .line 163
-    aget-wide p5, p1, v3
+    .line 23
+    aget-wide p5, p1, v4
 
     iput-wide p5, p2, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
 
-    .line 165
+    .line 24
     :cond_5
     invoke-direct {p0}, Lcom/samsung/android/media/mir/SemSilenceDetector;->deinit()I
 
-    move-object p3, p2
-
     goto :goto_2
 
-    .line 167
+    .line 25
     :cond_6
     invoke-direct {p0}, Lcom/samsung/android/media/mir/SemSilenceDetector;->deinit()I
 
-    .line 175
     :cond_7
+    move-object p2, p3
+
+    .line 26
     :goto_2
     invoke-virtual {p4}, Landroid/media/MediaExtractor;->release()V
 
-    return-object p3
+    return-object p2
 
     :catch_0
     return-object p3
@@ -1750,7 +1766,7 @@
     :catch_1
     move-exception p1
 
-    .line 103
+    .line 27
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     return-object p3
@@ -1768,7 +1784,6 @@
 .method private shortTodB(S)D
     .locals 4
 
-    .line 555
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
     move-result p1
@@ -1785,7 +1800,7 @@
 
     const-wide/high16 v2, 0x4034000000000000L    # 20.0
 
-    mul-double v0, v0, v2
+    mul-double/2addr v0, v2
 
     return-wide v0
 .end method
@@ -1793,52 +1808,48 @@
 
 # virtual methods
 .method public getSilencePosition(D)[J
-    .locals 9
+    .locals 8
 
     const/4 v0, 0x2
 
-    .line 56
     new-array v0, v0, [J
 
+    .line 1
     fill-array-data v0, :array_0
 
-    .line 58
-    iget-object v1, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mFilepath:Ljava/lang/String;
+    .line 2
+    iget-object v2, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mFilepath:Ljava/lang/String;
 
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
     return-object v0
 
-    .line 62
     :cond_0
-    iget-object v3, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mFilepath:Ljava/lang/String;
+    const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    .line 3
+    iget-wide v4, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mSearchDurationUs:J
 
-    iget-wide v5, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mSearchDurationUs:J
+    move-object v1, p0
 
-    move-object v2, p0
+    move-wide v6, p1
 
-    move-wide v7, p1
-
-    invoke-direct/range {v2 .. v8}, Lcom/samsung/android/media/mir/SemSilenceDetector;->decodeFrontBackJniOnly(Ljava/lang/String;ZJD)Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;
+    invoke-direct/range {v1 .. v7}, Lcom/samsung/android/media/mir/SemSilenceDetector;->decodeFrontBackJniOnly(Ljava/lang/String;ZJD)Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;
 
     move-result-object p1
 
-    const-wide/16 v1, -0x1
-
     const/4 p2, 0x1
 
-    const/4 v3, 0x0
+    const-wide/16 v1, -0x1
 
     if-eqz p1, :cond_1
 
-    .line 65
+    .line 4
     iget-wide v4, p1, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findFrontUs:J
 
     aput-wide v4, v0, v3
 
-    .line 66
+    .line 5
     iget-wide v4, p1, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->duration:J
 
     iget-wide v6, p1, Lcom/samsung/android/media/mir/SemSilenceDetector$DecodeResult;->findBackUs:J
@@ -1854,7 +1865,6 @@
 
     aput-wide v1, v0, p2
 
-    .line 73
     :goto_0
     aget-wide v4, v0, v3
 
@@ -1878,8 +1888,6 @@
     :cond_3
     return-object v0
 
-    nop
-
     :array_0
     .array-data 8
         -0x1
@@ -1892,7 +1900,6 @@
 
     const/4 v0, 0x0
 
-    .line 42
     iput-object v0, p0, Lcom/samsung/android/media/mir/SemSilenceDetector;->mFilepath:Ljava/lang/String;
 
     return-void

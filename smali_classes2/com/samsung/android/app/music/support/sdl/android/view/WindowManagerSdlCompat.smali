@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "WindowManagerSdlCompat.java"
 
 
 # annotations
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 0
 
     return-void
@@ -25,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +35,7 @@
 
     const-string v0, "window"
 
-    .line 73
+    .line 1
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v0
@@ -45,7 +44,7 @@
 
     move-result-object v0
 
-    .line 74
+    .line 2
     array-length v1, p2
 
     const/4 v2, 0x0
@@ -55,7 +54,7 @@
 
     aget v3, p2, v2
 
-    .line 76
+    .line 3
     :try_start_0
     invoke-interface {v0, v3, p0, p1}, Landroid/view/IWindowManager;->requestSystemKeyEvent(ILandroid/content/ComponentName;Z)Z
     :try_end_0
@@ -66,7 +65,7 @@
     :catch_0
     move-exception v3
 
-    .line 78
+    .line 4
     sget-object v4, Lcom/samsung/android/app/music/support/sdl/android/view/WindowManagerSdlCompat;->TAG:Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;

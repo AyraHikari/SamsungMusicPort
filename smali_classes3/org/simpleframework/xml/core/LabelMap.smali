@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/core/LabelMap;
 .super Ljava/util/LinkedHashMap;
-.source "SourceFile"
+.source "LabelMap.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -30,7 +30,7 @@
 
     const/4 v0, 0x0
 
-    .line 50
+    .line 1
     invoke-direct {p0, v0}, Lorg/simpleframework/xml/core/LabelMap;-><init>(Lorg/simpleframework/xml/core/Policy;)V
 
     return-void
@@ -39,10 +39,10 @@
 .method public constructor <init>(Lorg/simpleframework/xml/core/Policy;)V
     .locals 0
 
-    .line 58
+    .line 2
     invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 59
+    .line 3
     iput-object p1, p0, Lorg/simpleframework/xml/core/LabelMap;->policy:Lorg/simpleframework/xml/core/Policy;
 
     return-void
@@ -62,7 +62,6 @@
 
     const/4 v0, 0x0
 
-    .line 162
     new-array v0, v0, [Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/util/Set;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -78,18 +77,13 @@
 # virtual methods
 .method public getKeys()[Ljava/lang/String;
     .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 97
+    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 99
+    .line 2
     invoke-virtual {p0}, Lorg/simpleframework/xml/core/LabelMap;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -110,25 +104,25 @@
 
     if-eqz v2, :cond_0
 
-    .line 101
-    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->j()Ljava/lang/String;
+    .line 3
+    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->getPath()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 102
-    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->i()Ljava/lang/String;
+    .line 4
+    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 104
+    .line 5
     invoke-interface {v0, v3}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 105
+    .line 6
     invoke-interface {v0, v2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 108
+    .line 7
     :cond_1
     invoke-direct {p0, v0}, Lorg/simpleframework/xml/core/LabelMap;->getArray(Ljava/util/Set;)[Ljava/lang/String;
 
@@ -140,8 +134,7 @@
 .method public getLabel(Ljava/lang/String;)Lorg/simpleframework/xml/core/Label;
     .locals 0
 
-    .line 85
-    invoke-virtual {p0, p1}, Lorg/simpleframework/xml/core/LabelMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -152,20 +145,15 @@
 
 .method public getLabels()Lorg/simpleframework/xml/core/LabelMap;
     .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 140
+    .line 1
     new-instance v0, Lorg/simpleframework/xml/core/LabelMap;
 
     iget-object v1, p0, Lorg/simpleframework/xml/core/LabelMap;->policy:Lorg/simpleframework/xml/core/Policy;
 
     invoke-direct {v0, v1}, Lorg/simpleframework/xml/core/LabelMap;-><init>(Lorg/simpleframework/xml/core/Policy;)V
 
-    .line 142
+    .line 2
     invoke-virtual {p0}, Lorg/simpleframework/xml/core/LabelMap;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -186,13 +174,13 @@
 
     if-eqz v2, :cond_0
 
-    .line 144
-    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->j()Ljava/lang/String;
+    .line 3
+    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->getPath()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 146
-    invoke-virtual {v0, v3, v2}, Lorg/simpleframework/xml/core/LabelMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 4
+    invoke-virtual {v0, v3, v2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -202,18 +190,13 @@
 
 .method public getPaths()[Ljava/lang/String;
     .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
 
-    .line 119
+    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 121
+    .line 2
     invoke-virtual {p0}, Lorg/simpleframework/xml/core/LabelMap;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -234,17 +217,17 @@
 
     if-eqz v2, :cond_0
 
-    .line 123
-    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->j()Ljava/lang/String;
+    .line 3
+    invoke-interface {v2}, Lorg/simpleframework/xml/core/Label;->getPath()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 125
+    .line 4
     invoke-interface {v0, v2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 128
+    .line 5
     :cond_1
     invoke-direct {p0, v0}, Lorg/simpleframework/xml/core/LabelMap;->getArray(Ljava/util/Set;)[Ljava/lang/String;
 
@@ -256,21 +239,21 @@
 .method public isStrict(Lorg/simpleframework/xml/core/Context;)Z
     .locals 1
 
-    .line 178
+    .line 1
     iget-object v0, p0, Lorg/simpleframework/xml/core/LabelMap;->policy:Lorg/simpleframework/xml/core/Policy;
 
     if-nez v0, :cond_0
 
-    .line 179
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Context;->a()Z
+    .line 2
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Context;->isStrict()Z
 
     move-result p1
 
     return p1
 
-    .line 181
+    .line 3
     :cond_0
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Context;->a()Z
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Context;->isStrict()Z
 
     move-result p1
 
@@ -278,7 +261,7 @@
 
     iget-object p1, p0, Lorg/simpleframework/xml/core/LabelMap;->policy:Lorg/simpleframework/xml/core/Policy;
 
-    invoke-interface {p1}, Lorg/simpleframework/xml/core/Policy;->a()Z
+    invoke-interface {p1}, Lorg/simpleframework/xml/core/Policy;->isStrict()Z
 
     move-result p1
 
@@ -306,8 +289,7 @@
         }
     .end annotation
 
-    .line 71
-    invoke-virtual {p0}, Lorg/simpleframework/xml/core/LabelMap;->values()Ljava/util/Collection;
+    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
     move-result-object v0
 

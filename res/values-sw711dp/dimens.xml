@@ -1,86 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="device_height">1137.0dip</dimen>
-    <dimen name="device_width">711.0dip</dimen>
-    <dimen name="album_cover_view_sub_text_horizontal_padding_kt">9.0dip</dimen>
-    <dimen name="bitmap_size_big">768.0dip</dimen>
-    <dimen name="bitmap_size_big_big">800.0dip</dimen>
-    <item type="dimen" name="bitmap_size_blur">@dimen/bitmap_size_small</item>
-    <item type="dimen" name="bitmap_size_mini_player">@dimen/bitmap_size_middle</item>
-    <dimen name="cover_clear_artist_text_size">16.0dip</dimen>
-    <dimen name="cover_clear_control_button_size">75.0dip</dimen>
-    <dimen name="cover_clear_control_margin">19.0dip</dimen>
-    <dimen name="cover_clear_horizontal_margin">30.0dip</dimen>
-    <dimen name="cover_clear_text_margin">3.0dip</dimen>
-    <dimen name="cover_clear_title_text_size">22.0dip</dimen>
+    <dimen name="app_widget_album">81.0dip</dimen>
+    <dimen name="app_widget_land_album">81.0dip</dimen>
     <dimen name="deprecated_list_item_section_padding_top">10.0dip</dimen>
-    <dimen name="deprecated_list_item_track_padding_end">24.0dip</dimen>
     <dimen name="deprecated_list_item_two_line_text_layout_margin_vertical">10.0dip</dimen>
-    <dimen name="dialog_list_item_height">56.0dip</dimen>
-    <dimen name="dialog_list_item_icon_margin_right">12.0dip</dimen>
-    <dimen name="dialog_list_item_icon_size">32.0dip</dimen>
-    <dimen name="dialog_list_item_padding_horizontal">4.0dip</dimen>
-    <dimen name="dialog_list_layout_margin_bottom">36.0dip</dimen>
-    <dimen name="dialog_refresh_progress_size">24.0dip</dimen>
-    <dimen name="half_speed_scrubbing_height">60.0dip</dimen>
-    <dimen name="high_speed_scrubbing_height">20.0dip</dimen>
-    <dimen name="list_content_root_padding_horizontal">0.0dip</dimen>
-    <dimen name="list_item_artist_album_detail_play_icon_padding_kt">3.0dip</dimen>
-    <dimen name="list_item_artist_album_detail_play_icon_size_kt">30.0dip</dimen>
-    <dimen name="list_item_divider_checkbox_inset_padding_left">48.0dip</dimen>
-    <dimen name="list_item_divider_privatelist_inset_padding_left">48.0dip</dimen>
+    <dimen name="ext_app_widget_container_height">154.0dip</dimen>
+    <item type="dimen" name="help_frame_margin_end_percent">0.9</item>
+    <item type="dimen" name="help_frame_margin_start_percent">0.1</item>
+    <dimen name="help_permission_icon_margin_start">100.0dip</dimen>
+    <dimen name="help_permission_optional_description_margin">108.0dip</dimen>
+    <dimen name="help_text_margin">108.0dip</dimen>
+    <item type="dimen" name="help_text_top_margin_percent">0.21</item>
+    <item type="dimen" name="help_title_bottom_space_percent">0.1</item>
+    <dimen name="help_tnc_icon_margin_start">100.0dip</dimen>
     <dimen name="list_item_playlist_padding_end_kt">15.0dip</dimen>
-    <dimen name="list_item_private_folder_selection_icon_margin_left">0.0dip</dimen>
-    <dimen name="list_item_private_folder_selection_icon_margin_right">16.0dip</dimen>
-    <dimen name="list_item_radio_margin_right">16.0dip</dimen>
-    <dimen name="milk_store_common_track_list_explicit_circle_size">19.0dip</dimen>
-    <dimen name="milk_store_common_track_list_explicit_circle_stroke">2.0px</dimen>
-    <dimen name="milk_store_common_track_list_explicit_font_size">11.0dip</dimen>
-    <dimen name="milk_store_common_track_list_explicit_marginRight">5.0dip</dimen>
-    <dimen name="milk_store_main_music_video_item_text_container_height">70.0dip</dimen>
-    <dimen name="milk_store_main_top_chart_item_title_number_width">62.0dip</dimen>
-    <dimen name="no_item_bubble_view_text">15.0dip</dimen>
-    <dimen name="no_item_view_layout_margin_right">2.0dip</dimen>
-    <dimen name="no_item_view_text_margin_top">-1.5dip</dimen>
-    <dimen name="no_item_view_text_max_width">308.0dip</dimen>
-    <dimen name="no_item_view_text_min_height">46.0dip</dimen>
-    <dimen name="no_item_view_text_padding_bottom">14.0dip</dimen>
-    <dimen name="no_item_view_text_padding_horizontal">20.0dip</dimen>
-    <dimen name="no_item_view_text_padding_top">12.0dip</dimen>
-    <dimen name="scrubbing_view_y_offset">48.0dip</dimen>
-    <dimen name="sound_picker_list_item_progress_margin_end">24.0dip</dimen>
-    <dimen name="sound_picker_list_item_progress_margin_start">134.0dip</dimen>
+    <dimen name="preference_item_padding_vertical">17.0dip</dimen>
     <dimen name="sub_header_divider_height_kt">1.0px</dimen>
-    <dimen name="winset_dialog_body_checkbox_margin_bottom">32.0dip</dimen>
-    <dimen name="winset_dialog_body_checkbox_margin_horizontal">30.0dip</dimen>
-    <dimen name="winset_dialog_body_checkbox_margin_top">12.0dip</dimen>
-    <dimen name="winset_dialog_body_padding_vertical">32.0dip</dimen>
+    <dimen name="sub_header_text_size_kt">13.0sp</dimen>
     <dimen name="winset_dialog_edit_text_layout_padding_bottom_kt">12.0dip</dimen>
     <dimen name="winset_dialog_edit_text_layout_padding_left_kt">30.0dip</dimen>
-    <dimen name="winset_dialog_edit_text_layout_padding_right_kt">36.0dip</dimen>
     <dimen name="winset_dialog_edit_text_layout_padding_top_kt">24.0dip</dimen>
-    <dimen name="winset_dialog_progressbar_height">32.0dip</dimen>
     <dimen name="winset_dialog_slider_text">17.0dip</dimen>
-    <dimen name="winset_dialog_title_height">48.0dip</dimen>
-    <dimen name="winset_tab_bottom_divider_height">1.0px</dimen>
-    <dimen name="winset_tab_padding_start">18.0dip</dimen>
-    <dimen name="winset_tab_view_padding_horizontal">12.0dip</dimen>
-    <dimen name="milk_store_pop_track_height">354.0dip</dimen>
-    <dimen name="milk_store_pop_track_image_size">180.0dip</dimen>
-    <dimen name="play_speed_preference_item_padding_vertical">17.0dip</dimen>
-    <dimen name="winset_seekbar_height">31.5dip</dimen>
-    <dimen name="mini_player_seekbar_padding_top">2.5dip</dimen>
-    <dimen name="milk_search_preset_string_height">54.0dip</dimen>
-    <dimen name="milk_store_artist_detail_grid_view_gap">6.0dip</dimen>
-    <dimen name="milk_store_common_track_list_album_left_margin">24.0dip</dimen>
-    <dimen name="milk_store_common_track_list_album_right_margin">18.0dip</dimen>
-    <dimen name="milk_store_common_track_list_album_size">69.0dip</dimen>
-    <dimen name="milk_store_common_track_list_height">71.0dip</dimen>
-    <dimen name="simple_lyric_height">510.0dip</dimen>
-    <dimen name="simple_lyric_margin">24.0dip</dimen>
-    <dimen name="simple_lyric_padding_bottom">24.0dip</dimen>
-    <dimen name="simple_lyric_padding_left">36.0dip</dimen>
-    <dimen name="simple_lyric_padding_right">36.0dip</dimen>
-    <dimen name="simple_lyric_padding_top">32.0dip</dimen>
-    <dimen name="sub_header_text_size_kt">13.0sp</dimen>
 </resources>

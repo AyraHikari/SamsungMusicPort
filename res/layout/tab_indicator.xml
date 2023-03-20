@@ -2,5 +2,4 @@
 <FrameLayout android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/winset_tab_height"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textSize="@dimen/winset_tab_text" android:ellipsize="none" android:gravity="center" android:id="@id/tab_text" android:layout_width="fill_parent" android:layout_height="@dimen/winset_tab_height" android:singleLine="true" android:textAllCaps="true" android:paddingStart="@dimen/winset_tab_view_padding_horizontal" android:paddingEnd="@dimen/winset_tab_view_padding_horizontal" style="@style/Font.Roboto.Condensed" />
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/tab_vertical_divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_vertical_divider" />
 </FrameLayout>

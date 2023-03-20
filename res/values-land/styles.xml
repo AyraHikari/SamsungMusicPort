@@ -3,4 +3,10 @@
     <style name="Theme.OneUi.Player" parent="@style/Theme.OneUi">
         <item name="actionOverflowButtonStyle">@style/Widget.Base.ActionButton.Overflow.White</item>
     </style>
+    <style name="Widget.MaterialComponents.MaterialCalendar.HeaderSelection" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/mtrl_calendar_selection_text_lines</item>
+    </style>
 </resources>

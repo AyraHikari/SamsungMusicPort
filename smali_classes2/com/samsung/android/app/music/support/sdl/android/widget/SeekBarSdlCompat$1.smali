@@ -1,6 +1,6 @@
-.class final Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;
+.class Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SeekBarSdlCompat.java"
 
 # interfaces
 .implements Landroid/widget/SeekBar$OnSeekBarHoverListener;
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$listener:Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;
+.field public final synthetic val$listener:Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;)V
+.method public constructor <init>(Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;)V
     .locals 0
 
-    .line 9
     iput-object p1, p0, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;->val$listener:Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +37,6 @@
 .method public onHoverChanged(Landroid/widget/SeekBar;IZ)V
     .locals 1
 
-    .line 22
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;->val$listener:Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;->onHoverChanged(Landroid/widget/SeekBar;IZ)V
@@ -49,7 +47,6 @@
 .method public onStartTrackingHover(Landroid/widget/SeekBar;I)V
     .locals 1
 
-    .line 12
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;->val$listener:Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;
 
     invoke-interface {v0, p1, p2}, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;->onStartTrackingHover(Landroid/widget/SeekBar;I)V
@@ -60,7 +57,6 @@
 .method public onStopTrackingHover(Landroid/widget/SeekBar;)V
     .locals 1
 
-    .line 17
     iget-object v0, p0, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$1;->val$listener:Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;
 
     invoke-interface {v0, p1}, Lcom/samsung/android/app/music/support/sdl/android/widget/SeekBarSdlCompat$OnSeekBarHoverListener;->onStopTrackingHover(Landroid/widget/SeekBar;)V

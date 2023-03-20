@@ -1,6 +1,6 @@
 .class Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "CocktailBarManagerCompat.java"
 
 # interfaces
 .implements Lcom/samsung/android/cocktailbar/SemCocktailBarManager$CocktailBarStateChangedListener;
@@ -12,22 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
+.field public final synthetic this$0:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 
-.field final synthetic val$stateChangedListener:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;
+.field public final synthetic val$stateChangedListener:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;)V
+.method public constructor <init>(Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;)V
     .locals 0
 
-    .line 48
     iput-object p1, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$1;->this$0:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat;
 
     iput-object p2, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$1;->val$stateChangedListener:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;
@@ -42,7 +41,6 @@
 .method public onCocktailBarStateChanged(Lcom/samsung/android/cocktailbar/SemCocktailBarStateInfo;)V
     .locals 2
 
-    .line 51
     iget-object v0, p0, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$1;->val$stateChangedListener:Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarManagerCompat$CocktailBarStateChangedListener;
 
     new-instance v1, Lcom/samsung/android/app/music/support/samsung/cocktailbar/CocktailBarStateInfo;

@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "SearchPreset.java"
 
 
 # annotations
@@ -24,28 +24,26 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 130
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 131
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;->type:Ljava/lang/String;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;)Ljava/lang/String;
+.method public static synthetic access$000(Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;)Ljava/lang/String;
     .locals 0
 
-    .line 125
     iget-object p0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;->title:Ljava/lang/String;
 
     return-object p0
 .end method
 
-.method static synthetic access$100(Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;)Ljava/lang/String;
+.method public static synthetic access$100(Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;)Ljava/lang/String;
     .locals 0
 
-    .line 125
     iget-object p0, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;->type:Ljava/lang/String;
 
     return-object p0
@@ -56,7 +54,6 @@
 .method public build()Lcom/samsung/android/app/music/model/milksearch/SearchPreset;
     .locals 1
 
-    .line 140
     new-instance v0, Lcom/samsung/android/app/music/model/milksearch/SearchPreset;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/app/music/model/milksearch/SearchPreset;-><init>(Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;)V
@@ -67,7 +64,6 @@
 .method public setTitle(Ljava/lang/String;)Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;
     .locals 0
 
-    .line 135
     iput-object p1, p0, Lcom/samsung/android/app/music/model/milksearch/SearchPreset$Builder;->title:Ljava/lang/String;
 
     return-object p0

@@ -1,6 +1,6 @@
 .class synthetic Lcom/samsung/auth/AuthManager$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "AuthManager.java"
 
 
 # annotations
@@ -9,20 +9,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic $SwitchMap$com$samsung$auth$AuthManager$AccessType:[I
+.field public static final synthetic $SwitchMap$com$samsung$auth$AuthManager$AccessType:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 248
     invoke-static {}, Lcom/samsung/auth/AuthManager$AccessType;->values()[Lcom/samsung/auth/AuthManager$AccessType;
 
     move-result-object v0
@@ -34,11 +33,9 @@
     sput-object v0, Lcom/samsung/auth/AuthManager$1;->$SwitchMap$com$samsung$auth$AuthManager$AccessType:[I
 
     :try_start_0
-    sget-object v0, Lcom/samsung/auth/AuthManager$1;->$SwitchMap$com$samsung$auth$AuthManager$AccessType:[I
-
     sget-object v1, Lcom/samsung/auth/AuthManager$AccessType;->PaperGarden:Lcom/samsung/auth/AuthManager$AccessType;
 
-    invoke-virtual {v1}, Lcom/samsung/auth/AuthManager$AccessType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -54,7 +51,7 @@
 
     sget-object v1, Lcom/samsung/auth/AuthManager$AccessType;->SamsungBooks:Lcom/samsung/auth/AuthManager$AccessType;
 
-    invoke-virtual {v1}, Lcom/samsung/auth/AuthManager$AccessType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -70,7 +67,7 @@
 
     sget-object v1, Lcom/samsung/auth/AuthManager$AccessType;->SamsungLearning:Lcom/samsung/auth/AuthManager$AccessType;
 
-    invoke-virtual {v1}, Lcom/samsung/auth/AuthManager$AccessType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -86,7 +83,7 @@
 
     sget-object v1, Lcom/samsung/auth/AuthManager$AccessType;->MusicRadio:Lcom/samsung/auth/AuthManager$AccessType;
 
-    invoke-virtual {v1}, Lcom/samsung/auth/AuthManager$AccessType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 

@@ -1,6 +1,6 @@
 .class Lorg/simpleframework/xml/core/ContactMap;
 .super Ljava/util/LinkedHashMap;
-.source "SourceFile"
+.source "ContactMap.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -21,10 +21,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 32
     invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
 
     return-void
@@ -43,8 +42,7 @@
         }
     .end annotation
 
-    .line 42
-    invoke-virtual {p0}, Lorg/simpleframework/xml/core/ContactMap;->values()Ljava/util/Collection;
+    invoke-virtual {p0}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
     move-result-object v0
 

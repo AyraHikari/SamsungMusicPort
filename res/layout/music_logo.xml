@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="24.0dip" android:src="@drawable/music_title_logo" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/music_logo_margin_start" />
+    <ImageView android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_title_logo" android:tint="@color/music_logo_209_10_1" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/music_logo_margin_start" />
 </FrameLayout>

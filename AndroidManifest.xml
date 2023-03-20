@@ -1,5 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.sec.android.app.music" platformBuildVersionCode="29" platformBuildVersionName="10">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.sec.android.app.music" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <queries>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="com.iloen.melon"/>
+        <intent>
+            <action android:name="android.intent.action.INSERT_OR_EDIT"/>
+            <data android:mimeType="vnd.android.cursor.item/contact"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEARCH"/>
+        </intent>
+        <package android:name="com.google.android.youtube"/>
+        <intent>
+            <action android:name="android.intent.action.WEB_SEARCH"/>
+        </intent>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+        <intent>
+            <action android:name="android.speech.action.RECOGNIZE_SPEECH"/>
+        </intent>
+        <intent>
+            <action android:name="android.speech.action.WEB_SEARCH"/>
+        </intent>
+        <package android:name="com.spotify.music"/>
+        <package android:name="com.samsung.android.voc"/>
+        <package android:name="com.kakao.talk.alpha"/>
+        <package android:name="com.kakao.talk.sandbox"/>
+        <package android:name="com.kakao.onetalk"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
     <uses-permission android:name="com.sec.android.permission.VOIP_INTERFACE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
@@ -8,6 +41,7 @@
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="com.sec.android.permission.PERSONAL_MEDIA"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
@@ -18,7 +52,7 @@
     <uses-permission android:name="com.sec.android.permission.LAUNCH_PERSONAL_PAGE_SERVICE"/>
     <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_MEDIA_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
     <uses-permission android:name="com.sec.android.settings.permission.SOFT_RESET"/>
@@ -33,12 +67,9 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
     <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <permission android:name="com.sec.android.app.music.provider.permission.READ_MUSIC_SEARCH_PROVIDER"/>
     <permission android:name="com.sec.android.app.music.provider.permission.WRITE_MUSIC_SEARCH_PROVIDER"/>
     <permission android:name="com.sec.android.app.music.provider.permission.READ_SHARED_PROVIDER" android:protectionLevel="signatureOrSystem"/>
@@ -46,27 +77,43 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <permission android:name="com.samsung.android.app.music.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
     <uses-permission android:name="com.samsung.android.app.music.permission.C2D_MESSAGE"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_STACK"/>
-    <uses-permission android:name="com.samsung.android.hostmanager.permission.CONTROL_WEARABLE_STATUS"/>
-    <uses-permission android:name="com.samsung.accessory.permission.ACCESSORY_FRAMEWORK"/>
-    <uses-permission android:name="com.samsung.WATCH_APP_TYPE.Companion"/>
     <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
     <uses-permission android:name="com.samsung.android.app.spage.permission.WRITE_CARD_DATA"/>
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <permission android:name="com.sec.android.app.music.provider.permission.READ_HELP_DUMP" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="DCM"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="KDI"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="SBM"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="RKT"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="UQM"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="XJP"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="JCO"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="SJP"/>
+    <app:application-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="JP"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="com.samsung.android.app.withtv.ACCESS_WITH_TV"/>
-    <uses-permission android:name="com.samsung.android.permission.BIOMETRICS_PRIVILEGED"/>
     <uses-permission android:name="com.sec.spp.permission.TOKEN_7fd2101ce250d0491021124ffc5adf43fc4bc900f79344c881fedd1afe44cb71fef4f6ca73410972bca563c20d40f29b6287a2cc164d4488b17d519c07547e81f2b2ab8f395a15ba1269cd81823096b505a86615abe1373edf8a699e11ed35010afe78d608a7839c162ff1f33398ddbb8308469561cf41cc6543c63c21881c17"/>
-    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
-    <uses-permission android:name="com.samsung.android.beaconmanager.permission.START_BLE_PROXY"/>
-    <uses-permission android:name="com.samsung.android.easysetup.permission.TV_PROVIDER"/>
-    <uses-permission android:name="com.samsung.android.oneconnect.permission.START_SERVICE"/>
-    <uses-permission android:name="com.samsung.android.oneconnect.permission.READ_CLOUD_LOCATION_PROVIDER"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
-    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@mipmap/music_icon" android:label="@string/brand_name" android:largeHeap="true" android:name="com.samsung.android.app.music.MusicApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:taskAffinity="samsung.task.music" android:theme="@style/Theme.OneUi" android:usesCleartextTraffic="true">
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@mipmap/music_icon" android:label="@string/brand_name" android:largeHeap="true" android:name="com.samsung.android.app.music.MusicApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:taskAffinity="samsung.task.music" android:theme="@style/Theme.OneUi">
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity" android:process=":main" android:theme="@style/TransparentCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="oauth" android:scheme="@string/kakao_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.TalkAuthCodeActivity" android:process=":main" android:theme="@style/TransparentCompat"/>
+        <provider android:authorities="com.sec.android.app.music.kakao.auth" android:exported="false" android:name="com.samsung.android.app.music.provider.melonauth.MelonAuthProvider" android:process=":main"/>
+        <service android:name="com.samsung.android.app.music.melon.download.DownloadService"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:name="com.samsung.android.app.music.melon.download.ui.DownloadActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.melon.download.ui.DownloadManagerActivity"/>
+        <activity android:exported="false" android:name="com.samsung.android.app.music.melon.myinfo.MelonInfoActivity"/>
+        <activity android:exported="false" android:name="com.samsung.android.app.music.melon.myinfo.LoginActivity" android:process=":main" android:theme="@style/ActivityTheme.Login"/>
+        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.samsung.android.app.music.melon.webview.MelonWebViewActivity"/>
         <uses-library android:name="touchwiz" android:required="false"/>
         <uses-library android:name="sechardware" android:required="false"/>
         <uses-library android:name="allshare" android:required="false"/>
@@ -75,25 +122,30 @@
         <uses-library android:name="com.sec.android.visualeffect" android:required="false"/>
         <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
         <uses-library android:name="secmediarecorder" android:required="false"/>
-        <uses-library android:name="com.samsung.device" android:required="false"/>
+        <uses-library android:name="com.samsung.device" android:required="true"/>
+        <meta-data android:name="com.google.android.gms.car.application" android:resource="@xml/automotive_app_desc"/>
+        <meta-data android:name="com.google.android.gms.car.notification.SmallIcon" android:resource="@mipmap/music_icon"/>
         <meta-data android:name="com.samsung.android.bixby.pathRuleAppName" android:value="Music"/>
         <meta-data android:name="com.samsung.android.bixby.capsuleId" android:value="viv.samsungMusicApp"/>
         <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+        <meta-data android:name="com.samsung.android.icon_container.feature_appicon" android:value="ADAPTIVEICON_SHADOW"/>
         <meta-data android:name="samsung.settings.reading_default_addtolist " android:value="true"/>
         <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true"/>
         <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
         <meta-data android:name="com.samsung.android.guest_lounge" android:value="true"/>
         <meta-data android:name="com.samsung.android.keepalive.density" android:value="true"/>
-        <meta-data android:name="android.max_aspect" android:value="2.1"/>
-        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
-        <meta-data android:name="GearAppType" android:value="wgt"/>
-        <meta-data android:name="AccessoryServicesLocation" android:value="/res/xml/accessory_services.xml"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
         <meta-data android:name="com.samsung.android.notification.blockable" android:value="true"/>
         <meta-data android:name="SamsungBasicInteraction" android:value="SEP10"/>
         <meta-data android:name="com.samsung.android.sdk.spage.card.info" android:resource="@xml/cards"/>
-        <receiver android:name="com.samsung.android.app.music.bixby.appcard.BixbyAppCardProvider" android:process=":playerService">
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713"/>
+        <meta-data android:name="com.samsung.android.resolver.ranking_priority" android:value="3000"/>
+        <meta-data android:name="theming-meta" android:value="meta_209_music"/>
+        <meta-data android:name="theming-meta-define1" android:resource="@xml/meta_209_music"/>
+        <meta-data android:name="runtime.manifest.overlay" android:resource="@xml/runtime_manifest_overlay"/>
+        <receiver android:name="com.samsung.android.app.music.service.v3.observers.bixbyappcard.BixbyAppCardProvider" android:process=":main">
             <intent-filter>
                 <action android:name="com.samsung.android.app.spage.action.CARD_UPDATE"/>
                 <action android:name="com.samsung.android.app.spage.action.CARD_EVENT"/>
@@ -101,27 +153,37 @@
                 <action android:name="com.samsung.android.app.spage.action.CARD_DISABLED"/>
             </intent-filter>
         </receiver>
-        <provider android:authorities="com.sec.android.app.music.store;com.sec.android.app.music;com.sec.android.app.music.albumart" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.app.music.provider.MusicProvider" android:process=":dataService"/>
-        <provider android:authorities="com.sec.android.app.music.MusicSearchProvider" android:exported="true" android:name="com.samsung.android.app.music.provider.MusicSearchProvider" android:process=":dataService" android:readPermission="com.sec.android.app.music.provider.permission.READ_MUSIC_SEARCH_PROVIDER" android:writePermission="com.sec.android.app.music.provider.permission.WRITE_MUSIC_SEARCH_PROVIDER">
+        <provider android:authorities="com.sec.android.app.music.store;com.sec.android.app.music;com.sec.android.app.music.albumart" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.app.music.provider.MusicProvider" android:process=":main"/>
+        <provider android:authorities="@string/provider_search_authority" android:exported="true" android:name="com.samsung.android.app.music.provider.MusicSearchProvider" android:process=":main" android:readPermission="com.sec.android.app.music.provider.permission.READ_MUSIC_SEARCH_PROVIDER" android:writePermission="com.sec.android.app.music.provider.permission.WRITE_MUSIC_SEARCH_PROVIDER">
             <path-permission android:pathPrefix="/search_suggest_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
             <path-permission android:pathPrefix="/search_suggest_regex_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
             <path-permission android:pathPrefix="/search_suggest_tag_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
             <path-permission android:pathPrefix="/audio/albumart" android:readPermission="android.permission.GLOBAL_SEARCH"/>
         </provider>
         <provider android:authorities="com.sec.android.app.music.setting" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.app.music.provider.setting.SettingProvider"/>
-        <provider android:authorities="com.sec.android.app.music.shared" android:exported="true" android:name="com.samsung.android.app.music.provider.SharedProvider" android:process=":dataService" android:readPermission="com.sec.android.app.music.provider.permission.READ_SHARED_PROVIDER" android:writePermission="com.sec.android.app.music.provider.permission.WRITE_SHARED_PROVIDER"/>
-        <provider android:authorities="com.sec.android.app.music.restricted" android:exported="true" android:name="com.samsung.android.app.music.provider.OpenRestrictedMusicProvider" android:process=":dataService"/>
-        <provider android:authorities="com.sec.android.app.music.radio" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.app.music.service.radioqueue.RadioProvider" android:process=":playerService"/>
-        <provider android:authorities="com.sec.android.app.music.restApiHistory" android:exported="false" android:name="com.samsung.android.app.music.network.database.RestApiHistoryContentProvider" android:process=":dataService"/>
-        <service android:exported="false" android:name="com.samsung.android.app.music.provider.sync.MusicSyncService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":dataService"/>
-        <service android:enabled="false" android:exported="false" android:name="com.samsung.android.app.music.service.v3.PlayerServiceV3" android:process=":playerService"/>
-        <service android:exported="false" android:name="com.samsung.android.app.music.service.PlayerService" android:process=":playerService"/>
-        <service android:exported="true" android:name="com.samsung.android.app.music.service.browser.PlayerMediaBrowserService" android:process=":playerService">
+        <provider android:authorities="com.sec.android.app.music.shared" android:exported="true" android:name="com.samsung.android.app.music.provider.SharedProvider" android:process=":main" android:readPermission="com.sec.android.app.music.provider.permission.READ_SHARED_PROVIDER" android:writePermission="com.sec.android.app.music.provider.permission.WRITE_SHARED_PROVIDER"/>
+        <provider android:authorities="com.sec.android.app.music.restricted" android:exported="true" android:grantUriPermissions="true" android:name="com.samsung.android.app.music.provider.OpenRestrictedMusicProvider" android:process=":main"/>
+        <provider android:authorities="com.sec.android.app.music.log.dump" android:exported="false" android:name="com.samsung.android.app.music.provider.LogDumpMusicProvider" android:process=":main"/>
+        <provider android:authorities="com.sec.android.app.music.dlna" android:exported="false" android:name="com.samsung.android.app.music.provider.DlnaProvider" android:process=":main"/>
+        <provider android:authorities="com.sec.android.app.music.restApi" android:exported="false" android:name="com.samsung.android.app.musiclibrary.core.api.internal.debug.NetworkDumpProvider" android:process=":main"/>
+        <provider android:authorities="com.sec.android.app.music.imageloader" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.app.musiclibrary.ui.imageloader.GlideDiskCacheProvider" android:process=":main">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/cache_paths"/>
+        </provider>
+        <provider android:authorities="com.sec.android.app.music.albumcache" android:exported="false" android:grantUriPermissions="true" android:name="com.samsung.android.app.musiclibrary.ui.imageloader.provider.AlbumCacheProvider" android:process=":main">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/album_cache_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.samsung.android.app.music.provider.sync.MusicSyncService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":main"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.samsung.android.app.music.service.v3.PlayerServiceV3" android:process=":main">
+            <intent-filter>
+                <action android:name="com.samsung.android.app.music.service.bind.PlayerService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.samsung.android.app.music.service.browser.PlayerMediaBrowserService" android:process=":main">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService"/>
             </intent-filter>
         </service>
-        <receiver android:name="com.samsung.android.app.music.service.receiver.MediaCommandReceiver" android:process=":playerService">
+        <receiver android:name="com.samsung.android.app.music.service.receiver.MediaCommandReceiver" android:process=":main">
             <intent-filter>
                 <action android:name="com.sec.android.app.music.musicservicecommand.play"/>
                 <action android:name="com.sec.android.app.music.musicservicecommand.pause"/>
@@ -133,9 +195,12 @@
                 <action android:name="com.sec.android.app.music.intent.action.PLAY_VIA"/>
                 <action android:name="com.samsung.musicplus.intent.action.PLAY_CONTENTS"/>
                 <action android:name="com.sec.android.app.music.intent.action.ENQUEUE"/>
+                <action android:name="com.samsung.android.app.music.core.action.PLAY_FROM_SEARCH"/>
+                <action android:name="com.samsung.android.app.music.core.action.PLAY_FROM_MEDIA_ID"/>
+                <action android:name="com.samsung.android.app.music.core.action.HIDE_NOTIFICATION"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.samsung.android.app.music.service.receiver.MediaButtonReceiver" android:process=":playerService">
+        <receiver android:name="com.samsung.android.app.music.service.receiver.MediaButtonReceiver" android:process=":main">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON"/>
                 <action android:name="com.samsung.android.intent.action.MEDIA_BUTTON"/>
@@ -158,7 +223,7 @@
                 <action android:name="com.sec.android.gate.LCDTEXT"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.sec.android.app.music.appwidget.MusicAppWidgetProvider" android:process=":playerService">
+        <receiver android:label="@string/app_widget_label_player" android:name="com.samsung.android.app.music.appwidget.MusicAppWidgetProvider" android:process=":main">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
                 <action android:name="com.sec.android.intent.action.WALLPAPER_CHANGED"/>
@@ -168,18 +233,33 @@
                 <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
                 <data android:scheme="file"/>
             </intent-filter>
-            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"/>
-            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.samsung.android.app.music.appwidget.HomeScreenWidgetConfigActivity"/>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.samsung.android.app.music.service.v3.observers.widget.HomeWidgetSettingActivity"/>
         </receiver>
-        <activity android:launchMode="singleInstance" android:name="com.samsung.android.app.music.appwidget.HomeScreenWidgetConfigActivity" android:process=":playerService" android:theme="@style/ActivityTheme.WidgetSetting">
+        <receiver android:label="@string/app_widget_label_player_and_queue" android:name="com.samsung.android.app.music.appwidget.ExtendableAppWidgetProvider" android:process=":main">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.intent.action.WALLPAPER_CHANGED"/>
+                <action android:name="com.samsung.android.theme.themecenter.THEME_APPLY"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_extendable"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.samsung.android.app.music.service.v3.observers.widget.HomeWidgetSettingActivity"/>
+        </receiver>
+        <activity android:launchMode="singleInstance" android:name="com.samsung.android.app.music.service.v3.observers.widget.HomeWidgetSettingActivity" android:process=":main" android:resizeableActivity="false" android:theme="@style/ActivityTheme.WidgetSetting">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
         </activity>
-        <receiver android:name="com.sec.android.app.music.edgepanel.MusicEdgePanelProvider" android:process=":playerService">
+        <receiver android:name="com.sec.android.app.music.edgepanel.MusicEdgePanelProvider" android:process=":main">
             <intent-filter>
                 <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE"/>
-                <action android:name="com.sec.android.app.music.intent.action.LAUNCH_PERMISSION_REQUEST"/>
+                <action android:name="com.samsung.android.app.music.core.action.observers.edge.LAUNCH_PERMISSION_REQUEST"/>
+                <action android:name="com.samsung.android.app.music.core.action.observers.edge.CARD_CLICKED"/>
             </intent-filter>
             <meta-data android:name="com.samsung.android.cocktail.provider" android:resource="@xml/widget_music_edge"/>
         </receiver>
@@ -188,24 +268,18 @@
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.samsung.android.app.music.som.HeadsetPlugReceiver">
+        <receiver android:name="com.samsung.android.app.music.service.v3.observers.som.ScreenOffMusicProvider" android:process=":main">
             <intent-filter>
                 <action android:name="com.sec.android.contextaware.HEADSET_PLUG"/>
             </intent-filter>
         </receiver>
-        <service android:exported="false" android:name="com.samsung.android.app.music.appwidget.WidgetListService" android:permission="android.permission.BIND_REMOTEVIEWS" android:process=":playerService"/>
-        <service android:name="com.samsung.android.sdk.accessory.SAService"/>
-        <service android:name="com.samsung.android.sdk.accessory.SAJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <receiver android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver">
+        <service android:exported="false" android:name="com.samsung.android.app.music.service.v3.observers.widget.HomeWidgetListService" android:permission="android.permission.BIND_REMOTEVIEWS" android:process=":main"/>
+        <service android:exported="false" android:name="com.samsung.android.app.music.service.v3.observers.edge.EdgeCardListAdapterService" android:permission="android.permission.BIND_REMOTEVIEWS" android:process=":main"/>
+        <service android:exported="false" android:name="com.samsung.android.app.music.service.v3.observers.som.ScreenOffMusicService" android:process=":main">
             <intent-filter>
-                <action android:name="com.samsung.accessory.action.REGISTER_AGENT"/>
+                <action android:name="com.samsung.android.app.music.core.action.observers.som.START_SCREEN_OFF_MUSIC"/>
             </intent-filter>
-        </receiver>
-        <receiver android:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver">
-            <intent-filter>
-                <action android:name="com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED"/>
-            </intent-filter>
-        </receiver>
+        </service>
         <activity android:launchMode="singleTop" android:name="com.sec.android.app.music.common.activity.MusicMainActivity" android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -224,6 +298,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <meta-data android:name="com.sec.android.app.launcher.icon_theme" android:value="themeColor"/>
         </activity>
         <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="com.samsung.android.app.music.ActivityLauncher" android:noHistory="true">
             <intent-filter>
@@ -273,24 +348,14 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app" android:scheme="samu"/>
                 <data android:host="main" android:scheme="samu"/>
                 <data android:host="mod" android:scheme="samu"/>
                 <data android:host="me" android:scheme="samu"/>
-                <data android:host="announcement" android:scheme="samu"/>
                 <data android:host="menu" android:scheme="samu"/>
-                <data android:host="purchase" android:scheme="samu"/>
-                <data android:host="recommend" android:scheme="samu"/>
-                <data android:host="app" android:scheme="samu"/>
                 <data android:host="notice" android:scheme="samu"/>
-                <data android:host="main" android:scheme="radio"/>
-                <data android:host="mod" android:scheme="radio"/>
-                <data android:host="me" android:scheme="radio"/>
-                <data android:host="announcement" android:scheme="radio"/>
-                <data android:host="menu" android:scheme="radio"/>
-                <data android:host="purchase" android:scheme="radio"/>
-                <data android:host="recommend" android:scheme="radio"/>
-                <data android:host="app" android:scheme="radio"/>
-                <data android:host="notice" android:scheme="radio"/>
+                <data android:host="melon" android:scheme="samu"/>
+                <data android:host="samsungmusic.link" android:scheme="https"/>
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
@@ -310,36 +375,27 @@
         </activity>
         <activity android:exported="false" android:name="com.samsung.android.app.music.activity.InternalPickerActivity" android:windowSoftInputMode="adjustNothing"/>
         <activity android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.dialog.LowBatteryPopup" android:theme="@style/Theme.Transparent.Light"/>
-        <activity android:launchMode="singleInstance" android:name="com.samsung.android.app.music.dialog.DlnaNetworkErrorDialogActivity" android:theme="@style/Theme.Transparent.Light"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.list.local.folder.HideFolderActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.activity.ArtistDetailActivity" android:parentActivityName="com.sec.android.app.music.common.activity.MusicMainActivity"/>
-        <activity android:configChanges="density|keyboardHidden|screenSize|smallestScreenSize" android:name="com.samsung.android.app.music.settings.SettingsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme">
+        <activity android:launchMode="singleInstance" android:name="com.samsung.android.app.musiclibrary.ui.dialog.DlnaNetworkErrorDialogActivity" android:theme="@style/Theme.Transparent.Light"/>
+        <activity android:exported="false" android:name="com.samsung.android.app.music.list.mymusic.folder.HideFolderActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.samsung.android.app.music.settings.SettingsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme">
             <intent-filter>
                 <action android:name="com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"/>
                 <category android:name="com.sec.android.intent.category.SEC_APPLICATION_SETTINGS"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/sleep_timer" android:name="com.samsung.android.app.music.settings.MusicAutoOffActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:configChanges="density|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:label="@string/current_playlist_settings" android:name="com.samsung.android.app.music.settings.CurrentPlaylistSettingsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:configChanges="density|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:label="@string/streaming_audio_quality" android:name="com.samsung.android.app.music.settings.StreamingAudioQualityActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:configChanges="density|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:label="@string/download_audio_quality" android:name="com.samsung.android.app.music.settings.DownloadAudioQualityActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:configChanges="density|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:label="@string/cache_size_setting" android:name="com.samsung.android.app.music.settings.CacheSizeSettingsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme" android:windowSoftInputMode="adjustNothing"/>
-        <activity android:configChanges="density|keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:label="@string/device_management_setting" android:name="com.samsung.android.app.music.settings.DeviceManagementActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.samsung.android.app.music.settings.SleepTimerActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.samsung.android.app.music.settings.CurrentPlaylistSettingsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
+        <activity android:name="com.samsung.android.app.music.settings.StreamingAudioQualityActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
+        <activity android:name="com.samsung.android.app.music.settings.StreamingVideoQualityActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
+        <activity android:name="com.samsung.android.app.music.settings.DownloadAudioQualityActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
+        <activity android:name="com.samsung.android.app.music.settings.ManageCacheActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
+        <activity android:name="com.samsung.android.app.music.settings.ManagePlaylistsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
         <activity android:exported="false" android:label="@string/menu_sound_alive" android:name="com.samsung.android.app.music.legacy.soundalive.settings.LegacySoundAliveUserSettingsActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.samsung.android.app.music.activity.SettingReorderActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
+        <activity android:name="com.samsung.android.app.music.activity.SettingTabsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
         <activity android:exported="false" android:name="com.samsung.android.app.music.activity.AddToPlaylistActivity"/>
         <activity android:exported="false" android:name="com.samsung.android.app.music.activity.AddToShortcutActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.privatemode.dialog.PrivateFolderSelectionActivity"/>
         <activity android:exported="false" android:label="@string/menu_details" android:name="com.samsung.android.app.music.activity.MediaInfoActivity" android:theme="@style/Theme.OneUi">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.sec.android.app.music.common.activity.MusicMainActivity"/>
-        </activity>
-        <activity android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.activity.SearchActivity" android:parentActivityName="com.sec.android.app.music.common.activity.MusicMainActivity" android:windowSoftInputMode="adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
-                <action android:name="android.intent.action.MEDIA_SEARCH"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
         </activity>
         <activity android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.activity.InternalPickerSearchActivity" android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -348,7 +404,7 @@
             </intent-filter>
             <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
         </activity>
-        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:label="@string/brand_name" android:launchMode="singleTop" android:name="com.samsung.android.app.music.activity.SoundPlayerActivity" android:taskAffinity="samsung.task.music.soundplayer" android:theme="@style/Theme.SoundPlayer">
+        <activity android:excludeFromRecents="true" android:label="@string/brand_name" android:launchMode="singleTop" android:name="com.samsung.android.app.music.activity.SoundPlayerActivity" android:taskAffinity="samsung.task.music.soundplayer" android:theme="@style/Theme.SoundPlayer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
@@ -413,8 +469,12 @@
             </intent-filter>
         </activity>
         <activity-alias android:exported="true" android:name="com.samsung.musicplus.AudioPreview" android:targetActivity="com.samsung.android.app.music.activity.SoundPlayerActivity"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.activity.SoundPickerSearchActivity" android:theme="@style/ActivityTheme.SoundPickerSearchActivity" android:windowSoftInputMode="adjustResize"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:enabled="true" android:exported="true" android:label="@string/sound_picker" android:name="com.samsung.android.app.music.activity.SoundPickerActivity" android:taskAffinity="samsung.task.music.soundpicker" android:theme="@style/ActivityTheme.SoundPickerActivity">
+        <app:activity-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="DCM" android:targetActivity="com.samsung.android.app.music.activity.SoundPlayerActivity"/>
+        <app:activity-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="KDI" android:targetActivity="com.samsung.android.app.music.activity.SoundPlayerActivity"/>
+        <app:activity-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="SBM" android:targetActivity="com.samsung.android.app.music.activity.SoundPlayerActivity"/>
+        <app:activity-salescode android:enabled="true" android:label="@string/brand_name_for_jpn" android:name="XJP" android:targetActivity="com.samsung.android.app.music.activity.SoundPlayerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.activity.SoundPickerSearchActivity" android:theme="@style/ActivityTheme.SoundPickerSearchActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:enabled="true" android:exported="true" android:label="@string/sound_picker" android:name="com.samsung.android.app.music.activity.SoundPickerActivity" android:taskAffinity="samsung.task.music.soundpicker" android:theme="@style/ActivityTheme.SoundPickerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.GET_CONTENT"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -434,161 +494,55 @@
                 <action android:name="com.sec.android.airview.HOVER"/>
             </intent-filter>
         </activity>
+        <activity android:exported="false" android:name="com.samsung.android.app.music.settings.PrivacyPermissionsActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
         <activity android:exported="false" android:name="com.samsung.android.app.music.activity.AboutActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
-        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.samsung.android.app.music.activity.AboutPolicyActivity">
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.samsung.android.app.music.activity.AboutPolicyActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <action android:name="android.intent.action.VIEW"/>
                 <data android:host="about.policy.activity" android:scheme="launch.activity"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.samsung.android.app.music.player.lockplayer.LockActivity" android:resizeableActivity="false" android:taskAffinity="samsung.task.music.lockplayer" android:theme="@style/ActivityTheme.LockActivity" android:windowSoftInputMode="adjustNothing">
-            <meta-data android:name="android.max_aspect" android:value="2.4"/>
-        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.samsung.android.app.music.player.lockplayer.LockActivity" android:resizeableActivity="false" android:taskAffinity="samsung.task.music.lockplayer" android:theme="@style/ActivityTheme.LockActivity" android:windowSoftInputMode="adjustNothing"/>
         <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.samsung.android.app.music.cover.CoverQueueActivity" android:theme="@style/ActivityTheme.Cover.Transparent">
             <intent-filter>
                 <action android:name="com.samsung.musicplus.action.SVIEWCOVER_PLAYLIST"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.samsung.android.app.music.player.setas.control.SetAsActivity" android:theme="@style/Theme.OneUi"/>
-        <service android:exported="false" android:name="com.samsung.android.app.music.som.ScreenOffMusicService"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.samsung.android.app.music.player.setas.SetAsActivity" android:theme="@style/Theme.OneUi"/>
         <activity android:label="@string/menu_details" android:name="com.samsung.android.app.music.activity.MetaEditActivity" android:theme="@style/Theme.OneUi" android:windowSoftInputMode="adjustResize"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.purchasedtrack.PurchasedTracksActivity"/>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.samsung.android.app.music.milk.store.voucher.VoucherActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.myinfo.subscriptions.MySubscriptionsActivity"/>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.milk.store.product.ProductActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.myinfo.subscriptions.detail.MySubscriptionDetailActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.myinfo.usagehistory.UsageHistoryActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.myinfo.usagehistory.detail.UsageHistoryDetailActivity"/>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.samsung.android.app.music.milk.store.downloadbasket.DownloadBasketActivity"/>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.samsung.android.app.music.milk.event.EventPromotionActivity" android:windowSoftInputMode="adjustResize"/>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:label="@string/milk_help" android:name="com.samsung.android.app.music.help.HelpActivity" android:theme="@style/Theme.OneUi"/>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:label="@string/milk_notice" android:name="com.samsung.android.app.music.help.NoticeListActivity" android:theme="@style/Theme.OneUi"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.MultipleImageViewerActivity" android:theme="@style/Theme.OneUi">
-            <intent-filter>
-                <action android:name="milk.store.cover_art"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.milk.store.videoplayer.FullScreenVideoPlayerActivity" android:theme="@style/ActivityTheme.MusicVideo">
+        <activity android:exported="false" android:name="com.samsung.android.app.music.activity.ImageViewerActivity" android:theme="@style/Theme.OneUi"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.player.videoplayer.VideoPlayerActivity" android:theme="@style/ActivityTheme.MusicVideo">
             <intent-filter>
                 <action android:name="milk.store.video_player"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.milk.store.videoplayer.YouTubeWebActivity" android:theme="@style/ActivityTheme.MusicVideo"/>
-        <activity android:configChanges="orientation|screenSize" android:name="com.samsung.android.app.music.advertise.AdPopupActivity" android:theme="@style/ActivityTheme.Advertise"/>
-        <activity android:configChanges="orientation|screenSize" android:name="com.samsung.android.app.music.advertise.AdVideo.AdVideoActivity" android:theme="@style/ActivityTheme.Advertise"/>
-        <receiver android:exported="false" android:name="com.samsung.android.app.music.ClearDiskCacheReceiver" android:process=":dataService">
-            <intent-filter>
-                <action android:name="com.samsung.android.app.music.action.CLEAR_DISK_CACHE"/>
-            </intent-filter>
-        </receiver>
-        <service android:enabled="true" android:exported="false" android:name="com.samsung.android.app.music.service.milk.MilkService" android:process=":dataService">
-            <intent-filter>
-                <action android:name="com.samsung.android.app.music.MilkService"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </service>
-        <provider android:authorities="com.sec.android.app.music.provider.server_time" android:exported="false" android:name="com.samsung.android.app.music.network.init.ServerTimeProvider" android:process=":dataService"/>
-        <service android:enabled="true" android:exported="false" android:name="com.samsung.android.app.musiclibrary.ui.martworkcache.service.ArtworkLoaderService" android:process=":dataService"/>
-        <provider android:authorities="com.sec.android.app.music.provider.preference" android:exported="false" android:name="com.samsung.android.app.music.provider.PreferenceProvider"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.activity.CertificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.OneUi"/>
-        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.samsung.android.app.music.milk.store.mdrmtrack.MDrmTracksActivity"/>
-        <provider android:authorities="com.sec.android.app.music.drm.license" android:exported="false" android:name="com.samsung.android.app.music.service.drm.MdrmLicenseProvider" android:process=":playerService"/>
-        <receiver android:exported="true" android:name="kr.co.cashslide.ReferrerReceiver">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:exported="false" android:name="com.samsung.android.app.music.fcm.storepush.StorePushReceiver">
-            <intent-filter>
-                <action android:name="com.sec.android.app.music.intent.action.CLICK_STORE_MARKETING_PUSH"/>
-                <action android:name="com.sec.android.app.music.intent.action.DISMISS_STORE_MARKETING_PUSH"/>
-            </intent-filter>
-        </receiver>
-        <service android:name="com.samsung.android.sdk.ppmt.PpmtService"/>
-        <service android:name="com.samsung.android.sdk.ppmt.PpmtJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <receiver android:exported="false" android:name="com.samsung.android.sdk.ppmt.PpmtReceiver">
-            <intent-filter>
-                <action android:name="com.samsung.android.sdk.ppmt.EVENTS"/>
-            </intent-filter>
-        </receiver>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.samsung.android.sdk.ppmt.PpmtPopupActivity" android:theme="@style/PpmtPopupTheme"/>
-        <receiver android:exported="false" android:name="com.samsung.android.sdk.smp.SmpReceiver"/>
-        <service android:name="com.samsung.android.sdk.smp.SmpService"/>
-        <service android:name="com.samsung.android.sdk.smp.SmpJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:exported="false" android:name="com.samsung.android.app.music.fcm.smp.MarketingSmpFcmService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
-        <receiver android:exported="false" android:name="com.samsung.android.app.music.fcm.smp.MarketingSmpReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
-                <action android:name="com.samsung.android.sdk.smp.pushRegistrationResult"/>
-                <action android:name="com.samsung.android.sdk.smp.smpInitializeResult"/>
-            </intent-filter>
-        </receiver>
-        <service android:exported="true" android:name="com.samsung.android.app.music.service.export.information.LastPlayInfoService" android:process=":playerService">
-            <intent-filter>
-                <action android:name="com.samsung.android.app.music.service.export.information.BIND_LAST_INFO_SERVICE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </service>
+        <provider android:authorities="com.sec.android.app.music.provider.preference" android:exported="false" android:name="com.samsung.android.app.music.preferences.PreferenceProvider"/>
+        <activity android:exported="false" android:name="com.samsung.android.app.music.settings.dcf.ExtendDCFActivtiy" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
+        <activity android:exported="false" android:name="com.samsung.android.app.music.settings.dcf.DcfDownloadFolderActivity" android:theme="@style/Theme.AppCompat.Light.SettingsTheme"/>
         <activity android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.activity.PermissionLegalActivity" android:theme="@style/Theme.OneUi.PermissionLegal"/>
-        <activity android:name="com.samsung.android.app.music.regional.spotify.tab.SpotifyDetailActivity" android:theme="@style/Theme.OneUi"/>
-        <activity android:name="com.samsung.android.app.music.milk.store.setfavorite.SetFavoriteActivity"/>
-        <activity android:exported="false" android:launchMode="singleTop" android:name="com.samsung.android.app.music.milk.store.setfavorite.search.SetFavoriteSearchActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
-                <action android:name="android.intent.action.MEDIA_SEARCH"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
-        </activity>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.myinfo.MyInfoActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.myinfo.listeningtrend.ListeningTrendActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.myinfo.hiddentracks.HiddenTracksActivity"/>
-        <activity android:exported="false" android:name="com.samsung.android.app.music.milk.store.downloadqueue.DownloadQueueActivity"/>
-        <service android:name="com.samsung.android.app.music.milk.store.downloadqueue.service.DownloadQueueService"/>
-        <receiver android:exported="true" android:name="com.samsung.android.app.music.milk.deeplink.ServiceDeepLinkReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="service" android:scheme="radio"/>
-                <data android:host="service" android:scheme="samu"/>
-            </intent-filter>
-        </receiver>
-        <meta-data android:name="com.samsung.android.sdk.spage.version" android:value="1.3.00.0"/>
-        <meta-data android:name="com.samsung.android.sdk.spage.version_code" android:value="130000000"/>
-        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+        <activity android:exported="false" android:name="com.samsung.android.app.music.regional.spotify.tab.SpotifyDetailActivity" android:theme="@style/Theme.OneUi"/>
+        <provider android:authorities="com.sec.android.app.music.maze.auth" android:exported="false" android:name="com.samsung.auth.MazeAuthProvider" android:process=":main"/>
+        <activity android:name="com.samsung.android.app.music.list.mymusic.playlist.ImportExportPlaylistActivity"/>
+        <provider android:authorities="com.sec.android.app.music.help.dump" android:exported="true" android:name="com.samsung.android.app.music.help.SamsungMembersDumpProvider" android:process=":main" android:readPermission="com.sec.android.app.music.provider.permission.READ_HELP_DUMP"/>
+        <meta-data android:name="com.samsung.android.sdk.spage.version" android:value="1.3.01.0"/>
+        <meta-data android:name="com.samsung.android.sdk.spage.version_code" android:value="130100000"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
             <intent-filter android:priority="-500">
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
             <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
             <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
         </service>
-        <provider android:authorities="com.sec.android.app.music.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
-        <service android:enabled="false" android:exported="true" android:name="com.samsung.android.sdk.bixby.BixbyAppService" android:permission="com.samsung.android.bixby.agent.permission.APP_SERVICE">
+        <uses-library android:name="com.google.android.wearable" android:required="false"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
-                <action android:name="com.samsung.android.sdk.bixby.APP_SERVICE"/>
-            </intent-filter>
-        </service>
-        <provider android:authorities="com.sec.android.app.music.CapsuleProvider" android:exported="true" android:name="com.samsung.android.sdk.bixby2.provider.CapsuleProvider"/>
-        <meta-data android:name="com.samsung.android.sdk.bixby2.companionApp" android:value="true"/>
-        <activity android:name="com.facebook.CustomTabMainActivity"/>
-        <activity android:name="com.facebook.CustomTabActivity"/>
-        <provider android:authorities="com.sec.android.app.music.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
-        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
-            <intent-filter>
-                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
             </intent-filter>
         </receiver>
         <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
@@ -599,20 +553,25 @@
         </receiver>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-            </intent-filter>
-        </receiver>
-        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
-            <intent-filter android:priority="-500">
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.sec.android.app.music.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
         <provider android:authorities="com.sec.android.app.music.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
-        <meta-data android:name="SPDE.build.signature" android:value="a44e763/46206885/market-release/Music-1605500-16.2.19"/>
-        <meta-data android:name="SPDE.env.version" android:value="3.2.1/G28.1.21/28.1.4"/>
+        <provider android:authorities="com.sec.android.app.music.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="false" android:exported="true" android:name="com.samsung.android.sdk.bixby.BixbyAppService" android:permission="com.samsung.android.bixby.agent.permission.APP_SERVICE">
+            <intent-filter>
+                <action android:name="com.samsung.android.sdk.bixby.APP_SERVICE"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.sec.android.app.music.CapsuleProvider" android:exported="true" android:name="com.samsung.android.sdk.bixby2.provider.CapsuleProvider"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.companionApp" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.version" android:value="@string/sdk_version"/>
+        <meta-data android:name="SPDE.build.signature" android:value="31936eeef28b77ee29f7cee15c9b70d36e854b12/110377501/sep-melon-release/Music-1600200-16.2.30"/>
+        <meta-data android:name="SPDE.env.version" android:value="7.2.1/G33.1.13/1.0.9"/>
     </application>
 </manifest>

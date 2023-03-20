@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animated-selector
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/sesl_btn_radio_to_on_026_disabled" />
-    <item android:state_enabled="false" android:drawable="@drawable/sesl_btn_radio_to_on_000_disabled" />
-    <item android:state_checked="true" android:drawable="@drawable/sesl_btn_radio_to_on_026" />
-    <item android:drawable="@drawable/sesl_btn_radio_to_on_000" />
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/sesl_list_choice_radio_to_on_025" />
+    <item android:state_enabled="false" android:drawable="@drawable/sesl_list_choice_radio_to_on_001" />
+    <item android:state_checked="true" android:id="@id/on" android:drawable="@drawable/sesl_list_choice_radio_to_on_026" />
+    <item android:state_checked="false" android:id="@id/off" android:drawable="@drawable/sesl_list_choice_radio_to_on_000" />
+    <transition android:drawable="@drawable/sesl_list_choice_radio_to_on_024" android:toId="@id/on" android:fromId="@id/off" />
+    <transition android:drawable="@drawable/sesl_list_choice_radio_to_on_002" android:toId="@id/off" android:fromId="@id/on" />
 </animated-selector>

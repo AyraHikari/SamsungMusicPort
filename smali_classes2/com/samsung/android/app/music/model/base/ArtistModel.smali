@@ -1,6 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/base/ArtistModel;
 .super Ljava/lang/Object;
-.source "SourceFile"
+.source "ArtistModel.java"
 
 
 # static fields
@@ -14,30 +14,30 @@
 
 
 # instance fields
-.field protected artistId:Ljava/lang/String;
+.field public artistId:Ljava/lang/String;
 
-.field protected artistImgUrl:Ljava/lang/String;
+.field public artistImgUrl:Ljava/lang/String;
 
-.field protected artistName:Ljava/lang/String;
+.field public artistName:Ljava/lang/String;
 
-.field protected imageUrl:Ljava/lang/String;
+.field public imageUrl:Ljava/lang/String;
 
-.field protected largeSizeImageUrl:Ljava/lang/String;
+.field public largeSizeImageUrl:Ljava/lang/String;
 
-.field protected section:Ljava/lang/String;
+.field public section:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 38
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 39
+    .line 2
     iput-object p1, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->artistId:Ljava/lang/String;
 
-    .line 40
+    .line 3
     iput-object p2, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->artistName:Ljava/lang/String;
 
     return-void
@@ -48,7 +48,6 @@
 .method public getArtistId()Ljava/lang/String;
     .locals 1
 
-    .line 44
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->artistId:Ljava/lang/String;
 
     return-object v0
@@ -57,7 +56,6 @@
 .method public getArtistImgUrl()Ljava/lang/String;
     .locals 1
 
-    .line 68
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->artistImgUrl:Ljava/lang/String;
 
     return-object v0
@@ -66,7 +64,6 @@
 .method public getArtistName()Ljava/lang/String;
     .locals 1
 
-    .line 48
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->artistName:Ljava/lang/String;
 
     return-object v0
@@ -75,7 +72,6 @@
 .method public getImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 58
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->imageUrl:Ljava/lang/String;
 
     return-object v0
@@ -84,7 +80,6 @@
 .method public getLargeSizeImageUrl()Ljava/lang/String;
     .locals 1
 
-    .line 63
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->largeSizeImageUrl:Ljava/lang/String;
 
     return-object v0
@@ -93,7 +88,6 @@
 .method public getSection()Ljava/lang/String;
     .locals 1
 
-    .line 53
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->section:Ljava/lang/String;
 
     return-object v0
@@ -102,12 +96,11 @@
 .method public isVariousArtist()Z
     .locals 2
 
-    const-string v0, "va"
+    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->artistId:Ljava/lang/String;
 
-    .line 72
-    iget-object v1, p0, Lcom/samsung/android/app/music/model/base/ArtistModel;->artistId:Ljava/lang/String;
+    const-string v1, "va"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -117,10 +110,9 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 77
-    sget-object v0, Lorg/apache/commons/lang3/builder/ToStringStyle;->MULTI_LINE_STYLE:Lorg/apache/commons/lang3/builder/ToStringStyle;
+    sget-object v0, Lorg/apache/commons/lang3/builder/e;->B:Lorg/apache/commons/lang3/builder/e;
 
-    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/ToStringBuilder;->b(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/ToStringStyle;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/d;->f(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/e;)Ljava/lang/String;
 
     move-result-object v0
 

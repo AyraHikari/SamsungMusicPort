@@ -1,9 +1,6 @@
 .class public Lcom/samsung/android/app/music/model/base/TrackModel;
 .super Ljava/lang/Object;
-.source "SourceFile"
-
-# interfaces
-.implements Lcom/samsung/android/app/music/model/OnlineTrack;
+.source "TrackModel.java"
 
 
 # instance fields
@@ -32,11 +29,11 @@
 .field private imageUrl:Ljava/lang/String;
 
 .field private imgList:Ljava/util/List;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        a = "imgList"
-        b = {
+    .annotation runtime Lcom/google/gson/annotations/c;
+        alternate = {
             "imageList"
         }
+        value = "imgList"
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -73,22 +70,22 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 66
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 80
+    .line 2
     iput-wide v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->mVirtualAudioId:J
 
-    .line 67
+    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->imgList:Ljava/util/List;
 
-    .line 68
+    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -101,30 +98,28 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 71
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 80
+    .line 6
     iput-wide v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->mVirtualAudioId:J
 
-    .line 72
+    .line 7
     iput-object p1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackId:Ljava/lang/String;
 
-    .line 73
+    .line 8
     iput-object p2, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackTitle:Ljava/lang/String;
 
-    .line 74
+    .line 9
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
-    .line 75
-    iget-object p1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
-
+    .line 10
     new-instance p2, Lcom/samsung/android/app/music/model/base/ArtistModel;
 
     const/4 v0, 0x0
@@ -133,7 +128,7 @@
 
     invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 76
+    .line 11
     iput-object p3, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->imageUrl:Ljava/lang/String;
 
     return-void
@@ -144,7 +139,7 @@
 .method public convertArtistNameListToArray()[Ljava/lang/String;
     .locals 3
 
-    .line 238
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
     if-nez v0, :cond_0
@@ -153,10 +148,8 @@
 
     return-object v0
 
-    .line 241
+    .line 2
     :cond_0
-    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
-
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -165,7 +158,7 @@
 
     const/4 v1, 0x0
 
-    .line 242
+    .line 3
     :goto_0
     iget-object v2, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
@@ -175,7 +168,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 243
+    .line 4
     iget-object v2, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -201,7 +194,6 @@
 .method public generateUnsignedHash(Ljava/lang/String;)J
     .locals 4
 
-    .line 93
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
     move-result p1
@@ -218,7 +210,6 @@
 .method public getAlbumId()Ljava/lang/String;
     .locals 1
 
-    .line 111
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->albumId:Ljava/lang/String;
 
     return-object v0
@@ -227,7 +218,6 @@
 .method public getAlbumTitle()Ljava/lang/String;
     .locals 1
 
-    .line 151
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->albumTitle:Ljava/lang/String;
 
     return-object v0
@@ -244,7 +234,6 @@
         }
     .end annotation
 
-    .line 187
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
     return-object v0
@@ -253,88 +242,85 @@
 .method public getArtistNames()Ljava/lang/String;
     .locals 4
 
-    .line 192
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
     if-eqz v0, :cond_1
 
-    const-string v0, ""
+    .line 2
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    .line 194
-    iget-object v1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
+    move-result-object v0
 
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    const-string v1, ""
 
-    move-result-object v1
-
-    .line 196
+    .line 3
     :cond_0
     :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 197
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 4
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/samsung/android/app/music/model/base/ArtistModel;
 
-    .line 198
+    .line 5
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Lcom/samsung/android/app/music/model/base/ArtistModel;->getArtistName()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 199
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    .line 6
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 200
+    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, ", "
+    const-string v1, ", "
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
     :cond_2
-    return-object v0
+    return-object v1
 .end method
 
 .method public getDiskNo()I
     .locals 1
 
-    .line 183
     iget v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->diskNo:I
 
     return v0
@@ -343,12 +329,10 @@
 .method public getDisplayArtistName()Ljava/lang/String;
     .locals 2
 
-    .line 250
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
     if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->artistList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -356,14 +340,14 @@
 
     if-lez v0, :cond_0
 
-    const-string v0, ", "
-
-    .line 251
+    .line 2
     invoke-virtual {p0}, Lcom/samsung/android/app/music/model/base/TrackModel;->convertArtistNameListToArray()[Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-static {v0, v1}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;[Ljava/lang/Object;)Ljava/lang/String;
+    const-string v1, ", "
+
+    invoke-static {v1, v0}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -378,7 +362,6 @@
 .method public getExplicit()I
     .locals 1
 
-    .line 134
     iget v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->explicit:I
 
     return v0
@@ -387,25 +370,26 @@
 .method public getImageUrl()Ljava/lang/String;
     .locals 3
 
-    .line 116
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->imageUrl:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 117
-    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->imageUrl:Ljava/lang/String;
-
     return-object v0
 
-    .line 119
+    .line 2
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->imgList:Ljava/util/List;
 
-    const/16 v1, 0x60
+    sget-object v1, Lcom/samsung/android/app/musiclibrary/ui/imageloader/l;->a:Lcom/samsung/android/app/musiclibrary/ui/imageloader/l;
+
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/l;->g()I
+
+    move-result v1
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/samsung/android/app/music/util/ImageUtils;->a(Ljava/util/List;II)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcom/samsung/android/app/music/util/h;->b(Ljava/util/List;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -423,32 +407,37 @@
         }
     .end annotation
 
-    .line 107
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->imgList:Ljava/util/List;
 
     return-object v0
 .end method
 
 .method public getLargeSizeImageUrl()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
-    .line 127
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->largeSizeImageUrl:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 128
-    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->largeSizeImageUrl:Ljava/lang/String;
-
     return-object v0
 
-    .line 130
+    .line 2
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->imgList:Ljava/util/List;
 
-    const/16 v1, 0x258
+    sget-object v1, Lcom/samsung/android/app/musiclibrary/ui/imageloader/l;->a:Lcom/samsung/android/app/musiclibrary/ui/imageloader/l;
 
-    invoke-static {v0, v1, v1}, Lcom/samsung/android/app/music/util/ImageUtils;->a(Ljava/util/List;II)Ljava/lang/String;
+    .line 3
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/l;->c()I
+
+    move-result v2
+
+    invoke-virtual {v1}, Lcom/samsung/android/app/musiclibrary/ui/imageloader/l;->c()I
+
+    move-result v1
+
+    invoke-static {v0, v2, v1}, Lcom/samsung/android/app/music/util/h;->b(Ljava/util/List;II)Ljava/lang/String;
 
     move-result-object v0
 
@@ -458,7 +447,6 @@
 .method public getRankingBadge()Ljava/lang/String;
     .locals 1
 
-    .line 146
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->rankingBadge:Ljava/lang/String;
 
     return-object v0
@@ -467,7 +455,6 @@
 .method public getRankingChg()I
     .locals 1
 
-    .line 142
     iget v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->rankingChg:I
 
     return v0
@@ -476,7 +463,6 @@
 .method public getServiceStat()Ljava/lang/String;
     .locals 1
 
-    .line 160
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->serviceStat:Ljava/lang/String;
 
     return-object v0
@@ -485,7 +471,6 @@
 .method public getTitleYn()Ljava/lang/String;
     .locals 1
 
-    .line 165
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->titleYn:Ljava/lang/String;
 
     return-object v0
@@ -494,7 +479,6 @@
 .method public getTrackId()Ljava/lang/String;
     .locals 1
 
-    .line 98
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackId:Ljava/lang/String;
 
     return-object v0
@@ -503,7 +487,6 @@
 .method public getTrackNo()I
     .locals 1
 
-    .line 174
     iget v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackNo:I
 
     return v0
@@ -512,7 +495,6 @@
 .method public getTrackTitle()Ljava/lang/String;
     .locals 1
 
-    .line 103
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackTitle:Ljava/lang/String;
 
     return-object v0
@@ -521,7 +503,7 @@
 .method public getVirtualAudioId()J
     .locals 4
 
-    .line 83
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackId:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -538,7 +520,7 @@
 
     if-nez v0, :cond_0
 
-    .line 85
+    .line 2
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackId:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/app/music/model/base/TrackModel;->generateUnsignedHash(Ljava/lang/String;)J
@@ -547,7 +529,7 @@
 
     iput-wide v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->mVirtualAudioId:J
 
-    .line 87
+    .line 3
     :cond_0
     iget-wide v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->mVirtualAudioId:J
 
@@ -557,12 +539,11 @@
 .method public isBanned()Z
     .locals 2
 
-    const-string v0, "1"
+    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->ban:Ljava/lang/String;
 
-    .line 234
-    iget-object v1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->ban:Ljava/lang/String;
+    const-string v1, "1"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -572,12 +553,11 @@
 .method public isCeleb()Z
     .locals 2
 
-    const-string v0, "1"
+    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->celebYn:Ljava/lang/String;
 
-    .line 230
-    iget-object v1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->celebYn:Ljava/lang/String;
+    const-string v1, "1"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -587,7 +567,6 @@
 .method public isExplicit()Z
     .locals 2
 
-    .line 138
     iget v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->explicit:I
 
     const/4 v1, 0x1
@@ -606,7 +585,7 @@
 .method public isPlayable()Z
     .locals 3
 
-    .line 214
+    .line 1
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->serviceStat:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -629,7 +608,7 @@
 
     goto :goto_1
 
-    .line 216
+    .line 2
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->serviceStat:Ljava/lang/String;
 
@@ -670,12 +649,11 @@
 .method public isRadioPlayable()Z
     .locals 2
 
-    const-string v0, "0"
+    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->radioServiceYn:Ljava/lang/String;
 
-    .line 225
-    iget-object v1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->radioServiceYn:Ljava/lang/String;
+    const-string v1, "0"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -687,12 +665,11 @@
 .method public isTitle()Z
     .locals 2
 
-    const-string v0, "Y"
+    iget-object v0, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->titleYn:Ljava/lang/String;
 
-    .line 169
-    iget-object v1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->titleYn:Ljava/lang/String;
+    const-string v1, "Y"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -702,7 +679,6 @@
 .method public setAlbumTitle(Ljava/lang/String;)V
     .locals 0
 
-    .line 155
     iput-object p1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->albumTitle:Ljava/lang/String;
 
     return-void
@@ -711,7 +687,6 @@
 .method public setLargeSizeImageUrl(Ljava/lang/String;)V
     .locals 0
 
-    .line 123
     iput-object p1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->largeSizeImageUrl:Ljava/lang/String;
 
     return-void
@@ -720,7 +695,6 @@
 .method public setTrackNo(I)V
     .locals 0
 
-    .line 178
     iput p1, p0, Lcom/samsung/android/app/music/model/base/TrackModel;->trackNo:I
 
     return-void
@@ -729,10 +703,9 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 209
-    sget-object v0, Lorg/apache/commons/lang3/builder/ToStringStyle;->MULTI_LINE_STYLE:Lorg/apache/commons/lang3/builder/ToStringStyle;
+    sget-object v0, Lorg/apache/commons/lang3/builder/e;->B:Lorg/apache/commons/lang3/builder/e;
 
-    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/ToStringBuilder;->b(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/ToStringStyle;)Ljava/lang/String;
+    invoke-static {p0, v0}, Lorg/apache/commons/lang3/builder/d;->f(Ljava/lang/Object;Lorg/apache/commons/lang3/builder/e;)Ljava/lang/String;
 
     move-result-object v0
 
