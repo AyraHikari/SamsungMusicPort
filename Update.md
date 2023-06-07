@@ -1,10 +1,20 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.2.7 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.3.0 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.3.0](https://www.pling.com/p/1537956/)
+- New port based on 16.2.31.1
+- Updated domain API
+- Fixed changing track information
+- Fixed equalizer button
+- Fixed crashing when app trying to call hover popup
+- Fixed search text music result goes blank
+- Fixed spotify search music thumbnails
+- Fixed spotify search crashes when click
 
 ## [Version 1.2.7](https://www.pling.com/p/1537956/)
 - Fixed changing track information
