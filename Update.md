@@ -1,10 +1,15 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.3.0 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.3.1 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.3.1](https://www.pling.com/p/1537956/)
+- Fixed player speed
+- Fixed crossfade
+- Fixed Smart volume
 
 ## [Version 1.3.0](https://www.pling.com/p/1537956/)
 - New port based on 16.2.31.1
