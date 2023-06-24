@@ -6,6 +6,10 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 # Changelog
 
+## [Version 1.3.2](https://www.pling.com/p/1537956/)
+- Updated, new port based on 16.2.32.1
+- Fixes all bugs from previous patch
+
 ## [Version 1.3.1](https://www.pling.com/p/1537956/)
 - Fixed player speed
 - Fixed crossfade
