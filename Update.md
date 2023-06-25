@@ -1,10 +1,13 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.3.3 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.3.4 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.3.4](https://www.pling.com/p/1537956/)
+- Fixed search bar for spotify and melon version
 
 ## [Version 1.3.3](https://www.pling.com/p/1537956/)
 - Fixed app crash in several rom
