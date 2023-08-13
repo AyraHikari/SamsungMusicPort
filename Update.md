@@ -1,10 +1,15 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.3.4 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.3.5 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.3.5](https://www.pling.com/p/1537956/)
+- Added lockscreen controller (if doesn't work, re-enable settings)
+- Added music screen off (probably not work)
+- Fixed bluetooth connection settings
 
 ## [Version 1.3.4](https://www.pling.com/p/1537956/)
 - Fixed search bar for spotify and melon version
