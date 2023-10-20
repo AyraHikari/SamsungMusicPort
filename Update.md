@@ -6,6 +6,12 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 # Changelog
 
+## [Version 1.4.0](https://www.pling.com/p/1537956/)
+- New port version 16.2.33.6
+- New UI based on One UI 6.0
+- New player notification UI
+- SD Card and OTG detection is fixed 🎉
+
 ## [Version 1.3.5](https://www.pling.com/p/1537956/)
 - Added lockscreen controller (if doesn't work, re-enable settings)
 - Added music screen off (probably not work)
