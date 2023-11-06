@@ -1,10 +1,17 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.4.0 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.4.1 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.4.1](https://www.pling.com/p/1537956/)
+- New port version 16.2.34.0
+- Fixed editing music making app crash
+- Fixed startup app crash on some devices
+- Fixed fine volume crash
+- Fixed volume player button
 
 ## [Version 1.4.0](https://www.pling.com/p/1537956/)
 - New port version 16.2.33.6
