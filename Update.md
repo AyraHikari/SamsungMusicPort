@@ -10,7 +10,7 @@ Download link for Samsung Music, please do not mirror or reupload the file
 - Fixed external storage for some ROMs
 - Fixed Melon account login (Kakao)
 - Note: It's safe to use my port, you can verify traffic if unsure
-- Note again: Don't install from outside of my download link, else someone may steal your kakao account
+- Note again: Don't install from outside of my download link, else it may not my legit port. If it was modified by others, someone may steal your kakao account
 
 ## [Version 1.4.1](https://www.pling.com/p/1537956/)
 - New port version 16.2.34.0
