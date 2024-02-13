@@ -1,10 +1,16 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.4.1 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.4.2 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.4.2](https://www.pling.com/p/1537956/)
+- Fixed external storage for some ROMs
+- Fixed Melon account login (Kakao)
+- Note: It's safe to use my port, you can verify traffic if unsure
+- Note again: Don't install from outside of my download link, else someone may steal your kakao account
 
 ## [Version 1.4.1](https://www.pling.com/p/1537956/)
 - New port version 16.2.34.0
