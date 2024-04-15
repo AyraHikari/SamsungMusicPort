@@ -6,6 +6,11 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 # Changelog
 
+## [Version 1.4.3](https://www.pling.com/p/1537956/)
+- Fixed A2DP
+- Fixed listen with Bluetooth
+- Fixed Galaxy Watch series integration
+
 ## [Version 1.4.2](https://www.pling.com/p/1537956/)
 - Fixed external storage for some ROMs
 - Fixed Melon account login (Kakao)
