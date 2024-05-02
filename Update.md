@@ -1,10 +1,17 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.4.2 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.5.0 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.5.0](https://www.pling.com/p/1537956/)
+- New port based on 16.2.36.2 (may have new issue)
+- Added Galaxy Wearable new integration
+- Added EarBuds button receiver serrvice
+- All previous patches has been implemented
+- Let me know if there's any new issues
 
 ## [Version 1.4.3](https://www.pling.com/p/1537956/)
 - Fixed A2DP
