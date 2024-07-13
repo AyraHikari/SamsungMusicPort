@@ -7,6 +7,7 @@ Download link for Samsung Music, please do not mirror or reupload the file
 # Changelog
 
 ## [Version 1.5.1](https://www.pling.com/p/1537956/)
+- Name changed from `Samsung Music` to `Music`
 - Fixed crashes on several devices (esp. HyperOS)
 - Little changes on server updates
 - Galaxy Buds Touch and Hold Support
