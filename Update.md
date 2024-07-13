@@ -13,6 +13,8 @@ Download link for Samsung Music, please do not mirror or reupload the file
 - Galaxy Buds Touch and Hold Support
 - Let me know if there's any new issues
 
+> If you're updated to 1.5.1 early and crashed, please re-download again because i've updated the fixed one in same version
+
 ## [Version 1.5.0](https://www.pling.com/p/1537956/)
 - New port based on 16.2.36.2 (may have new issue)
 - Added Galaxy Wearable new integration
