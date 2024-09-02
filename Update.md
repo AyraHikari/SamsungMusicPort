@@ -1,10 +1,16 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.5.1 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.6.0 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.6.0](https://www.pling.com/p/1537956/)
+- New port based on 16.2.38.2 (may have new issue)
+- Revert changes, name is `Samsung Music` now
+- Some changes from Samsung Official
+- Let me know if there's any new issues
 
 ## [Version 1.5.1](https://www.pling.com/p/1537956/)
 - Name changed from `Samsung Music` to `Music`
