@@ -1,10 +1,17 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.6.0 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.6.1 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
+
+## [Version 1.6.0](https://www.pling.com/p/1537956/)
+- Now added `Material You` color tint (Android 12+ only)
+- [Fixed seek music when playing with bluetooth (if you're not fresh install, apply this workaround)](https://github.com/AyraHikari/SamsungMusicPort/issues/16#issuecomment-2644035998)
+- New app title from One UI 7.0
+- Keep old icon because it's cool
+- [Let me know if there's any new issues](https://github.com/AyraHikari/SamsungMusicPort/issues)
 
 ## [Version 1.6.0](https://www.pling.com/p/1537956/)
 - New port based on 16.2.38.2 (may have new issue)
