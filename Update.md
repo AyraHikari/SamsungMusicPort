@@ -1,7 +1,7 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.6.1 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.6.2 (latest)](https://www.pling.com/p/1537956/)
 
 
 # Changelog
