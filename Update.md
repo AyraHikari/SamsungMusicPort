@@ -6,6 +6,11 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 # Changelog
 
+## [Version 1.6.2](https://www.pling.com/p/1537956/)
+- Fixed app name on both light/dark mode
+- Fixed crashed when trying to editing a music
+- [Let me know if there's any new issues](https://github.com/AyraHikari/SamsungMusicPort/issues)
+
 ## [Version 1.6.1](https://www.pling.com/p/1537956/)
 - Now added `Material You` color tint (Android 12+ only)
 - [Fixed seek music when playing with bluetooth (if you're not fresh install, apply this workaround)](https://github.com/AyraHikari/SamsungMusicPort/issues/16#issuecomment-2644035998)
