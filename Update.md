@@ -1,10 +1,18 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.6.2 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.7.0 (latest)](https://www.pling.com/p/1537956/)
 
+### Please read [FAQ](https://github.com/AyraHikari/SamsungMusicPort?tab=readme-ov-file#faq) before asking some questions
 
 # Changelog
+
+## [Version 1.7.0](https://www.pling.com/p/1537956/)
+- New port! Based on version 16.2.41.4 (latest)
+- Some new frameworks implementation, may have some issues.
+- New nice animations
+- Trying to implement for Android 16 (please test)
+- Re-implemented material you colour
 
 ## [Version 1.6.2](https://www.pling.com/p/1537956/)
 - Fixed app name on both light/dark mode
