@@ -2,6 +2,9 @@
 Samsung Music Port for all Non-Samsung ROM
 
 # FAQ
+- What's Melon? Which one i should download?
+> Melon is music stream service in Korea, if you're not in korea just download Spotify version
+
 - Some features is missing on latest version
 > Keep old version until that feature implemented on new version
 
