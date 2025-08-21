@@ -1,7 +1,7 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.7.0 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.7.1 (latest)](https://www.pling.com/p/1537956/)
 
 ### Please read [FAQ](https://github.com/AyraHikari/SamsungMusicPort?tab=readme-ov-file#faq) before asking some questions
 
