@@ -7,6 +7,13 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 # Changelog
 
+## [Version 1.7.1](https://www.pling.com/p/1537956/)
+- Bump version! Based on version 16.2.41.9 (latest)
+- [Fixed "Control music from lock screen" is missing](https://github.com/AyraHikari/SamsungMusicPort/issues/30#issuecomment-3209690941)
+- [New "Music with screen off" feature (please test?](https://github.com/AyraHikari/SamsungMusicPort/issues/30#issuecomment-3209690941)
+- Fixed audio glitches during seeking
+- [Let me know if there's any new issues](https://github.com/AyraHikari/SamsungMusicPort/issues)
+
 ## [Version 1.7.0](https://www.pling.com/p/1537956/)
 - New port! Based on version 16.2.41.4 (latest)
 - Some new frameworks implementation, may have some issues.
