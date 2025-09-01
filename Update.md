@@ -9,7 +9,7 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 ## [Version 1.7.2](https://www.pling.com/p/1537956/)
 - Added icon and app name basic customization
-- Fixed album photo change, please use [SamsungGallery-lite.apk](https://www.pling.com/p/2093621) (or KSU/Magisk/APatch module is fine)
+- Fixed album cover change, please use [SamsungGallery-lite.apk](https://www.pling.com/p/2093621) (or KSU/Magisk/APatch module is fine)
 - Minor fix on lyric sync (use .lrc with same music name to sync lyric)
 - [Let me know if there's any new issues](https://github.com/AyraHikari/SamsungMusicPort/issues)
 
