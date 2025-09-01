@@ -1,11 +1,17 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.7.1 (latest)](https://www.pling.com/p/1537956/)
+- [Samsung Music Build 1.7.2 (latest)](https://www.pling.com/p/1537956/)
 
 ### Please read [FAQ](https://github.com/AyraHikari/SamsungMusicPort?tab=readme-ov-file#faq) before asking some questions
 
 # Changelog
+
+## [Version 1.7.2](https://www.pling.com/p/1537956/)
+- Added icon and app name basic customization
+- Fixed album photo change, please use [SamsungGallery-lite.apk](https://www.pling.com/p/2093621)
+- Minor fix on lyric sync (use .lrc with same music name to sync lyric)
+- [Let me know if there's any new issues](https://github.com/AyraHikari/SamsungMusicPort/issues)
 
 ## [Version 1.7.1](https://www.pling.com/p/1537956/)
 - Bump version! Based on version 16.2.41.9 (latest)
