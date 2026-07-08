@@ -20,7 +20,7 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 ## [Version 1.7.2](https://devuploads.com/users/ayrahikari/34602/Music)
 - Added icon and app name basic customization
-- Fixed album cover change, please use [SamsungGallery-lite.apk](https://devuploads.com/tj1duijvaz76) or [Samsung Gallery Port](https://t.me/AyraProject/2060)
+- Fixed album cover change, please use [SamsungGallery-lite.apk](https://devuploads.com/tj1duijvaz76) or [Samsung Gallery Port](https://devuploads.com/r2c03ot0zwy2)
 - Minor fix on lyric sync (use .lrc with same music name to sync lyric)
 - [Let me know if there's any new issues](https://github.com/AyraHikari/SamsungMusicPort/issues)
 
