@@ -12,7 +12,7 @@ Samsung Music Port for all Non-Samsung ROM
 > Just [create new issue](https://github.com/AyraHikari/SamsungMusicPort/issues/new) with proper logs about this, maybe i forgot to patch these fix on new port version
 
 - Change album cover crashed the gallery!
-> Your app gallery is not compatible, please use [SamsungGallery-lite.apk](https://devuploads.com/tj1duijvaz76) or [Samsung Gallery Port](https://t.me/AyraProject/2060) instead
+> Your app gallery is not compatible, please use [SamsungGallery-lite.apk](https://devuploads.com/tj1duijvaz76) or [Samsung Gallery Port](https://devuploads.com/r2c03ot0zwy2) instead
 
 - Why it did not work on (insert device)?
 > This port mostly works on AOSP based ROM, MIUI/HyperOS, One UI, and mostly OEM ROMs. But some devices that hardly modded aosp or virtual that using their own implementation and framework may not work. Unfortunatelly, I don't have all devices to test with.
