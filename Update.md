@@ -1,15 +1,21 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.8.0 (latest)](https://devuploads.com/users/ayrahikari/34603/1.8.0)
-- [Samsung Music Spotify version (Global music streaming)](https://devuploads.com/mb586dv7hujc)
-- [Samsung Music Melon version (Korean music streaming)](https://devuploads.com/bt4rmbxymypg)
+- [Samsung Music Build 1.8.1 (latest)](https://devuploads.com/users/ayrahikari/34623/1.8.1)
+- [Samsung Music Spotify version (Global music streaming)](https://devuploads.com/dlgbtlp4w7m8)
+- [Samsung Music Melon version (Korean music streaming)](https://devuploads.com/yd4tfwielnlj)
 
 ### Please read [FAQ](https://github.com/AyraHikari/SamsungMusicPort?tab=readme-ov-file#faq) before asking some questions
 
 ### Also consider my own creation that highly referenced from Samsung Music: https://github.com/AyraHikari/AyraMusic
 
 # Changelog
+
+## [Version 1.8.1](https://devuploads.com/users/ayrahikari/34623/1.8.1)
+- Fixed widget for Android 16
+- Added and ported new two music widget directly from One UI 8.5
+- Added crash logger and app debug logger, so you can easily report bugs or app was unexpectedly crash
+- Make sure create the issue in here https://github.com/AyraHikari/SamsungMusicPort/issues, instead of my PM or email. So i can easily track the issues and fix it when i have free time
 
 ## [Version 1.8.0](https://devuploads.com/users/ayrahikari/34603/1.8.0)
 - New port, based on latest version 16.2.45.1 (One UI 8.5)
