@@ -11,6 +11,21 @@ Download link for Samsung Music, please do not mirror or reupload the file
 
 # Changelog
 
+## [Version 1.9.0](https://devuploads.com/k4zi5gmlkj2t)
+- New port, based on version 16.2.46.0 (One UI 8.5)
+- Fixed crash when editing track details and re-numbering tracks ([#45](https://github.com/AyraHikari/SamsungMusicPort/issues/45), [#63](https://github.com/AyraHikari/SamsungMusicPort/issues/63))
+- Fixed crash in the cover/preview picker ([#49](https://github.com/AyraHikari/SamsungMusicPort/issues/49))
+- Fixed crash after applying a new album cover ([#70](https://github.com/AyraHikari/SamsungMusicPort/issues/70))
+- FLAC albums now show the embedded date instead of "Unknown" ([#68](https://github.com/AyraHikari/SamsungMusicPort/issues/68))
+- Disabled OEM force dark, so the app theme is not inverted on HyperOS/ColorOS/Flyme ([#44](https://github.com/AyraHikari/SamsungMusicPort/issues/44))
+- Fixed DLNA/AllShare startup and SD-card detection on AOSP
+- Settings detail screens no longer slide under the status bar
+- New Customize settings: Melon (Korean) version, true dark mode, launcher name (`Samsung Music` / `Music`), Check update
+- New Developer settings: author, Telegram channel, Build version
+- Crash dialog on next launch with Copy and Report issue (prefilled GitHub issue)
+- Android Auto support verified working ([#24](https://github.com/AyraHikari/SamsungMusicPort/issues/24))
+- All previous patches remain
+
 ## [Version 1.8.1](https://devuploads.com/users/ayrahikari/34623/1.8.1)
 - Fixed widget for Android 16
 - Added and ported new two music widget directly from One UI 8.5
