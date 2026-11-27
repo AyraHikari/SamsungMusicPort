@@ -1,9 +1,8 @@
 # Download
 Download link for Samsung Music, please do not mirror or reupload the file
 
-- [Samsung Music Build 1.8.1 (latest)](https://devuploads.com/users/ayrahikari/34623/1.8.1)
-- [Samsung Music Spotify version (Global music streaming)](https://devuploads.com/dlgbtlp4w7m8)
-- [Samsung Music Melon version (Korean music streaming)](https://devuploads.com/yd4tfwielnlj)
+- [Samsung Music Build 1.9.0 (latest)](https://devuploads.com/k4zi5gmlkj2t)
+- Spotify and Melon no longer separated, you can switch from Customizations
 
 ### Please read [FAQ](https://github.com/AyraHikari/SamsungMusicPort?tab=readme-ov-file#faq) before asking some questions
 
