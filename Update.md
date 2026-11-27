@@ -21,8 +21,6 @@ Download link for Samsung Music, please do not mirror or reupload the file
 - Fixed DLNA/AllShare startup and SD-card detection on AOSP
 - Settings detail screens no longer slide under the status bar
 - New Customize settings: Melon (Korean) version, true dark mode, launcher name (`Samsung Music` / `Music`), Check update
-- New Developer settings: author, Telegram channel, Build version
-- Crash dialog on next launch with Copy and Report issue (prefilled GitHub issue)
 - Android Auto support verified working ([#24](https://github.com/AyraHikari/SamsungMusicPort/issues/24))
 - All previous patches remain
 
